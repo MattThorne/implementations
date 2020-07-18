@@ -1,10 +1,5 @@
 {
-  "version": 2,
-  "dgSpecHash": "2w04WnoZFaVZm9IYc31NJ5a1hUbE74cNX6KG5DsZOskyNX7/CkhU+8rp4TjtynI20PZL67IyTekWDqIUOHcgNw==",
-  "success": true,
-  "projectFilePath": null,
-  "expectedPackageFiles": [
-    null
-  ],
-  "logs": []
+  "version": 1,
+  "dgSpecHash": "x9vZrdiYv8/+qI9Y7R6ihjJOkz7Ta4lzYduB+3m2oPrqHpjgNzolZFBH4hNmrFtWX1/gPVlAE/g7nY01LhAXzA==",
+  "success": true
 }

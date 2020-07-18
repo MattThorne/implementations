@@ -13,25 +13,25 @@ using Microsoft.Quantum.Core;
 using Microsoft.Quantum.Intrinsic;
 using Microsoft.Quantum.Simulation.Core;
 
-[assembly: CallableDeclaration("{\"Kind\":{\"Case\":\"Operation\"},\"QualifiedName\":{\"Namespace\":\"Microsoft.Quantum.Samples.IntegerFactorization\",\"Name\":\"FactorSemiprimeInteger\"},\"Attributes\":[],\"Modifiers\":{\"Access\":{\"Case\":\"DefaultAccess\"}},\"SourceFile\":\"/Users/Matt/Documents/Masters/Dissertation/Q%23/Shor/quantum/Operations.qs\",\"Position\":{\"Item1\":34,\"Item2\":4},\"SymbolRange\":{\"Item1\":{\"Line\":1,\"Column\":11},\"Item2\":{\"Line\":1,\"Column\":33}},\"ArgumentTuple\":{\"Case\":\"QsTuple\",\"Fields\":[[{\"Case\":\"QsTupleItem\",\"Fields\":[{\"VariableName\":{\"Case\":\"ValidName\",\"Fields\":[\"number\"]},\"Type\":{\"Case\":\"Int\"},\"InferredInformation\":{\"IsMutable\":false,\"HasLocalQuantumDependency\":false},\"Position\":{\"Case\":\"Null\"},\"Range\":{\"Item1\":{\"Line\":1,\"Column\":34},\"Item2\":{\"Line\":1,\"Column\":40}}}]},{\"Case\":\"QsTupleItem\",\"Fields\":[{\"VariableName\":{\"Case\":\"ValidName\",\"Fields\":[\"useRobustPhaseEstimation\"]},\"Type\":{\"Case\":\"Bool\"},\"InferredInformation\":{\"IsMutable\":false,\"HasLocalQuantumDependency\":false},\"Position\":{\"Case\":\"Null\"},\"Range\":{\"Item1\":{\"Line\":1,\"Column\":48},\"Item2\":{\"Line\":1,\"Column\":72}}}]}]]},\"Signature\":{\"TypeParameters\":[],\"ArgumentType\":{\"Case\":\"TupleType\",\"Fields\":[[{\"Case\":\"Int\"},{\"Case\":\"Bool\"}]]},\"ReturnType\":{\"Case\":\"TupleType\",\"Fields\":[[{\"Case\":\"Int\"},{\"Case\":\"Int\"}]]},\"Information\":{\"Characteristics\":{\"Case\":\"EmptySet\"},\"InferredInformation\":{\"IsSelfAdjoint\":false,\"IsIntrinsic\":false}}},\"Documentation\":[\" # Summary\",\" Uses Shor's algorithm to factor the parameter `number`\",\"\",\" # Input\",\" ## number\",\" A semiprime integer to be factored\",\" ## useRobustPhaseEstimation\",\" If set to true, we use Microsoft.Quantum.Characterization.RobustPhaseEstimation and\",\" Microsoft.Quantum.Characterization.QuantumPhaseEstimation otherwise\",\"\",\" # Output\",\" Pair of numbers p > 1 and q > 1 such that p⋅q = `number`\"]}")]
-[assembly: SpecializationDeclaration("{\"Kind\":{\"Case\":\"QsBody\"},\"TypeArguments\":{\"Case\":\"Null\"},\"Information\":{\"Characteristics\":{\"Case\":\"EmptySet\"},\"InferredInformation\":{\"IsSelfAdjoint\":false,\"IsIntrinsic\":false}},\"Parent\":{\"Namespace\":\"Microsoft.Quantum.Samples.IntegerFactorization\",\"Name\":\"FactorSemiprimeInteger\"},\"Attributes\":[],\"SourceFile\":\"/Users/Matt/Documents/Masters/Dissertation/Q%23/Shor/quantum/Operations.qs\",\"Position\":{\"Item1\":34,\"Item2\":4},\"HeaderRange\":{\"Item1\":{\"Line\":1,\"Column\":11},\"Item2\":{\"Line\":1,\"Column\":33}},\"Documentation\":[]}")]
-[assembly: CallableDeclaration("{\"Kind\":{\"Case\":\"Operation\"},\"QualifiedName\":{\"Namespace\":\"Microsoft.Quantum.Samples.IntegerFactorization\",\"Name\":\"ApplyOrderFindingOracle\"},\"Attributes\":[],\"Modifiers\":{\"Access\":{\"Case\":\"DefaultAccess\"}},\"SourceFile\":\"/Users/Matt/Documents/Masters/Dissertation/Q%23/Shor/quantum/Operations.qs\",\"Position\":{\"Item1\":112,\"Item2\":4},\"SymbolRange\":{\"Item1\":{\"Line\":1,\"Column\":11},\"Item2\":{\"Line\":1,\"Column\":34}},\"ArgumentTuple\":{\"Case\":\"QsTuple\",\"Fields\":[[{\"Case\":\"QsTupleItem\",\"Fields\":[{\"VariableName\":{\"Case\":\"ValidName\",\"Fields\":[\"generator\"]},\"Type\":{\"Case\":\"Int\"},\"InferredInformation\":{\"IsMutable\":false,\"HasLocalQuantumDependency\":false},\"Position\":{\"Case\":\"Null\"},\"Range\":{\"Item1\":{\"Line\":2,\"Column\":9},\"Item2\":{\"Line\":2,\"Column\":18}}}]},{\"Case\":\"QsTupleItem\",\"Fields\":[{\"VariableName\":{\"Case\":\"ValidName\",\"Fields\":[\"modulus\"]},\"Type\":{\"Case\":\"Int\"},\"InferredInformation\":{\"IsMutable\":false,\"HasLocalQuantumDependency\":false},\"Position\":{\"Case\":\"Null\"},\"Range\":{\"Item1\":{\"Line\":2,\"Column\":26},\"Item2\":{\"Line\":2,\"Column\":33}}}]},{\"Case\":\"QsTupleItem\",\"Fields\":[{\"VariableName\":{\"Case\":\"ValidName\",\"Fields\":[\"power\"]},\"Type\":{\"Case\":\"Int\"},\"InferredInformation\":{\"IsMutable\":false,\"HasLocalQuantumDependency\":false},\"Position\":{\"Case\":\"Null\"},\"Range\":{\"Item1\":{\"Line\":2,\"Column\":41},\"Item2\":{\"Line\":2,\"Column\":46}}}]},{\"Case\":\"QsTupleItem\",\"Fields\":[{\"VariableName\":{\"Case\":\"ValidName\",\"Fields\":[\"target\"]},\"Type\":{\"Case\":\"ArrayType\",\"Fields\":[{\"Case\":\"Qubit\"}]},\"InferredInformation\":{\"IsMutable\":false,\"HasLocalQuantumDependency\":false},\"Position\":{\"Case\":\"Null\"},\"Range\":{\"Item1\":{\"Line\":2,\"Column\":54},\"Item2\":{\"Line\":2,\"Column\":60}}}]}]]},\"Signature\":{\"TypeParameters\":[],\"ArgumentType\":{\"Case\":\"TupleType\",\"Fields\":[[{\"Case\":\"Int\"},{\"Case\":\"Int\"},{\"Case\":\"Int\"},{\"Case\":\"ArrayType\",\"Fields\":[{\"Case\":\"Qubit\"}]}]]},\"ReturnType\":{\"Case\":\"UnitType\"},\"Information\":{\"Characteristics\":{\"Case\":\"Union\",\"Fields\":[{\"Case\":\"SimpleSet\",\"Fields\":[{\"Case\":\"Adjointable\"}]},{\"Case\":\"SimpleSet\",\"Fields\":[{\"Case\":\"Controllable\"}]}]},\"InferredInformation\":{\"IsSelfAdjoint\":false,\"IsIntrinsic\":false}}},\"Documentation\":[\" # Summary\",\" Interprets `target` as encoding unsigned little-endian integer k\",\" and performs transformation |k⟩ ↦ |gᵖ⋅k mod N ⟩ where\",\" p is `power`, g is `generator` and N is `modulus`.\",\"\",\" # Input\",\" ## generator\",\" The unsigned integer multiplicative order ( period )\",\" of which is being estimated. Must be co-prime to `modulus`.\",\" ## modulus\",\" The modulus which defines the residue ring Z mod `modulus`\",\" in which the multiplicative order of `generator` is being estimated.\",\" ## power\",\" Power of `generator` by which `target` is multiplied.\",\" ## target\",\" Register interpreted as LittleEndian which is multiplied by\",\" given power of the generator. The multiplication is performed modulo\",\" `modulus`.\"]}")]
-[assembly: SpecializationDeclaration("{\"Kind\":{\"Case\":\"QsBody\"},\"TypeArguments\":{\"Case\":\"Null\"},\"Information\":{\"Characteristics\":{\"Case\":\"Union\",\"Fields\":[{\"Case\":\"SimpleSet\",\"Fields\":[{\"Case\":\"Adjointable\"}]},{\"Case\":\"SimpleSet\",\"Fields\":[{\"Case\":\"Controllable\"}]}]},\"InferredInformation\":{\"IsSelfAdjoint\":false,\"IsIntrinsic\":false}},\"Parent\":{\"Namespace\":\"Microsoft.Quantum.Samples.IntegerFactorization\",\"Name\":\"ApplyOrderFindingOracle\"},\"Attributes\":[],\"SourceFile\":\"/Users/Matt/Documents/Masters/Dissertation/Q%23/Shor/quantum/Operations.qs\",\"Position\":{\"Item1\":112,\"Item2\":4},\"HeaderRange\":{\"Item1\":{\"Line\":1,\"Column\":11},\"Item2\":{\"Line\":1,\"Column\":34}},\"Documentation\":[]}")]
-[assembly: SpecializationDeclaration("{\"Kind\":{\"Case\":\"QsAdjoint\"},\"TypeArguments\":{\"Case\":\"Null\"},\"Information\":{\"Characteristics\":{\"Case\":\"Union\",\"Fields\":[{\"Case\":\"SimpleSet\",\"Fields\":[{\"Case\":\"Adjointable\"}]},{\"Case\":\"SimpleSet\",\"Fields\":[{\"Case\":\"Controllable\"}]}]},\"InferredInformation\":{\"IsSelfAdjoint\":false,\"IsIntrinsic\":false}},\"Parent\":{\"Namespace\":\"Microsoft.Quantum.Samples.IntegerFactorization\",\"Name\":\"ApplyOrderFindingOracle\"},\"Attributes\":[],\"SourceFile\":\"/Users/Matt/Documents/Masters/Dissertation/Q%23/Shor/quantum/Operations.qs\",\"Position\":{\"Item1\":112,\"Item2\":4},\"HeaderRange\":{\"Item1\":{\"Line\":5,\"Column\":8},\"Item2\":{\"Line\":5,\"Column\":17}},\"Documentation\":[\"automatically generated QsAdjoint specialization for Microsoft.Quantum.Samples.IntegerFactorization.ApplyOrderFindingOracle\"]}")]
-[assembly: SpecializationDeclaration("{\"Kind\":{\"Case\":\"QsControlled\"},\"TypeArguments\":{\"Case\":\"Null\"},\"Information\":{\"Characteristics\":{\"Case\":\"Union\",\"Fields\":[{\"Case\":\"SimpleSet\",\"Fields\":[{\"Case\":\"Adjointable\"}]},{\"Case\":\"SimpleSet\",\"Fields\":[{\"Case\":\"Controllable\"}]}]},\"InferredInformation\":{\"IsSelfAdjoint\":false,\"IsIntrinsic\":false}},\"Parent\":{\"Namespace\":\"Microsoft.Quantum.Samples.IntegerFactorization\",\"Name\":\"ApplyOrderFindingOracle\"},\"Attributes\":[],\"SourceFile\":\"/Users/Matt/Documents/Masters/Dissertation/Q%23/Shor/quantum/Operations.qs\",\"Position\":{\"Item1\":112,\"Item2\":4},\"HeaderRange\":{\"Item1\":{\"Line\":5,\"Column\":8},\"Item2\":{\"Line\":5,\"Column\":17}},\"Documentation\":[\"automatically generated QsControlled specialization for Microsoft.Quantum.Samples.IntegerFactorization.ApplyOrderFindingOracle\"]}")]
-[assembly: SpecializationDeclaration("{\"Kind\":{\"Case\":\"QsControlledAdjoint\"},\"TypeArguments\":{\"Case\":\"Null\"},\"Information\":{\"Characteristics\":{\"Case\":\"Union\",\"Fields\":[{\"Case\":\"SimpleSet\",\"Fields\":[{\"Case\":\"Adjointable\"}]},{\"Case\":\"SimpleSet\",\"Fields\":[{\"Case\":\"Controllable\"}]}]},\"InferredInformation\":{\"IsSelfAdjoint\":false,\"IsIntrinsic\":false}},\"Parent\":{\"Namespace\":\"Microsoft.Quantum.Samples.IntegerFactorization\",\"Name\":\"ApplyOrderFindingOracle\"},\"Attributes\":[],\"SourceFile\":\"/Users/Matt/Documents/Masters/Dissertation/Q%23/Shor/quantum/Operations.qs\",\"Position\":{\"Item1\":112,\"Item2\":4},\"HeaderRange\":{\"Item1\":{\"Line\":5,\"Column\":8},\"Item2\":{\"Line\":5,\"Column\":17}},\"Documentation\":[\"automatically generated QsControlledAdjoint specialization for Microsoft.Quantum.Samples.IntegerFactorization.ApplyOrderFindingOracle\"]}")]
-[assembly: CallableDeclaration("{\"Kind\":{\"Case\":\"Operation\"},\"QualifiedName\":{\"Namespace\":\"Microsoft.Quantum.Samples.IntegerFactorization\",\"Name\":\"EstimatePeriod\"},\"Attributes\":[],\"Modifiers\":{\"Access\":{\"Case\":\"DefaultAccess\"}},\"SourceFile\":\"/Users/Matt/Documents/Masters/Dissertation/Q%23/Shor/quantum/Operations.qs\",\"Position\":{\"Item1\":148,\"Item2\":4},\"SymbolRange\":{\"Item1\":{\"Line\":1,\"Column\":11},\"Item2\":{\"Line\":1,\"Column\":25}},\"ArgumentTuple\":{\"Case\":\"QsTuple\",\"Fields\":[[{\"Case\":\"QsTupleItem\",\"Fields\":[{\"VariableName\":{\"Case\":\"ValidName\",\"Fields\":[\"generator\"]},\"Type\":{\"Case\":\"Int\"},\"InferredInformation\":{\"IsMutable\":false,\"HasLocalQuantumDependency\":false},\"Position\":{\"Case\":\"Null\"},\"Range\":{\"Item1\":{\"Line\":2,\"Column\":9},\"Item2\":{\"Line\":2,\"Column\":18}}}]},{\"Case\":\"QsTupleItem\",\"Fields\":[{\"VariableName\":{\"Case\":\"ValidName\",\"Fields\":[\"modulus\"]},\"Type\":{\"Case\":\"Int\"},\"InferredInformation\":{\"IsMutable\":false,\"HasLocalQuantumDependency\":false},\"Position\":{\"Case\":\"Null\"},\"Range\":{\"Item1\":{\"Line\":2,\"Column\":26},\"Item2\":{\"Line\":2,\"Column\":33}}}]},{\"Case\":\"QsTupleItem\",\"Fields\":[{\"VariableName\":{\"Case\":\"ValidName\",\"Fields\":[\"useRobustPhaseEstimation\"]},\"Type\":{\"Case\":\"Bool\"},\"InferredInformation\":{\"IsMutable\":false,\"HasLocalQuantumDependency\":false},\"Position\":{\"Case\":\"Null\"},\"Range\":{\"Item1\":{\"Line\":2,\"Column\":41},\"Item2\":{\"Line\":2,\"Column\":65}}}]}]]},\"Signature\":{\"TypeParameters\":[],\"ArgumentType\":{\"Case\":\"TupleType\",\"Fields\":[[{\"Case\":\"Int\"},{\"Case\":\"Int\"},{\"Case\":\"Bool\"}]]},\"ReturnType\":{\"Case\":\"Int\"},\"Information\":{\"Characteristics\":{\"Case\":\"EmptySet\"},\"InferredInformation\":{\"IsSelfAdjoint\":false,\"IsIntrinsic\":false}}},\"Documentation\":[\" # Summary\",\" Finds a multiplicative order of the generator\",\" in the residue ring Z mod `modulus`.\",\"\",\" # Input\",\" ## generator\",\" The unsigned integer multiplicative order ( period )\",\" of which is being estimated. Must be co-prime to `modulus`.\",\" ## modulus\",\" The modulus which defines the residue ring Z mod `modulus`\",\" in which the multiplicative order of `generator` is being estimated.\",\" ## useRobustPhaseEstimation\",\" If set to true, we use Microsoft.Quantum.Characterization.RobustPhaseEstimation and\",\" Microsoft.Quantum.Characterization.QuantumPhaseEstimation\",\"\",\" # Output\",\" The period ( multiplicative order ) of the generator mod `modulus`\"]}")]
-[assembly: SpecializationDeclaration("{\"Kind\":{\"Case\":\"QsBody\"},\"TypeArguments\":{\"Case\":\"Null\"},\"Information\":{\"Characteristics\":{\"Case\":\"EmptySet\"},\"InferredInformation\":{\"IsSelfAdjoint\":false,\"IsIntrinsic\":false}},\"Parent\":{\"Namespace\":\"Microsoft.Quantum.Samples.IntegerFactorization\",\"Name\":\"EstimatePeriod\"},\"Attributes\":[],\"SourceFile\":\"/Users/Matt/Documents/Masters/Dissertation/Q%23/Shor/quantum/Operations.qs\",\"Position\":{\"Item1\":148,\"Item2\":4},\"HeaderRange\":{\"Item1\":{\"Line\":1,\"Column\":11},\"Item2\":{\"Line\":1,\"Column\":25}},\"Documentation\":[]}")]
-[assembly: CallableDeclaration("{\"Kind\":{\"Case\":\"Operation\"},\"QualifiedName\":{\"Namespace\":\"Microsoft.Quantum.Samples.IntegerFactorization\",\"Name\":\"EstimateFrequency\"},\"Attributes\":[],\"Modifiers\":{\"Access\":{\"Case\":\"DefaultAccess\"}},\"SourceFile\":\"/Users/Matt/Documents/Masters/Dissertation/Q%23/Shor/quantum/Operations.qs\",\"Position\":{\"Item1\":216,\"Item2\":4},\"SymbolRange\":{\"Item1\":{\"Line\":1,\"Column\":11},\"Item2\":{\"Line\":1,\"Column\":28}},\"ArgumentTuple\":{\"Case\":\"QsTuple\",\"Fields\":[[{\"Case\":\"QsTupleItem\",\"Fields\":[{\"VariableName\":{\"Case\":\"ValidName\",\"Fields\":[\"generator\"]},\"Type\":{\"Case\":\"Int\"},\"InferredInformation\":{\"IsMutable\":false,\"HasLocalQuantumDependency\":false},\"Position\":{\"Case\":\"Null\"},\"Range\":{\"Item1\":{\"Line\":2,\"Column\":9},\"Item2\":{\"Line\":2,\"Column\":18}}}]},{\"Case\":\"QsTupleItem\",\"Fields\":[{\"VariableName\":{\"Case\":\"ValidName\",\"Fields\":[\"modulus\"]},\"Type\":{\"Case\":\"Int\"},\"InferredInformation\":{\"IsMutable\":false,\"HasLocalQuantumDependency\":false},\"Position\":{\"Case\":\"Null\"},\"Range\":{\"Item1\":{\"Line\":3,\"Column\":9},\"Item2\":{\"Line\":3,\"Column\":16}}}]},{\"Case\":\"QsTupleItem\",\"Fields\":[{\"VariableName\":{\"Case\":\"ValidName\",\"Fields\":[\"useRobustPhaseEstimation\"]},\"Type\":{\"Case\":\"Bool\"},\"InferredInformation\":{\"IsMutable\":false,\"HasLocalQuantumDependency\":false},\"Position\":{\"Case\":\"Null\"},\"Range\":{\"Item1\":{\"Line\":4,\"Column\":9},\"Item2\":{\"Line\":4,\"Column\":33}}}]},{\"Case\":\"QsTupleItem\",\"Fields\":[{\"VariableName\":{\"Case\":\"ValidName\",\"Fields\":[\"bitsize\"]},\"Type\":{\"Case\":\"Int\"},\"InferredInformation\":{\"IsMutable\":false,\"HasLocalQuantumDependency\":false},\"Position\":{\"Case\":\"Null\"},\"Range\":{\"Item1\":{\"Line\":5,\"Column\":9},\"Item2\":{\"Line\":5,\"Column\":16}}}]}]]},\"Signature\":{\"TypeParameters\":[],\"ArgumentType\":{\"Case\":\"TupleType\",\"Fields\":[[{\"Case\":\"Int\"},{\"Case\":\"Int\"},{\"Case\":\"Bool\"},{\"Case\":\"Int\"}]]},\"ReturnType\":{\"Case\":\"Int\"},\"Information\":{\"Characteristics\":{\"Case\":\"EmptySet\"},\"InferredInformation\":{\"IsSelfAdjoint\":false,\"IsIntrinsic\":false}}},\"Documentation\":[\" # Summary\",\" Estimates the frequency of a generator\",\" in the residue ring Z mod `modulus`.\",\"\",\" # Input\",\" ## generator\",\" The unsigned integer multiplicative order ( period )\",\" of which is being estimated. Must be co-prime to `modulus`.\",\" ## modulus\",\" The modulus which defines the residue ring Z mod `modulus`\",\" in which the multiplicative order of `generator` is being estimated.\",\" ## useRobustPhaseEstimation\",\" If set to true, we use Microsoft.Quantum.Characterization.RobustPhaseEstimation else\",\" this operation uses Microsoft.Quantum.Characterization.QuantumPhaseEstimation\",\" ## bitsize\",\" Number of bits needed to represent the modulus.\",\"\",\" # Output\",\" The numerator k of dyadic fraction k/2^bitsPrecision\",\" approximating s/r.\"]}")]
-[assembly: SpecializationDeclaration("{\"Kind\":{\"Case\":\"QsBody\"},\"TypeArguments\":{\"Case\":\"Null\"},\"Information\":{\"Characteristics\":{\"Case\":\"EmptySet\"},\"InferredInformation\":{\"IsSelfAdjoint\":false,\"IsIntrinsic\":false}},\"Parent\":{\"Namespace\":\"Microsoft.Quantum.Samples.IntegerFactorization\",\"Name\":\"EstimateFrequency\"},\"Attributes\":[],\"SourceFile\":\"/Users/Matt/Documents/Masters/Dissertation/Q%23/Shor/quantum/Operations.qs\",\"Position\":{\"Item1\":216,\"Item2\":4},\"HeaderRange\":{\"Item1\":{\"Line\":1,\"Column\":11},\"Item2\":{\"Line\":1,\"Column\":28}},\"Documentation\":[]}")]
-[assembly: CallableDeclaration("{\"Kind\":{\"Case\":\"Function\"},\"QualifiedName\":{\"Namespace\":\"Microsoft.Quantum.Samples.IntegerFactorization\",\"Name\":\"PeriodFromFrequency\"},\"Attributes\":[],\"Modifiers\":{\"Access\":{\"Case\":\"DefaultAccess\"}},\"SourceFile\":\"/Users/Matt/Documents/Masters/Dissertation/Q%23/Shor/quantum/Operations.qs\",\"Position\":{\"Item1\":305,\"Item2\":4},\"SymbolRange\":{\"Item1\":{\"Line\":1,\"Column\":10},\"Item2\":{\"Line\":1,\"Column\":29}},\"ArgumentTuple\":{\"Case\":\"QsTuple\",\"Fields\":[[{\"Case\":\"QsTupleItem\",\"Fields\":[{\"VariableName\":{\"Case\":\"ValidName\",\"Fields\":[\"modulus\"]},\"Type\":{\"Case\":\"Int\"},\"InferredInformation\":{\"IsMutable\":false,\"HasLocalQuantumDependency\":false},\"Position\":{\"Case\":\"Null\"},\"Range\":{\"Item1\":{\"Line\":2,\"Column\":9},\"Item2\":{\"Line\":2,\"Column\":16}}}]},{\"Case\":\"QsTupleItem\",\"Fields\":[{\"VariableName\":{\"Case\":\"ValidName\",\"Fields\":[\"frequencyEstimate\"]},\"Type\":{\"Case\":\"Int\"},\"InferredInformation\":{\"IsMutable\":false,\"HasLocalQuantumDependency\":false},\"Position\":{\"Case\":\"Null\"},\"Range\":{\"Item1\":{\"Line\":3,\"Column\":9},\"Item2\":{\"Line\":3,\"Column\":26}}}]},{\"Case\":\"QsTupleItem\",\"Fields\":[{\"VariableName\":{\"Case\":\"ValidName\",\"Fields\":[\"bitsPrecision\"]},\"Type\":{\"Case\":\"Int\"},\"InferredInformation\":{\"IsMutable\":false,\"HasLocalQuantumDependency\":false},\"Position\":{\"Case\":\"Null\"},\"Range\":{\"Item1\":{\"Line\":4,\"Column\":9},\"Item2\":{\"Line\":4,\"Column\":22}}}]},{\"Case\":\"QsTupleItem\",\"Fields\":[{\"VariableName\":{\"Case\":\"ValidName\",\"Fields\":[\"currentDivisor\"]},\"Type\":{\"Case\":\"Int\"},\"InferredInformation\":{\"IsMutable\":false,\"HasLocalQuantumDependency\":false},\"Position\":{\"Case\":\"Null\"},\"Range\":{\"Item1\":{\"Line\":5,\"Column\":9},\"Item2\":{\"Line\":5,\"Column\":23}}}]}]]},\"Signature\":{\"TypeParameters\":[],\"ArgumentType\":{\"Case\":\"TupleType\",\"Fields\":[[{\"Case\":\"Int\"},{\"Case\":\"Int\"},{\"Case\":\"Int\"},{\"Case\":\"Int\"}]]},\"ReturnType\":{\"Case\":\"Int\"},\"Information\":{\"Characteristics\":{\"Case\":\"EmptySet\"},\"InferredInformation\":{\"IsSelfAdjoint\":false,\"IsIntrinsic\":false}}},\"Documentation\":[\" # Summary\",\" Find the period of a number from an input frequency.\",\"\",\" # Input\",\" ## modulus\",\" The modulus which defines the residue ring Z mod `modulus`\",\" in which the multiplicative order of `generator` is being estimated.\",\" ## frequencyEstimate\",\" The frequency that we want to convert to a period.\",\" ## bitsPrecision\",\" Number of bits of precision with which we need to\",\" estimate s/r to recover period r using continued\",\" fractions algorithm.\",\" ## currentDivisor\",\" The divisor of the generator period found so far.\",\"\",\" # Output\",\" The period as calculated from the estimated frequency via\",\" the continued fractions algorithm.\",\"\",\" # See Also\",\" - Microsoft.Quantum.Math.ContinuedFractionConvergentI\"]}")]
-[assembly: SpecializationDeclaration("{\"Kind\":{\"Case\":\"QsBody\"},\"TypeArguments\":{\"Case\":\"Null\"},\"Information\":{\"Characteristics\":{\"Case\":\"EmptySet\"},\"InferredInformation\":{\"IsSelfAdjoint\":false,\"IsIntrinsic\":false}},\"Parent\":{\"Namespace\":\"Microsoft.Quantum.Samples.IntegerFactorization\",\"Name\":\"PeriodFromFrequency\"},\"Attributes\":[],\"SourceFile\":\"/Users/Matt/Documents/Masters/Dissertation/Q%23/Shor/quantum/Operations.qs\",\"Position\":{\"Item1\":305,\"Item2\":4},\"HeaderRange\":{\"Item1\":{\"Line\":1,\"Column\":10},\"Item2\":{\"Line\":1,\"Column\":29}},\"Documentation\":[]}")]
-[assembly: CallableDeclaration("{\"Kind\":{\"Case\":\"Function\"},\"QualifiedName\":{\"Namespace\":\"Microsoft.Quantum.Samples.IntegerFactorization\",\"Name\":\"MaybeFactorsFromPeriod\"},\"Attributes\":[],\"Modifiers\":{\"Access\":{\"Case\":\"DefaultAccess\"}},\"SourceFile\":\"/Users/Matt/Documents/Masters/Dissertation/Q%23/Shor/quantum/Operations.qs\",\"Position\":{\"Item1\":348,\"Item2\":4},\"SymbolRange\":{\"Item1\":{\"Line\":1,\"Column\":10},\"Item2\":{\"Line\":1,\"Column\":32}},\"ArgumentTuple\":{\"Case\":\"QsTuple\",\"Fields\":[[{\"Case\":\"QsTupleItem\",\"Fields\":[{\"VariableName\":{\"Case\":\"ValidName\",\"Fields\":[\"modulus\"]},\"Type\":{\"Case\":\"Int\"},\"InferredInformation\":{\"IsMutable\":false,\"HasLocalQuantumDependency\":false},\"Position\":{\"Case\":\"Null\"},\"Range\":{\"Item1\":{\"Line\":1,\"Column\":33},\"Item2\":{\"Line\":1,\"Column\":40}}}]},{\"Case\":\"QsTupleItem\",\"Fields\":[{\"VariableName\":{\"Case\":\"ValidName\",\"Fields\":[\"generator\"]},\"Type\":{\"Case\":\"Int\"},\"InferredInformation\":{\"IsMutable\":false,\"HasLocalQuantumDependency\":false},\"Position\":{\"Case\":\"Null\"},\"Range\":{\"Item1\":{\"Line\":1,\"Column\":48},\"Item2\":{\"Line\":1,\"Column\":57}}}]},{\"Case\":\"QsTupleItem\",\"Fields\":[{\"VariableName\":{\"Case\":\"ValidName\",\"Fields\":[\"period\"]},\"Type\":{\"Case\":\"Int\"},\"InferredInformation\":{\"IsMutable\":false,\"HasLocalQuantumDependency\":false},\"Position\":{\"Case\":\"Null\"},\"Range\":{\"Item1\":{\"Line\":1,\"Column\":65},\"Item2\":{\"Line\":1,\"Column\":71}}}]}]]},\"Signature\":{\"TypeParameters\":[],\"ArgumentType\":{\"Case\":\"TupleType\",\"Fields\":[[{\"Case\":\"Int\"},{\"Case\":\"Int\"},{\"Case\":\"Int\"}]]},\"ReturnType\":{\"Case\":\"TupleType\",\"Fields\":[[{\"Case\":\"Bool\"},{\"Case\":\"TupleType\",\"Fields\":[[{\"Case\":\"Int\"},{\"Case\":\"Int\"}]]}]]},\"Information\":{\"Characteristics\":{\"Case\":\"EmptySet\"},\"InferredInformation\":{\"IsSelfAdjoint\":false,\"IsIntrinsic\":false}}},\"Documentation\":[\" # Summary\",\" Tries to find the factors of `modulus` given a `period` and `generator`.\",\"\",\" # Input\",\" ## modulus\",\" The modulus which defines the residue ring Z mod `modulus`\",\" in which the multiplicative order of `generator` is being estimated.\",\" ## generator\",\" The unsigned integer multiplicative order ( period )\",\" of which is being estimated. Must be co-prime to `modulus`.\",\" ## period\",\" The estimated period ( multiplicative order ) of the generator mod `modulus`.\",\"\",\" # Output\",\" A tuple of a flag indicating whether factors were found successfully,\",\" and a pair of integers representing the factors that were found.\",\" Note that the second output is only meaningful when the first\",\" output is `true`.\",\"\",\" # See Also\",\" - Microsoft.Quantum.Math.GreatestCommonDivisorI\"]}")]
-[assembly: SpecializationDeclaration("{\"Kind\":{\"Case\":\"QsBody\"},\"TypeArguments\":{\"Case\":\"Null\"},\"Information\":{\"Characteristics\":{\"Case\":\"EmptySet\"},\"InferredInformation\":{\"IsSelfAdjoint\":false,\"IsIntrinsic\":false}},\"Parent\":{\"Namespace\":\"Microsoft.Quantum.Samples.IntegerFactorization\",\"Name\":\"MaybeFactorsFromPeriod\"},\"Attributes\":[],\"SourceFile\":\"/Users/Matt/Documents/Masters/Dissertation/Q%23/Shor/quantum/Operations.qs\",\"Position\":{\"Item1\":348,\"Item2\":4},\"HeaderRange\":{\"Item1\":{\"Line\":1,\"Column\":10},\"Item2\":{\"Line\":1,\"Column\":32}},\"Documentation\":[]}")]
+[assembly: CallableDeclaration("{\"Kind\":{\"Case\":\"Operation\"},\"QualifiedName\":{\"Namespace\":\"Microsoft.Quantum.Samples.IntegerFactorization\",\"Name\":\"FactorSemiprimeInteger\"},\"Attributes\":[],\"Modifiers\":{\"Access\":{\"Case\":\"DefaultAccess\"}},\"SourceFile\":\"/Users/Matt/Documents/Masters/Dissertation/QSharp/Microsoft_Shor/quantum/Operations.qs\",\"Position\":{\"Item1\":34,\"Item2\":4},\"SymbolRange\":{\"Item1\":{\"Line\":1,\"Column\":11},\"Item2\":{\"Line\":1,\"Column\":33}},\"ArgumentTuple\":{\"Case\":\"QsTuple\",\"Fields\":[[{\"Case\":\"QsTupleItem\",\"Fields\":[{\"VariableName\":{\"Case\":\"ValidName\",\"Fields\":[\"number\"]},\"Type\":{\"Case\":\"Int\"},\"InferredInformation\":{\"IsMutable\":false,\"HasLocalQuantumDependency\":false},\"Position\":{\"Case\":\"Null\"},\"Range\":{\"Item1\":{\"Line\":1,\"Column\":34},\"Item2\":{\"Line\":1,\"Column\":40}}}]},{\"Case\":\"QsTupleItem\",\"Fields\":[{\"VariableName\":{\"Case\":\"ValidName\",\"Fields\":[\"useRobustPhaseEstimation\"]},\"Type\":{\"Case\":\"Bool\"},\"InferredInformation\":{\"IsMutable\":false,\"HasLocalQuantumDependency\":false},\"Position\":{\"Case\":\"Null\"},\"Range\":{\"Item1\":{\"Line\":1,\"Column\":48},\"Item2\":{\"Line\":1,\"Column\":72}}}]}]]},\"Signature\":{\"TypeParameters\":[],\"ArgumentType\":{\"Case\":\"TupleType\",\"Fields\":[[{\"Case\":\"Int\"},{\"Case\":\"Bool\"}]]},\"ReturnType\":{\"Case\":\"TupleType\",\"Fields\":[[{\"Case\":\"Int\"},{\"Case\":\"Int\"}]]},\"Information\":{\"Characteristics\":{\"Case\":\"EmptySet\"},\"InferredInformation\":{\"IsSelfAdjoint\":false,\"IsIntrinsic\":false}}},\"Documentation\":[\" # Summary\",\" Uses Shor's algorithm to factor the parameter `number`\",\"\",\" # Input\",\" ## number\",\" A semiprime integer to be factored\",\" ## useRobustPhaseEstimation\",\" If set to true, we use Microsoft.Quantum.Characterization.RobustPhaseEstimation and\",\" Microsoft.Quantum.Characterization.QuantumPhaseEstimation otherwise\",\"\",\" # Output\",\" Pair of numbers p > 1 and q > 1 such that p⋅q = `number`\"]}")]
+[assembly: SpecializationDeclaration("{\"Kind\":{\"Case\":\"QsBody\"},\"TypeArguments\":{\"Case\":\"Null\"},\"Information\":{\"Characteristics\":{\"Case\":\"EmptySet\"},\"InferredInformation\":{\"IsSelfAdjoint\":false,\"IsIntrinsic\":false}},\"Parent\":{\"Namespace\":\"Microsoft.Quantum.Samples.IntegerFactorization\",\"Name\":\"FactorSemiprimeInteger\"},\"Attributes\":[],\"SourceFile\":\"/Users/Matt/Documents/Masters/Dissertation/QSharp/Microsoft_Shor/quantum/Operations.qs\",\"Position\":{\"Item1\":34,\"Item2\":4},\"HeaderRange\":{\"Item1\":{\"Line\":1,\"Column\":11},\"Item2\":{\"Line\":1,\"Column\":33}},\"Documentation\":[]}")]
+[assembly: CallableDeclaration("{\"Kind\":{\"Case\":\"Operation\"},\"QualifiedName\":{\"Namespace\":\"Microsoft.Quantum.Samples.IntegerFactorization\",\"Name\":\"ApplyOrderFindingOracle\"},\"Attributes\":[],\"Modifiers\":{\"Access\":{\"Case\":\"DefaultAccess\"}},\"SourceFile\":\"/Users/Matt/Documents/Masters/Dissertation/QSharp/Microsoft_Shor/quantum/Operations.qs\",\"Position\":{\"Item1\":112,\"Item2\":4},\"SymbolRange\":{\"Item1\":{\"Line\":1,\"Column\":11},\"Item2\":{\"Line\":1,\"Column\":34}},\"ArgumentTuple\":{\"Case\":\"QsTuple\",\"Fields\":[[{\"Case\":\"QsTupleItem\",\"Fields\":[{\"VariableName\":{\"Case\":\"ValidName\",\"Fields\":[\"generator\"]},\"Type\":{\"Case\":\"Int\"},\"InferredInformation\":{\"IsMutable\":false,\"HasLocalQuantumDependency\":false},\"Position\":{\"Case\":\"Null\"},\"Range\":{\"Item1\":{\"Line\":2,\"Column\":9},\"Item2\":{\"Line\":2,\"Column\":18}}}]},{\"Case\":\"QsTupleItem\",\"Fields\":[{\"VariableName\":{\"Case\":\"ValidName\",\"Fields\":[\"modulus\"]},\"Type\":{\"Case\":\"Int\"},\"InferredInformation\":{\"IsMutable\":false,\"HasLocalQuantumDependency\":false},\"Position\":{\"Case\":\"Null\"},\"Range\":{\"Item1\":{\"Line\":2,\"Column\":26},\"Item2\":{\"Line\":2,\"Column\":33}}}]},{\"Case\":\"QsTupleItem\",\"Fields\":[{\"VariableName\":{\"Case\":\"ValidName\",\"Fields\":[\"power\"]},\"Type\":{\"Case\":\"Int\"},\"InferredInformation\":{\"IsMutable\":false,\"HasLocalQuantumDependency\":false},\"Position\":{\"Case\":\"Null\"},\"Range\":{\"Item1\":{\"Line\":2,\"Column\":41},\"Item2\":{\"Line\":2,\"Column\":46}}}]},{\"Case\":\"QsTupleItem\",\"Fields\":[{\"VariableName\":{\"Case\":\"ValidName\",\"Fields\":[\"target\"]},\"Type\":{\"Case\":\"ArrayType\",\"Fields\":[{\"Case\":\"Qubit\"}]},\"InferredInformation\":{\"IsMutable\":false,\"HasLocalQuantumDependency\":false},\"Position\":{\"Case\":\"Null\"},\"Range\":{\"Item1\":{\"Line\":2,\"Column\":54},\"Item2\":{\"Line\":2,\"Column\":60}}}]}]]},\"Signature\":{\"TypeParameters\":[],\"ArgumentType\":{\"Case\":\"TupleType\",\"Fields\":[[{\"Case\":\"Int\"},{\"Case\":\"Int\"},{\"Case\":\"Int\"},{\"Case\":\"ArrayType\",\"Fields\":[{\"Case\":\"Qubit\"}]}]]},\"ReturnType\":{\"Case\":\"UnitType\"},\"Information\":{\"Characteristics\":{\"Case\":\"Union\",\"Fields\":[{\"Case\":\"SimpleSet\",\"Fields\":[{\"Case\":\"Adjointable\"}]},{\"Case\":\"SimpleSet\",\"Fields\":[{\"Case\":\"Controllable\"}]}]},\"InferredInformation\":{\"IsSelfAdjoint\":false,\"IsIntrinsic\":false}}},\"Documentation\":[\" # Summary\",\" Interprets `target` as encoding unsigned little-endian integer k\",\" and performs transformation |k⟩ ↦ |gᵖ⋅k mod N ⟩ where\",\" p is `power`, g is `generator` and N is `modulus`.\",\"\",\" # Input\",\" ## generator\",\" The unsigned integer multiplicative order ( period )\",\" of which is being estimated. Must be co-prime to `modulus`.\",\" ## modulus\",\" The modulus which defines the residue ring Z mod `modulus`\",\" in which the multiplicative order of `generator` is being estimated.\",\" ## power\",\" Power of `generator` by which `target` is multiplied.\",\" ## target\",\" Register interpreted as LittleEndian which is multiplied by\",\" given power of the generator. The multiplication is performed modulo\",\" `modulus`.\"]}")]
+[assembly: SpecializationDeclaration("{\"Kind\":{\"Case\":\"QsBody\"},\"TypeArguments\":{\"Case\":\"Null\"},\"Information\":{\"Characteristics\":{\"Case\":\"Union\",\"Fields\":[{\"Case\":\"SimpleSet\",\"Fields\":[{\"Case\":\"Adjointable\"}]},{\"Case\":\"SimpleSet\",\"Fields\":[{\"Case\":\"Controllable\"}]}]},\"InferredInformation\":{\"IsSelfAdjoint\":false,\"IsIntrinsic\":false}},\"Parent\":{\"Namespace\":\"Microsoft.Quantum.Samples.IntegerFactorization\",\"Name\":\"ApplyOrderFindingOracle\"},\"Attributes\":[],\"SourceFile\":\"/Users/Matt/Documents/Masters/Dissertation/QSharp/Microsoft_Shor/quantum/Operations.qs\",\"Position\":{\"Item1\":112,\"Item2\":4},\"HeaderRange\":{\"Item1\":{\"Line\":1,\"Column\":11},\"Item2\":{\"Line\":1,\"Column\":34}},\"Documentation\":[]}")]
+[assembly: SpecializationDeclaration("{\"Kind\":{\"Case\":\"QsAdjoint\"},\"TypeArguments\":{\"Case\":\"Null\"},\"Information\":{\"Characteristics\":{\"Case\":\"Union\",\"Fields\":[{\"Case\":\"SimpleSet\",\"Fields\":[{\"Case\":\"Adjointable\"}]},{\"Case\":\"SimpleSet\",\"Fields\":[{\"Case\":\"Controllable\"}]}]},\"InferredInformation\":{\"IsSelfAdjoint\":false,\"IsIntrinsic\":false}},\"Parent\":{\"Namespace\":\"Microsoft.Quantum.Samples.IntegerFactorization\",\"Name\":\"ApplyOrderFindingOracle\"},\"Attributes\":[],\"SourceFile\":\"/Users/Matt/Documents/Masters/Dissertation/QSharp/Microsoft_Shor/quantum/Operations.qs\",\"Position\":{\"Item1\":112,\"Item2\":4},\"HeaderRange\":{\"Item1\":{\"Line\":5,\"Column\":8},\"Item2\":{\"Line\":5,\"Column\":17}},\"Documentation\":[\"automatically generated QsAdjoint specialization for Microsoft.Quantum.Samples.IntegerFactorization.ApplyOrderFindingOracle\"]}")]
+[assembly: SpecializationDeclaration("{\"Kind\":{\"Case\":\"QsControlled\"},\"TypeArguments\":{\"Case\":\"Null\"},\"Information\":{\"Characteristics\":{\"Case\":\"Union\",\"Fields\":[{\"Case\":\"SimpleSet\",\"Fields\":[{\"Case\":\"Adjointable\"}]},{\"Case\":\"SimpleSet\",\"Fields\":[{\"Case\":\"Controllable\"}]}]},\"InferredInformation\":{\"IsSelfAdjoint\":false,\"IsIntrinsic\":false}},\"Parent\":{\"Namespace\":\"Microsoft.Quantum.Samples.IntegerFactorization\",\"Name\":\"ApplyOrderFindingOracle\"},\"Attributes\":[],\"SourceFile\":\"/Users/Matt/Documents/Masters/Dissertation/QSharp/Microsoft_Shor/quantum/Operations.qs\",\"Position\":{\"Item1\":112,\"Item2\":4},\"HeaderRange\":{\"Item1\":{\"Line\":5,\"Column\":8},\"Item2\":{\"Line\":5,\"Column\":17}},\"Documentation\":[\"automatically generated QsControlled specialization for Microsoft.Quantum.Samples.IntegerFactorization.ApplyOrderFindingOracle\"]}")]
+[assembly: SpecializationDeclaration("{\"Kind\":{\"Case\":\"QsControlledAdjoint\"},\"TypeArguments\":{\"Case\":\"Null\"},\"Information\":{\"Characteristics\":{\"Case\":\"Union\",\"Fields\":[{\"Case\":\"SimpleSet\",\"Fields\":[{\"Case\":\"Adjointable\"}]},{\"Case\":\"SimpleSet\",\"Fields\":[{\"Case\":\"Controllable\"}]}]},\"InferredInformation\":{\"IsSelfAdjoint\":false,\"IsIntrinsic\":false}},\"Parent\":{\"Namespace\":\"Microsoft.Quantum.Samples.IntegerFactorization\",\"Name\":\"ApplyOrderFindingOracle\"},\"Attributes\":[],\"SourceFile\":\"/Users/Matt/Documents/Masters/Dissertation/QSharp/Microsoft_Shor/quantum/Operations.qs\",\"Position\":{\"Item1\":112,\"Item2\":4},\"HeaderRange\":{\"Item1\":{\"Line\":5,\"Column\":8},\"Item2\":{\"Line\":5,\"Column\":17}},\"Documentation\":[\"automatically generated QsControlledAdjoint specialization for Microsoft.Quantum.Samples.IntegerFactorization.ApplyOrderFindingOracle\"]}")]
+[assembly: CallableDeclaration("{\"Kind\":{\"Case\":\"Operation\"},\"QualifiedName\":{\"Namespace\":\"Microsoft.Quantum.Samples.IntegerFactorization\",\"Name\":\"EstimatePeriod\"},\"Attributes\":[],\"Modifiers\":{\"Access\":{\"Case\":\"DefaultAccess\"}},\"SourceFile\":\"/Users/Matt/Documents/Masters/Dissertation/QSharp/Microsoft_Shor/quantum/Operations.qs\",\"Position\":{\"Item1\":148,\"Item2\":4},\"SymbolRange\":{\"Item1\":{\"Line\":1,\"Column\":11},\"Item2\":{\"Line\":1,\"Column\":25}},\"ArgumentTuple\":{\"Case\":\"QsTuple\",\"Fields\":[[{\"Case\":\"QsTupleItem\",\"Fields\":[{\"VariableName\":{\"Case\":\"ValidName\",\"Fields\":[\"generator\"]},\"Type\":{\"Case\":\"Int\"},\"InferredInformation\":{\"IsMutable\":false,\"HasLocalQuantumDependency\":false},\"Position\":{\"Case\":\"Null\"},\"Range\":{\"Item1\":{\"Line\":2,\"Column\":9},\"Item2\":{\"Line\":2,\"Column\":18}}}]},{\"Case\":\"QsTupleItem\",\"Fields\":[{\"VariableName\":{\"Case\":\"ValidName\",\"Fields\":[\"modulus\"]},\"Type\":{\"Case\":\"Int\"},\"InferredInformation\":{\"IsMutable\":false,\"HasLocalQuantumDependency\":false},\"Position\":{\"Case\":\"Null\"},\"Range\":{\"Item1\":{\"Line\":2,\"Column\":26},\"Item2\":{\"Line\":2,\"Column\":33}}}]},{\"Case\":\"QsTupleItem\",\"Fields\":[{\"VariableName\":{\"Case\":\"ValidName\",\"Fields\":[\"useRobustPhaseEstimation\"]},\"Type\":{\"Case\":\"Bool\"},\"InferredInformation\":{\"IsMutable\":false,\"HasLocalQuantumDependency\":false},\"Position\":{\"Case\":\"Null\"},\"Range\":{\"Item1\":{\"Line\":2,\"Column\":41},\"Item2\":{\"Line\":2,\"Column\":65}}}]}]]},\"Signature\":{\"TypeParameters\":[],\"ArgumentType\":{\"Case\":\"TupleType\",\"Fields\":[[{\"Case\":\"Int\"},{\"Case\":\"Int\"},{\"Case\":\"Bool\"}]]},\"ReturnType\":{\"Case\":\"Int\"},\"Information\":{\"Characteristics\":{\"Case\":\"EmptySet\"},\"InferredInformation\":{\"IsSelfAdjoint\":false,\"IsIntrinsic\":false}}},\"Documentation\":[\" # Summary\",\" Finds a multiplicative order of the generator\",\" in the residue ring Z mod `modulus`.\",\"\",\" # Input\",\" ## generator\",\" The unsigned integer multiplicative order ( period )\",\" of which is being estimated. Must be co-prime to `modulus`.\",\" ## modulus\",\" The modulus which defines the residue ring Z mod `modulus`\",\" in which the multiplicative order of `generator` is being estimated.\",\" ## useRobustPhaseEstimation\",\" If set to true, we use Microsoft.Quantum.Characterization.RobustPhaseEstimation and\",\" Microsoft.Quantum.Characterization.QuantumPhaseEstimation\",\"\",\" # Output\",\" The period ( multiplicative order ) of the generator mod `modulus`\"]}")]
+[assembly: SpecializationDeclaration("{\"Kind\":{\"Case\":\"QsBody\"},\"TypeArguments\":{\"Case\":\"Null\"},\"Information\":{\"Characteristics\":{\"Case\":\"EmptySet\"},\"InferredInformation\":{\"IsSelfAdjoint\":false,\"IsIntrinsic\":false}},\"Parent\":{\"Namespace\":\"Microsoft.Quantum.Samples.IntegerFactorization\",\"Name\":\"EstimatePeriod\"},\"Attributes\":[],\"SourceFile\":\"/Users/Matt/Documents/Masters/Dissertation/QSharp/Microsoft_Shor/quantum/Operations.qs\",\"Position\":{\"Item1\":148,\"Item2\":4},\"HeaderRange\":{\"Item1\":{\"Line\":1,\"Column\":11},\"Item2\":{\"Line\":1,\"Column\":25}},\"Documentation\":[]}")]
+[assembly: CallableDeclaration("{\"Kind\":{\"Case\":\"Operation\"},\"QualifiedName\":{\"Namespace\":\"Microsoft.Quantum.Samples.IntegerFactorization\",\"Name\":\"EstimateFrequency\"},\"Attributes\":[],\"Modifiers\":{\"Access\":{\"Case\":\"DefaultAccess\"}},\"SourceFile\":\"/Users/Matt/Documents/Masters/Dissertation/QSharp/Microsoft_Shor/quantum/Operations.qs\",\"Position\":{\"Item1\":216,\"Item2\":4},\"SymbolRange\":{\"Item1\":{\"Line\":1,\"Column\":11},\"Item2\":{\"Line\":1,\"Column\":28}},\"ArgumentTuple\":{\"Case\":\"QsTuple\",\"Fields\":[[{\"Case\":\"QsTupleItem\",\"Fields\":[{\"VariableName\":{\"Case\":\"ValidName\",\"Fields\":[\"generator\"]},\"Type\":{\"Case\":\"Int\"},\"InferredInformation\":{\"IsMutable\":false,\"HasLocalQuantumDependency\":false},\"Position\":{\"Case\":\"Null\"},\"Range\":{\"Item1\":{\"Line\":2,\"Column\":9},\"Item2\":{\"Line\":2,\"Column\":18}}}]},{\"Case\":\"QsTupleItem\",\"Fields\":[{\"VariableName\":{\"Case\":\"ValidName\",\"Fields\":[\"modulus\"]},\"Type\":{\"Case\":\"Int\"},\"InferredInformation\":{\"IsMutable\":false,\"HasLocalQuantumDependency\":false},\"Position\":{\"Case\":\"Null\"},\"Range\":{\"Item1\":{\"Line\":3,\"Column\":9},\"Item2\":{\"Line\":3,\"Column\":16}}}]},{\"Case\":\"QsTupleItem\",\"Fields\":[{\"VariableName\":{\"Case\":\"ValidName\",\"Fields\":[\"useRobustPhaseEstimation\"]},\"Type\":{\"Case\":\"Bool\"},\"InferredInformation\":{\"IsMutable\":false,\"HasLocalQuantumDependency\":false},\"Position\":{\"Case\":\"Null\"},\"Range\":{\"Item1\":{\"Line\":4,\"Column\":9},\"Item2\":{\"Line\":4,\"Column\":33}}}]},{\"Case\":\"QsTupleItem\",\"Fields\":[{\"VariableName\":{\"Case\":\"ValidName\",\"Fields\":[\"bitsize\"]},\"Type\":{\"Case\":\"Int\"},\"InferredInformation\":{\"IsMutable\":false,\"HasLocalQuantumDependency\":false},\"Position\":{\"Case\":\"Null\"},\"Range\":{\"Item1\":{\"Line\":5,\"Column\":9},\"Item2\":{\"Line\":5,\"Column\":16}}}]}]]},\"Signature\":{\"TypeParameters\":[],\"ArgumentType\":{\"Case\":\"TupleType\",\"Fields\":[[{\"Case\":\"Int\"},{\"Case\":\"Int\"},{\"Case\":\"Bool\"},{\"Case\":\"Int\"}]]},\"ReturnType\":{\"Case\":\"Int\"},\"Information\":{\"Characteristics\":{\"Case\":\"EmptySet\"},\"InferredInformation\":{\"IsSelfAdjoint\":false,\"IsIntrinsic\":false}}},\"Documentation\":[\" # Summary\",\" Estimates the frequency of a generator\",\" in the residue ring Z mod `modulus`.\",\"\",\" # Input\",\" ## generator\",\" The unsigned integer multiplicative order ( period )\",\" of which is being estimated. Must be co-prime to `modulus`.\",\" ## modulus\",\" The modulus which defines the residue ring Z mod `modulus`\",\" in which the multiplicative order of `generator` is being estimated.\",\" ## useRobustPhaseEstimation\",\" If set to true, we use Microsoft.Quantum.Characterization.RobustPhaseEstimation else\",\" this operation uses Microsoft.Quantum.Characterization.QuantumPhaseEstimation\",\" ## bitsize\",\" Number of bits needed to represent the modulus.\",\"\",\" # Output\",\" The numerator k of dyadic fraction k/2^bitsPrecision\",\" approximating s/r.\"]}")]
+[assembly: SpecializationDeclaration("{\"Kind\":{\"Case\":\"QsBody\"},\"TypeArguments\":{\"Case\":\"Null\"},\"Information\":{\"Characteristics\":{\"Case\":\"EmptySet\"},\"InferredInformation\":{\"IsSelfAdjoint\":false,\"IsIntrinsic\":false}},\"Parent\":{\"Namespace\":\"Microsoft.Quantum.Samples.IntegerFactorization\",\"Name\":\"EstimateFrequency\"},\"Attributes\":[],\"SourceFile\":\"/Users/Matt/Documents/Masters/Dissertation/QSharp/Microsoft_Shor/quantum/Operations.qs\",\"Position\":{\"Item1\":216,\"Item2\":4},\"HeaderRange\":{\"Item1\":{\"Line\":1,\"Column\":11},\"Item2\":{\"Line\":1,\"Column\":28}},\"Documentation\":[]}")]
+[assembly: CallableDeclaration("{\"Kind\":{\"Case\":\"Function\"},\"QualifiedName\":{\"Namespace\":\"Microsoft.Quantum.Samples.IntegerFactorization\",\"Name\":\"PeriodFromFrequency\"},\"Attributes\":[],\"Modifiers\":{\"Access\":{\"Case\":\"DefaultAccess\"}},\"SourceFile\":\"/Users/Matt/Documents/Masters/Dissertation/QSharp/Microsoft_Shor/quantum/Operations.qs\",\"Position\":{\"Item1\":305,\"Item2\":4},\"SymbolRange\":{\"Item1\":{\"Line\":1,\"Column\":10},\"Item2\":{\"Line\":1,\"Column\":29}},\"ArgumentTuple\":{\"Case\":\"QsTuple\",\"Fields\":[[{\"Case\":\"QsTupleItem\",\"Fields\":[{\"VariableName\":{\"Case\":\"ValidName\",\"Fields\":[\"modulus\"]},\"Type\":{\"Case\":\"Int\"},\"InferredInformation\":{\"IsMutable\":false,\"HasLocalQuantumDependency\":false},\"Position\":{\"Case\":\"Null\"},\"Range\":{\"Item1\":{\"Line\":2,\"Column\":9},\"Item2\":{\"Line\":2,\"Column\":16}}}]},{\"Case\":\"QsTupleItem\",\"Fields\":[{\"VariableName\":{\"Case\":\"ValidName\",\"Fields\":[\"frequencyEstimate\"]},\"Type\":{\"Case\":\"Int\"},\"InferredInformation\":{\"IsMutable\":false,\"HasLocalQuantumDependency\":false},\"Position\":{\"Case\":\"Null\"},\"Range\":{\"Item1\":{\"Line\":3,\"Column\":9},\"Item2\":{\"Line\":3,\"Column\":26}}}]},{\"Case\":\"QsTupleItem\",\"Fields\":[{\"VariableName\":{\"Case\":\"ValidName\",\"Fields\":[\"bitsPrecision\"]},\"Type\":{\"Case\":\"Int\"},\"InferredInformation\":{\"IsMutable\":false,\"HasLocalQuantumDependency\":false},\"Position\":{\"Case\":\"Null\"},\"Range\":{\"Item1\":{\"Line\":4,\"Column\":9},\"Item2\":{\"Line\":4,\"Column\":22}}}]},{\"Case\":\"QsTupleItem\",\"Fields\":[{\"VariableName\":{\"Case\":\"ValidName\",\"Fields\":[\"currentDivisor\"]},\"Type\":{\"Case\":\"Int\"},\"InferredInformation\":{\"IsMutable\":false,\"HasLocalQuantumDependency\":false},\"Position\":{\"Case\":\"Null\"},\"Range\":{\"Item1\":{\"Line\":5,\"Column\":9},\"Item2\":{\"Line\":5,\"Column\":23}}}]}]]},\"Signature\":{\"TypeParameters\":[],\"ArgumentType\":{\"Case\":\"TupleType\",\"Fields\":[[{\"Case\":\"Int\"},{\"Case\":\"Int\"},{\"Case\":\"Int\"},{\"Case\":\"Int\"}]]},\"ReturnType\":{\"Case\":\"Int\"},\"Information\":{\"Characteristics\":{\"Case\":\"EmptySet\"},\"InferredInformation\":{\"IsSelfAdjoint\":false,\"IsIntrinsic\":false}}},\"Documentation\":[\" # Summary\",\" Find the period of a number from an input frequency.\",\"\",\" # Input\",\" ## modulus\",\" The modulus which defines the residue ring Z mod `modulus`\",\" in which the multiplicative order of `generator` is being estimated.\",\" ## frequencyEstimate\",\" The frequency that we want to convert to a period.\",\" ## bitsPrecision\",\" Number of bits of precision with which we need to\",\" estimate s/r to recover period r using continued\",\" fractions algorithm.\",\" ## currentDivisor\",\" The divisor of the generator period found so far.\",\"\",\" # Output\",\" The period as calculated from the estimated frequency via\",\" the continued fractions algorithm.\",\"\",\" # See Also\",\" - Microsoft.Quantum.Math.ContinuedFractionConvergentI\"]}")]
+[assembly: SpecializationDeclaration("{\"Kind\":{\"Case\":\"QsBody\"},\"TypeArguments\":{\"Case\":\"Null\"},\"Information\":{\"Characteristics\":{\"Case\":\"EmptySet\"},\"InferredInformation\":{\"IsSelfAdjoint\":false,\"IsIntrinsic\":false}},\"Parent\":{\"Namespace\":\"Microsoft.Quantum.Samples.IntegerFactorization\",\"Name\":\"PeriodFromFrequency\"},\"Attributes\":[],\"SourceFile\":\"/Users/Matt/Documents/Masters/Dissertation/QSharp/Microsoft_Shor/quantum/Operations.qs\",\"Position\":{\"Item1\":305,\"Item2\":4},\"HeaderRange\":{\"Item1\":{\"Line\":1,\"Column\":10},\"Item2\":{\"Line\":1,\"Column\":29}},\"Documentation\":[]}")]
+[assembly: CallableDeclaration("{\"Kind\":{\"Case\":\"Function\"},\"QualifiedName\":{\"Namespace\":\"Microsoft.Quantum.Samples.IntegerFactorization\",\"Name\":\"MaybeFactorsFromPeriod\"},\"Attributes\":[],\"Modifiers\":{\"Access\":{\"Case\":\"DefaultAccess\"}},\"SourceFile\":\"/Users/Matt/Documents/Masters/Dissertation/QSharp/Microsoft_Shor/quantum/Operations.qs\",\"Position\":{\"Item1\":348,\"Item2\":4},\"SymbolRange\":{\"Item1\":{\"Line\":1,\"Column\":10},\"Item2\":{\"Line\":1,\"Column\":32}},\"ArgumentTuple\":{\"Case\":\"QsTuple\",\"Fields\":[[{\"Case\":\"QsTupleItem\",\"Fields\":[{\"VariableName\":{\"Case\":\"ValidName\",\"Fields\":[\"modulus\"]},\"Type\":{\"Case\":\"Int\"},\"InferredInformation\":{\"IsMutable\":false,\"HasLocalQuantumDependency\":false},\"Position\":{\"Case\":\"Null\"},\"Range\":{\"Item1\":{\"Line\":1,\"Column\":33},\"Item2\":{\"Line\":1,\"Column\":40}}}]},{\"Case\":\"QsTupleItem\",\"Fields\":[{\"VariableName\":{\"Case\":\"ValidName\",\"Fields\":[\"generator\"]},\"Type\":{\"Case\":\"Int\"},\"InferredInformation\":{\"IsMutable\":false,\"HasLocalQuantumDependency\":false},\"Position\":{\"Case\":\"Null\"},\"Range\":{\"Item1\":{\"Line\":1,\"Column\":48},\"Item2\":{\"Line\":1,\"Column\":57}}}]},{\"Case\":\"QsTupleItem\",\"Fields\":[{\"VariableName\":{\"Case\":\"ValidName\",\"Fields\":[\"period\"]},\"Type\":{\"Case\":\"Int\"},\"InferredInformation\":{\"IsMutable\":false,\"HasLocalQuantumDependency\":false},\"Position\":{\"Case\":\"Null\"},\"Range\":{\"Item1\":{\"Line\":1,\"Column\":65},\"Item2\":{\"Line\":1,\"Column\":71}}}]}]]},\"Signature\":{\"TypeParameters\":[],\"ArgumentType\":{\"Case\":\"TupleType\",\"Fields\":[[{\"Case\":\"Int\"},{\"Case\":\"Int\"},{\"Case\":\"Int\"}]]},\"ReturnType\":{\"Case\":\"TupleType\",\"Fields\":[[{\"Case\":\"Bool\"},{\"Case\":\"TupleType\",\"Fields\":[[{\"Case\":\"Int\"},{\"Case\":\"Int\"}]]}]]},\"Information\":{\"Characteristics\":{\"Case\":\"EmptySet\"},\"InferredInformation\":{\"IsSelfAdjoint\":false,\"IsIntrinsic\":false}}},\"Documentation\":[\" # Summary\",\" Tries to find the factors of `modulus` given a `period` and `generator`.\",\"\",\" # Input\",\" ## modulus\",\" The modulus which defines the residue ring Z mod `modulus`\",\" in which the multiplicative order of `generator` is being estimated.\",\" ## generator\",\" The unsigned integer multiplicative order ( period )\",\" of which is being estimated. Must be co-prime to `modulus`.\",\" ## period\",\" The estimated period ( multiplicative order ) of the generator mod `modulus`.\",\"\",\" # Output\",\" A tuple of a flag indicating whether factors were found successfully,\",\" and a pair of integers representing the factors that were found.\",\" Note that the second output is only meaningful when the first\",\" output is `true`.\",\"\",\" # See Also\",\" - Microsoft.Quantum.Math.GreatestCommonDivisorI\"]}")]
+[assembly: SpecializationDeclaration("{\"Kind\":{\"Case\":\"QsBody\"},\"TypeArguments\":{\"Case\":\"Null\"},\"Information\":{\"Characteristics\":{\"Case\":\"EmptySet\"},\"InferredInformation\":{\"IsSelfAdjoint\":false,\"IsIntrinsic\":false}},\"Parent\":{\"Namespace\":\"Microsoft.Quantum.Samples.IntegerFactorization\",\"Name\":\"MaybeFactorsFromPeriod\"},\"Attributes\":[],\"SourceFile\":\"/Users/Matt/Documents/Masters/Dissertation/QSharp/Microsoft_Shor/quantum/Operations.qs\",\"Position\":{\"Item1\":348,\"Item2\":4},\"HeaderRange\":{\"Item1\":{\"Line\":1,\"Column\":10},\"Item2\":{\"Line\":1,\"Column\":32}},\"Documentation\":[]}")]
 #line hidden
 namespace Microsoft.Quantum.Samples.IntegerFactorization
 {
-    [SourceLocation("/Users/Matt/Documents/Masters/Dissertation/Q%23/Shor/quantum/Operations.qs", OperationFunctor.Body, 35, 113)]
+    [SourceLocation("/Users/Matt/Documents/Masters/Dissertation/QSharp/Microsoft_Shor/quantum/Operations.qs", OperationFunctor.Body, 35, 113)]
     public partial class FactorSemiprimeInteger : Operation<(Int64,Boolean), (Int64,Int64)>, ICallable
     {
         public FactorSemiprimeInteger(IOperationFactory m) : base(m)
@@ -97,43 +97,43 @@ namespace Microsoft.Quantum.Samples.IntegerFactorization
         public override Func<(Int64,Boolean), (Int64,Int64)> Body => (__in__) =>
         {
             var (number,useRobustPhaseEstimation) = __in__;
-#line 38 "/Users/Matt/Documents/Masters/Dissertation/Q%23/Shor/quantum/Operations.qs"
+#line 38 "/Users/Matt/Documents/Masters/Dissertation/QSharp/Microsoft_Shor/quantum/Operations.qs"
             if (((number % 2L) == 0L))
             {
-#line 39 "/Users/Matt/Documents/Masters/Dissertation/Q%23/Shor/quantum/Operations.qs"
+#line 39 "/Users/Matt/Documents/Masters/Dissertation/QSharp/Microsoft_Shor/quantum/Operations.qs"
                 MicrosoftQuantumIntrinsicMessage.Apply("An even number has been given; 2 is a factor.");
-#line 40 "/Users/Matt/Documents/Masters/Dissertation/Q%23/Shor/quantum/Operations.qs"
+#line 40 "/Users/Matt/Documents/Masters/Dissertation/QSharp/Microsoft_Shor/quantum/Operations.qs"
                 return ((number / 2L), 2L);
             }
 
-#line 45 "/Users/Matt/Documents/Masters/Dissertation/Q%23/Shor/quantum/Operations.qs"
+#line 45 "/Users/Matt/Documents/Masters/Dissertation/QSharp/Microsoft_Shor/quantum/Operations.qs"
             var foundFactors = false;
-#line 46 "/Users/Matt/Documents/Masters/Dissertation/Q%23/Shor/quantum/Operations.qs"
+#line 46 "/Users/Matt/Documents/Masters/Dissertation/QSharp/Microsoft_Shor/quantum/Operations.qs"
             var factors = (1L, 1L);
-#line 48 "/Users/Matt/Documents/Masters/Dissertation/Q%23/Shor/quantum/Operations.qs"
+#line 48 "/Users/Matt/Documents/Masters/Dissertation/QSharp/Microsoft_Shor/quantum/Operations.qs"
             while (true)
             {
-#line 51 "/Users/Matt/Documents/Masters/Dissertation/Q%23/Shor/quantum/Operations.qs"
+#line 51 "/Users/Matt/Documents/Masters/Dissertation/QSharp/Microsoft_Shor/quantum/Operations.qs"
                 var generator = (MicrosoftQuantumMathRandomInt.Apply((number - 2L)) + 1L);
-#line 56 "/Users/Matt/Documents/Masters/Dissertation/Q%23/Shor/quantum/Operations.qs"
+#line 56 "/Users/Matt/Documents/Masters/Dissertation/QSharp/Microsoft_Shor/quantum/Operations.qs"
                 if (MicrosoftQuantumMathIsCoprimeI.Apply((generator, number)))
                 {
-#line 60 "/Users/Matt/Documents/Masters/Dissertation/Q%23/Shor/quantum/Operations.qs"
+#line 60 "/Users/Matt/Documents/Masters/Dissertation/QSharp/Microsoft_Shor/quantum/Operations.qs"
                     MicrosoftQuantumIntrinsicMessage.Apply(String.Format("Estimating period of {0}", generator));
-#line 65 "/Users/Matt/Documents/Masters/Dissertation/Q%23/Shor/quantum/Operations.qs"
+#line 65 "/Users/Matt/Documents/Masters/Dissertation/QSharp/Microsoft_Shor/quantum/Operations.qs"
                     var period = EstimatePeriod.Apply((generator, number, useRobustPhaseEstimation));
-#line 69 "/Users/Matt/Documents/Masters/Dissertation/Q%23/Shor/quantum/Operations.qs"
+#line 69 "/Users/Matt/Documents/Masters/Dissertation/QSharp/Microsoft_Shor/quantum/Operations.qs"
                     (foundFactors, factors) = MaybeFactorsFromPeriod.Apply((number, generator, period));
                 }
                 else
                 {
-#line 74 "/Users/Matt/Documents/Masters/Dissertation/Q%23/Shor/quantum/Operations.qs"
+#line 74 "/Users/Matt/Documents/Masters/Dissertation/QSharp/Microsoft_Shor/quantum/Operations.qs"
                     var gcd = MicrosoftQuantumMathGreatestCommonDivisorI.Apply((number, generator));
-#line 78 "/Users/Matt/Documents/Masters/Dissertation/Q%23/Shor/quantum/Operations.qs"
+#line 78 "/Users/Matt/Documents/Masters/Dissertation/QSharp/Microsoft_Shor/quantum/Operations.qs"
                     MicrosoftQuantumIntrinsicMessage.Apply(String.Format("We have guessed a divisor of {0} to be {1} by accident.", number, gcd));
-#line 82 "/Users/Matt/Documents/Masters/Dissertation/Q%23/Shor/quantum/Operations.qs"
+#line 82 "/Users/Matt/Documents/Masters/Dissertation/QSharp/Microsoft_Shor/quantum/Operations.qs"
                     foundFactors = true;
-#line 83 "/Users/Matt/Documents/Masters/Dissertation/Q%23/Shor/quantum/Operations.qs"
+#line 83 "/Users/Matt/Documents/Masters/Dissertation/QSharp/Microsoft_Shor/quantum/Operations.qs"
                     factors = (gcd, (number / gcd));
                 }
 
@@ -143,12 +143,12 @@ namespace Microsoft.Quantum.Samples.IntegerFactorization
                 }
                 else
                 {
-#line 88 "/Users/Matt/Documents/Masters/Dissertation/Q%23/Shor/quantum/Operations.qs"
+#line 88 "/Users/Matt/Documents/Masters/Dissertation/QSharp/Microsoft_Shor/quantum/Operations.qs"
                     MicrosoftQuantumIntrinsicMessage.Apply("The estimated period did not yield a valid factor, trying again.");
                 }
             }
 
-#line 92 "/Users/Matt/Documents/Masters/Dissertation/Q%23/Shor/quantum/Operations.qs"
+#line 92 "/Users/Matt/Documents/Masters/Dissertation/QSharp/Microsoft_Shor/quantum/Operations.qs"
             return factors;
         }
 
@@ -171,10 +171,10 @@ namespace Microsoft.Quantum.Samples.IntegerFactorization
         }
     }
 
-    [SourceLocation("/Users/Matt/Documents/Masters/Dissertation/Q%23/Shor/quantum/Operations.qs", OperationFunctor.Body, 113, 149)]
-    [SourceLocation("/Users/Matt/Documents/Masters/Dissertation/Q%23/Shor/quantum/Operations.qs", OperationFunctor.Adjoint, 113, 149)]
-    [SourceLocation("/Users/Matt/Documents/Masters/Dissertation/Q%23/Shor/quantum/Operations.qs", OperationFunctor.Controlled, 113, 149)]
-    [SourceLocation("/Users/Matt/Documents/Masters/Dissertation/Q%23/Shor/quantum/Operations.qs", OperationFunctor.ControlledAdjoint, 113, 149)]
+    [SourceLocation("/Users/Matt/Documents/Masters/Dissertation/QSharp/Microsoft_Shor/quantum/Operations.qs", OperationFunctor.Body, 113, 149)]
+    [SourceLocation("/Users/Matt/Documents/Masters/Dissertation/QSharp/Microsoft_Shor/quantum/Operations.qs", OperationFunctor.Adjoint, 113, 149)]
+    [SourceLocation("/Users/Matt/Documents/Masters/Dissertation/QSharp/Microsoft_Shor/quantum/Operations.qs", OperationFunctor.Controlled, 113, 149)]
+    [SourceLocation("/Users/Matt/Documents/Masters/Dissertation/QSharp/Microsoft_Shor/quantum/Operations.qs", OperationFunctor.ControlledAdjoint, 113, 149)]
     public partial class ApplyOrderFindingOracle : Unitary<(Int64,Int64,Int64,IQArray<Qubit>)>, ICallable
     {
         public ApplyOrderFindingOracle(IOperationFactory m) : base(m)
@@ -231,9 +231,9 @@ namespace Microsoft.Quantum.Samples.IntegerFactorization
         public override Func<(Int64,Int64,Int64,IQArray<Qubit>), QVoid> Body => (__in__) =>
         {
             var (generator,modulus,power,target) = __in__;
-#line 119 "/Users/Matt/Documents/Masters/Dissertation/Q%23/Shor/quantum/Operations.qs"
+#line 119 "/Users/Matt/Documents/Masters/Dissertation/QSharp/Microsoft_Shor/quantum/Operations.qs"
             MicrosoftQuantumDiagnosticsFact.Apply((MicrosoftQuantumMathIsCoprimeI.Apply((generator, modulus)), "`generator` and `modulus` must be co-prime"));
-#line 129 "/Users/Matt/Documents/Masters/Dissertation/Q%23/Shor/quantum/Operations.qs"
+#line 129 "/Users/Matt/Documents/Masters/Dissertation/QSharp/Microsoft_Shor/quantum/Operations.qs"
             MicrosoftQuantumArithmeticMultiplyByModularInteger.Apply((MicrosoftQuantumMathExpModI.Apply((generator, power, modulus)), modulus, new Microsoft.Quantum.Arithmetic.LittleEndian(target)));
 #line hidden
             return QVoid.Instance;
@@ -243,9 +243,9 @@ namespace Microsoft.Quantum.Samples.IntegerFactorization
         public override Func<(Int64,Int64,Int64,IQArray<Qubit>), QVoid> AdjointBody => (__in__) =>
         {
             var (generator,modulus,power,target) = __in__;
-#line 113 "/Users/Matt/Documents/Masters/Dissertation/Q%23/Shor/quantum/Operations.qs"
+#line 113 "/Users/Matt/Documents/Masters/Dissertation/QSharp/Microsoft_Shor/quantum/Operations.qs"
             MicrosoftQuantumDiagnosticsFact.Apply((MicrosoftQuantumMathIsCoprimeI.Apply((generator, modulus)), "`generator` and `modulus` must be co-prime"));
-#line 113 "/Users/Matt/Documents/Masters/Dissertation/Q%23/Shor/quantum/Operations.qs"
+#line 113 "/Users/Matt/Documents/Masters/Dissertation/QSharp/Microsoft_Shor/quantum/Operations.qs"
             MicrosoftQuantumArithmeticMultiplyByModularInteger.Adjoint.Apply((MicrosoftQuantumMathExpModI.Apply((generator, power, modulus)), modulus, new Microsoft.Quantum.Arithmetic.LittleEndian(target)));
 #line hidden
             return QVoid.Instance;
@@ -255,9 +255,9 @@ namespace Microsoft.Quantum.Samples.IntegerFactorization
         public override Func<(IQArray<Qubit>,(Int64,Int64,Int64,IQArray<Qubit>)), QVoid> ControlledBody => (__in__) =>
         {
             var (__controlQubits__,(generator,modulus,power,target)) = __in__;
-#line 113 "/Users/Matt/Documents/Masters/Dissertation/Q%23/Shor/quantum/Operations.qs"
+#line 113 "/Users/Matt/Documents/Masters/Dissertation/QSharp/Microsoft_Shor/quantum/Operations.qs"
             MicrosoftQuantumDiagnosticsFact.Apply((MicrosoftQuantumMathIsCoprimeI.Apply((generator, modulus)), "`generator` and `modulus` must be co-prime"));
-#line 113 "/Users/Matt/Documents/Masters/Dissertation/Q%23/Shor/quantum/Operations.qs"
+#line 113 "/Users/Matt/Documents/Masters/Dissertation/QSharp/Microsoft_Shor/quantum/Operations.qs"
             MicrosoftQuantumArithmeticMultiplyByModularInteger.Controlled.Apply((__controlQubits__, (MicrosoftQuantumMathExpModI.Apply((generator, power, modulus)), modulus, new Microsoft.Quantum.Arithmetic.LittleEndian(target))));
 #line hidden
             return QVoid.Instance;
@@ -267,9 +267,9 @@ namespace Microsoft.Quantum.Samples.IntegerFactorization
         public override Func<(IQArray<Qubit>,(Int64,Int64,Int64,IQArray<Qubit>)), QVoid> ControlledAdjointBody => (__in__) =>
         {
             var (__controlQubits__,(generator,modulus,power,target)) = __in__;
-#line 113 "/Users/Matt/Documents/Masters/Dissertation/Q%23/Shor/quantum/Operations.qs"
+#line 113 "/Users/Matt/Documents/Masters/Dissertation/QSharp/Microsoft_Shor/quantum/Operations.qs"
             MicrosoftQuantumDiagnosticsFact.Apply((MicrosoftQuantumMathIsCoprimeI.Apply((generator, modulus)), "`generator` and `modulus` must be co-prime"));
-#line 113 "/Users/Matt/Documents/Masters/Dissertation/Q%23/Shor/quantum/Operations.qs"
+#line 113 "/Users/Matt/Documents/Masters/Dissertation/QSharp/Microsoft_Shor/quantum/Operations.qs"
             MicrosoftQuantumArithmeticMultiplyByModularInteger.Adjoint.Controlled.Apply((__controlQubits__, (MicrosoftQuantumMathExpModI.Apply((generator, power, modulus)), modulus, new Microsoft.Quantum.Arithmetic.LittleEndian(target))));
 #line hidden
             return QVoid.Instance;
@@ -293,7 +293,7 @@ namespace Microsoft.Quantum.Samples.IntegerFactorization
         }
     }
 
-    [SourceLocation("/Users/Matt/Documents/Masters/Dissertation/Q%23/Shor/quantum/Operations.qs", OperationFunctor.Body, 149, 217)]
+    [SourceLocation("/Users/Matt/Documents/Masters/Dissertation/QSharp/Microsoft_Shor/quantum/Operations.qs", OperationFunctor.Body, 149, 217)]
     public partial class EstimatePeriod : Operation<(Int64,Int64,Boolean), Int64>, ICallable
     {
         public EstimatePeriod(IOperationFactory m) : base(m)
@@ -356,30 +356,30 @@ namespace Microsoft.Quantum.Samples.IntegerFactorization
         public override Func<(Int64,Int64,Boolean), Int64> Body => (__in__) =>
         {
             var (generator,modulus,useRobustPhaseEstimation) = __in__;
-#line 154 "/Users/Matt/Documents/Masters/Dissertation/Q%23/Shor/quantum/Operations.qs"
+#line 154 "/Users/Matt/Documents/Masters/Dissertation/QSharp/Microsoft_Shor/quantum/Operations.qs"
             MicrosoftQuantumDiagnosticsFact.Apply((MicrosoftQuantumMathIsCoprimeI.Apply((generator, modulus)), "`generator` and `modulus` must be co-prime"));
-#line 157 "/Users/Matt/Documents/Masters/Dissertation/Q%23/Shor/quantum/Operations.qs"
+#line 157 "/Users/Matt/Documents/Masters/Dissertation/QSharp/Microsoft_Shor/quantum/Operations.qs"
             var result = 1L;
-#line 160 "/Users/Matt/Documents/Masters/Dissertation/Q%23/Shor/quantum/Operations.qs"
+#line 160 "/Users/Matt/Documents/Masters/Dissertation/QSharp/Microsoft_Shor/quantum/Operations.qs"
             var bitsize = MicrosoftQuantumMathBitSizeI.Apply(modulus);
-#line 170 "/Users/Matt/Documents/Masters/Dissertation/Q%23/Shor/quantum/Operations.qs"
+#line 170 "/Users/Matt/Documents/Masters/Dissertation/QSharp/Microsoft_Shor/quantum/Operations.qs"
             var bitsPrecision = ((2L * bitsize) + 1L);
-#line 174 "/Users/Matt/Documents/Masters/Dissertation/Q%23/Shor/quantum/Operations.qs"
+#line 174 "/Users/Matt/Documents/Masters/Dissertation/QSharp/Microsoft_Shor/quantum/Operations.qs"
             var frequencyEstimate = 0L;
-#line 176 "/Users/Matt/Documents/Masters/Dissertation/Q%23/Shor/quantum/Operations.qs"
+#line 176 "/Users/Matt/Documents/Masters/Dissertation/QSharp/Microsoft_Shor/quantum/Operations.qs"
             while (true)
             {
-#line 178 "/Users/Matt/Documents/Masters/Dissertation/Q%23/Shor/quantum/Operations.qs"
+#line 178 "/Users/Matt/Documents/Masters/Dissertation/QSharp/Microsoft_Shor/quantum/Operations.qs"
                 frequencyEstimate = EstimateFrequency.Apply((generator, modulus, useRobustPhaseEstimation, bitsize));
-#line 182 "/Users/Matt/Documents/Masters/Dissertation/Q%23/Shor/quantum/Operations.qs"
+#line 182 "/Users/Matt/Documents/Masters/Dissertation/QSharp/Microsoft_Shor/quantum/Operations.qs"
                 if ((frequencyEstimate != 0L))
                 {
-#line 183 "/Users/Matt/Documents/Masters/Dissertation/Q%23/Shor/quantum/Operations.qs"
+#line 183 "/Users/Matt/Documents/Masters/Dissertation/QSharp/Microsoft_Shor/quantum/Operations.qs"
                     result = PeriodFromFrequency.Apply((modulus, frequencyEstimate, bitsPrecision, result));
                 }
                 else
                 {
-#line 186 "/Users/Matt/Documents/Masters/Dissertation/Q%23/Shor/quantum/Operations.qs"
+#line 186 "/Users/Matt/Documents/Masters/Dissertation/QSharp/Microsoft_Shor/quantum/Operations.qs"
                     MicrosoftQuantumIntrinsicMessage.Apply("The estimated frequency was 0, trying again.");
                 }
 
@@ -389,12 +389,12 @@ namespace Microsoft.Quantum.Samples.IntegerFactorization
                 }
                 else
                 {
-#line 191 "/Users/Matt/Documents/Masters/Dissertation/Q%23/Shor/quantum/Operations.qs"
+#line 191 "/Users/Matt/Documents/Masters/Dissertation/QSharp/Microsoft_Shor/quantum/Operations.qs"
                     MicrosoftQuantumIntrinsicMessage.Apply("The estimated period from continued fractions failed, trying again.");
                 }
             }
 
-#line 194 "/Users/Matt/Documents/Masters/Dissertation/Q%23/Shor/quantum/Operations.qs"
+#line 194 "/Users/Matt/Documents/Masters/Dissertation/QSharp/Microsoft_Shor/quantum/Operations.qs"
             return result;
         }
 
@@ -418,7 +418,7 @@ namespace Microsoft.Quantum.Samples.IntegerFactorization
         }
     }
 
-    [SourceLocation("/Users/Matt/Documents/Masters/Dissertation/Q%23/Shor/quantum/Operations.qs", OperationFunctor.Body, 217, 306)]
+    [SourceLocation("/Users/Matt/Documents/Masters/Dissertation/QSharp/Microsoft_Shor/quantum/Operations.qs", OperationFunctor.Body, 217, 306)]
     public partial class EstimateFrequency : Operation<(Int64,Int64,Boolean,Int64), Int64>, ICallable
     {
         public EstimateFrequency(IOperationFactory m) : base(m)
@@ -523,47 +523,47 @@ namespace Microsoft.Quantum.Samples.IntegerFactorization
         public override Func<(Int64,Int64,Boolean,Int64), Int64> Body => (__in__) =>
         {
             var (generator,modulus,useRobustPhaseEstimation,bitsize) = __in__;
-#line 224 "/Users/Matt/Documents/Masters/Dissertation/Q%23/Shor/quantum/Operations.qs"
+#line 224 "/Users/Matt/Documents/Masters/Dissertation/QSharp/Microsoft_Shor/quantum/Operations.qs"
             var frequencyEstimate = 0L;
-#line 225 "/Users/Matt/Documents/Masters/Dissertation/Q%23/Shor/quantum/Operations.qs"
+#line 225 "/Users/Matt/Documents/Masters/Dissertation/QSharp/Microsoft_Shor/quantum/Operations.qs"
             var bitsPrecision = ((2L * bitsize) + 1L);
 #line hidden
             {
-#line 229 "/Users/Matt/Documents/Masters/Dissertation/Q%23/Shor/quantum/Operations.qs"
+#line 229 "/Users/Matt/Documents/Masters/Dissertation/QSharp/Microsoft_Shor/quantum/Operations.qs"
                 var eigenstateRegister = Allocate.Apply(bitsize);
 #line hidden
                 bool __arg1__ = true;
                 try
                 {
-#line 235 "/Users/Matt/Documents/Masters/Dissertation/Q%23/Shor/quantum/Operations.qs"
+#line 235 "/Users/Matt/Documents/Masters/Dissertation/QSharp/Microsoft_Shor/quantum/Operations.qs"
                     var eigenstateRegisterLE = new Microsoft.Quantum.Arithmetic.LittleEndian(eigenstateRegister);
-#line 236 "/Users/Matt/Documents/Masters/Dissertation/Q%23/Shor/quantum/Operations.qs"
+#line 236 "/Users/Matt/Documents/Masters/Dissertation/QSharp/Microsoft_Shor/quantum/Operations.qs"
                     MicrosoftQuantumArithmeticApplyXorInPlace.Apply((1L, eigenstateRegisterLE));
-#line 240 "/Users/Matt/Documents/Masters/Dissertation/Q%23/Shor/quantum/Operations.qs"
+#line 240 "/Users/Matt/Documents/Masters/Dissertation/QSharp/Microsoft_Shor/quantum/Operations.qs"
                     var oracle = new Microsoft.Quantum.Oracles.DiscreteOracle(ApplyOrderFindingOracle.Partial(new Func<(Int64,IQArray<Qubit>), (Int64,Int64,Int64,IQArray<Qubit>)>((__arg2__) => (generator, modulus, __arg2__.Item1, __arg2__.Item2))));
-#line 242 "/Users/Matt/Documents/Masters/Dissertation/Q%23/Shor/quantum/Operations.qs"
+#line 242 "/Users/Matt/Documents/Masters/Dissertation/QSharp/Microsoft_Shor/quantum/Operations.qs"
                     if (useRobustPhaseEstimation)
                     {
-#line 247 "/Users/Matt/Documents/Masters/Dissertation/Q%23/Shor/quantum/Operations.qs"
+#line 247 "/Users/Matt/Documents/Masters/Dissertation/QSharp/Microsoft_Shor/quantum/Operations.qs"
                         var phase = MicrosoftQuantumCharacterizationRobustPhaseEstimation.Apply((bitsPrecision, oracle, eigenstateRegisterLE.Data));
-#line 252 "/Users/Matt/Documents/Masters/Dissertation/Q%23/Shor/quantum/Operations.qs"
+#line 252 "/Users/Matt/Documents/Masters/Dissertation/QSharp/Microsoft_Shor/quantum/Operations.qs"
                         frequencyEstimate = MicrosoftQuantumMathRound.Apply((((phase * MicrosoftQuantumConvertIntAsDouble.Apply(2L.Pow(bitsPrecision))) / 2D) / MicrosoftQuantumMathPI.Apply(QVoid.Instance)));
                     }
                     else
                     {
 #line hidden
                         {
-#line 258 "/Users/Matt/Documents/Masters/Dissertation/Q%23/Shor/quantum/Operations.qs"
+#line 258 "/Users/Matt/Documents/Masters/Dissertation/QSharp/Microsoft_Shor/quantum/Operations.qs"
                             var register = Allocate.Apply(bitsPrecision);
 #line hidden
                             bool __arg3__ = true;
                             try
                             {
-#line 259 "/Users/Matt/Documents/Masters/Dissertation/Q%23/Shor/quantum/Operations.qs"
+#line 259 "/Users/Matt/Documents/Masters/Dissertation/QSharp/Microsoft_Shor/quantum/Operations.qs"
                                 var frequencyEstimateNumerator = new Microsoft.Quantum.Arithmetic.LittleEndian(register);
-#line 265 "/Users/Matt/Documents/Masters/Dissertation/Q%23/Shor/quantum/Operations.qs"
+#line 265 "/Users/Matt/Documents/Masters/Dissertation/QSharp/Microsoft_Shor/quantum/Operations.qs"
                                 MicrosoftQuantumCharacterizationQuantumPhaseEstimation.Apply((oracle, eigenstateRegisterLE.Data, MicrosoftQuantumArithmeticLittleEndianAsBigEndian.Apply(frequencyEstimateNumerator)));
-#line 272 "/Users/Matt/Documents/Masters/Dissertation/Q%23/Shor/quantum/Operations.qs"
+#line 272 "/Users/Matt/Documents/Masters/Dissertation/QSharp/Microsoft_Shor/quantum/Operations.qs"
                                 frequencyEstimate = MicrosoftQuantumArithmeticMeasureInteger.Apply(frequencyEstimateNumerator);
                             }
 #line hidden
@@ -584,7 +584,7 @@ namespace Microsoft.Quantum.Samples.IntegerFactorization
                         }
                     }
 
-#line 278 "/Users/Matt/Documents/Masters/Dissertation/Q%23/Shor/quantum/Operations.qs"
+#line 278 "/Users/Matt/Documents/Masters/Dissertation/QSharp/Microsoft_Shor/quantum/Operations.qs"
                     MicrosoftQuantumIntrinsicResetAll.Apply(eigenstateRegister);
                 }
 #line hidden
@@ -604,7 +604,7 @@ namespace Microsoft.Quantum.Samples.IntegerFactorization
                 }
             }
 
-#line 281 "/Users/Matt/Documents/Masters/Dissertation/Q%23/Shor/quantum/Operations.qs"
+#line 281 "/Users/Matt/Documents/Masters/Dissertation/QSharp/Microsoft_Shor/quantum/Operations.qs"
             return frequencyEstimate;
         }
 
@@ -635,7 +635,7 @@ namespace Microsoft.Quantum.Samples.IntegerFactorization
         }
     }
 
-    [SourceLocation("/Users/Matt/Documents/Masters/Dissertation/Q%23/Shor/quantum/Operations.qs", OperationFunctor.Body, 306, 349)]
+    [SourceLocation("/Users/Matt/Documents/Masters/Dissertation/QSharp/Microsoft_Shor/quantum/Operations.qs", OperationFunctor.Body, 306, 349)]
     public partial class PeriodFromFrequency : Function<(Int64,Int64,Int64,Int64), Int64>, ICallable
     {
         public PeriodFromFrequency(IOperationFactory m) : base(m)
@@ -680,11 +680,11 @@ namespace Microsoft.Quantum.Samples.IntegerFactorization
         public override Func<(Int64,Int64,Int64,Int64), Int64> Body => (__in__) =>
         {
             var (modulus,frequencyEstimate,bitsPrecision,currentDivisor) = __in__;
-#line 316 "/Users/Matt/Documents/Masters/Dissertation/Q%23/Shor/quantum/Operations.qs"
+#line 316 "/Users/Matt/Documents/Masters/Dissertation/QSharp/Microsoft_Shor/quantum/Operations.qs"
             var (numerator,period) = MicrosoftQuantumMathContinuedFractionConvergentI.Apply((new Microsoft.Quantum.Math.Fraction((frequencyEstimate, 2L.Pow(bitsPrecision))), modulus)).Data;
-#line 321 "/Users/Matt/Documents/Masters/Dissertation/Q%23/Shor/quantum/Operations.qs"
+#line 321 "/Users/Matt/Documents/Masters/Dissertation/QSharp/Microsoft_Shor/quantum/Operations.qs"
             var (numeratorAbs,periodAbs) = (MicrosoftQuantumMathAbsI.Apply(numerator), MicrosoftQuantumMathAbsI.Apply(period));
-#line 325 "/Users/Matt/Documents/Masters/Dissertation/Q%23/Shor/quantum/Operations.qs"
+#line 325 "/Users/Matt/Documents/Masters/Dissertation/QSharp/Microsoft_Shor/quantum/Operations.qs"
             return ((periodAbs * currentDivisor) / MicrosoftQuantumMathGreatestCommonDivisorI.Apply((currentDivisor, periodAbs)));
         }
 
@@ -705,7 +705,7 @@ namespace Microsoft.Quantum.Samples.IntegerFactorization
         }
     }
 
-    [SourceLocation("/Users/Matt/Documents/Masters/Dissertation/Q%23/Shor/quantum/Operations.qs", OperationFunctor.Body, 349, -1)]
+    [SourceLocation("/Users/Matt/Documents/Masters/Dissertation/QSharp/Microsoft_Shor/quantum/Operations.qs", OperationFunctor.Body, 349, -1)]
     public partial class MaybeFactorsFromPeriod : Function<(Int64,Int64,Int64), (Boolean,(Int64,Int64))>, ICallable
     {
         public MaybeFactorsFromPeriod(IOperationFactory m) : base(m)
@@ -759,30 +759,30 @@ namespace Microsoft.Quantum.Samples.IntegerFactorization
         public override Func<(Int64,Int64,Int64), (Boolean,(Int64,Int64))> Body => (__in__) =>
         {
             var (modulus,generator,period) = __in__;
-#line 352 "/Users/Matt/Documents/Masters/Dissertation/Q%23/Shor/quantum/Operations.qs"
+#line 352 "/Users/Matt/Documents/Masters/Dissertation/QSharp/Microsoft_Shor/quantum/Operations.qs"
             if (((period % 2L) == 0L))
             {
-#line 356 "/Users/Matt/Documents/Masters/Dissertation/Q%23/Shor/quantum/Operations.qs"
+#line 356 "/Users/Matt/Documents/Masters/Dissertation/QSharp/Microsoft_Shor/quantum/Operations.qs"
                 var halfPower = MicrosoftQuantumMathExpModI.Apply((generator, (period / 2L), modulus));
-#line 360 "/Users/Matt/Documents/Masters/Dissertation/Q%23/Shor/quantum/Operations.qs"
+#line 360 "/Users/Matt/Documents/Masters/Dissertation/QSharp/Microsoft_Shor/quantum/Operations.qs"
                 if ((halfPower != (modulus - 1L)))
                 {
-#line 365 "/Users/Matt/Documents/Masters/Dissertation/Q%23/Shor/quantum/Operations.qs"
+#line 365 "/Users/Matt/Documents/Masters/Dissertation/QSharp/Microsoft_Shor/quantum/Operations.qs"
                     var factor = MicrosoftQuantumMathMaxI.Apply((MicrosoftQuantumMathGreatestCommonDivisorI.Apply(((halfPower - 1L), modulus)), MicrosoftQuantumMathGreatestCommonDivisorI.Apply(((halfPower + 1L), modulus))));
-#line 371 "/Users/Matt/Documents/Masters/Dissertation/Q%23/Shor/quantum/Operations.qs"
+#line 371 "/Users/Matt/Documents/Masters/Dissertation/QSharp/Microsoft_Shor/quantum/Operations.qs"
                     return (true, (factor, (modulus / factor)));
                 }
                 else
                 {
-#line 374 "/Users/Matt/Documents/Masters/Dissertation/Q%23/Shor/quantum/Operations.qs"
+#line 374 "/Users/Matt/Documents/Masters/Dissertation/QSharp/Microsoft_Shor/quantum/Operations.qs"
                     return (false, (1L, 1L));
                 }
             }
             else
             {
-#line 379 "/Users/Matt/Documents/Masters/Dissertation/Q%23/Shor/quantum/Operations.qs"
+#line 379 "/Users/Matt/Documents/Masters/Dissertation/QSharp/Microsoft_Shor/quantum/Operations.qs"
                 MicrosoftQuantumIntrinsicMessage.Apply("Estimated period was odd, trying again.");
-#line 380 "/Users/Matt/Documents/Masters/Dissertation/Q%23/Shor/quantum/Operations.qs"
+#line 380 "/Users/Matt/Documents/Masters/Dissertation/QSharp/Microsoft_Shor/quantum/Operations.qs"
                 return (false, (1L, 1L));
             }
         }
