@@ -88,6 +88,8 @@ namespace Microsoft.Quantum.Samples.IntegerFactorization
                     System.Console.WriteLine("Press any key to continue...");
                     System.Console.ReadKey();
                     */
+
+                    
                 }
                 // Shor's algorithm is a probabilistic algorithm and can fail with certain 
                 // probability in several ways. For more details see Shor.qs.
