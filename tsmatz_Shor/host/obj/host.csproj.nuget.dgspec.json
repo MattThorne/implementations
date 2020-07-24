@@ -1,17 +1,17 @@
 {
   "format": 1,
   "restore": {
-    "/Users/Matt/Documents/Masters/Dissertation/Q#/Shor2/host/host.csproj": {}
+    "/Users/Matt/Documents/Masters/Dissertation/QSharp/tsmatz_Shor/host/host.csproj": {}
   },
   "projects": {
-    "/Users/Matt/Documents/Masters/Dissertation/Q#/Shor2/host/host.csproj": {
+    "/Users/Matt/Documents/Masters/Dissertation/QSharp/tsmatz_Shor/host/host.csproj": {
       "version": "1.0.0",
       "restore": {
-        "projectUniqueName": "/Users/Matt/Documents/Masters/Dissertation/Q#/Shor2/host/host.csproj",
+        "projectUniqueName": "/Users/Matt/Documents/Masters/Dissertation/QSharp/tsmatz_Shor/host/host.csproj",
         "projectName": "host",
-        "projectPath": "/Users/Matt/Documents/Masters/Dissertation/Q#/Shor2/host/host.csproj",
+        "projectPath": "/Users/Matt/Documents/Masters/Dissertation/QSharp/tsmatz_Shor/host/host.csproj",
         "packagesPath": "/Users/Matt/.nuget/packages/",
-        "outputPath": "/Users/Matt/Documents/Masters/Dissertation/Q#/Shor2/host/obj/",
+        "outputPath": "/Users/Matt/Documents/Masters/Dissertation/QSharp/tsmatz_Shor/host/obj/",
         "projectStyle": "PackageReference",
         "configFilePaths": [
           "/Users/Matt/.nuget/NuGet/NuGet.Config"
@@ -25,8 +25,8 @@
         "frameworks": {
           "netcoreapp3.1": {
             "projectReferences": {
-              "/Users/Matt/Documents/Masters/Dissertation/Q#/Shor2/quantum/quantum.csproj": {
-                "projectPath": "/Users/Matt/Documents/Masters/Dissertation/Q#/Shor2/quantum/quantum.csproj"
+              "/Users/Matt/Documents/Masters/Dissertation/QSharp/tsmatz_Shor/quantum/quantum.csproj": {
+                "projectPath": "/Users/Matt/Documents/Masters/Dissertation/QSharp/tsmatz_Shor/quantum/quantum.csproj"
               }
             }
           }
@@ -58,26 +58,26 @@
         }
       }
     },
-    "/Users/Matt/Documents/Masters/Dissertation/Q#/Shor2/quantum/quantum.csproj": {
+    "/Users/Matt/Documents/Masters/Dissertation/QSharp/tsmatz_Shor/quantum/quantum.csproj": {
       "version": "1.0.0",
       "restore": {
-        "projectUniqueName": "/Users/Matt/Documents/Masters/Dissertation/Q#/Shor2/quantum/quantum.csproj",
+        "projectUniqueName": "/Users/Matt/Documents/Masters/Dissertation/QSharp/tsmatz_Shor/quantum/quantum.csproj",
         "projectName": "quantum",
-        "projectPath": "/Users/Matt/Documents/Masters/Dissertation/Q#/Shor2/quantum/quantum.csproj",
+        "projectPath": "/Users/Matt/Documents/Masters/Dissertation/QSharp/tsmatz_Shor/quantum/quantum.csproj",
         "packagesPath": "/Users/Matt/.nuget/packages/",
-        "outputPath": "/Users/Matt/Documents/Masters/Dissertation/Q#/Shor2/quantum/obj/",
+        "outputPath": "/Users/Matt/Documents/Masters/Dissertation/QSharp/tsmatz_Shor/quantum/obj/",
         "projectStyle": "PackageReference",
         "configFilePaths": [
           "/Users/Matt/.nuget/NuGet/NuGet.Config"
         ],
         "originalTargetFrameworks": [
-          "netstandard2.1"
+          "netcoreapp3.1"
         ],
         "sources": {
           "https://api.nuget.org/v3/index.json": {}
         },
         "frameworks": {
-          "netstandard2.1": {
+          "netcoreapp3.1": {
             "projectReferences": {}
           }
         },
@@ -88,7 +88,7 @@
         }
       },
       "frameworks": {
-        "netstandard2.1": {
+        "netcoreapp3.1": {
           "dependencies": {
             "Microsoft.Quantum.CsharpGeneration": {
               "suppressParent": "All",
@@ -125,7 +125,7 @@
           "assetTargetFallback": true,
           "warn": true,
           "frameworkReferences": {
-            "NETStandard.Library": {
+            "Microsoft.NETCore.App": {
               "privateAssets": "all"
             }
           },
