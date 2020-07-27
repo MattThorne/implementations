@@ -15,31 +15,29 @@ using Microsoft.Quantum.Simulation.Core;
 
 [assembly: CallableDeclaration("{\"Kind\":{\"Case\":\"Operation\"},\"QualifiedName\":{\"Namespace\":\"Shor\",\"Name\":\"FactorInteger\"},\"Attributes\":[],\"Modifiers\":{\"Access\":{\"Case\":\"DefaultAccess\"}},\"SourceFile\":\"/Users/Matt/Documents/Masters/Dissertation/QSharp/Shor_In_Superposition/quantum/Shor_In_Superposition.qs\",\"Position\":{\"Item1\":10,\"Item2\":2},\"SymbolRange\":{\"Item1\":{\"Line\":1,\"Column\":11},\"Item2\":{\"Line\":1,\"Column\":24}},\"ArgumentTuple\":{\"Case\":\"QsTuple\",\"Fields\":[[]]},\"Signature\":{\"TypeParameters\":[],\"ArgumentType\":{\"Case\":\"UnitType\"},\"ReturnType\":{\"Case\":\"UnitType\"},\"Information\":{\"Characteristics\":{\"Case\":\"EmptySet\"},\"InferredInformation\":{\"IsSelfAdjoint\":false,\"IsIntrinsic\":false}}},\"Documentation\":[]}")]
 [assembly: SpecializationDeclaration("{\"Kind\":{\"Case\":\"QsBody\"},\"TypeArguments\":{\"Case\":\"Null\"},\"Information\":{\"Characteristics\":{\"Case\":\"EmptySet\"},\"InferredInformation\":{\"IsSelfAdjoint\":false,\"IsIntrinsic\":false}},\"Parent\":{\"Namespace\":\"Shor\",\"Name\":\"FactorInteger\"},\"Attributes\":[],\"SourceFile\":\"/Users/Matt/Documents/Masters/Dissertation/QSharp/Shor_In_Superposition/quantum/Shor_In_Superposition.qs\",\"Position\":{\"Item1\":10,\"Item2\":2},\"HeaderRange\":{\"Item1\":{\"Line\":1,\"Column\":11},\"Item2\":{\"Line\":1,\"Column\":24}},\"Documentation\":[]}")]
-[assembly: CallableDeclaration("{\"Kind\":{\"Case\":\"Operation\"},\"QualifiedName\":{\"Namespace\":\"Shor\",\"Name\":\"ModularSquaring\"},\"Attributes\":[],\"Modifiers\":{\"Access\":{\"Case\":\"DefaultAccess\"}},\"SourceFile\":\"/Users/Matt/Documents/Masters/Dissertation/QSharp/Shor_In_Superposition/quantum/Shor_In_Superposition.qs\",\"Position\":{\"Item1\":33,\"Item2\":4},\"SymbolRange\":{\"Item1\":{\"Line\":1,\"Column\":11},\"Item2\":{\"Line\":1,\"Column\":26}},\"ArgumentTuple\":{\"Case\":\"QsTuple\",\"Fields\":[[{\"Case\":\"QsTupleItem\",\"Fields\":[{\"VariableName\":{\"Case\":\"ValidName\",\"Fields\":[\"Ms\"]},\"Type\":{\"Case\":\"ArrayType\",\"Fields\":[{\"Case\":\"Qubit\"}]},\"InferredInformation\":{\"IsMutable\":false,\"HasLocalQuantumDependency\":false},\"Position\":{\"Case\":\"Null\"},\"Range\":{\"Item1\":{\"Line\":1,\"Column\":27},\"Item2\":{\"Line\":1,\"Column\":29}}}]},{\"Case\":\"QsTupleItem\",\"Fields\":[{\"VariableName\":{\"Case\":\"ValidName\",\"Fields\":[\"As\"]},\"Type\":{\"Case\":\"ArrayType\",\"Fields\":[{\"Case\":\"Qubit\"}]},\"InferredInformation\":{\"IsMutable\":false,\"HasLocalQuantumDependency\":false},\"Position\":{\"Case\":\"Null\"},\"Range\":{\"Item1\":{\"Line\":1,\"Column\":38},\"Item2\":{\"Line\":1,\"Column\":40}}}]},{\"Case\":\"QsTupleItem\",\"Fields\":[{\"VariableName\":{\"Case\":\"ValidName\",\"Fields\":[\"As_modM\"]},\"Type\":{\"Case\":\"ArrayType\",\"Fields\":[{\"Case\":\"Qubit\"}]},\"InferredInformation\":{\"IsMutable\":false,\"HasLocalQuantumDependency\":false},\"Position\":{\"Case\":\"Null\"},\"Range\":{\"Item1\":{\"Line\":1,\"Column\":49},\"Item2\":{\"Line\":1,\"Column\":56}}}]},{\"Case\":\"QsTupleItem\",\"Fields\":[{\"VariableName\":{\"Case\":\"ValidName\",\"Fields\":[\"pow\"]},\"Type\":{\"Case\":\"Int\"},\"InferredInformation\":{\"IsMutable\":false,\"HasLocalQuantumDependency\":false},\"Position\":{\"Case\":\"Null\"},\"Range\":{\"Item1\":{\"Line\":1,\"Column\":65},\"Item2\":{\"Line\":1,\"Column\":68}}}]}]]},\"Signature\":{\"TypeParameters\":[],\"ArgumentType\":{\"Case\":\"TupleType\",\"Fields\":[[{\"Case\":\"ArrayType\",\"Fields\":[{\"Case\":\"Qubit\"}]},{\"Case\":\"ArrayType\",\"Fields\":[{\"Case\":\"Qubit\"}]},{\"Case\":\"ArrayType\",\"Fields\":[{\"Case\":\"Qubit\"}]},{\"Case\":\"Int\"}]]},\"ReturnType\":{\"Case\":\"UnitType\"},\"Information\":{\"Characteristics\":{\"Case\":\"EmptySet\"},\"InferredInformation\":{\"IsSelfAdjoint\":false,\"IsIntrinsic\":false}}},\"Documentation\":[]}")]
-[assembly: SpecializationDeclaration("{\"Kind\":{\"Case\":\"QsBody\"},\"TypeArguments\":{\"Case\":\"Null\"},\"Information\":{\"Characteristics\":{\"Case\":\"EmptySet\"},\"InferredInformation\":{\"IsSelfAdjoint\":false,\"IsIntrinsic\":false}},\"Parent\":{\"Namespace\":\"Shor\",\"Name\":\"ModularSquaring\"},\"Attributes\":[],\"SourceFile\":\"/Users/Matt/Documents/Masters/Dissertation/QSharp/Shor_In_Superposition/quantum/Shor_In_Superposition.qs\",\"Position\":{\"Item1\":33,\"Item2\":4},\"HeaderRange\":{\"Item1\":{\"Line\":1,\"Column\":11},\"Item2\":{\"Line\":1,\"Column\":26}},\"Documentation\":[]}")]
-[assembly: CallableDeclaration("{\"Kind\":{\"Case\":\"Operation\"},\"QualifiedName\":{\"Namespace\":\"Shor\",\"Name\":\"GenerateA\"},\"Attributes\":[],\"Modifiers\":{\"Access\":{\"Case\":\"DefaultAccess\"}},\"SourceFile\":\"/Users/Matt/Documents/Masters/Dissertation/QSharp/Shor_In_Superposition/quantum/Shor_In_Superposition.qs\",\"Position\":{\"Item1\":47,\"Item2\":4},\"SymbolRange\":{\"Item1\":{\"Line\":1,\"Column\":11},\"Item2\":{\"Line\":1,\"Column\":20}},\"ArgumentTuple\":{\"Case\":\"QsTuple\",\"Fields\":[[{\"Case\":\"QsTupleItem\",\"Fields\":[{\"VariableName\":{\"Case\":\"ValidName\",\"Fields\":[\"Ms\"]},\"Type\":{\"Case\":\"ArrayType\",\"Fields\":[{\"Case\":\"Qubit\"}]},\"InferredInformation\":{\"IsMutable\":false,\"HasLocalQuantumDependency\":false},\"Position\":{\"Case\":\"Null\"},\"Range\":{\"Item1\":{\"Line\":1,\"Column\":21},\"Item2\":{\"Line\":1,\"Column\":23}}}]},{\"Case\":\"QsTupleItem\",\"Fields\":[{\"VariableName\":{\"Case\":\"ValidName\",\"Fields\":[\"As\"]},\"Type\":{\"Case\":\"ArrayType\",\"Fields\":[{\"Case\":\"Qubit\"}]},\"InferredInformation\":{\"IsMutable\":false,\"HasLocalQuantumDependency\":false},\"Position\":{\"Case\":\"Null\"},\"Range\":{\"Item1\":{\"Line\":1,\"Column\":32},\"Item2\":{\"Line\":1,\"Column\":34}}}]}]]},\"Signature\":{\"TypeParameters\":[],\"ArgumentType\":{\"Case\":\"TupleType\",\"Fields\":[[{\"Case\":\"ArrayType\",\"Fields\":[{\"Case\":\"Qubit\"}]},{\"Case\":\"ArrayType\",\"Fields\":[{\"Case\":\"Qubit\"}]}]]},\"ReturnType\":{\"Case\":\"UnitType\"},\"Information\":{\"Characteristics\":{\"Case\":\"EmptySet\"},\"InferredInformation\":{\"IsSelfAdjoint\":false,\"IsIntrinsic\":false}}},\"Documentation\":[]}")]
-[assembly: SpecializationDeclaration("{\"Kind\":{\"Case\":\"QsBody\"},\"TypeArguments\":{\"Case\":\"Null\"},\"Information\":{\"Characteristics\":{\"Case\":\"EmptySet\"},\"InferredInformation\":{\"IsSelfAdjoint\":false,\"IsIntrinsic\":false}},\"Parent\":{\"Namespace\":\"Shor\",\"Name\":\"GenerateA\"},\"Attributes\":[],\"SourceFile\":\"/Users/Matt/Documents/Masters/Dissertation/QSharp/Shor_In_Superposition/quantum/Shor_In_Superposition.qs\",\"Position\":{\"Item1\":47,\"Item2\":4},\"HeaderRange\":{\"Item1\":{\"Line\":1,\"Column\":11},\"Item2\":{\"Line\":1,\"Column\":20}},\"Documentation\":[]}")]
-[assembly: CallableDeclaration("{\"Kind\":{\"Case\":\"Operation\"},\"QualifiedName\":{\"Namespace\":\"Shor\",\"Name\":\"SquareAndMultiply\"},\"Attributes\":[],\"Modifiers\":{\"Access\":{\"Case\":\"DefaultAccess\"}},\"SourceFile\":\"/Users/Matt/Documents/Masters/Dissertation/QSharp/Shor_In_Superposition/quantum/Shor_In_Superposition.qs\",\"Position\":{\"Item1\":84,\"Item2\":4},\"SymbolRange\":{\"Item1\":{\"Line\":1,\"Column\":11},\"Item2\":{\"Line\":1,\"Column\":28}},\"ArgumentTuple\":{\"Case\":\"QsTuple\",\"Fields\":[[]]},\"Signature\":{\"TypeParameters\":[],\"ArgumentType\":{\"Case\":\"UnitType\"},\"ReturnType\":{\"Case\":\"UnitType\"},\"Information\":{\"Characteristics\":{\"Case\":\"EmptySet\"},\"InferredInformation\":{\"IsSelfAdjoint\":false,\"IsIntrinsic\":false}}},\"Documentation\":[\"UNFINISHED SQUARE AND MULTIPLY SECTION/////////////\"]}")]
-[assembly: SpecializationDeclaration("{\"Kind\":{\"Case\":\"QsBody\"},\"TypeArguments\":{\"Case\":\"Null\"},\"Information\":{\"Characteristics\":{\"Case\":\"EmptySet\"},\"InferredInformation\":{\"IsSelfAdjoint\":false,\"IsIntrinsic\":false}},\"Parent\":{\"Namespace\":\"Shor\",\"Name\":\"SquareAndMultiply\"},\"Attributes\":[],\"SourceFile\":\"/Users/Matt/Documents/Masters/Dissertation/QSharp/Shor_In_Superposition/quantum/Shor_In_Superposition.qs\",\"Position\":{\"Item1\":84,\"Item2\":4},\"HeaderRange\":{\"Item1\":{\"Line\":1,\"Column\":11},\"Item2\":{\"Line\":1,\"Column\":28}},\"Documentation\":[]}")]
-[assembly: CallableDeclaration("{\"Kind\":{\"Case\":\"Operation\"},\"QualifiedName\":{\"Namespace\":\"Shor\",\"Name\":\"SquareAndMultiplyIteration\"},\"Attributes\":[],\"Modifiers\":{\"Access\":{\"Case\":\"DefaultAccess\"}},\"SourceFile\":\"/Users/Matt/Documents/Masters/Dissertation/QSharp/Shor_In_Superposition/quantum/Shor_In_Superposition.qs\",\"Position\":{\"Item1\":226,\"Item2\":0},\"SymbolRange\":{\"Item1\":{\"Line\":1,\"Column\":11},\"Item2\":{\"Line\":1,\"Column\":37}},\"ArgumentTuple\":{\"Case\":\"QsTuple\",\"Fields\":[[{\"Case\":\"QsTupleItem\",\"Fields\":[{\"VariableName\":{\"Case\":\"ValidName\",\"Fields\":[\"a\"]},\"Type\":{\"Case\":\"ArrayType\",\"Fields\":[{\"Case\":\"Qubit\"}]},\"InferredInformation\":{\"IsMutable\":false,\"HasLocalQuantumDependency\":false},\"Position\":{\"Case\":\"Null\"},\"Range\":{\"Item1\":{\"Line\":1,\"Column\":38},\"Item2\":{\"Line\":1,\"Column\":39}}}]},{\"Case\":\"QsTupleItem\",\"Fields\":[{\"VariableName\":{\"Case\":\"ValidName\",\"Fields\":[\"v\"]},\"Type\":{\"Case\":\"ArrayType\",\"Fields\":[{\"Case\":\"Qubit\"}]},\"InferredInformation\":{\"IsMutable\":false,\"HasLocalQuantumDependency\":false},\"Position\":{\"Case\":\"Null\"},\"Range\":{\"Item1\":{\"Line\":1,\"Column\":48},\"Item2\":{\"Line\":1,\"Column\":49}}}]},{\"Case\":\"QsTupleItem\",\"Fields\":[{\"VariableName\":{\"Case\":\"ValidName\",\"Fields\":[\"m\"]},\"Type\":{\"Case\":\"ArrayType\",\"Fields\":[{\"Case\":\"Qubit\"}]},\"InferredInformation\":{\"IsMutable\":false,\"HasLocalQuantumDependency\":false},\"Position\":{\"Case\":\"Null\"},\"Range\":{\"Item1\":{\"Line\":1,\"Column\":58},\"Item2\":{\"Line\":1,\"Column\":59}}}]},{\"Case\":\"QsTupleItem\",\"Fields\":[{\"VariableName\":{\"Case\":\"ValidName\",\"Fields\":[\"c\"]},\"Type\":{\"Case\":\"Qubit\"},\"InferredInformation\":{\"IsMutable\":false,\"HasLocalQuantumDependency\":false},\"Position\":{\"Case\":\"Null\"},\"Range\":{\"Item1\":{\"Line\":1,\"Column\":68},\"Item2\":{\"Line\":1,\"Column\":69}}}]},{\"Case\":\"QsTupleItem\",\"Fields\":[{\"VariableName\":{\"Case\":\"ValidName\",\"Fields\":[\"z\"]},\"Type\":{\"Case\":\"Qubit\"},\"InferredInformation\":{\"IsMutable\":false,\"HasLocalQuantumDependency\":false},\"Position\":{\"Case\":\"Null\"},\"Range\":{\"Item1\":{\"Line\":1,\"Column\":76},\"Item2\":{\"Line\":1,\"Column\":77}}}]},{\"Case\":\"QsTupleItem\",\"Fields\":[{\"VariableName\":{\"Case\":\"ValidName\",\"Fields\":[\"sc\"]},\"Type\":{\"Case\":\"Qubit\"},\"InferredInformation\":{\"IsMutable\":false,\"HasLocalQuantumDependency\":false},\"Position\":{\"Case\":\"Null\"},\"Range\":{\"Item1\":{\"Line\":1,\"Column\":84},\"Item2\":{\"Line\":1,\"Column\":86}}}]},{\"Case\":\"QsTupleItem\",\"Fields\":[{\"VariableName\":{\"Case\":\"ValidName\",\"Fields\":[\"t\"]},\"Type\":{\"Case\":\"ArrayType\",\"Fields\":[{\"Case\":\"Qubit\"}]},\"InferredInformation\":{\"IsMutable\":false,\"HasLocalQuantumDependency\":false},\"Position\":{\"Case\":\"Null\"},\"Range\":{\"Item1\":{\"Line\":1,\"Column\":93},\"Item2\":{\"Line\":1,\"Column\":94}}}]}]]},\"Signature\":{\"TypeParameters\":[],\"ArgumentType\":{\"Case\":\"TupleType\",\"Fields\":[[{\"Case\":\"ArrayType\",\"Fields\":[{\"Case\":\"Qubit\"}]},{\"Case\":\"ArrayType\",\"Fields\":[{\"Case\":\"Qubit\"}]},{\"Case\":\"ArrayType\",\"Fields\":[{\"Case\":\"Qubit\"}]},{\"Case\":\"Qubit\"},{\"Case\":\"Qubit\"},{\"Case\":\"Qubit\"},{\"Case\":\"ArrayType\",\"Fields\":[{\"Case\":\"Qubit\"}]}]]},\"ReturnType\":{\"Case\":\"UnitType\"},\"Information\":{\"Characteristics\":{\"Case\":\"Union\",\"Fields\":[{\"Case\":\"SimpleSet\",\"Fields\":[{\"Case\":\"Adjointable\"}]},{\"Case\":\"SimpleSet\",\"Fields\":[{\"Case\":\"Controllable\"}]}]},\"InferredInformation\":{\"IsSelfAdjoint\":false,\"IsIntrinsic\":false}}},\"Documentation\":[]}")]
-[assembly: SpecializationDeclaration("{\"Kind\":{\"Case\":\"QsBody\"},\"TypeArguments\":{\"Case\":\"Null\"},\"Information\":{\"Characteristics\":{\"Case\":\"Union\",\"Fields\":[{\"Case\":\"SimpleSet\",\"Fields\":[{\"Case\":\"Adjointable\"}]},{\"Case\":\"SimpleSet\",\"Fields\":[{\"Case\":\"Controllable\"}]}]},\"InferredInformation\":{\"IsSelfAdjoint\":false,\"IsIntrinsic\":false}},\"Parent\":{\"Namespace\":\"Shor\",\"Name\":\"SquareAndMultiplyIteration\"},\"Attributes\":[],\"SourceFile\":\"/Users/Matt/Documents/Masters/Dissertation/QSharp/Shor_In_Superposition/quantum/Shor_In_Superposition.qs\",\"Position\":{\"Item1\":226,\"Item2\":0},\"HeaderRange\":{\"Item1\":{\"Line\":1,\"Column\":11},\"Item2\":{\"Line\":1,\"Column\":37}},\"Documentation\":[]}")]
-[assembly: SpecializationDeclaration("{\"Kind\":{\"Case\":\"QsAdjoint\"},\"TypeArguments\":{\"Case\":\"Null\"},\"Information\":{\"Characteristics\":{\"Case\":\"Union\",\"Fields\":[{\"Case\":\"SimpleSet\",\"Fields\":[{\"Case\":\"Adjointable\"}]},{\"Case\":\"SimpleSet\",\"Fields\":[{\"Case\":\"Controllable\"}]}]},\"InferredInformation\":{\"IsSelfAdjoint\":false,\"IsIntrinsic\":false}},\"Parent\":{\"Namespace\":\"Shor\",\"Name\":\"SquareAndMultiplyIteration\"},\"Attributes\":[],\"SourceFile\":\"/Users/Matt/Documents/Masters/Dissertation/QSharp/Shor_In_Superposition/quantum/Shor_In_Superposition.qs\",\"Position\":{\"Item1\":226,\"Item2\":0},\"HeaderRange\":{\"Item1\":{\"Line\":1,\"Column\":114},\"Item2\":{\"Line\":1,\"Column\":123}},\"Documentation\":[\"automatically generated QsAdjoint specialization for Shor.SquareAndMultiplyIteration\"]}")]
-[assembly: SpecializationDeclaration("{\"Kind\":{\"Case\":\"QsControlled\"},\"TypeArguments\":{\"Case\":\"Null\"},\"Information\":{\"Characteristics\":{\"Case\":\"Union\",\"Fields\":[{\"Case\":\"SimpleSet\",\"Fields\":[{\"Case\":\"Adjointable\"}]},{\"Case\":\"SimpleSet\",\"Fields\":[{\"Case\":\"Controllable\"}]}]},\"InferredInformation\":{\"IsSelfAdjoint\":false,\"IsIntrinsic\":false}},\"Parent\":{\"Namespace\":\"Shor\",\"Name\":\"SquareAndMultiplyIteration\"},\"Attributes\":[],\"SourceFile\":\"/Users/Matt/Documents/Masters/Dissertation/QSharp/Shor_In_Superposition/quantum/Shor_In_Superposition.qs\",\"Position\":{\"Item1\":226,\"Item2\":0},\"HeaderRange\":{\"Item1\":{\"Line\":1,\"Column\":114},\"Item2\":{\"Line\":1,\"Column\":123}},\"Documentation\":[\"automatically generated QsControlled specialization for Shor.SquareAndMultiplyIteration\"]}")]
-[assembly: SpecializationDeclaration("{\"Kind\":{\"Case\":\"QsControlledAdjoint\"},\"TypeArguments\":{\"Case\":\"Null\"},\"Information\":{\"Characteristics\":{\"Case\":\"Union\",\"Fields\":[{\"Case\":\"SimpleSet\",\"Fields\":[{\"Case\":\"Adjointable\"}]},{\"Case\":\"SimpleSet\",\"Fields\":[{\"Case\":\"Controllable\"}]}]},\"InferredInformation\":{\"IsSelfAdjoint\":false,\"IsIntrinsic\":false}},\"Parent\":{\"Namespace\":\"Shor\",\"Name\":\"SquareAndMultiplyIteration\"},\"Attributes\":[],\"SourceFile\":\"/Users/Matt/Documents/Masters/Dissertation/QSharp/Shor_In_Superposition/quantum/Shor_In_Superposition.qs\",\"Position\":{\"Item1\":226,\"Item2\":0},\"HeaderRange\":{\"Item1\":{\"Line\":1,\"Column\":114},\"Item2\":{\"Line\":1,\"Column\":123}},\"Documentation\":[\"automatically generated QsControlledAdjoint specialization for Shor.SquareAndMultiplyIteration\"]}")]
-[assembly: CallableDeclaration("{\"Kind\":{\"Case\":\"Operation\"},\"QualifiedName\":{\"Namespace\":\"Shor\",\"Name\":\"SquareModM\"},\"Attributes\":[],\"Modifiers\":{\"Access\":{\"Case\":\"DefaultAccess\"}},\"SourceFile\":\"/Users/Matt/Documents/Masters/Dissertation/QSharp/Shor_In_Superposition/quantum/Shor_In_Superposition.qs\",\"Position\":{\"Item1\":245,\"Item2\":0},\"SymbolRange\":{\"Item1\":{\"Line\":1,\"Column\":11},\"Item2\":{\"Line\":1,\"Column\":21}},\"ArgumentTuple\":{\"Case\":\"QsTuple\",\"Fields\":[[{\"Case\":\"QsTupleItem\",\"Fields\":[{\"VariableName\":{\"Case\":\"ValidName\",\"Fields\":[\"a\"]},\"Type\":{\"Case\":\"ArrayType\",\"Fields\":[{\"Case\":\"Qubit\"}]},\"InferredInformation\":{\"IsMutable\":false,\"HasLocalQuantumDependency\":false},\"Position\":{\"Case\":\"Null\"},\"Range\":{\"Item1\":{\"Line\":1,\"Column\":22},\"Item2\":{\"Line\":1,\"Column\":23}}}]},{\"Case\":\"QsTupleItem\",\"Fields\":[{\"VariableName\":{\"Case\":\"ValidName\",\"Fields\":[\"Ms\"]},\"Type\":{\"Case\":\"ArrayType\",\"Fields\":[{\"Case\":\"Qubit\"}]},\"InferredInformation\":{\"IsMutable\":false,\"HasLocalQuantumDependency\":false},\"Position\":{\"Case\":\"Null\"},\"Range\":{\"Item1\":{\"Line\":1,\"Column\":32},\"Item2\":{\"Line\":1,\"Column\":34}}}]},{\"Case\":\"QsTupleItem\",\"Fields\":[{\"VariableName\":{\"Case\":\"ValidName\",\"Fields\":[\"Ts\"]},\"Type\":{\"Case\":\"ArrayType\",\"Fields\":[{\"Case\":\"Qubit\"}]},\"InferredInformation\":{\"IsMutable\":false,\"HasLocalQuantumDependency\":false},\"Position\":{\"Case\":\"Null\"},\"Range\":{\"Item1\":{\"Line\":1,\"Column\":43},\"Item2\":{\"Line\":1,\"Column\":45}}}]}]]},\"Signature\":{\"TypeParameters\":[],\"ArgumentType\":{\"Case\":\"TupleType\",\"Fields\":[[{\"Case\":\"ArrayType\",\"Fields\":[{\"Case\":\"Qubit\"}]},{\"Case\":\"ArrayType\",\"Fields\":[{\"Case\":\"Qubit\"}]},{\"Case\":\"ArrayType\",\"Fields\":[{\"Case\":\"Qubit\"}]}]]},\"ReturnType\":{\"Case\":\"UnitType\"},\"Information\":{\"Characteristics\":{\"Case\":\"Union\",\"Fields\":[{\"Case\":\"SimpleSet\",\"Fields\":[{\"Case\":\"Adjointable\"}]},{\"Case\":\"SimpleSet\",\"Fields\":[{\"Case\":\"Controllable\"}]}]},\"InferredInformation\":{\"IsSelfAdjoint\":false,\"IsIntrinsic\":false}}},\"Documentation\":[]}")]
-[assembly: SpecializationDeclaration("{\"Kind\":{\"Case\":\"QsBody\"},\"TypeArguments\":{\"Case\":\"Null\"},\"Information\":{\"Characteristics\":{\"Case\":\"Union\",\"Fields\":[{\"Case\":\"SimpleSet\",\"Fields\":[{\"Case\":\"Adjointable\"}]},{\"Case\":\"SimpleSet\",\"Fields\":[{\"Case\":\"Controllable\"}]}]},\"InferredInformation\":{\"IsSelfAdjoint\":false,\"IsIntrinsic\":false}},\"Parent\":{\"Namespace\":\"Shor\",\"Name\":\"SquareModM\"},\"Attributes\":[],\"SourceFile\":\"/Users/Matt/Documents/Masters/Dissertation/QSharp/Shor_In_Superposition/quantum/Shor_In_Superposition.qs\",\"Position\":{\"Item1\":245,\"Item2\":0},\"HeaderRange\":{\"Item1\":{\"Line\":1,\"Column\":11},\"Item2\":{\"Line\":1,\"Column\":21}},\"Documentation\":[]}")]
-[assembly: SpecializationDeclaration("{\"Kind\":{\"Case\":\"QsAdjoint\"},\"TypeArguments\":{\"Case\":\"Null\"},\"Information\":{\"Characteristics\":{\"Case\":\"Union\",\"Fields\":[{\"Case\":\"SimpleSet\",\"Fields\":[{\"Case\":\"Adjointable\"}]},{\"Case\":\"SimpleSet\",\"Fields\":[{\"Case\":\"Controllable\"}]}]},\"InferredInformation\":{\"IsSelfAdjoint\":false,\"IsIntrinsic\":false}},\"Parent\":{\"Namespace\":\"Shor\",\"Name\":\"SquareModM\"},\"Attributes\":[],\"SourceFile\":\"/Users/Matt/Documents/Masters/Dissertation/QSharp/Shor_In_Superposition/quantum/Shor_In_Superposition.qs\",\"Position\":{\"Item1\":245,\"Item2\":0},\"HeaderRange\":{\"Item1\":{\"Line\":1,\"Column\":65},\"Item2\":{\"Line\":1,\"Column\":74}},\"Documentation\":[\"automatically generated QsAdjoint specialization for Shor.SquareModM\"]}")]
-[assembly: SpecializationDeclaration("{\"Kind\":{\"Case\":\"QsControlled\"},\"TypeArguments\":{\"Case\":\"Null\"},\"Information\":{\"Characteristics\":{\"Case\":\"Union\",\"Fields\":[{\"Case\":\"SimpleSet\",\"Fields\":[{\"Case\":\"Adjointable\"}]},{\"Case\":\"SimpleSet\",\"Fields\":[{\"Case\":\"Controllable\"}]}]},\"InferredInformation\":{\"IsSelfAdjoint\":false,\"IsIntrinsic\":false}},\"Parent\":{\"Namespace\":\"Shor\",\"Name\":\"SquareModM\"},\"Attributes\":[],\"SourceFile\":\"/Users/Matt/Documents/Masters/Dissertation/QSharp/Shor_In_Superposition/quantum/Shor_In_Superposition.qs\",\"Position\":{\"Item1\":245,\"Item2\":0},\"HeaderRange\":{\"Item1\":{\"Line\":1,\"Column\":65},\"Item2\":{\"Line\":1,\"Column\":74}},\"Documentation\":[\"automatically generated QsControlled specialization for Shor.SquareModM\"]}")]
-[assembly: SpecializationDeclaration("{\"Kind\":{\"Case\":\"QsControlledAdjoint\"},\"TypeArguments\":{\"Case\":\"Null\"},\"Information\":{\"Characteristics\":{\"Case\":\"Union\",\"Fields\":[{\"Case\":\"SimpleSet\",\"Fields\":[{\"Case\":\"Adjointable\"}]},{\"Case\":\"SimpleSet\",\"Fields\":[{\"Case\":\"Controllable\"}]}]},\"InferredInformation\":{\"IsSelfAdjoint\":false,\"IsIntrinsic\":false}},\"Parent\":{\"Namespace\":\"Shor\",\"Name\":\"SquareModM\"},\"Attributes\":[],\"SourceFile\":\"/Users/Matt/Documents/Masters/Dissertation/QSharp/Shor_In_Superposition/quantum/Shor_In_Superposition.qs\",\"Position\":{\"Item1\":245,\"Item2\":0},\"HeaderRange\":{\"Item1\":{\"Line\":1,\"Column\":65},\"Item2\":{\"Line\":1,\"Column\":74}},\"Documentation\":[\"automatically generated QsControlledAdjoint specialization for Shor.SquareModM\"]}")]
-[assembly: CallableDeclaration("{\"Kind\":{\"Case\":\"Operation\"},\"QualifiedName\":{\"Namespace\":\"Shor\",\"Name\":\"MultiplyModM\"},\"Attributes\":[],\"Modifiers\":{\"Access\":{\"Case\":\"DefaultAccess\"}},\"SourceFile\":\"/Users/Matt/Documents/Masters/Dissertation/QSharp/Shor_In_Superposition/quantum/Shor_In_Superposition.qs\",\"Position\":{\"Item1\":258,\"Item2\":0},\"SymbolRange\":{\"Item1\":{\"Line\":1,\"Column\":11},\"Item2\":{\"Line\":1,\"Column\":23}},\"ArgumentTuple\":{\"Case\":\"QsTuple\",\"Fields\":[[{\"Case\":\"QsTupleItem\",\"Fields\":[{\"VariableName\":{\"Case\":\"ValidName\",\"Fields\":[\"a\"]},\"Type\":{\"Case\":\"ArrayType\",\"Fields\":[{\"Case\":\"Qubit\"}]},\"InferredInformation\":{\"IsMutable\":false,\"HasLocalQuantumDependency\":false},\"Position\":{\"Case\":\"Null\"},\"Range\":{\"Item1\":{\"Line\":1,\"Column\":24},\"Item2\":{\"Line\":1,\"Column\":25}}}]},{\"Case\":\"QsTupleItem\",\"Fields\":[{\"VariableName\":{\"Case\":\"ValidName\",\"Fields\":[\"b\"]},\"Type\":{\"Case\":\"ArrayType\",\"Fields\":[{\"Case\":\"Qubit\"}]},\"InferredInformation\":{\"IsMutable\":false,\"HasLocalQuantumDependency\":false},\"Position\":{\"Case\":\"Null\"},\"Range\":{\"Item1\":{\"Line\":1,\"Column\":34},\"Item2\":{\"Line\":1,\"Column\":35}}}]},{\"Case\":\"QsTupleItem\",\"Fields\":[{\"VariableName\":{\"Case\":\"ValidName\",\"Fields\":[\"Ms\"]},\"Type\":{\"Case\":\"ArrayType\",\"Fields\":[{\"Case\":\"Qubit\"}]},\"InferredInformation\":{\"IsMutable\":false,\"HasLocalQuantumDependency\":false},\"Position\":{\"Case\":\"Null\"},\"Range\":{\"Item1\":{\"Line\":1,\"Column\":44},\"Item2\":{\"Line\":1,\"Column\":46}}}]},{\"Case\":\"QsTupleItem\",\"Fields\":[{\"VariableName\":{\"Case\":\"ValidName\",\"Fields\":[\"Ts\"]},\"Type\":{\"Case\":\"ArrayType\",\"Fields\":[{\"Case\":\"Qubit\"}]},\"InferredInformation\":{\"IsMutable\":false,\"HasLocalQuantumDependency\":false},\"Position\":{\"Case\":\"Null\"},\"Range\":{\"Item1\":{\"Line\":1,\"Column\":55},\"Item2\":{\"Line\":1,\"Column\":57}}}]}]]},\"Signature\":{\"TypeParameters\":[],\"ArgumentType\":{\"Case\":\"TupleType\",\"Fields\":[[{\"Case\":\"ArrayType\",\"Fields\":[{\"Case\":\"Qubit\"}]},{\"Case\":\"ArrayType\",\"Fields\":[{\"Case\":\"Qubit\"}]},{\"Case\":\"ArrayType\",\"Fields\":[{\"Case\":\"Qubit\"}]},{\"Case\":\"ArrayType\",\"Fields\":[{\"Case\":\"Qubit\"}]}]]},\"ReturnType\":{\"Case\":\"UnitType\"},\"Information\":{\"Characteristics\":{\"Case\":\"Union\",\"Fields\":[{\"Case\":\"SimpleSet\",\"Fields\":[{\"Case\":\"Adjointable\"}]},{\"Case\":\"SimpleSet\",\"Fields\":[{\"Case\":\"Controllable\"}]}]},\"InferredInformation\":{\"IsSelfAdjoint\":false,\"IsIntrinsic\":false}}},\"Documentation\":[]}")]
-[assembly: SpecializationDeclaration("{\"Kind\":{\"Case\":\"QsBody\"},\"TypeArguments\":{\"Case\":\"Null\"},\"Information\":{\"Characteristics\":{\"Case\":\"Union\",\"Fields\":[{\"Case\":\"SimpleSet\",\"Fields\":[{\"Case\":\"Adjointable\"}]},{\"Case\":\"SimpleSet\",\"Fields\":[{\"Case\":\"Controllable\"}]}]},\"InferredInformation\":{\"IsSelfAdjoint\":false,\"IsIntrinsic\":false}},\"Parent\":{\"Namespace\":\"Shor\",\"Name\":\"MultiplyModM\"},\"Attributes\":[],\"SourceFile\":\"/Users/Matt/Documents/Masters/Dissertation/QSharp/Shor_In_Superposition/quantum/Shor_In_Superposition.qs\",\"Position\":{\"Item1\":258,\"Item2\":0},\"HeaderRange\":{\"Item1\":{\"Line\":1,\"Column\":11},\"Item2\":{\"Line\":1,\"Column\":23}},\"Documentation\":[]}")]
-[assembly: SpecializationDeclaration("{\"Kind\":{\"Case\":\"QsAdjoint\"},\"TypeArguments\":{\"Case\":\"Null\"},\"Information\":{\"Characteristics\":{\"Case\":\"Union\",\"Fields\":[{\"Case\":\"SimpleSet\",\"Fields\":[{\"Case\":\"Adjointable\"}]},{\"Case\":\"SimpleSet\",\"Fields\":[{\"Case\":\"Controllable\"}]}]},\"InferredInformation\":{\"IsSelfAdjoint\":false,\"IsIntrinsic\":false}},\"Parent\":{\"Namespace\":\"Shor\",\"Name\":\"MultiplyModM\"},\"Attributes\":[],\"SourceFile\":\"/Users/Matt/Documents/Masters/Dissertation/QSharp/Shor_In_Superposition/quantum/Shor_In_Superposition.qs\",\"Position\":{\"Item1\":258,\"Item2\":0},\"HeaderRange\":{\"Item1\":{\"Line\":1,\"Column\":77},\"Item2\":{\"Line\":1,\"Column\":86}},\"Documentation\":[\"automatically generated QsAdjoint specialization for Shor.MultiplyModM\"]}")]
-[assembly: SpecializationDeclaration("{\"Kind\":{\"Case\":\"QsControlled\"},\"TypeArguments\":{\"Case\":\"Null\"},\"Information\":{\"Characteristics\":{\"Case\":\"Union\",\"Fields\":[{\"Case\":\"SimpleSet\",\"Fields\":[{\"Case\":\"Adjointable\"}]},{\"Case\":\"SimpleSet\",\"Fields\":[{\"Case\":\"Controllable\"}]}]},\"InferredInformation\":{\"IsSelfAdjoint\":false,\"IsIntrinsic\":false}},\"Parent\":{\"Namespace\":\"Shor\",\"Name\":\"MultiplyModM\"},\"Attributes\":[],\"SourceFile\":\"/Users/Matt/Documents/Masters/Dissertation/QSharp/Shor_In_Superposition/quantum/Shor_In_Superposition.qs\",\"Position\":{\"Item1\":258,\"Item2\":0},\"HeaderRange\":{\"Item1\":{\"Line\":1,\"Column\":77},\"Item2\":{\"Line\":1,\"Column\":86}},\"Documentation\":[\"automatically generated QsControlled specialization for Shor.MultiplyModM\"]}")]
-[assembly: SpecializationDeclaration("{\"Kind\":{\"Case\":\"QsControlledAdjoint\"},\"TypeArguments\":{\"Case\":\"Null\"},\"Information\":{\"Characteristics\":{\"Case\":\"Union\",\"Fields\":[{\"Case\":\"SimpleSet\",\"Fields\":[{\"Case\":\"Adjointable\"}]},{\"Case\":\"SimpleSet\",\"Fields\":[{\"Case\":\"Controllable\"}]}]},\"InferredInformation\":{\"IsSelfAdjoint\":false,\"IsIntrinsic\":false}},\"Parent\":{\"Namespace\":\"Shor\",\"Name\":\"MultiplyModM\"},\"Attributes\":[],\"SourceFile\":\"/Users/Matt/Documents/Masters/Dissertation/QSharp/Shor_In_Superposition/quantum/Shor_In_Superposition.qs\",\"Position\":{\"Item1\":258,\"Item2\":0},\"HeaderRange\":{\"Item1\":{\"Line\":1,\"Column\":77},\"Item2\":{\"Line\":1,\"Column\":86}},\"Documentation\":[\"automatically generated QsControlledAdjoint specialization for Shor.MultiplyModM\"]}")]
+[assembly: CallableDeclaration("{\"Kind\":{\"Case\":\"Operation\"},\"QualifiedName\":{\"Namespace\":\"Shor\",\"Name\":\"GenerateA\"},\"Attributes\":[],\"Modifiers\":{\"Access\":{\"Case\":\"DefaultAccess\"}},\"SourceFile\":\"/Users/Matt/Documents/Masters/Dissertation/QSharp/Shor_In_Superposition/quantum/Shor_In_Superposition.qs\",\"Position\":{\"Item1\":53,\"Item2\":4},\"SymbolRange\":{\"Item1\":{\"Line\":1,\"Column\":11},\"Item2\":{\"Line\":1,\"Column\":20}},\"ArgumentTuple\":{\"Case\":\"QsTuple\",\"Fields\":[[{\"Case\":\"QsTupleItem\",\"Fields\":[{\"VariableName\":{\"Case\":\"ValidName\",\"Fields\":[\"Ms\"]},\"Type\":{\"Case\":\"ArrayType\",\"Fields\":[{\"Case\":\"Qubit\"}]},\"InferredInformation\":{\"IsMutable\":false,\"HasLocalQuantumDependency\":false},\"Position\":{\"Case\":\"Null\"},\"Range\":{\"Item1\":{\"Line\":1,\"Column\":21},\"Item2\":{\"Line\":1,\"Column\":23}}}]},{\"Case\":\"QsTupleItem\",\"Fields\":[{\"VariableName\":{\"Case\":\"ValidName\",\"Fields\":[\"As\"]},\"Type\":{\"Case\":\"ArrayType\",\"Fields\":[{\"Case\":\"Qubit\"}]},\"InferredInformation\":{\"IsMutable\":false,\"HasLocalQuantumDependency\":false},\"Position\":{\"Case\":\"Null\"},\"Range\":{\"Item1\":{\"Line\":1,\"Column\":32},\"Item2\":{\"Line\":1,\"Column\":34}}}]}]]},\"Signature\":{\"TypeParameters\":[],\"ArgumentType\":{\"Case\":\"TupleType\",\"Fields\":[[{\"Case\":\"ArrayType\",\"Fields\":[{\"Case\":\"Qubit\"}]},{\"Case\":\"ArrayType\",\"Fields\":[{\"Case\":\"Qubit\"}]}]]},\"ReturnType\":{\"Case\":\"UnitType\"},\"Information\":{\"Characteristics\":{\"Case\":\"EmptySet\"},\"InferredInformation\":{\"IsSelfAdjoint\":false,\"IsIntrinsic\":false}}},\"Documentation\":[]}")]
+[assembly: SpecializationDeclaration("{\"Kind\":{\"Case\":\"QsBody\"},\"TypeArguments\":{\"Case\":\"Null\"},\"Information\":{\"Characteristics\":{\"Case\":\"EmptySet\"},\"InferredInformation\":{\"IsSelfAdjoint\":false,\"IsIntrinsic\":false}},\"Parent\":{\"Namespace\":\"Shor\",\"Name\":\"GenerateA\"},\"Attributes\":[],\"SourceFile\":\"/Users/Matt/Documents/Masters/Dissertation/QSharp/Shor_In_Superposition/quantum/Shor_In_Superposition.qs\",\"Position\":{\"Item1\":53,\"Item2\":4},\"HeaderRange\":{\"Item1\":{\"Line\":1,\"Column\":11},\"Item2\":{\"Line\":1,\"Column\":20}},\"Documentation\":[]}")]
+[assembly: CallableDeclaration("{\"Kind\":{\"Case\":\"Operation\"},\"QualifiedName\":{\"Namespace\":\"Shor\",\"Name\":\"SquareAndMultiply\"},\"Attributes\":[],\"Modifiers\":{\"Access\":{\"Case\":\"DefaultAccess\"}},\"SourceFile\":\"/Users/Matt/Documents/Masters/Dissertation/QSharp/Shor_In_Superposition/quantum/Shor_In_Superposition.qs\",\"Position\":{\"Item1\":101,\"Item2\":0},\"SymbolRange\":{\"Item1\":{\"Line\":1,\"Column\":11},\"Item2\":{\"Line\":1,\"Column\":28}},\"ArgumentTuple\":{\"Case\":\"QsTuple\",\"Fields\":[[{\"Case\":\"QsTupleItem\",\"Fields\":[{\"VariableName\":{\"Case\":\"ValidName\",\"Fields\":[\"a\"]},\"Type\":{\"Case\":\"ArrayType\",\"Fields\":[{\"Case\":\"Qubit\"}]},\"InferredInformation\":{\"IsMutable\":false,\"HasLocalQuantumDependency\":false},\"Position\":{\"Case\":\"Null\"},\"Range\":{\"Item1\":{\"Line\":1,\"Column\":29},\"Item2\":{\"Line\":1,\"Column\":30}}}]},{\"Case\":\"QsTupleItem\",\"Fields\":[{\"VariableName\":{\"Case\":\"ValidName\",\"Fields\":[\"m\"]},\"Type\":{\"Case\":\"ArrayType\",\"Fields\":[{\"Case\":\"Qubit\"}]},\"InferredInformation\":{\"IsMutable\":false,\"HasLocalQuantumDependency\":false},\"Position\":{\"Case\":\"Null\"},\"Range\":{\"Item1\":{\"Line\":1,\"Column\":39},\"Item2\":{\"Line\":1,\"Column\":40}}}]},{\"Case\":\"QsTupleItem\",\"Fields\":[{\"VariableName\":{\"Case\":\"ValidName\",\"Fields\":[\"j\"]},\"Type\":{\"Case\":\"ArrayType\",\"Fields\":[{\"Case\":\"Qubit\"}]},\"InferredInformation\":{\"IsMutable\":false,\"HasLocalQuantumDependency\":false},\"Position\":{\"Case\":\"Null\"},\"Range\":{\"Item1\":{\"Line\":1,\"Column\":49},\"Item2\":{\"Line\":1,\"Column\":50}}}]},{\"Case\":\"QsTupleItem\",\"Fields\":[{\"VariableName\":{\"Case\":\"ValidName\",\"Fields\":[\"result\"]},\"Type\":{\"Case\":\"ArrayType\",\"Fields\":[{\"Case\":\"Qubit\"}]},\"InferredInformation\":{\"IsMutable\":false,\"HasLocalQuantumDependency\":false},\"Position\":{\"Case\":\"Null\"},\"Range\":{\"Item1\":{\"Line\":1,\"Column\":59},\"Item2\":{\"Line\":1,\"Column\":65}}}]}]]},\"Signature\":{\"TypeParameters\":[],\"ArgumentType\":{\"Case\":\"TupleType\",\"Fields\":[[{\"Case\":\"ArrayType\",\"Fields\":[{\"Case\":\"Qubit\"}]},{\"Case\":\"ArrayType\",\"Fields\":[{\"Case\":\"Qubit\"}]},{\"Case\":\"ArrayType\",\"Fields\":[{\"Case\":\"Qubit\"}]},{\"Case\":\"ArrayType\",\"Fields\":[{\"Case\":\"Qubit\"}]}]]},\"ReturnType\":{\"Case\":\"UnitType\"},\"Information\":{\"Characteristics\":{\"Case\":\"EmptySet\"},\"InferredInformation\":{\"IsSelfAdjoint\":false,\"IsIntrinsic\":false}}},\"Documentation\":[\"SQUARE AND MULTIPLY/////////////\",\"NEEDS REFACTORING////////////////\"]}")]
+[assembly: SpecializationDeclaration("{\"Kind\":{\"Case\":\"QsBody\"},\"TypeArguments\":{\"Case\":\"Null\"},\"Information\":{\"Characteristics\":{\"Case\":\"EmptySet\"},\"InferredInformation\":{\"IsSelfAdjoint\":false,\"IsIntrinsic\":false}},\"Parent\":{\"Namespace\":\"Shor\",\"Name\":\"SquareAndMultiply\"},\"Attributes\":[],\"SourceFile\":\"/Users/Matt/Documents/Masters/Dissertation/QSharp/Shor_In_Superposition/quantum/Shor_In_Superposition.qs\",\"Position\":{\"Item1\":101,\"Item2\":0},\"HeaderRange\":{\"Item1\":{\"Line\":1,\"Column\":11},\"Item2\":{\"Line\":1,\"Column\":28}},\"Documentation\":[]}")]
+[assembly: CallableDeclaration("{\"Kind\":{\"Case\":\"Operation\"},\"QualifiedName\":{\"Namespace\":\"Shor\",\"Name\":\"SquareAndMultiplyIteration\"},\"Attributes\":[],\"Modifiers\":{\"Access\":{\"Case\":\"DefaultAccess\"}},\"SourceFile\":\"/Users/Matt/Documents/Masters/Dissertation/QSharp/Shor_In_Superposition/quantum/Shor_In_Superposition.qs\",\"Position\":{\"Item1\":378,\"Item2\":0},\"SymbolRange\":{\"Item1\":{\"Line\":1,\"Column\":11},\"Item2\":{\"Line\":1,\"Column\":37}},\"ArgumentTuple\":{\"Case\":\"QsTuple\",\"Fields\":[[{\"Case\":\"QsTupleItem\",\"Fields\":[{\"VariableName\":{\"Case\":\"ValidName\",\"Fields\":[\"a\"]},\"Type\":{\"Case\":\"ArrayType\",\"Fields\":[{\"Case\":\"Qubit\"}]},\"InferredInformation\":{\"IsMutable\":false,\"HasLocalQuantumDependency\":false},\"Position\":{\"Case\":\"Null\"},\"Range\":{\"Item1\":{\"Line\":1,\"Column\":38},\"Item2\":{\"Line\":1,\"Column\":39}}}]},{\"Case\":\"QsTupleItem\",\"Fields\":[{\"VariableName\":{\"Case\":\"ValidName\",\"Fields\":[\"v\"]},\"Type\":{\"Case\":\"ArrayType\",\"Fields\":[{\"Case\":\"Qubit\"}]},\"InferredInformation\":{\"IsMutable\":false,\"HasLocalQuantumDependency\":false},\"Position\":{\"Case\":\"Null\"},\"Range\":{\"Item1\":{\"Line\":1,\"Column\":48},\"Item2\":{\"Line\":1,\"Column\":49}}}]},{\"Case\":\"QsTupleItem\",\"Fields\":[{\"VariableName\":{\"Case\":\"ValidName\",\"Fields\":[\"m\"]},\"Type\":{\"Case\":\"ArrayType\",\"Fields\":[{\"Case\":\"Qubit\"}]},\"InferredInformation\":{\"IsMutable\":false,\"HasLocalQuantumDependency\":false},\"Position\":{\"Case\":\"Null\"},\"Range\":{\"Item1\":{\"Line\":1,\"Column\":58},\"Item2\":{\"Line\":1,\"Column\":59}}}]},{\"Case\":\"QsTupleItem\",\"Fields\":[{\"VariableName\":{\"Case\":\"ValidName\",\"Fields\":[\"c\"]},\"Type\":{\"Case\":\"Qubit\"},\"InferredInformation\":{\"IsMutable\":false,\"HasLocalQuantumDependency\":false},\"Position\":{\"Case\":\"Null\"},\"Range\":{\"Item1\":{\"Line\":1,\"Column\":68},\"Item2\":{\"Line\":1,\"Column\":69}}}]},{\"Case\":\"QsTupleItem\",\"Fields\":[{\"VariableName\":{\"Case\":\"ValidName\",\"Fields\":[\"z\"]},\"Type\":{\"Case\":\"Qubit\"},\"InferredInformation\":{\"IsMutable\":false,\"HasLocalQuantumDependency\":false},\"Position\":{\"Case\":\"Null\"},\"Range\":{\"Item1\":{\"Line\":1,\"Column\":76},\"Item2\":{\"Line\":1,\"Column\":77}}}]},{\"Case\":\"QsTupleItem\",\"Fields\":[{\"VariableName\":{\"Case\":\"ValidName\",\"Fields\":[\"ld\"]},\"Type\":{\"Case\":\"Qubit\"},\"InferredInformation\":{\"IsMutable\":false,\"HasLocalQuantumDependency\":false},\"Position\":{\"Case\":\"Null\"},\"Range\":{\"Item1\":{\"Line\":1,\"Column\":84},\"Item2\":{\"Line\":1,\"Column\":86}}}]},{\"Case\":\"QsTupleItem\",\"Fields\":[{\"VariableName\":{\"Case\":\"ValidName\",\"Fields\":[\"t\"]},\"Type\":{\"Case\":\"ArrayType\",\"Fields\":[{\"Case\":\"Qubit\"}]},\"InferredInformation\":{\"IsMutable\":false,\"HasLocalQuantumDependency\":false},\"Position\":{\"Case\":\"Null\"},\"Range\":{\"Item1\":{\"Line\":1,\"Column\":93},\"Item2\":{\"Line\":1,\"Column\":94}}}]}]]},\"Signature\":{\"TypeParameters\":[],\"ArgumentType\":{\"Case\":\"TupleType\",\"Fields\":[[{\"Case\":\"ArrayType\",\"Fields\":[{\"Case\":\"Qubit\"}]},{\"Case\":\"ArrayType\",\"Fields\":[{\"Case\":\"Qubit\"}]},{\"Case\":\"ArrayType\",\"Fields\":[{\"Case\":\"Qubit\"}]},{\"Case\":\"Qubit\"},{\"Case\":\"Qubit\"},{\"Case\":\"Qubit\"},{\"Case\":\"ArrayType\",\"Fields\":[{\"Case\":\"Qubit\"}]}]]},\"ReturnType\":{\"Case\":\"UnitType\"},\"Information\":{\"Characteristics\":{\"Case\":\"Union\",\"Fields\":[{\"Case\":\"SimpleSet\",\"Fields\":[{\"Case\":\"Adjointable\"}]},{\"Case\":\"SimpleSet\",\"Fields\":[{\"Case\":\"Controllable\"}]}]},\"InferredInformation\":{\"IsSelfAdjoint\":false,\"IsIntrinsic\":false}}},\"Documentation\":[]}")]
+[assembly: SpecializationDeclaration("{\"Kind\":{\"Case\":\"QsBody\"},\"TypeArguments\":{\"Case\":\"Null\"},\"Information\":{\"Characteristics\":{\"Case\":\"Union\",\"Fields\":[{\"Case\":\"SimpleSet\",\"Fields\":[{\"Case\":\"Adjointable\"}]},{\"Case\":\"SimpleSet\",\"Fields\":[{\"Case\":\"Controllable\"}]}]},\"InferredInformation\":{\"IsSelfAdjoint\":false,\"IsIntrinsic\":false}},\"Parent\":{\"Namespace\":\"Shor\",\"Name\":\"SquareAndMultiplyIteration\"},\"Attributes\":[],\"SourceFile\":\"/Users/Matt/Documents/Masters/Dissertation/QSharp/Shor_In_Superposition/quantum/Shor_In_Superposition.qs\",\"Position\":{\"Item1\":378,\"Item2\":0},\"HeaderRange\":{\"Item1\":{\"Line\":1,\"Column\":11},\"Item2\":{\"Line\":1,\"Column\":37}},\"Documentation\":[]}")]
+[assembly: SpecializationDeclaration("{\"Kind\":{\"Case\":\"QsAdjoint\"},\"TypeArguments\":{\"Case\":\"Null\"},\"Information\":{\"Characteristics\":{\"Case\":\"Union\",\"Fields\":[{\"Case\":\"SimpleSet\",\"Fields\":[{\"Case\":\"Adjointable\"}]},{\"Case\":\"SimpleSet\",\"Fields\":[{\"Case\":\"Controllable\"}]}]},\"InferredInformation\":{\"IsSelfAdjoint\":false,\"IsIntrinsic\":false}},\"Parent\":{\"Namespace\":\"Shor\",\"Name\":\"SquareAndMultiplyIteration\"},\"Attributes\":[],\"SourceFile\":\"/Users/Matt/Documents/Masters/Dissertation/QSharp/Shor_In_Superposition/quantum/Shor_In_Superposition.qs\",\"Position\":{\"Item1\":378,\"Item2\":0},\"HeaderRange\":{\"Item1\":{\"Line\":1,\"Column\":114},\"Item2\":{\"Line\":1,\"Column\":123}},\"Documentation\":[\"automatically generated QsAdjoint specialization for Shor.SquareAndMultiplyIteration\"]}")]
+[assembly: SpecializationDeclaration("{\"Kind\":{\"Case\":\"QsControlled\"},\"TypeArguments\":{\"Case\":\"Null\"},\"Information\":{\"Characteristics\":{\"Case\":\"Union\",\"Fields\":[{\"Case\":\"SimpleSet\",\"Fields\":[{\"Case\":\"Adjointable\"}]},{\"Case\":\"SimpleSet\",\"Fields\":[{\"Case\":\"Controllable\"}]}]},\"InferredInformation\":{\"IsSelfAdjoint\":false,\"IsIntrinsic\":false}},\"Parent\":{\"Namespace\":\"Shor\",\"Name\":\"SquareAndMultiplyIteration\"},\"Attributes\":[],\"SourceFile\":\"/Users/Matt/Documents/Masters/Dissertation/QSharp/Shor_In_Superposition/quantum/Shor_In_Superposition.qs\",\"Position\":{\"Item1\":378,\"Item2\":0},\"HeaderRange\":{\"Item1\":{\"Line\":1,\"Column\":114},\"Item2\":{\"Line\":1,\"Column\":123}},\"Documentation\":[\"automatically generated QsControlled specialization for Shor.SquareAndMultiplyIteration\"]}")]
+[assembly: SpecializationDeclaration("{\"Kind\":{\"Case\":\"QsControlledAdjoint\"},\"TypeArguments\":{\"Case\":\"Null\"},\"Information\":{\"Characteristics\":{\"Case\":\"Union\",\"Fields\":[{\"Case\":\"SimpleSet\",\"Fields\":[{\"Case\":\"Adjointable\"}]},{\"Case\":\"SimpleSet\",\"Fields\":[{\"Case\":\"Controllable\"}]}]},\"InferredInformation\":{\"IsSelfAdjoint\":false,\"IsIntrinsic\":false}},\"Parent\":{\"Namespace\":\"Shor\",\"Name\":\"SquareAndMultiplyIteration\"},\"Attributes\":[],\"SourceFile\":\"/Users/Matt/Documents/Masters/Dissertation/QSharp/Shor_In_Superposition/quantum/Shor_In_Superposition.qs\",\"Position\":{\"Item1\":378,\"Item2\":0},\"HeaderRange\":{\"Item1\":{\"Line\":1,\"Column\":114},\"Item2\":{\"Line\":1,\"Column\":123}},\"Documentation\":[\"automatically generated QsControlledAdjoint specialization for Shor.SquareAndMultiplyIteration\"]}")]
+[assembly: CallableDeclaration("{\"Kind\":{\"Case\":\"Operation\"},\"QualifiedName\":{\"Namespace\":\"Shor\",\"Name\":\"SquareModM\"},\"Attributes\":[],\"Modifiers\":{\"Access\":{\"Case\":\"DefaultAccess\"}},\"SourceFile\":\"/Users/Matt/Documents/Masters/Dissertation/QSharp/Shor_In_Superposition/quantum/Shor_In_Superposition.qs\",\"Position\":{\"Item1\":396,\"Item2\":0},\"SymbolRange\":{\"Item1\":{\"Line\":1,\"Column\":11},\"Item2\":{\"Line\":1,\"Column\":21}},\"ArgumentTuple\":{\"Case\":\"QsTuple\",\"Fields\":[[{\"Case\":\"QsTupleItem\",\"Fields\":[{\"VariableName\":{\"Case\":\"ValidName\",\"Fields\":[\"a\"]},\"Type\":{\"Case\":\"ArrayType\",\"Fields\":[{\"Case\":\"Qubit\"}]},\"InferredInformation\":{\"IsMutable\":false,\"HasLocalQuantumDependency\":false},\"Position\":{\"Case\":\"Null\"},\"Range\":{\"Item1\":{\"Line\":1,\"Column\":22},\"Item2\":{\"Line\":1,\"Column\":23}}}]},{\"Case\":\"QsTupleItem\",\"Fields\":[{\"VariableName\":{\"Case\":\"ValidName\",\"Fields\":[\"Ms\"]},\"Type\":{\"Case\":\"ArrayType\",\"Fields\":[{\"Case\":\"Qubit\"}]},\"InferredInformation\":{\"IsMutable\":false,\"HasLocalQuantumDependency\":false},\"Position\":{\"Case\":\"Null\"},\"Range\":{\"Item1\":{\"Line\":1,\"Column\":32},\"Item2\":{\"Line\":1,\"Column\":34}}}]},{\"Case\":\"QsTupleItem\",\"Fields\":[{\"VariableName\":{\"Case\":\"ValidName\",\"Fields\":[\"Ts\"]},\"Type\":{\"Case\":\"ArrayType\",\"Fields\":[{\"Case\":\"Qubit\"}]},\"InferredInformation\":{\"IsMutable\":false,\"HasLocalQuantumDependency\":false},\"Position\":{\"Case\":\"Null\"},\"Range\":{\"Item1\":{\"Line\":1,\"Column\":43},\"Item2\":{\"Line\":1,\"Column\":45}}}]}]]},\"Signature\":{\"TypeParameters\":[],\"ArgumentType\":{\"Case\":\"TupleType\",\"Fields\":[[{\"Case\":\"ArrayType\",\"Fields\":[{\"Case\":\"Qubit\"}]},{\"Case\":\"ArrayType\",\"Fields\":[{\"Case\":\"Qubit\"}]},{\"Case\":\"ArrayType\",\"Fields\":[{\"Case\":\"Qubit\"}]}]]},\"ReturnType\":{\"Case\":\"UnitType\"},\"Information\":{\"Characteristics\":{\"Case\":\"Union\",\"Fields\":[{\"Case\":\"SimpleSet\",\"Fields\":[{\"Case\":\"Adjointable\"}]},{\"Case\":\"SimpleSet\",\"Fields\":[{\"Case\":\"Controllable\"}]}]},\"InferredInformation\":{\"IsSelfAdjoint\":false,\"IsIntrinsic\":false}}},\"Documentation\":[]}")]
+[assembly: SpecializationDeclaration("{\"Kind\":{\"Case\":\"QsBody\"},\"TypeArguments\":{\"Case\":\"Null\"},\"Information\":{\"Characteristics\":{\"Case\":\"Union\",\"Fields\":[{\"Case\":\"SimpleSet\",\"Fields\":[{\"Case\":\"Adjointable\"}]},{\"Case\":\"SimpleSet\",\"Fields\":[{\"Case\":\"Controllable\"}]}]},\"InferredInformation\":{\"IsSelfAdjoint\":false,\"IsIntrinsic\":false}},\"Parent\":{\"Namespace\":\"Shor\",\"Name\":\"SquareModM\"},\"Attributes\":[],\"SourceFile\":\"/Users/Matt/Documents/Masters/Dissertation/QSharp/Shor_In_Superposition/quantum/Shor_In_Superposition.qs\",\"Position\":{\"Item1\":396,\"Item2\":0},\"HeaderRange\":{\"Item1\":{\"Line\":1,\"Column\":11},\"Item2\":{\"Line\":1,\"Column\":21}},\"Documentation\":[]}")]
+[assembly: SpecializationDeclaration("{\"Kind\":{\"Case\":\"QsAdjoint\"},\"TypeArguments\":{\"Case\":\"Null\"},\"Information\":{\"Characteristics\":{\"Case\":\"Union\",\"Fields\":[{\"Case\":\"SimpleSet\",\"Fields\":[{\"Case\":\"Adjointable\"}]},{\"Case\":\"SimpleSet\",\"Fields\":[{\"Case\":\"Controllable\"}]}]},\"InferredInformation\":{\"IsSelfAdjoint\":false,\"IsIntrinsic\":false}},\"Parent\":{\"Namespace\":\"Shor\",\"Name\":\"SquareModM\"},\"Attributes\":[],\"SourceFile\":\"/Users/Matt/Documents/Masters/Dissertation/QSharp/Shor_In_Superposition/quantum/Shor_In_Superposition.qs\",\"Position\":{\"Item1\":396,\"Item2\":0},\"HeaderRange\":{\"Item1\":{\"Line\":1,\"Column\":65},\"Item2\":{\"Line\":1,\"Column\":74}},\"Documentation\":[\"automatically generated QsAdjoint specialization for Shor.SquareModM\"]}")]
+[assembly: SpecializationDeclaration("{\"Kind\":{\"Case\":\"QsControlled\"},\"TypeArguments\":{\"Case\":\"Null\"},\"Information\":{\"Characteristics\":{\"Case\":\"Union\",\"Fields\":[{\"Case\":\"SimpleSet\",\"Fields\":[{\"Case\":\"Adjointable\"}]},{\"Case\":\"SimpleSet\",\"Fields\":[{\"Case\":\"Controllable\"}]}]},\"InferredInformation\":{\"IsSelfAdjoint\":false,\"IsIntrinsic\":false}},\"Parent\":{\"Namespace\":\"Shor\",\"Name\":\"SquareModM\"},\"Attributes\":[],\"SourceFile\":\"/Users/Matt/Documents/Masters/Dissertation/QSharp/Shor_In_Superposition/quantum/Shor_In_Superposition.qs\",\"Position\":{\"Item1\":396,\"Item2\":0},\"HeaderRange\":{\"Item1\":{\"Line\":1,\"Column\":65},\"Item2\":{\"Line\":1,\"Column\":74}},\"Documentation\":[\"automatically generated QsControlled specialization for Shor.SquareModM\"]}")]
+[assembly: SpecializationDeclaration("{\"Kind\":{\"Case\":\"QsControlledAdjoint\"},\"TypeArguments\":{\"Case\":\"Null\"},\"Information\":{\"Characteristics\":{\"Case\":\"Union\",\"Fields\":[{\"Case\":\"SimpleSet\",\"Fields\":[{\"Case\":\"Adjointable\"}]},{\"Case\":\"SimpleSet\",\"Fields\":[{\"Case\":\"Controllable\"}]}]},\"InferredInformation\":{\"IsSelfAdjoint\":false,\"IsIntrinsic\":false}},\"Parent\":{\"Namespace\":\"Shor\",\"Name\":\"SquareModM\"},\"Attributes\":[],\"SourceFile\":\"/Users/Matt/Documents/Masters/Dissertation/QSharp/Shor_In_Superposition/quantum/Shor_In_Superposition.qs\",\"Position\":{\"Item1\":396,\"Item2\":0},\"HeaderRange\":{\"Item1\":{\"Line\":1,\"Column\":65},\"Item2\":{\"Line\":1,\"Column\":74}},\"Documentation\":[\"automatically generated QsControlledAdjoint specialization for Shor.SquareModM\"]}")]
+[assembly: CallableDeclaration("{\"Kind\":{\"Case\":\"Operation\"},\"QualifiedName\":{\"Namespace\":\"Shor\",\"Name\":\"MultiplyModM\"},\"Attributes\":[],\"Modifiers\":{\"Access\":{\"Case\":\"DefaultAccess\"}},\"SourceFile\":\"/Users/Matt/Documents/Masters/Dissertation/QSharp/Shor_In_Superposition/quantum/Shor_In_Superposition.qs\",\"Position\":{\"Item1\":409,\"Item2\":0},\"SymbolRange\":{\"Item1\":{\"Line\":1,\"Column\":11},\"Item2\":{\"Line\":1,\"Column\":23}},\"ArgumentTuple\":{\"Case\":\"QsTuple\",\"Fields\":[[{\"Case\":\"QsTupleItem\",\"Fields\":[{\"VariableName\":{\"Case\":\"ValidName\",\"Fields\":[\"a\"]},\"Type\":{\"Case\":\"ArrayType\",\"Fields\":[{\"Case\":\"Qubit\"}]},\"InferredInformation\":{\"IsMutable\":false,\"HasLocalQuantumDependency\":false},\"Position\":{\"Case\":\"Null\"},\"Range\":{\"Item1\":{\"Line\":1,\"Column\":24},\"Item2\":{\"Line\":1,\"Column\":25}}}]},{\"Case\":\"QsTupleItem\",\"Fields\":[{\"VariableName\":{\"Case\":\"ValidName\",\"Fields\":[\"b\"]},\"Type\":{\"Case\":\"ArrayType\",\"Fields\":[{\"Case\":\"Qubit\"}]},\"InferredInformation\":{\"IsMutable\":false,\"HasLocalQuantumDependency\":false},\"Position\":{\"Case\":\"Null\"},\"Range\":{\"Item1\":{\"Line\":1,\"Column\":34},\"Item2\":{\"Line\":1,\"Column\":35}}}]},{\"Case\":\"QsTupleItem\",\"Fields\":[{\"VariableName\":{\"Case\":\"ValidName\",\"Fields\":[\"Ms\"]},\"Type\":{\"Case\":\"ArrayType\",\"Fields\":[{\"Case\":\"Qubit\"}]},\"InferredInformation\":{\"IsMutable\":false,\"HasLocalQuantumDependency\":false},\"Position\":{\"Case\":\"Null\"},\"Range\":{\"Item1\":{\"Line\":1,\"Column\":44},\"Item2\":{\"Line\":1,\"Column\":46}}}]},{\"Case\":\"QsTupleItem\",\"Fields\":[{\"VariableName\":{\"Case\":\"ValidName\",\"Fields\":[\"Ts\"]},\"Type\":{\"Case\":\"ArrayType\",\"Fields\":[{\"Case\":\"Qubit\"}]},\"InferredInformation\":{\"IsMutable\":false,\"HasLocalQuantumDependency\":false},\"Position\":{\"Case\":\"Null\"},\"Range\":{\"Item1\":{\"Line\":1,\"Column\":55},\"Item2\":{\"Line\":1,\"Column\":57}}}]}]]},\"Signature\":{\"TypeParameters\":[],\"ArgumentType\":{\"Case\":\"TupleType\",\"Fields\":[[{\"Case\":\"ArrayType\",\"Fields\":[{\"Case\":\"Qubit\"}]},{\"Case\":\"ArrayType\",\"Fields\":[{\"Case\":\"Qubit\"}]},{\"Case\":\"ArrayType\",\"Fields\":[{\"Case\":\"Qubit\"}]},{\"Case\":\"ArrayType\",\"Fields\":[{\"Case\":\"Qubit\"}]}]]},\"ReturnType\":{\"Case\":\"UnitType\"},\"Information\":{\"Characteristics\":{\"Case\":\"Union\",\"Fields\":[{\"Case\":\"SimpleSet\",\"Fields\":[{\"Case\":\"Adjointable\"}]},{\"Case\":\"SimpleSet\",\"Fields\":[{\"Case\":\"Controllable\"}]}]},\"InferredInformation\":{\"IsSelfAdjoint\":false,\"IsIntrinsic\":false}}},\"Documentation\":[]}")]
+[assembly: SpecializationDeclaration("{\"Kind\":{\"Case\":\"QsBody\"},\"TypeArguments\":{\"Case\":\"Null\"},\"Information\":{\"Characteristics\":{\"Case\":\"Union\",\"Fields\":[{\"Case\":\"SimpleSet\",\"Fields\":[{\"Case\":\"Adjointable\"}]},{\"Case\":\"SimpleSet\",\"Fields\":[{\"Case\":\"Controllable\"}]}]},\"InferredInformation\":{\"IsSelfAdjoint\":false,\"IsIntrinsic\":false}},\"Parent\":{\"Namespace\":\"Shor\",\"Name\":\"MultiplyModM\"},\"Attributes\":[],\"SourceFile\":\"/Users/Matt/Documents/Masters/Dissertation/QSharp/Shor_In_Superposition/quantum/Shor_In_Superposition.qs\",\"Position\":{\"Item1\":409,\"Item2\":0},\"HeaderRange\":{\"Item1\":{\"Line\":1,\"Column\":11},\"Item2\":{\"Line\":1,\"Column\":23}},\"Documentation\":[]}")]
+[assembly: SpecializationDeclaration("{\"Kind\":{\"Case\":\"QsAdjoint\"},\"TypeArguments\":{\"Case\":\"Null\"},\"Information\":{\"Characteristics\":{\"Case\":\"Union\",\"Fields\":[{\"Case\":\"SimpleSet\",\"Fields\":[{\"Case\":\"Adjointable\"}]},{\"Case\":\"SimpleSet\",\"Fields\":[{\"Case\":\"Controllable\"}]}]},\"InferredInformation\":{\"IsSelfAdjoint\":false,\"IsIntrinsic\":false}},\"Parent\":{\"Namespace\":\"Shor\",\"Name\":\"MultiplyModM\"},\"Attributes\":[],\"SourceFile\":\"/Users/Matt/Documents/Masters/Dissertation/QSharp/Shor_In_Superposition/quantum/Shor_In_Superposition.qs\",\"Position\":{\"Item1\":409,\"Item2\":0},\"HeaderRange\":{\"Item1\":{\"Line\":1,\"Column\":77},\"Item2\":{\"Line\":1,\"Column\":86}},\"Documentation\":[\"automatically generated QsAdjoint specialization for Shor.MultiplyModM\"]}")]
+[assembly: SpecializationDeclaration("{\"Kind\":{\"Case\":\"QsControlled\"},\"TypeArguments\":{\"Case\":\"Null\"},\"Information\":{\"Characteristics\":{\"Case\":\"Union\",\"Fields\":[{\"Case\":\"SimpleSet\",\"Fields\":[{\"Case\":\"Adjointable\"}]},{\"Case\":\"SimpleSet\",\"Fields\":[{\"Case\":\"Controllable\"}]}]},\"InferredInformation\":{\"IsSelfAdjoint\":false,\"IsIntrinsic\":false}},\"Parent\":{\"Namespace\":\"Shor\",\"Name\":\"MultiplyModM\"},\"Attributes\":[],\"SourceFile\":\"/Users/Matt/Documents/Masters/Dissertation/QSharp/Shor_In_Superposition/quantum/Shor_In_Superposition.qs\",\"Position\":{\"Item1\":409,\"Item2\":0},\"HeaderRange\":{\"Item1\":{\"Line\":1,\"Column\":77},\"Item2\":{\"Line\":1,\"Column\":86}},\"Documentation\":[\"automatically generated QsControlled specialization for Shor.MultiplyModM\"]}")]
+[assembly: SpecializationDeclaration("{\"Kind\":{\"Case\":\"QsControlledAdjoint\"},\"TypeArguments\":{\"Case\":\"Null\"},\"Information\":{\"Characteristics\":{\"Case\":\"Union\",\"Fields\":[{\"Case\":\"SimpleSet\",\"Fields\":[{\"Case\":\"Adjointable\"}]},{\"Case\":\"SimpleSet\",\"Fields\":[{\"Case\":\"Controllable\"}]}]},\"InferredInformation\":{\"IsSelfAdjoint\":false,\"IsIntrinsic\":false}},\"Parent\":{\"Namespace\":\"Shor\",\"Name\":\"MultiplyModM\"},\"Attributes\":[],\"SourceFile\":\"/Users/Matt/Documents/Masters/Dissertation/QSharp/Shor_In_Superposition/quantum/Shor_In_Superposition.qs\",\"Position\":{\"Item1\":409,\"Item2\":0},\"HeaderRange\":{\"Item1\":{\"Line\":1,\"Column\":77},\"Item2\":{\"Line\":1,\"Column\":86}},\"Documentation\":[\"automatically generated QsControlledAdjoint specialization for Shor.MultiplyModM\"]}")]
 #line hidden
 namespace Shor
 {
-    [SourceLocation("/Users/Matt/Documents/Masters/Dissertation/QSharp/Shor_In_Superposition/quantum/Shor_In_Superposition.qs", OperationFunctor.Body, 11, 34)]
+    [SourceLocation("/Users/Matt/Documents/Masters/Dissertation/QSharp/Shor_In_Superposition/quantum/Shor_In_Superposition.qs", OperationFunctor.Body, 11, 54)]
     public partial class FactorInteger : Operation<QVoid, QVoid>, ICallable
     {
         public FactorInteger(IOperationFactory m) : base(m)
@@ -66,25 +64,25 @@ namespace Shor
             set;
         }
 
-        protected IUnitary<Qubit> MicrosoftQuantumIntrinsicX
-        {
-            get;
-            set;
-        }
-
-        protected IUnitary<Qubit> MicrosoftQuantumIntrinsicH
-        {
-            get;
-            set;
-        }
-
         protected ICallable MicrosoftQuantumDiagnosticsDumpMachine
         {
             get;
             set;
         }
 
+        protected IUnitary<Qubit> MicrosoftQuantumIntrinsicX
+        {
+            get;
+            set;
+        }
+
         protected ICallable<(IQArray<Qubit>,IQArray<Qubit>), QVoid> GenerateA
+        {
+            get;
+            set;
+        }
+
+        protected ICallable<(IQArray<Qubit>,IQArray<Qubit>,IQArray<Qubit>,IQArray<Qubit>), QVoid> SquareAndMultiply
         {
             get;
             set;
@@ -105,25 +103,41 @@ namespace Shor
 #line hidden
             {
 #line 14 "/Users/Matt/Documents/Masters/Dissertation/QSharp/Shor_In_Superposition/quantum/Shor_In_Superposition.qs"
-                var (Ms,As) = (Allocate.Apply(num), Allocate.Apply(num));
+                var (Ms,As,Js,Rs) = (Allocate.Apply(num), Allocate.Apply(num), Allocate.Apply((num * 2L)), Allocate.Apply(num));
 #line hidden
                 bool __arg1__ = true;
                 try
                 {
-#line 18 "/Users/Matt/Documents/Masters/Dissertation/QSharp/Shor_In_Superposition/quantum/Shor_In_Superposition.qs"
-                    MicrosoftQuantumIntrinsicX.Apply(Ms[2L]);
+#line 15 "/Users/Matt/Documents/Masters/Dissertation/QSharp/Shor_In_Superposition/quantum/Shor_In_Superposition.qs"
+                    MicrosoftQuantumDiagnosticsDumpMachine.Apply(QVoid.Instance);
 #line 19 "/Users/Matt/Documents/Masters/Dissertation/QSharp/Shor_In_Superposition/quantum/Shor_In_Superposition.qs"
-                    MicrosoftQuantumIntrinsicH.Apply(Ms[1L]);
+                    MicrosoftQuantumIntrinsicX.Apply(Ms[2L]);
 #line 20 "/Users/Matt/Documents/Masters/Dissertation/QSharp/Shor_In_Superposition/quantum/Shor_In_Superposition.qs"
-                    MicrosoftQuantumIntrinsicH.Apply(Ms[0L]);
-#line 22 "/Users/Matt/Documents/Masters/Dissertation/QSharp/Shor_In_Superposition/quantum/Shor_In_Superposition.qs"
-                    MicrosoftQuantumDiagnosticsDumpMachine.Apply(QVoid.Instance);
+                    MicrosoftQuantumIntrinsicX.Apply(Ms[3L]);
+#line 21 "/Users/Matt/Documents/Masters/Dissertation/QSharp/Shor_In_Superposition/quantum/Shor_In_Superposition.qs"
+                    MicrosoftQuantumIntrinsicMessage.Apply("Creating M...");
 #line 23 "/Users/Matt/Documents/Masters/Dissertation/QSharp/Shor_In_Superposition/quantum/Shor_In_Superposition.qs"
-                    GenerateA.Apply((Ms, As));
-#line 25 "/Users/Matt/Documents/Masters/Dissertation/QSharp/Shor_In_Superposition/quantum/Shor_In_Superposition.qs"
                     MicrosoftQuantumDiagnosticsDumpMachine.Apply(QVoid.Instance);
-#line 29 "/Users/Matt/Documents/Masters/Dissertation/QSharp/Shor_In_Superposition/quantum/Shor_In_Superposition.qs"
-                    MicrosoftQuantumIntrinsicResetAll.Apply(QArray<Qubit>.Add(Ms, As));
+#line 25 "/Users/Matt/Documents/Masters/Dissertation/QSharp/Shor_In_Superposition/quantum/Shor_In_Superposition.qs"
+                    MicrosoftQuantumIntrinsicMessage.Apply("Creating A...");
+#line 26 "/Users/Matt/Documents/Masters/Dissertation/QSharp/Shor_In_Superposition/quantum/Shor_In_Superposition.qs"
+                    GenerateA.Apply((Ms, As));
+#line 28 "/Users/Matt/Documents/Masters/Dissertation/QSharp/Shor_In_Superposition/quantum/Shor_In_Superposition.qs"
+                    MicrosoftQuantumDiagnosticsDumpMachine.Apply(QVoid.Instance);
+#line 30 "/Users/Matt/Documents/Masters/Dissertation/QSharp/Shor_In_Superposition/quantum/Shor_In_Superposition.qs"
+                    MicrosoftQuantumIntrinsicMessage.Apply("Creating J...");
+#line 33 "/Users/Matt/Documents/Masters/Dissertation/QSharp/Shor_In_Superposition/quantum/Shor_In_Superposition.qs"
+                    MicrosoftQuantumIntrinsicX.Apply(Js[2L]);
+#line 34 "/Users/Matt/Documents/Masters/Dissertation/QSharp/Shor_In_Superposition/quantum/Shor_In_Superposition.qs"
+                    MicrosoftQuantumDiagnosticsDumpMachine.Apply(QVoid.Instance);
+#line 36 "/Users/Matt/Documents/Masters/Dissertation/QSharp/Shor_In_Superposition/quantum/Shor_In_Superposition.qs"
+                    MicrosoftQuantumIntrinsicMessage.Apply("Creating Rs...");
+#line 37 "/Users/Matt/Documents/Masters/Dissertation/QSharp/Shor_In_Superposition/quantum/Shor_In_Superposition.qs"
+                    SquareAndMultiply.Apply((As, Ms, Js, Rs));
+#line 39 "/Users/Matt/Documents/Masters/Dissertation/QSharp/Shor_In_Superposition/quantum/Shor_In_Superposition.qs"
+                    MicrosoftQuantumDiagnosticsDumpMachine.Apply(QVoid.Instance);
+#line 45 "/Users/Matt/Documents/Masters/Dissertation/QSharp/Shor_In_Superposition/quantum/Shor_In_Superposition.qs"
+                    MicrosoftQuantumIntrinsicResetAll.Apply(QArray<Qubit>.Add(QArray<Qubit>.Add(QArray<Qubit>.Add(Ms, As), Js), Rs));
                 }
 #line hidden
                 catch
@@ -140,6 +154,10 @@ namespace Shor
                         Release.Apply(Ms);
 #line hidden
                         Release.Apply(As);
+#line hidden
+                        Release.Apply(Js);
+#line hidden
+                        Release.Apply(Rs);
                     }
                 }
             }
@@ -154,10 +172,10 @@ namespace Shor
             this.MicrosoftQuantumIntrinsicMessage = this.Factory.Get<ICallable<String, QVoid>>(typeof(Microsoft.Quantum.Intrinsic.Message));
             this.Allocate = this.Factory.Get<Allocate>(typeof(Microsoft.Quantum.Intrinsic.Allocate));
             this.Release = this.Factory.Get<Release>(typeof(Microsoft.Quantum.Intrinsic.Release));
-            this.MicrosoftQuantumIntrinsicX = this.Factory.Get<IUnitary<Qubit>>(typeof(Microsoft.Quantum.Intrinsic.X));
-            this.MicrosoftQuantumIntrinsicH = this.Factory.Get<IUnitary<Qubit>>(typeof(Microsoft.Quantum.Intrinsic.H));
             this.MicrosoftQuantumDiagnosticsDumpMachine = this.Factory.Get<ICallable>(typeof(Microsoft.Quantum.Diagnostics.DumpMachine<>));
+            this.MicrosoftQuantumIntrinsicX = this.Factory.Get<IUnitary<Qubit>>(typeof(Microsoft.Quantum.Intrinsic.X));
             this.GenerateA = this.Factory.Get<ICallable<(IQArray<Qubit>,IQArray<Qubit>), QVoid>>(typeof(GenerateA));
+            this.SquareAndMultiply = this.Factory.Get<ICallable<(IQArray<Qubit>,IQArray<Qubit>,IQArray<Qubit>,IQArray<Qubit>), QVoid>>(typeof(SquareAndMultiply));
             this.MicrosoftQuantumIntrinsicResetAll = this.Factory.Get<ICallable<IQArray<Qubit>, QVoid>>(typeof(Microsoft.Quantum.Intrinsic.ResetAll));
         }
 
@@ -169,132 +187,7 @@ namespace Shor
         }
     }
 
-    [SourceLocation("/Users/Matt/Documents/Masters/Dissertation/QSharp/Shor_In_Superposition/quantum/Shor_In_Superposition.qs", OperationFunctor.Body, 34, 48)]
-    public partial class ModularSquaring : Operation<(IQArray<Qubit>,IQArray<Qubit>,IQArray<Qubit>,Int64), QVoid>, ICallable
-    {
-        public ModularSquaring(IOperationFactory m) : base(m)
-        {
-        }
-
-        public class In : QTuple<(IQArray<Qubit>,IQArray<Qubit>,IQArray<Qubit>,Int64)>, IApplyData
-        {
-            public In((IQArray<Qubit>,IQArray<Qubit>,IQArray<Qubit>,Int64) data) : base(data)
-            {
-            }
-
-            System.Collections.Generic.IEnumerable<Qubit> IApplyData.Qubits
-            {
-                get
-                {
-                    return Qubit.Concat(((IApplyData)Data.Item1)?.Qubits, ((IApplyData)Data.Item2)?.Qubits, ((IApplyData)Data.Item3)?.Qubits);
-                }
-            }
-        }
-
-        String ICallable.Name => "ModularSquaring";
-        String ICallable.FullName => "Shor.ModularSquaring";
-        protected ICallable Length
-        {
-            get;
-            set;
-        }
-
-        protected IUnitary<(Microsoft.Quantum.Arithmetic.LittleEndian,Microsoft.Quantum.Arithmetic.LittleEndian)> AddI
-        {
-            get;
-            set;
-        }
-
-        protected ICallable<IQArray<Qubit>, Microsoft.Quantum.Arithmetic.LittleEndian> MicrosoftQuantumArithmeticLittleEndian
-        {
-            get;
-            set;
-        }
-
-        protected Allocate Allocate
-        {
-            get;
-            set;
-        }
-
-        protected Release Release
-        {
-            get;
-            set;
-        }
-
-        protected IUnitary<(Microsoft.Quantum.Arithmetic.LittleEndian,Microsoft.Quantum.Arithmetic.LittleEndian)> SquareI
-        {
-            get;
-            set;
-        }
-
-        public override Func<(IQArray<Qubit>,IQArray<Qubit>,IQArray<Qubit>,Int64), QVoid> Body => (__in__) =>
-        {
-            var (Ms,As,As_modM,pow) = __in__;
-#line 35 "/Users/Matt/Documents/Masters/Dissertation/QSharp/Shor_In_Superposition/quantum/Shor_In_Superposition.qs"
-            var num = Ms.Length;
-#line 36 "/Users/Matt/Documents/Masters/Dissertation/QSharp/Shor_In_Superposition/quantum/Shor_In_Superposition.qs"
-            if ((pow == 1L))
-            {
-#line 36 "/Users/Matt/Documents/Masters/Dissertation/QSharp/Shor_In_Superposition/quantum/Shor_In_Superposition.qs"
-                AddI.Apply((new Microsoft.Quantum.Arithmetic.LittleEndian(As), new Microsoft.Quantum.Arithmetic.LittleEndian(As_modM)));
-            }
-            else if ((pow == 2L))
-            {
-#line hidden
-                {
-#line 38 "/Users/Matt/Documents/Masters/Dissertation/QSharp/Shor_In_Superposition/quantum/Shor_In_Superposition.qs"
-                    var pad = Allocate.Apply(num);
-#line hidden
-                    bool __arg1__ = true;
-                    try
-                    {
-#line 39 "/Users/Matt/Documents/Masters/Dissertation/QSharp/Shor_In_Superposition/quantum/Shor_In_Superposition.qs"
-                        SquareI.Apply((new Microsoft.Quantum.Arithmetic.LittleEndian(As), new Microsoft.Quantum.Arithmetic.LittleEndian(QArray<Qubit>.Add(As_modM, pad))));
-                    }
-#line hidden
-                    catch
-                    {
-                        __arg1__ = false;
-                        throw;
-                    }
-#line hidden
-                    finally
-                    {
-                        if (__arg1__)
-                        {
-#line hidden
-                            Release.Apply(pad);
-                        }
-                    }
-                }
-            }
-
-#line hidden
-            return QVoid.Instance;
-        }
-
-        ;
-        public override void Init()
-        {
-            this.Length = this.Factory.Get<ICallable>(typeof(Microsoft.Quantum.Core.Length<>));
-            this.AddI = this.Factory.Get<IUnitary<(Microsoft.Quantum.Arithmetic.LittleEndian,Microsoft.Quantum.Arithmetic.LittleEndian)>>(typeof(AddI));
-            this.MicrosoftQuantumArithmeticLittleEndian = this.Factory.Get<ICallable<IQArray<Qubit>, Microsoft.Quantum.Arithmetic.LittleEndian>>(typeof(Microsoft.Quantum.Arithmetic.LittleEndian));
-            this.Allocate = this.Factory.Get<Allocate>(typeof(Microsoft.Quantum.Intrinsic.Allocate));
-            this.Release = this.Factory.Get<Release>(typeof(Microsoft.Quantum.Intrinsic.Release));
-            this.SquareI = this.Factory.Get<IUnitary<(Microsoft.Quantum.Arithmetic.LittleEndian,Microsoft.Quantum.Arithmetic.LittleEndian)>>(typeof(SquareI));
-        }
-
-        public override IApplyData __dataIn((IQArray<Qubit>,IQArray<Qubit>,IQArray<Qubit>,Int64) data) => new In(data);
-        public override IApplyData __dataOut(QVoid data) => data;
-        public static System.Threading.Tasks.Task<QVoid> Run(IOperationFactory __m__, IQArray<Qubit> Ms, IQArray<Qubit> As, IQArray<Qubit> As_modM, Int64 pow)
-        {
-            return __m__.Run<ModularSquaring, (IQArray<Qubit>,IQArray<Qubit>,IQArray<Qubit>,Int64), QVoid>((Ms, As, As_modM, pow));
-        }
-    }
-
-    [SourceLocation("/Users/Matt/Documents/Masters/Dissertation/QSharp/Shor_In_Superposition/quantum/Shor_In_Superposition.qs", OperationFunctor.Body, 48, 85)]
+    [SourceLocation("/Users/Matt/Documents/Masters/Dissertation/QSharp/Shor_In_Superposition/quantum/Shor_In_Superposition.qs", OperationFunctor.Body, 54, 102)]
     public partial class GenerateA : Operation<(IQArray<Qubit>,IQArray<Qubit>), QVoid>, ICallable
     {
         public GenerateA(IOperationFactory m) : base(m)
@@ -342,7 +235,19 @@ namespace Shor
             set;
         }
 
-        protected IUnitary<(Int64,Microsoft.Quantum.Arithmetic.LittleEndian)> MicrosoftQuantumArithmeticIncrementByInteger
+        protected IAdjointable MicrosoftQuantumCanonApplyToEachA
+        {
+            get;
+            set;
+        }
+
+        protected IUnitary<Qubit> MicrosoftQuantumIntrinsicX
+        {
+            get;
+            set;
+        }
+
+        protected IUnitary<(Microsoft.Quantum.Arithmetic.LittleEndian,Microsoft.Quantum.Arithmetic.LittleEndian)> AddI
         {
             get;
             set;
@@ -360,19 +265,7 @@ namespace Shor
             set;
         }
 
-        protected IUnitary<Qubit> MicrosoftQuantumIntrinsicX
-        {
-            get;
-            set;
-        }
-
         protected IUnitary<(Microsoft.Quantum.Arithmetic.LittleEndian,Microsoft.Quantum.Arithmetic.LittleEndian,Microsoft.Quantum.Arithmetic.LittleEndian)> DivideI
-        {
-            get;
-            set;
-        }
-
-        protected IUnitary<(Microsoft.Quantum.Arithmetic.LittleEndian,Microsoft.Quantum.Arithmetic.LittleEndian)> AddI
         {
             get;
             set;
@@ -381,58 +274,62 @@ namespace Shor
         public override Func<(IQArray<Qubit>,IQArray<Qubit>), QVoid> Body => (__in__) =>
         {
             var (Ms,As) = __in__;
-#line 49 "/Users/Matt/Documents/Masters/Dissertation/QSharp/Shor_In_Superposition/quantum/Shor_In_Superposition.qs"
+#line 55 "/Users/Matt/Documents/Masters/Dissertation/QSharp/Shor_In_Superposition/quantum/Shor_In_Superposition.qs"
             var num = Ms.Length;
 #line hidden
             {
-#line 50 "/Users/Matt/Documents/Masters/Dissertation/QSharp/Shor_In_Superposition/quantum/Shor_In_Superposition.qs"
-                var (tmp1,tmp2) = (Allocate.Apply(num), Allocate.Apply(num));
+#line 56 "/Users/Matt/Documents/Masters/Dissertation/QSharp/Shor_In_Superposition/quantum/Shor_In_Superposition.qs"
+                var (tmp1,tmp2,tmpM) = (Allocate.Apply(num), Allocate.Apply(num), Allocate.Apply(num));
 #line hidden
                 bool __arg1__ = true;
                 try
                 {
-#line 53 "/Users/Matt/Documents/Masters/Dissertation/QSharp/Shor_In_Superposition/quantum/Shor_In_Superposition.qs"
-                    var Ran = 13L;
-#line 54 "/Users/Matt/Documents/Masters/Dissertation/QSharp/Shor_In_Superposition/quantum/Shor_In_Superposition.qs"
-                    MicrosoftQuantumIntrinsicMessage.Apply(String.Format("Random Integer is: {0}", Ran));
-#line 55 "/Users/Matt/Documents/Masters/Dissertation/QSharp/Shor_In_Superposition/quantum/Shor_In_Superposition.qs"
-                    MicrosoftQuantumArithmeticIncrementByInteger.Apply((-(1L), new Microsoft.Quantum.Arithmetic.LittleEndian(Ms)));
-#line 56 "/Users/Matt/Documents/Masters/Dissertation/QSharp/Shor_In_Superposition/quantum/Shor_In_Superposition.qs"
-                    var RanArr = (IQArray<Boolean>)MicrosoftQuantumConvertIntAsBoolArray.Apply((Ran, num));
-#line 58 "/Users/Matt/Documents/Masters/Dissertation/QSharp/Shor_In_Superposition/quantum/Shor_In_Superposition.qs"
-                    foreach (var i in new QRange(0L, (tmp1.Length - 1L)))
-#line hidden
-                    {
 #line 59 "/Users/Matt/Documents/Masters/Dissertation/QSharp/Shor_In_Superposition/quantum/Shor_In_Superposition.qs"
-                        if ((RanArr[i] == true))
-                        {
+                    var Ran = 13L;
 #line 60 "/Users/Matt/Documents/Masters/Dissertation/QSharp/Shor_In_Superposition/quantum/Shor_In_Superposition.qs"
-                            MicrosoftQuantumIntrinsicX.Apply(tmp1[i]);
-                        }
-                    }
-
+                    MicrosoftQuantumIntrinsicMessage.Apply(String.Format("Random Integer is: {0}", Ran));
+#line 63 "/Users/Matt/Documents/Masters/Dissertation/QSharp/Shor_In_Superposition/quantum/Shor_In_Superposition.qs"
+                    MicrosoftQuantumCanonApplyToEachA.Apply((MicrosoftQuantumIntrinsicX, tmpM));
 #line 64 "/Users/Matt/Documents/Masters/Dissertation/QSharp/Shor_In_Superposition/quantum/Shor_In_Superposition.qs"
-                    DivideI.Apply((new Microsoft.Quantum.Arithmetic.LittleEndian(tmp1), new Microsoft.Quantum.Arithmetic.LittleEndian(Ms), new Microsoft.Quantum.Arithmetic.LittleEndian(tmp2)));
-#line 67 "/Users/Matt/Documents/Masters/Dissertation/QSharp/Shor_In_Superposition/quantum/Shor_In_Superposition.qs"
-                    MicrosoftQuantumIntrinsicX.Apply(As[0L]);
-#line 69 "/Users/Matt/Documents/Masters/Dissertation/QSharp/Shor_In_Superposition/quantum/Shor_In_Superposition.qs"
-                    AddI.Apply((new Microsoft.Quantum.Arithmetic.LittleEndian(tmp1), new Microsoft.Quantum.Arithmetic.LittleEndian(As)));
-#line 72 "/Users/Matt/Documents/Masters/Dissertation/QSharp/Shor_In_Superposition/quantum/Shor_In_Superposition.qs"
-                    DivideI.Adjoint.Apply((new Microsoft.Quantum.Arithmetic.LittleEndian(tmp1), new Microsoft.Quantum.Arithmetic.LittleEndian(Ms), new Microsoft.Quantum.Arithmetic.LittleEndian(tmp2)));
-#line 74 "/Users/Matt/Documents/Masters/Dissertation/QSharp/Shor_In_Superposition/quantum/Shor_In_Superposition.qs"
+                    AddI.Apply((new Microsoft.Quantum.Arithmetic.LittleEndian(Ms), new Microsoft.Quantum.Arithmetic.LittleEndian(tmpM)));
+#line 66 "/Users/Matt/Documents/Masters/Dissertation/QSharp/Shor_In_Superposition/quantum/Shor_In_Superposition.qs"
+                    var RanArr = (IQArray<Boolean>)MicrosoftQuantumConvertIntAsBoolArray.Apply((Ran, num));
+#line 68 "/Users/Matt/Documents/Masters/Dissertation/QSharp/Shor_In_Superposition/quantum/Shor_In_Superposition.qs"
                     foreach (var i in new QRange(0L, (tmp1.Length - 1L)))
 #line hidden
                     {
-#line 75 "/Users/Matt/Documents/Masters/Dissertation/QSharp/Shor_In_Superposition/quantum/Shor_In_Superposition.qs"
+#line 69 "/Users/Matt/Documents/Masters/Dissertation/QSharp/Shor_In_Superposition/quantum/Shor_In_Superposition.qs"
                         if ((RanArr[i] == true))
                         {
-#line 76 "/Users/Matt/Documents/Masters/Dissertation/QSharp/Shor_In_Superposition/quantum/Shor_In_Superposition.qs"
+#line 70 "/Users/Matt/Documents/Masters/Dissertation/QSharp/Shor_In_Superposition/quantum/Shor_In_Superposition.qs"
                             MicrosoftQuantumIntrinsicX.Apply(tmp1[i]);
                         }
                     }
 
-#line 79 "/Users/Matt/Documents/Masters/Dissertation/QSharp/Shor_In_Superposition/quantum/Shor_In_Superposition.qs"
-                    MicrosoftQuantumArithmeticIncrementByInteger.Apply((1L, new Microsoft.Quantum.Arithmetic.LittleEndian(Ms)));
+#line 75 "/Users/Matt/Documents/Masters/Dissertation/QSharp/Shor_In_Superposition/quantum/Shor_In_Superposition.qs"
+                    DivideI.Apply((new Microsoft.Quantum.Arithmetic.LittleEndian(tmp1), new Microsoft.Quantum.Arithmetic.LittleEndian(tmpM), new Microsoft.Quantum.Arithmetic.LittleEndian(tmp2)));
+#line 78 "/Users/Matt/Documents/Masters/Dissertation/QSharp/Shor_In_Superposition/quantum/Shor_In_Superposition.qs"
+                    MicrosoftQuantumIntrinsicX.Apply(As[0L]);
+#line 80 "/Users/Matt/Documents/Masters/Dissertation/QSharp/Shor_In_Superposition/quantum/Shor_In_Superposition.qs"
+                    AddI.Apply((new Microsoft.Quantum.Arithmetic.LittleEndian(tmp1), new Microsoft.Quantum.Arithmetic.LittleEndian(As)));
+#line 83 "/Users/Matt/Documents/Masters/Dissertation/QSharp/Shor_In_Superposition/quantum/Shor_In_Superposition.qs"
+                    DivideI.Adjoint.Apply((new Microsoft.Quantum.Arithmetic.LittleEndian(tmp1), new Microsoft.Quantum.Arithmetic.LittleEndian(tmpM), new Microsoft.Quantum.Arithmetic.LittleEndian(tmp2)));
+#line 85 "/Users/Matt/Documents/Masters/Dissertation/QSharp/Shor_In_Superposition/quantum/Shor_In_Superposition.qs"
+                    foreach (var i in new QRange(0L, (tmp1.Length - 1L)))
+#line hidden
+                    {
+#line 86 "/Users/Matt/Documents/Masters/Dissertation/QSharp/Shor_In_Superposition/quantum/Shor_In_Superposition.qs"
+                        if ((RanArr[i] == true))
+                        {
+#line 87 "/Users/Matt/Documents/Masters/Dissertation/QSharp/Shor_In_Superposition/quantum/Shor_In_Superposition.qs"
+                            MicrosoftQuantumIntrinsicX.Apply(tmp1[i]);
+                        }
+                    }
+
+#line 91 "/Users/Matt/Documents/Masters/Dissertation/QSharp/Shor_In_Superposition/quantum/Shor_In_Superposition.qs"
+                    AddI.Adjoint.Apply((new Microsoft.Quantum.Arithmetic.LittleEndian(Ms), new Microsoft.Quantum.Arithmetic.LittleEndian(tmpM)));
+#line 92 "/Users/Matt/Documents/Masters/Dissertation/QSharp/Shor_In_Superposition/quantum/Shor_In_Superposition.qs"
+                    MicrosoftQuantumCanonApplyToEachA.Apply((MicrosoftQuantumIntrinsicX, tmpM));
                 }
 #line hidden
                 catch
@@ -449,6 +346,8 @@ namespace Shor
                         Release.Apply(tmp1);
 #line hidden
                         Release.Apply(tmp2);
+#line hidden
+                        Release.Apply(tmpM);
                     }
                 }
             }
@@ -464,12 +363,12 @@ namespace Shor
             this.Allocate = this.Factory.Get<Allocate>(typeof(Microsoft.Quantum.Intrinsic.Allocate));
             this.Release = this.Factory.Get<Release>(typeof(Microsoft.Quantum.Intrinsic.Release));
             this.MicrosoftQuantumIntrinsicMessage = this.Factory.Get<ICallable<String, QVoid>>(typeof(Microsoft.Quantum.Intrinsic.Message));
-            this.MicrosoftQuantumArithmeticIncrementByInteger = this.Factory.Get<IUnitary<(Int64,Microsoft.Quantum.Arithmetic.LittleEndian)>>(typeof(Microsoft.Quantum.Arithmetic.IncrementByInteger));
+            this.MicrosoftQuantumCanonApplyToEachA = this.Factory.Get<IAdjointable>(typeof(Microsoft.Quantum.Canon.ApplyToEachA<>));
+            this.MicrosoftQuantumIntrinsicX = this.Factory.Get<IUnitary<Qubit>>(typeof(Microsoft.Quantum.Intrinsic.X));
+            this.AddI = this.Factory.Get<IUnitary<(Microsoft.Quantum.Arithmetic.LittleEndian,Microsoft.Quantum.Arithmetic.LittleEndian)>>(typeof(AddI));
             this.MicrosoftQuantumArithmeticLittleEndian = this.Factory.Get<ICallable<IQArray<Qubit>, Microsoft.Quantum.Arithmetic.LittleEndian>>(typeof(Microsoft.Quantum.Arithmetic.LittleEndian));
             this.MicrosoftQuantumConvertIntAsBoolArray = this.Factory.Get<ICallable<(Int64,Int64), IQArray<Boolean>>>(typeof(Microsoft.Quantum.Convert.IntAsBoolArray));
-            this.MicrosoftQuantumIntrinsicX = this.Factory.Get<IUnitary<Qubit>>(typeof(Microsoft.Quantum.Intrinsic.X));
             this.DivideI = this.Factory.Get<IUnitary<(Microsoft.Quantum.Arithmetic.LittleEndian,Microsoft.Quantum.Arithmetic.LittleEndian,Microsoft.Quantum.Arithmetic.LittleEndian)>>(typeof(DivideI));
-            this.AddI = this.Factory.Get<IUnitary<(Microsoft.Quantum.Arithmetic.LittleEndian,Microsoft.Quantum.Arithmetic.LittleEndian)>>(typeof(AddI));
         }
 
         public override IApplyData __dataIn((IQArray<Qubit>,IQArray<Qubit>) data) => new In(data);
@@ -480,15 +379,36 @@ namespace Shor
         }
     }
 
-    [SourceLocation("/Users/Matt/Documents/Masters/Dissertation/QSharp/Shor_In_Superposition/quantum/Shor_In_Superposition.qs", OperationFunctor.Body, 85, 227)]
-    public partial class SquareAndMultiply : Operation<QVoid, QVoid>, ICallable
+    [SourceLocation("/Users/Matt/Documents/Masters/Dissertation/QSharp/Shor_In_Superposition/quantum/Shor_In_Superposition.qs", OperationFunctor.Body, 102, 379)]
+    public partial class SquareAndMultiply : Operation<(IQArray<Qubit>,IQArray<Qubit>,IQArray<Qubit>,IQArray<Qubit>), QVoid>, ICallable
     {
         public SquareAndMultiply(IOperationFactory m) : base(m)
         {
         }
 
+        public class In : QTuple<(IQArray<Qubit>,IQArray<Qubit>,IQArray<Qubit>,IQArray<Qubit>)>, IApplyData
+        {
+            public In((IQArray<Qubit>,IQArray<Qubit>,IQArray<Qubit>,IQArray<Qubit>) data) : base(data)
+            {
+            }
+
+            System.Collections.Generic.IEnumerable<Qubit> IApplyData.Qubits
+            {
+                get
+                {
+                    return Qubit.Concat(((IApplyData)Data.Item1)?.Qubits, ((IApplyData)Data.Item2)?.Qubits, ((IApplyData)Data.Item3)?.Qubits, ((IApplyData)Data.Item4)?.Qubits);
+                }
+            }
+        }
+
         String ICallable.Name => "SquareAndMultiply";
         String ICallable.FullName => "Shor.SquareAndMultiply";
+        protected ICallable Length
+        {
+            get;
+            set;
+        }
+
         protected Allocate Allocate
         {
             get;
@@ -501,31 +421,13 @@ namespace Shor
             set;
         }
 
-        protected IUnitary<Qubit> MicrosoftQuantumIntrinsicX
-        {
-            get;
-            set;
-        }
-
-        protected ICallable Length
-        {
-            get;
-            set;
-        }
-
-        protected ICallable<String, QVoid> MicrosoftQuantumIntrinsicMessage
-        {
-            get;
-            set;
-        }
-
         protected IAdjointable MicrosoftQuantumCanonApplyToEachA
         {
             get;
             set;
         }
 
-        protected ICallable MicrosoftQuantumDiagnosticsDumpMachine
+        protected IUnitary<Qubit> MicrosoftQuantumIntrinsicX
         {
             get;
             set;
@@ -537,56 +439,234 @@ namespace Shor
             set;
         }
 
-        protected ICallable<IQArray<Qubit>, QVoid> MicrosoftQuantumIntrinsicResetAll
+        protected IUnitary<(Microsoft.Quantum.Arithmetic.LittleEndian,Microsoft.Quantum.Arithmetic.LittleEndian)> AddI
         {
             get;
             set;
         }
 
-        protected ICallable<Qubit, QVoid> MicrosoftQuantumIntrinsicReset
+        protected ICallable<IQArray<Qubit>, Microsoft.Quantum.Arithmetic.LittleEndian> MicrosoftQuantumArithmeticLittleEndian
         {
             get;
             set;
         }
 
-        public override Func<QVoid, QVoid> Body => (__in__) =>
+        protected IUnitary<(Qubit,Qubit)> MicrosoftQuantumIntrinsicSWAP
         {
+            get;
+            set;
+        }
+
+        public override Func<(IQArray<Qubit>,IQArray<Qubit>,IQArray<Qubit>,IQArray<Qubit>), QVoid> Body => (__in__) =>
+        {
+            var (a,m,j,result) = __in__;
+#line 104 "/Users/Matt/Documents/Masters/Dissertation/QSharp/Shor_In_Superposition/quantum/Shor_In_Superposition.qs"
+            var len = (j.Length - 1L);
+#line 105 "/Users/Matt/Documents/Masters/Dissertation/QSharp/Shor_In_Superposition/quantum/Shor_In_Superposition.qs"
+            var numAnc = 0L;
+#line 106 "/Users/Matt/Documents/Masters/Dissertation/QSharp/Shor_In_Superposition/quantum/Shor_In_Superposition.qs"
+            var sum = 0L;
+#line 107 "/Users/Matt/Documents/Masters/Dissertation/QSharp/Shor_In_Superposition/quantum/Shor_In_Superposition.qs"
+            var add = 1L;
+#line 108 "/Users/Matt/Documents/Masters/Dissertation/QSharp/Shor_In_Superposition/quantum/Shor_In_Superposition.qs"
+            while (true)
+            {
+#line 109 "/Users/Matt/Documents/Masters/Dissertation/QSharp/Shor_In_Superposition/quantum/Shor_In_Superposition.qs"
+                sum = (sum + add);
+#line 110 "/Users/Matt/Documents/Masters/Dissertation/QSharp/Shor_In_Superposition/quantum/Shor_In_Superposition.qs"
+                add = (add + 1L);
+#line 111 "/Users/Matt/Documents/Masters/Dissertation/QSharp/Shor_In_Superposition/quantum/Shor_In_Superposition.qs"
+                numAnc = (numAnc + 1L);
+                if ((len <= sum))
+                {
+                    break;
+                }
+                else
+                {
+                }
+            }
+
+#line 113 "/Users/Matt/Documents/Masters/Dissertation/QSharp/Shor_In_Superposition/quantum/Shor_In_Superposition.qs"
+            var origNumAnc = numAnc;
+#line 116 "/Users/Matt/Documents/Masters/Dissertation/QSharp/Shor_In_Superposition/quantum/Shor_In_Superposition.qs"
+            var lenA = a.Length;
 #line hidden
             {
-#line 87 "/Users/Matt/Documents/Masters/Dissertation/QSharp/Shor_In_Superposition/quantum/Shor_In_Superposition.qs"
-                var (a,m,j) = (Allocate.Apply(2L), Allocate.Apply(2L), Allocate.Apply(4L));
+#line 117 "/Users/Matt/Documents/Masters/Dissertation/QSharp/Shor_In_Superposition/quantum/Shor_In_Superposition.qs"
+                var (v,c,z,az,ld) = (Allocate.Apply((lenA * numAnc)), Allocate.Apply(), Allocate.Apply(), Allocate.Apply(), Allocate.Apply());
 #line hidden
                 bool __arg1__ = true;
                 try
                 {
-#line 88 "/Users/Matt/Documents/Masters/Dissertation/QSharp/Shor_In_Superposition/quantum/Shor_In_Superposition.qs"
-                    MicrosoftQuantumIntrinsicX.Apply(a[1L]);
-#line 90 "/Users/Matt/Documents/Masters/Dissertation/QSharp/Shor_In_Superposition/quantum/Shor_In_Superposition.qs"
-                    MicrosoftQuantumIntrinsicX.Apply(m[1L]);
-#line 91 "/Users/Matt/Documents/Masters/Dissertation/QSharp/Shor_In_Superposition/quantum/Shor_In_Superposition.qs"
-                    MicrosoftQuantumIntrinsicX.Apply(m[0L]);
-#line 92 "/Users/Matt/Documents/Masters/Dissertation/QSharp/Shor_In_Superposition/quantum/Shor_In_Superposition.qs"
-                    MicrosoftQuantumIntrinsicX.Apply(j[0L]);
-#line 93 "/Users/Matt/Documents/Masters/Dissertation/QSharp/Shor_In_Superposition/quantum/Shor_In_Superposition.qs"
-                    MicrosoftQuantumIntrinsicX.Apply(j[1L]);
-#line 97 "/Users/Matt/Documents/Masters/Dissertation/QSharp/Shor_In_Superposition/quantum/Shor_In_Superposition.qs"
-                    var len = (j.Length - 1L);
-#line 98 "/Users/Matt/Documents/Masters/Dissertation/QSharp/Shor_In_Superposition/quantum/Shor_In_Superposition.qs"
-                    var numAnc = 0L;
-#line 99 "/Users/Matt/Documents/Masters/Dissertation/QSharp/Shor_In_Superposition/quantum/Shor_In_Superposition.qs"
-                    var sum = 0L;
-#line 100 "/Users/Matt/Documents/Masters/Dissertation/QSharp/Shor_In_Superposition/quantum/Shor_In_Superposition.qs"
-                    var add = 1L;
-#line 101 "/Users/Matt/Documents/Masters/Dissertation/QSharp/Shor_In_Superposition/quantum/Shor_In_Superposition.qs"
+#line 119 "/Users/Matt/Documents/Masters/Dissertation/QSharp/Shor_In_Superposition/quantum/Shor_In_Superposition.qs"
+                    var curr = 0L;
+#line 120 "/Users/Matt/Documents/Masters/Dissertation/QSharp/Shor_In_Superposition/quantum/Shor_In_Superposition.qs"
+                    var curReg = 0L;
+#line 123 "/Users/Matt/Documents/Masters/Dissertation/QSharp/Shor_In_Superposition/quantum/Shor_In_Superposition.qs"
+                    MicrosoftQuantumCanonApplyToEachA.Apply((MicrosoftQuantumIntrinsicX, j));
+#line 124 "/Users/Matt/Documents/Masters/Dissertation/QSharp/Shor_In_Superposition/quantum/Shor_In_Superposition.qs"
+                    MicrosoftQuantumIntrinsicX.Controlled.Apply((j, az));
+#line 125 "/Users/Matt/Documents/Masters/Dissertation/QSharp/Shor_In_Superposition/quantum/Shor_In_Superposition.qs"
+                    MicrosoftQuantumCanonApplyToEachA.Apply((MicrosoftQuantumIntrinsicX, j));
+#line 126 "/Users/Matt/Documents/Masters/Dissertation/QSharp/Shor_In_Superposition/quantum/Shor_In_Superposition.qs"
+                    MicrosoftQuantumIntrinsicX.Apply(az);
+#line 128 "/Users/Matt/Documents/Masters/Dissertation/QSharp/Shor_In_Superposition/quantum/Shor_In_Superposition.qs"
                     while (true)
                     {
-#line 102 "/Users/Matt/Documents/Masters/Dissertation/QSharp/Shor_In_Superposition/quantum/Shor_In_Superposition.qs"
-                        sum = (sum + add);
-#line 103 "/Users/Matt/Documents/Masters/Dissertation/QSharp/Shor_In_Superposition/quantum/Shor_In_Superposition.qs"
-                        add = (add + 1L);
-#line 104 "/Users/Matt/Documents/Masters/Dissertation/QSharp/Shor_In_Superposition/quantum/Shor_In_Superposition.qs"
-                        numAnc = (numAnc + 1L);
-                        if ((len <= sum))
+#line 129 "/Users/Matt/Documents/Masters/Dissertation/QSharp/Shor_In_Superposition/quantum/Shor_In_Superposition.qs"
+                        foreach (var i in new QRange(0L, (numAnc - 1L)))
+#line hidden
+                        {
+#line 132 "/Users/Matt/Documents/Masters/Dissertation/QSharp/Shor_In_Superposition/quantum/Shor_In_Superposition.qs"
+                            if ((((i + curr) + 1L) <= (j.Length - 1L)))
+                            {
+#line 134 "/Users/Matt/Documents/Masters/Dissertation/QSharp/Shor_In_Superposition/quantum/Shor_In_Superposition.qs"
+                                MicrosoftQuantumCanonApplyToEachA.Apply((MicrosoftQuantumIntrinsicX, j?.Slice(new QRange(((i + curr) + 1L), (j.Length - 1L)))));
+#line 135 "/Users/Matt/Documents/Masters/Dissertation/QSharp/Shor_In_Superposition/quantum/Shor_In_Superposition.qs"
+                                MicrosoftQuantumIntrinsicX.Controlled.Apply((j?.Slice(new QRange(((i + curr) + 1L), (j.Length - 1L))), z));
+#line 136 "/Users/Matt/Documents/Masters/Dissertation/QSharp/Shor_In_Superposition/quantum/Shor_In_Superposition.qs"
+                                MicrosoftQuantumCanonApplyToEachA.Apply((MicrosoftQuantumIntrinsicX, j?.Slice(new QRange(((i + curr) + 1L), (j.Length - 1L)))));
+#line 137 "/Users/Matt/Documents/Masters/Dissertation/QSharp/Shor_In_Superposition/quantum/Shor_In_Superposition.qs"
+                                MicrosoftQuantumIntrinsicX.Apply(z);
+#line 140 "/Users/Matt/Documents/Masters/Dissertation/QSharp/Shor_In_Superposition/quantum/Shor_In_Superposition.qs"
+                                MicrosoftQuantumCanonApplyToEachA.Apply((MicrosoftQuantumIntrinsicX, j?.Slice(new QRange(((i + curr) + 2L), (j.Length - 1L)))));
+#line 141 "/Users/Matt/Documents/Masters/Dissertation/QSharp/Shor_In_Superposition/quantum/Shor_In_Superposition.qs"
+                                MicrosoftQuantumIntrinsicX.Apply(j[0L]);
+#line 142 "/Users/Matt/Documents/Masters/Dissertation/QSharp/Shor_In_Superposition/quantum/Shor_In_Superposition.qs"
+                                MicrosoftQuantumIntrinsicX.Controlled.Apply((QArray<Qubit>.Add(QArray<Qubit>.Add(j?.Slice(new QRange(((i + curr) + 2L), (j.Length - 1L))), new QArray<Qubit>(j[0L])), new QArray<Qubit>(j[((i + curr) + 1L)])), ld));
+#line 143 "/Users/Matt/Documents/Masters/Dissertation/QSharp/Shor_In_Superposition/quantum/Shor_In_Superposition.qs"
+                                MicrosoftQuantumIntrinsicX.Apply(j[0L]);
+#line 144 "/Users/Matt/Documents/Masters/Dissertation/QSharp/Shor_In_Superposition/quantum/Shor_In_Superposition.qs"
+                                MicrosoftQuantumCanonApplyToEachA.Apply((MicrosoftQuantumIntrinsicX, j?.Slice(new QRange(((i + curr) + 2L), (j.Length - 1L)))));
+#line 145 "/Users/Matt/Documents/Masters/Dissertation/QSharp/Shor_In_Superposition/quantum/Shor_In_Superposition.qs"
+                                MicrosoftQuantumIntrinsicX.Apply(ld);
+#line 148 "/Users/Matt/Documents/Masters/Dissertation/QSharp/Shor_In_Superposition/quantum/Shor_In_Superposition.qs"
+                                MicrosoftQuantumIntrinsicX.Controlled.Apply((new QArray<Qubit>(j[((i + curr) + 1L)]), c));
+#line 152 "/Users/Matt/Documents/Masters/Dissertation/QSharp/Shor_In_Superposition/quantum/Shor_In_Superposition.qs"
+                                SquareAndMultiplyIteration.Controlled.Apply((new QArray<Qubit>(az), (a, QArray<Qubit>.Add(a, v)?.Slice(new QRange(((i + curReg) * lenA), ((((i + curReg) * lenA) + lenA) - 1L))), m, c, z, ld, v?.Slice(new QRange(((i + curReg) * lenA), ((((i + curReg) * lenA) + lenA) - 1L))))));
+#line 154 "/Users/Matt/Documents/Masters/Dissertation/QSharp/Shor_In_Superposition/quantum/Shor_In_Superposition.qs"
+                                MicrosoftQuantumIntrinsicX.Apply(az);
+#line 155 "/Users/Matt/Documents/Masters/Dissertation/QSharp/Shor_In_Superposition/quantum/Shor_In_Superposition.qs"
+                                MicrosoftQuantumIntrinsicX.Controlled.Apply((new QArray<Qubit>(az), v[((i + curReg) * lenA)]));
+#line 156 "/Users/Matt/Documents/Masters/Dissertation/QSharp/Shor_In_Superposition/quantum/Shor_In_Superposition.qs"
+                                MicrosoftQuantumIntrinsicX.Apply(az);
+#line 161 "/Users/Matt/Documents/Masters/Dissertation/QSharp/Shor_In_Superposition/quantum/Shor_In_Superposition.qs"
+                                MicrosoftQuantumIntrinsicX.Controlled.Apply((new QArray<Qubit>(j[((i + curr) + 1L)]), c));
+#line 164 "/Users/Matt/Documents/Masters/Dissertation/QSharp/Shor_In_Superposition/quantum/Shor_In_Superposition.qs"
+                                MicrosoftQuantumIntrinsicX.Apply(ld);
+#line 165 "/Users/Matt/Documents/Masters/Dissertation/QSharp/Shor_In_Superposition/quantum/Shor_In_Superposition.qs"
+                                MicrosoftQuantumCanonApplyToEachA.Apply((MicrosoftQuantumIntrinsicX, j?.Slice(new QRange(((i + curr) + 2L), (j.Length - 1L)))));
+#line 166 "/Users/Matt/Documents/Masters/Dissertation/QSharp/Shor_In_Superposition/quantum/Shor_In_Superposition.qs"
+                                MicrosoftQuantumIntrinsicX.Apply(j[0L]);
+#line 167 "/Users/Matt/Documents/Masters/Dissertation/QSharp/Shor_In_Superposition/quantum/Shor_In_Superposition.qs"
+                                MicrosoftQuantumIntrinsicX.Controlled.Apply((QArray<Qubit>.Add(QArray<Qubit>.Add(j?.Slice(new QRange(((i + curr) + 2L), (j.Length - 1L))), new QArray<Qubit>(j[0L])), new QArray<Qubit>(j[((i + curr) + 1L)])), ld));
+#line 168 "/Users/Matt/Documents/Masters/Dissertation/QSharp/Shor_In_Superposition/quantum/Shor_In_Superposition.qs"
+                                MicrosoftQuantumIntrinsicX.Apply(j[0L]);
+#line 169 "/Users/Matt/Documents/Masters/Dissertation/QSharp/Shor_In_Superposition/quantum/Shor_In_Superposition.qs"
+                                MicrosoftQuantumCanonApplyToEachA.Apply((MicrosoftQuantumIntrinsicX, j?.Slice(new QRange(((i + curr) + 2L), (j.Length - 1L)))));
+#line 174 "/Users/Matt/Documents/Masters/Dissertation/QSharp/Shor_In_Superposition/quantum/Shor_In_Superposition.qs"
+                                MicrosoftQuantumIntrinsicX.Apply(z);
+#line 175 "/Users/Matt/Documents/Masters/Dissertation/QSharp/Shor_In_Superposition/quantum/Shor_In_Superposition.qs"
+                                MicrosoftQuantumCanonApplyToEachA.Apply((MicrosoftQuantumIntrinsicX, j?.Slice(new QRange(((i + curr) + 1L), (j.Length - 1L)))));
+#line 176 "/Users/Matt/Documents/Masters/Dissertation/QSharp/Shor_In_Superposition/quantum/Shor_In_Superposition.qs"
+                                MicrosoftQuantumIntrinsicX.Controlled.Apply((j?.Slice(new QRange(((i + curr) + 1L), (j.Length - 1L))), z));
+#line 177 "/Users/Matt/Documents/Masters/Dissertation/QSharp/Shor_In_Superposition/quantum/Shor_In_Superposition.qs"
+                                MicrosoftQuantumCanonApplyToEachA.Apply((MicrosoftQuantumIntrinsicX, j?.Slice(new QRange(((i + curr) + 1L), (j.Length - 1L)))));
+                            }
+
+#line 179 "/Users/Matt/Documents/Masters/Dissertation/QSharp/Shor_In_Superposition/quantum/Shor_In_Superposition.qs"
+                            if ((((i + curr) + 1L) == (j.Length - 1L)))
+                            {
+#line 180 "/Users/Matt/Documents/Masters/Dissertation/QSharp/Shor_In_Superposition/quantum/Shor_In_Superposition.qs"
+                                AddI.Apply((new Microsoft.Quantum.Arithmetic.LittleEndian(v?.Slice(new QRange(((i + curReg) * lenA), ((((i + curReg) * lenA) + lenA) - 1L)))), new Microsoft.Quantum.Arithmetic.LittleEndian(result)));
+                            }
+                        }
+
+#line 184 "/Users/Matt/Documents/Masters/Dissertation/QSharp/Shor_In_Superposition/quantum/Shor_In_Superposition.qs"
+                        var q = 0L;
+#line 186 "/Users/Matt/Documents/Masters/Dissertation/QSharp/Shor_In_Superposition/quantum/Shor_In_Superposition.qs"
+                        foreach (var k in new QRange(0L, (numAnc - 2L)))
+#line hidden
+                        {
+#line 187 "/Users/Matt/Documents/Masters/Dissertation/QSharp/Shor_In_Superposition/quantum/Shor_In_Superposition.qs"
+                            q = ((numAnc - 2L) - k);
+#line 188 "/Users/Matt/Documents/Masters/Dissertation/QSharp/Shor_In_Superposition/quantum/Shor_In_Superposition.qs"
+                            if ((((q + curr) + 1L) <= (j.Length - 1L)))
+                            {
+#line 190 "/Users/Matt/Documents/Masters/Dissertation/QSharp/Shor_In_Superposition/quantum/Shor_In_Superposition.qs"
+                                MicrosoftQuantumCanonApplyToEachA.Apply((MicrosoftQuantumIntrinsicX, j?.Slice(new QRange(((q + curr) + 1L), (j.Length - 1L)))));
+#line 191 "/Users/Matt/Documents/Masters/Dissertation/QSharp/Shor_In_Superposition/quantum/Shor_In_Superposition.qs"
+                                MicrosoftQuantumIntrinsicX.Controlled.Apply((j?.Slice(new QRange(((q + curr) + 1L), (j.Length - 1L))), z));
+#line 192 "/Users/Matt/Documents/Masters/Dissertation/QSharp/Shor_In_Superposition/quantum/Shor_In_Superposition.qs"
+                                MicrosoftQuantumCanonApplyToEachA.Apply((MicrosoftQuantumIntrinsicX, j?.Slice(new QRange(((q + curr) + 1L), (j.Length - 1L)))));
+#line 193 "/Users/Matt/Documents/Masters/Dissertation/QSharp/Shor_In_Superposition/quantum/Shor_In_Superposition.qs"
+                                MicrosoftQuantumIntrinsicX.Apply(z);
+#line 196 "/Users/Matt/Documents/Masters/Dissertation/QSharp/Shor_In_Superposition/quantum/Shor_In_Superposition.qs"
+                                MicrosoftQuantumCanonApplyToEachA.Apply((MicrosoftQuantumIntrinsicX, j?.Slice(new QRange(((q + curr) + 2L), (j.Length - 1L)))));
+#line 197 "/Users/Matt/Documents/Masters/Dissertation/QSharp/Shor_In_Superposition/quantum/Shor_In_Superposition.qs"
+                                MicrosoftQuantumIntrinsicX.Apply(j[0L]);
+#line 198 "/Users/Matt/Documents/Masters/Dissertation/QSharp/Shor_In_Superposition/quantum/Shor_In_Superposition.qs"
+                                MicrosoftQuantumIntrinsicX.Controlled.Apply((QArray<Qubit>.Add(QArray<Qubit>.Add(j?.Slice(new QRange(((q + curr) + 2L), (j.Length - 1L))), new QArray<Qubit>(j[0L])), new QArray<Qubit>(j[((q + curr) + 1L)])), ld));
+#line 199 "/Users/Matt/Documents/Masters/Dissertation/QSharp/Shor_In_Superposition/quantum/Shor_In_Superposition.qs"
+                                MicrosoftQuantumIntrinsicX.Apply(j[0L]);
+#line 200 "/Users/Matt/Documents/Masters/Dissertation/QSharp/Shor_In_Superposition/quantum/Shor_In_Superposition.qs"
+                                MicrosoftQuantumCanonApplyToEachA.Apply((MicrosoftQuantumIntrinsicX, j?.Slice(new QRange(((q + curr) + 2L), (j.Length - 1L)))));
+#line 201 "/Users/Matt/Documents/Masters/Dissertation/QSharp/Shor_In_Superposition/quantum/Shor_In_Superposition.qs"
+                                MicrosoftQuantumIntrinsicX.Apply(ld);
+#line 204 "/Users/Matt/Documents/Masters/Dissertation/QSharp/Shor_In_Superposition/quantum/Shor_In_Superposition.qs"
+                                MicrosoftQuantumIntrinsicX.Controlled.Apply((new QArray<Qubit>(j[((q + curr) + 1L)]), c));
+#line 208 "/Users/Matt/Documents/Masters/Dissertation/QSharp/Shor_In_Superposition/quantum/Shor_In_Superposition.qs"
+                                SquareAndMultiplyIteration.Adjoint.Controlled.Apply((new QArray<Qubit>(az), (a, QArray<Qubit>.Add(a, v)?.Slice(new QRange(((q + curReg) * lenA), ((((q + curReg) * lenA) + lenA) - 1L))), m, c, z, ld, v?.Slice(new QRange(((q + curReg) * lenA), ((((q + curReg) * lenA) + lenA) - 1L))))));
+#line 210 "/Users/Matt/Documents/Masters/Dissertation/QSharp/Shor_In_Superposition/quantum/Shor_In_Superposition.qs"
+                                MicrosoftQuantumIntrinsicX.Apply(az);
+#line 211 "/Users/Matt/Documents/Masters/Dissertation/QSharp/Shor_In_Superposition/quantum/Shor_In_Superposition.qs"
+                                MicrosoftQuantumIntrinsicX.Controlled.Apply((new QArray<Qubit>(az), v[((q + curReg) * lenA)]));
+#line 212 "/Users/Matt/Documents/Masters/Dissertation/QSharp/Shor_In_Superposition/quantum/Shor_In_Superposition.qs"
+                                MicrosoftQuantumIntrinsicX.Apply(az);
+#line 215 "/Users/Matt/Documents/Masters/Dissertation/QSharp/Shor_In_Superposition/quantum/Shor_In_Superposition.qs"
+                                MicrosoftQuantumIntrinsicX.Controlled.Apply((new QArray<Qubit>(j[((q + curr) + 1L)]), c));
+#line 218 "/Users/Matt/Documents/Masters/Dissertation/QSharp/Shor_In_Superposition/quantum/Shor_In_Superposition.qs"
+                                MicrosoftQuantumIntrinsicX.Apply(ld);
+#line 219 "/Users/Matt/Documents/Masters/Dissertation/QSharp/Shor_In_Superposition/quantum/Shor_In_Superposition.qs"
+                                MicrosoftQuantumCanonApplyToEachA.Apply((MicrosoftQuantumIntrinsicX, j?.Slice(new QRange(((q + curr) + 2L), (j.Length - 1L)))));
+#line 220 "/Users/Matt/Documents/Masters/Dissertation/QSharp/Shor_In_Superposition/quantum/Shor_In_Superposition.qs"
+                                MicrosoftQuantumIntrinsicX.Apply(j[0L]);
+#line 221 "/Users/Matt/Documents/Masters/Dissertation/QSharp/Shor_In_Superposition/quantum/Shor_In_Superposition.qs"
+                                MicrosoftQuantumIntrinsicX.Controlled.Apply((QArray<Qubit>.Add(QArray<Qubit>.Add(j?.Slice(new QRange(((q + curr) + 2L), (j.Length - 1L))), new QArray<Qubit>(j[0L])), new QArray<Qubit>(j[((q + curr) + 1L)])), ld));
+#line 222 "/Users/Matt/Documents/Masters/Dissertation/QSharp/Shor_In_Superposition/quantum/Shor_In_Superposition.qs"
+                                MicrosoftQuantumIntrinsicX.Apply(j[0L]);
+#line 223 "/Users/Matt/Documents/Masters/Dissertation/QSharp/Shor_In_Superposition/quantum/Shor_In_Superposition.qs"
+                                MicrosoftQuantumCanonApplyToEachA.Apply((MicrosoftQuantumIntrinsicX, j?.Slice(new QRange(((q + curr) + 2L), (j.Length - 1L)))));
+#line 227 "/Users/Matt/Documents/Masters/Dissertation/QSharp/Shor_In_Superposition/quantum/Shor_In_Superposition.qs"
+                                MicrosoftQuantumIntrinsicX.Apply(z);
+#line 228 "/Users/Matt/Documents/Masters/Dissertation/QSharp/Shor_In_Superposition/quantum/Shor_In_Superposition.qs"
+                                MicrosoftQuantumCanonApplyToEachA.Apply((MicrosoftQuantumIntrinsicX, j?.Slice(new QRange(((q + curr) + 1L), (j.Length - 1L)))));
+#line 229 "/Users/Matt/Documents/Masters/Dissertation/QSharp/Shor_In_Superposition/quantum/Shor_In_Superposition.qs"
+                                MicrosoftQuantumIntrinsicX.Controlled.Apply((j?.Slice(new QRange(((q + curr) + 1L), (j.Length - 1L))), z));
+#line 230 "/Users/Matt/Documents/Masters/Dissertation/QSharp/Shor_In_Superposition/quantum/Shor_In_Superposition.qs"
+                                MicrosoftQuantumCanonApplyToEachA.Apply((MicrosoftQuantumIntrinsicX, j?.Slice(new QRange(((q + curr) + 1L), (j.Length - 1L)))));
+                            }
+                        }
+
+#line 236 "/Users/Matt/Documents/Masters/Dissertation/QSharp/Shor_In_Superposition/quantum/Shor_In_Superposition.qs"
+                        if ((curReg != (origNumAnc - 1L)))
+                        {
+#line 237 "/Users/Matt/Documents/Masters/Dissertation/QSharp/Shor_In_Superposition/quantum/Shor_In_Superposition.qs"
+                            foreach (var i in new QRange(0L, (lenA - 1L)))
+#line hidden
+                            {
+#line 238 "/Users/Matt/Documents/Masters/Dissertation/QSharp/Shor_In_Superposition/quantum/Shor_In_Superposition.qs"
+                                MicrosoftQuantumIntrinsicSWAP.Apply((v[(i + (curReg * lenA))], v[(i + ((origNumAnc - 1L) * lenA))]));
+                            }
+                        }
+
+#line 242 "/Users/Matt/Documents/Masters/Dissertation/QSharp/Shor_In_Superposition/quantum/Shor_In_Superposition.qs"
+                        curr = (curr + numAnc);
+#line 243 "/Users/Matt/Documents/Masters/Dissertation/QSharp/Shor_In_Superposition/quantum/Shor_In_Superposition.qs"
+                        curReg = (curReg + 1L);
+#line 244 "/Users/Matt/Documents/Masters/Dissertation/QSharp/Shor_In_Superposition/quantum/Shor_In_Superposition.qs"
+                        numAnc = (numAnc - 1L);
+                        if ((numAnc == 0L))
                         {
                             break;
                         }
@@ -595,178 +675,172 @@ namespace Shor
                         }
                     }
 
-#line 107 "/Users/Matt/Documents/Masters/Dissertation/QSharp/Shor_In_Superposition/quantum/Shor_In_Superposition.qs"
-                    MicrosoftQuantumIntrinsicMessage.Apply(String.Format("{0}", numAnc));
-#line 108 "/Users/Matt/Documents/Masters/Dissertation/QSharp/Shor_In_Superposition/quantum/Shor_In_Superposition.qs"
-                    var curr = 0L;
-#line 109 "/Users/Matt/Documents/Masters/Dissertation/QSharp/Shor_In_Superposition/quantum/Shor_In_Superposition.qs"
-                    var lenA = a.Length;
-#line hidden
+#line 249 "/Users/Matt/Documents/Masters/Dissertation/QSharp/Shor_In_Superposition/quantum/Shor_In_Superposition.qs"
+                    while (true)
                     {
-#line 110 "/Users/Matt/Documents/Masters/Dissertation/QSharp/Shor_In_Superposition/quantum/Shor_In_Superposition.qs"
-                        var (v,c,z,az,sc) = (Allocate.Apply((lenA * numAnc)), Allocate.Apply(), Allocate.Apply(), Allocate.Apply(), Allocate.Apply());
-#line hidden
-                        bool __arg2__ = true;
-                        try
+#line 250 "/Users/Matt/Documents/Masters/Dissertation/QSharp/Shor_In_Superposition/quantum/Shor_In_Superposition.qs"
+                        numAnc = (numAnc + 1L);
+#line 251 "/Users/Matt/Documents/Masters/Dissertation/QSharp/Shor_In_Superposition/quantum/Shor_In_Superposition.qs"
+                        curReg = (curReg - 1L);
+#line 252 "/Users/Matt/Documents/Masters/Dissertation/QSharp/Shor_In_Superposition/quantum/Shor_In_Superposition.qs"
+                        curr = (curr - numAnc);
+#line 254 "/Users/Matt/Documents/Masters/Dissertation/QSharp/Shor_In_Superposition/quantum/Shor_In_Superposition.qs"
+                        if ((curReg != (origNumAnc - 1L)))
                         {
-#line 113 "/Users/Matt/Documents/Masters/Dissertation/QSharp/Shor_In_Superposition/quantum/Shor_In_Superposition.qs"
-                            MicrosoftQuantumCanonApplyToEachA.Apply((MicrosoftQuantumIntrinsicX, j));
-#line 114 "/Users/Matt/Documents/Masters/Dissertation/QSharp/Shor_In_Superposition/quantum/Shor_In_Superposition.qs"
-                            MicrosoftQuantumIntrinsicX.Controlled.Apply((j, az));
-#line 115 "/Users/Matt/Documents/Masters/Dissertation/QSharp/Shor_In_Superposition/quantum/Shor_In_Superposition.qs"
-                            MicrosoftQuantumCanonApplyToEachA.Apply((MicrosoftQuantumIntrinsicX, j));
-#line 116 "/Users/Matt/Documents/Masters/Dissertation/QSharp/Shor_In_Superposition/quantum/Shor_In_Superposition.qs"
-                            MicrosoftQuantumIntrinsicX.Apply(az);
-#line 120 "/Users/Matt/Documents/Masters/Dissertation/QSharp/Shor_In_Superposition/quantum/Shor_In_Superposition.qs"
-                            MicrosoftQuantumIntrinsicX.Apply(j[1L]);
-#line 121 "/Users/Matt/Documents/Masters/Dissertation/QSharp/Shor_In_Superposition/quantum/Shor_In_Superposition.qs"
-                            MicrosoftQuantumCanonApplyToEachA.Apply((MicrosoftQuantumIntrinsicX, j));
-#line 122 "/Users/Matt/Documents/Masters/Dissertation/QSharp/Shor_In_Superposition/quantum/Shor_In_Superposition.qs"
-                            MicrosoftQuantumIntrinsicX.Controlled.Apply((j, sc));
-#line 123 "/Users/Matt/Documents/Masters/Dissertation/QSharp/Shor_In_Superposition/quantum/Shor_In_Superposition.qs"
-                            MicrosoftQuantumCanonApplyToEachA.Apply((MicrosoftQuantumIntrinsicX, j));
-#line 124 "/Users/Matt/Documents/Masters/Dissertation/QSharp/Shor_In_Superposition/quantum/Shor_In_Superposition.qs"
-                            MicrosoftQuantumIntrinsicX.Apply(j[1L]);
-#line 125 "/Users/Matt/Documents/Masters/Dissertation/QSharp/Shor_In_Superposition/quantum/Shor_In_Superposition.qs"
-                            MicrosoftQuantumIntrinsicX.Apply(sc);
-#line 128 "/Users/Matt/Documents/Masters/Dissertation/QSharp/Shor_In_Superposition/quantum/Shor_In_Superposition.qs"
-                            MicrosoftQuantumDiagnosticsDumpMachine.Apply(QVoid.Instance);
-#line 129 "/Users/Matt/Documents/Masters/Dissertation/QSharp/Shor_In_Superposition/quantum/Shor_In_Superposition.qs"
-                            foreach (var i in new QRange(0L, (numAnc - 1L)))
+#line 255 "/Users/Matt/Documents/Masters/Dissertation/QSharp/Shor_In_Superposition/quantum/Shor_In_Superposition.qs"
+                            foreach (var i in new QRange(0L, (lenA - 1L)))
 #line hidden
                             {
-#line 130 "/Users/Matt/Documents/Masters/Dissertation/QSharp/Shor_In_Superposition/quantum/Shor_In_Superposition.qs"
-                                MicrosoftQuantumIntrinsicMessage.Apply(String.Format("{0}", i));
-#line 132 "/Users/Matt/Documents/Masters/Dissertation/QSharp/Shor_In_Superposition/quantum/Shor_In_Superposition.qs"
-                                MicrosoftQuantumCanonApplyToEachA.Apply((MicrosoftQuantumIntrinsicX, j?.Slice(new QRange(((i + curr) + 1L), (j.Length - 1L)))));
-#line 133 "/Users/Matt/Documents/Masters/Dissertation/QSharp/Shor_In_Superposition/quantum/Shor_In_Superposition.qs"
-                                MicrosoftQuantumIntrinsicX.Controlled.Apply((j?.Slice(new QRange(((i + curr) + 1L), (j.Length - 1L))), z));
-#line 134 "/Users/Matt/Documents/Masters/Dissertation/QSharp/Shor_In_Superposition/quantum/Shor_In_Superposition.qs"
-                                MicrosoftQuantumCanonApplyToEachA.Apply((MicrosoftQuantumIntrinsicX, j?.Slice(new QRange(((i + curr) + 1L), (j.Length - 1L)))));
-#line 135 "/Users/Matt/Documents/Masters/Dissertation/QSharp/Shor_In_Superposition/quantum/Shor_In_Superposition.qs"
-                                MicrosoftQuantumIntrinsicX.Apply(z);
-#line 138 "/Users/Matt/Documents/Masters/Dissertation/QSharp/Shor_In_Superposition/quantum/Shor_In_Superposition.qs"
-                                MicrosoftQuantumIntrinsicX.Controlled.Apply((new QArray<Qubit>(j[((i + curr) + 1L)]), c));
-#line 142 "/Users/Matt/Documents/Masters/Dissertation/QSharp/Shor_In_Superposition/quantum/Shor_In_Superposition.qs"
-                                SquareAndMultiplyIteration.Controlled.Apply((new QArray<Qubit>(az), (a, QArray<Qubit>.Add(a, v)?.Slice(new QRange(((i + curr) * lenA), ((((i + curr) * lenA) + lenA) - 1L))), m, c, z, sc, v?.Slice(new QRange(((i + curr) * lenA), ((((i + curr) * lenA) + lenA) - 1L))))));
-#line 144 "/Users/Matt/Documents/Masters/Dissertation/QSharp/Shor_In_Superposition/quantum/Shor_In_Superposition.qs"
-                                MicrosoftQuantumIntrinsicX.Apply(az);
-#line 145 "/Users/Matt/Documents/Masters/Dissertation/QSharp/Shor_In_Superposition/quantum/Shor_In_Superposition.qs"
-                                MicrosoftQuantumIntrinsicX.Controlled.Apply((new QArray<Qubit>(az), v[((i + curr) * lenA)]));
-#line 146 "/Users/Matt/Documents/Masters/Dissertation/QSharp/Shor_In_Superposition/quantum/Shor_In_Superposition.qs"
-                                MicrosoftQuantumIntrinsicX.Apply(az);
-#line 150 "/Users/Matt/Documents/Masters/Dissertation/QSharp/Shor_In_Superposition/quantum/Shor_In_Superposition.qs"
-                                MicrosoftQuantumIntrinsicX.Controlled.Apply((new QArray<Qubit>(j[((i + curr) + 1L)]), c));
-#line 155 "/Users/Matt/Documents/Masters/Dissertation/QSharp/Shor_In_Superposition/quantum/Shor_In_Superposition.qs"
-                                MicrosoftQuantumIntrinsicX.Apply(z);
-#line 156 "/Users/Matt/Documents/Masters/Dissertation/QSharp/Shor_In_Superposition/quantum/Shor_In_Superposition.qs"
-                                MicrosoftQuantumCanonApplyToEachA.Apply((MicrosoftQuantumIntrinsicX, j?.Slice(new QRange(((i + curr) + 1L), (j.Length - 1L)))));
-#line 157 "/Users/Matt/Documents/Masters/Dissertation/QSharp/Shor_In_Superposition/quantum/Shor_In_Superposition.qs"
-                                MicrosoftQuantumIntrinsicX.Controlled.Apply((j?.Slice(new QRange(((i + curr) + 1L), (j.Length - 1L))), z));
-#line 158 "/Users/Matt/Documents/Masters/Dissertation/QSharp/Shor_In_Superposition/quantum/Shor_In_Superposition.qs"
-                                MicrosoftQuantumCanonApplyToEachA.Apply((MicrosoftQuantumIntrinsicX, j?.Slice(new QRange(((i + curr) + 1L), (j.Length - 1L)))));
+#line 256 "/Users/Matt/Documents/Masters/Dissertation/QSharp/Shor_In_Superposition/quantum/Shor_In_Superposition.qs"
+                                MicrosoftQuantumIntrinsicSWAP.Apply((v[(i + (curReg * lenA))], v[(i + ((origNumAnc - 1L) * lenA))]));
                             }
-
-#line 160 "/Users/Matt/Documents/Masters/Dissertation/QSharp/Shor_In_Superposition/quantum/Shor_In_Superposition.qs"
-                            MicrosoftQuantumDiagnosticsDumpMachine.Apply(QVoid.Instance);
-#line 161 "/Users/Matt/Documents/Masters/Dissertation/QSharp/Shor_In_Superposition/quantum/Shor_In_Superposition.qs"
-                            var q = 0L;
-#line 162 "/Users/Matt/Documents/Masters/Dissertation/QSharp/Shor_In_Superposition/quantum/Shor_In_Superposition.qs"
-                            foreach (var k in new QRange(0L, (numAnc - 2L)))
-#line hidden
-                            {
-#line 163 "/Users/Matt/Documents/Masters/Dissertation/QSharp/Shor_In_Superposition/quantum/Shor_In_Superposition.qs"
-                                q = ((numAnc - 2L) - k);
-#line 164 "/Users/Matt/Documents/Masters/Dissertation/QSharp/Shor_In_Superposition/quantum/Shor_In_Superposition.qs"
-                                MicrosoftQuantumIntrinsicMessage.Apply(String.Format("{0}", q));
-#line 166 "/Users/Matt/Documents/Masters/Dissertation/QSharp/Shor_In_Superposition/quantum/Shor_In_Superposition.qs"
-                                MicrosoftQuantumCanonApplyToEachA.Apply((MicrosoftQuantumIntrinsicX, j?.Slice(new QRange(((q + curr) + 1L), (j.Length - 1L)))));
-#line 167 "/Users/Matt/Documents/Masters/Dissertation/QSharp/Shor_In_Superposition/quantum/Shor_In_Superposition.qs"
-                                MicrosoftQuantumIntrinsicX.Controlled.Apply((j?.Slice(new QRange(((q + curr) + 1L), (j.Length - 1L))), z));
-#line 168 "/Users/Matt/Documents/Masters/Dissertation/QSharp/Shor_In_Superposition/quantum/Shor_In_Superposition.qs"
-                                MicrosoftQuantumCanonApplyToEachA.Apply((MicrosoftQuantumIntrinsicX, j?.Slice(new QRange(((q + curr) + 1L), (j.Length - 1L)))));
-#line 169 "/Users/Matt/Documents/Masters/Dissertation/QSharp/Shor_In_Superposition/quantum/Shor_In_Superposition.qs"
-                                MicrosoftQuantumIntrinsicX.Apply(z);
-#line 172 "/Users/Matt/Documents/Masters/Dissertation/QSharp/Shor_In_Superposition/quantum/Shor_In_Superposition.qs"
-                                MicrosoftQuantumIntrinsicX.Controlled.Apply((new QArray<Qubit>(j[((q + curr) + 1L)]), c));
-#line 176 "/Users/Matt/Documents/Masters/Dissertation/QSharp/Shor_In_Superposition/quantum/Shor_In_Superposition.qs"
-                                SquareAndMultiplyIteration.Adjoint.Controlled.Apply((new QArray<Qubit>(az), (a, QArray<Qubit>.Add(a, v)?.Slice(new QRange(((q + curr) * lenA), ((((q + curr) * lenA) + lenA) - 1L))), m, c, z, sc, v?.Slice(new QRange(((q + curr) * lenA), ((((q + curr) * lenA) + lenA) - 1L))))));
-#line 178 "/Users/Matt/Documents/Masters/Dissertation/QSharp/Shor_In_Superposition/quantum/Shor_In_Superposition.qs"
-                                MicrosoftQuantumIntrinsicX.Apply(az);
-#line 179 "/Users/Matt/Documents/Masters/Dissertation/QSharp/Shor_In_Superposition/quantum/Shor_In_Superposition.qs"
-                                MicrosoftQuantumIntrinsicX.Controlled.Apply((new QArray<Qubit>(az), v[((q + curr) * lenA)]));
-#line 180 "/Users/Matt/Documents/Masters/Dissertation/QSharp/Shor_In_Superposition/quantum/Shor_In_Superposition.qs"
-                                MicrosoftQuantumIntrinsicX.Apply(az);
-#line 184 "/Users/Matt/Documents/Masters/Dissertation/QSharp/Shor_In_Superposition/quantum/Shor_In_Superposition.qs"
-                                MicrosoftQuantumIntrinsicX.Controlled.Apply((new QArray<Qubit>(j[((q + curr) + 1L)]), c));
-#line 189 "/Users/Matt/Documents/Masters/Dissertation/QSharp/Shor_In_Superposition/quantum/Shor_In_Superposition.qs"
-                                MicrosoftQuantumIntrinsicX.Apply(z);
-#line 190 "/Users/Matt/Documents/Masters/Dissertation/QSharp/Shor_In_Superposition/quantum/Shor_In_Superposition.qs"
-                                MicrosoftQuantumCanonApplyToEachA.Apply((MicrosoftQuantumIntrinsicX, j?.Slice(new QRange(((q + curr) + 1L), (j.Length - 1L)))));
-#line 191 "/Users/Matt/Documents/Masters/Dissertation/QSharp/Shor_In_Superposition/quantum/Shor_In_Superposition.qs"
-                                MicrosoftQuantumIntrinsicX.Controlled.Apply((j?.Slice(new QRange(((q + curr) + 1L), (j.Length - 1L))), z));
-#line 192 "/Users/Matt/Documents/Masters/Dissertation/QSharp/Shor_In_Superposition/quantum/Shor_In_Superposition.qs"
-                                MicrosoftQuantumCanonApplyToEachA.Apply((MicrosoftQuantumIntrinsicX, j?.Slice(new QRange(((q + curr) + 1L), (j.Length - 1L)))));
-                            }
-
-#line 197 "/Users/Matt/Documents/Masters/Dissertation/QSharp/Shor_In_Superposition/quantum/Shor_In_Superposition.qs"
-                            MicrosoftQuantumDiagnosticsDumpMachine.Apply(QVoid.Instance);
-#line 200 "/Users/Matt/Documents/Masters/Dissertation/QSharp/Shor_In_Superposition/quantum/Shor_In_Superposition.qs"
-                            MicrosoftQuantumIntrinsicX.Apply(sc);
-#line 201 "/Users/Matt/Documents/Masters/Dissertation/QSharp/Shor_In_Superposition/quantum/Shor_In_Superposition.qs"
-                            MicrosoftQuantumIntrinsicX.Apply(j[1L]);
-#line 202 "/Users/Matt/Documents/Masters/Dissertation/QSharp/Shor_In_Superposition/quantum/Shor_In_Superposition.qs"
-                            MicrosoftQuantumCanonApplyToEachA.Apply((MicrosoftQuantumIntrinsicX, j));
-#line 203 "/Users/Matt/Documents/Masters/Dissertation/QSharp/Shor_In_Superposition/quantum/Shor_In_Superposition.qs"
-                            MicrosoftQuantumIntrinsicX.Controlled.Apply((j, sc));
-#line 204 "/Users/Matt/Documents/Masters/Dissertation/QSharp/Shor_In_Superposition/quantum/Shor_In_Superposition.qs"
-                            MicrosoftQuantumCanonApplyToEachA.Apply((MicrosoftQuantumIntrinsicX, j));
-#line 205 "/Users/Matt/Documents/Masters/Dissertation/QSharp/Shor_In_Superposition/quantum/Shor_In_Superposition.qs"
-                            MicrosoftQuantumIntrinsicX.Apply(j[1L]);
-#line 208 "/Users/Matt/Documents/Masters/Dissertation/QSharp/Shor_In_Superposition/quantum/Shor_In_Superposition.qs"
-                            MicrosoftQuantumIntrinsicX.Apply(az);
-#line 209 "/Users/Matt/Documents/Masters/Dissertation/QSharp/Shor_In_Superposition/quantum/Shor_In_Superposition.qs"
-                            MicrosoftQuantumCanonApplyToEachA.Apply((MicrosoftQuantumIntrinsicX, j));
-#line 210 "/Users/Matt/Documents/Masters/Dissertation/QSharp/Shor_In_Superposition/quantum/Shor_In_Superposition.qs"
-                            MicrosoftQuantumIntrinsicX.Controlled.Apply((j, az));
-#line 211 "/Users/Matt/Documents/Masters/Dissertation/QSharp/Shor_In_Superposition/quantum/Shor_In_Superposition.qs"
-                            MicrosoftQuantumCanonApplyToEachA.Apply((MicrosoftQuantumIntrinsicX, j));
-#line 215 "/Users/Matt/Documents/Masters/Dissertation/QSharp/Shor_In_Superposition/quantum/Shor_In_Superposition.qs"
-                            MicrosoftQuantumIntrinsicResetAll.Apply(v);
-#line 216 "/Users/Matt/Documents/Masters/Dissertation/QSharp/Shor_In_Superposition/quantum/Shor_In_Superposition.qs"
-                            MicrosoftQuantumIntrinsicReset.Apply(c);
-#line 217 "/Users/Matt/Documents/Masters/Dissertation/QSharp/Shor_In_Superposition/quantum/Shor_In_Superposition.qs"
-                            MicrosoftQuantumIntrinsicReset.Apply(z);
-#line 218 "/Users/Matt/Documents/Masters/Dissertation/QSharp/Shor_In_Superposition/quantum/Shor_In_Superposition.qs"
-                            MicrosoftQuantumIntrinsicReset.Apply(az);
                         }
+
+#line 259 "/Users/Matt/Documents/Masters/Dissertation/QSharp/Shor_In_Superposition/quantum/Shor_In_Superposition.qs"
+                        foreach (var q in new QRange(0L, (numAnc - 2L)))
 #line hidden
-                        catch
                         {
-                            __arg2__ = false;
-                            throw;
-                        }
-#line hidden
-                        finally
-                        {
-                            if (__arg2__)
+#line 260 "/Users/Matt/Documents/Masters/Dissertation/QSharp/Shor_In_Superposition/quantum/Shor_In_Superposition.qs"
+                            if ((((q + curr) + 1L) <= (j.Length - 1L)))
                             {
-#line hidden
-                                Release.Apply(v);
-#line hidden
-                                Release.Apply(c);
-#line hidden
-                                Release.Apply(z);
-#line hidden
-                                Release.Apply(az);
-#line hidden
-                                Release.Apply(sc);
+#line 262 "/Users/Matt/Documents/Masters/Dissertation/QSharp/Shor_In_Superposition/quantum/Shor_In_Superposition.qs"
+                                MicrosoftQuantumCanonApplyToEachA.Apply((MicrosoftQuantumIntrinsicX, j?.Slice(new QRange(((q + curr) + 1L), (j.Length - 1L)))));
+#line 263 "/Users/Matt/Documents/Masters/Dissertation/QSharp/Shor_In_Superposition/quantum/Shor_In_Superposition.qs"
+                                MicrosoftQuantumIntrinsicX.Controlled.Apply((j?.Slice(new QRange(((q + curr) + 1L), (j.Length - 1L))), z));
+#line 264 "/Users/Matt/Documents/Masters/Dissertation/QSharp/Shor_In_Superposition/quantum/Shor_In_Superposition.qs"
+                                MicrosoftQuantumCanonApplyToEachA.Apply((MicrosoftQuantumIntrinsicX, j?.Slice(new QRange(((q + curr) + 1L), (j.Length - 1L)))));
+#line 265 "/Users/Matt/Documents/Masters/Dissertation/QSharp/Shor_In_Superposition/quantum/Shor_In_Superposition.qs"
+                                MicrosoftQuantumIntrinsicX.Apply(z);
+#line 268 "/Users/Matt/Documents/Masters/Dissertation/QSharp/Shor_In_Superposition/quantum/Shor_In_Superposition.qs"
+                                MicrosoftQuantumCanonApplyToEachA.Apply((MicrosoftQuantumIntrinsicX, j?.Slice(new QRange(((q + curr) + 2L), (j.Length - 1L)))));
+#line 269 "/Users/Matt/Documents/Masters/Dissertation/QSharp/Shor_In_Superposition/quantum/Shor_In_Superposition.qs"
+                                MicrosoftQuantumIntrinsicX.Apply(j[0L]);
+#line 270 "/Users/Matt/Documents/Masters/Dissertation/QSharp/Shor_In_Superposition/quantum/Shor_In_Superposition.qs"
+                                MicrosoftQuantumIntrinsicX.Controlled.Apply((QArray<Qubit>.Add(QArray<Qubit>.Add(j?.Slice(new QRange(((q + curr) + 2L), (j.Length - 1L))), new QArray<Qubit>(j[0L])), new QArray<Qubit>(j[((q + curr) + 1L)])), ld));
+#line 271 "/Users/Matt/Documents/Masters/Dissertation/QSharp/Shor_In_Superposition/quantum/Shor_In_Superposition.qs"
+                                MicrosoftQuantumIntrinsicX.Apply(j[0L]);
+#line 272 "/Users/Matt/Documents/Masters/Dissertation/QSharp/Shor_In_Superposition/quantum/Shor_In_Superposition.qs"
+                                MicrosoftQuantumCanonApplyToEachA.Apply((MicrosoftQuantumIntrinsicX, j?.Slice(new QRange(((q + curr) + 2L), (j.Length - 1L)))));
+#line 273 "/Users/Matt/Documents/Masters/Dissertation/QSharp/Shor_In_Superposition/quantum/Shor_In_Superposition.qs"
+                                MicrosoftQuantumIntrinsicX.Apply(ld);
+#line 276 "/Users/Matt/Documents/Masters/Dissertation/QSharp/Shor_In_Superposition/quantum/Shor_In_Superposition.qs"
+                                MicrosoftQuantumIntrinsicX.Controlled.Apply((new QArray<Qubit>(j[((q + curr) + 1L)]), c));
+#line 280 "/Users/Matt/Documents/Masters/Dissertation/QSharp/Shor_In_Superposition/quantum/Shor_In_Superposition.qs"
+                                SquareAndMultiplyIteration.Controlled.Apply((new QArray<Qubit>(az), (a, QArray<Qubit>.Add(a, v)?.Slice(new QRange(((q + curReg) * lenA), ((((q + curReg) * lenA) + lenA) - 1L))), m, c, z, ld, v?.Slice(new QRange(((q + curReg) * lenA), ((((q + curReg) * lenA) + lenA) - 1L))))));
+#line 282 "/Users/Matt/Documents/Masters/Dissertation/QSharp/Shor_In_Superposition/quantum/Shor_In_Superposition.qs"
+                                MicrosoftQuantumIntrinsicX.Apply(az);
+#line 283 "/Users/Matt/Documents/Masters/Dissertation/QSharp/Shor_In_Superposition/quantum/Shor_In_Superposition.qs"
+                                MicrosoftQuantumIntrinsicX.Controlled.Apply((new QArray<Qubit>(az), v[((q + curReg) * lenA)]));
+#line 284 "/Users/Matt/Documents/Masters/Dissertation/QSharp/Shor_In_Superposition/quantum/Shor_In_Superposition.qs"
+                                MicrosoftQuantumIntrinsicX.Apply(az);
+#line 288 "/Users/Matt/Documents/Masters/Dissertation/QSharp/Shor_In_Superposition/quantum/Shor_In_Superposition.qs"
+                                MicrosoftQuantumIntrinsicX.Controlled.Apply((new QArray<Qubit>(j[((q + curr) + 1L)]), c));
+#line 291 "/Users/Matt/Documents/Masters/Dissertation/QSharp/Shor_In_Superposition/quantum/Shor_In_Superposition.qs"
+                                MicrosoftQuantumIntrinsicX.Apply(ld);
+#line 292 "/Users/Matt/Documents/Masters/Dissertation/QSharp/Shor_In_Superposition/quantum/Shor_In_Superposition.qs"
+                                MicrosoftQuantumCanonApplyToEachA.Apply((MicrosoftQuantumIntrinsicX, j?.Slice(new QRange(((q + curr) + 2L), (j.Length - 1L)))));
+#line 293 "/Users/Matt/Documents/Masters/Dissertation/QSharp/Shor_In_Superposition/quantum/Shor_In_Superposition.qs"
+                                MicrosoftQuantumIntrinsicX.Apply(j[0L]);
+#line 294 "/Users/Matt/Documents/Masters/Dissertation/QSharp/Shor_In_Superposition/quantum/Shor_In_Superposition.qs"
+                                MicrosoftQuantumIntrinsicX.Controlled.Apply((QArray<Qubit>.Add(QArray<Qubit>.Add(j?.Slice(new QRange(((q + curr) + 2L), (j.Length - 1L))), new QArray<Qubit>(j[0L])), new QArray<Qubit>(j[((q + curr) + 1L)])), ld));
+#line 295 "/Users/Matt/Documents/Masters/Dissertation/QSharp/Shor_In_Superposition/quantum/Shor_In_Superposition.qs"
+                                MicrosoftQuantumIntrinsicX.Apply(j[0L]);
+#line 296 "/Users/Matt/Documents/Masters/Dissertation/QSharp/Shor_In_Superposition/quantum/Shor_In_Superposition.qs"
+                                MicrosoftQuantumCanonApplyToEachA.Apply((MicrosoftQuantumIntrinsicX, j?.Slice(new QRange(((q + curr) + 2L), (j.Length - 1L)))));
+#line 300 "/Users/Matt/Documents/Masters/Dissertation/QSharp/Shor_In_Superposition/quantum/Shor_In_Superposition.qs"
+                                MicrosoftQuantumIntrinsicX.Apply(z);
+#line 301 "/Users/Matt/Documents/Masters/Dissertation/QSharp/Shor_In_Superposition/quantum/Shor_In_Superposition.qs"
+                                MicrosoftQuantumCanonApplyToEachA.Apply((MicrosoftQuantumIntrinsicX, j?.Slice(new QRange(((q + curr) + 1L), (j.Length - 1L)))));
+#line 302 "/Users/Matt/Documents/Masters/Dissertation/QSharp/Shor_In_Superposition/quantum/Shor_In_Superposition.qs"
+                                MicrosoftQuantumIntrinsicX.Controlled.Apply((j?.Slice(new QRange(((q + curr) + 1L), (j.Length - 1L))), z));
+#line 303 "/Users/Matt/Documents/Masters/Dissertation/QSharp/Shor_In_Superposition/quantum/Shor_In_Superposition.qs"
+                                MicrosoftQuantumCanonApplyToEachA.Apply((MicrosoftQuantumIntrinsicX, j?.Slice(new QRange(((q + curr) + 1L), (j.Length - 1L)))));
                             }
+                        }
+
+#line 308 "/Users/Matt/Documents/Masters/Dissertation/QSharp/Shor_In_Superposition/quantum/Shor_In_Superposition.qs"
+                        var g = 0L;
+#line 309 "/Users/Matt/Documents/Masters/Dissertation/QSharp/Shor_In_Superposition/quantum/Shor_In_Superposition.qs"
+                        foreach (var k in new QRange(0L, (numAnc - 1L)))
+#line hidden
+                        {
+#line 310 "/Users/Matt/Documents/Masters/Dissertation/QSharp/Shor_In_Superposition/quantum/Shor_In_Superposition.qs"
+                            g = ((numAnc - 1L) - k);
+#line 312 "/Users/Matt/Documents/Masters/Dissertation/QSharp/Shor_In_Superposition/quantum/Shor_In_Superposition.qs"
+                            if ((((g + curr) + 1L) <= (j.Length - 1L)))
+                            {
+#line 314 "/Users/Matt/Documents/Masters/Dissertation/QSharp/Shor_In_Superposition/quantum/Shor_In_Superposition.qs"
+                                MicrosoftQuantumCanonApplyToEachA.Apply((MicrosoftQuantumIntrinsicX, j?.Slice(new QRange(((g + curr) + 1L), (j.Length - 1L)))));
+#line 315 "/Users/Matt/Documents/Masters/Dissertation/QSharp/Shor_In_Superposition/quantum/Shor_In_Superposition.qs"
+                                MicrosoftQuantumIntrinsicX.Controlled.Apply((j?.Slice(new QRange(((g + curr) + 1L), (j.Length - 1L))), z));
+#line 316 "/Users/Matt/Documents/Masters/Dissertation/QSharp/Shor_In_Superposition/quantum/Shor_In_Superposition.qs"
+                                MicrosoftQuantumCanonApplyToEachA.Apply((MicrosoftQuantumIntrinsicX, j?.Slice(new QRange(((g + curr) + 1L), (j.Length - 1L)))));
+#line 317 "/Users/Matt/Documents/Masters/Dissertation/QSharp/Shor_In_Superposition/quantum/Shor_In_Superposition.qs"
+                                MicrosoftQuantumIntrinsicX.Apply(z);
+#line 320 "/Users/Matt/Documents/Masters/Dissertation/QSharp/Shor_In_Superposition/quantum/Shor_In_Superposition.qs"
+                                MicrosoftQuantumCanonApplyToEachA.Apply((MicrosoftQuantumIntrinsicX, j?.Slice(new QRange(((g + curr) + 2L), (j.Length - 1L)))));
+#line 321 "/Users/Matt/Documents/Masters/Dissertation/QSharp/Shor_In_Superposition/quantum/Shor_In_Superposition.qs"
+                                MicrosoftQuantumIntrinsicX.Apply(j[0L]);
+#line 322 "/Users/Matt/Documents/Masters/Dissertation/QSharp/Shor_In_Superposition/quantum/Shor_In_Superposition.qs"
+                                MicrosoftQuantumIntrinsicX.Controlled.Apply((QArray<Qubit>.Add(QArray<Qubit>.Add(j?.Slice(new QRange(((g + curr) + 2L), (j.Length - 1L))), new QArray<Qubit>(j[0L])), new QArray<Qubit>(j[((g + curr) + 1L)])), ld));
+#line 323 "/Users/Matt/Documents/Masters/Dissertation/QSharp/Shor_In_Superposition/quantum/Shor_In_Superposition.qs"
+                                MicrosoftQuantumIntrinsicX.Apply(j[0L]);
+#line 324 "/Users/Matt/Documents/Masters/Dissertation/QSharp/Shor_In_Superposition/quantum/Shor_In_Superposition.qs"
+                                MicrosoftQuantumCanonApplyToEachA.Apply((MicrosoftQuantumIntrinsicX, j?.Slice(new QRange(((g + curr) + 2L), (j.Length - 1L)))));
+#line 325 "/Users/Matt/Documents/Masters/Dissertation/QSharp/Shor_In_Superposition/quantum/Shor_In_Superposition.qs"
+                                MicrosoftQuantumIntrinsicX.Apply(ld);
+#line 328 "/Users/Matt/Documents/Masters/Dissertation/QSharp/Shor_In_Superposition/quantum/Shor_In_Superposition.qs"
+                                MicrosoftQuantumIntrinsicX.Controlled.Apply((new QArray<Qubit>(j[((g + curr) + 1L)]), c));
+#line 332 "/Users/Matt/Documents/Masters/Dissertation/QSharp/Shor_In_Superposition/quantum/Shor_In_Superposition.qs"
+                                SquareAndMultiplyIteration.Adjoint.Controlled.Apply((new QArray<Qubit>(az), (a, QArray<Qubit>.Add(a, v)?.Slice(new QRange(((g + curReg) * lenA), ((((g + curReg) * lenA) + lenA) - 1L))), m, c, z, ld, v?.Slice(new QRange(((g + curReg) * lenA), ((((g + curReg) * lenA) + lenA) - 1L))))));
+#line 335 "/Users/Matt/Documents/Masters/Dissertation/QSharp/Shor_In_Superposition/quantum/Shor_In_Superposition.qs"
+                                MicrosoftQuantumIntrinsicX.Apply(az);
+#line 336 "/Users/Matt/Documents/Masters/Dissertation/QSharp/Shor_In_Superposition/quantum/Shor_In_Superposition.qs"
+                                MicrosoftQuantumIntrinsicX.Controlled.Apply((new QArray<Qubit>(az), v[((g + curReg) * lenA)]));
+#line 337 "/Users/Matt/Documents/Masters/Dissertation/QSharp/Shor_In_Superposition/quantum/Shor_In_Superposition.qs"
+                                MicrosoftQuantumIntrinsicX.Apply(az);
+#line 342 "/Users/Matt/Documents/Masters/Dissertation/QSharp/Shor_In_Superposition/quantum/Shor_In_Superposition.qs"
+                                MicrosoftQuantumIntrinsicX.Controlled.Apply((new QArray<Qubit>(j[((g + curr) + 1L)]), c));
+#line 345 "/Users/Matt/Documents/Masters/Dissertation/QSharp/Shor_In_Superposition/quantum/Shor_In_Superposition.qs"
+                                MicrosoftQuantumIntrinsicX.Apply(ld);
+#line 346 "/Users/Matt/Documents/Masters/Dissertation/QSharp/Shor_In_Superposition/quantum/Shor_In_Superposition.qs"
+                                MicrosoftQuantumCanonApplyToEachA.Apply((MicrosoftQuantumIntrinsicX, j?.Slice(new QRange(((g + curr) + 2L), (j.Length - 1L)))));
+#line 347 "/Users/Matt/Documents/Masters/Dissertation/QSharp/Shor_In_Superposition/quantum/Shor_In_Superposition.qs"
+                                MicrosoftQuantumIntrinsicX.Apply(j[0L]);
+#line 348 "/Users/Matt/Documents/Masters/Dissertation/QSharp/Shor_In_Superposition/quantum/Shor_In_Superposition.qs"
+                                MicrosoftQuantumIntrinsicX.Controlled.Apply((QArray<Qubit>.Add(QArray<Qubit>.Add(j?.Slice(new QRange(((g + curr) + 2L), (j.Length - 1L))), new QArray<Qubit>(j[0L])), new QArray<Qubit>(j[((g + curr) + 1L)])), ld));
+#line 349 "/Users/Matt/Documents/Masters/Dissertation/QSharp/Shor_In_Superposition/quantum/Shor_In_Superposition.qs"
+                                MicrosoftQuantumIntrinsicX.Apply(j[0L]);
+#line 350 "/Users/Matt/Documents/Masters/Dissertation/QSharp/Shor_In_Superposition/quantum/Shor_In_Superposition.qs"
+                                MicrosoftQuantumCanonApplyToEachA.Apply((MicrosoftQuantumIntrinsicX, j?.Slice(new QRange(((g + curr) + 2L), (j.Length - 1L)))));
+#line 355 "/Users/Matt/Documents/Masters/Dissertation/QSharp/Shor_In_Superposition/quantum/Shor_In_Superposition.qs"
+                                MicrosoftQuantumIntrinsicX.Apply(z);
+#line 356 "/Users/Matt/Documents/Masters/Dissertation/QSharp/Shor_In_Superposition/quantum/Shor_In_Superposition.qs"
+                                MicrosoftQuantumCanonApplyToEachA.Apply((MicrosoftQuantumIntrinsicX, j?.Slice(new QRange(((g + curr) + 1L), (j.Length - 1L)))));
+#line 357 "/Users/Matt/Documents/Masters/Dissertation/QSharp/Shor_In_Superposition/quantum/Shor_In_Superposition.qs"
+                                MicrosoftQuantumIntrinsicX.Controlled.Apply((j?.Slice(new QRange(((g + curr) + 1L), (j.Length - 1L))), z));
+#line 358 "/Users/Matt/Documents/Masters/Dissertation/QSharp/Shor_In_Superposition/quantum/Shor_In_Superposition.qs"
+                                MicrosoftQuantumCanonApplyToEachA.Apply((MicrosoftQuantumIntrinsicX, j?.Slice(new QRange(((g + curr) + 1L), (j.Length - 1L)))));
+                            }
+                        }
+
+                        if ((numAnc == origNumAnc))
+                        {
+                            break;
+                        }
+                        else
+                        {
                         }
                     }
 
-#line 224 "/Users/Matt/Documents/Masters/Dissertation/QSharp/Shor_In_Superposition/quantum/Shor_In_Superposition.qs"
-                    MicrosoftQuantumIntrinsicResetAll.Apply(QArray<Qubit>.Add(QArray<Qubit>.Add(a, m), j));
+#line 368 "/Users/Matt/Documents/Masters/Dissertation/QSharp/Shor_In_Superposition/quantum/Shor_In_Superposition.qs"
+                    MicrosoftQuantumIntrinsicX.Apply(az);
+#line 369 "/Users/Matt/Documents/Masters/Dissertation/QSharp/Shor_In_Superposition/quantum/Shor_In_Superposition.qs"
+                    MicrosoftQuantumCanonApplyToEachA.Apply((MicrosoftQuantumIntrinsicX, j));
+#line 370 "/Users/Matt/Documents/Masters/Dissertation/QSharp/Shor_In_Superposition/quantum/Shor_In_Superposition.qs"
+                    MicrosoftQuantumIntrinsicX.Controlled.Apply((j, az));
+#line 371 "/Users/Matt/Documents/Masters/Dissertation/QSharp/Shor_In_Superposition/quantum/Shor_In_Superposition.qs"
+                    MicrosoftQuantumCanonApplyToEachA.Apply((MicrosoftQuantumIntrinsicX, j));
                 }
 #line hidden
                 catch
@@ -780,11 +854,15 @@ namespace Shor
                     if (__arg1__)
                     {
 #line hidden
-                        Release.Apply(a);
+                        Release.Apply(v);
 #line hidden
-                        Release.Apply(m);
+                        Release.Apply(c);
 #line hidden
-                        Release.Apply(j);
+                        Release.Apply(z);
+#line hidden
+                        Release.Apply(az);
+#line hidden
+                        Release.Apply(ld);
                     }
                 }
             }
@@ -796,30 +874,29 @@ namespace Shor
         ;
         public override void Init()
         {
+            this.Length = this.Factory.Get<ICallable>(typeof(Microsoft.Quantum.Core.Length<>));
             this.Allocate = this.Factory.Get<Allocate>(typeof(Microsoft.Quantum.Intrinsic.Allocate));
             this.Release = this.Factory.Get<Release>(typeof(Microsoft.Quantum.Intrinsic.Release));
-            this.MicrosoftQuantumIntrinsicX = this.Factory.Get<IUnitary<Qubit>>(typeof(Microsoft.Quantum.Intrinsic.X));
-            this.Length = this.Factory.Get<ICallable>(typeof(Microsoft.Quantum.Core.Length<>));
-            this.MicrosoftQuantumIntrinsicMessage = this.Factory.Get<ICallable<String, QVoid>>(typeof(Microsoft.Quantum.Intrinsic.Message));
             this.MicrosoftQuantumCanonApplyToEachA = this.Factory.Get<IAdjointable>(typeof(Microsoft.Quantum.Canon.ApplyToEachA<>));
-            this.MicrosoftQuantumDiagnosticsDumpMachine = this.Factory.Get<ICallable>(typeof(Microsoft.Quantum.Diagnostics.DumpMachine<>));
+            this.MicrosoftQuantumIntrinsicX = this.Factory.Get<IUnitary<Qubit>>(typeof(Microsoft.Quantum.Intrinsic.X));
             this.SquareAndMultiplyIteration = this.Factory.Get<IUnitary<(IQArray<Qubit>,IQArray<Qubit>,IQArray<Qubit>,Qubit,Qubit,Qubit,IQArray<Qubit>)>>(typeof(SquareAndMultiplyIteration));
-            this.MicrosoftQuantumIntrinsicResetAll = this.Factory.Get<ICallable<IQArray<Qubit>, QVoid>>(typeof(Microsoft.Quantum.Intrinsic.ResetAll));
-            this.MicrosoftQuantumIntrinsicReset = this.Factory.Get<ICallable<Qubit, QVoid>>(typeof(Microsoft.Quantum.Intrinsic.Reset));
+            this.AddI = this.Factory.Get<IUnitary<(Microsoft.Quantum.Arithmetic.LittleEndian,Microsoft.Quantum.Arithmetic.LittleEndian)>>(typeof(AddI));
+            this.MicrosoftQuantumArithmeticLittleEndian = this.Factory.Get<ICallable<IQArray<Qubit>, Microsoft.Quantum.Arithmetic.LittleEndian>>(typeof(Microsoft.Quantum.Arithmetic.LittleEndian));
+            this.MicrosoftQuantumIntrinsicSWAP = this.Factory.Get<IUnitary<(Qubit,Qubit)>>(typeof(Microsoft.Quantum.Intrinsic.SWAP));
         }
 
-        public override IApplyData __dataIn(QVoid data) => data;
+        public override IApplyData __dataIn((IQArray<Qubit>,IQArray<Qubit>,IQArray<Qubit>,IQArray<Qubit>) data) => new In(data);
         public override IApplyData __dataOut(QVoid data) => data;
-        public static System.Threading.Tasks.Task<QVoid> Run(IOperationFactory __m__)
+        public static System.Threading.Tasks.Task<QVoid> Run(IOperationFactory __m__, IQArray<Qubit> a, IQArray<Qubit> m, IQArray<Qubit> j, IQArray<Qubit> result)
         {
-            return __m__.Run<SquareAndMultiply, QVoid, QVoid>(QVoid.Instance);
+            return __m__.Run<SquareAndMultiply, (IQArray<Qubit>,IQArray<Qubit>,IQArray<Qubit>,IQArray<Qubit>), QVoid>((a, m, j, result));
         }
     }
 
-    [SourceLocation("/Users/Matt/Documents/Masters/Dissertation/QSharp/Shor_In_Superposition/quantum/Shor_In_Superposition.qs", OperationFunctor.Body, 227, 246)]
-    [SourceLocation("/Users/Matt/Documents/Masters/Dissertation/QSharp/Shor_In_Superposition/quantum/Shor_In_Superposition.qs", OperationFunctor.Adjoint, 227, 246)]
-    [SourceLocation("/Users/Matt/Documents/Masters/Dissertation/QSharp/Shor_In_Superposition/quantum/Shor_In_Superposition.qs", OperationFunctor.Controlled, 227, 246)]
-    [SourceLocation("/Users/Matt/Documents/Masters/Dissertation/QSharp/Shor_In_Superposition/quantum/Shor_In_Superposition.qs", OperationFunctor.ControlledAdjoint, 227, 246)]
+    [SourceLocation("/Users/Matt/Documents/Masters/Dissertation/QSharp/Shor_In_Superposition/quantum/Shor_In_Superposition.qs", OperationFunctor.Body, 379, 397)]
+    [SourceLocation("/Users/Matt/Documents/Masters/Dissertation/QSharp/Shor_In_Superposition/quantum/Shor_In_Superposition.qs", OperationFunctor.Adjoint, 379, 397)]
+    [SourceLocation("/Users/Matt/Documents/Masters/Dissertation/QSharp/Shor_In_Superposition/quantum/Shor_In_Superposition.qs", OperationFunctor.Controlled, 379, 397)]
+    [SourceLocation("/Users/Matt/Documents/Masters/Dissertation/QSharp/Shor_In_Superposition/quantum/Shor_In_Superposition.qs", OperationFunctor.ControlledAdjoint, 379, 397)]
     public partial class SquareAndMultiplyIteration : Unitary<(IQArray<Qubit>,IQArray<Qubit>,IQArray<Qubit>,Qubit,Qubit,Qubit,IQArray<Qubit>)>, ICallable
     {
         public SquareAndMultiplyIteration(IOperationFactory m) : base(m)
@@ -873,6 +950,12 @@ namespace Shor
             set;
         }
 
+        protected ICallable Length
+        {
+            get;
+            set;
+        }
+
         protected IUnitary<(IQArray<Qubit>,IQArray<Qubit>,IQArray<Qubit>)> SquareModM
         {
             get;
@@ -887,38 +970,38 @@ namespace Shor
 
         public override Func<(IQArray<Qubit>,IQArray<Qubit>,IQArray<Qubit>,Qubit,Qubit,Qubit,IQArray<Qubit>), QVoid> Body => (__in__) =>
         {
-            var (a,v,m,c,z,sc,t) = __in__;
-#line 228 "/Users/Matt/Documents/Masters/Dissertation/QSharp/Shor_In_Superposition/quantum/Shor_In_Superposition.qs"
+            var (a,v,m,c,z,ld,t) = __in__;
+#line 380 "/Users/Matt/Documents/Masters/Dissertation/QSharp/Shor_In_Superposition/quantum/Shor_In_Superposition.qs"
             MicrosoftQuantumIntrinsicX.Apply(z);
-#line 229 "/Users/Matt/Documents/Masters/Dissertation/QSharp/Shor_In_Superposition/quantum/Shor_In_Superposition.qs"
+#line 381 "/Users/Matt/Documents/Masters/Dissertation/QSharp/Shor_In_Superposition/quantum/Shor_In_Superposition.qs"
             AddI.Controlled.Apply((new QArray<Qubit>(z), (new Microsoft.Quantum.Arithmetic.LittleEndian(v), new Microsoft.Quantum.Arithmetic.LittleEndian(t))));
-#line 230 "/Users/Matt/Documents/Masters/Dissertation/QSharp/Shor_In_Superposition/quantum/Shor_In_Superposition.qs"
+#line 382 "/Users/Matt/Documents/Masters/Dissertation/QSharp/Shor_In_Superposition/quantum/Shor_In_Superposition.qs"
             MicrosoftQuantumIntrinsicX.Apply(z);
 #line hidden
             {
-#line 232 "/Users/Matt/Documents/Masters/Dissertation/QSharp/Shor_In_Superposition/quantum/Shor_In_Superposition.qs"
-                var anc = Allocate.Apply(2L);
+#line 383 "/Users/Matt/Documents/Masters/Dissertation/QSharp/Shor_In_Superposition/quantum/Shor_In_Superposition.qs"
+                var anc = Allocate.Apply(v.Length);
 #line hidden
                 bool __arg1__ = true;
                 try
                 {
-#line 233 "/Users/Matt/Documents/Masters/Dissertation/QSharp/Shor_In_Superposition/quantum/Shor_In_Superposition.qs"
+#line 384 "/Users/Matt/Documents/Masters/Dissertation/QSharp/Shor_In_Superposition/quantum/Shor_In_Superposition.qs"
                     SquareModM.Controlled.Apply((new QArray<Qubit>(z), (v, m, anc)));
-#line 234 "/Users/Matt/Documents/Masters/Dissertation/QSharp/Shor_In_Superposition/quantum/Shor_In_Superposition.qs"
-                    MultiplyModM.Controlled.Apply((new QArray<Qubit>(z, c, sc), (a, anc, m, t)));
-#line 235 "/Users/Matt/Documents/Masters/Dissertation/QSharp/Shor_In_Superposition/quantum/Shor_In_Superposition.qs"
+#line 385 "/Users/Matt/Documents/Masters/Dissertation/QSharp/Shor_In_Superposition/quantum/Shor_In_Superposition.qs"
+                    MultiplyModM.Controlled.Apply((new QArray<Qubit>(z, c, ld), (a, anc, m, t)));
+#line 386 "/Users/Matt/Documents/Masters/Dissertation/QSharp/Shor_In_Superposition/quantum/Shor_In_Superposition.qs"
                     MicrosoftQuantumIntrinsicX.Apply(c);
-#line 236 "/Users/Matt/Documents/Masters/Dissertation/QSharp/Shor_In_Superposition/quantum/Shor_In_Superposition.qs"
+#line 387 "/Users/Matt/Documents/Masters/Dissertation/QSharp/Shor_In_Superposition/quantum/Shor_In_Superposition.qs"
                     AddI.Controlled.Apply((new QArray<Qubit>(z, c), (new Microsoft.Quantum.Arithmetic.LittleEndian(anc), new Microsoft.Quantum.Arithmetic.LittleEndian(t))));
-#line 237 "/Users/Matt/Documents/Masters/Dissertation/QSharp/Shor_In_Superposition/quantum/Shor_In_Superposition.qs"
+#line 388 "/Users/Matt/Documents/Masters/Dissertation/QSharp/Shor_In_Superposition/quantum/Shor_In_Superposition.qs"
                     MicrosoftQuantumIntrinsicX.Apply(c);
-#line 238 "/Users/Matt/Documents/Masters/Dissertation/QSharp/Shor_In_Superposition/quantum/Shor_In_Superposition.qs"
-                    MicrosoftQuantumIntrinsicX.Apply(sc);
-#line 239 "/Users/Matt/Documents/Masters/Dissertation/QSharp/Shor_In_Superposition/quantum/Shor_In_Superposition.qs"
-                    AddI.Controlled.Apply((new QArray<Qubit>(sc), (new Microsoft.Quantum.Arithmetic.LittleEndian(anc), new Microsoft.Quantum.Arithmetic.LittleEndian(t))));
-#line 240 "/Users/Matt/Documents/Masters/Dissertation/QSharp/Shor_In_Superposition/quantum/Shor_In_Superposition.qs"
-                    MicrosoftQuantumIntrinsicX.Apply(sc);
-#line 242 "/Users/Matt/Documents/Masters/Dissertation/QSharp/Shor_In_Superposition/quantum/Shor_In_Superposition.qs"
+#line 389 "/Users/Matt/Documents/Masters/Dissertation/QSharp/Shor_In_Superposition/quantum/Shor_In_Superposition.qs"
+                    MicrosoftQuantumIntrinsicX.Apply(ld);
+#line 390 "/Users/Matt/Documents/Masters/Dissertation/QSharp/Shor_In_Superposition/quantum/Shor_In_Superposition.qs"
+                    AddI.Controlled.Apply((new QArray<Qubit>(ld), (new Microsoft.Quantum.Arithmetic.LittleEndian(anc), new Microsoft.Quantum.Arithmetic.LittleEndian(t))));
+#line 391 "/Users/Matt/Documents/Masters/Dissertation/QSharp/Shor_In_Superposition/quantum/Shor_In_Superposition.qs"
+                    MicrosoftQuantumIntrinsicX.Apply(ld);
+#line 393 "/Users/Matt/Documents/Masters/Dissertation/QSharp/Shor_In_Superposition/quantum/Shor_In_Superposition.qs"
                     SquareModM.Adjoint.Controlled.Apply((new QArray<Qubit>(z), (v, m, anc)));
                 }
 #line hidden
@@ -945,32 +1028,32 @@ namespace Shor
         ;
         public override Func<(IQArray<Qubit>,IQArray<Qubit>,IQArray<Qubit>,Qubit,Qubit,Qubit,IQArray<Qubit>), QVoid> AdjointBody => (__in__) =>
         {
-            var (a,v,m,c,z,sc,t) = __in__;
-#line 227 "/Users/Matt/Documents/Masters/Dissertation/QSharp/Shor_In_Superposition/quantum/Shor_In_Superposition.qs"
+            var (a,v,m,c,z,ld,t) = __in__;
+#line 379 "/Users/Matt/Documents/Masters/Dissertation/QSharp/Shor_In_Superposition/quantum/Shor_In_Superposition.qs"
             {
-#line 227 "/Users/Matt/Documents/Masters/Dissertation/QSharp/Shor_In_Superposition/quantum/Shor_In_Superposition.qs"
-                var __qsVar0__anc__ = Allocate.Apply(2L);
+#line 379 "/Users/Matt/Documents/Masters/Dissertation/QSharp/Shor_In_Superposition/quantum/Shor_In_Superposition.qs"
+                var __qsVar0__anc__ = Allocate.Apply(v.Length);
 #line hidden
                 bool __arg1__ = true;
                 try
                 {
-#line 227 "/Users/Matt/Documents/Masters/Dissertation/QSharp/Shor_In_Superposition/quantum/Shor_In_Superposition.qs"
+#line 379 "/Users/Matt/Documents/Masters/Dissertation/QSharp/Shor_In_Superposition/quantum/Shor_In_Superposition.qs"
                     SquareModM.Adjoint.Controlled.Adjoint.Apply((new QArray<Qubit>(z), (v, m, __qsVar0__anc__)));
-#line 227 "/Users/Matt/Documents/Masters/Dissertation/QSharp/Shor_In_Superposition/quantum/Shor_In_Superposition.qs"
-                    MicrosoftQuantumIntrinsicX.Adjoint.Apply(sc);
-#line 227 "/Users/Matt/Documents/Masters/Dissertation/QSharp/Shor_In_Superposition/quantum/Shor_In_Superposition.qs"
-                    AddI.Controlled.Adjoint.Apply((new QArray<Qubit>(sc), (new Microsoft.Quantum.Arithmetic.LittleEndian(__qsVar0__anc__), new Microsoft.Quantum.Arithmetic.LittleEndian(t))));
-#line 227 "/Users/Matt/Documents/Masters/Dissertation/QSharp/Shor_In_Superposition/quantum/Shor_In_Superposition.qs"
-                    MicrosoftQuantumIntrinsicX.Adjoint.Apply(sc);
-#line 227 "/Users/Matt/Documents/Masters/Dissertation/QSharp/Shor_In_Superposition/quantum/Shor_In_Superposition.qs"
+#line 379 "/Users/Matt/Documents/Masters/Dissertation/QSharp/Shor_In_Superposition/quantum/Shor_In_Superposition.qs"
+                    MicrosoftQuantumIntrinsicX.Adjoint.Apply(ld);
+#line 379 "/Users/Matt/Documents/Masters/Dissertation/QSharp/Shor_In_Superposition/quantum/Shor_In_Superposition.qs"
+                    AddI.Controlled.Adjoint.Apply((new QArray<Qubit>(ld), (new Microsoft.Quantum.Arithmetic.LittleEndian(__qsVar0__anc__), new Microsoft.Quantum.Arithmetic.LittleEndian(t))));
+#line 379 "/Users/Matt/Documents/Masters/Dissertation/QSharp/Shor_In_Superposition/quantum/Shor_In_Superposition.qs"
+                    MicrosoftQuantumIntrinsicX.Adjoint.Apply(ld);
+#line 379 "/Users/Matt/Documents/Masters/Dissertation/QSharp/Shor_In_Superposition/quantum/Shor_In_Superposition.qs"
                     MicrosoftQuantumIntrinsicX.Adjoint.Apply(c);
-#line 227 "/Users/Matt/Documents/Masters/Dissertation/QSharp/Shor_In_Superposition/quantum/Shor_In_Superposition.qs"
+#line 379 "/Users/Matt/Documents/Masters/Dissertation/QSharp/Shor_In_Superposition/quantum/Shor_In_Superposition.qs"
                     AddI.Controlled.Adjoint.Apply((new QArray<Qubit>(z, c), (new Microsoft.Quantum.Arithmetic.LittleEndian(__qsVar0__anc__), new Microsoft.Quantum.Arithmetic.LittleEndian(t))));
-#line 227 "/Users/Matt/Documents/Masters/Dissertation/QSharp/Shor_In_Superposition/quantum/Shor_In_Superposition.qs"
+#line 379 "/Users/Matt/Documents/Masters/Dissertation/QSharp/Shor_In_Superposition/quantum/Shor_In_Superposition.qs"
                     MicrosoftQuantumIntrinsicX.Adjoint.Apply(c);
-#line 227 "/Users/Matt/Documents/Masters/Dissertation/QSharp/Shor_In_Superposition/quantum/Shor_In_Superposition.qs"
-                    MultiplyModM.Controlled.Adjoint.Apply((new QArray<Qubit>(z, c, sc), (a, __qsVar0__anc__, m, t)));
-#line 227 "/Users/Matt/Documents/Masters/Dissertation/QSharp/Shor_In_Superposition/quantum/Shor_In_Superposition.qs"
+#line 379 "/Users/Matt/Documents/Masters/Dissertation/QSharp/Shor_In_Superposition/quantum/Shor_In_Superposition.qs"
+                    MultiplyModM.Controlled.Adjoint.Apply((new QArray<Qubit>(z, c, ld), (a, __qsVar0__anc__, m, t)));
+#line 379 "/Users/Matt/Documents/Masters/Dissertation/QSharp/Shor_In_Superposition/quantum/Shor_In_Superposition.qs"
                     SquareModM.Controlled.Adjoint.Apply((new QArray<Qubit>(z), (v, m, __qsVar0__anc__)));
                 }
 #line hidden
@@ -990,11 +1073,11 @@ namespace Shor
                 }
             }
 
-#line 227 "/Users/Matt/Documents/Masters/Dissertation/QSharp/Shor_In_Superposition/quantum/Shor_In_Superposition.qs"
+#line 379 "/Users/Matt/Documents/Masters/Dissertation/QSharp/Shor_In_Superposition/quantum/Shor_In_Superposition.qs"
             MicrosoftQuantumIntrinsicX.Adjoint.Apply(z);
-#line 227 "/Users/Matt/Documents/Masters/Dissertation/QSharp/Shor_In_Superposition/quantum/Shor_In_Superposition.qs"
+#line 379 "/Users/Matt/Documents/Masters/Dissertation/QSharp/Shor_In_Superposition/quantum/Shor_In_Superposition.qs"
             AddI.Controlled.Adjoint.Apply((new QArray<Qubit>(z), (new Microsoft.Quantum.Arithmetic.LittleEndian(v), new Microsoft.Quantum.Arithmetic.LittleEndian(t))));
-#line 227 "/Users/Matt/Documents/Masters/Dissertation/QSharp/Shor_In_Superposition/quantum/Shor_In_Superposition.qs"
+#line 379 "/Users/Matt/Documents/Masters/Dissertation/QSharp/Shor_In_Superposition/quantum/Shor_In_Superposition.qs"
             MicrosoftQuantumIntrinsicX.Adjoint.Apply(z);
 #line hidden
             return QVoid.Instance;
@@ -1003,38 +1086,38 @@ namespace Shor
         ;
         public override Func<(IQArray<Qubit>,(IQArray<Qubit>,IQArray<Qubit>,IQArray<Qubit>,Qubit,Qubit,Qubit,IQArray<Qubit>)), QVoid> ControlledBody => (__in__) =>
         {
-            var (__controlQubits__,(a,v,m,c,z,sc,t)) = __in__;
-#line 227 "/Users/Matt/Documents/Masters/Dissertation/QSharp/Shor_In_Superposition/quantum/Shor_In_Superposition.qs"
+            var (__controlQubits__,(a,v,m,c,z,ld,t)) = __in__;
+#line 379 "/Users/Matt/Documents/Masters/Dissertation/QSharp/Shor_In_Superposition/quantum/Shor_In_Superposition.qs"
             MicrosoftQuantumIntrinsicX.Controlled.Apply((__controlQubits__, z));
-#line 227 "/Users/Matt/Documents/Masters/Dissertation/QSharp/Shor_In_Superposition/quantum/Shor_In_Superposition.qs"
+#line 379 "/Users/Matt/Documents/Masters/Dissertation/QSharp/Shor_In_Superposition/quantum/Shor_In_Superposition.qs"
             AddI.Controlled.Controlled.Apply((__controlQubits__, (new QArray<Qubit>(z), (new Microsoft.Quantum.Arithmetic.LittleEndian(v), new Microsoft.Quantum.Arithmetic.LittleEndian(t)))));
-#line 227 "/Users/Matt/Documents/Masters/Dissertation/QSharp/Shor_In_Superposition/quantum/Shor_In_Superposition.qs"
+#line 379 "/Users/Matt/Documents/Masters/Dissertation/QSharp/Shor_In_Superposition/quantum/Shor_In_Superposition.qs"
             MicrosoftQuantumIntrinsicX.Controlled.Apply((__controlQubits__, z));
-#line 227 "/Users/Matt/Documents/Masters/Dissertation/QSharp/Shor_In_Superposition/quantum/Shor_In_Superposition.qs"
+#line 379 "/Users/Matt/Documents/Masters/Dissertation/QSharp/Shor_In_Superposition/quantum/Shor_In_Superposition.qs"
             {
-#line 227 "/Users/Matt/Documents/Masters/Dissertation/QSharp/Shor_In_Superposition/quantum/Shor_In_Superposition.qs"
-                var anc = Allocate.Apply(2L);
+#line 379 "/Users/Matt/Documents/Masters/Dissertation/QSharp/Shor_In_Superposition/quantum/Shor_In_Superposition.qs"
+                var anc = Allocate.Apply(v.Length);
 #line hidden
                 bool __arg1__ = true;
                 try
                 {
-#line 227 "/Users/Matt/Documents/Masters/Dissertation/QSharp/Shor_In_Superposition/quantum/Shor_In_Superposition.qs"
+#line 379 "/Users/Matt/Documents/Masters/Dissertation/QSharp/Shor_In_Superposition/quantum/Shor_In_Superposition.qs"
                     SquareModM.Controlled.Controlled.Apply((__controlQubits__, (new QArray<Qubit>(z), (v, m, anc))));
-#line 227 "/Users/Matt/Documents/Masters/Dissertation/QSharp/Shor_In_Superposition/quantum/Shor_In_Superposition.qs"
-                    MultiplyModM.Controlled.Controlled.Apply((__controlQubits__, (new QArray<Qubit>(z, c, sc), (a, anc, m, t))));
-#line 227 "/Users/Matt/Documents/Masters/Dissertation/QSharp/Shor_In_Superposition/quantum/Shor_In_Superposition.qs"
+#line 379 "/Users/Matt/Documents/Masters/Dissertation/QSharp/Shor_In_Superposition/quantum/Shor_In_Superposition.qs"
+                    MultiplyModM.Controlled.Controlled.Apply((__controlQubits__, (new QArray<Qubit>(z, c, ld), (a, anc, m, t))));
+#line 379 "/Users/Matt/Documents/Masters/Dissertation/QSharp/Shor_In_Superposition/quantum/Shor_In_Superposition.qs"
                     MicrosoftQuantumIntrinsicX.Controlled.Apply((__controlQubits__, c));
-#line 227 "/Users/Matt/Documents/Masters/Dissertation/QSharp/Shor_In_Superposition/quantum/Shor_In_Superposition.qs"
+#line 379 "/Users/Matt/Documents/Masters/Dissertation/QSharp/Shor_In_Superposition/quantum/Shor_In_Superposition.qs"
                     AddI.Controlled.Controlled.Apply((__controlQubits__, (new QArray<Qubit>(z, c), (new Microsoft.Quantum.Arithmetic.LittleEndian(anc), new Microsoft.Quantum.Arithmetic.LittleEndian(t)))));
-#line 227 "/Users/Matt/Documents/Masters/Dissertation/QSharp/Shor_In_Superposition/quantum/Shor_In_Superposition.qs"
+#line 379 "/Users/Matt/Documents/Masters/Dissertation/QSharp/Shor_In_Superposition/quantum/Shor_In_Superposition.qs"
                     MicrosoftQuantumIntrinsicX.Controlled.Apply((__controlQubits__, c));
-#line 227 "/Users/Matt/Documents/Masters/Dissertation/QSharp/Shor_In_Superposition/quantum/Shor_In_Superposition.qs"
-                    MicrosoftQuantumIntrinsicX.Controlled.Apply((__controlQubits__, sc));
-#line 227 "/Users/Matt/Documents/Masters/Dissertation/QSharp/Shor_In_Superposition/quantum/Shor_In_Superposition.qs"
-                    AddI.Controlled.Controlled.Apply((__controlQubits__, (new QArray<Qubit>(sc), (new Microsoft.Quantum.Arithmetic.LittleEndian(anc), new Microsoft.Quantum.Arithmetic.LittleEndian(t)))));
-#line 227 "/Users/Matt/Documents/Masters/Dissertation/QSharp/Shor_In_Superposition/quantum/Shor_In_Superposition.qs"
-                    MicrosoftQuantumIntrinsicX.Controlled.Apply((__controlQubits__, sc));
-#line 227 "/Users/Matt/Documents/Masters/Dissertation/QSharp/Shor_In_Superposition/quantum/Shor_In_Superposition.qs"
+#line 379 "/Users/Matt/Documents/Masters/Dissertation/QSharp/Shor_In_Superposition/quantum/Shor_In_Superposition.qs"
+                    MicrosoftQuantumIntrinsicX.Controlled.Apply((__controlQubits__, ld));
+#line 379 "/Users/Matt/Documents/Masters/Dissertation/QSharp/Shor_In_Superposition/quantum/Shor_In_Superposition.qs"
+                    AddI.Controlled.Controlled.Apply((__controlQubits__, (new QArray<Qubit>(ld), (new Microsoft.Quantum.Arithmetic.LittleEndian(anc), new Microsoft.Quantum.Arithmetic.LittleEndian(t)))));
+#line 379 "/Users/Matt/Documents/Masters/Dissertation/QSharp/Shor_In_Superposition/quantum/Shor_In_Superposition.qs"
+                    MicrosoftQuantumIntrinsicX.Controlled.Apply((__controlQubits__, ld));
+#line 379 "/Users/Matt/Documents/Masters/Dissertation/QSharp/Shor_In_Superposition/quantum/Shor_In_Superposition.qs"
                     SquareModM.Adjoint.Controlled.Controlled.Apply((__controlQubits__, (new QArray<Qubit>(z), (v, m, anc))));
                 }
 #line hidden
@@ -1061,32 +1144,32 @@ namespace Shor
         ;
         public override Func<(IQArray<Qubit>,(IQArray<Qubit>,IQArray<Qubit>,IQArray<Qubit>,Qubit,Qubit,Qubit,IQArray<Qubit>)), QVoid> ControlledAdjointBody => (__in__) =>
         {
-            var (__controlQubits__,(a,v,m,c,z,sc,t)) = __in__;
-#line 227 "/Users/Matt/Documents/Masters/Dissertation/QSharp/Shor_In_Superposition/quantum/Shor_In_Superposition.qs"
+            var (__controlQubits__,(a,v,m,c,z,ld,t)) = __in__;
+#line 379 "/Users/Matt/Documents/Masters/Dissertation/QSharp/Shor_In_Superposition/quantum/Shor_In_Superposition.qs"
             {
-#line 227 "/Users/Matt/Documents/Masters/Dissertation/QSharp/Shor_In_Superposition/quantum/Shor_In_Superposition.qs"
-                var __qsVar0__anc__ = Allocate.Apply(2L);
+#line 379 "/Users/Matt/Documents/Masters/Dissertation/QSharp/Shor_In_Superposition/quantum/Shor_In_Superposition.qs"
+                var __qsVar0__anc__ = Allocate.Apply(v.Length);
 #line hidden
                 bool __arg1__ = true;
                 try
                 {
-#line 227 "/Users/Matt/Documents/Masters/Dissertation/QSharp/Shor_In_Superposition/quantum/Shor_In_Superposition.qs"
+#line 379 "/Users/Matt/Documents/Masters/Dissertation/QSharp/Shor_In_Superposition/quantum/Shor_In_Superposition.qs"
                     SquareModM.Adjoint.Controlled.Adjoint.Controlled.Apply((__controlQubits__, (new QArray<Qubit>(z), (v, m, __qsVar0__anc__))));
-#line 227 "/Users/Matt/Documents/Masters/Dissertation/QSharp/Shor_In_Superposition/quantum/Shor_In_Superposition.qs"
-                    MicrosoftQuantumIntrinsicX.Adjoint.Controlled.Apply((__controlQubits__, sc));
-#line 227 "/Users/Matt/Documents/Masters/Dissertation/QSharp/Shor_In_Superposition/quantum/Shor_In_Superposition.qs"
-                    AddI.Controlled.Adjoint.Controlled.Apply((__controlQubits__, (new QArray<Qubit>(sc), (new Microsoft.Quantum.Arithmetic.LittleEndian(__qsVar0__anc__), new Microsoft.Quantum.Arithmetic.LittleEndian(t)))));
-#line 227 "/Users/Matt/Documents/Masters/Dissertation/QSharp/Shor_In_Superposition/quantum/Shor_In_Superposition.qs"
-                    MicrosoftQuantumIntrinsicX.Adjoint.Controlled.Apply((__controlQubits__, sc));
-#line 227 "/Users/Matt/Documents/Masters/Dissertation/QSharp/Shor_In_Superposition/quantum/Shor_In_Superposition.qs"
+#line 379 "/Users/Matt/Documents/Masters/Dissertation/QSharp/Shor_In_Superposition/quantum/Shor_In_Superposition.qs"
+                    MicrosoftQuantumIntrinsicX.Adjoint.Controlled.Apply((__controlQubits__, ld));
+#line 379 "/Users/Matt/Documents/Masters/Dissertation/QSharp/Shor_In_Superposition/quantum/Shor_In_Superposition.qs"
+                    AddI.Controlled.Adjoint.Controlled.Apply((__controlQubits__, (new QArray<Qubit>(ld), (new Microsoft.Quantum.Arithmetic.LittleEndian(__qsVar0__anc__), new Microsoft.Quantum.Arithmetic.LittleEndian(t)))));
+#line 379 "/Users/Matt/Documents/Masters/Dissertation/QSharp/Shor_In_Superposition/quantum/Shor_In_Superposition.qs"
+                    MicrosoftQuantumIntrinsicX.Adjoint.Controlled.Apply((__controlQubits__, ld));
+#line 379 "/Users/Matt/Documents/Masters/Dissertation/QSharp/Shor_In_Superposition/quantum/Shor_In_Superposition.qs"
                     MicrosoftQuantumIntrinsicX.Adjoint.Controlled.Apply((__controlQubits__, c));
-#line 227 "/Users/Matt/Documents/Masters/Dissertation/QSharp/Shor_In_Superposition/quantum/Shor_In_Superposition.qs"
+#line 379 "/Users/Matt/Documents/Masters/Dissertation/QSharp/Shor_In_Superposition/quantum/Shor_In_Superposition.qs"
                     AddI.Controlled.Adjoint.Controlled.Apply((__controlQubits__, (new QArray<Qubit>(z, c), (new Microsoft.Quantum.Arithmetic.LittleEndian(__qsVar0__anc__), new Microsoft.Quantum.Arithmetic.LittleEndian(t)))));
-#line 227 "/Users/Matt/Documents/Masters/Dissertation/QSharp/Shor_In_Superposition/quantum/Shor_In_Superposition.qs"
+#line 379 "/Users/Matt/Documents/Masters/Dissertation/QSharp/Shor_In_Superposition/quantum/Shor_In_Superposition.qs"
                     MicrosoftQuantumIntrinsicX.Adjoint.Controlled.Apply((__controlQubits__, c));
-#line 227 "/Users/Matt/Documents/Masters/Dissertation/QSharp/Shor_In_Superposition/quantum/Shor_In_Superposition.qs"
-                    MultiplyModM.Controlled.Adjoint.Controlled.Apply((__controlQubits__, (new QArray<Qubit>(z, c, sc), (a, __qsVar0__anc__, m, t))));
-#line 227 "/Users/Matt/Documents/Masters/Dissertation/QSharp/Shor_In_Superposition/quantum/Shor_In_Superposition.qs"
+#line 379 "/Users/Matt/Documents/Masters/Dissertation/QSharp/Shor_In_Superposition/quantum/Shor_In_Superposition.qs"
+                    MultiplyModM.Controlled.Adjoint.Controlled.Apply((__controlQubits__, (new QArray<Qubit>(z, c, ld), (a, __qsVar0__anc__, m, t))));
+#line 379 "/Users/Matt/Documents/Masters/Dissertation/QSharp/Shor_In_Superposition/quantum/Shor_In_Superposition.qs"
                     SquareModM.Controlled.Adjoint.Controlled.Apply((__controlQubits__, (new QArray<Qubit>(z), (v, m, __qsVar0__anc__))));
                 }
 #line hidden
@@ -1106,11 +1189,11 @@ namespace Shor
                 }
             }
 
-#line 227 "/Users/Matt/Documents/Masters/Dissertation/QSharp/Shor_In_Superposition/quantum/Shor_In_Superposition.qs"
+#line 379 "/Users/Matt/Documents/Masters/Dissertation/QSharp/Shor_In_Superposition/quantum/Shor_In_Superposition.qs"
             MicrosoftQuantumIntrinsicX.Adjoint.Controlled.Apply((__controlQubits__, z));
-#line 227 "/Users/Matt/Documents/Masters/Dissertation/QSharp/Shor_In_Superposition/quantum/Shor_In_Superposition.qs"
+#line 379 "/Users/Matt/Documents/Masters/Dissertation/QSharp/Shor_In_Superposition/quantum/Shor_In_Superposition.qs"
             AddI.Controlled.Adjoint.Controlled.Apply((__controlQubits__, (new QArray<Qubit>(z), (new Microsoft.Quantum.Arithmetic.LittleEndian(v), new Microsoft.Quantum.Arithmetic.LittleEndian(t)))));
-#line 227 "/Users/Matt/Documents/Masters/Dissertation/QSharp/Shor_In_Superposition/quantum/Shor_In_Superposition.qs"
+#line 379 "/Users/Matt/Documents/Masters/Dissertation/QSharp/Shor_In_Superposition/quantum/Shor_In_Superposition.qs"
             MicrosoftQuantumIntrinsicX.Adjoint.Controlled.Apply((__controlQubits__, z));
 #line hidden
             return QVoid.Instance;
@@ -1124,22 +1207,23 @@ namespace Shor
             this.MicrosoftQuantumArithmeticLittleEndian = this.Factory.Get<ICallable<IQArray<Qubit>, Microsoft.Quantum.Arithmetic.LittleEndian>>(typeof(Microsoft.Quantum.Arithmetic.LittleEndian));
             this.Allocate = this.Factory.Get<Allocate>(typeof(Microsoft.Quantum.Intrinsic.Allocate));
             this.Release = this.Factory.Get<Release>(typeof(Microsoft.Quantum.Intrinsic.Release));
+            this.Length = this.Factory.Get<ICallable>(typeof(Microsoft.Quantum.Core.Length<>));
             this.SquareModM = this.Factory.Get<IUnitary<(IQArray<Qubit>,IQArray<Qubit>,IQArray<Qubit>)>>(typeof(SquareModM));
             this.MultiplyModM = this.Factory.Get<IUnitary<(IQArray<Qubit>,IQArray<Qubit>,IQArray<Qubit>,IQArray<Qubit>)>>(typeof(MultiplyModM));
         }
 
         public override IApplyData __dataIn((IQArray<Qubit>,IQArray<Qubit>,IQArray<Qubit>,Qubit,Qubit,Qubit,IQArray<Qubit>) data) => new In(data);
         public override IApplyData __dataOut(QVoid data) => data;
-        public static System.Threading.Tasks.Task<QVoid> Run(IOperationFactory __m__, IQArray<Qubit> a, IQArray<Qubit> v, IQArray<Qubit> m, Qubit c, Qubit z, Qubit sc, IQArray<Qubit> t)
+        public static System.Threading.Tasks.Task<QVoid> Run(IOperationFactory __m__, IQArray<Qubit> a, IQArray<Qubit> v, IQArray<Qubit> m, Qubit c, Qubit z, Qubit ld, IQArray<Qubit> t)
         {
-            return __m__.Run<SquareAndMultiplyIteration, (IQArray<Qubit>,IQArray<Qubit>,IQArray<Qubit>,Qubit,Qubit,Qubit,IQArray<Qubit>), QVoid>((a, v, m, c, z, sc, t));
+            return __m__.Run<SquareAndMultiplyIteration, (IQArray<Qubit>,IQArray<Qubit>,IQArray<Qubit>,Qubit,Qubit,Qubit,IQArray<Qubit>), QVoid>((a, v, m, c, z, ld, t));
         }
     }
 
-    [SourceLocation("/Users/Matt/Documents/Masters/Dissertation/QSharp/Shor_In_Superposition/quantum/Shor_In_Superposition.qs", OperationFunctor.Body, 246, 259)]
-    [SourceLocation("/Users/Matt/Documents/Masters/Dissertation/QSharp/Shor_In_Superposition/quantum/Shor_In_Superposition.qs", OperationFunctor.Adjoint, 246, 259)]
-    [SourceLocation("/Users/Matt/Documents/Masters/Dissertation/QSharp/Shor_In_Superposition/quantum/Shor_In_Superposition.qs", OperationFunctor.Controlled, 246, 259)]
-    [SourceLocation("/Users/Matt/Documents/Masters/Dissertation/QSharp/Shor_In_Superposition/quantum/Shor_In_Superposition.qs", OperationFunctor.ControlledAdjoint, 246, 259)]
+    [SourceLocation("/Users/Matt/Documents/Masters/Dissertation/QSharp/Shor_In_Superposition/quantum/Shor_In_Superposition.qs", OperationFunctor.Body, 397, 410)]
+    [SourceLocation("/Users/Matt/Documents/Masters/Dissertation/QSharp/Shor_In_Superposition/quantum/Shor_In_Superposition.qs", OperationFunctor.Adjoint, 397, 410)]
+    [SourceLocation("/Users/Matt/Documents/Masters/Dissertation/QSharp/Shor_In_Superposition/quantum/Shor_In_Superposition.qs", OperationFunctor.Controlled, 397, 410)]
+    [SourceLocation("/Users/Matt/Documents/Masters/Dissertation/QSharp/Shor_In_Superposition/quantum/Shor_In_Superposition.qs", OperationFunctor.ControlledAdjoint, 397, 410)]
     public partial class SquareModM : Unitary<(IQArray<Qubit>,IQArray<Qubit>,IQArray<Qubit>)>, ICallable
     {
         public SquareModM(IOperationFactory m) : base(m)
@@ -1208,31 +1292,31 @@ namespace Shor
         public override Func<(IQArray<Qubit>,IQArray<Qubit>,IQArray<Qubit>), QVoid> Body => (__in__) =>
         {
             var (a,Ms,Ts) = __in__;
-#line 247 "/Users/Matt/Documents/Masters/Dissertation/QSharp/Shor_In_Superposition/quantum/Shor_In_Superposition.qs"
+#line 398 "/Users/Matt/Documents/Masters/Dissertation/QSharp/Shor_In_Superposition/quantum/Shor_In_Superposition.qs"
             var num = a.Length;
 #line hidden
             {
-#line 248 "/Users/Matt/Documents/Masters/Dissertation/QSharp/Shor_In_Superposition/quantum/Shor_In_Superposition.qs"
+#line 399 "/Users/Matt/Documents/Masters/Dissertation/QSharp/Shor_In_Superposition/quantum/Shor_In_Superposition.qs"
                 var (aS,aSPad) = (Allocate.Apply(num), Allocate.Apply(num));
 #line hidden
                 bool __arg1__ = true;
                 try
                 {
-#line 249 "/Users/Matt/Documents/Masters/Dissertation/QSharp/Shor_In_Superposition/quantum/Shor_In_Superposition.qs"
+#line 400 "/Users/Matt/Documents/Masters/Dissertation/QSharp/Shor_In_Superposition/quantum/Shor_In_Superposition.qs"
                     SquareI.Apply((new Microsoft.Quantum.Arithmetic.LittleEndian(a), new Microsoft.Quantum.Arithmetic.LittleEndian(QArray<Qubit>.Add(aS, aSPad))));
 #line hidden
                     {
-#line 250 "/Users/Matt/Documents/Masters/Dissertation/QSharp/Shor_In_Superposition/quantum/Shor_In_Superposition.qs"
+#line 401 "/Users/Matt/Documents/Masters/Dissertation/QSharp/Shor_In_Superposition/quantum/Shor_In_Superposition.qs"
                         var (anc,MsPad) = (Allocate.Apply((num * 2L)), Allocate.Apply(num));
 #line hidden
                         bool __arg2__ = true;
                         try
                         {
-#line 251 "/Users/Matt/Documents/Masters/Dissertation/QSharp/Shor_In_Superposition/quantum/Shor_In_Superposition.qs"
+#line 402 "/Users/Matt/Documents/Masters/Dissertation/QSharp/Shor_In_Superposition/quantum/Shor_In_Superposition.qs"
                             DivideI.Apply((new Microsoft.Quantum.Arithmetic.LittleEndian(QArray<Qubit>.Add(aS, aSPad)), new Microsoft.Quantum.Arithmetic.LittleEndian(QArray<Qubit>.Add(Ms, MsPad)), new Microsoft.Quantum.Arithmetic.LittleEndian(anc)));
-#line 252 "/Users/Matt/Documents/Masters/Dissertation/QSharp/Shor_In_Superposition/quantum/Shor_In_Superposition.qs"
+#line 403 "/Users/Matt/Documents/Masters/Dissertation/QSharp/Shor_In_Superposition/quantum/Shor_In_Superposition.qs"
                             AddI.Apply((new Microsoft.Quantum.Arithmetic.LittleEndian(aS), new Microsoft.Quantum.Arithmetic.LittleEndian(Ts)));
-#line 253 "/Users/Matt/Documents/Masters/Dissertation/QSharp/Shor_In_Superposition/quantum/Shor_In_Superposition.qs"
+#line 404 "/Users/Matt/Documents/Masters/Dissertation/QSharp/Shor_In_Superposition/quantum/Shor_In_Superposition.qs"
                             DivideI.Adjoint.Apply((new Microsoft.Quantum.Arithmetic.LittleEndian(QArray<Qubit>.Add(aS, aSPad)), new Microsoft.Quantum.Arithmetic.LittleEndian(QArray<Qubit>.Add(Ms, MsPad)), new Microsoft.Quantum.Arithmetic.LittleEndian(anc)));
                         }
 #line hidden
@@ -1254,7 +1338,7 @@ namespace Shor
                         }
                     }
 
-#line 255 "/Users/Matt/Documents/Masters/Dissertation/QSharp/Shor_In_Superposition/quantum/Shor_In_Superposition.qs"
+#line 406 "/Users/Matt/Documents/Masters/Dissertation/QSharp/Shor_In_Superposition/quantum/Shor_In_Superposition.qs"
                     SquareI.Adjoint.Apply((new Microsoft.Quantum.Arithmetic.LittleEndian(a), new Microsoft.Quantum.Arithmetic.LittleEndian(QArray<Qubit>.Add(aS, aSPad))));
                 }
 #line hidden
@@ -1284,31 +1368,31 @@ namespace Shor
         public override Func<(IQArray<Qubit>,IQArray<Qubit>,IQArray<Qubit>), QVoid> AdjointBody => (__in__) =>
         {
             var (a,Ms,Ts) = __in__;
-#line 246 "/Users/Matt/Documents/Masters/Dissertation/QSharp/Shor_In_Superposition/quantum/Shor_In_Superposition.qs"
+#line 397 "/Users/Matt/Documents/Masters/Dissertation/QSharp/Shor_In_Superposition/quantum/Shor_In_Superposition.qs"
             var __qsVar0__num__ = a.Length;
-#line 246 "/Users/Matt/Documents/Masters/Dissertation/QSharp/Shor_In_Superposition/quantum/Shor_In_Superposition.qs"
+#line 397 "/Users/Matt/Documents/Masters/Dissertation/QSharp/Shor_In_Superposition/quantum/Shor_In_Superposition.qs"
             {
-#line 246 "/Users/Matt/Documents/Masters/Dissertation/QSharp/Shor_In_Superposition/quantum/Shor_In_Superposition.qs"
+#line 397 "/Users/Matt/Documents/Masters/Dissertation/QSharp/Shor_In_Superposition/quantum/Shor_In_Superposition.qs"
                 var (__qsVar1__aS__,__qsVar2__aSPad__) = (Allocate.Apply(__qsVar0__num__), Allocate.Apply(__qsVar0__num__));
 #line hidden
                 bool __arg1__ = true;
                 try
                 {
-#line 246 "/Users/Matt/Documents/Masters/Dissertation/QSharp/Shor_In_Superposition/quantum/Shor_In_Superposition.qs"
+#line 397 "/Users/Matt/Documents/Masters/Dissertation/QSharp/Shor_In_Superposition/quantum/Shor_In_Superposition.qs"
                     SquareI.Adjoint.Adjoint.Apply((new Microsoft.Quantum.Arithmetic.LittleEndian(a), new Microsoft.Quantum.Arithmetic.LittleEndian(QArray<Qubit>.Add(__qsVar1__aS__, __qsVar2__aSPad__))));
-#line 246 "/Users/Matt/Documents/Masters/Dissertation/QSharp/Shor_In_Superposition/quantum/Shor_In_Superposition.qs"
+#line 397 "/Users/Matt/Documents/Masters/Dissertation/QSharp/Shor_In_Superposition/quantum/Shor_In_Superposition.qs"
                     {
-#line 246 "/Users/Matt/Documents/Masters/Dissertation/QSharp/Shor_In_Superposition/quantum/Shor_In_Superposition.qs"
+#line 397 "/Users/Matt/Documents/Masters/Dissertation/QSharp/Shor_In_Superposition/quantum/Shor_In_Superposition.qs"
                         var (__qsVar3__anc__,__qsVar4__MsPad__) = (Allocate.Apply((__qsVar0__num__ * 2L)), Allocate.Apply(__qsVar0__num__));
 #line hidden
                         bool __arg2__ = true;
                         try
                         {
-#line 246 "/Users/Matt/Documents/Masters/Dissertation/QSharp/Shor_In_Superposition/quantum/Shor_In_Superposition.qs"
+#line 397 "/Users/Matt/Documents/Masters/Dissertation/QSharp/Shor_In_Superposition/quantum/Shor_In_Superposition.qs"
                             DivideI.Adjoint.Adjoint.Apply((new Microsoft.Quantum.Arithmetic.LittleEndian(QArray<Qubit>.Add(__qsVar1__aS__, __qsVar2__aSPad__)), new Microsoft.Quantum.Arithmetic.LittleEndian(QArray<Qubit>.Add(Ms, __qsVar4__MsPad__)), new Microsoft.Quantum.Arithmetic.LittleEndian(__qsVar3__anc__)));
-#line 246 "/Users/Matt/Documents/Masters/Dissertation/QSharp/Shor_In_Superposition/quantum/Shor_In_Superposition.qs"
+#line 397 "/Users/Matt/Documents/Masters/Dissertation/QSharp/Shor_In_Superposition/quantum/Shor_In_Superposition.qs"
                             AddI.Adjoint.Apply((new Microsoft.Quantum.Arithmetic.LittleEndian(__qsVar1__aS__), new Microsoft.Quantum.Arithmetic.LittleEndian(Ts)));
-#line 246 "/Users/Matt/Documents/Masters/Dissertation/QSharp/Shor_In_Superposition/quantum/Shor_In_Superposition.qs"
+#line 397 "/Users/Matt/Documents/Masters/Dissertation/QSharp/Shor_In_Superposition/quantum/Shor_In_Superposition.qs"
                             DivideI.Adjoint.Apply((new Microsoft.Quantum.Arithmetic.LittleEndian(QArray<Qubit>.Add(__qsVar1__aS__, __qsVar2__aSPad__)), new Microsoft.Quantum.Arithmetic.LittleEndian(QArray<Qubit>.Add(Ms, __qsVar4__MsPad__)), new Microsoft.Quantum.Arithmetic.LittleEndian(__qsVar3__anc__)));
                         }
 #line hidden
@@ -1330,7 +1414,7 @@ namespace Shor
                         }
                     }
 
-#line 246 "/Users/Matt/Documents/Masters/Dissertation/QSharp/Shor_In_Superposition/quantum/Shor_In_Superposition.qs"
+#line 397 "/Users/Matt/Documents/Masters/Dissertation/QSharp/Shor_In_Superposition/quantum/Shor_In_Superposition.qs"
                     SquareI.Adjoint.Apply((new Microsoft.Quantum.Arithmetic.LittleEndian(a), new Microsoft.Quantum.Arithmetic.LittleEndian(QArray<Qubit>.Add(__qsVar1__aS__, __qsVar2__aSPad__))));
                 }
 #line hidden
@@ -1360,31 +1444,31 @@ namespace Shor
         public override Func<(IQArray<Qubit>,(IQArray<Qubit>,IQArray<Qubit>,IQArray<Qubit>)), QVoid> ControlledBody => (__in__) =>
         {
             var (__controlQubits__,(a,Ms,Ts)) = __in__;
-#line 246 "/Users/Matt/Documents/Masters/Dissertation/QSharp/Shor_In_Superposition/quantum/Shor_In_Superposition.qs"
+#line 397 "/Users/Matt/Documents/Masters/Dissertation/QSharp/Shor_In_Superposition/quantum/Shor_In_Superposition.qs"
             var num = a.Length;
-#line 246 "/Users/Matt/Documents/Masters/Dissertation/QSharp/Shor_In_Superposition/quantum/Shor_In_Superposition.qs"
+#line 397 "/Users/Matt/Documents/Masters/Dissertation/QSharp/Shor_In_Superposition/quantum/Shor_In_Superposition.qs"
             {
-#line 246 "/Users/Matt/Documents/Masters/Dissertation/QSharp/Shor_In_Superposition/quantum/Shor_In_Superposition.qs"
+#line 397 "/Users/Matt/Documents/Masters/Dissertation/QSharp/Shor_In_Superposition/quantum/Shor_In_Superposition.qs"
                 var (aS,aSPad) = (Allocate.Apply(num), Allocate.Apply(num));
 #line hidden
                 bool __arg1__ = true;
                 try
                 {
-#line 246 "/Users/Matt/Documents/Masters/Dissertation/QSharp/Shor_In_Superposition/quantum/Shor_In_Superposition.qs"
+#line 397 "/Users/Matt/Documents/Masters/Dissertation/QSharp/Shor_In_Superposition/quantum/Shor_In_Superposition.qs"
                     SquareI.Controlled.Apply((__controlQubits__, (new Microsoft.Quantum.Arithmetic.LittleEndian(a), new Microsoft.Quantum.Arithmetic.LittleEndian(QArray<Qubit>.Add(aS, aSPad)))));
-#line 246 "/Users/Matt/Documents/Masters/Dissertation/QSharp/Shor_In_Superposition/quantum/Shor_In_Superposition.qs"
+#line 397 "/Users/Matt/Documents/Masters/Dissertation/QSharp/Shor_In_Superposition/quantum/Shor_In_Superposition.qs"
                     {
-#line 246 "/Users/Matt/Documents/Masters/Dissertation/QSharp/Shor_In_Superposition/quantum/Shor_In_Superposition.qs"
+#line 397 "/Users/Matt/Documents/Masters/Dissertation/QSharp/Shor_In_Superposition/quantum/Shor_In_Superposition.qs"
                         var (anc,MsPad) = (Allocate.Apply((num * 2L)), Allocate.Apply(num));
 #line hidden
                         bool __arg2__ = true;
                         try
                         {
-#line 246 "/Users/Matt/Documents/Masters/Dissertation/QSharp/Shor_In_Superposition/quantum/Shor_In_Superposition.qs"
+#line 397 "/Users/Matt/Documents/Masters/Dissertation/QSharp/Shor_In_Superposition/quantum/Shor_In_Superposition.qs"
                             DivideI.Controlled.Apply((__controlQubits__, (new Microsoft.Quantum.Arithmetic.LittleEndian(QArray<Qubit>.Add(aS, aSPad)), new Microsoft.Quantum.Arithmetic.LittleEndian(QArray<Qubit>.Add(Ms, MsPad)), new Microsoft.Quantum.Arithmetic.LittleEndian(anc))));
-#line 246 "/Users/Matt/Documents/Masters/Dissertation/QSharp/Shor_In_Superposition/quantum/Shor_In_Superposition.qs"
+#line 397 "/Users/Matt/Documents/Masters/Dissertation/QSharp/Shor_In_Superposition/quantum/Shor_In_Superposition.qs"
                             AddI.Controlled.Apply((__controlQubits__, (new Microsoft.Quantum.Arithmetic.LittleEndian(aS), new Microsoft.Quantum.Arithmetic.LittleEndian(Ts))));
-#line 246 "/Users/Matt/Documents/Masters/Dissertation/QSharp/Shor_In_Superposition/quantum/Shor_In_Superposition.qs"
+#line 397 "/Users/Matt/Documents/Masters/Dissertation/QSharp/Shor_In_Superposition/quantum/Shor_In_Superposition.qs"
                             DivideI.Adjoint.Controlled.Apply((__controlQubits__, (new Microsoft.Quantum.Arithmetic.LittleEndian(QArray<Qubit>.Add(aS, aSPad)), new Microsoft.Quantum.Arithmetic.LittleEndian(QArray<Qubit>.Add(Ms, MsPad)), new Microsoft.Quantum.Arithmetic.LittleEndian(anc))));
                         }
 #line hidden
@@ -1406,7 +1490,7 @@ namespace Shor
                         }
                     }
 
-#line 246 "/Users/Matt/Documents/Masters/Dissertation/QSharp/Shor_In_Superposition/quantum/Shor_In_Superposition.qs"
+#line 397 "/Users/Matt/Documents/Masters/Dissertation/QSharp/Shor_In_Superposition/quantum/Shor_In_Superposition.qs"
                     SquareI.Adjoint.Controlled.Apply((__controlQubits__, (new Microsoft.Quantum.Arithmetic.LittleEndian(a), new Microsoft.Quantum.Arithmetic.LittleEndian(QArray<Qubit>.Add(aS, aSPad)))));
                 }
 #line hidden
@@ -1436,31 +1520,31 @@ namespace Shor
         public override Func<(IQArray<Qubit>,(IQArray<Qubit>,IQArray<Qubit>,IQArray<Qubit>)), QVoid> ControlledAdjointBody => (__in__) =>
         {
             var (__controlQubits__,(a,Ms,Ts)) = __in__;
-#line 246 "/Users/Matt/Documents/Masters/Dissertation/QSharp/Shor_In_Superposition/quantum/Shor_In_Superposition.qs"
+#line 397 "/Users/Matt/Documents/Masters/Dissertation/QSharp/Shor_In_Superposition/quantum/Shor_In_Superposition.qs"
             var __qsVar0__num__ = a.Length;
-#line 246 "/Users/Matt/Documents/Masters/Dissertation/QSharp/Shor_In_Superposition/quantum/Shor_In_Superposition.qs"
+#line 397 "/Users/Matt/Documents/Masters/Dissertation/QSharp/Shor_In_Superposition/quantum/Shor_In_Superposition.qs"
             {
-#line 246 "/Users/Matt/Documents/Masters/Dissertation/QSharp/Shor_In_Superposition/quantum/Shor_In_Superposition.qs"
+#line 397 "/Users/Matt/Documents/Masters/Dissertation/QSharp/Shor_In_Superposition/quantum/Shor_In_Superposition.qs"
                 var (__qsVar1__aS__,__qsVar2__aSPad__) = (Allocate.Apply(__qsVar0__num__), Allocate.Apply(__qsVar0__num__));
 #line hidden
                 bool __arg1__ = true;
                 try
                 {
-#line 246 "/Users/Matt/Documents/Masters/Dissertation/QSharp/Shor_In_Superposition/quantum/Shor_In_Superposition.qs"
+#line 397 "/Users/Matt/Documents/Masters/Dissertation/QSharp/Shor_In_Superposition/quantum/Shor_In_Superposition.qs"
                     SquareI.Adjoint.Adjoint.Controlled.Apply((__controlQubits__, (new Microsoft.Quantum.Arithmetic.LittleEndian(a), new Microsoft.Quantum.Arithmetic.LittleEndian(QArray<Qubit>.Add(__qsVar1__aS__, __qsVar2__aSPad__)))));
-#line 246 "/Users/Matt/Documents/Masters/Dissertation/QSharp/Shor_In_Superposition/quantum/Shor_In_Superposition.qs"
+#line 397 "/Users/Matt/Documents/Masters/Dissertation/QSharp/Shor_In_Superposition/quantum/Shor_In_Superposition.qs"
                     {
-#line 246 "/Users/Matt/Documents/Masters/Dissertation/QSharp/Shor_In_Superposition/quantum/Shor_In_Superposition.qs"
+#line 397 "/Users/Matt/Documents/Masters/Dissertation/QSharp/Shor_In_Superposition/quantum/Shor_In_Superposition.qs"
                         var (__qsVar3__anc__,__qsVar4__MsPad__) = (Allocate.Apply((__qsVar0__num__ * 2L)), Allocate.Apply(__qsVar0__num__));
 #line hidden
                         bool __arg2__ = true;
                         try
                         {
-#line 246 "/Users/Matt/Documents/Masters/Dissertation/QSharp/Shor_In_Superposition/quantum/Shor_In_Superposition.qs"
+#line 397 "/Users/Matt/Documents/Masters/Dissertation/QSharp/Shor_In_Superposition/quantum/Shor_In_Superposition.qs"
                             DivideI.Adjoint.Adjoint.Controlled.Apply((__controlQubits__, (new Microsoft.Quantum.Arithmetic.LittleEndian(QArray<Qubit>.Add(__qsVar1__aS__, __qsVar2__aSPad__)), new Microsoft.Quantum.Arithmetic.LittleEndian(QArray<Qubit>.Add(Ms, __qsVar4__MsPad__)), new Microsoft.Quantum.Arithmetic.LittleEndian(__qsVar3__anc__))));
-#line 246 "/Users/Matt/Documents/Masters/Dissertation/QSharp/Shor_In_Superposition/quantum/Shor_In_Superposition.qs"
+#line 397 "/Users/Matt/Documents/Masters/Dissertation/QSharp/Shor_In_Superposition/quantum/Shor_In_Superposition.qs"
                             AddI.Adjoint.Controlled.Apply((__controlQubits__, (new Microsoft.Quantum.Arithmetic.LittleEndian(__qsVar1__aS__), new Microsoft.Quantum.Arithmetic.LittleEndian(Ts))));
-#line 246 "/Users/Matt/Documents/Masters/Dissertation/QSharp/Shor_In_Superposition/quantum/Shor_In_Superposition.qs"
+#line 397 "/Users/Matt/Documents/Masters/Dissertation/QSharp/Shor_In_Superposition/quantum/Shor_In_Superposition.qs"
                             DivideI.Adjoint.Controlled.Apply((__controlQubits__, (new Microsoft.Quantum.Arithmetic.LittleEndian(QArray<Qubit>.Add(__qsVar1__aS__, __qsVar2__aSPad__)), new Microsoft.Quantum.Arithmetic.LittleEndian(QArray<Qubit>.Add(Ms, __qsVar4__MsPad__)), new Microsoft.Quantum.Arithmetic.LittleEndian(__qsVar3__anc__))));
                         }
 #line hidden
@@ -1482,7 +1566,7 @@ namespace Shor
                         }
                     }
 
-#line 246 "/Users/Matt/Documents/Masters/Dissertation/QSharp/Shor_In_Superposition/quantum/Shor_In_Superposition.qs"
+#line 397 "/Users/Matt/Documents/Masters/Dissertation/QSharp/Shor_In_Superposition/quantum/Shor_In_Superposition.qs"
                     SquareI.Adjoint.Controlled.Apply((__controlQubits__, (new Microsoft.Quantum.Arithmetic.LittleEndian(a), new Microsoft.Quantum.Arithmetic.LittleEndian(QArray<Qubit>.Add(__qsVar1__aS__, __qsVar2__aSPad__)))));
                 }
 #line hidden
@@ -1528,10 +1612,10 @@ namespace Shor
         }
     }
 
-    [SourceLocation("/Users/Matt/Documents/Masters/Dissertation/QSharp/Shor_In_Superposition/quantum/Shor_In_Superposition.qs", OperationFunctor.Body, 259, -1)]
-    [SourceLocation("/Users/Matt/Documents/Masters/Dissertation/QSharp/Shor_In_Superposition/quantum/Shor_In_Superposition.qs", OperationFunctor.Adjoint, 259, -1)]
-    [SourceLocation("/Users/Matt/Documents/Masters/Dissertation/QSharp/Shor_In_Superposition/quantum/Shor_In_Superposition.qs", OperationFunctor.Controlled, 259, -1)]
-    [SourceLocation("/Users/Matt/Documents/Masters/Dissertation/QSharp/Shor_In_Superposition/quantum/Shor_In_Superposition.qs", OperationFunctor.ControlledAdjoint, 259, -1)]
+    [SourceLocation("/Users/Matt/Documents/Masters/Dissertation/QSharp/Shor_In_Superposition/quantum/Shor_In_Superposition.qs", OperationFunctor.Body, 410, -1)]
+    [SourceLocation("/Users/Matt/Documents/Masters/Dissertation/QSharp/Shor_In_Superposition/quantum/Shor_In_Superposition.qs", OperationFunctor.Adjoint, 410, -1)]
+    [SourceLocation("/Users/Matt/Documents/Masters/Dissertation/QSharp/Shor_In_Superposition/quantum/Shor_In_Superposition.qs", OperationFunctor.Controlled, 410, -1)]
+    [SourceLocation("/Users/Matt/Documents/Masters/Dissertation/QSharp/Shor_In_Superposition/quantum/Shor_In_Superposition.qs", OperationFunctor.ControlledAdjoint, 410, -1)]
     public partial class MultiplyModM : Unitary<(IQArray<Qubit>,IQArray<Qubit>,IQArray<Qubit>,IQArray<Qubit>)>, ICallable
     {
         public MultiplyModM(IOperationFactory m) : base(m)
@@ -1600,31 +1684,31 @@ namespace Shor
         public override Func<(IQArray<Qubit>,IQArray<Qubit>,IQArray<Qubit>,IQArray<Qubit>), QVoid> Body => (__in__) =>
         {
             var (a,b,Ms,Ts) = __in__;
-#line 260 "/Users/Matt/Documents/Masters/Dissertation/QSharp/Shor_In_Superposition/quantum/Shor_In_Superposition.qs"
+#line 411 "/Users/Matt/Documents/Masters/Dissertation/QSharp/Shor_In_Superposition/quantum/Shor_In_Superposition.qs"
             var num = a.Length;
 #line hidden
             {
-#line 261 "/Users/Matt/Documents/Masters/Dissertation/QSharp/Shor_In_Superposition/quantum/Shor_In_Superposition.qs"
+#line 412 "/Users/Matt/Documents/Masters/Dissertation/QSharp/Shor_In_Superposition/quantum/Shor_In_Superposition.qs"
                 var (aS,aSPad) = (Allocate.Apply(num), Allocate.Apply(num));
 #line hidden
                 bool __arg1__ = true;
                 try
                 {
-#line 262 "/Users/Matt/Documents/Masters/Dissertation/QSharp/Shor_In_Superposition/quantum/Shor_In_Superposition.qs"
+#line 413 "/Users/Matt/Documents/Masters/Dissertation/QSharp/Shor_In_Superposition/quantum/Shor_In_Superposition.qs"
                     MultiplyI.Apply((new Microsoft.Quantum.Arithmetic.LittleEndian(a), new Microsoft.Quantum.Arithmetic.LittleEndian(b), new Microsoft.Quantum.Arithmetic.LittleEndian(QArray<Qubit>.Add(aS, aSPad))));
 #line hidden
                     {
-#line 263 "/Users/Matt/Documents/Masters/Dissertation/QSharp/Shor_In_Superposition/quantum/Shor_In_Superposition.qs"
+#line 414 "/Users/Matt/Documents/Masters/Dissertation/QSharp/Shor_In_Superposition/quantum/Shor_In_Superposition.qs"
                         var (anc,MsPad) = (Allocate.Apply((num * 2L)), Allocate.Apply(num));
 #line hidden
                         bool __arg2__ = true;
                         try
                         {
-#line 264 "/Users/Matt/Documents/Masters/Dissertation/QSharp/Shor_In_Superposition/quantum/Shor_In_Superposition.qs"
+#line 415 "/Users/Matt/Documents/Masters/Dissertation/QSharp/Shor_In_Superposition/quantum/Shor_In_Superposition.qs"
                             DivideI.Apply((new Microsoft.Quantum.Arithmetic.LittleEndian(QArray<Qubit>.Add(aS, aSPad)), new Microsoft.Quantum.Arithmetic.LittleEndian(QArray<Qubit>.Add(Ms, MsPad)), new Microsoft.Quantum.Arithmetic.LittleEndian(anc)));
-#line 265 "/Users/Matt/Documents/Masters/Dissertation/QSharp/Shor_In_Superposition/quantum/Shor_In_Superposition.qs"
+#line 416 "/Users/Matt/Documents/Masters/Dissertation/QSharp/Shor_In_Superposition/quantum/Shor_In_Superposition.qs"
                             AddI.Apply((new Microsoft.Quantum.Arithmetic.LittleEndian(aS), new Microsoft.Quantum.Arithmetic.LittleEndian(Ts)));
-#line 266 "/Users/Matt/Documents/Masters/Dissertation/QSharp/Shor_In_Superposition/quantum/Shor_In_Superposition.qs"
+#line 417 "/Users/Matt/Documents/Masters/Dissertation/QSharp/Shor_In_Superposition/quantum/Shor_In_Superposition.qs"
                             DivideI.Adjoint.Apply((new Microsoft.Quantum.Arithmetic.LittleEndian(QArray<Qubit>.Add(aS, aSPad)), new Microsoft.Quantum.Arithmetic.LittleEndian(QArray<Qubit>.Add(Ms, MsPad)), new Microsoft.Quantum.Arithmetic.LittleEndian(anc)));
                         }
 #line hidden
@@ -1646,7 +1730,7 @@ namespace Shor
                         }
                     }
 
-#line 268 "/Users/Matt/Documents/Masters/Dissertation/QSharp/Shor_In_Superposition/quantum/Shor_In_Superposition.qs"
+#line 419 "/Users/Matt/Documents/Masters/Dissertation/QSharp/Shor_In_Superposition/quantum/Shor_In_Superposition.qs"
                     MultiplyI.Adjoint.Apply((new Microsoft.Quantum.Arithmetic.LittleEndian(a), new Microsoft.Quantum.Arithmetic.LittleEndian(b), new Microsoft.Quantum.Arithmetic.LittleEndian(QArray<Qubit>.Add(aS, aSPad))));
                 }
 #line hidden
@@ -1676,31 +1760,31 @@ namespace Shor
         public override Func<(IQArray<Qubit>,IQArray<Qubit>,IQArray<Qubit>,IQArray<Qubit>), QVoid> AdjointBody => (__in__) =>
         {
             var (a,b,Ms,Ts) = __in__;
-#line 259 "/Users/Matt/Documents/Masters/Dissertation/QSharp/Shor_In_Superposition/quantum/Shor_In_Superposition.qs"
+#line 410 "/Users/Matt/Documents/Masters/Dissertation/QSharp/Shor_In_Superposition/quantum/Shor_In_Superposition.qs"
             var __qsVar0__num__ = a.Length;
-#line 259 "/Users/Matt/Documents/Masters/Dissertation/QSharp/Shor_In_Superposition/quantum/Shor_In_Superposition.qs"
+#line 410 "/Users/Matt/Documents/Masters/Dissertation/QSharp/Shor_In_Superposition/quantum/Shor_In_Superposition.qs"
             {
-#line 259 "/Users/Matt/Documents/Masters/Dissertation/QSharp/Shor_In_Superposition/quantum/Shor_In_Superposition.qs"
+#line 410 "/Users/Matt/Documents/Masters/Dissertation/QSharp/Shor_In_Superposition/quantum/Shor_In_Superposition.qs"
                 var (__qsVar1__aS__,__qsVar2__aSPad__) = (Allocate.Apply(__qsVar0__num__), Allocate.Apply(__qsVar0__num__));
 #line hidden
                 bool __arg1__ = true;
                 try
                 {
-#line 259 "/Users/Matt/Documents/Masters/Dissertation/QSharp/Shor_In_Superposition/quantum/Shor_In_Superposition.qs"
+#line 410 "/Users/Matt/Documents/Masters/Dissertation/QSharp/Shor_In_Superposition/quantum/Shor_In_Superposition.qs"
                     MultiplyI.Adjoint.Adjoint.Apply((new Microsoft.Quantum.Arithmetic.LittleEndian(a), new Microsoft.Quantum.Arithmetic.LittleEndian(b), new Microsoft.Quantum.Arithmetic.LittleEndian(QArray<Qubit>.Add(__qsVar1__aS__, __qsVar2__aSPad__))));
-#line 259 "/Users/Matt/Documents/Masters/Dissertation/QSharp/Shor_In_Superposition/quantum/Shor_In_Superposition.qs"
+#line 410 "/Users/Matt/Documents/Masters/Dissertation/QSharp/Shor_In_Superposition/quantum/Shor_In_Superposition.qs"
                     {
-#line 259 "/Users/Matt/Documents/Masters/Dissertation/QSharp/Shor_In_Superposition/quantum/Shor_In_Superposition.qs"
+#line 410 "/Users/Matt/Documents/Masters/Dissertation/QSharp/Shor_In_Superposition/quantum/Shor_In_Superposition.qs"
                         var (__qsVar3__anc__,__qsVar4__MsPad__) = (Allocate.Apply((__qsVar0__num__ * 2L)), Allocate.Apply(__qsVar0__num__));
 #line hidden
                         bool __arg2__ = true;
                         try
                         {
-#line 259 "/Users/Matt/Documents/Masters/Dissertation/QSharp/Shor_In_Superposition/quantum/Shor_In_Superposition.qs"
+#line 410 "/Users/Matt/Documents/Masters/Dissertation/QSharp/Shor_In_Superposition/quantum/Shor_In_Superposition.qs"
                             DivideI.Adjoint.Adjoint.Apply((new Microsoft.Quantum.Arithmetic.LittleEndian(QArray<Qubit>.Add(__qsVar1__aS__, __qsVar2__aSPad__)), new Microsoft.Quantum.Arithmetic.LittleEndian(QArray<Qubit>.Add(Ms, __qsVar4__MsPad__)), new Microsoft.Quantum.Arithmetic.LittleEndian(__qsVar3__anc__)));
-#line 259 "/Users/Matt/Documents/Masters/Dissertation/QSharp/Shor_In_Superposition/quantum/Shor_In_Superposition.qs"
+#line 410 "/Users/Matt/Documents/Masters/Dissertation/QSharp/Shor_In_Superposition/quantum/Shor_In_Superposition.qs"
                             AddI.Adjoint.Apply((new Microsoft.Quantum.Arithmetic.LittleEndian(__qsVar1__aS__), new Microsoft.Quantum.Arithmetic.LittleEndian(Ts)));
-#line 259 "/Users/Matt/Documents/Masters/Dissertation/QSharp/Shor_In_Superposition/quantum/Shor_In_Superposition.qs"
+#line 410 "/Users/Matt/Documents/Masters/Dissertation/QSharp/Shor_In_Superposition/quantum/Shor_In_Superposition.qs"
                             DivideI.Adjoint.Apply((new Microsoft.Quantum.Arithmetic.LittleEndian(QArray<Qubit>.Add(__qsVar1__aS__, __qsVar2__aSPad__)), new Microsoft.Quantum.Arithmetic.LittleEndian(QArray<Qubit>.Add(Ms, __qsVar4__MsPad__)), new Microsoft.Quantum.Arithmetic.LittleEndian(__qsVar3__anc__)));
                         }
 #line hidden
@@ -1722,7 +1806,7 @@ namespace Shor
                         }
                     }
 
-#line 259 "/Users/Matt/Documents/Masters/Dissertation/QSharp/Shor_In_Superposition/quantum/Shor_In_Superposition.qs"
+#line 410 "/Users/Matt/Documents/Masters/Dissertation/QSharp/Shor_In_Superposition/quantum/Shor_In_Superposition.qs"
                     MultiplyI.Adjoint.Apply((new Microsoft.Quantum.Arithmetic.LittleEndian(a), new Microsoft.Quantum.Arithmetic.LittleEndian(b), new Microsoft.Quantum.Arithmetic.LittleEndian(QArray<Qubit>.Add(__qsVar1__aS__, __qsVar2__aSPad__))));
                 }
 #line hidden
@@ -1752,31 +1836,31 @@ namespace Shor
         public override Func<(IQArray<Qubit>,(IQArray<Qubit>,IQArray<Qubit>,IQArray<Qubit>,IQArray<Qubit>)), QVoid> ControlledBody => (__in__) =>
         {
             var (__controlQubits__,(a,b,Ms,Ts)) = __in__;
-#line 259 "/Users/Matt/Documents/Masters/Dissertation/QSharp/Shor_In_Superposition/quantum/Shor_In_Superposition.qs"
+#line 410 "/Users/Matt/Documents/Masters/Dissertation/QSharp/Shor_In_Superposition/quantum/Shor_In_Superposition.qs"
             var num = a.Length;
-#line 259 "/Users/Matt/Documents/Masters/Dissertation/QSharp/Shor_In_Superposition/quantum/Shor_In_Superposition.qs"
+#line 410 "/Users/Matt/Documents/Masters/Dissertation/QSharp/Shor_In_Superposition/quantum/Shor_In_Superposition.qs"
             {
-#line 259 "/Users/Matt/Documents/Masters/Dissertation/QSharp/Shor_In_Superposition/quantum/Shor_In_Superposition.qs"
+#line 410 "/Users/Matt/Documents/Masters/Dissertation/QSharp/Shor_In_Superposition/quantum/Shor_In_Superposition.qs"
                 var (aS,aSPad) = (Allocate.Apply(num), Allocate.Apply(num));
 #line hidden
                 bool __arg1__ = true;
                 try
                 {
-#line 259 "/Users/Matt/Documents/Masters/Dissertation/QSharp/Shor_In_Superposition/quantum/Shor_In_Superposition.qs"
+#line 410 "/Users/Matt/Documents/Masters/Dissertation/QSharp/Shor_In_Superposition/quantum/Shor_In_Superposition.qs"
                     MultiplyI.Controlled.Apply((__controlQubits__, (new Microsoft.Quantum.Arithmetic.LittleEndian(a), new Microsoft.Quantum.Arithmetic.LittleEndian(b), new Microsoft.Quantum.Arithmetic.LittleEndian(QArray<Qubit>.Add(aS, aSPad)))));
-#line 259 "/Users/Matt/Documents/Masters/Dissertation/QSharp/Shor_In_Superposition/quantum/Shor_In_Superposition.qs"
+#line 410 "/Users/Matt/Documents/Masters/Dissertation/QSharp/Shor_In_Superposition/quantum/Shor_In_Superposition.qs"
                     {
-#line 259 "/Users/Matt/Documents/Masters/Dissertation/QSharp/Shor_In_Superposition/quantum/Shor_In_Superposition.qs"
+#line 410 "/Users/Matt/Documents/Masters/Dissertation/QSharp/Shor_In_Superposition/quantum/Shor_In_Superposition.qs"
                         var (anc,MsPad) = (Allocate.Apply((num * 2L)), Allocate.Apply(num));
 #line hidden
                         bool __arg2__ = true;
                         try
                         {
-#line 259 "/Users/Matt/Documents/Masters/Dissertation/QSharp/Shor_In_Superposition/quantum/Shor_In_Superposition.qs"
+#line 410 "/Users/Matt/Documents/Masters/Dissertation/QSharp/Shor_In_Superposition/quantum/Shor_In_Superposition.qs"
                             DivideI.Controlled.Apply((__controlQubits__, (new Microsoft.Quantum.Arithmetic.LittleEndian(QArray<Qubit>.Add(aS, aSPad)), new Microsoft.Quantum.Arithmetic.LittleEndian(QArray<Qubit>.Add(Ms, MsPad)), new Microsoft.Quantum.Arithmetic.LittleEndian(anc))));
-#line 259 "/Users/Matt/Documents/Masters/Dissertation/QSharp/Shor_In_Superposition/quantum/Shor_In_Superposition.qs"
+#line 410 "/Users/Matt/Documents/Masters/Dissertation/QSharp/Shor_In_Superposition/quantum/Shor_In_Superposition.qs"
                             AddI.Controlled.Apply((__controlQubits__, (new Microsoft.Quantum.Arithmetic.LittleEndian(aS), new Microsoft.Quantum.Arithmetic.LittleEndian(Ts))));
-#line 259 "/Users/Matt/Documents/Masters/Dissertation/QSharp/Shor_In_Superposition/quantum/Shor_In_Superposition.qs"
+#line 410 "/Users/Matt/Documents/Masters/Dissertation/QSharp/Shor_In_Superposition/quantum/Shor_In_Superposition.qs"
                             DivideI.Adjoint.Controlled.Apply((__controlQubits__, (new Microsoft.Quantum.Arithmetic.LittleEndian(QArray<Qubit>.Add(aS, aSPad)), new Microsoft.Quantum.Arithmetic.LittleEndian(QArray<Qubit>.Add(Ms, MsPad)), new Microsoft.Quantum.Arithmetic.LittleEndian(anc))));
                         }
 #line hidden
@@ -1798,7 +1882,7 @@ namespace Shor
                         }
                     }
 
-#line 259 "/Users/Matt/Documents/Masters/Dissertation/QSharp/Shor_In_Superposition/quantum/Shor_In_Superposition.qs"
+#line 410 "/Users/Matt/Documents/Masters/Dissertation/QSharp/Shor_In_Superposition/quantum/Shor_In_Superposition.qs"
                     MultiplyI.Adjoint.Controlled.Apply((__controlQubits__, (new Microsoft.Quantum.Arithmetic.LittleEndian(a), new Microsoft.Quantum.Arithmetic.LittleEndian(b), new Microsoft.Quantum.Arithmetic.LittleEndian(QArray<Qubit>.Add(aS, aSPad)))));
                 }
 #line hidden
@@ -1828,31 +1912,31 @@ namespace Shor
         public override Func<(IQArray<Qubit>,(IQArray<Qubit>,IQArray<Qubit>,IQArray<Qubit>,IQArray<Qubit>)), QVoid> ControlledAdjointBody => (__in__) =>
         {
             var (__controlQubits__,(a,b,Ms,Ts)) = __in__;
-#line 259 "/Users/Matt/Documents/Masters/Dissertation/QSharp/Shor_In_Superposition/quantum/Shor_In_Superposition.qs"
+#line 410 "/Users/Matt/Documents/Masters/Dissertation/QSharp/Shor_In_Superposition/quantum/Shor_In_Superposition.qs"
             var __qsVar0__num__ = a.Length;
-#line 259 "/Users/Matt/Documents/Masters/Dissertation/QSharp/Shor_In_Superposition/quantum/Shor_In_Superposition.qs"
+#line 410 "/Users/Matt/Documents/Masters/Dissertation/QSharp/Shor_In_Superposition/quantum/Shor_In_Superposition.qs"
             {
-#line 259 "/Users/Matt/Documents/Masters/Dissertation/QSharp/Shor_In_Superposition/quantum/Shor_In_Superposition.qs"
+#line 410 "/Users/Matt/Documents/Masters/Dissertation/QSharp/Shor_In_Superposition/quantum/Shor_In_Superposition.qs"
                 var (__qsVar1__aS__,__qsVar2__aSPad__) = (Allocate.Apply(__qsVar0__num__), Allocate.Apply(__qsVar0__num__));
 #line hidden
                 bool __arg1__ = true;
                 try
                 {
-#line 259 "/Users/Matt/Documents/Masters/Dissertation/QSharp/Shor_In_Superposition/quantum/Shor_In_Superposition.qs"
+#line 410 "/Users/Matt/Documents/Masters/Dissertation/QSharp/Shor_In_Superposition/quantum/Shor_In_Superposition.qs"
                     MultiplyI.Adjoint.Adjoint.Controlled.Apply((__controlQubits__, (new Microsoft.Quantum.Arithmetic.LittleEndian(a), new Microsoft.Quantum.Arithmetic.LittleEndian(b), new Microsoft.Quantum.Arithmetic.LittleEndian(QArray<Qubit>.Add(__qsVar1__aS__, __qsVar2__aSPad__)))));
-#line 259 "/Users/Matt/Documents/Masters/Dissertation/QSharp/Shor_In_Superposition/quantum/Shor_In_Superposition.qs"
+#line 410 "/Users/Matt/Documents/Masters/Dissertation/QSharp/Shor_In_Superposition/quantum/Shor_In_Superposition.qs"
                     {
-#line 259 "/Users/Matt/Documents/Masters/Dissertation/QSharp/Shor_In_Superposition/quantum/Shor_In_Superposition.qs"
+#line 410 "/Users/Matt/Documents/Masters/Dissertation/QSharp/Shor_In_Superposition/quantum/Shor_In_Superposition.qs"
                         var (__qsVar3__anc__,__qsVar4__MsPad__) = (Allocate.Apply((__qsVar0__num__ * 2L)), Allocate.Apply(__qsVar0__num__));
 #line hidden
                         bool __arg2__ = true;
                         try
                         {
-#line 259 "/Users/Matt/Documents/Masters/Dissertation/QSharp/Shor_In_Superposition/quantum/Shor_In_Superposition.qs"
+#line 410 "/Users/Matt/Documents/Masters/Dissertation/QSharp/Shor_In_Superposition/quantum/Shor_In_Superposition.qs"
                             DivideI.Adjoint.Adjoint.Controlled.Apply((__controlQubits__, (new Microsoft.Quantum.Arithmetic.LittleEndian(QArray<Qubit>.Add(__qsVar1__aS__, __qsVar2__aSPad__)), new Microsoft.Quantum.Arithmetic.LittleEndian(QArray<Qubit>.Add(Ms, __qsVar4__MsPad__)), new Microsoft.Quantum.Arithmetic.LittleEndian(__qsVar3__anc__))));
-#line 259 "/Users/Matt/Documents/Masters/Dissertation/QSharp/Shor_In_Superposition/quantum/Shor_In_Superposition.qs"
+#line 410 "/Users/Matt/Documents/Masters/Dissertation/QSharp/Shor_In_Superposition/quantum/Shor_In_Superposition.qs"
                             AddI.Adjoint.Controlled.Apply((__controlQubits__, (new Microsoft.Quantum.Arithmetic.LittleEndian(__qsVar1__aS__), new Microsoft.Quantum.Arithmetic.LittleEndian(Ts))));
-#line 259 "/Users/Matt/Documents/Masters/Dissertation/QSharp/Shor_In_Superposition/quantum/Shor_In_Superposition.qs"
+#line 410 "/Users/Matt/Documents/Masters/Dissertation/QSharp/Shor_In_Superposition/quantum/Shor_In_Superposition.qs"
                             DivideI.Adjoint.Controlled.Apply((__controlQubits__, (new Microsoft.Quantum.Arithmetic.LittleEndian(QArray<Qubit>.Add(__qsVar1__aS__, __qsVar2__aSPad__)), new Microsoft.Quantum.Arithmetic.LittleEndian(QArray<Qubit>.Add(Ms, __qsVar4__MsPad__)), new Microsoft.Quantum.Arithmetic.LittleEndian(__qsVar3__anc__))));
                         }
 #line hidden
@@ -1874,7 +1958,7 @@ namespace Shor
                         }
                     }
 
-#line 259 "/Users/Matt/Documents/Masters/Dissertation/QSharp/Shor_In_Superposition/quantum/Shor_In_Superposition.qs"
+#line 410 "/Users/Matt/Documents/Masters/Dissertation/QSharp/Shor_In_Superposition/quantum/Shor_In_Superposition.qs"
                     MultiplyI.Adjoint.Controlled.Apply((__controlQubits__, (new Microsoft.Quantum.Arithmetic.LittleEndian(a), new Microsoft.Quantum.Arithmetic.LittleEndian(b), new Microsoft.Quantum.Arithmetic.LittleEndian(QArray<Qubit>.Add(__qsVar1__aS__, __qsVar2__aSPad__)))));
                 }
 #line hidden
