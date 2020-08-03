@@ -7957,11 +7957,11 @@
   "project": {
     "version": "1.0.0",
     "restore": {
-      "projectUniqueName": "/Users/Matt/Documents/Masters/Dissertation/QSharp/Testing/Sqaure and Multiply Testing/test-mt.csproj",
+      "projectUniqueName": "/Users/Matt/Documents/Masters/Dissertation/Quantum/Testing/Sqaure and Multiply Testing/test-mt.csproj",
       "projectName": "test-mt",
-      "projectPath": "/Users/Matt/Documents/Masters/Dissertation/QSharp/Testing/Sqaure and Multiply Testing/test-mt.csproj",
+      "projectPath": "/Users/Matt/Documents/Masters/Dissertation/Quantum/Testing/Sqaure and Multiply Testing/test-mt.csproj",
       "packagesPath": "/Users/Matt/.nuget/packages/",
-      "outputPath": "/Users/Matt/Documents/Masters/Dissertation/QSharp/Testing/Sqaure and Multiply Testing/obj/",
+      "outputPath": "/Users/Matt/Documents/Masters/Dissertation/Quantum/Testing/Sqaure and Multiply Testing/obj/",
       "projectStyle": "PackageReference",
       "configFilePaths": [
         "/Users/Matt/.nuget/NuGet/NuGet.Config"

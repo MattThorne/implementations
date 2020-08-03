@@ -12,13 +12,13 @@
 
 operation TestingSquareMultiply(): Unit{
     mutable accurate = 1;
-    for (j in 0..0){
+    for (j in 0..255){
         for (m in 2..15){
             for (a in 1..(m-1)){
                 Message($"{a},{m},{j}");
                 let res = SquareAndMultiply(a,m,j);
-                let exp =  ModI(a^j,m);
-                if (res != exp){set accurate = 0;}
+                let exp =  ModPowL(IntAsBigInt(a),IntAsBigInt(j),IntAsBigInt(m));
+                if (IntAsBigInt(res) != exp){set accurate = 0;}
                 Message($"{res},{exp}");
                 Message($"{accurate}");
 

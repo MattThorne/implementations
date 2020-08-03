@@ -25,23 +25,18 @@
         Message("Creating A...");
         GenerateA(Ms,As);
         //|M>|a>|0>|0> = |M>|1+ Rmod (M-1)>|0>|0>
-        DumpMachine();
 
         Message("Creating J...");
         //|M>|a>|J>|0>
         ApplyToEachA(H,Js);
         //X(Js[2]);//////SET THIS TO UE IN TOFFOLI SIMULATOR
-        DumpMachine();
 
         Message("Creating Rs...");
         SquareAndMultiply(As,Ms,Js,Rs);
         //|M>|a>|J>|R> = |M>|1+ mod (M-1)>|J>|a^j mod M>
-        DumpMachine();
+
+        Adjoint QFT(BigEndian(J));
         
-
-
-
-
         ResetAll((Ms + As + Js + Rs));
       }
       
