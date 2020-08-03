@@ -13,27 +13,27 @@ using Microsoft.Quantum.Core;
 using Microsoft.Quantum.Intrinsic;
 using Microsoft.Quantum.Simulation.Core;
 
-[assembly: CallableDeclaration("{\"Kind\":{\"Case\":\"Operation\"},\"QualifiedName\":{\"Namespace\":\"Quantum.Bell\",\"Name\":\"OracleConverter1\"},\"Attributes\":[],\"Modifiers\":{\"Access\":{\"Case\":\"DefaultAccess\"}},\"SourceFile\":\"/Users/Matt/Documents/Masters/Dissertation/DisQsharp/Inital_Test/BBM.qs\",\"Position\":{\"Item1\":13,\"Item2\":4},\"SymbolRange\":{\"Item1\":{\"Line\":1,\"Column\":11},\"Item2\":{\"Line\":1,\"Column\":27}},\"ArgumentTuple\":{\"Case\":\"QsTuple\",\"Fields\":[[{\"Case\":\"QsTupleItem\",\"Fields\":[{\"VariableName\":{\"Case\":\"ValidName\",\"Fields\":[\"markingOracle\"]},\"Type\":{\"Case\":\"Operation\",\"Fields\":[{\"Item1\":{\"Case\":\"TupleType\",\"Fields\":[[{\"Case\":\"ArrayType\",\"Fields\":[{\"Case\":\"Qubit\"}]},{\"Case\":\"Qubit\"}]]},\"Item2\":{\"Case\":\"UnitType\"}},{\"Characteristics\":{\"Case\":\"SimpleSet\",\"Fields\":[{\"Case\":\"Adjointable\"}]},\"InferredInformation\":{\"IsSelfAdjoint\":false,\"IsIntrinsic\":false}}]},\"InferredInformation\":{\"IsMutable\":false,\"HasLocalQuantumDependency\":false},\"Position\":{\"Case\":\"Null\"},\"Range\":{\"Item1\":{\"Line\":1,\"Column\":29},\"Item2\":{\"Line\":1,\"Column\":42}}}]},{\"Case\":\"QsTupleItem\",\"Fields\":[{\"VariableName\":{\"Case\":\"ValidName\",\"Fields\":[\"register\"]},\"Type\":{\"Case\":\"ArrayType\",\"Fields\":[{\"Case\":\"Qubit\"}]},\"InferredInformation\":{\"IsMutable\":false,\"HasLocalQuantumDependency\":false},\"Position\":{\"Case\":\"Null\"},\"Range\":{\"Item1\":{\"Line\":1,\"Column\":80},\"Item2\":{\"Line\":1,\"Column\":88}}}]}]]},\"Signature\":{\"TypeParameters\":[],\"ArgumentType\":{\"Case\":\"TupleType\",\"Fields\":[[{\"Case\":\"Operation\",\"Fields\":[{\"Item1\":{\"Case\":\"TupleType\",\"Fields\":[[{\"Case\":\"ArrayType\",\"Fields\":[{\"Case\":\"Qubit\"}]},{\"Case\":\"Qubit\"}]]},\"Item2\":{\"Case\":\"UnitType\"}},{\"Characteristics\":{\"Case\":\"SimpleSet\",\"Fields\":[{\"Case\":\"Adjointable\"}]},\"InferredInformation\":{\"IsSelfAdjoint\":false,\"IsIntrinsic\":false}}]},{\"Case\":\"ArrayType\",\"Fields\":[{\"Case\":\"Qubit\"}]}]]},\"ReturnType\":{\"Case\":\"UnitType\"},\"Information\":{\"Characteristics\":{\"Case\":\"SimpleSet\",\"Fields\":[{\"Case\":\"Adjointable\"}]},\"InferredInformation\":{\"IsSelfAdjoint\":false,\"IsIntrinsic\":false}}},\"Documentation\":[\"Grovers Algorithm For BBM/////////////////////\"]}")]
-[assembly: SpecializationDeclaration("{\"Kind\":{\"Case\":\"QsBody\"},\"TypeArguments\":{\"Case\":\"Null\"},\"Information\":{\"Characteristics\":{\"Case\":\"SimpleSet\",\"Fields\":[{\"Case\":\"Adjointable\"}]},\"InferredInformation\":{\"IsSelfAdjoint\":false,\"IsIntrinsic\":false}},\"Parent\":{\"Namespace\":\"Quantum.Bell\",\"Name\":\"OracleConverter1\"},\"Attributes\":[],\"SourceFile\":\"/Users/Matt/Documents/Masters/Dissertation/DisQsharp/Inital_Test/BBM.qs\",\"Position\":{\"Item1\":13,\"Item2\":4},\"HeaderRange\":{\"Item1\":{\"Line\":1,\"Column\":11},\"Item2\":{\"Line\":1,\"Column\":27}},\"Documentation\":[]}")]
-[assembly: SpecializationDeclaration("{\"Kind\":{\"Case\":\"QsAdjoint\"},\"TypeArguments\":{\"Case\":\"Null\"},\"Information\":{\"Characteristics\":{\"Case\":\"SimpleSet\",\"Fields\":[{\"Case\":\"Adjointable\"}]},\"InferredInformation\":{\"IsSelfAdjoint\":false,\"IsIntrinsic\":false}},\"Parent\":{\"Namespace\":\"Quantum.Bell\",\"Name\":\"OracleConverter1\"},\"Attributes\":[],\"SourceFile\":\"/Users/Matt/Documents/Masters/Dissertation/DisQsharp/Inital_Test/BBM.qs\",\"Position\":{\"Item1\":13,\"Item2\":4},\"HeaderRange\":{\"Item1\":{\"Line\":1,\"Column\":110},\"Item2\":{\"Line\":1,\"Column\":113}},\"Documentation\":[\"automatically generated QsAdjoint specialization for Quantum.Bell.OracleConverter1\"]}")]
-[assembly: CallableDeclaration("{\"Kind\":{\"Case\":\"Function\"},\"QualifiedName\":{\"Namespace\":\"Quantum.Bell\",\"Name\":\"OracleConverter2\"},\"Attributes\":[],\"Modifiers\":{\"Access\":{\"Case\":\"DefaultAccess\"}},\"SourceFile\":\"/Users/Matt/Documents/Masters/Dissertation/DisQsharp/Inital_Test/BBM.qs\",\"Position\":{\"Item1\":27,\"Item2\":4},\"SymbolRange\":{\"Item1\":{\"Line\":1,\"Column\":10},\"Item2\":{\"Line\":1,\"Column\":26}},\"ArgumentTuple\":{\"Case\":\"QsTuple\",\"Fields\":[[{\"Case\":\"QsTupleItem\",\"Fields\":[{\"VariableName\":{\"Case\":\"ValidName\",\"Fields\":[\"markingOracle\"]},\"Type\":{\"Case\":\"Operation\",\"Fields\":[{\"Item1\":{\"Case\":\"TupleType\",\"Fields\":[[{\"Case\":\"ArrayType\",\"Fields\":[{\"Case\":\"Qubit\"}]},{\"Case\":\"Qubit\"}]]},\"Item2\":{\"Case\":\"UnitType\"}},{\"Characteristics\":{\"Case\":\"SimpleSet\",\"Fields\":[{\"Case\":\"Adjointable\"}]},\"InferredInformation\":{\"IsSelfAdjoint\":false,\"IsIntrinsic\":false}}]},\"InferredInformation\":{\"IsMutable\":false,\"HasLocalQuantumDependency\":false},\"Position\":{\"Case\":\"Null\"},\"Range\":{\"Item1\":{\"Line\":1,\"Column\":28},\"Item2\":{\"Line\":1,\"Column\":41}}}]}]]},\"Signature\":{\"TypeParameters\":[],\"ArgumentType\":{\"Case\":\"Operation\",\"Fields\":[{\"Item1\":{\"Case\":\"TupleType\",\"Fields\":[[{\"Case\":\"ArrayType\",\"Fields\":[{\"Case\":\"Qubit\"}]},{\"Case\":\"Qubit\"}]]},\"Item2\":{\"Case\":\"UnitType\"}},{\"Characteristics\":{\"Case\":\"SimpleSet\",\"Fields\":[{\"Case\":\"Adjointable\"}]},\"InferredInformation\":{\"IsSelfAdjoint\":false,\"IsIntrinsic\":false}}]},\"ReturnType\":{\"Case\":\"Operation\",\"Fields\":[{\"Item1\":{\"Case\":\"ArrayType\",\"Fields\":[{\"Case\":\"Qubit\"}]},\"Item2\":{\"Case\":\"UnitType\"}},{\"Characteristics\":{\"Case\":\"SimpleSet\",\"Fields\":[{\"Case\":\"Adjointable\"}]},\"InferredInformation\":{\"IsSelfAdjoint\":false,\"IsIntrinsic\":false}}]},\"Information\":{\"Characteristics\":{\"Case\":\"EmptySet\"},\"InferredInformation\":{\"IsSelfAdjoint\":false,\"IsIntrinsic\":false}}},\"Documentation\":[]}")]
-[assembly: SpecializationDeclaration("{\"Kind\":{\"Case\":\"QsBody\"},\"TypeArguments\":{\"Case\":\"Null\"},\"Information\":{\"Characteristics\":{\"Case\":\"EmptySet\"},\"InferredInformation\":{\"IsSelfAdjoint\":false,\"IsIntrinsic\":false}},\"Parent\":{\"Namespace\":\"Quantum.Bell\",\"Name\":\"OracleConverter2\"},\"Attributes\":[],\"SourceFile\":\"/Users/Matt/Documents/Masters/Dissertation/DisQsharp/Inital_Test/BBM.qs\",\"Position\":{\"Item1\":27,\"Item2\":4},\"HeaderRange\":{\"Item1\":{\"Line\":1,\"Column\":10},\"Item2\":{\"Line\":1,\"Column\":26}},\"Documentation\":[]}")]
-[assembly: CallableDeclaration("{\"Kind\":{\"Case\":\"Operation\"},\"QualifiedName\":{\"Namespace\":\"Quantum.Bell\",\"Name\":\"ConditionalPhaseFlip_Reference\"},\"Attributes\":[],\"Modifiers\":{\"Access\":{\"Case\":\"DefaultAccess\"}},\"SourceFile\":\"/Users/Matt/Documents/Masters/Dissertation/DisQsharp/Inital_Test/BBM.qs\",\"Position\":{\"Item1\":31,\"Item2\":4},\"SymbolRange\":{\"Item1\":{\"Line\":1,\"Column\":11},\"Item2\":{\"Line\":1,\"Column\":41}},\"ArgumentTuple\":{\"Case\":\"QsTuple\",\"Fields\":[[{\"Case\":\"QsTupleItem\",\"Fields\":[{\"VariableName\":{\"Case\":\"ValidName\",\"Fields\":[\"register\"]},\"Type\":{\"Case\":\"ArrayType\",\"Fields\":[{\"Case\":\"Qubit\"}]},\"InferredInformation\":{\"IsMutable\":false,\"HasLocalQuantumDependency\":false},\"Position\":{\"Case\":\"Null\"},\"Range\":{\"Item1\":{\"Line\":1,\"Column\":43},\"Item2\":{\"Line\":1,\"Column\":51}}}]}]]},\"Signature\":{\"TypeParameters\":[],\"ArgumentType\":{\"Case\":\"ArrayType\",\"Fields\":[{\"Case\":\"Qubit\"}]},\"ReturnType\":{\"Case\":\"UnitType\"},\"Information\":{\"Characteristics\":{\"Case\":\"SimpleSet\",\"Fields\":[{\"Case\":\"Adjointable\"}]},\"InferredInformation\":{\"IsSelfAdjoint\":false,\"IsIntrinsic\":false}}},\"Documentation\":[]}")]
-[assembly: SpecializationDeclaration("{\"Kind\":{\"Case\":\"QsBody\"},\"TypeArguments\":{\"Case\":\"Null\"},\"Information\":{\"Characteristics\":{\"Case\":\"SimpleSet\",\"Fields\":[{\"Case\":\"Adjointable\"}]},\"InferredInformation\":{\"IsSelfAdjoint\":false,\"IsIntrinsic\":false}},\"Parent\":{\"Namespace\":\"Quantum.Bell\",\"Name\":\"ConditionalPhaseFlip_Reference\"},\"Attributes\":[],\"SourceFile\":\"/Users/Matt/Documents/Masters/Dissertation/DisQsharp/Inital_Test/BBM.qs\",\"Position\":{\"Item1\":31,\"Item2\":4},\"HeaderRange\":{\"Item1\":{\"Line\":1,\"Column\":11},\"Item2\":{\"Line\":1,\"Column\":41}},\"Documentation\":[]}")]
-[assembly: SpecializationDeclaration("{\"Kind\":{\"Case\":\"QsAdjoint\"},\"TypeArguments\":{\"Case\":\"Null\"},\"Information\":{\"Characteristics\":{\"Case\":\"SimpleSet\",\"Fields\":[{\"Case\":\"Adjointable\"}]},\"InferredInformation\":{\"IsSelfAdjoint\":false,\"IsIntrinsic\":false}},\"Parent\":{\"Namespace\":\"Quantum.Bell\",\"Name\":\"ConditionalPhaseFlip_Reference\"},\"Attributes\":[],\"SourceFile\":\"/Users/Matt/Documents/Masters/Dissertation/DisQsharp/Inital_Test/BBM.qs\",\"Position\":{\"Item1\":31,\"Item2\":4},\"HeaderRange\":{\"Item1\":{\"Line\":1,\"Column\":73},\"Item2\":{\"Line\":1,\"Column\":76}},\"Documentation\":[\"automatically generated QsAdjoint specialization for Quantum.Bell.ConditionalPhaseFlip_Reference\"]}")]
-[assembly: CallableDeclaration("{\"Kind\":{\"Case\":\"Operation\"},\"QualifiedName\":{\"Namespace\":\"Quantum.Bell\",\"Name\":\"Oracle_ArbitraryPattern_Reference\"},\"Attributes\":[],\"Modifiers\":{\"Access\":{\"Case\":\"DefaultAccess\"}},\"SourceFile\":\"/Users/Matt/Documents/Masters/Dissertation/DisQsharp/Inital_Test/BBM.qs\",\"Position\":{\"Item1\":40,\"Item2\":4},\"SymbolRange\":{\"Item1\":{\"Line\":1,\"Column\":11},\"Item2\":{\"Line\":1,\"Column\":44}},\"ArgumentTuple\":{\"Case\":\"QsTuple\",\"Fields\":[[{\"Case\":\"QsTupleItem\",\"Fields\":[{\"VariableName\":{\"Case\":\"ValidName\",\"Fields\":[\"queryRegister\"]},\"Type\":{\"Case\":\"ArrayType\",\"Fields\":[{\"Case\":\"Qubit\"}]},\"InferredInformation\":{\"IsMutable\":false,\"HasLocalQuantumDependency\":false},\"Position\":{\"Case\":\"Null\"},\"Range\":{\"Item1\":{\"Line\":1,\"Column\":46},\"Item2\":{\"Line\":1,\"Column\":59}}}]},{\"Case\":\"QsTupleItem\",\"Fields\":[{\"VariableName\":{\"Case\":\"ValidName\",\"Fields\":[\"target\"]},\"Type\":{\"Case\":\"Qubit\"},\"InferredInformation\":{\"IsMutable\":false,\"HasLocalQuantumDependency\":false},\"Position\":{\"Case\":\"Null\"},\"Range\":{\"Item1\":{\"Line\":1,\"Column\":71},\"Item2\":{\"Line\":1,\"Column\":77}}}]},{\"Case\":\"QsTupleItem\",\"Fields\":[{\"VariableName\":{\"Case\":\"ValidName\",\"Fields\":[\"pattern\"]},\"Type\":{\"Case\":\"ArrayType\",\"Fields\":[{\"Case\":\"Bool\"}]},\"InferredInformation\":{\"IsMutable\":false,\"HasLocalQuantumDependency\":false},\"Position\":{\"Case\":\"Null\"},\"Range\":{\"Item1\":{\"Line\":1,\"Column\":87},\"Item2\":{\"Line\":1,\"Column\":94}}}]}]]},\"Signature\":{\"TypeParameters\":[],\"ArgumentType\":{\"Case\":\"TupleType\",\"Fields\":[[{\"Case\":\"ArrayType\",\"Fields\":[{\"Case\":\"Qubit\"}]},{\"Case\":\"Qubit\"},{\"Case\":\"ArrayType\",\"Fields\":[{\"Case\":\"Bool\"}]}]]},\"ReturnType\":{\"Case\":\"UnitType\"},\"Information\":{\"Characteristics\":{\"Case\":\"SimpleSet\",\"Fields\":[{\"Case\":\"Adjointable\"}]},\"InferredInformation\":{\"IsSelfAdjoint\":false,\"IsIntrinsic\":false}}},\"Documentation\":[]}")]
-[assembly: SpecializationDeclaration("{\"Kind\":{\"Case\":\"QsBody\"},\"TypeArguments\":{\"Case\":\"Null\"},\"Information\":{\"Characteristics\":{\"Case\":\"SimpleSet\",\"Fields\":[{\"Case\":\"Adjointable\"}]},\"InferredInformation\":{\"IsSelfAdjoint\":false,\"IsIntrinsic\":false}},\"Parent\":{\"Namespace\":\"Quantum.Bell\",\"Name\":\"Oracle_ArbitraryPattern_Reference\"},\"Attributes\":[],\"SourceFile\":\"/Users/Matt/Documents/Masters/Dissertation/DisQsharp/Inital_Test/BBM.qs\",\"Position\":{\"Item1\":40,\"Item2\":4},\"HeaderRange\":{\"Item1\":{\"Line\":1,\"Column\":11},\"Item2\":{\"Line\":1,\"Column\":44}},\"Documentation\":[]}")]
-[assembly: SpecializationDeclaration("{\"Kind\":{\"Case\":\"QsAdjoint\"},\"TypeArguments\":{\"Case\":\"Null\"},\"Information\":{\"Characteristics\":{\"Case\":\"SimpleSet\",\"Fields\":[{\"Case\":\"Adjointable\"}]},\"InferredInformation\":{\"IsSelfAdjoint\":false,\"IsIntrinsic\":false}},\"Parent\":{\"Namespace\":\"Quantum.Bell\",\"Name\":\"Oracle_ArbitraryPattern_Reference\"},\"Attributes\":[],\"SourceFile\":\"/Users/Matt/Documents/Masters/Dissertation/DisQsharp/Inital_Test/BBM.qs\",\"Position\":{\"Item1\":40,\"Item2\":4},\"HeaderRange\":{\"Item1\":{\"Line\":1,\"Column\":115},\"Item2\":{\"Line\":1,\"Column\":118}},\"Documentation\":[\"automatically generated QsAdjoint specialization for Quantum.Bell.Oracle_ArbitraryPattern_Reference\"]}")]
-[assembly: CallableDeclaration("{\"Kind\":{\"Case\":\"Operation\"},\"QualifiedName\":{\"Namespace\":\"Quantum.Bell\",\"Name\":\"BBMGrover\"},\"Attributes\":[],\"Modifiers\":{\"Access\":{\"Case\":\"DefaultAccess\"}},\"SourceFile\":\"/Users/Matt/Documents/Masters/Dissertation/DisQsharp/Inital_Test/BBM.qs\",\"Position\":{\"Item1\":45,\"Item2\":0},\"SymbolRange\":{\"Item1\":{\"Line\":1,\"Column\":11},\"Item2\":{\"Line\":1,\"Column\":20}},\"ArgumentTuple\":{\"Case\":\"QsTuple\",\"Fields\":[[]]},\"Signature\":{\"TypeParameters\":[],\"ArgumentType\":{\"Case\":\"UnitType\"},\"ReturnType\":{\"Case\":\"UnitType\"},\"Information\":{\"Characteristics\":{\"Case\":\"EmptySet\"},\"InferredInformation\":{\"IsSelfAdjoint\":false,\"IsIntrinsic\":false}}},\"Documentation\":[]}")]
-[assembly: SpecializationDeclaration("{\"Kind\":{\"Case\":\"QsBody\"},\"TypeArguments\":{\"Case\":\"Null\"},\"Information\":{\"Characteristics\":{\"Case\":\"EmptySet\"},\"InferredInformation\":{\"IsSelfAdjoint\":false,\"IsIntrinsic\":false}},\"Parent\":{\"Namespace\":\"Quantum.Bell\",\"Name\":\"BBMGrover\"},\"Attributes\":[],\"SourceFile\":\"/Users/Matt/Documents/Masters/Dissertation/DisQsharp/Inital_Test/BBM.qs\",\"Position\":{\"Item1\":45,\"Item2\":0},\"HeaderRange\":{\"Item1\":{\"Line\":1,\"Column\":11},\"Item2\":{\"Line\":1,\"Column\":20}},\"Documentation\":[]}")]
-[assembly: CallableDeclaration("{\"Kind\":{\"Case\":\"Operation\"},\"QualifiedName\":{\"Namespace\":\"Quantum.Bell\",\"Name\":\"OracleIsSmooth\"},\"Attributes\":[],\"Modifiers\":{\"Access\":{\"Case\":\"DefaultAccess\"}},\"SourceFile\":\"/Users/Matt/Documents/Masters/Dissertation/DisQsharp/Inital_Test/BBM.qs\",\"Position\":{\"Item1\":70,\"Item2\":0},\"SymbolRange\":{\"Item1\":{\"Line\":1,\"Column\":11},\"Item2\":{\"Line\":1,\"Column\":25}},\"ArgumentTuple\":{\"Case\":\"QsTuple\",\"Fields\":[[{\"Case\":\"QsTupleItem\",\"Fields\":[{\"VariableName\":{\"Case\":\"ValidName\",\"Fields\":[\"queryregister\"]},\"Type\":{\"Case\":\"ArrayType\",\"Fields\":[{\"Case\":\"Qubit\"}]},\"InferredInformation\":{\"IsMutable\":false,\"HasLocalQuantumDependency\":false},\"Position\":{\"Case\":\"Null\"},\"Range\":{\"Item1\":{\"Line\":1,\"Column\":26},\"Item2\":{\"Line\":1,\"Column\":39}}}]},{\"Case\":\"QsTupleItem\",\"Fields\":[{\"VariableName\":{\"Case\":\"ValidName\",\"Fields\":[\"target\"]},\"Type\":{\"Case\":\"Qubit\"},\"InferredInformation\":{\"IsMutable\":false,\"HasLocalQuantumDependency\":false},\"Position\":{\"Case\":\"Null\"},\"Range\":{\"Item1\":{\"Line\":1,\"Column\":51},\"Item2\":{\"Line\":1,\"Column\":57}}}]}]]},\"Signature\":{\"TypeParameters\":[],\"ArgumentType\":{\"Case\":\"TupleType\",\"Fields\":[[{\"Case\":\"ArrayType\",\"Fields\":[{\"Case\":\"Qubit\"}]},{\"Case\":\"Qubit\"}]]},\"ReturnType\":{\"Case\":\"UnitType\"},\"Information\":{\"Characteristics\":{\"Case\":\"SimpleSet\",\"Fields\":[{\"Case\":\"Adjointable\"}]},\"InferredInformation\":{\"IsSelfAdjoint\":false,\"IsIntrinsic\":false}}},\"Documentation\":[\"Oracle For Grovers Algorithm to detect Smooth Numbers/////////////\"]}")]
-[assembly: SpecializationDeclaration("{\"Kind\":{\"Case\":\"QsBody\"},\"TypeArguments\":{\"Case\":\"Null\"},\"Information\":{\"Characteristics\":{\"Case\":\"SimpleSet\",\"Fields\":[{\"Case\":\"Adjointable\"}]},\"InferredInformation\":{\"IsSelfAdjoint\":false,\"IsIntrinsic\":false}},\"Parent\":{\"Namespace\":\"Quantum.Bell\",\"Name\":\"OracleIsSmooth\"},\"Attributes\":[],\"SourceFile\":\"/Users/Matt/Documents/Masters/Dissertation/DisQsharp/Inital_Test/BBM.qs\",\"Position\":{\"Item1\":70,\"Item2\":0},\"HeaderRange\":{\"Item1\":{\"Line\":1,\"Column\":11},\"Item2\":{\"Line\":1,\"Column\":25}},\"Documentation\":[]}")]
-[assembly: SpecializationDeclaration("{\"Kind\":{\"Case\":\"QsAdjoint\"},\"TypeArguments\":{\"Case\":\"Null\"},\"Information\":{\"Characteristics\":{\"Case\":\"SimpleSet\",\"Fields\":[{\"Case\":\"Adjointable\"}]},\"InferredInformation\":{\"IsSelfAdjoint\":false,\"IsIntrinsic\":false}},\"Parent\":{\"Namespace\":\"Quantum.Bell\",\"Name\":\"OracleIsSmooth\"},\"Attributes\":[],\"SourceFile\":\"/Users/Matt/Documents/Masters/Dissertation/DisQsharp/Inital_Test/BBM.qs\",\"Position\":{\"Item1\":70,\"Item2\":0},\"HeaderRange\":{\"Item1\":{\"Line\":1,\"Column\":77},\"Item2\":{\"Line\":1,\"Column\":80}},\"Documentation\":[\"automatically generated QsAdjoint specialization for Quantum.Bell.OracleIsSmooth\"]}")]
+[assembly: CallableDeclaration("{\"Kind\":{\"Case\":\"Operation\"},\"QualifiedName\":{\"Namespace\":\"Quantum.Bell\",\"Name\":\"OracleConverter1\"},\"Attributes\":[],\"Modifiers\":{\"Access\":{\"Case\":\"DefaultAccess\"}},\"SourceFile\":\"/Users/Matt/Documents/Masters/Dissertation/Quantum/Testing/Inital_Test/BBM.qs\",\"Position\":{\"Item1\":13,\"Item2\":4},\"SymbolRange\":{\"Item1\":{\"Line\":1,\"Column\":11},\"Item2\":{\"Line\":1,\"Column\":27}},\"ArgumentTuple\":{\"Case\":\"QsTuple\",\"Fields\":[[{\"Case\":\"QsTupleItem\",\"Fields\":[{\"VariableName\":{\"Case\":\"ValidName\",\"Fields\":[\"markingOracle\"]},\"Type\":{\"Case\":\"Operation\",\"Fields\":[{\"Item1\":{\"Case\":\"TupleType\",\"Fields\":[[{\"Case\":\"ArrayType\",\"Fields\":[{\"Case\":\"Qubit\"}]},{\"Case\":\"Qubit\"}]]},\"Item2\":{\"Case\":\"UnitType\"}},{\"Characteristics\":{\"Case\":\"SimpleSet\",\"Fields\":[{\"Case\":\"Adjointable\"}]},\"InferredInformation\":{\"IsSelfAdjoint\":false,\"IsIntrinsic\":false}}]},\"InferredInformation\":{\"IsMutable\":false,\"HasLocalQuantumDependency\":false},\"Position\":{\"Case\":\"Null\"},\"Range\":{\"Item1\":{\"Line\":1,\"Column\":29},\"Item2\":{\"Line\":1,\"Column\":42}}}]},{\"Case\":\"QsTupleItem\",\"Fields\":[{\"VariableName\":{\"Case\":\"ValidName\",\"Fields\":[\"register\"]},\"Type\":{\"Case\":\"ArrayType\",\"Fields\":[{\"Case\":\"Qubit\"}]},\"InferredInformation\":{\"IsMutable\":false,\"HasLocalQuantumDependency\":false},\"Position\":{\"Case\":\"Null\"},\"Range\":{\"Item1\":{\"Line\":1,\"Column\":80},\"Item2\":{\"Line\":1,\"Column\":88}}}]}]]},\"Signature\":{\"TypeParameters\":[],\"ArgumentType\":{\"Case\":\"TupleType\",\"Fields\":[[{\"Case\":\"Operation\",\"Fields\":[{\"Item1\":{\"Case\":\"TupleType\",\"Fields\":[[{\"Case\":\"ArrayType\",\"Fields\":[{\"Case\":\"Qubit\"}]},{\"Case\":\"Qubit\"}]]},\"Item2\":{\"Case\":\"UnitType\"}},{\"Characteristics\":{\"Case\":\"SimpleSet\",\"Fields\":[{\"Case\":\"Adjointable\"}]},\"InferredInformation\":{\"IsSelfAdjoint\":false,\"IsIntrinsic\":false}}]},{\"Case\":\"ArrayType\",\"Fields\":[{\"Case\":\"Qubit\"}]}]]},\"ReturnType\":{\"Case\":\"UnitType\"},\"Information\":{\"Characteristics\":{\"Case\":\"SimpleSet\",\"Fields\":[{\"Case\":\"Adjointable\"}]},\"InferredInformation\":{\"IsSelfAdjoint\":false,\"IsIntrinsic\":false}}},\"Documentation\":[\"Grovers Algorithm For BBM/////////////////////\"]}")]
+[assembly: SpecializationDeclaration("{\"Kind\":{\"Case\":\"QsBody\"},\"TypeArguments\":{\"Case\":\"Null\"},\"Information\":{\"Characteristics\":{\"Case\":\"SimpleSet\",\"Fields\":[{\"Case\":\"Adjointable\"}]},\"InferredInformation\":{\"IsSelfAdjoint\":false,\"IsIntrinsic\":false}},\"Parent\":{\"Namespace\":\"Quantum.Bell\",\"Name\":\"OracleConverter1\"},\"Attributes\":[],\"SourceFile\":\"/Users/Matt/Documents/Masters/Dissertation/Quantum/Testing/Inital_Test/BBM.qs\",\"Position\":{\"Item1\":13,\"Item2\":4},\"HeaderRange\":{\"Item1\":{\"Line\":1,\"Column\":11},\"Item2\":{\"Line\":1,\"Column\":27}},\"Documentation\":[]}")]
+[assembly: SpecializationDeclaration("{\"Kind\":{\"Case\":\"QsAdjoint\"},\"TypeArguments\":{\"Case\":\"Null\"},\"Information\":{\"Characteristics\":{\"Case\":\"SimpleSet\",\"Fields\":[{\"Case\":\"Adjointable\"}]},\"InferredInformation\":{\"IsSelfAdjoint\":false,\"IsIntrinsic\":false}},\"Parent\":{\"Namespace\":\"Quantum.Bell\",\"Name\":\"OracleConverter1\"},\"Attributes\":[],\"SourceFile\":\"/Users/Matt/Documents/Masters/Dissertation/Quantum/Testing/Inital_Test/BBM.qs\",\"Position\":{\"Item1\":13,\"Item2\":4},\"HeaderRange\":{\"Item1\":{\"Line\":1,\"Column\":110},\"Item2\":{\"Line\":1,\"Column\":113}},\"Documentation\":[\"automatically generated QsAdjoint specialization for Quantum.Bell.OracleConverter1\"]}")]
+[assembly: CallableDeclaration("{\"Kind\":{\"Case\":\"Function\"},\"QualifiedName\":{\"Namespace\":\"Quantum.Bell\",\"Name\":\"OracleConverter2\"},\"Attributes\":[],\"Modifiers\":{\"Access\":{\"Case\":\"DefaultAccess\"}},\"SourceFile\":\"/Users/Matt/Documents/Masters/Dissertation/Quantum/Testing/Inital_Test/BBM.qs\",\"Position\":{\"Item1\":27,\"Item2\":4},\"SymbolRange\":{\"Item1\":{\"Line\":1,\"Column\":10},\"Item2\":{\"Line\":1,\"Column\":26}},\"ArgumentTuple\":{\"Case\":\"QsTuple\",\"Fields\":[[{\"Case\":\"QsTupleItem\",\"Fields\":[{\"VariableName\":{\"Case\":\"ValidName\",\"Fields\":[\"markingOracle\"]},\"Type\":{\"Case\":\"Operation\",\"Fields\":[{\"Item1\":{\"Case\":\"TupleType\",\"Fields\":[[{\"Case\":\"ArrayType\",\"Fields\":[{\"Case\":\"Qubit\"}]},{\"Case\":\"Qubit\"}]]},\"Item2\":{\"Case\":\"UnitType\"}},{\"Characteristics\":{\"Case\":\"SimpleSet\",\"Fields\":[{\"Case\":\"Adjointable\"}]},\"InferredInformation\":{\"IsSelfAdjoint\":false,\"IsIntrinsic\":false}}]},\"InferredInformation\":{\"IsMutable\":false,\"HasLocalQuantumDependency\":false},\"Position\":{\"Case\":\"Null\"},\"Range\":{\"Item1\":{\"Line\":1,\"Column\":28},\"Item2\":{\"Line\":1,\"Column\":41}}}]}]]},\"Signature\":{\"TypeParameters\":[],\"ArgumentType\":{\"Case\":\"Operation\",\"Fields\":[{\"Item1\":{\"Case\":\"TupleType\",\"Fields\":[[{\"Case\":\"ArrayType\",\"Fields\":[{\"Case\":\"Qubit\"}]},{\"Case\":\"Qubit\"}]]},\"Item2\":{\"Case\":\"UnitType\"}},{\"Characteristics\":{\"Case\":\"SimpleSet\",\"Fields\":[{\"Case\":\"Adjointable\"}]},\"InferredInformation\":{\"IsSelfAdjoint\":false,\"IsIntrinsic\":false}}]},\"ReturnType\":{\"Case\":\"Operation\",\"Fields\":[{\"Item1\":{\"Case\":\"ArrayType\",\"Fields\":[{\"Case\":\"Qubit\"}]},\"Item2\":{\"Case\":\"UnitType\"}},{\"Characteristics\":{\"Case\":\"SimpleSet\",\"Fields\":[{\"Case\":\"Adjointable\"}]},\"InferredInformation\":{\"IsSelfAdjoint\":false,\"IsIntrinsic\":false}}]},\"Information\":{\"Characteristics\":{\"Case\":\"EmptySet\"},\"InferredInformation\":{\"IsSelfAdjoint\":false,\"IsIntrinsic\":false}}},\"Documentation\":[]}")]
+[assembly: SpecializationDeclaration("{\"Kind\":{\"Case\":\"QsBody\"},\"TypeArguments\":{\"Case\":\"Null\"},\"Information\":{\"Characteristics\":{\"Case\":\"EmptySet\"},\"InferredInformation\":{\"IsSelfAdjoint\":false,\"IsIntrinsic\":false}},\"Parent\":{\"Namespace\":\"Quantum.Bell\",\"Name\":\"OracleConverter2\"},\"Attributes\":[],\"SourceFile\":\"/Users/Matt/Documents/Masters/Dissertation/Quantum/Testing/Inital_Test/BBM.qs\",\"Position\":{\"Item1\":27,\"Item2\":4},\"HeaderRange\":{\"Item1\":{\"Line\":1,\"Column\":10},\"Item2\":{\"Line\":1,\"Column\":26}},\"Documentation\":[]}")]
+[assembly: CallableDeclaration("{\"Kind\":{\"Case\":\"Operation\"},\"QualifiedName\":{\"Namespace\":\"Quantum.Bell\",\"Name\":\"ConditionalPhaseFlip_Reference\"},\"Attributes\":[],\"Modifiers\":{\"Access\":{\"Case\":\"DefaultAccess\"}},\"SourceFile\":\"/Users/Matt/Documents/Masters/Dissertation/Quantum/Testing/Inital_Test/BBM.qs\",\"Position\":{\"Item1\":31,\"Item2\":4},\"SymbolRange\":{\"Item1\":{\"Line\":1,\"Column\":11},\"Item2\":{\"Line\":1,\"Column\":41}},\"ArgumentTuple\":{\"Case\":\"QsTuple\",\"Fields\":[[{\"Case\":\"QsTupleItem\",\"Fields\":[{\"VariableName\":{\"Case\":\"ValidName\",\"Fields\":[\"register\"]},\"Type\":{\"Case\":\"ArrayType\",\"Fields\":[{\"Case\":\"Qubit\"}]},\"InferredInformation\":{\"IsMutable\":false,\"HasLocalQuantumDependency\":false},\"Position\":{\"Case\":\"Null\"},\"Range\":{\"Item1\":{\"Line\":1,\"Column\":43},\"Item2\":{\"Line\":1,\"Column\":51}}}]}]]},\"Signature\":{\"TypeParameters\":[],\"ArgumentType\":{\"Case\":\"ArrayType\",\"Fields\":[{\"Case\":\"Qubit\"}]},\"ReturnType\":{\"Case\":\"UnitType\"},\"Information\":{\"Characteristics\":{\"Case\":\"SimpleSet\",\"Fields\":[{\"Case\":\"Adjointable\"}]},\"InferredInformation\":{\"IsSelfAdjoint\":false,\"IsIntrinsic\":false}}},\"Documentation\":[]}")]
+[assembly: SpecializationDeclaration("{\"Kind\":{\"Case\":\"QsBody\"},\"TypeArguments\":{\"Case\":\"Null\"},\"Information\":{\"Characteristics\":{\"Case\":\"SimpleSet\",\"Fields\":[{\"Case\":\"Adjointable\"}]},\"InferredInformation\":{\"IsSelfAdjoint\":false,\"IsIntrinsic\":false}},\"Parent\":{\"Namespace\":\"Quantum.Bell\",\"Name\":\"ConditionalPhaseFlip_Reference\"},\"Attributes\":[],\"SourceFile\":\"/Users/Matt/Documents/Masters/Dissertation/Quantum/Testing/Inital_Test/BBM.qs\",\"Position\":{\"Item1\":31,\"Item2\":4},\"HeaderRange\":{\"Item1\":{\"Line\":1,\"Column\":11},\"Item2\":{\"Line\":1,\"Column\":41}},\"Documentation\":[]}")]
+[assembly: SpecializationDeclaration("{\"Kind\":{\"Case\":\"QsAdjoint\"},\"TypeArguments\":{\"Case\":\"Null\"},\"Information\":{\"Characteristics\":{\"Case\":\"SimpleSet\",\"Fields\":[{\"Case\":\"Adjointable\"}]},\"InferredInformation\":{\"IsSelfAdjoint\":false,\"IsIntrinsic\":false}},\"Parent\":{\"Namespace\":\"Quantum.Bell\",\"Name\":\"ConditionalPhaseFlip_Reference\"},\"Attributes\":[],\"SourceFile\":\"/Users/Matt/Documents/Masters/Dissertation/Quantum/Testing/Inital_Test/BBM.qs\",\"Position\":{\"Item1\":31,\"Item2\":4},\"HeaderRange\":{\"Item1\":{\"Line\":1,\"Column\":73},\"Item2\":{\"Line\":1,\"Column\":76}},\"Documentation\":[\"automatically generated QsAdjoint specialization for Quantum.Bell.ConditionalPhaseFlip_Reference\"]}")]
+[assembly: CallableDeclaration("{\"Kind\":{\"Case\":\"Operation\"},\"QualifiedName\":{\"Namespace\":\"Quantum.Bell\",\"Name\":\"Oracle_ArbitraryPattern_Reference\"},\"Attributes\":[],\"Modifiers\":{\"Access\":{\"Case\":\"DefaultAccess\"}},\"SourceFile\":\"/Users/Matt/Documents/Masters/Dissertation/Quantum/Testing/Inital_Test/BBM.qs\",\"Position\":{\"Item1\":40,\"Item2\":4},\"SymbolRange\":{\"Item1\":{\"Line\":1,\"Column\":11},\"Item2\":{\"Line\":1,\"Column\":44}},\"ArgumentTuple\":{\"Case\":\"QsTuple\",\"Fields\":[[{\"Case\":\"QsTupleItem\",\"Fields\":[{\"VariableName\":{\"Case\":\"ValidName\",\"Fields\":[\"queryRegister\"]},\"Type\":{\"Case\":\"ArrayType\",\"Fields\":[{\"Case\":\"Qubit\"}]},\"InferredInformation\":{\"IsMutable\":false,\"HasLocalQuantumDependency\":false},\"Position\":{\"Case\":\"Null\"},\"Range\":{\"Item1\":{\"Line\":1,\"Column\":46},\"Item2\":{\"Line\":1,\"Column\":59}}}]},{\"Case\":\"QsTupleItem\",\"Fields\":[{\"VariableName\":{\"Case\":\"ValidName\",\"Fields\":[\"target\"]},\"Type\":{\"Case\":\"Qubit\"},\"InferredInformation\":{\"IsMutable\":false,\"HasLocalQuantumDependency\":false},\"Position\":{\"Case\":\"Null\"},\"Range\":{\"Item1\":{\"Line\":1,\"Column\":71},\"Item2\":{\"Line\":1,\"Column\":77}}}]},{\"Case\":\"QsTupleItem\",\"Fields\":[{\"VariableName\":{\"Case\":\"ValidName\",\"Fields\":[\"pattern\"]},\"Type\":{\"Case\":\"ArrayType\",\"Fields\":[{\"Case\":\"Bool\"}]},\"InferredInformation\":{\"IsMutable\":false,\"HasLocalQuantumDependency\":false},\"Position\":{\"Case\":\"Null\"},\"Range\":{\"Item1\":{\"Line\":1,\"Column\":87},\"Item2\":{\"Line\":1,\"Column\":94}}}]}]]},\"Signature\":{\"TypeParameters\":[],\"ArgumentType\":{\"Case\":\"TupleType\",\"Fields\":[[{\"Case\":\"ArrayType\",\"Fields\":[{\"Case\":\"Qubit\"}]},{\"Case\":\"Qubit\"},{\"Case\":\"ArrayType\",\"Fields\":[{\"Case\":\"Bool\"}]}]]},\"ReturnType\":{\"Case\":\"UnitType\"},\"Information\":{\"Characteristics\":{\"Case\":\"SimpleSet\",\"Fields\":[{\"Case\":\"Adjointable\"}]},\"InferredInformation\":{\"IsSelfAdjoint\":false,\"IsIntrinsic\":false}}},\"Documentation\":[]}")]
+[assembly: SpecializationDeclaration("{\"Kind\":{\"Case\":\"QsBody\"},\"TypeArguments\":{\"Case\":\"Null\"},\"Information\":{\"Characteristics\":{\"Case\":\"SimpleSet\",\"Fields\":[{\"Case\":\"Adjointable\"}]},\"InferredInformation\":{\"IsSelfAdjoint\":false,\"IsIntrinsic\":false}},\"Parent\":{\"Namespace\":\"Quantum.Bell\",\"Name\":\"Oracle_ArbitraryPattern_Reference\"},\"Attributes\":[],\"SourceFile\":\"/Users/Matt/Documents/Masters/Dissertation/Quantum/Testing/Inital_Test/BBM.qs\",\"Position\":{\"Item1\":40,\"Item2\":4},\"HeaderRange\":{\"Item1\":{\"Line\":1,\"Column\":11},\"Item2\":{\"Line\":1,\"Column\":44}},\"Documentation\":[]}")]
+[assembly: SpecializationDeclaration("{\"Kind\":{\"Case\":\"QsAdjoint\"},\"TypeArguments\":{\"Case\":\"Null\"},\"Information\":{\"Characteristics\":{\"Case\":\"SimpleSet\",\"Fields\":[{\"Case\":\"Adjointable\"}]},\"InferredInformation\":{\"IsSelfAdjoint\":false,\"IsIntrinsic\":false}},\"Parent\":{\"Namespace\":\"Quantum.Bell\",\"Name\":\"Oracle_ArbitraryPattern_Reference\"},\"Attributes\":[],\"SourceFile\":\"/Users/Matt/Documents/Masters/Dissertation/Quantum/Testing/Inital_Test/BBM.qs\",\"Position\":{\"Item1\":40,\"Item2\":4},\"HeaderRange\":{\"Item1\":{\"Line\":1,\"Column\":115},\"Item2\":{\"Line\":1,\"Column\":118}},\"Documentation\":[\"automatically generated QsAdjoint specialization for Quantum.Bell.Oracle_ArbitraryPattern_Reference\"]}")]
+[assembly: CallableDeclaration("{\"Kind\":{\"Case\":\"Operation\"},\"QualifiedName\":{\"Namespace\":\"Quantum.Bell\",\"Name\":\"BBMGrover\"},\"Attributes\":[],\"Modifiers\":{\"Access\":{\"Case\":\"DefaultAccess\"}},\"SourceFile\":\"/Users/Matt/Documents/Masters/Dissertation/Quantum/Testing/Inital_Test/BBM.qs\",\"Position\":{\"Item1\":45,\"Item2\":0},\"SymbolRange\":{\"Item1\":{\"Line\":1,\"Column\":11},\"Item2\":{\"Line\":1,\"Column\":20}},\"ArgumentTuple\":{\"Case\":\"QsTuple\",\"Fields\":[[]]},\"Signature\":{\"TypeParameters\":[],\"ArgumentType\":{\"Case\":\"UnitType\"},\"ReturnType\":{\"Case\":\"UnitType\"},\"Information\":{\"Characteristics\":{\"Case\":\"EmptySet\"},\"InferredInformation\":{\"IsSelfAdjoint\":false,\"IsIntrinsic\":false}}},\"Documentation\":[]}")]
+[assembly: SpecializationDeclaration("{\"Kind\":{\"Case\":\"QsBody\"},\"TypeArguments\":{\"Case\":\"Null\"},\"Information\":{\"Characteristics\":{\"Case\":\"EmptySet\"},\"InferredInformation\":{\"IsSelfAdjoint\":false,\"IsIntrinsic\":false}},\"Parent\":{\"Namespace\":\"Quantum.Bell\",\"Name\":\"BBMGrover\"},\"Attributes\":[],\"SourceFile\":\"/Users/Matt/Documents/Masters/Dissertation/Quantum/Testing/Inital_Test/BBM.qs\",\"Position\":{\"Item1\":45,\"Item2\":0},\"HeaderRange\":{\"Item1\":{\"Line\":1,\"Column\":11},\"Item2\":{\"Line\":1,\"Column\":20}},\"Documentation\":[]}")]
+[assembly: CallableDeclaration("{\"Kind\":{\"Case\":\"Operation\"},\"QualifiedName\":{\"Namespace\":\"Quantum.Bell\",\"Name\":\"OracleIsSmooth\"},\"Attributes\":[],\"Modifiers\":{\"Access\":{\"Case\":\"DefaultAccess\"}},\"SourceFile\":\"/Users/Matt/Documents/Masters/Dissertation/Quantum/Testing/Inital_Test/BBM.qs\",\"Position\":{\"Item1\":70,\"Item2\":0},\"SymbolRange\":{\"Item1\":{\"Line\":1,\"Column\":11},\"Item2\":{\"Line\":1,\"Column\":25}},\"ArgumentTuple\":{\"Case\":\"QsTuple\",\"Fields\":[[{\"Case\":\"QsTupleItem\",\"Fields\":[{\"VariableName\":{\"Case\":\"ValidName\",\"Fields\":[\"queryregister\"]},\"Type\":{\"Case\":\"ArrayType\",\"Fields\":[{\"Case\":\"Qubit\"}]},\"InferredInformation\":{\"IsMutable\":false,\"HasLocalQuantumDependency\":false},\"Position\":{\"Case\":\"Null\"},\"Range\":{\"Item1\":{\"Line\":1,\"Column\":26},\"Item2\":{\"Line\":1,\"Column\":39}}}]},{\"Case\":\"QsTupleItem\",\"Fields\":[{\"VariableName\":{\"Case\":\"ValidName\",\"Fields\":[\"target\"]},\"Type\":{\"Case\":\"Qubit\"},\"InferredInformation\":{\"IsMutable\":false,\"HasLocalQuantumDependency\":false},\"Position\":{\"Case\":\"Null\"},\"Range\":{\"Item1\":{\"Line\":1,\"Column\":51},\"Item2\":{\"Line\":1,\"Column\":57}}}]}]]},\"Signature\":{\"TypeParameters\":[],\"ArgumentType\":{\"Case\":\"TupleType\",\"Fields\":[[{\"Case\":\"ArrayType\",\"Fields\":[{\"Case\":\"Qubit\"}]},{\"Case\":\"Qubit\"}]]},\"ReturnType\":{\"Case\":\"UnitType\"},\"Information\":{\"Characteristics\":{\"Case\":\"SimpleSet\",\"Fields\":[{\"Case\":\"Adjointable\"}]},\"InferredInformation\":{\"IsSelfAdjoint\":false,\"IsIntrinsic\":false}}},\"Documentation\":[\"Oracle For Grovers Algorithm to detect Smooth Numbers/////////////\"]}")]
+[assembly: SpecializationDeclaration("{\"Kind\":{\"Case\":\"QsBody\"},\"TypeArguments\":{\"Case\":\"Null\"},\"Information\":{\"Characteristics\":{\"Case\":\"SimpleSet\",\"Fields\":[{\"Case\":\"Adjointable\"}]},\"InferredInformation\":{\"IsSelfAdjoint\":false,\"IsIntrinsic\":false}},\"Parent\":{\"Namespace\":\"Quantum.Bell\",\"Name\":\"OracleIsSmooth\"},\"Attributes\":[],\"SourceFile\":\"/Users/Matt/Documents/Masters/Dissertation/Quantum/Testing/Inital_Test/BBM.qs\",\"Position\":{\"Item1\":70,\"Item2\":0},\"HeaderRange\":{\"Item1\":{\"Line\":1,\"Column\":11},\"Item2\":{\"Line\":1,\"Column\":25}},\"Documentation\":[]}")]
+[assembly: SpecializationDeclaration("{\"Kind\":{\"Case\":\"QsAdjoint\"},\"TypeArguments\":{\"Case\":\"Null\"},\"Information\":{\"Characteristics\":{\"Case\":\"SimpleSet\",\"Fields\":[{\"Case\":\"Adjointable\"}]},\"InferredInformation\":{\"IsSelfAdjoint\":false,\"IsIntrinsic\":false}},\"Parent\":{\"Namespace\":\"Quantum.Bell\",\"Name\":\"OracleIsSmooth\"},\"Attributes\":[],\"SourceFile\":\"/Users/Matt/Documents/Masters/Dissertation/Quantum/Testing/Inital_Test/BBM.qs\",\"Position\":{\"Item1\":70,\"Item2\":0},\"HeaderRange\":{\"Item1\":{\"Line\":1,\"Column\":77},\"Item2\":{\"Line\":1,\"Column\":80}},\"Documentation\":[\"automatically generated QsAdjoint specialization for Quantum.Bell.OracleIsSmooth\"]}")]
 #line hidden
 namespace Quantum.Bell
 {
-    [SourceLocation("/Users/Matt/Documents/Masters/Dissertation/DisQsharp/Inital_Test/BBM.qs", OperationFunctor.Body, 14, 28)]
-    [SourceLocation("/Users/Matt/Documents/Masters/Dissertation/DisQsharp/Inital_Test/BBM.qs", OperationFunctor.Adjoint, 14, 28)]
+    [SourceLocation("/Users/Matt/Documents/Masters/Dissertation/Quantum/Testing/Inital_Test/BBM.qs", OperationFunctor.Body, 14, 28)]
+    [SourceLocation("/Users/Matt/Documents/Masters/Dissertation/Quantum/Testing/Inital_Test/BBM.qs", OperationFunctor.Adjoint, 14, 28)]
     public partial class OracleConverter1 : Adjointable<(IAdjointable,IQArray<Qubit>)>, ICallable
     {
         public OracleConverter1(IOperationFactory m) : base(m)
@@ -86,21 +86,21 @@ namespace Quantum.Bell
             var (markingOracle,register) = __in__;
 #line hidden
             {
-#line 15 "/Users/Matt/Documents/Masters/Dissertation/DisQsharp/Inital_Test/BBM.qs"
+#line 15 "/Users/Matt/Documents/Masters/Dissertation/Quantum/Testing/Inital_Test/BBM.qs"
                 var target = Allocate.Apply();
 #line hidden
                 bool __arg1__ = true;
                 try
                 {
-#line 18 "/Users/Matt/Documents/Masters/Dissertation/DisQsharp/Inital_Test/BBM.qs"
+#line 18 "/Users/Matt/Documents/Masters/Dissertation/Quantum/Testing/Inital_Test/BBM.qs"
                     MicrosoftQuantumIntrinsicX.Apply(target);
-#line 19 "/Users/Matt/Documents/Masters/Dissertation/DisQsharp/Inital_Test/BBM.qs"
+#line 19 "/Users/Matt/Documents/Masters/Dissertation/Quantum/Testing/Inital_Test/BBM.qs"
                     MicrosoftQuantumIntrinsicH.Apply(target);
-#line 24 "/Users/Matt/Documents/Masters/Dissertation/DisQsharp/Inital_Test/BBM.qs"
+#line 24 "/Users/Matt/Documents/Masters/Dissertation/Quantum/Testing/Inital_Test/BBM.qs"
                     markingOracle.Apply((register, target));
-#line 14 "/Users/Matt/Documents/Masters/Dissertation/DisQsharp/Inital_Test/BBM.qs"
+#line 14 "/Users/Matt/Documents/Masters/Dissertation/Quantum/Testing/Inital_Test/BBM.qs"
                     MicrosoftQuantumIntrinsicH.Adjoint.Apply(target);
-#line 14 "/Users/Matt/Documents/Masters/Dissertation/DisQsharp/Inital_Test/BBM.qs"
+#line 14 "/Users/Matt/Documents/Masters/Dissertation/Quantum/Testing/Inital_Test/BBM.qs"
                     MicrosoftQuantumIntrinsicX.Adjoint.Apply(target);
                 }
 #line hidden
@@ -128,23 +128,23 @@ namespace Quantum.Bell
         public override Func<(IAdjointable,IQArray<Qubit>), QVoid> AdjointBody => (__in__) =>
         {
             var (markingOracle,register) = __in__;
-#line 14 "/Users/Matt/Documents/Masters/Dissertation/DisQsharp/Inital_Test/BBM.qs"
+#line 14 "/Users/Matt/Documents/Masters/Dissertation/Quantum/Testing/Inital_Test/BBM.qs"
             {
-#line 14 "/Users/Matt/Documents/Masters/Dissertation/DisQsharp/Inital_Test/BBM.qs"
+#line 14 "/Users/Matt/Documents/Masters/Dissertation/Quantum/Testing/Inital_Test/BBM.qs"
                 var __qsVar0__target__ = Allocate.Apply();
 #line hidden
                 bool __arg1__ = true;
                 try
                 {
-#line 14 "/Users/Matt/Documents/Masters/Dissertation/DisQsharp/Inital_Test/BBM.qs"
+#line 14 "/Users/Matt/Documents/Masters/Dissertation/Quantum/Testing/Inital_Test/BBM.qs"
                     MicrosoftQuantumIntrinsicX.Apply(__qsVar0__target__);
-#line 14 "/Users/Matt/Documents/Masters/Dissertation/DisQsharp/Inital_Test/BBM.qs"
+#line 14 "/Users/Matt/Documents/Masters/Dissertation/Quantum/Testing/Inital_Test/BBM.qs"
                     MicrosoftQuantumIntrinsicH.Apply(__qsVar0__target__);
-#line 14 "/Users/Matt/Documents/Masters/Dissertation/DisQsharp/Inital_Test/BBM.qs"
+#line 14 "/Users/Matt/Documents/Masters/Dissertation/Quantum/Testing/Inital_Test/BBM.qs"
                     markingOracle.Adjoint.Apply((register, __qsVar0__target__));
-#line 14 "/Users/Matt/Documents/Masters/Dissertation/DisQsharp/Inital_Test/BBM.qs"
+#line 14 "/Users/Matt/Documents/Masters/Dissertation/Quantum/Testing/Inital_Test/BBM.qs"
                     MicrosoftQuantumIntrinsicH.Adjoint.Apply(__qsVar0__target__);
-#line 14 "/Users/Matt/Documents/Masters/Dissertation/DisQsharp/Inital_Test/BBM.qs"
+#line 14 "/Users/Matt/Documents/Masters/Dissertation/Quantum/Testing/Inital_Test/BBM.qs"
                     MicrosoftQuantumIntrinsicX.Adjoint.Apply(__qsVar0__target__);
                 }
 #line hidden
@@ -185,7 +185,7 @@ namespace Quantum.Bell
         }
     }
 
-    [SourceLocation("/Users/Matt/Documents/Masters/Dissertation/DisQsharp/Inital_Test/BBM.qs", OperationFunctor.Body, 28, 32)]
+    [SourceLocation("/Users/Matt/Documents/Masters/Dissertation/Quantum/Testing/Inital_Test/BBM.qs", OperationFunctor.Body, 28, 32)]
     public partial class OracleConverter2 : Function<IAdjointable, IAdjointable>, ICallable
     {
         public OracleConverter2(IOperationFactory m) : base(m)
@@ -203,7 +203,7 @@ namespace Quantum.Bell
         public override Func<IAdjointable, IAdjointable> Body => (__in__) =>
         {
             var markingOracle = __in__;
-#line 29 "/Users/Matt/Documents/Masters/Dissertation/DisQsharp/Inital_Test/BBM.qs"
+#line 29 "/Users/Matt/Documents/Masters/Dissertation/Quantum/Testing/Inital_Test/BBM.qs"
             return OracleConverter1.Partial(new Func<IQArray<Qubit>, (IAdjointable,IQArray<Qubit>)>((__arg1__) => (markingOracle, __arg1__)));
         }
 
@@ -221,8 +221,8 @@ namespace Quantum.Bell
         }
     }
 
-    [SourceLocation("/Users/Matt/Documents/Masters/Dissertation/DisQsharp/Inital_Test/BBM.qs", OperationFunctor.Body, 32, 41)]
-    [SourceLocation("/Users/Matt/Documents/Masters/Dissertation/DisQsharp/Inital_Test/BBM.qs", OperationFunctor.Adjoint, 32, 41)]
+    [SourceLocation("/Users/Matt/Documents/Masters/Dissertation/Quantum/Testing/Inital_Test/BBM.qs", OperationFunctor.Body, 32, 41)]
+    [SourceLocation("/Users/Matt/Documents/Masters/Dissertation/Quantum/Testing/Inital_Test/BBM.qs", OperationFunctor.Adjoint, 32, 41)]
     public partial class ConditionalPhaseFlip_Reference : Adjointable<IQArray<Qubit>>, ICallable
     {
         public ConditionalPhaseFlip_Reference(IOperationFactory m) : base(m)
@@ -252,11 +252,11 @@ namespace Quantum.Bell
         public override Func<IQArray<Qubit>, QVoid> Body => (__in__) =>
         {
             var register = __in__;
-#line 34 "/Users/Matt/Documents/Masters/Dissertation/DisQsharp/Inital_Test/BBM.qs"
+#line 34 "/Users/Matt/Documents/Masters/Dissertation/Quantum/Testing/Inital_Test/BBM.qs"
             var allZerosOracle = Oracle_ArbitraryPattern_Reference.Partial(new Func<(IQArray<Qubit>,Qubit), (IQArray<Qubit>,Qubit,IQArray<Boolean>)>((__arg1__) => (__arg1__.Item1, __arg1__.Item2, QArray<Boolean>.Create(register.Length))));
-#line 37 "/Users/Matt/Documents/Masters/Dissertation/DisQsharp/Inital_Test/BBM.qs"
+#line 37 "/Users/Matt/Documents/Masters/Dissertation/Quantum/Testing/Inital_Test/BBM.qs"
             var flipOracle = OracleConverter2.Apply(allZerosOracle);
-#line 38 "/Users/Matt/Documents/Masters/Dissertation/DisQsharp/Inital_Test/BBM.qs"
+#line 38 "/Users/Matt/Documents/Masters/Dissertation/Quantum/Testing/Inital_Test/BBM.qs"
             flipOracle.Apply(register);
 #line hidden
             return QVoid.Instance;
@@ -266,11 +266,11 @@ namespace Quantum.Bell
         public override Func<IQArray<Qubit>, QVoid> AdjointBody => (__in__) =>
         {
             var register = __in__;
-#line 32 "/Users/Matt/Documents/Masters/Dissertation/DisQsharp/Inital_Test/BBM.qs"
+#line 32 "/Users/Matt/Documents/Masters/Dissertation/Quantum/Testing/Inital_Test/BBM.qs"
             var __qsVar0__allZerosOracle__ = Oracle_ArbitraryPattern_Reference.Partial(new Func<(IQArray<Qubit>,Qubit), (IQArray<Qubit>,Qubit,IQArray<Boolean>)>((__arg1__) => (__arg1__.Item1, __arg1__.Item2, QArray<Boolean>.Create(register.Length))));
-#line 32 "/Users/Matt/Documents/Masters/Dissertation/DisQsharp/Inital_Test/BBM.qs"
+#line 32 "/Users/Matt/Documents/Masters/Dissertation/Quantum/Testing/Inital_Test/BBM.qs"
             var __qsVar1__flipOracle__ = OracleConverter2.Apply(__qsVar0__allZerosOracle__);
-#line 32 "/Users/Matt/Documents/Masters/Dissertation/DisQsharp/Inital_Test/BBM.qs"
+#line 32 "/Users/Matt/Documents/Masters/Dissertation/Quantum/Testing/Inital_Test/BBM.qs"
             __qsVar1__flipOracle__.Adjoint.Apply(register);
 #line hidden
             return QVoid.Instance;
@@ -292,8 +292,8 @@ namespace Quantum.Bell
         }
     }
 
-    [SourceLocation("/Users/Matt/Documents/Masters/Dissertation/DisQsharp/Inital_Test/BBM.qs", OperationFunctor.Body, 41, 46)]
-    [SourceLocation("/Users/Matt/Documents/Masters/Dissertation/DisQsharp/Inital_Test/BBM.qs", OperationFunctor.Adjoint, 41, 46)]
+    [SourceLocation("/Users/Matt/Documents/Masters/Dissertation/Quantum/Testing/Inital_Test/BBM.qs", OperationFunctor.Body, 41, 46)]
+    [SourceLocation("/Users/Matt/Documents/Masters/Dissertation/Quantum/Testing/Inital_Test/BBM.qs", OperationFunctor.Adjoint, 41, 46)]
     public partial class Oracle_ArbitraryPattern_Reference : Adjointable<(IQArray<Qubit>,Qubit,IQArray<Boolean>)>, ICallable
     {
         public Oracle_ArbitraryPattern_Reference(IOperationFactory m) : base(m)
@@ -332,7 +332,7 @@ namespace Quantum.Bell
         public override Func<(IQArray<Qubit>,Qubit,IQArray<Boolean>), QVoid> Body => (__in__) =>
         {
             var (queryRegister,target,pattern) = __in__;
-#line 42 "/Users/Matt/Documents/Masters/Dissertation/DisQsharp/Inital_Test/BBM.qs"
+#line 42 "/Users/Matt/Documents/Masters/Dissertation/Quantum/Testing/Inital_Test/BBM.qs"
             MicrosoftQuantumCanonControlledOnBitString.Apply<IUnitary>((pattern, MicrosoftQuantumIntrinsicX)).Apply((queryRegister, target));
 #line hidden
             return QVoid.Instance;
@@ -342,7 +342,7 @@ namespace Quantum.Bell
         public override Func<(IQArray<Qubit>,Qubit,IQArray<Boolean>), QVoid> AdjointBody => (__in__) =>
         {
             var (queryRegister,target,pattern) = __in__;
-#line 41 "/Users/Matt/Documents/Masters/Dissertation/DisQsharp/Inital_Test/BBM.qs"
+#line 41 "/Users/Matt/Documents/Masters/Dissertation/Quantum/Testing/Inital_Test/BBM.qs"
             MicrosoftQuantumCanonControlledOnBitString.Apply<IUnitary>((pattern, MicrosoftQuantumIntrinsicX)).Adjoint.Apply((queryRegister, target));
 #line hidden
             return QVoid.Instance;
@@ -363,7 +363,7 @@ namespace Quantum.Bell
         }
     }
 
-    [SourceLocation("/Users/Matt/Documents/Masters/Dissertation/DisQsharp/Inital_Test/BBM.qs", OperationFunctor.Body, 46, 71)]
+    [SourceLocation("/Users/Matt/Documents/Masters/Dissertation/Quantum/Testing/Inital_Test/BBM.qs", OperationFunctor.Body, 46, 71)]
     public partial class BBMGrover : Operation<QVoid, QVoid>, ICallable
     {
         public BBMGrover(IOperationFactory m) : base(m)
@@ -430,35 +430,35 @@ namespace Quantum.Bell
         {
 #line hidden
             {
-#line 47 "/Users/Matt/Documents/Masters/Dissertation/DisQsharp/Inital_Test/BBM.qs"
+#line 47 "/Users/Matt/Documents/Masters/Dissertation/Quantum/Testing/Inital_Test/BBM.qs"
                 var qs = Allocate.Apply(3L);
 #line hidden
                 bool __arg1__ = true;
                 try
                 {
-#line 49 "/Users/Matt/Documents/Masters/Dissertation/DisQsharp/Inital_Test/BBM.qs"
+#line 49 "/Users/Matt/Documents/Masters/Dissertation/Quantum/Testing/Inital_Test/BBM.qs"
                     MicrosoftQuantumCanonApplyToEachA.Apply((MicrosoftQuantumIntrinsicH, qs));
-#line 50 "/Users/Matt/Documents/Masters/Dissertation/DisQsharp/Inital_Test/BBM.qs"
+#line 50 "/Users/Matt/Documents/Masters/Dissertation/Quantum/Testing/Inital_Test/BBM.qs"
                     MicrosoftQuantumDiagnosticsDumpMachine.Apply(QVoid.Instance);
-#line 53 "/Users/Matt/Documents/Masters/Dissertation/DisQsharp/Inital_Test/BBM.qs"
+#line 53 "/Users/Matt/Documents/Masters/Dissertation/Quantum/Testing/Inital_Test/BBM.qs"
                     var DetectSmooth = OracleConverter2.Apply(OracleIsSmooth);
-#line 54 "/Users/Matt/Documents/Masters/Dissertation/DisQsharp/Inital_Test/BBM.qs"
+#line 54 "/Users/Matt/Documents/Masters/Dissertation/Quantum/Testing/Inital_Test/BBM.qs"
                     foreach (var i in new QRange(1L, 10L))
 #line hidden
                     {
-#line 56 "/Users/Matt/Documents/Masters/Dissertation/DisQsharp/Inital_Test/BBM.qs"
+#line 56 "/Users/Matt/Documents/Masters/Dissertation/Quantum/Testing/Inital_Test/BBM.qs"
                         DetectSmooth.Apply(qs);
-#line 57 "/Users/Matt/Documents/Masters/Dissertation/DisQsharp/Inital_Test/BBM.qs"
+#line 57 "/Users/Matt/Documents/Masters/Dissertation/Quantum/Testing/Inital_Test/BBM.qs"
                         MicrosoftQuantumCanonApplyToEachA.Apply((MicrosoftQuantumIntrinsicH, qs));
-#line 58 "/Users/Matt/Documents/Masters/Dissertation/DisQsharp/Inital_Test/BBM.qs"
+#line 58 "/Users/Matt/Documents/Masters/Dissertation/Quantum/Testing/Inital_Test/BBM.qs"
                         ConditionalPhaseFlip_Reference.Apply(qs);
-#line 59 "/Users/Matt/Documents/Masters/Dissertation/DisQsharp/Inital_Test/BBM.qs"
+#line 59 "/Users/Matt/Documents/Masters/Dissertation/Quantum/Testing/Inital_Test/BBM.qs"
                         MicrosoftQuantumCanonApplyToEachA.Apply((MicrosoftQuantumIntrinsicH, qs));
                     }
 
-#line 61 "/Users/Matt/Documents/Masters/Dissertation/DisQsharp/Inital_Test/BBM.qs"
+#line 61 "/Users/Matt/Documents/Masters/Dissertation/Quantum/Testing/Inital_Test/BBM.qs"
                     MicrosoftQuantumDiagnosticsDumpMachine.Apply(QVoid.Instance);
-#line 62 "/Users/Matt/Documents/Masters/Dissertation/DisQsharp/Inital_Test/BBM.qs"
+#line 62 "/Users/Matt/Documents/Masters/Dissertation/Quantum/Testing/Inital_Test/BBM.qs"
                     ResetAll.Apply(qs);
                 }
 #line hidden
@@ -504,8 +504,8 @@ namespace Quantum.Bell
         }
     }
 
-    [SourceLocation("/Users/Matt/Documents/Masters/Dissertation/DisQsharp/Inital_Test/BBM.qs", OperationFunctor.Body, 71, -1)]
-    [SourceLocation("/Users/Matt/Documents/Masters/Dissertation/DisQsharp/Inital_Test/BBM.qs", OperationFunctor.Adjoint, 71, -1)]
+    [SourceLocation("/Users/Matt/Documents/Masters/Dissertation/Quantum/Testing/Inital_Test/BBM.qs", OperationFunctor.Body, 71, -1)]
+    [SourceLocation("/Users/Matt/Documents/Masters/Dissertation/Quantum/Testing/Inital_Test/BBM.qs", OperationFunctor.Adjoint, 71, -1)]
     public partial class OracleIsSmooth : Adjointable<(IQArray<Qubit>,Qubit)>, ICallable
     {
         public OracleIsSmooth(IOperationFactory m) : base(m)
@@ -538,7 +538,7 @@ namespace Quantum.Bell
         public override Func<(IQArray<Qubit>,Qubit), QVoid> Body => (__in__) =>
         {
             var (queryregister,target) = __in__;
-#line 72 "/Users/Matt/Documents/Masters/Dissertation/DisQsharp/Inital_Test/BBM.qs"
+#line 72 "/Users/Matt/Documents/Masters/Dissertation/Quantum/Testing/Inital_Test/BBM.qs"
             MicrosoftQuantumIntrinsicX.Controlled.Apply((queryregister, target));
 #line hidden
             return QVoid.Instance;
@@ -548,7 +548,7 @@ namespace Quantum.Bell
         public override Func<(IQArray<Qubit>,Qubit), QVoid> AdjointBody => (__in__) =>
         {
             var (queryregister,target) = __in__;
-#line 71 "/Users/Matt/Documents/Masters/Dissertation/DisQsharp/Inital_Test/BBM.qs"
+#line 71 "/Users/Matt/Documents/Masters/Dissertation/Quantum/Testing/Inital_Test/BBM.qs"
             MicrosoftQuantumIntrinsicX.Controlled.Adjoint.Apply((queryregister, target));
 #line hidden
             return QVoid.Instance;

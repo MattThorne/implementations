@@ -7957,11 +7957,11 @@
   "project": {
     "version": "1.0.0",
     "restore": {
-      "projectUniqueName": "/Users/Matt/Documents/Masters/Dissertation/DisQsharp/Inital_Test/test-mt.csproj",
+      "projectUniqueName": "/Users/Matt/Documents/Masters/Dissertation/Quantum/Testing/Inital_Test/test-mt.csproj",
       "projectName": "test-mt",
-      "projectPath": "/Users/Matt/Documents/Masters/Dissertation/DisQsharp/Inital_Test/test-mt.csproj",
+      "projectPath": "/Users/Matt/Documents/Masters/Dissertation/Quantum/Testing/Inital_Test/test-mt.csproj",
       "packagesPath": "/Users/Matt/.nuget/packages/",
-      "outputPath": "/Users/Matt/Documents/Masters/Dissertation/DisQsharp/Inital_Test/obj/",
+      "outputPath": "/Users/Matt/Documents/Masters/Dissertation/Quantum/Testing/Inital_Test/obj/",
       "projectStyle": "PackageReference",
       "configFilePaths": [
         "/Users/Matt/.nuget/NuGet/NuGet.Config"

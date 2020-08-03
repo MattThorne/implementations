@@ -12,69 +12,45 @@
     newtype SignedLittleEndian = LittleEndian;
 
 
-operation TestMiniMultiply():Unit{
-using ((a,b,res)=(Qubit[4],Qubit[3],Qubit[7])){
-    X(a[1]);
-    X(a[0]);
-
-    X(b[0]);
-    X(b[2]);
-
-    DumpMachine();
-    MinimalMultiplyI(a,b,res);
-    DumpMachine();
 
 
-    ResetAll(a+b+res);
-}
-
-}
-
-
-  operation MinimalMultiplyI (xs: Qubit[], ys: Qubit[], result: Qubit[]) : Unit {
-            let lenXs = Length(xs);
-            let lenYs = Length(ys);
-
-            
-            EqualityFactI(lenXs + lenYs, Length(result), "Minimal multiplication requires result register to be equal to sum of multiplcan registers");
-            AssertAllZero(result);
-
-            for (i in 0..(lenXs-1)) {
-                (Controlled AddI) ([xs[i]], (LittleEndian(ys), LittleEndian(result[i..i+lenYs])));
-            }
-    }
 
 operation TestCFC() : Unit{
 
-    using ((m,r1,r2,s1,s2,t1,t2,C1) = (Qubit[2],Qubit[2],Qubit[2],Qubit[3],Qubit[3],Qubit[3],Qubit[3],Qubit())){
+    using ((m,r1,r2,s1,s2,C1) = (Qubit[2],Qubit[2],Qubit[2],Qubit[3],Qubit[3],Qubit())){
         let len = Length(r1);
         X(m[1]);
         X(m[0]);
         X(r1[1]);
         ApplyToEachA(X,r2);
         X(s1[0]);
-        X(t2[0]);
-        
 
         CFCheck(r2,s2,m,C1);
         
-        
         ////////CF Iteration//////////////
-        using ((quo,qTs2,anc,anc1,anc2) = (Qubit[len],Qubit[2*len + 1],Qubit(),Qubit(),Qubit())){
-
+        using ((quo,qTs2,quoS,anc1,anc2,s2Pad) = (Qubit[len],Qubit[2*len + 1],Qubit(),Qubit(),Qubit(),Qubit[len + 1])){
+            Message("Initial");
+            DumpMachine();
             DivideI(LittleEndian(r1),LittleEndian(r2),LittleEndian(quo));
-            for (i in 0..Length(quo)){
+            Message("Divided");
+            DumpMachine();
+            for (i in 0..(Length(quo)-1)){
                 SWAP(r1[i],r2[i]);
             }
-            SignedMultiply(s2,quo + [anc], qTs2);
-            for (i in 0..Length(s1)){
+            Message("Divided and swapped r1 and r2");
+            DumpMachine();
+            SignedMultiply(s2,quo + [quoS], qTs2);
+            Message("Multiplied s2 and quo to qTs2");
+            DumpMachine();
+            for (i in 0..(Length(s1)-1)){
                 SWAP(s1[i],s2[i]);
             }
-            SignedSubtract(s2,qTs2,anc1,anc2);
+            Message("Swapped s1 and s2");
+            DumpMachine();
 
-
-
-
+            SignedSubtract(s2 + s2Pad,qTs2,anc1,anc2);
+            Message("Subtracted qTs2 from s2");
+            DumpMachine();
         }
 
 
@@ -106,14 +82,25 @@ operation CFCheck (r2:Qubit[],s2:Qubit[],m:Qubit[],C:Qubit):Unit{
 
         Adjoint CompareGTI(s2LE,LittleEndian(m + anc),C2);//Resetting C2
         }
-        DumpMachine();
         /////////////////////////////////////////
 
 }
 
+  operation MinimalMultiplyI (xs: Qubit[], ys: Qubit[], result: Qubit[]) : Unit {
+            let lenXs = Length(xs);
+            let lenYs = Length(ys);
+
+            
+            EqualityFactI(lenXs + lenYs, Length(result), "Minimal multiplication requires result register to be equal to sum of multiplcan registers");
+            AssertAllZero(result);
+
+            for (i in 0..(lenXs-1)) {
+                (Controlled AddI) ([xs[i]], (LittleEndian(ys), LittleEndian(result[i..i+lenYs])));
+            }
+    }
 //|a>|b> =>  |a-b>|b>
 operation SignedSubtract(a:Qubit[],b:Qubit[],anc:Qubit,anc2:Qubit):Unit{
-    EqualityFactI(Length(a) , Length(b) + 1, "Signed Subtraction, a must have one more quibt than b");
+    EqualityFactI(Length(a) , Length(b) + 1, "Signed Subtraction, a must have one more qubit than b");
     CNOT(a[Length(a)-1],anc2);
     CNOT(b[Length(b)-1],anc2);
     X(anc2);
@@ -130,11 +117,6 @@ operation SignedSubtract(a:Qubit[],b:Qubit[],anc:Qubit,anc2:Qubit):Unit{
     X(anc2);
     Controlled AddI([anc2],(LittleEndian(b[0..(Length(b)-2)]),LittleEndian(a[0..(Length(a)-2)])));
     X(anc2);
-
-
-    let mes = MeasureInteger(LittleEndian(a[0..(Length(a)-2)]));
-    let mesSig = M(a[Length(a)-1]);
-    let mesSigRes = ResultAsBool(mesSig);
 }
 
 
