@@ -10,52 +10,102 @@
     open Microsoft.Quantum.Arrays;
     open Microsoft.Quantum.Measurement;
     newtype SignedLittleEndian = LittleEndian;
+operation TestD() : Unit{
 
-
-
+    let a = Round(1.5*IntAsDouble(4));
+}
 
 
 operation TestCFC() : Unit{
-
-    using ((m,r1,r2,s1,s2,C1) = (Qubit[2],Qubit[2],Qubit[2],Qubit[3],Qubit[3],Qubit())){
-        let len = Length(r1);
+    using ((p,m,r1)=(Qubit[2],Qubit[2],Qubit[2])){
         X(m[1]);
         X(m[0]);
         X(r1[1]);
-        ApplyToEachA(X,r2);
-        X(s1[0]);
+        let len = Length(r1);
+        let num_its = Round(1.5*IntAsDouble(len));
+        mutable numAnc = 0;
+        mutable sum = 0;
+        mutable add = 1;
+        repeat {
+            set sum = sum + add;
+            set add = add + 1;
+            set numAnc = numAnc + 1;
+        }until (num_its <= sum);
 
-        CFCheck(r2,s2,m,C1);
+    using ((r2,s1,s2,quo,qTs2,C1,anc1,anc2) = (Qubit[len],Qubit[len + 1],Qubit[len + 1],Qubit[len],Qubit[2*len + 1],Qubit(),Qubit(),Qubit())){
         
-        ////////CF Iteration//////////////
-        using ((quo,qTs2,quoS,anc1,anc2,s2Pad) = (Qubit[len],Qubit[2*len + 1],Qubit(),Qubit(),Qubit(),Qubit[len + 1])){
-            Message("Initial");
-            DumpMachine();
+        ApplyToEachA(X,r2);
+        X(s2[0]);
+
+        mutable curReg = 0;
+        repeat{
+            for (i in 0..(numAnc-1)){
+                CFCheck(r2,s2,m,C1);//C1 set to 1 if either r2=0 or s2>m
+                X(C1);
+                Controlled CFIteration([C1],(r1,r2,s1,s2,quo,qTs2,anc1,anc2));
+
+                //if either r2=0 or s2>m just copy s2 across and do do iteration
+            }
+            mutable q=0;
+            for (k in 0..(numAnc-2)){
+                set q = (numAnc-2) - k;
+                CFCheck(r2,s2,m,C1);//C1 set to 1 if either r2=0 or s2>m
+                X(C1);
+                Controlled Adjoint CFIteration([C1],(r1,r2,s1,s2,quo,qTs2,anc1,anc2));
+            }
+            set numAnc = numAnc -1;
+            set curReg = curReg + 1;
+        }until(numAnc==0);
+
+       
+
+        // CFCheck(r2,s2,m,C1);//C1 set to 1 if either r2=0 or s2>m
+        // X(C1);
+        
+        // ////////CF Iteration//////////////
+        // DumpMachine();
+        // Controlled CFIteration([C1],(r1,r2,s1,s2,quo,qTs2,anc1,anc2));
+        // DumpMachine();
+        // Controlled Adjoint CFIteration([C1],(r1,r2,s1,s2,quo,qTs2,anc1,anc2));
+        // DumpMachine();
+        
+    ResetAll(r2+s1+s2+quo+qTs2+[C1,anc1,anc2]);
+    }
+    ResetAll(m+r1);
+    }
+
+}
+
+operation CFIteration (r1:Qubit[],r2:Qubit[],s1:Qubit[],s2:Qubit[],quo:Qubit[],qTs2:Qubit[],anc1:Qubit,anc2:Qubit):Unit is Adj + Ctl{
+   
+   let len = Length(r1);
+   using ((s2Pad,quoS) = (Qubit[len+1],Qubit())){
+
+            // Message("Initial");
+            // DumpMachine();
+           
             DivideI(LittleEndian(r1),LittleEndian(r2),LittleEndian(quo));
-            Message("Divided");
-            DumpMachine();
-            for (i in 0..(Length(quo)-1)){
+        //     Message("Divided:");
+        //    DumpMachine();
+            for (i in 0..(len-1)){
                 SWAP(r1[i],r2[i]);
             }
-            Message("Divided and swapped r1 and r2");
-            DumpMachine();
+            // Message("Divided and swapped r1 and r2");
+            // DumpMachine();
             SignedMultiply(s2,quo + [quoS], qTs2);
-            Message("Multiplied s2 and quo to qTs2");
-            DumpMachine();
+            // Message("Multiplied s2 and quo to qTs2");
+            // DumpMachine();
             for (i in 0..(Length(s1)-1)){
                 SWAP(s1[i],s2[i]);
             }
-            Message("Swapped s1 and s2");
-            DumpMachine();
+            // Message("Swapped s1 and s2");
+            //DumpMachine();
 
-            SignedSubtract(s2 + s2Pad,qTs2,anc1,anc2);
-            Message("Subtracted qTs2 from s2");
-            DumpMachine();
-        }
+            SignedSubtract(s2[0..(Length(s2)-2)] + s2Pad + [s2[(Length(s2)-1)]],qTs2,anc1,anc2);
+            // Message("Subtracted qTs2 from s2");
+            //DumpMachine();
+   }
 
-
-    //ResetAll(t1+t2+C1);
-    }
 
 }
 
@@ -99,7 +149,8 @@ operation CFCheck (r2:Qubit[],s2:Qubit[],m:Qubit[],C:Qubit):Unit{
             }
     }
 //|a>|b> =>  |a-b>|b>
-operation SignedSubtract(a:Qubit[],b:Qubit[],anc:Qubit,anc2:Qubit):Unit{
+operation SignedSubtract(a:Qubit[],b:Qubit[],anc:Qubit,anc2:Qubit):Unit is Adj + Ctl{
+    body(...){
     EqualityFactI(Length(a) , Length(b) + 1, "Signed Subtraction, a must have one more qubit than b");
     CNOT(a[Length(a)-1],anc2);
     CNOT(b[Length(b)-1],anc2);
@@ -117,12 +168,15 @@ operation SignedSubtract(a:Qubit[],b:Qubit[],anc:Qubit,anc2:Qubit):Unit{
     X(anc2);
     Controlled AddI([anc2],(LittleEndian(b[0..(Length(b)-2)]),LittleEndian(a[0..(Length(a)-2)])));
     X(anc2);
+    }
+    adjoint invert;
 }
 
 
-operation SignedMultiply(a : Qubit[], b:Qubit[], c:Qubit[]) : Unit{
+operation SignedMultiply(a : Qubit[], b:Qubit[], c:Qubit[]) : Unit is Adj + Ctl{
+    
+    body(...){
     EqualityFactI((2*Length(a) - 1), Length(c), "Signed multiplication requires a (2n-1)-bit result register.");
-
     let aS = a[Length(a) - 1];
     let bS = b[Length(b) - 1];
     let cS = c[Length(c)- 1];
@@ -130,6 +184,8 @@ operation SignedMultiply(a : Qubit[], b:Qubit[], c:Qubit[]) : Unit{
     CNOT(bS,cS);
 
     MultiplyI(LittleEndian(a[0..(Length(a)-2)]),LittleEndian(b[0..(Length(b)-2)]),LittleEndian(c[0..(Length(c)-2)]));
+    }
+    adjoint invert;
 }
 
 
