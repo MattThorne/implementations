@@ -78,7 +78,7 @@ operation TestCFC() : Unit{
                 //Message($"{i+curr},{num_its}");
                 if ((i + curr + 1) == num_its){
                     Message("Found");
-                    CFExtractRes(u,m,r2[(j*len)..((j*len)+len-1)],s1[(j*lens)..((j*lens)+lens-1)],s2[(j*lens)..((j*lens)+lens-1)]);
+                    CFExtractRes(p,m,r2[(j*len)..((j*len)+len-1)],s1[(j*lens)..((j*lens)+lens-1)],s2[(j*lens)..((j*lens)+lens-1)]);
                 }
             
             }
@@ -208,9 +208,9 @@ operation TestCFC() : Unit{
                         Adjoint AddI(LittleEndian(u),LittleEndian(r1));
                     }
             }
+            Message("Round complete");
+            
         }until (numAnc==origNumAnc);
-
-    //ResetAll(r1 + r2+s1+s2+quo+qTs2+C1+anc1+anc2);
     }
     DumpMachine();
     ResetAll(m+u+p);
@@ -223,16 +223,16 @@ operation CFExtractRes(res:Qubit[],m:Qubit[],r2:Qubit[],s1:Qubit[],s2:Qubit[]):U
     using ((c1,c2,c3) = (Qubit(),Qubit(),Qubit())){
         ApplyToEachA(X,r2);
         Controlled X(r2,c1);
-        CompareGTI(LittleEndian(m),LittleEndian(s2[0..(Length(s2)-1)]),c2);
+        CompareGTI(LittleEndian(m),LittleEndian(s2[0..(Length(s2)-2)]),c2);
         Controlled X([c1,c2],c3);
         X(c3);
 
-        Controlled AddI([c1,c2],(LittleEndian(s2[0..(Length(s2)-1)]),LittleEndian(res)));
-        Controlled AddI([c3],(LittleEndian(s1[0..(Length(s1)-1)]),LittleEndian(res)));
+        Controlled AddI([c1,c2],(LittleEndian(s2[0..(Length(s2)-2)]),LittleEndian(res)));
+        Controlled AddI([c3],(LittleEndian(s1[0..(Length(s1)-2)]),LittleEndian(res)));
         
         X(c3);
         Controlled X([c1,c2],c3);
-        Adjoint CompareGTI(LittleEndian(m),LittleEndian(s2[0..(Length(s2)-1)]),c2);
+        Adjoint CompareGTI(LittleEndian(m),LittleEndian(s2[0..(Length(s2)-2)]),c2);
         Controlled X(r2,c1);
         ApplyToEachA(X,r2);
     }
