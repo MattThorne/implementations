@@ -265,11 +265,6 @@ operation CFCMain(p:Qubit[],m:Qubit[],u:Qubit[]):Unit is Ctl{
 
 
 
-
-
-
-
-
 operation CFExtractRes(res:Qubit[],m:Qubit[],r2:Qubit[],s1:Qubit[],s2:Qubit[]):Unit is Ctl{
     body(...){
     using ((c1,c2,c3,mPad) = (Qubit(),Qubit(),Qubit(),Qubit())){

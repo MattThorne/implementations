@@ -1,29 +1,29 @@
 {
   "format": 1,
   "restore": {
-    "/Users/Matt/Documents/Masters/Dissertation/QSharp/Shor/quantum/quantum.csproj": {}
+    "/Users/Matt/Documents/Masters/Dissertation/Quantum/Shor/quantum/quantum.csproj": {}
   },
   "projects": {
-    "/Users/Matt/Documents/Masters/Dissertation/QSharp/Shor/quantum/quantum.csproj": {
+    "/Users/Matt/Documents/Masters/Dissertation/Quantum/Shor/quantum/quantum.csproj": {
       "version": "1.0.0",
       "restore": {
-        "projectUniqueName": "/Users/Matt/Documents/Masters/Dissertation/QSharp/Shor/quantum/quantum.csproj",
+        "projectUniqueName": "/Users/Matt/Documents/Masters/Dissertation/Quantum/Shor/quantum/quantum.csproj",
         "projectName": "quantum",
-        "projectPath": "/Users/Matt/Documents/Masters/Dissertation/QSharp/Shor/quantum/quantum.csproj",
+        "projectPath": "/Users/Matt/Documents/Masters/Dissertation/Quantum/Shor/quantum/quantum.csproj",
         "packagesPath": "/Users/Matt/.nuget/packages/",
-        "outputPath": "/Users/Matt/Documents/Masters/Dissertation/QSharp/Shor/quantum/obj/",
+        "outputPath": "/Users/Matt/Documents/Masters/Dissertation/Quantum/Shor/quantum/obj/",
         "projectStyle": "PackageReference",
         "configFilePaths": [
           "/Users/Matt/.nuget/NuGet/NuGet.Config"
         ],
         "originalTargetFrameworks": [
-          "netstandard2.1"
+          "netcoreapp3.1"
         ],
         "sources": {
           "https://api.nuget.org/v3/index.json": {}
         },
         "frameworks": {
-          "netstandard2.1": {
+          "netcoreapp3.1": {
             "projectReferences": {}
           }
         },
@@ -34,7 +34,7 @@
         }
       },
       "frameworks": {
-        "netstandard2.1": {
+        "netcoreapp3.1": {
           "dependencies": {
             "Microsoft.Quantum.CsharpGeneration": {
               "suppressParent": "All",
@@ -71,7 +71,7 @@
           "assetTargetFallback": true,
           "warn": true,
           "frameworkReferences": {
-            "NETStandard.Library": {
+            "Microsoft.NETCore.App": {
               "privateAssets": "all"
             }
           },

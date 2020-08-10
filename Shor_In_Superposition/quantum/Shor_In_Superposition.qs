@@ -10,8 +10,8 @@
 
   operation FactorInteger() : Unit{
     let num = 4;
-    Message("Hello World");
-    using ((Ms,As,Js,Rs) = (Qubit[num],Qubit[num],Qubit[num*2],Qubit[num])){
+    Message("Hello Quantum World");
+    using ((Ms,As,Js,Rs,Os) = (Qubit[num],Qubit[num],Qubit[num*2],Qubit[num],Qubit[num*2])){
         DumpMachine();
         //|M>|a>|j>
         //|0>|0>|0>|0>
@@ -35,7 +35,12 @@
         SquareAndMultiply(As,Ms,Js,Rs);
         //|M>|a>|J>|R> = |M>|1+ mod (M-1)>|J>|a^j mod M>
 
-        Adjoint QFT(BigEndian(J));
+        Message("Performing QFT on J...");
+        Adjoint QFT(BigEndian(Js));
+
+        CFC(Os,Ms,Js);
+
+
         
         ResetAll((Ms + As + Js + Rs));
       }
@@ -413,6 +418,370 @@ operation MultiplyModM(a:Qubit[],b:Qubit[],Ms:Qubit[],Ts:Qubit[]) : Unit is Adj 
         } 
         Adjoint  MultiplyI(LittleEndian(a),LittleEndian(b),LittleEndian(aS + aSPad));
     }  
+}
+
+
+
+
+
+
+
+//////////Continued Fraction Convergent//////////
+///////////NEEDS REFACTORING//////////////
+
+operation CFC(p:Qubit[],m:Qubit[],u:Qubit[]):Unit{
+    using (c=Qubit()){
+
+        ApplyToEachA(X,u);
+        Controlled X(u,c);
+        ApplyToEachA(X,u);
+        X(c);
+
+        Controlled CFCMain([c],(p,m,u));
+
+        X(c);
+        ApplyToEachA(X,u);
+        Controlled X(u,c);
+        ApplyToEachA(X,u);  
+    }
+        
+}
+
+
+
+operation CFCMain(p:Qubit[],m:Qubit[],u:Qubit[]):Unit is Ctl{
+
+        mutable len = Length(u);
+        let num_its = Ceiling(1.44*IntAsDouble(len + 1));
+        mutable numAnc = 0;
+        mutable sum = 0;
+        mutable add = 1;
+        repeat {
+            set sum = sum + add;
+            set add = add + 1;
+            set numAnc = numAnc + 1;
+        }until (num_its <= sum);
+        let origNumAnc = numAnc;
+
+    using ((r1,r2,s1,s2,quo,qTs2,C1,anc1,anc2) = (Qubit[(len+1)*numAnc],Qubit[(len+1)*numAnc],Qubit[(len + 2)*numAnc],Qubit[(len + 2)*numAnc],Qubit[(len+1)*numAnc],Qubit[(2*(len+1) + 1)*numAnc],Qubit[numAnc],Qubit[numAnc],Qubit[numAnc])){
+        set len = len + 1;
+        let lens = len + 1;
+
+        
+        mutable curReg = 0;
+        mutable curr = 0;
+        mutable j = 0;
+        
+        repeat{
+            ////ASCENDING////////
+            for (i in 0..(numAnc-1)){
+                
+                set j = i+curReg;
+                if (j==0){
+                    //ApplyToEachA(X,r2[0..(len-1)]);
+                    X(r2[len -1]);
+                    X(s1[0]);
+                    AddI(LittleEndian(u),LittleEndian(r1[0..(len -2)]));
+                }
+                
+                
+                if (j != 0){
+                AddI(LittleEndian(r1[((j*len) - len)..((j*len)-1)]),LittleEndian(r1[(j*len)..((j*len)+len-1)]));
+                AddI(LittleEndian(r2[((j*len) - len)..((j*len)-1)]),LittleEndian(r2[(j*len)..((j*len)+len-1)]));
+                
+                AddI(LittleEndian(s1[((j*lens) - lens)..((j*lens)-1)]),LittleEndian(s1[(j*lens)..((j*lens)+lens-1)]));
+                AddI(LittleEndian(s2[((j*lens) - lens)..((j*lens)-1)]),LittleEndian(s2[(j*lens)..((j*lens)+lens-1)]));
+                }
+                
+
+                CFCheck(r2[(j*len)..((j*len)+len-1)],s2[(j*lens)..((j*lens)+lens-1)],m,C1[j]);//C1 set to 1 if either r2=0 or s2>m
+                X(C1[j]);
+                Controlled CFIteration([C1[j]],(r1[(j*len)..((j*len)+len-1)],r2[(j*len)..((j*len)+len-1)],s1[(j*lens)..((j*lens)+lens-1)],s2[(j*lens)..((j*lens)+lens-1)],quo[(j*len)..((j*len)+len-1)],qTs2[(j*(2*len+1))..((j*(2*len+1))+(2*len+1)-1)],anc1[j],anc2[j]));
+                
+                if ((i + curr + 1) == num_its){
+                    CFExtractRes(p,m,r2[(j*len)..((j*len)+len-1)],s1[(j*lens)..((j*lens)+lens-1)],s2[(j*lens)..((j*lens)+lens-1)]);
+                }
+                
+                
+            
+            }
+            ////DESCENDING////////
+            mutable q=0;
+            for (k in 0..(numAnc-2)){
+                set q = (numAnc-2) - k;
+                set j = q+curReg;
+                
+                Controlled Adjoint CFIteration([C1[j]],(r1[(j*len)..((j*len)+len-1)],r2[(j*len)..((j*len)+len-1)],s1[(j*lens)..((j*lens)+lens-1)],s2[(j*lens)..((j*lens)+lens-1)],quo[(j*len)..((j*len)+len-1)],qTs2[(j*(2*len+1))..((j*(2*len+1))+(2*len+1)-1)],anc1[j],anc2[j]));
+                X(C1[j]);
+                Adjoint CFCheck(r2[(j*len)..((j*len)+len-1)],s2[(j*lens)..((j*lens)+lens-1)],m,C1[j]);//C1 set to 1 if either r2=0 or s2>m
+                
+                if (j != 0){
+                Adjoint AddI(LittleEndian(r1[((j*len) - len)..((j*len)-1)]),LittleEndian(r1[(j*len)..((j*len)+len-1)]));
+                Adjoint AddI(LittleEndian(r2[((j*len) - len)..((j*len)-1)]),LittleEndian(r2[(j*len)..((j*len)+len-1)]));
+                
+                Adjoint AddI(LittleEndian(s1[((j*lens) - lens)..((j*lens)-1)]),LittleEndian(s1[(j*lens)..((j*lens)+lens-1)]));
+                Adjoint AddI(LittleEndian(s2[((j*lens) - lens)..((j*lens)-1)]),LittleEndian(s2[(j*lens)..((j*lens)+lens-1)]));
+                }
+                if (j==0){
+                    //ApplyToEachA(X,r2[0..(len-1)]);
+                    X(r2[len -1]);
+                    X(s1[0]);
+                    Adjoint AddI(LittleEndian(u),LittleEndian(r1[0..(len -2)]));
+                }
+
+
+            }
+
+            ///SWAPPING//////
+            if (curReg != (origNumAnc-1)){
+            for (i in 0..(len-1)){
+                SWAP(r1[curReg*len + i],r1[i + (origNumAnc-1)*len]);
+                SWAP(r2[curReg*len + i],r2[i + (origNumAnc-1)*len]);
+                SWAP(quo[curReg*len + i],quo[i + (origNumAnc-1)*len]);
+            }
+            
+            for (i in 0..(lens-1)){
+                SWAP(s1[curReg*lens + i],s1[i + (origNumAnc-1)*lens]);
+                SWAP(s2[curReg*lens + i],s2[i + (origNumAnc-1)*lens]);
+            }
+            
+            for (i in 0..(2*len)){
+                SWAP(qTs2[curReg*(2*len + 1) + i],qTs2[i + (origNumAnc-1)*(2*len + 1)]);
+            }
+            
+            SWAP(C1[curReg],C1[origNumAnc-1]);
+            SWAP(anc1[curReg],anc1[origNumAnc-1]);
+            SWAP(anc2[curReg],anc2[origNumAnc-1]);
+            
+            }
+
+            
+            set curr = curr + numAnc;
+            set numAnc = numAnc -1;
+            set curReg = curReg + 1;
+            
+        }until(numAnc==0);
+
+        /////Resetting////
+        repeat{
+            set curReg = curReg - 1;
+            set numAnc = numAnc + 1;
+            set curr = curr - numAnc;
+            
+            ///SWAPPING//////
+            if (curReg != (origNumAnc-1)){
+            for (i in 0..(len-1)){
+                SWAP(r1[curReg*len + i],r1[i + (origNumAnc-1)*len]);
+                SWAP(r2[curReg*len + i],r2[i + (origNumAnc-1)*len]);
+                SWAP(quo[curReg*len + i],quo[i + (origNumAnc-1)*len]);
+            }
+            for (i in 0..(lens-1)){
+                SWAP(s1[curReg*lens + i],s1[i + (origNumAnc-1)*lens]);
+                SWAP(s2[curReg*lens + i],s2[i + (origNumAnc-1)*lens]);
+            }
+            for (i in 0..(2*len)){
+                SWAP(qTs2[curReg*(2*len + 1) + i],qTs2[i + (origNumAnc-1)*(2*len + 1)]);
+            }
+            SWAP(C1[curReg],C1[origNumAnc-1]);
+            SWAP(anc1[curReg],anc1[origNumAnc-1]);
+            SWAP(anc2[curReg],anc2[origNumAnc-1]);
+            }
+            ////Adjoint DESCENDING////////
+            for (q in 0..(numAnc-2)){
+                set j = q+curReg;
+
+                if (j==0){
+                    //ApplyToEachA(X,r2[0..(len-1)]);
+                    X(r2[len -1]);
+                    X(s1[0]);
+                    AddI(LittleEndian(u),LittleEndian(r1[0..(len - 2)]));
+                }
+
+                if (j != 0){
+                AddI(LittleEndian(r1[((j*len) - len)..((j*len)-1)]),LittleEndian(r1[(j*len)..((j*len)+len-1)]));
+                AddI(LittleEndian(r2[((j*len) - len)..((j*len)-1)]),LittleEndian(r2[(j*len)..((j*len)+len-1)]));
+                
+                AddI(LittleEndian(s1[((j*lens) - lens)..((j*lens)-1)]),LittleEndian(s1[(j*lens)..((j*lens)+lens-1)]));
+                AddI(LittleEndian(s2[((j*lens) - lens)..((j*lens)-1)]),LittleEndian(s2[(j*lens)..((j*lens)+lens-1)]));
+                }
+
+                CFCheck(r2[(j*len)..((j*len)+len-1)],s2[(j*lens)..((j*lens)+lens-1)],m,C1[j]);//C1 set to 1 if either r2=0 or s2>m
+                X(C1[j]);
+                Controlled CFIteration([C1[j]],(r1[(j*len)..((j*len)+len-1)],r2[(j*len)..((j*len)+len-1)],s1[(j*lens)..((j*lens)+lens-1)],s2[(j*lens)..((j*lens)+lens-1)],quo[(j*len)..((j*len)+len-1)],qTs2[(j*(2*len+1))..((j*(2*len+1))+(2*len+1)-1)],anc1[j],anc2[j]));
+
+            }
+            ////Adjoint ASCENDING////////
+            for (k in 0..(numAnc-1)){
+                let i = (numAnc-1) - k;
+                set j = i+curReg;
+
+                Controlled Adjoint CFIteration([C1[j]],(r1[(j*len)..((j*len)+len-1)],r2[(j*len)..((j*len)+len-1)],s1[(j*lens)..((j*lens)+lens-1)],s2[(j*lens)..((j*lens)+lens-1)],quo[(j*len)..((j*len)+len-1)],qTs2[(j*(2*len+1))..((j*(2*len+1))+(2*len+1)-1)],anc1[j],anc2[j]));
+                X(C1[j]);
+                Adjoint CFCheck(r2[(j*len)..((j*len)+len-1)],s2[(j*lens)..((j*lens)+lens-1)],m,C1[j]);//C1 set to 1 if either r2=0 or s2>m
+                
+                
+            
+                if (j != 0){
+                Adjoint AddI(LittleEndian(r1[((j*len) - len)..((j*len)-1)]),LittleEndian(r1[(j*len)..((j*len)+len-1)]));
+                Adjoint AddI(LittleEndian(r2[((j*len) - len)..((j*len)-1)]),LittleEndian(r2[(j*len)..((j*len)+len-1)]));
+                
+                Adjoint AddI(LittleEndian(s1[((j*lens) - lens)..((j*lens)-1)]),LittleEndian(s1[(j*lens)..((j*lens)+lens-1)]));
+                Adjoint AddI(LittleEndian(s2[((j*lens) - lens)..((j*lens)-1)]),LittleEndian(s2[(j*lens)..((j*lens)+lens-1)]));
+                }
+
+                if (j==0){
+                        //ApplyToEachA(X,r2[0..(len-1)]);
+                        X(r2[len - 1]);
+                        X(s1[0]);
+                        Adjoint AddI(LittleEndian(u),LittleEndian(r1[0..(len - 2)]));
+                    }
+            }
+            
+            
+        }until (numAnc==origNumAnc);
+    }
+    }
+
+
+
+
+operation CFExtractRes(res:Qubit[],m:Qubit[],r2:Qubit[],s1:Qubit[],s2:Qubit[]):Unit is Ctl{
+    body(...){
+    using ((c1,c2,c3,mPad) = (Qubit(),Qubit(),Qubit(),Qubit())){
+        ApplyToEachA(X,r2);
+        Controlled X(r2,c1);
+
+        CompareGTI(LittleEndian(s2[0..(Length(s2)-2)]),LittleEndian(m + [mPad]),c2);
+        X(c2);
+
+        Controlled X([c1,c2],c3);
+        X(c3);
+
+        Controlled AddI([c1,c2],(LittleEndian(s2[0..(Length(s2)-2)]),LittleEndian(res + [mPad])));
+
+        Controlled AddI([c3],(LittleEndian(s1[0..(Length(s1)-2)]),LittleEndian(res + [mPad])));
+        
+        X(c3);
+        Controlled X([c1,c2],c3);
+        X(c2);
+        Adjoint CompareGTI(LittleEndian(s2[0..(Length(s2)-2)]),LittleEndian(m + [mPad]),c2);
+        
+        Controlled X(r2,c1);
+        ApplyToEachA(X,r2);
+    }
+    }
+    controlled (cs,...){
+    using ((c1,c2,c3,mPad) = (Qubit(),Qubit(),Qubit(),Qubit())){
+        ApplyToEachA(X,r2);
+        Controlled X(r2,c1);
+
+        CompareGTI(LittleEndian(s2[0..(Length(s2)-2)]),LittleEndian(m + [mPad]),c2);
+        X(c2);
+
+        Controlled X([c1,c2],c3);
+        X(c3);
+
+        Controlled AddI([c1,c2],(LittleEndian(s2[0..(Length(s2)-2)]),LittleEndian(res + [mPad])));
+
+        Controlled AddI([c3],(LittleEndian(s1[0..(Length(s1)-2)]),LittleEndian(res + [mPad])));
+        
+        X(c3);
+        Controlled X([c1,c2],c3);
+        X(c2);
+        Adjoint CompareGTI(LittleEndian(s2[0..(Length(s2)-2)]),LittleEndian(m + [mPad]),c2);
+        
+        Controlled X(r2,c1);
+        ApplyToEachA(X,r2);
+    }
+    }
+
+    
+}
+
+
+
+
+
+operation CFIteration (r1:Qubit[],r2:Qubit[],s1:Qubit[],s2:Qubit[],quo:Qubit[],qTs2:Qubit[],anc1:Qubit,anc2:Qubit):Unit is Adj + Ctl{
+
+   let len = Length(r1);
+   using ((s2Pad,quoS) = (Qubit[len+1],Qubit())){
+
+           
+            DivideI(LittleEndian(r1),LittleEndian(r2),LittleEndian(quo));
+    
+            for (i in 0..(len-1)){
+                SWAP(r1[i],r2[i]);
+            }
+        
+            SignedMultiply(s2,quo + [quoS], qTs2);
+          
+            for (i in 0..(Length(s1)-1)){
+                SWAP(s1[i],s2[i]);
+            }
+            
+            SignedSubtract(s2[0..(Length(s2)-2)] + s2Pad + [s2[(Length(s2)-1)]],qTs2,anc1,anc2);
+           
+   }
+
+
+
+}
+
+operation CFCheck (r2:Qubit[],s2:Qubit[],m:Qubit[],C:Qubit):Unit is Adj + Ctl{
+    body (...){
+        //CHECKING IF anwser found////////
+        
+        using ((C2,C3,mPad) = (Qubit(),Qubit(),Qubit())){
+
+        CompareGTI(LittleEndian(s2[0..(Length(s2)-2)]),LittleEndian(m + [mPad]),C2);//C2 set to 1 if s2>M
+        
+        ApplyToEachA(X,r2);
+        Controlled X(r2,C3);//if r2=0 C3=1
+        ApplyToEachA(X,r2);
+        
+        X(C2);
+        X(C3);
+        Controlled X([C2,C3],C);
+        X(C2);
+        X(C3);
+        X(C);//C1 set to 1 if either r2=0 or s2>m
+
+        ApplyToEachA(X,r2);
+        Controlled X(r2,C3);//Resetting C3
+        ApplyToEachA(X,r2);
+
+        Adjoint CompareGTI(LittleEndian(s2[0..(Length(s2)-2)]),LittleEndian(m + [mPad]),C2);//Resetting C2
+        }
+        /////////////////////////////////////////
+    }
+    controlled (cs,...){
+        //CHECKING IF anwser found////////
+        
+        using ((C2,C3,mPad) = (Qubit(),Qubit(),Qubit())){
+
+        CompareGTI(LittleEndian(s2[0..(Length(s2)-2)]),LittleEndian(m + [mPad]),C2);//C2 set to 1 if s2>M
+        
+        ApplyToEachA(X,r2);
+        Controlled X(r2,C3);//if r2=0 C3=1
+        ApplyToEachA(X,r2);
+        
+        X(C2);
+        X(C3);
+        Controlled X([C2,C3],C);
+        X(C2);
+        X(C3);
+        X(C);//C1 set to 1 if either r2=0 or s2>m
+
+        ApplyToEachA(X,r2);
+        Controlled X(r2,C3);//Resetting C3
+        ApplyToEachA(X,r2);
+
+        Adjoint CompareGTI(LittleEndian(s2[0..(Length(s2)-2)]),LittleEndian(m + [mPad]),C2);//Resetting C2
+        }
+        /////////////////////////////////////////
+    }
+
 }
 
 
