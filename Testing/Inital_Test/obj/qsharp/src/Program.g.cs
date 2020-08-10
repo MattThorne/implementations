@@ -13,87 +13,95 @@ using Microsoft.Quantum.Core;
 using Microsoft.Quantum.Intrinsic;
 using Microsoft.Quantum.Simulation.Core;
 
+[assembly: TypeDeclaration("{\"QualifiedName\":{\"Namespace\":\"Quantum.Bell\",\"Name\":\"SignedLittleEndian\"},\"Attributes\":[],\"Modifiers\":{\"Access\":{\"Case\":\"DefaultAccess\"}},\"SourceFile\":\"/Users/Matt/Documents/Masters/Dissertation/Quantum/Testing/Inital_Test/Program.qs\",\"Position\":{\"Item1\":11,\"Item2\":4},\"SymbolRange\":{\"Item1\":{\"Line\":1,\"Column\":9},\"Item2\":{\"Line\":1,\"Column\":27}},\"Type\":{\"Case\":\"UserDefinedType\",\"Fields\":[{\"Namespace\":\"Microsoft.Quantum.Arithmetic\",\"Name\":\"LittleEndian\",\"Range\":{\"Case\":\"Null\"}}]},\"TypeItems\":{\"Case\":\"QsTuple\",\"Fields\":[[{\"Case\":\"QsTupleItem\",\"Fields\":[{\"Case\":\"Anonymous\",\"Fields\":[{\"Case\":\"UserDefinedType\",\"Fields\":[{\"Namespace\":\"Microsoft.Quantum.Arithmetic\",\"Name\":\"LittleEndian\",\"Range\":{\"Case\":\"Value\",\"Fields\":[{\"Item1\":{\"Line\":1,\"Column\":30},\"Item2\":{\"Line\":1,\"Column\":42}}]}}]}]}]}]]},\"Documentation\":[]}")]
 [assembly: CallableDeclaration("{\"Kind\":{\"Case\":\"TypeConstructor\"},\"QualifiedName\":{\"Namespace\":\"Quantum.Bell\",\"Name\":\"SignedLittleEndian\"},\"Attributes\":[],\"Modifiers\":{\"Access\":{\"Case\":\"DefaultAccess\"}},\"SourceFile\":\"/Users/Matt/Documents/Masters/Dissertation/Quantum/Testing/Inital_Test/Program.qs\",\"Position\":{\"Item1\":11,\"Item2\":4},\"SymbolRange\":{\"Item1\":{\"Line\":1,\"Column\":9},\"Item2\":{\"Line\":1,\"Column\":27}},\"ArgumentTuple\":{\"Case\":\"QsTuple\",\"Fields\":[[{\"Case\":\"QsTupleItem\",\"Fields\":[{\"VariableName\":{\"Case\":\"ValidName\",\"Fields\":[\"__Item1__\"]},\"Type\":{\"Case\":\"UserDefinedType\",\"Fields\":[{\"Namespace\":\"Microsoft.Quantum.Arithmetic\",\"Name\":\"LittleEndian\",\"Range\":{\"Case\":\"Null\"}}]},\"InferredInformation\":{\"IsMutable\":false,\"HasLocalQuantumDependency\":false},\"Position\":{\"Case\":\"Null\"},\"Range\":{\"Item1\":{\"Line\":1,\"Column\":1},\"Item2\":{\"Line\":1,\"Column\":1}}}]}]]},\"Signature\":{\"TypeParameters\":[],\"ArgumentType\":{\"Case\":\"UserDefinedType\",\"Fields\":[{\"Namespace\":\"Microsoft.Quantum.Arithmetic\",\"Name\":\"LittleEndian\",\"Range\":{\"Case\":\"Null\"}}]},\"ReturnType\":{\"Case\":\"UserDefinedType\",\"Fields\":[{\"Namespace\":\"Quantum.Bell\",\"Name\":\"SignedLittleEndian\",\"Range\":{\"Case\":\"Null\"}}]},\"Information\":{\"Characteristics\":{\"Case\":\"EmptySet\"},\"InferredInformation\":{\"IsSelfAdjoint\":false,\"IsIntrinsic\":true}}},\"Documentation\":[]}")]
 [assembly: SpecializationDeclaration("{\"Kind\":{\"Case\":\"QsBody\"},\"TypeArguments\":{\"Case\":\"Null\"},\"Information\":{\"Characteristics\":{\"Case\":\"EmptySet\"},\"InferredInformation\":{\"IsSelfAdjoint\":false,\"IsIntrinsic\":true}},\"Parent\":{\"Namespace\":\"Quantum.Bell\",\"Name\":\"SignedLittleEndian\"},\"Attributes\":[],\"SourceFile\":\"/Users/Matt/Documents/Masters/Dissertation/Quantum/Testing/Inital_Test/Program.qs\",\"Position\":{\"Item1\":11,\"Item2\":4},\"HeaderRange\":{\"Item1\":{\"Line\":1,\"Column\":9},\"Item2\":{\"Line\":1,\"Column\":27}},\"Documentation\":[]}")]
-[assembly: TypeDeclaration("{\"QualifiedName\":{\"Namespace\":\"Quantum.Bell\",\"Name\":\"SignedLittleEndian\"},\"Attributes\":[],\"Modifiers\":{\"Access\":{\"Case\":\"DefaultAccess\"}},\"SourceFile\":\"/Users/Matt/Documents/Masters/Dissertation/Quantum/Testing/Inital_Test/Program.qs\",\"Position\":{\"Item1\":11,\"Item2\":4},\"SymbolRange\":{\"Item1\":{\"Line\":1,\"Column\":9},\"Item2\":{\"Line\":1,\"Column\":27}},\"Type\":{\"Case\":\"UserDefinedType\",\"Fields\":[{\"Namespace\":\"Microsoft.Quantum.Arithmetic\",\"Name\":\"LittleEndian\",\"Range\":{\"Case\":\"Null\"}}]},\"TypeItems\":{\"Case\":\"QsTuple\",\"Fields\":[[{\"Case\":\"QsTupleItem\",\"Fields\":[{\"Case\":\"Anonymous\",\"Fields\":[{\"Case\":\"UserDefinedType\",\"Fields\":[{\"Namespace\":\"Microsoft.Quantum.Arithmetic\",\"Name\":\"LittleEndian\",\"Range\":{\"Case\":\"Value\",\"Fields\":[{\"Item1\":{\"Line\":1,\"Column\":30},\"Item2\":{\"Line\":1,\"Column\":42}}]}}]}]}]}]]},\"Documentation\":[]}")]
 [assembly: CallableDeclaration("{\"Kind\":{\"Case\":\"Operation\"},\"QualifiedName\":{\"Namespace\":\"Quantum.Bell\",\"Name\":\"TestD\"},\"Attributes\":[],\"Modifiers\":{\"Access\":{\"Case\":\"DefaultAccess\"}},\"SourceFile\":\"/Users/Matt/Documents/Masters/Dissertation/Quantum/Testing/Inital_Test/Program.qs\",\"Position\":{\"Item1\":12,\"Item2\":0},\"SymbolRange\":{\"Item1\":{\"Line\":1,\"Column\":11},\"Item2\":{\"Line\":1,\"Column\":16}},\"ArgumentTuple\":{\"Case\":\"QsTuple\",\"Fields\":[[]]},\"Signature\":{\"TypeParameters\":[],\"ArgumentType\":{\"Case\":\"UnitType\"},\"ReturnType\":{\"Case\":\"UnitType\"},\"Information\":{\"Characteristics\":{\"Case\":\"EmptySet\"},\"InferredInformation\":{\"IsSelfAdjoint\":false,\"IsIntrinsic\":false}}},\"Documentation\":[]}")]
 [assembly: SpecializationDeclaration("{\"Kind\":{\"Case\":\"QsBody\"},\"TypeArguments\":{\"Case\":\"Null\"},\"Information\":{\"Characteristics\":{\"Case\":\"EmptySet\"},\"InferredInformation\":{\"IsSelfAdjoint\":false,\"IsIntrinsic\":false}},\"Parent\":{\"Namespace\":\"Quantum.Bell\",\"Name\":\"TestD\"},\"Attributes\":[],\"SourceFile\":\"/Users/Matt/Documents/Masters/Dissertation/Quantum/Testing/Inital_Test/Program.qs\",\"Position\":{\"Item1\":12,\"Item2\":0},\"HeaderRange\":{\"Item1\":{\"Line\":1,\"Column\":11},\"Item2\":{\"Line\":1,\"Column\":16}},\"Documentation\":[]}")]
-[assembly: CallableDeclaration("{\"Kind\":{\"Case\":\"Operation\"},\"QualifiedName\":{\"Namespace\":\"Quantum.Bell\",\"Name\":\"TestCFC\"},\"Attributes\":[],\"Modifiers\":{\"Access\":{\"Case\":\"DefaultAccess\"}},\"SourceFile\":\"/Users/Matt/Documents/Masters/Dissertation/Quantum/Testing/Inital_Test/Program.qs\",\"Position\":{\"Item1\":27,\"Item2\":0},\"SymbolRange\":{\"Item1\":{\"Line\":1,\"Column\":11},\"Item2\":{\"Line\":1,\"Column\":18}},\"ArgumentTuple\":{\"Case\":\"QsTuple\",\"Fields\":[[]]},\"Signature\":{\"TypeParameters\":[],\"ArgumentType\":{\"Case\":\"UnitType\"},\"ReturnType\":{\"Case\":\"UnitType\"},\"Information\":{\"Characteristics\":{\"Case\":\"EmptySet\"},\"InferredInformation\":{\"IsSelfAdjoint\":false,\"IsIntrinsic\":false}}},\"Documentation\":[]}")]
-[assembly: SpecializationDeclaration("{\"Kind\":{\"Case\":\"QsBody\"},\"TypeArguments\":{\"Case\":\"Null\"},\"Information\":{\"Characteristics\":{\"Case\":\"EmptySet\"},\"InferredInformation\":{\"IsSelfAdjoint\":false,\"IsIntrinsic\":false}},\"Parent\":{\"Namespace\":\"Quantum.Bell\",\"Name\":\"TestCFC\"},\"Attributes\":[],\"SourceFile\":\"/Users/Matt/Documents/Masters/Dissertation/Quantum/Testing/Inital_Test/Program.qs\",\"Position\":{\"Item1\":27,\"Item2\":0},\"HeaderRange\":{\"Item1\":{\"Line\":1,\"Column\":11},\"Item2\":{\"Line\":1,\"Column\":18}},\"Documentation\":[]}")]
-[assembly: CallableDeclaration("{\"Kind\":{\"Case\":\"Operation\"},\"QualifiedName\":{\"Namespace\":\"Quantum.Bell\",\"Name\":\"CFExtractRes\"},\"Attributes\":[],\"Modifiers\":{\"Access\":{\"Case\":\"DefaultAccess\"}},\"SourceFile\":\"/Users/Matt/Documents/Masters/Dissertation/Quantum/Testing/Inital_Test/Program.qs\",\"Position\":{\"Item1\":229,\"Item2\":0},\"SymbolRange\":{\"Item1\":{\"Line\":1,\"Column\":11},\"Item2\":{\"Line\":1,\"Column\":23}},\"ArgumentTuple\":{\"Case\":\"QsTuple\",\"Fields\":[[{\"Case\":\"QsTupleItem\",\"Fields\":[{\"VariableName\":{\"Case\":\"ValidName\",\"Fields\":[\"res\"]},\"Type\":{\"Case\":\"ArrayType\",\"Fields\":[{\"Case\":\"Qubit\"}]},\"InferredInformation\":{\"IsMutable\":false,\"HasLocalQuantumDependency\":false},\"Position\":{\"Case\":\"Null\"},\"Range\":{\"Item1\":{\"Line\":1,\"Column\":24},\"Item2\":{\"Line\":1,\"Column\":27}}}]},{\"Case\":\"QsTupleItem\",\"Fields\":[{\"VariableName\":{\"Case\":\"ValidName\",\"Fields\":[\"m\"]},\"Type\":{\"Case\":\"ArrayType\",\"Fields\":[{\"Case\":\"Qubit\"}]},\"InferredInformation\":{\"IsMutable\":false,\"HasLocalQuantumDependency\":false},\"Position\":{\"Case\":\"Null\"},\"Range\":{\"Item1\":{\"Line\":1,\"Column\":36},\"Item2\":{\"Line\":1,\"Column\":37}}}]},{\"Case\":\"QsTupleItem\",\"Fields\":[{\"VariableName\":{\"Case\":\"ValidName\",\"Fields\":[\"r2\"]},\"Type\":{\"Case\":\"ArrayType\",\"Fields\":[{\"Case\":\"Qubit\"}]},\"InferredInformation\":{\"IsMutable\":false,\"HasLocalQuantumDependency\":false},\"Position\":{\"Case\":\"Null\"},\"Range\":{\"Item1\":{\"Line\":1,\"Column\":46},\"Item2\":{\"Line\":1,\"Column\":48}}}]},{\"Case\":\"QsTupleItem\",\"Fields\":[{\"VariableName\":{\"Case\":\"ValidName\",\"Fields\":[\"s1\"]},\"Type\":{\"Case\":\"ArrayType\",\"Fields\":[{\"Case\":\"Qubit\"}]},\"InferredInformation\":{\"IsMutable\":false,\"HasLocalQuantumDependency\":false},\"Position\":{\"Case\":\"Null\"},\"Range\":{\"Item1\":{\"Line\":1,\"Column\":57},\"Item2\":{\"Line\":1,\"Column\":59}}}]},{\"Case\":\"QsTupleItem\",\"Fields\":[{\"VariableName\":{\"Case\":\"ValidName\",\"Fields\":[\"s2\"]},\"Type\":{\"Case\":\"ArrayType\",\"Fields\":[{\"Case\":\"Qubit\"}]},\"InferredInformation\":{\"IsMutable\":false,\"HasLocalQuantumDependency\":false},\"Position\":{\"Case\":\"Null\"},\"Range\":{\"Item1\":{\"Line\":1,\"Column\":68},\"Item2\":{\"Line\":1,\"Column\":70}}}]}]]},\"Signature\":{\"TypeParameters\":[],\"ArgumentType\":{\"Case\":\"TupleType\",\"Fields\":[[{\"Case\":\"ArrayType\",\"Fields\":[{\"Case\":\"Qubit\"}]},{\"Case\":\"ArrayType\",\"Fields\":[{\"Case\":\"Qubit\"}]},{\"Case\":\"ArrayType\",\"Fields\":[{\"Case\":\"Qubit\"}]},{\"Case\":\"ArrayType\",\"Fields\":[{\"Case\":\"Qubit\"}]},{\"Case\":\"ArrayType\",\"Fields\":[{\"Case\":\"Qubit\"}]}]]},\"ReturnType\":{\"Case\":\"UnitType\"},\"Information\":{\"Characteristics\":{\"Case\":\"EmptySet\"},\"InferredInformation\":{\"IsSelfAdjoint\":false,\"IsIntrinsic\":false}}},\"Documentation\":[]}")]
-[assembly: SpecializationDeclaration("{\"Kind\":{\"Case\":\"QsBody\"},\"TypeArguments\":{\"Case\":\"Null\"},\"Information\":{\"Characteristics\":{\"Case\":\"EmptySet\"},\"InferredInformation\":{\"IsSelfAdjoint\":false,\"IsIntrinsic\":false}},\"Parent\":{\"Namespace\":\"Quantum.Bell\",\"Name\":\"CFExtractRes\"},\"Attributes\":[],\"SourceFile\":\"/Users/Matt/Documents/Masters/Dissertation/Quantum/Testing/Inital_Test/Program.qs\",\"Position\":{\"Item1\":229,\"Item2\":0},\"HeaderRange\":{\"Item1\":{\"Line\":1,\"Column\":11},\"Item2\":{\"Line\":1,\"Column\":23}},\"Documentation\":[]}")]
-[assembly: CallableDeclaration("{\"Kind\":{\"Case\":\"Operation\"},\"QualifiedName\":{\"Namespace\":\"Quantum.Bell\",\"Name\":\"CFIteration\"},\"Attributes\":[],\"Modifiers\":{\"Access\":{\"Case\":\"DefaultAccess\"}},\"SourceFile\":\"/Users/Matt/Documents/Masters/Dissertation/Quantum/Testing/Inital_Test/Program.qs\",\"Position\":{\"Item1\":254,\"Item2\":0},\"SymbolRange\":{\"Item1\":{\"Line\":1,\"Column\":11},\"Item2\":{\"Line\":1,\"Column\":22}},\"ArgumentTuple\":{\"Case\":\"QsTuple\",\"Fields\":[[{\"Case\":\"QsTupleItem\",\"Fields\":[{\"VariableName\":{\"Case\":\"ValidName\",\"Fields\":[\"r1\"]},\"Type\":{\"Case\":\"ArrayType\",\"Fields\":[{\"Case\":\"Qubit\"}]},\"InferredInformation\":{\"IsMutable\":false,\"HasLocalQuantumDependency\":false},\"Position\":{\"Case\":\"Null\"},\"Range\":{\"Item1\":{\"Line\":1,\"Column\":24},\"Item2\":{\"Line\":1,\"Column\":26}}}]},{\"Case\":\"QsTupleItem\",\"Fields\":[{\"VariableName\":{\"Case\":\"ValidName\",\"Fields\":[\"r2\"]},\"Type\":{\"Case\":\"ArrayType\",\"Fields\":[{\"Case\":\"Qubit\"}]},\"InferredInformation\":{\"IsMutable\":false,\"HasLocalQuantumDependency\":false},\"Position\":{\"Case\":\"Null\"},\"Range\":{\"Item1\":{\"Line\":1,\"Column\":35},\"Item2\":{\"Line\":1,\"Column\":37}}}]},{\"Case\":\"QsTupleItem\",\"Fields\":[{\"VariableName\":{\"Case\":\"ValidName\",\"Fields\":[\"s1\"]},\"Type\":{\"Case\":\"ArrayType\",\"Fields\":[{\"Case\":\"Qubit\"}]},\"InferredInformation\":{\"IsMutable\":false,\"HasLocalQuantumDependency\":false},\"Position\":{\"Case\":\"Null\"},\"Range\":{\"Item1\":{\"Line\":1,\"Column\":46},\"Item2\":{\"Line\":1,\"Column\":48}}}]},{\"Case\":\"QsTupleItem\",\"Fields\":[{\"VariableName\":{\"Case\":\"ValidName\",\"Fields\":[\"s2\"]},\"Type\":{\"Case\":\"ArrayType\",\"Fields\":[{\"Case\":\"Qubit\"}]},\"InferredInformation\":{\"IsMutable\":false,\"HasLocalQuantumDependency\":false},\"Position\":{\"Case\":\"Null\"},\"Range\":{\"Item1\":{\"Line\":1,\"Column\":57},\"Item2\":{\"Line\":1,\"Column\":59}}}]},{\"Case\":\"QsTupleItem\",\"Fields\":[{\"VariableName\":{\"Case\":\"ValidName\",\"Fields\":[\"quo\"]},\"Type\":{\"Case\":\"ArrayType\",\"Fields\":[{\"Case\":\"Qubit\"}]},\"InferredInformation\":{\"IsMutable\":false,\"HasLocalQuantumDependency\":false},\"Position\":{\"Case\":\"Null\"},\"Range\":{\"Item1\":{\"Line\":1,\"Column\":68},\"Item2\":{\"Line\":1,\"Column\":71}}}]},{\"Case\":\"QsTupleItem\",\"Fields\":[{\"VariableName\":{\"Case\":\"ValidName\",\"Fields\":[\"qTs2\"]},\"Type\":{\"Case\":\"ArrayType\",\"Fields\":[{\"Case\":\"Qubit\"}]},\"InferredInformation\":{\"IsMutable\":false,\"HasLocalQuantumDependency\":false},\"Position\":{\"Case\":\"Null\"},\"Range\":{\"Item1\":{\"Line\":1,\"Column\":80},\"Item2\":{\"Line\":1,\"Column\":84}}}]},{\"Case\":\"QsTupleItem\",\"Fields\":[{\"VariableName\":{\"Case\":\"ValidName\",\"Fields\":[\"anc1\"]},\"Type\":{\"Case\":\"Qubit\"},\"InferredInformation\":{\"IsMutable\":false,\"HasLocalQuantumDependency\":false},\"Position\":{\"Case\":\"Null\"},\"Range\":{\"Item1\":{\"Line\":1,\"Column\":93},\"Item2\":{\"Line\":1,\"Column\":97}}}]},{\"Case\":\"QsTupleItem\",\"Fields\":[{\"VariableName\":{\"Case\":\"ValidName\",\"Fields\":[\"anc2\"]},\"Type\":{\"Case\":\"Qubit\"},\"InferredInformation\":{\"IsMutable\":false,\"HasLocalQuantumDependency\":false},\"Position\":{\"Case\":\"Null\"},\"Range\":{\"Item1\":{\"Line\":1,\"Column\":104},\"Item2\":{\"Line\":1,\"Column\":108}}}]}]]},\"Signature\":{\"TypeParameters\":[],\"ArgumentType\":{\"Case\":\"TupleType\",\"Fields\":[[{\"Case\":\"ArrayType\",\"Fields\":[{\"Case\":\"Qubit\"}]},{\"Case\":\"ArrayType\",\"Fields\":[{\"Case\":\"Qubit\"}]},{\"Case\":\"ArrayType\",\"Fields\":[{\"Case\":\"Qubit\"}]},{\"Case\":\"ArrayType\",\"Fields\":[{\"Case\":\"Qubit\"}]},{\"Case\":\"ArrayType\",\"Fields\":[{\"Case\":\"Qubit\"}]},{\"Case\":\"ArrayType\",\"Fields\":[{\"Case\":\"Qubit\"}]},{\"Case\":\"Qubit\"},{\"Case\":\"Qubit\"}]]},\"ReturnType\":{\"Case\":\"UnitType\"},\"Information\":{\"Characteristics\":{\"Case\":\"Union\",\"Fields\":[{\"Case\":\"SimpleSet\",\"Fields\":[{\"Case\":\"Adjointable\"}]},{\"Case\":\"SimpleSet\",\"Fields\":[{\"Case\":\"Controllable\"}]}]},\"InferredInformation\":{\"IsSelfAdjoint\":false,\"IsIntrinsic\":false}}},\"Documentation\":[]}")]
-[assembly: SpecializationDeclaration("{\"Kind\":{\"Case\":\"QsBody\"},\"TypeArguments\":{\"Case\":\"Null\"},\"Information\":{\"Characteristics\":{\"Case\":\"Union\",\"Fields\":[{\"Case\":\"SimpleSet\",\"Fields\":[{\"Case\":\"Adjointable\"}]},{\"Case\":\"SimpleSet\",\"Fields\":[{\"Case\":\"Controllable\"}]}]},\"InferredInformation\":{\"IsSelfAdjoint\":false,\"IsIntrinsic\":false}},\"Parent\":{\"Namespace\":\"Quantum.Bell\",\"Name\":\"CFIteration\"},\"Attributes\":[],\"SourceFile\":\"/Users/Matt/Documents/Masters/Dissertation/Quantum/Testing/Inital_Test/Program.qs\",\"Position\":{\"Item1\":254,\"Item2\":0},\"HeaderRange\":{\"Item1\":{\"Line\":1,\"Column\":11},\"Item2\":{\"Line\":1,\"Column\":22}},\"Documentation\":[]}")]
-[assembly: SpecializationDeclaration("{\"Kind\":{\"Case\":\"QsAdjoint\"},\"TypeArguments\":{\"Case\":\"Null\"},\"Information\":{\"Characteristics\":{\"Case\":\"Union\",\"Fields\":[{\"Case\":\"SimpleSet\",\"Fields\":[{\"Case\":\"Adjointable\"}]},{\"Case\":\"SimpleSet\",\"Fields\":[{\"Case\":\"Controllable\"}]}]},\"InferredInformation\":{\"IsSelfAdjoint\":false,\"IsIntrinsic\":false}},\"Parent\":{\"Namespace\":\"Quantum.Bell\",\"Name\":\"CFIteration\"},\"Attributes\":[],\"SourceFile\":\"/Users/Matt/Documents/Masters/Dissertation/Quantum/Testing/Inital_Test/Program.qs\",\"Position\":{\"Item1\":254,\"Item2\":0},\"HeaderRange\":{\"Item1\":{\"Line\":1,\"Column\":124},\"Item2\":{\"Line\":1,\"Column\":133}},\"Documentation\":[\"automatically generated QsAdjoint specialization for Quantum.Bell.CFIteration\"]}")]
-[assembly: SpecializationDeclaration("{\"Kind\":{\"Case\":\"QsControlled\"},\"TypeArguments\":{\"Case\":\"Null\"},\"Information\":{\"Characteristics\":{\"Case\":\"Union\",\"Fields\":[{\"Case\":\"SimpleSet\",\"Fields\":[{\"Case\":\"Adjointable\"}]},{\"Case\":\"SimpleSet\",\"Fields\":[{\"Case\":\"Controllable\"}]}]},\"InferredInformation\":{\"IsSelfAdjoint\":false,\"IsIntrinsic\":false}},\"Parent\":{\"Namespace\":\"Quantum.Bell\",\"Name\":\"CFIteration\"},\"Attributes\":[],\"SourceFile\":\"/Users/Matt/Documents/Masters/Dissertation/Quantum/Testing/Inital_Test/Program.qs\",\"Position\":{\"Item1\":254,\"Item2\":0},\"HeaderRange\":{\"Item1\":{\"Line\":1,\"Column\":124},\"Item2\":{\"Line\":1,\"Column\":133}},\"Documentation\":[\"automatically generated QsControlled specialization for Quantum.Bell.CFIteration\"]}")]
-[assembly: SpecializationDeclaration("{\"Kind\":{\"Case\":\"QsControlledAdjoint\"},\"TypeArguments\":{\"Case\":\"Null\"},\"Information\":{\"Characteristics\":{\"Case\":\"Union\",\"Fields\":[{\"Case\":\"SimpleSet\",\"Fields\":[{\"Case\":\"Adjointable\"}]},{\"Case\":\"SimpleSet\",\"Fields\":[{\"Case\":\"Controllable\"}]}]},\"InferredInformation\":{\"IsSelfAdjoint\":false,\"IsIntrinsic\":false}},\"Parent\":{\"Namespace\":\"Quantum.Bell\",\"Name\":\"CFIteration\"},\"Attributes\":[],\"SourceFile\":\"/Users/Matt/Documents/Masters/Dissertation/Quantum/Testing/Inital_Test/Program.qs\",\"Position\":{\"Item1\":254,\"Item2\":0},\"HeaderRange\":{\"Item1\":{\"Line\":1,\"Column\":124},\"Item2\":{\"Line\":1,\"Column\":133}},\"Documentation\":[\"automatically generated QsControlledAdjoint specialization for Quantum.Bell.CFIteration\"]}")]
-[assembly: CallableDeclaration("{\"Kind\":{\"Case\":\"Operation\"},\"QualifiedName\":{\"Namespace\":\"Quantum.Bell\",\"Name\":\"CFCheck\"},\"Attributes\":[],\"Modifiers\":{\"Access\":{\"Case\":\"DefaultAccess\"}},\"SourceFile\":\"/Users/Matt/Documents/Masters/Dissertation/Quantum/Testing/Inital_Test/Program.qs\",\"Position\":{\"Item1\":302,\"Item2\":0},\"SymbolRange\":{\"Item1\":{\"Line\":1,\"Column\":11},\"Item2\":{\"Line\":1,\"Column\":18}},\"ArgumentTuple\":{\"Case\":\"QsTuple\",\"Fields\":[[{\"Case\":\"QsTupleItem\",\"Fields\":[{\"VariableName\":{\"Case\":\"ValidName\",\"Fields\":[\"r2\"]},\"Type\":{\"Case\":\"ArrayType\",\"Fields\":[{\"Case\":\"Qubit\"}]},\"InferredInformation\":{\"IsMutable\":false,\"HasLocalQuantumDependency\":false},\"Position\":{\"Case\":\"Null\"},\"Range\":{\"Item1\":{\"Line\":1,\"Column\":20},\"Item2\":{\"Line\":1,\"Column\":22}}}]},{\"Case\":\"QsTupleItem\",\"Fields\":[{\"VariableName\":{\"Case\":\"ValidName\",\"Fields\":[\"s2\"]},\"Type\":{\"Case\":\"ArrayType\",\"Fields\":[{\"Case\":\"Qubit\"}]},\"InferredInformation\":{\"IsMutable\":false,\"HasLocalQuantumDependency\":false},\"Position\":{\"Case\":\"Null\"},\"Range\":{\"Item1\":{\"Line\":1,\"Column\":31},\"Item2\":{\"Line\":1,\"Column\":33}}}]},{\"Case\":\"QsTupleItem\",\"Fields\":[{\"VariableName\":{\"Case\":\"ValidName\",\"Fields\":[\"m\"]},\"Type\":{\"Case\":\"ArrayType\",\"Fields\":[{\"Case\":\"Qubit\"}]},\"InferredInformation\":{\"IsMutable\":false,\"HasLocalQuantumDependency\":false},\"Position\":{\"Case\":\"Null\"},\"Range\":{\"Item1\":{\"Line\":1,\"Column\":42},\"Item2\":{\"Line\":1,\"Column\":43}}}]},{\"Case\":\"QsTupleItem\",\"Fields\":[{\"VariableName\":{\"Case\":\"ValidName\",\"Fields\":[\"C\"]},\"Type\":{\"Case\":\"Qubit\"},\"InferredInformation\":{\"IsMutable\":false,\"HasLocalQuantumDependency\":false},\"Position\":{\"Case\":\"Null\"},\"Range\":{\"Item1\":{\"Line\":1,\"Column\":52},\"Item2\":{\"Line\":1,\"Column\":53}}}]}]]},\"Signature\":{\"TypeParameters\":[],\"ArgumentType\":{\"Case\":\"TupleType\",\"Fields\":[[{\"Case\":\"ArrayType\",\"Fields\":[{\"Case\":\"Qubit\"}]},{\"Case\":\"ArrayType\",\"Fields\":[{\"Case\":\"Qubit\"}]},{\"Case\":\"ArrayType\",\"Fields\":[{\"Case\":\"Qubit\"}]},{\"Case\":\"Qubit\"}]]},\"ReturnType\":{\"Case\":\"UnitType\"},\"Information\":{\"Characteristics\":{\"Case\":\"SimpleSet\",\"Fields\":[{\"Case\":\"Adjointable\"}]},\"InferredInformation\":{\"IsSelfAdjoint\":false,\"IsIntrinsic\":false}}},\"Documentation\":[]}")]
-[assembly: SpecializationDeclaration("{\"Kind\":{\"Case\":\"QsBody\"},\"TypeArguments\":{\"Case\":\"Null\"},\"Information\":{\"Characteristics\":{\"Case\":\"SimpleSet\",\"Fields\":[{\"Case\":\"Adjointable\"}]},\"InferredInformation\":{\"IsSelfAdjoint\":false,\"IsIntrinsic\":false}},\"Parent\":{\"Namespace\":\"Quantum.Bell\",\"Name\":\"CFCheck\"},\"Attributes\":[],\"SourceFile\":\"/Users/Matt/Documents/Masters/Dissertation/Quantum/Testing/Inital_Test/Program.qs\",\"Position\":{\"Item1\":302,\"Item2\":0},\"HeaderRange\":{\"Item1\":{\"Line\":1,\"Column\":11},\"Item2\":{\"Line\":1,\"Column\":18}},\"Documentation\":[]}")]
-[assembly: SpecializationDeclaration("{\"Kind\":{\"Case\":\"QsAdjoint\"},\"TypeArguments\":{\"Case\":\"Null\"},\"Information\":{\"Characteristics\":{\"Case\":\"SimpleSet\",\"Fields\":[{\"Case\":\"Adjointable\"}]},\"InferredInformation\":{\"IsSelfAdjoint\":false,\"IsIntrinsic\":false}},\"Parent\":{\"Namespace\":\"Quantum.Bell\",\"Name\":\"CFCheck\"},\"Attributes\":[],\"SourceFile\":\"/Users/Matt/Documents/Masters/Dissertation/Quantum/Testing/Inital_Test/Program.qs\",\"Position\":{\"Item1\":302,\"Item2\":0},\"HeaderRange\":{\"Item1\":{\"Line\":1,\"Column\":69},\"Item2\":{\"Line\":1,\"Column\":72}},\"Documentation\":[\"automatically generated QsAdjoint specialization for Quantum.Bell.CFCheck\"]}")]
-[assembly: CallableDeclaration("{\"Kind\":{\"Case\":\"Operation\"},\"QualifiedName\":{\"Namespace\":\"Quantum.Bell\",\"Name\":\"MinimalMultiplyI\"},\"Attributes\":[],\"Modifiers\":{\"Access\":{\"Case\":\"DefaultAccess\"}},\"SourceFile\":\"/Users/Matt/Documents/Masters/Dissertation/Quantum/Testing/Inital_Test/Program.qs\",\"Position\":{\"Item1\":329,\"Item2\":2},\"SymbolRange\":{\"Item1\":{\"Line\":1,\"Column\":11},\"Item2\":{\"Line\":1,\"Column\":27}},\"ArgumentTuple\":{\"Case\":\"QsTuple\",\"Fields\":[[{\"Case\":\"QsTupleItem\",\"Fields\":[{\"VariableName\":{\"Case\":\"ValidName\",\"Fields\":[\"xs\"]},\"Type\":{\"Case\":\"ArrayType\",\"Fields\":[{\"Case\":\"Qubit\"}]},\"InferredInformation\":{\"IsMutable\":false,\"HasLocalQuantumDependency\":false},\"Position\":{\"Case\":\"Null\"},\"Range\":{\"Item1\":{\"Line\":1,\"Column\":29},\"Item2\":{\"Line\":1,\"Column\":31}}}]},{\"Case\":\"QsTupleItem\",\"Fields\":[{\"VariableName\":{\"Case\":\"ValidName\",\"Fields\":[\"ys\"]},\"Type\":{\"Case\":\"ArrayType\",\"Fields\":[{\"Case\":\"Qubit\"}]},\"InferredInformation\":{\"IsMutable\":false,\"HasLocalQuantumDependency\":false},\"Position\":{\"Case\":\"Null\"},\"Range\":{\"Item1\":{\"Line\":1,\"Column\":42},\"Item2\":{\"Line\":1,\"Column\":44}}}]},{\"Case\":\"QsTupleItem\",\"Fields\":[{\"VariableName\":{\"Case\":\"ValidName\",\"Fields\":[\"result\"]},\"Type\":{\"Case\":\"ArrayType\",\"Fields\":[{\"Case\":\"Qubit\"}]},\"InferredInformation\":{\"IsMutable\":false,\"HasLocalQuantumDependency\":false},\"Position\":{\"Case\":\"Null\"},\"Range\":{\"Item1\":{\"Line\":1,\"Column\":55},\"Item2\":{\"Line\":1,\"Column\":61}}}]}]]},\"Signature\":{\"TypeParameters\":[],\"ArgumentType\":{\"Case\":\"TupleType\",\"Fields\":[[{\"Case\":\"ArrayType\",\"Fields\":[{\"Case\":\"Qubit\"}]},{\"Case\":\"ArrayType\",\"Fields\":[{\"Case\":\"Qubit\"}]},{\"Case\":\"ArrayType\",\"Fields\":[{\"Case\":\"Qubit\"}]}]]},\"ReturnType\":{\"Case\":\"UnitType\"},\"Information\":{\"Characteristics\":{\"Case\":\"EmptySet\"},\"InferredInformation\":{\"IsSelfAdjoint\":false,\"IsIntrinsic\":false}}},\"Documentation\":[]}")]
-[assembly: SpecializationDeclaration("{\"Kind\":{\"Case\":\"QsBody\"},\"TypeArguments\":{\"Case\":\"Null\"},\"Information\":{\"Characteristics\":{\"Case\":\"EmptySet\"},\"InferredInformation\":{\"IsSelfAdjoint\":false,\"IsIntrinsic\":false}},\"Parent\":{\"Namespace\":\"Quantum.Bell\",\"Name\":\"MinimalMultiplyI\"},\"Attributes\":[],\"SourceFile\":\"/Users/Matt/Documents/Masters/Dissertation/Quantum/Testing/Inital_Test/Program.qs\",\"Position\":{\"Item1\":329,\"Item2\":2},\"HeaderRange\":{\"Item1\":{\"Line\":1,\"Column\":11},\"Item2\":{\"Line\":1,\"Column\":27}},\"Documentation\":[]}")]
-[assembly: CallableDeclaration("{\"Kind\":{\"Case\":\"Operation\"},\"QualifiedName\":{\"Namespace\":\"Quantum.Bell\",\"Name\":\"SignedSubtract\"},\"Attributes\":[],\"Modifiers\":{\"Access\":{\"Case\":\"DefaultAccess\"}},\"SourceFile\":\"/Users/Matt/Documents/Masters/Dissertation/Quantum/Testing/Inital_Test/Program.qs\",\"Position\":{\"Item1\":342,\"Item2\":0},\"SymbolRange\":{\"Item1\":{\"Line\":1,\"Column\":11},\"Item2\":{\"Line\":1,\"Column\":25}},\"ArgumentTuple\":{\"Case\":\"QsTuple\",\"Fields\":[[{\"Case\":\"QsTupleItem\",\"Fields\":[{\"VariableName\":{\"Case\":\"ValidName\",\"Fields\":[\"a\"]},\"Type\":{\"Case\":\"ArrayType\",\"Fields\":[{\"Case\":\"Qubit\"}]},\"InferredInformation\":{\"IsMutable\":false,\"HasLocalQuantumDependency\":false},\"Position\":{\"Case\":\"Null\"},\"Range\":{\"Item1\":{\"Line\":1,\"Column\":26},\"Item2\":{\"Line\":1,\"Column\":27}}}]},{\"Case\":\"QsTupleItem\",\"Fields\":[{\"VariableName\":{\"Case\":\"ValidName\",\"Fields\":[\"b\"]},\"Type\":{\"Case\":\"ArrayType\",\"Fields\":[{\"Case\":\"Qubit\"}]},\"InferredInformation\":{\"IsMutable\":false,\"HasLocalQuantumDependency\":false},\"Position\":{\"Case\":\"Null\"},\"Range\":{\"Item1\":{\"Line\":1,\"Column\":36},\"Item2\":{\"Line\":1,\"Column\":37}}}]},{\"Case\":\"QsTupleItem\",\"Fields\":[{\"VariableName\":{\"Case\":\"ValidName\",\"Fields\":[\"anc\"]},\"Type\":{\"Case\":\"Qubit\"},\"InferredInformation\":{\"IsMutable\":false,\"HasLocalQuantumDependency\":false},\"Position\":{\"Case\":\"Null\"},\"Range\":{\"Item1\":{\"Line\":1,\"Column\":46},\"Item2\":{\"Line\":1,\"Column\":49}}}]},{\"Case\":\"QsTupleItem\",\"Fields\":[{\"VariableName\":{\"Case\":\"ValidName\",\"Fields\":[\"anc2\"]},\"Type\":{\"Case\":\"Qubit\"},\"InferredInformation\":{\"IsMutable\":false,\"HasLocalQuantumDependency\":false},\"Position\":{\"Case\":\"Null\"},\"Range\":{\"Item1\":{\"Line\":1,\"Column\":56},\"Item2\":{\"Line\":1,\"Column\":60}}}]}]]},\"Signature\":{\"TypeParameters\":[],\"ArgumentType\":{\"Case\":\"TupleType\",\"Fields\":[[{\"Case\":\"ArrayType\",\"Fields\":[{\"Case\":\"Qubit\"}]},{\"Case\":\"ArrayType\",\"Fields\":[{\"Case\":\"Qubit\"}]},{\"Case\":\"Qubit\"},{\"Case\":\"Qubit\"}]]},\"ReturnType\":{\"Case\":\"UnitType\"},\"Information\":{\"Characteristics\":{\"Case\":\"Union\",\"Fields\":[{\"Case\":\"SimpleSet\",\"Fields\":[{\"Case\":\"Adjointable\"}]},{\"Case\":\"SimpleSet\",\"Fields\":[{\"Case\":\"Controllable\"}]}]},\"InferredInformation\":{\"IsSelfAdjoint\":false,\"IsIntrinsic\":false}}},\"Documentation\":[]}")]
-[assembly: SpecializationDeclaration("{\"Kind\":{\"Case\":\"QsBody\"},\"TypeArguments\":{\"Case\":\"Null\"},\"Information\":{\"Characteristics\":{\"Case\":\"Union\",\"Fields\":[{\"Case\":\"SimpleSet\",\"Fields\":[{\"Case\":\"Adjointable\"}]},{\"Case\":\"SimpleSet\",\"Fields\":[{\"Case\":\"Controllable\"}]}]},\"InferredInformation\":{\"IsSelfAdjoint\":false,\"IsIntrinsic\":false}},\"Parent\":{\"Namespace\":\"Quantum.Bell\",\"Name\":\"SignedSubtract\"},\"Attributes\":[],\"SourceFile\":\"/Users/Matt/Documents/Masters/Dissertation/Quantum/Testing/Inital_Test/Program.qs\",\"Position\":{\"Item1\":343,\"Item2\":4},\"HeaderRange\":{\"Item1\":{\"Line\":1,\"Column\":1},\"Item2\":{\"Line\":1,\"Column\":5}},\"Documentation\":[]}")]
-[assembly: SpecializationDeclaration("{\"Kind\":{\"Case\":\"QsAdjoint\"},\"TypeArguments\":{\"Case\":\"Null\"},\"Information\":{\"Characteristics\":{\"Case\":\"Union\",\"Fields\":[{\"Case\":\"SimpleSet\",\"Fields\":[{\"Case\":\"Adjointable\"}]},{\"Case\":\"SimpleSet\",\"Fields\":[{\"Case\":\"Controllable\"}]}]},\"InferredInformation\":{\"IsSelfAdjoint\":false,\"IsIntrinsic\":false}},\"Parent\":{\"Namespace\":\"Quantum.Bell\",\"Name\":\"SignedSubtract\"},\"Attributes\":[],\"SourceFile\":\"/Users/Matt/Documents/Masters/Dissertation/Quantum/Testing/Inital_Test/Program.qs\",\"Position\":{\"Item1\":362,\"Item2\":4},\"HeaderRange\":{\"Item1\":{\"Line\":1,\"Column\":1},\"Item2\":{\"Line\":1,\"Column\":8}},\"Documentation\":[]}")]
-[assembly: SpecializationDeclaration("{\"Kind\":{\"Case\":\"QsControlled\"},\"TypeArguments\":{\"Case\":\"Null\"},\"Information\":{\"Characteristics\":{\"Case\":\"Union\",\"Fields\":[{\"Case\":\"SimpleSet\",\"Fields\":[{\"Case\":\"Adjointable\"}]},{\"Case\":\"SimpleSet\",\"Fields\":[{\"Case\":\"Controllable\"}]}]},\"InferredInformation\":{\"IsSelfAdjoint\":false,\"IsIntrinsic\":false}},\"Parent\":{\"Namespace\":\"Quantum.Bell\",\"Name\":\"SignedSubtract\"},\"Attributes\":[],\"SourceFile\":\"/Users/Matt/Documents/Masters/Dissertation/Quantum/Testing/Inital_Test/Program.qs\",\"Position\":{\"Item1\":342,\"Item2\":0},\"HeaderRange\":{\"Item1\":{\"Line\":1,\"Column\":76},\"Item2\":{\"Line\":1,\"Column\":85}},\"Documentation\":[\"automatically generated QsControlled specialization for Quantum.Bell.SignedSubtract\"]}")]
-[assembly: SpecializationDeclaration("{\"Kind\":{\"Case\":\"QsControlledAdjoint\"},\"TypeArguments\":{\"Case\":\"Null\"},\"Information\":{\"Characteristics\":{\"Case\":\"Union\",\"Fields\":[{\"Case\":\"SimpleSet\",\"Fields\":[{\"Case\":\"Adjointable\"}]},{\"Case\":\"SimpleSet\",\"Fields\":[{\"Case\":\"Controllable\"}]}]},\"InferredInformation\":{\"IsSelfAdjoint\":false,\"IsIntrinsic\":false}},\"Parent\":{\"Namespace\":\"Quantum.Bell\",\"Name\":\"SignedSubtract\"},\"Attributes\":[],\"SourceFile\":\"/Users/Matt/Documents/Masters/Dissertation/Quantum/Testing/Inital_Test/Program.qs\",\"Position\":{\"Item1\":342,\"Item2\":0},\"HeaderRange\":{\"Item1\":{\"Line\":1,\"Column\":76},\"Item2\":{\"Line\":1,\"Column\":85}},\"Documentation\":[\"automatically generated QsControlledAdjoint specialization for Quantum.Bell.SignedSubtract\"]}")]
-[assembly: CallableDeclaration("{\"Kind\":{\"Case\":\"Operation\"},\"QualifiedName\":{\"Namespace\":\"Quantum.Bell\",\"Name\":\"SignedMultiply\"},\"Attributes\":[],\"Modifiers\":{\"Access\":{\"Case\":\"DefaultAccess\"}},\"SourceFile\":\"/Users/Matt/Documents/Masters/Dissertation/Quantum/Testing/Inital_Test/Program.qs\",\"Position\":{\"Item1\":366,\"Item2\":0},\"SymbolRange\":{\"Item1\":{\"Line\":1,\"Column\":11},\"Item2\":{\"Line\":1,\"Column\":25}},\"ArgumentTuple\":{\"Case\":\"QsTuple\",\"Fields\":[[{\"Case\":\"QsTupleItem\",\"Fields\":[{\"VariableName\":{\"Case\":\"ValidName\",\"Fields\":[\"a\"]},\"Type\":{\"Case\":\"ArrayType\",\"Fields\":[{\"Case\":\"Qubit\"}]},\"InferredInformation\":{\"IsMutable\":false,\"HasLocalQuantumDependency\":false},\"Position\":{\"Case\":\"Null\"},\"Range\":{\"Item1\":{\"Line\":1,\"Column\":26},\"Item2\":{\"Line\":1,\"Column\":27}}}]},{\"Case\":\"QsTupleItem\",\"Fields\":[{\"VariableName\":{\"Case\":\"ValidName\",\"Fields\":[\"b\"]},\"Type\":{\"Case\":\"ArrayType\",\"Fields\":[{\"Case\":\"Qubit\"}]},\"InferredInformation\":{\"IsMutable\":false,\"HasLocalQuantumDependency\":false},\"Position\":{\"Case\":\"Null\"},\"Range\":{\"Item1\":{\"Line\":1,\"Column\":39},\"Item2\":{\"Line\":1,\"Column\":40}}}]},{\"Case\":\"QsTupleItem\",\"Fields\":[{\"VariableName\":{\"Case\":\"ValidName\",\"Fields\":[\"c\"]},\"Type\":{\"Case\":\"ArrayType\",\"Fields\":[{\"Case\":\"Qubit\"}]},\"InferredInformation\":{\"IsMutable\":false,\"HasLocalQuantumDependency\":false},\"Position\":{\"Case\":\"Null\"},\"Range\":{\"Item1\":{\"Line\":1,\"Column\":50},\"Item2\":{\"Line\":1,\"Column\":51}}}]}]]},\"Signature\":{\"TypeParameters\":[],\"ArgumentType\":{\"Case\":\"TupleType\",\"Fields\":[[{\"Case\":\"ArrayType\",\"Fields\":[{\"Case\":\"Qubit\"}]},{\"Case\":\"ArrayType\",\"Fields\":[{\"Case\":\"Qubit\"}]},{\"Case\":\"ArrayType\",\"Fields\":[{\"Case\":\"Qubit\"}]}]]},\"ReturnType\":{\"Case\":\"UnitType\"},\"Information\":{\"Characteristics\":{\"Case\":\"Union\",\"Fields\":[{\"Case\":\"SimpleSet\",\"Fields\":[{\"Case\":\"Adjointable\"}]},{\"Case\":\"SimpleSet\",\"Fields\":[{\"Case\":\"Controllable\"}]}]},\"InferredInformation\":{\"IsSelfAdjoint\":false,\"IsIntrinsic\":false}}},\"Documentation\":[]}")]
-[assembly: SpecializationDeclaration("{\"Kind\":{\"Case\":\"QsBody\"},\"TypeArguments\":{\"Case\":\"Null\"},\"Information\":{\"Characteristics\":{\"Case\":\"Union\",\"Fields\":[{\"Case\":\"SimpleSet\",\"Fields\":[{\"Case\":\"Adjointable\"}]},{\"Case\":\"SimpleSet\",\"Fields\":[{\"Case\":\"Controllable\"}]}]},\"InferredInformation\":{\"IsSelfAdjoint\":false,\"IsIntrinsic\":false}},\"Parent\":{\"Namespace\":\"Quantum.Bell\",\"Name\":\"SignedMultiply\"},\"Attributes\":[],\"SourceFile\":\"/Users/Matt/Documents/Masters/Dissertation/Quantum/Testing/Inital_Test/Program.qs\",\"Position\":{\"Item1\":368,\"Item2\":4},\"HeaderRange\":{\"Item1\":{\"Line\":1,\"Column\":1},\"Item2\":{\"Line\":1,\"Column\":5}},\"Documentation\":[]}")]
-[assembly: SpecializationDeclaration("{\"Kind\":{\"Case\":\"QsAdjoint\"},\"TypeArguments\":{\"Case\":\"Null\"},\"Information\":{\"Characteristics\":{\"Case\":\"Union\",\"Fields\":[{\"Case\":\"SimpleSet\",\"Fields\":[{\"Case\":\"Adjointable\"}]},{\"Case\":\"SimpleSet\",\"Fields\":[{\"Case\":\"Controllable\"}]}]},\"InferredInformation\":{\"IsSelfAdjoint\":false,\"IsIntrinsic\":false}},\"Parent\":{\"Namespace\":\"Quantum.Bell\",\"Name\":\"SignedMultiply\"},\"Attributes\":[],\"SourceFile\":\"/Users/Matt/Documents/Masters/Dissertation/Quantum/Testing/Inital_Test/Program.qs\",\"Position\":{\"Item1\":378,\"Item2\":4},\"HeaderRange\":{\"Item1\":{\"Line\":1,\"Column\":1},\"Item2\":{\"Line\":1,\"Column\":8}},\"Documentation\":[]}")]
-[assembly: SpecializationDeclaration("{\"Kind\":{\"Case\":\"QsControlled\"},\"TypeArguments\":{\"Case\":\"Null\"},\"Information\":{\"Characteristics\":{\"Case\":\"Union\",\"Fields\":[{\"Case\":\"SimpleSet\",\"Fields\":[{\"Case\":\"Adjointable\"}]},{\"Case\":\"SimpleSet\",\"Fields\":[{\"Case\":\"Controllable\"}]}]},\"InferredInformation\":{\"IsSelfAdjoint\":false,\"IsIntrinsic\":false}},\"Parent\":{\"Namespace\":\"Quantum.Bell\",\"Name\":\"SignedMultiply\"},\"Attributes\":[],\"SourceFile\":\"/Users/Matt/Documents/Masters/Dissertation/Quantum/Testing/Inital_Test/Program.qs\",\"Position\":{\"Item1\":366,\"Item2\":0},\"HeaderRange\":{\"Item1\":{\"Line\":1,\"Column\":71},\"Item2\":{\"Line\":1,\"Column\":80}},\"Documentation\":[\"automatically generated QsControlled specialization for Quantum.Bell.SignedMultiply\"]}")]
-[assembly: SpecializationDeclaration("{\"Kind\":{\"Case\":\"QsControlledAdjoint\"},\"TypeArguments\":{\"Case\":\"Null\"},\"Information\":{\"Characteristics\":{\"Case\":\"Union\",\"Fields\":[{\"Case\":\"SimpleSet\",\"Fields\":[{\"Case\":\"Adjointable\"}]},{\"Case\":\"SimpleSet\",\"Fields\":[{\"Case\":\"Controllable\"}]}]},\"InferredInformation\":{\"IsSelfAdjoint\":false,\"IsIntrinsic\":false}},\"Parent\":{\"Namespace\":\"Quantum.Bell\",\"Name\":\"SignedMultiply\"},\"Attributes\":[],\"SourceFile\":\"/Users/Matt/Documents/Masters/Dissertation/Quantum/Testing/Inital_Test/Program.qs\",\"Position\":{\"Item1\":366,\"Item2\":0},\"HeaderRange\":{\"Item1\":{\"Line\":1,\"Column\":71},\"Item2\":{\"Line\":1,\"Column\":80}},\"Documentation\":[\"automatically generated QsControlledAdjoint specialization for Quantum.Bell.SignedMultiply\"]}")]
-[assembly: CallableDeclaration("{\"Kind\":{\"Case\":\"Operation\"},\"QualifiedName\":{\"Namespace\":\"Quantum.Bell\",\"Name\":\"TestingQFT\"},\"Attributes\":[],\"Modifiers\":{\"Access\":{\"Case\":\"DefaultAccess\"}},\"SourceFile\":\"/Users/Matt/Documents/Masters/Dissertation/Quantum/Testing/Inital_Test/Program.qs\",\"Position\":{\"Item1\":386,\"Item2\":0},\"SymbolRange\":{\"Item1\":{\"Line\":1,\"Column\":11},\"Item2\":{\"Line\":1,\"Column\":21}},\"ArgumentTuple\":{\"Case\":\"QsTuple\",\"Fields\":[[]]},\"Signature\":{\"TypeParameters\":[],\"ArgumentType\":{\"Case\":\"UnitType\"},\"ReturnType\":{\"Case\":\"UnitType\"},\"Information\":{\"Characteristics\":{\"Case\":\"EmptySet\"},\"InferredInformation\":{\"IsSelfAdjoint\":false,\"IsIntrinsic\":false}}},\"Documentation\":[]}")]
-[assembly: SpecializationDeclaration("{\"Kind\":{\"Case\":\"QsBody\"},\"TypeArguments\":{\"Case\":\"Null\"},\"Information\":{\"Characteristics\":{\"Case\":\"EmptySet\"},\"InferredInformation\":{\"IsSelfAdjoint\":false,\"IsIntrinsic\":false}},\"Parent\":{\"Namespace\":\"Quantum.Bell\",\"Name\":\"TestingQFT\"},\"Attributes\":[],\"SourceFile\":\"/Users/Matt/Documents/Masters/Dissertation/Quantum/Testing/Inital_Test/Program.qs\",\"Position\":{\"Item1\":386,\"Item2\":0},\"HeaderRange\":{\"Item1\":{\"Line\":1,\"Column\":11},\"Item2\":{\"Line\":1,\"Column\":21}},\"Documentation\":[]}")]
-[assembly: CallableDeclaration("{\"Kind\":{\"Case\":\"Operation\"},\"QualifiedName\":{\"Namespace\":\"Quantum.Bell\",\"Name\":\"QuantumPhaseEstimationTest\"},\"Attributes\":[],\"Modifiers\":{\"Access\":{\"Case\":\"DefaultAccess\"}},\"SourceFile\":\"/Users/Matt/Documents/Masters/Dissertation/Quantum/Testing/Inital_Test/Program.qs\",\"Position\":{\"Item1\":412,\"Item2\":4},\"SymbolRange\":{\"Item1\":{\"Line\":1,\"Column\":11},\"Item2\":{\"Line\":1,\"Column\":37}},\"ArgumentTuple\":{\"Case\":\"QsTuple\",\"Fields\":[[{\"Case\":\"QsTupleItem\",\"Fields\":[{\"VariableName\":{\"Case\":\"ValidName\",\"Fields\":[\"oracle\"]},\"Type\":{\"Case\":\"UserDefinedType\",\"Fields\":[{\"Namespace\":\"Microsoft.Quantum.Oracles\",\"Name\":\"DiscreteOracle\",\"Range\":{\"Case\":\"Value\",\"Fields\":[{\"Item1\":{\"Line\":1,\"Column\":48},\"Item2\":{\"Line\":1,\"Column\":62}}]}}]},\"InferredInformation\":{\"IsMutable\":false,\"HasLocalQuantumDependency\":false},\"Position\":{\"Case\":\"Null\"},\"Range\":{\"Item1\":{\"Line\":1,\"Column\":39},\"Item2\":{\"Line\":1,\"Column\":45}}}]},{\"Case\":\"QsTupleItem\",\"Fields\":[{\"VariableName\":{\"Case\":\"ValidName\",\"Fields\":[\"targetState\"]},\"Type\":{\"Case\":\"ArrayType\",\"Fields\":[{\"Case\":\"Qubit\"}]},\"InferredInformation\":{\"IsMutable\":false,\"HasLocalQuantumDependency\":false},\"Position\":{\"Case\":\"Null\"},\"Range\":{\"Item1\":{\"Line\":1,\"Column\":64},\"Item2\":{\"Line\":1,\"Column\":75}}}]},{\"Case\":\"QsTupleItem\",\"Fields\":[{\"VariableName\":{\"Case\":\"ValidName\",\"Fields\":[\"controlRegister\"]},\"Type\":{\"Case\":\"UserDefinedType\",\"Fields\":[{\"Namespace\":\"Microsoft.Quantum.Arithmetic\",\"Name\":\"BigEndian\",\"Range\":{\"Case\":\"Value\",\"Fields\":[{\"Item1\":{\"Line\":1,\"Column\":105},\"Item2\":{\"Line\":1,\"Column\":114}}]}}]},\"InferredInformation\":{\"IsMutable\":false,\"HasLocalQuantumDependency\":false},\"Position\":{\"Case\":\"Null\"},\"Range\":{\"Item1\":{\"Line\":1,\"Column\":87},\"Item2\":{\"Line\":1,\"Column\":102}}}]}]]},\"Signature\":{\"TypeParameters\":[],\"ArgumentType\":{\"Case\":\"TupleType\",\"Fields\":[[{\"Case\":\"UserDefinedType\",\"Fields\":[{\"Namespace\":\"Microsoft.Quantum.Oracles\",\"Name\":\"DiscreteOracle\",\"Range\":{\"Case\":\"Null\"}}]},{\"Case\":\"ArrayType\",\"Fields\":[{\"Case\":\"Qubit\"}]},{\"Case\":\"UserDefinedType\",\"Fields\":[{\"Namespace\":\"Microsoft.Quantum.Arithmetic\",\"Name\":\"BigEndian\",\"Range\":{\"Case\":\"Null\"}}]}]]},\"ReturnType\":{\"Case\":\"UnitType\"},\"Information\":{\"Characteristics\":{\"Case\":\"Union\",\"Fields\":[{\"Case\":\"SimpleSet\",\"Fields\":[{\"Case\":\"Adjointable\"}]},{\"Case\":\"SimpleSet\",\"Fields\":[{\"Case\":\"Controllable\"}]}]},\"InferredInformation\":{\"IsSelfAdjoint\":false,\"IsIntrinsic\":false}}},\"Documentation\":[]}")]
-[assembly: SpecializationDeclaration("{\"Kind\":{\"Case\":\"QsBody\"},\"TypeArguments\":{\"Case\":\"Null\"},\"Information\":{\"Characteristics\":{\"Case\":\"Union\",\"Fields\":[{\"Case\":\"SimpleSet\",\"Fields\":[{\"Case\":\"Adjointable\"}]},{\"Case\":\"SimpleSet\",\"Fields\":[{\"Case\":\"Controllable\"}]}]},\"InferredInformation\":{\"IsSelfAdjoint\":false,\"IsIntrinsic\":false}},\"Parent\":{\"Namespace\":\"Quantum.Bell\",\"Name\":\"QuantumPhaseEstimationTest\"},\"Attributes\":[],\"SourceFile\":\"/Users/Matt/Documents/Masters/Dissertation/Quantum/Testing/Inital_Test/Program.qs\",\"Position\":{\"Item1\":412,\"Item2\":4},\"HeaderRange\":{\"Item1\":{\"Line\":1,\"Column\":11},\"Item2\":{\"Line\":1,\"Column\":37}},\"Documentation\":[]}")]
-[assembly: SpecializationDeclaration("{\"Kind\":{\"Case\":\"QsAdjoint\"},\"TypeArguments\":{\"Case\":\"Null\"},\"Information\":{\"Characteristics\":{\"Case\":\"Union\",\"Fields\":[{\"Case\":\"SimpleSet\",\"Fields\":[{\"Case\":\"Adjointable\"}]},{\"Case\":\"SimpleSet\",\"Fields\":[{\"Case\":\"Controllable\"}]}]},\"InferredInformation\":{\"IsSelfAdjoint\":false,\"IsIntrinsic\":false}},\"Parent\":{\"Namespace\":\"Quantum.Bell\",\"Name\":\"QuantumPhaseEstimationTest\"},\"Attributes\":[],\"SourceFile\":\"/Users/Matt/Documents/Masters/Dissertation/Quantum/Testing/Inital_Test/Program.qs\",\"Position\":{\"Item1\":412,\"Item2\":4},\"HeaderRange\":{\"Item1\":{\"Line\":1,\"Column\":126},\"Item2\":{\"Line\":1,\"Column\":135}},\"Documentation\":[\"automatically generated QsAdjoint specialization for Quantum.Bell.QuantumPhaseEstimationTest\"]}")]
-[assembly: SpecializationDeclaration("{\"Kind\":{\"Case\":\"QsControlled\"},\"TypeArguments\":{\"Case\":\"Null\"},\"Information\":{\"Characteristics\":{\"Case\":\"Union\",\"Fields\":[{\"Case\":\"SimpleSet\",\"Fields\":[{\"Case\":\"Adjointable\"}]},{\"Case\":\"SimpleSet\",\"Fields\":[{\"Case\":\"Controllable\"}]}]},\"InferredInformation\":{\"IsSelfAdjoint\":false,\"IsIntrinsic\":false}},\"Parent\":{\"Namespace\":\"Quantum.Bell\",\"Name\":\"QuantumPhaseEstimationTest\"},\"Attributes\":[],\"SourceFile\":\"/Users/Matt/Documents/Masters/Dissertation/Quantum/Testing/Inital_Test/Program.qs\",\"Position\":{\"Item1\":412,\"Item2\":4},\"HeaderRange\":{\"Item1\":{\"Line\":1,\"Column\":126},\"Item2\":{\"Line\":1,\"Column\":135}},\"Documentation\":[\"automatically generated QsControlled specialization for Quantum.Bell.QuantumPhaseEstimationTest\"]}")]
-[assembly: SpecializationDeclaration("{\"Kind\":{\"Case\":\"QsControlledAdjoint\"},\"TypeArguments\":{\"Case\":\"Null\"},\"Information\":{\"Characteristics\":{\"Case\":\"Union\",\"Fields\":[{\"Case\":\"SimpleSet\",\"Fields\":[{\"Case\":\"Adjointable\"}]},{\"Case\":\"SimpleSet\",\"Fields\":[{\"Case\":\"Controllable\"}]}]},\"InferredInformation\":{\"IsSelfAdjoint\":false,\"IsIntrinsic\":false}},\"Parent\":{\"Namespace\":\"Quantum.Bell\",\"Name\":\"QuantumPhaseEstimationTest\"},\"Attributes\":[],\"SourceFile\":\"/Users/Matt/Documents/Masters/Dissertation/Quantum/Testing/Inital_Test/Program.qs\",\"Position\":{\"Item1\":412,\"Item2\":4},\"HeaderRange\":{\"Item1\":{\"Line\":1,\"Column\":126},\"Item2\":{\"Line\":1,\"Column\":135}},\"Documentation\":[\"automatically generated QsControlledAdjoint specialization for Quantum.Bell.QuantumPhaseEstimationTest\"]}")]
-[assembly: CallableDeclaration("{\"Kind\":{\"Case\":\"Operation\"},\"QualifiedName\":{\"Namespace\":\"Quantum.Bell\",\"Name\":\"SquareModM\"},\"Attributes\":[],\"Modifiers\":{\"Access\":{\"Case\":\"DefaultAccess\"}},\"SourceFile\":\"/Users/Matt/Documents/Masters/Dissertation/Quantum/Testing/Inital_Test/Program.qs\",\"Position\":{\"Item1\":432,\"Item2\":0},\"SymbolRange\":{\"Item1\":{\"Line\":1,\"Column\":11},\"Item2\":{\"Line\":1,\"Column\":21}},\"ArgumentTuple\":{\"Case\":\"QsTuple\",\"Fields\":[[{\"Case\":\"QsTupleItem\",\"Fields\":[{\"VariableName\":{\"Case\":\"ValidName\",\"Fields\":[\"a\"]},\"Type\":{\"Case\":\"ArrayType\",\"Fields\":[{\"Case\":\"Qubit\"}]},\"InferredInformation\":{\"IsMutable\":false,\"HasLocalQuantumDependency\":false},\"Position\":{\"Case\":\"Null\"},\"Range\":{\"Item1\":{\"Line\":1,\"Column\":22},\"Item2\":{\"Line\":1,\"Column\":23}}}]},{\"Case\":\"QsTupleItem\",\"Fields\":[{\"VariableName\":{\"Case\":\"ValidName\",\"Fields\":[\"Ms\"]},\"Type\":{\"Case\":\"ArrayType\",\"Fields\":[{\"Case\":\"Qubit\"}]},\"InferredInformation\":{\"IsMutable\":false,\"HasLocalQuantumDependency\":false},\"Position\":{\"Case\":\"Null\"},\"Range\":{\"Item1\":{\"Line\":1,\"Column\":32},\"Item2\":{\"Line\":1,\"Column\":34}}}]},{\"Case\":\"QsTupleItem\",\"Fields\":[{\"VariableName\":{\"Case\":\"ValidName\",\"Fields\":[\"Ts\"]},\"Type\":{\"Case\":\"ArrayType\",\"Fields\":[{\"Case\":\"Qubit\"}]},\"InferredInformation\":{\"IsMutable\":false,\"HasLocalQuantumDependency\":false},\"Position\":{\"Case\":\"Null\"},\"Range\":{\"Item1\":{\"Line\":1,\"Column\":43},\"Item2\":{\"Line\":1,\"Column\":45}}}]}]]},\"Signature\":{\"TypeParameters\":[],\"ArgumentType\":{\"Case\":\"TupleType\",\"Fields\":[[{\"Case\":\"ArrayType\",\"Fields\":[{\"Case\":\"Qubit\"}]},{\"Case\":\"ArrayType\",\"Fields\":[{\"Case\":\"Qubit\"}]},{\"Case\":\"ArrayType\",\"Fields\":[{\"Case\":\"Qubit\"}]}]]},\"ReturnType\":{\"Case\":\"UnitType\"},\"Information\":{\"Characteristics\":{\"Case\":\"Union\",\"Fields\":[{\"Case\":\"SimpleSet\",\"Fields\":[{\"Case\":\"Adjointable\"}]},{\"Case\":\"SimpleSet\",\"Fields\":[{\"Case\":\"Controllable\"}]}]},\"InferredInformation\":{\"IsSelfAdjoint\":false,\"IsIntrinsic\":false}}},\"Documentation\":[]}")]
-[assembly: SpecializationDeclaration("{\"Kind\":{\"Case\":\"QsBody\"},\"TypeArguments\":{\"Case\":\"Null\"},\"Information\":{\"Characteristics\":{\"Case\":\"Union\",\"Fields\":[{\"Case\":\"SimpleSet\",\"Fields\":[{\"Case\":\"Adjointable\"}]},{\"Case\":\"SimpleSet\",\"Fields\":[{\"Case\":\"Controllable\"}]}]},\"InferredInformation\":{\"IsSelfAdjoint\":false,\"IsIntrinsic\":false}},\"Parent\":{\"Namespace\":\"Quantum.Bell\",\"Name\":\"SquareModM\"},\"Attributes\":[],\"SourceFile\":\"/Users/Matt/Documents/Masters/Dissertation/Quantum/Testing/Inital_Test/Program.qs\",\"Position\":{\"Item1\":432,\"Item2\":0},\"HeaderRange\":{\"Item1\":{\"Line\":1,\"Column\":11},\"Item2\":{\"Line\":1,\"Column\":21}},\"Documentation\":[]}")]
-[assembly: SpecializationDeclaration("{\"Kind\":{\"Case\":\"QsAdjoint\"},\"TypeArguments\":{\"Case\":\"Null\"},\"Information\":{\"Characteristics\":{\"Case\":\"Union\",\"Fields\":[{\"Case\":\"SimpleSet\",\"Fields\":[{\"Case\":\"Adjointable\"}]},{\"Case\":\"SimpleSet\",\"Fields\":[{\"Case\":\"Controllable\"}]}]},\"InferredInformation\":{\"IsSelfAdjoint\":false,\"IsIntrinsic\":false}},\"Parent\":{\"Namespace\":\"Quantum.Bell\",\"Name\":\"SquareModM\"},\"Attributes\":[],\"SourceFile\":\"/Users/Matt/Documents/Masters/Dissertation/Quantum/Testing/Inital_Test/Program.qs\",\"Position\":{\"Item1\":432,\"Item2\":0},\"HeaderRange\":{\"Item1\":{\"Line\":1,\"Column\":65},\"Item2\":{\"Line\":1,\"Column\":74}},\"Documentation\":[\"automatically generated QsAdjoint specialization for Quantum.Bell.SquareModM\"]}")]
-[assembly: SpecializationDeclaration("{\"Kind\":{\"Case\":\"QsControlled\"},\"TypeArguments\":{\"Case\":\"Null\"},\"Information\":{\"Characteristics\":{\"Case\":\"Union\",\"Fields\":[{\"Case\":\"SimpleSet\",\"Fields\":[{\"Case\":\"Adjointable\"}]},{\"Case\":\"SimpleSet\",\"Fields\":[{\"Case\":\"Controllable\"}]}]},\"InferredInformation\":{\"IsSelfAdjoint\":false,\"IsIntrinsic\":false}},\"Parent\":{\"Namespace\":\"Quantum.Bell\",\"Name\":\"SquareModM\"},\"Attributes\":[],\"SourceFile\":\"/Users/Matt/Documents/Masters/Dissertation/Quantum/Testing/Inital_Test/Program.qs\",\"Position\":{\"Item1\":432,\"Item2\":0},\"HeaderRange\":{\"Item1\":{\"Line\":1,\"Column\":65},\"Item2\":{\"Line\":1,\"Column\":74}},\"Documentation\":[\"automatically generated QsControlled specialization for Quantum.Bell.SquareModM\"]}")]
-[assembly: SpecializationDeclaration("{\"Kind\":{\"Case\":\"QsControlledAdjoint\"},\"TypeArguments\":{\"Case\":\"Null\"},\"Information\":{\"Characteristics\":{\"Case\":\"Union\",\"Fields\":[{\"Case\":\"SimpleSet\",\"Fields\":[{\"Case\":\"Adjointable\"}]},{\"Case\":\"SimpleSet\",\"Fields\":[{\"Case\":\"Controllable\"}]}]},\"InferredInformation\":{\"IsSelfAdjoint\":false,\"IsIntrinsic\":false}},\"Parent\":{\"Namespace\":\"Quantum.Bell\",\"Name\":\"SquareModM\"},\"Attributes\":[],\"SourceFile\":\"/Users/Matt/Documents/Masters/Dissertation/Quantum/Testing/Inital_Test/Program.qs\",\"Position\":{\"Item1\":432,\"Item2\":0},\"HeaderRange\":{\"Item1\":{\"Line\":1,\"Column\":65},\"Item2\":{\"Line\":1,\"Column\":74}},\"Documentation\":[\"automatically generated QsControlledAdjoint specialization for Quantum.Bell.SquareModM\"]}")]
-[assembly: CallableDeclaration("{\"Kind\":{\"Case\":\"Operation\"},\"QualifiedName\":{\"Namespace\":\"Quantum.Bell\",\"Name\":\"MultiplyModM\"},\"Attributes\":[],\"Modifiers\":{\"Access\":{\"Case\":\"DefaultAccess\"}},\"SourceFile\":\"/Users/Matt/Documents/Masters/Dissertation/Quantum/Testing/Inital_Test/Program.qs\",\"Position\":{\"Item1\":445,\"Item2\":0},\"SymbolRange\":{\"Item1\":{\"Line\":1,\"Column\":11},\"Item2\":{\"Line\":1,\"Column\":23}},\"ArgumentTuple\":{\"Case\":\"QsTuple\",\"Fields\":[[{\"Case\":\"QsTupleItem\",\"Fields\":[{\"VariableName\":{\"Case\":\"ValidName\",\"Fields\":[\"a\"]},\"Type\":{\"Case\":\"ArrayType\",\"Fields\":[{\"Case\":\"Qubit\"}]},\"InferredInformation\":{\"IsMutable\":false,\"HasLocalQuantumDependency\":false},\"Position\":{\"Case\":\"Null\"},\"Range\":{\"Item1\":{\"Line\":1,\"Column\":24},\"Item2\":{\"Line\":1,\"Column\":25}}}]},{\"Case\":\"QsTupleItem\",\"Fields\":[{\"VariableName\":{\"Case\":\"ValidName\",\"Fields\":[\"b\"]},\"Type\":{\"Case\":\"ArrayType\",\"Fields\":[{\"Case\":\"Qubit\"}]},\"InferredInformation\":{\"IsMutable\":false,\"HasLocalQuantumDependency\":false},\"Position\":{\"Case\":\"Null\"},\"Range\":{\"Item1\":{\"Line\":1,\"Column\":34},\"Item2\":{\"Line\":1,\"Column\":35}}}]},{\"Case\":\"QsTupleItem\",\"Fields\":[{\"VariableName\":{\"Case\":\"ValidName\",\"Fields\":[\"Ms\"]},\"Type\":{\"Case\":\"ArrayType\",\"Fields\":[{\"Case\":\"Qubit\"}]},\"InferredInformation\":{\"IsMutable\":false,\"HasLocalQuantumDependency\":false},\"Position\":{\"Case\":\"Null\"},\"Range\":{\"Item1\":{\"Line\":1,\"Column\":44},\"Item2\":{\"Line\":1,\"Column\":46}}}]},{\"Case\":\"QsTupleItem\",\"Fields\":[{\"VariableName\":{\"Case\":\"ValidName\",\"Fields\":[\"Ts\"]},\"Type\":{\"Case\":\"ArrayType\",\"Fields\":[{\"Case\":\"Qubit\"}]},\"InferredInformation\":{\"IsMutable\":false,\"HasLocalQuantumDependency\":false},\"Position\":{\"Case\":\"Null\"},\"Range\":{\"Item1\":{\"Line\":1,\"Column\":55},\"Item2\":{\"Line\":1,\"Column\":57}}}]}]]},\"Signature\":{\"TypeParameters\":[],\"ArgumentType\":{\"Case\":\"TupleType\",\"Fields\":[[{\"Case\":\"ArrayType\",\"Fields\":[{\"Case\":\"Qubit\"}]},{\"Case\":\"ArrayType\",\"Fields\":[{\"Case\":\"Qubit\"}]},{\"Case\":\"ArrayType\",\"Fields\":[{\"Case\":\"Qubit\"}]},{\"Case\":\"ArrayType\",\"Fields\":[{\"Case\":\"Qubit\"}]}]]},\"ReturnType\":{\"Case\":\"UnitType\"},\"Information\":{\"Characteristics\":{\"Case\":\"Union\",\"Fields\":[{\"Case\":\"SimpleSet\",\"Fields\":[{\"Case\":\"Adjointable\"}]},{\"Case\":\"SimpleSet\",\"Fields\":[{\"Case\":\"Controllable\"}]}]},\"InferredInformation\":{\"IsSelfAdjoint\":false,\"IsIntrinsic\":false}}},\"Documentation\":[]}")]
-[assembly: SpecializationDeclaration("{\"Kind\":{\"Case\":\"QsBody\"},\"TypeArguments\":{\"Case\":\"Null\"},\"Information\":{\"Characteristics\":{\"Case\":\"Union\",\"Fields\":[{\"Case\":\"SimpleSet\",\"Fields\":[{\"Case\":\"Adjointable\"}]},{\"Case\":\"SimpleSet\",\"Fields\":[{\"Case\":\"Controllable\"}]}]},\"InferredInformation\":{\"IsSelfAdjoint\":false,\"IsIntrinsic\":false}},\"Parent\":{\"Namespace\":\"Quantum.Bell\",\"Name\":\"MultiplyModM\"},\"Attributes\":[],\"SourceFile\":\"/Users/Matt/Documents/Masters/Dissertation/Quantum/Testing/Inital_Test/Program.qs\",\"Position\":{\"Item1\":445,\"Item2\":0},\"HeaderRange\":{\"Item1\":{\"Line\":1,\"Column\":11},\"Item2\":{\"Line\":1,\"Column\":23}},\"Documentation\":[]}")]
-[assembly: SpecializationDeclaration("{\"Kind\":{\"Case\":\"QsAdjoint\"},\"TypeArguments\":{\"Case\":\"Null\"},\"Information\":{\"Characteristics\":{\"Case\":\"Union\",\"Fields\":[{\"Case\":\"SimpleSet\",\"Fields\":[{\"Case\":\"Adjointable\"}]},{\"Case\":\"SimpleSet\",\"Fields\":[{\"Case\":\"Controllable\"}]}]},\"InferredInformation\":{\"IsSelfAdjoint\":false,\"IsIntrinsic\":false}},\"Parent\":{\"Namespace\":\"Quantum.Bell\",\"Name\":\"MultiplyModM\"},\"Attributes\":[],\"SourceFile\":\"/Users/Matt/Documents/Masters/Dissertation/Quantum/Testing/Inital_Test/Program.qs\",\"Position\":{\"Item1\":445,\"Item2\":0},\"HeaderRange\":{\"Item1\":{\"Line\":1,\"Column\":77},\"Item2\":{\"Line\":1,\"Column\":86}},\"Documentation\":[\"automatically generated QsAdjoint specialization for Quantum.Bell.MultiplyModM\"]}")]
-[assembly: SpecializationDeclaration("{\"Kind\":{\"Case\":\"QsControlled\"},\"TypeArguments\":{\"Case\":\"Null\"},\"Information\":{\"Characteristics\":{\"Case\":\"Union\",\"Fields\":[{\"Case\":\"SimpleSet\",\"Fields\":[{\"Case\":\"Adjointable\"}]},{\"Case\":\"SimpleSet\",\"Fields\":[{\"Case\":\"Controllable\"}]}]},\"InferredInformation\":{\"IsSelfAdjoint\":false,\"IsIntrinsic\":false}},\"Parent\":{\"Namespace\":\"Quantum.Bell\",\"Name\":\"MultiplyModM\"},\"Attributes\":[],\"SourceFile\":\"/Users/Matt/Documents/Masters/Dissertation/Quantum/Testing/Inital_Test/Program.qs\",\"Position\":{\"Item1\":445,\"Item2\":0},\"HeaderRange\":{\"Item1\":{\"Line\":1,\"Column\":77},\"Item2\":{\"Line\":1,\"Column\":86}},\"Documentation\":[\"automatically generated QsControlled specialization for Quantum.Bell.MultiplyModM\"]}")]
-[assembly: SpecializationDeclaration("{\"Kind\":{\"Case\":\"QsControlledAdjoint\"},\"TypeArguments\":{\"Case\":\"Null\"},\"Information\":{\"Characteristics\":{\"Case\":\"Union\",\"Fields\":[{\"Case\":\"SimpleSet\",\"Fields\":[{\"Case\":\"Adjointable\"}]},{\"Case\":\"SimpleSet\",\"Fields\":[{\"Case\":\"Controllable\"}]}]},\"InferredInformation\":{\"IsSelfAdjoint\":false,\"IsIntrinsic\":false}},\"Parent\":{\"Namespace\":\"Quantum.Bell\",\"Name\":\"MultiplyModM\"},\"Attributes\":[],\"SourceFile\":\"/Users/Matt/Documents/Masters/Dissertation/Quantum/Testing/Inital_Test/Program.qs\",\"Position\":{\"Item1\":445,\"Item2\":0},\"HeaderRange\":{\"Item1\":{\"Line\":1,\"Column\":77},\"Item2\":{\"Line\":1,\"Column\":86}},\"Documentation\":[\"automatically generated QsControlledAdjoint specialization for Quantum.Bell.MultiplyModM\"]}")]
-[assembly: CallableDeclaration("{\"Kind\":{\"Case\":\"Operation\"},\"QualifiedName\":{\"Namespace\":\"Quantum.Bell\",\"Name\":\"DivideI\"},\"Attributes\":[],\"Modifiers\":{\"Access\":{\"Case\":\"DefaultAccess\"}},\"SourceFile\":\"/Users/Matt/Documents/Masters/Dissertation/Quantum/Testing/Inital_Test/Program.qs\",\"Position\":{\"Item1\":476,\"Item2\":4},\"SymbolRange\":{\"Item1\":{\"Line\":1,\"Column\":11},\"Item2\":{\"Line\":1,\"Column\":18}},\"ArgumentTuple\":{\"Case\":\"QsTuple\",\"Fields\":[[{\"Case\":\"QsTupleItem\",\"Fields\":[{\"VariableName\":{\"Case\":\"ValidName\",\"Fields\":[\"xs\"]},\"Type\":{\"Case\":\"UserDefinedType\",\"Fields\":[{\"Namespace\":\"Microsoft.Quantum.Arithmetic\",\"Name\":\"LittleEndian\",\"Range\":{\"Case\":\"Value\",\"Fields\":[{\"Item1\":{\"Line\":1,\"Column\":24},\"Item2\":{\"Line\":1,\"Column\":36}}]}}]},\"InferredInformation\":{\"IsMutable\":false,\"HasLocalQuantumDependency\":false},\"Position\":{\"Case\":\"Null\"},\"Range\":{\"Item1\":{\"Line\":1,\"Column\":20},\"Item2\":{\"Line\":1,\"Column\":22}}}]},{\"Case\":\"QsTupleItem\",\"Fields\":[{\"VariableName\":{\"Case\":\"ValidName\",\"Fields\":[\"ys\"]},\"Type\":{\"Case\":\"UserDefinedType\",\"Fields\":[{\"Namespace\":\"Microsoft.Quantum.Arithmetic\",\"Name\":\"LittleEndian\",\"Range\":{\"Case\":\"Value\",\"Fields\":[{\"Item1\":{\"Line\":1,\"Column\":42},\"Item2\":{\"Line\":1,\"Column\":54}}]}}]},\"InferredInformation\":{\"IsMutable\":false,\"HasLocalQuantumDependency\":false},\"Position\":{\"Case\":\"Null\"},\"Range\":{\"Item1\":{\"Line\":1,\"Column\":38},\"Item2\":{\"Line\":1,\"Column\":40}}}]},{\"Case\":\"QsTupleItem\",\"Fields\":[{\"VariableName\":{\"Case\":\"ValidName\",\"Fields\":[\"result\"]},\"Type\":{\"Case\":\"UserDefinedType\",\"Fields\":[{\"Namespace\":\"Microsoft.Quantum.Arithmetic\",\"Name\":\"LittleEndian\",\"Range\":{\"Case\":\"Value\",\"Fields\":[{\"Item1\":{\"Line\":2,\"Column\":40},\"Item2\":{\"Line\":2,\"Column\":52}}]}}]},\"InferredInformation\":{\"IsMutable\":false,\"HasLocalQuantumDependency\":false},\"Position\":{\"Case\":\"Null\"},\"Range\":{\"Item1\":{\"Line\":2,\"Column\":32},\"Item2\":{\"Line\":2,\"Column\":38}}}]}]]},\"Signature\":{\"TypeParameters\":[],\"ArgumentType\":{\"Case\":\"TupleType\",\"Fields\":[[{\"Case\":\"UserDefinedType\",\"Fields\":[{\"Namespace\":\"Microsoft.Quantum.Arithmetic\",\"Name\":\"LittleEndian\",\"Range\":{\"Case\":\"Null\"}}]},{\"Case\":\"UserDefinedType\",\"Fields\":[{\"Namespace\":\"Microsoft.Quantum.Arithmetic\",\"Name\":\"LittleEndian\",\"Range\":{\"Case\":\"Null\"}}]},{\"Case\":\"UserDefinedType\",\"Fields\":[{\"Namespace\":\"Microsoft.Quantum.Arithmetic\",\"Name\":\"LittleEndian\",\"Range\":{\"Case\":\"Null\"}}]}]]},\"ReturnType\":{\"Case\":\"UnitType\"},\"Information\":{\"Characteristics\":{\"Case\":\"Union\",\"Fields\":[{\"Case\":\"SimpleSet\",\"Fields\":[{\"Case\":\"Adjointable\"}]},{\"Case\":\"SimpleSet\",\"Fields\":[{\"Case\":\"Controllable\"}]}]},\"InferredInformation\":{\"IsSelfAdjoint\":false,\"IsIntrinsic\":false}}},\"Documentation\":[]}")]
-[assembly: SpecializationDeclaration("{\"Kind\":{\"Case\":\"QsBody\"},\"TypeArguments\":{\"Case\":\"Null\"},\"Information\":{\"Characteristics\":{\"Case\":\"Union\",\"Fields\":[{\"Case\":\"SimpleSet\",\"Fields\":[{\"Case\":\"Adjointable\"}]},{\"Case\":\"SimpleSet\",\"Fields\":[{\"Case\":\"Controllable\"}]}]},\"InferredInformation\":{\"IsSelfAdjoint\":false,\"IsIntrinsic\":false}},\"Parent\":{\"Namespace\":\"Quantum.Bell\",\"Name\":\"DivideI\"},\"Attributes\":[],\"SourceFile\":\"/Users/Matt/Documents/Masters/Dissertation/Quantum/Testing/Inital_Test/Program.qs\",\"Position\":{\"Item1\":478,\"Item2\":8},\"HeaderRange\":{\"Item1\":{\"Line\":1,\"Column\":1},\"Item2\":{\"Line\":1,\"Column\":5}},\"Documentation\":[]}")]
-[assembly: SpecializationDeclaration("{\"Kind\":{\"Case\":\"QsAdjoint\"},\"TypeArguments\":{\"Case\":\"Null\"},\"Information\":{\"Characteristics\":{\"Case\":\"Union\",\"Fields\":[{\"Case\":\"SimpleSet\",\"Fields\":[{\"Case\":\"Adjointable\"}]},{\"Case\":\"SimpleSet\",\"Fields\":[{\"Case\":\"Controllable\"}]}]},\"InferredInformation\":{\"IsSelfAdjoint\":false,\"IsIntrinsic\":false}},\"Parent\":{\"Namespace\":\"Quantum.Bell\",\"Name\":\"DivideI\"},\"Attributes\":[],\"SourceFile\":\"/Users/Matt/Documents/Masters/Dissertation/Quantum/Testing/Inital_Test/Program.qs\",\"Position\":{\"Item1\":501,\"Item2\":8},\"HeaderRange\":{\"Item1\":{\"Line\":1,\"Column\":1},\"Item2\":{\"Line\":1,\"Column\":8}},\"Documentation\":[]}")]
-[assembly: SpecializationDeclaration("{\"Kind\":{\"Case\":\"QsControlled\"},\"TypeArguments\":{\"Case\":\"Null\"},\"Information\":{\"Characteristics\":{\"Case\":\"Union\",\"Fields\":[{\"Case\":\"SimpleSet\",\"Fields\":[{\"Case\":\"Adjointable\"}]},{\"Case\":\"SimpleSet\",\"Fields\":[{\"Case\":\"Controllable\"}]}]},\"InferredInformation\":{\"IsSelfAdjoint\":false,\"IsIntrinsic\":false}},\"Parent\":{\"Namespace\":\"Quantum.Bell\",\"Name\":\"DivideI\"},\"Attributes\":[],\"SourceFile\":\"/Users/Matt/Documents/Masters/Dissertation/Quantum/Testing/Inital_Test/Program.qs\",\"Position\":{\"Item1\":481,\"Item2\":8},\"HeaderRange\":{\"Item1\":{\"Line\":1,\"Column\":1},\"Item2\":{\"Line\":1,\"Column\":11}},\"Documentation\":[]}")]
-[assembly: SpecializationDeclaration("{\"Kind\":{\"Case\":\"QsControlledAdjoint\"},\"TypeArguments\":{\"Case\":\"Null\"},\"Information\":{\"Characteristics\":{\"Case\":\"Union\",\"Fields\":[{\"Case\":\"SimpleSet\",\"Fields\":[{\"Case\":\"Adjointable\"}]},{\"Case\":\"SimpleSet\",\"Fields\":[{\"Case\":\"Controllable\"}]}]},\"InferredInformation\":{\"IsSelfAdjoint\":false,\"IsIntrinsic\":false}},\"Parent\":{\"Namespace\":\"Quantum.Bell\",\"Name\":\"DivideI\"},\"Attributes\":[],\"SourceFile\":\"/Users/Matt/Documents/Masters/Dissertation/Quantum/Testing/Inital_Test/Program.qs\",\"Position\":{\"Item1\":502,\"Item2\":8},\"HeaderRange\":{\"Item1\":{\"Line\":1,\"Column\":1},\"Item2\":{\"Line\":1,\"Column\":19}},\"Documentation\":[]}")]
-[assembly: CallableDeclaration("{\"Kind\":{\"Case\":\"Operation\"},\"QualifiedName\":{\"Namespace\":\"Quantum.Bell\",\"Name\":\"AddI\"},\"Attributes\":[],\"Modifiers\":{\"Access\":{\"Case\":\"DefaultAccess\"}},\"SourceFile\":\"/Users/Matt/Documents/Masters/Dissertation/Quantum/Testing/Inital_Test/Program.qs\",\"Position\":{\"Item1\":507,\"Item2\":4},\"SymbolRange\":{\"Item1\":{\"Line\":1,\"Column\":11},\"Item2\":{\"Line\":1,\"Column\":15}},\"ArgumentTuple\":{\"Case\":\"QsTuple\",\"Fields\":[[{\"Case\":\"QsTupleItem\",\"Fields\":[{\"VariableName\":{\"Case\":\"ValidName\",\"Fields\":[\"xs\"]},\"Type\":{\"Case\":\"UserDefinedType\",\"Fields\":[{\"Namespace\":\"Microsoft.Quantum.Arithmetic\",\"Name\":\"LittleEndian\",\"Range\":{\"Case\":\"Value\",\"Fields\":[{\"Item1\":{\"Line\":1,\"Column\":21},\"Item2\":{\"Line\":1,\"Column\":33}}]}}]},\"InferredInformation\":{\"IsMutable\":false,\"HasLocalQuantumDependency\":false},\"Position\":{\"Case\":\"Null\"},\"Range\":{\"Item1\":{\"Line\":1,\"Column\":17},\"Item2\":{\"Line\":1,\"Column\":19}}}]},{\"Case\":\"QsTupleItem\",\"Fields\":[{\"VariableName\":{\"Case\":\"ValidName\",\"Fields\":[\"ys\"]},\"Type\":{\"Case\":\"UserDefinedType\",\"Fields\":[{\"Namespace\":\"Microsoft.Quantum.Arithmetic\",\"Name\":\"LittleEndian\",\"Range\":{\"Case\":\"Value\",\"Fields\":[{\"Item1\":{\"Line\":1,\"Column\":39},\"Item2\":{\"Line\":1,\"Column\":51}}]}}]},\"InferredInformation\":{\"IsMutable\":false,\"HasLocalQuantumDependency\":false},\"Position\":{\"Case\":\"Null\"},\"Range\":{\"Item1\":{\"Line\":1,\"Column\":35},\"Item2\":{\"Line\":1,\"Column\":37}}}]}]]},\"Signature\":{\"TypeParameters\":[],\"ArgumentType\":{\"Case\":\"TupleType\",\"Fields\":[[{\"Case\":\"UserDefinedType\",\"Fields\":[{\"Namespace\":\"Microsoft.Quantum.Arithmetic\",\"Name\":\"LittleEndian\",\"Range\":{\"Case\":\"Null\"}}]},{\"Case\":\"UserDefinedType\",\"Fields\":[{\"Namespace\":\"Microsoft.Quantum.Arithmetic\",\"Name\":\"LittleEndian\",\"Range\":{\"Case\":\"Null\"}}]}]]},\"ReturnType\":{\"Case\":\"UnitType\"},\"Information\":{\"Characteristics\":{\"Case\":\"Union\",\"Fields\":[{\"Case\":\"SimpleSet\",\"Fields\":[{\"Case\":\"Adjointable\"}]},{\"Case\":\"SimpleSet\",\"Fields\":[{\"Case\":\"Controllable\"}]}]},\"InferredInformation\":{\"IsSelfAdjoint\":false,\"IsIntrinsic\":false}}},\"Documentation\":[]}")]
-[assembly: SpecializationDeclaration("{\"Kind\":{\"Case\":\"QsBody\"},\"TypeArguments\":{\"Case\":\"Null\"},\"Information\":{\"Characteristics\":{\"Case\":\"Union\",\"Fields\":[{\"Case\":\"SimpleSet\",\"Fields\":[{\"Case\":\"Adjointable\"}]},{\"Case\":\"SimpleSet\",\"Fields\":[{\"Case\":\"Controllable\"}]}]},\"InferredInformation\":{\"IsSelfAdjoint\":false,\"IsIntrinsic\":false}},\"Parent\":{\"Namespace\":\"Quantum.Bell\",\"Name\":\"AddI\"},\"Attributes\":[],\"SourceFile\":\"/Users/Matt/Documents/Masters/Dissertation/Quantum/Testing/Inital_Test/Program.qs\",\"Position\":{\"Item1\":507,\"Item2\":4},\"HeaderRange\":{\"Item1\":{\"Line\":1,\"Column\":11},\"Item2\":{\"Line\":1,\"Column\":15}},\"Documentation\":[]}")]
-[assembly: SpecializationDeclaration("{\"Kind\":{\"Case\":\"QsAdjoint\"},\"TypeArguments\":{\"Case\":\"Null\"},\"Information\":{\"Characteristics\":{\"Case\":\"Union\",\"Fields\":[{\"Case\":\"SimpleSet\",\"Fields\":[{\"Case\":\"Adjointable\"}]},{\"Case\":\"SimpleSet\",\"Fields\":[{\"Case\":\"Controllable\"}]}]},\"InferredInformation\":{\"IsSelfAdjoint\":false,\"IsIntrinsic\":false}},\"Parent\":{\"Namespace\":\"Quantum.Bell\",\"Name\":\"AddI\"},\"Attributes\":[],\"SourceFile\":\"/Users/Matt/Documents/Masters/Dissertation/Quantum/Testing/Inital_Test/Program.qs\",\"Position\":{\"Item1\":507,\"Item2\":4},\"HeaderRange\":{\"Item1\":{\"Line\":1,\"Column\":63},\"Item2\":{\"Line\":1,\"Column\":72}},\"Documentation\":[\"automatically generated QsAdjoint specialization for Quantum.Bell.AddI\"]}")]
-[assembly: SpecializationDeclaration("{\"Kind\":{\"Case\":\"QsControlled\"},\"TypeArguments\":{\"Case\":\"Null\"},\"Information\":{\"Characteristics\":{\"Case\":\"Union\",\"Fields\":[{\"Case\":\"SimpleSet\",\"Fields\":[{\"Case\":\"Adjointable\"}]},{\"Case\":\"SimpleSet\",\"Fields\":[{\"Case\":\"Controllable\"}]}]},\"InferredInformation\":{\"IsSelfAdjoint\":false,\"IsIntrinsic\":false}},\"Parent\":{\"Namespace\":\"Quantum.Bell\",\"Name\":\"AddI\"},\"Attributes\":[],\"SourceFile\":\"/Users/Matt/Documents/Masters/Dissertation/Quantum/Testing/Inital_Test/Program.qs\",\"Position\":{\"Item1\":507,\"Item2\":4},\"HeaderRange\":{\"Item1\":{\"Line\":1,\"Column\":63},\"Item2\":{\"Line\":1,\"Column\":72}},\"Documentation\":[\"automatically generated QsControlled specialization for Quantum.Bell.AddI\"]}")]
-[assembly: SpecializationDeclaration("{\"Kind\":{\"Case\":\"QsControlledAdjoint\"},\"TypeArguments\":{\"Case\":\"Null\"},\"Information\":{\"Characteristics\":{\"Case\":\"Union\",\"Fields\":[{\"Case\":\"SimpleSet\",\"Fields\":[{\"Case\":\"Adjointable\"}]},{\"Case\":\"SimpleSet\",\"Fields\":[{\"Case\":\"Controllable\"}]}]},\"InferredInformation\":{\"IsSelfAdjoint\":false,\"IsIntrinsic\":false}},\"Parent\":{\"Namespace\":\"Quantum.Bell\",\"Name\":\"AddI\"},\"Attributes\":[],\"SourceFile\":\"/Users/Matt/Documents/Masters/Dissertation/Quantum/Testing/Inital_Test/Program.qs\",\"Position\":{\"Item1\":507,\"Item2\":4},\"HeaderRange\":{\"Item1\":{\"Line\":1,\"Column\":63},\"Item2\":{\"Line\":1,\"Column\":72}},\"Documentation\":[\"automatically generated QsControlledAdjoint specialization for Quantum.Bell.AddI\"]}")]
-[assembly: CallableDeclaration("{\"Kind\":{\"Case\":\"Operation\"},\"QualifiedName\":{\"Namespace\":\"Quantum.Bell\",\"Name\":\"CompareGTI\"},\"Attributes\":[],\"Modifiers\":{\"Access\":{\"Case\":\"DefaultAccess\"}},\"SourceFile\":\"/Users/Matt/Documents/Masters/Dissertation/Quantum/Testing/Inital_Test/Program.qs\",\"Position\":{\"Item1\":523,\"Item2\":4},\"SymbolRange\":{\"Item1\":{\"Line\":1,\"Column\":11},\"Item2\":{\"Line\":1,\"Column\":21}},\"ArgumentTuple\":{\"Case\":\"QsTuple\",\"Fields\":[[{\"Case\":\"QsTupleItem\",\"Fields\":[{\"VariableName\":{\"Case\":\"ValidName\",\"Fields\":[\"xs\"]},\"Type\":{\"Case\":\"UserDefinedType\",\"Fields\":[{\"Namespace\":\"Microsoft.Quantum.Arithmetic\",\"Name\":\"LittleEndian\",\"Range\":{\"Case\":\"Value\",\"Fields\":[{\"Item1\":{\"Line\":1,\"Column\":27},\"Item2\":{\"Line\":1,\"Column\":39}}]}}]},\"InferredInformation\":{\"IsMutable\":false,\"HasLocalQuantumDependency\":false},\"Position\":{\"Case\":\"Null\"},\"Range\":{\"Item1\":{\"Line\":1,\"Column\":23},\"Item2\":{\"Line\":1,\"Column\":25}}}]},{\"Case\":\"QsTupleItem\",\"Fields\":[{\"VariableName\":{\"Case\":\"ValidName\",\"Fields\":[\"ys\"]},\"Type\":{\"Case\":\"UserDefinedType\",\"Fields\":[{\"Namespace\":\"Microsoft.Quantum.Arithmetic\",\"Name\":\"LittleEndian\",\"Range\":{\"Case\":\"Value\",\"Fields\":[{\"Item1\":{\"Line\":1,\"Column\":45},\"Item2\":{\"Line\":1,\"Column\":57}}]}}]},\"InferredInformation\":{\"IsMutable\":false,\"HasLocalQuantumDependency\":false},\"Position\":{\"Case\":\"Null\"},\"Range\":{\"Item1\":{\"Line\":1,\"Column\":41},\"Item2\":{\"Line\":1,\"Column\":43}}}]},{\"Case\":\"QsTupleItem\",\"Fields\":[{\"VariableName\":{\"Case\":\"ValidName\",\"Fields\":[\"result\"]},\"Type\":{\"Case\":\"Qubit\"},\"InferredInformation\":{\"IsMutable\":false,\"HasLocalQuantumDependency\":false},\"Position\":{\"Case\":\"Null\"},\"Range\":{\"Item1\":{\"Line\":2,\"Column\":29},\"Item2\":{\"Line\":2,\"Column\":35}}}]}]]},\"Signature\":{\"TypeParameters\":[],\"ArgumentType\":{\"Case\":\"TupleType\",\"Fields\":[[{\"Case\":\"UserDefinedType\",\"Fields\":[{\"Namespace\":\"Microsoft.Quantum.Arithmetic\",\"Name\":\"LittleEndian\",\"Range\":{\"Case\":\"Null\"}}]},{\"Case\":\"UserDefinedType\",\"Fields\":[{\"Namespace\":\"Microsoft.Quantum.Arithmetic\",\"Name\":\"LittleEndian\",\"Range\":{\"Case\":\"Null\"}}]},{\"Case\":\"Qubit\"}]]},\"ReturnType\":{\"Case\":\"UnitType\"},\"Information\":{\"Characteristics\":{\"Case\":\"Union\",\"Fields\":[{\"Case\":\"SimpleSet\",\"Fields\":[{\"Case\":\"Adjointable\"}]},{\"Case\":\"SimpleSet\",\"Fields\":[{\"Case\":\"Controllable\"}]}]},\"InferredInformation\":{\"IsSelfAdjoint\":false,\"IsIntrinsic\":false}}},\"Documentation\":[]}")]
-[assembly: SpecializationDeclaration("{\"Kind\":{\"Case\":\"QsBody\"},\"TypeArguments\":{\"Case\":\"Null\"},\"Information\":{\"Characteristics\":{\"Case\":\"Union\",\"Fields\":[{\"Case\":\"SimpleSet\",\"Fields\":[{\"Case\":\"Adjointable\"}]},{\"Case\":\"SimpleSet\",\"Fields\":[{\"Case\":\"Controllable\"}]}]},\"InferredInformation\":{\"IsSelfAdjoint\":false,\"IsIntrinsic\":false}},\"Parent\":{\"Namespace\":\"Quantum.Bell\",\"Name\":\"CompareGTI\"},\"Attributes\":[],\"SourceFile\":\"/Users/Matt/Documents/Masters/Dissertation/Quantum/Testing/Inital_Test/Program.qs\",\"Position\":{\"Item1\":523,\"Item2\":4},\"HeaderRange\":{\"Item1\":{\"Line\":1,\"Column\":11},\"Item2\":{\"Line\":1,\"Column\":21}},\"Documentation\":[]}")]
-[assembly: SpecializationDeclaration("{\"Kind\":{\"Case\":\"QsAdjoint\"},\"TypeArguments\":{\"Case\":\"Null\"},\"Information\":{\"Characteristics\":{\"Case\":\"Union\",\"Fields\":[{\"Case\":\"SimpleSet\",\"Fields\":[{\"Case\":\"Adjointable\"}]},{\"Case\":\"SimpleSet\",\"Fields\":[{\"Case\":\"Controllable\"}]}]},\"InferredInformation\":{\"IsSelfAdjoint\":false,\"IsIntrinsic\":false}},\"Parent\":{\"Namespace\":\"Quantum.Bell\",\"Name\":\"CompareGTI\"},\"Attributes\":[],\"SourceFile\":\"/Users/Matt/Documents/Masters/Dissertation/Quantum/Testing/Inital_Test/Program.qs\",\"Position\":{\"Item1\":523,\"Item2\":4},\"HeaderRange\":{\"Item1\":{\"Line\":2,\"Column\":54},\"Item2\":{\"Line\":2,\"Column\":63}},\"Documentation\":[\"automatically generated QsAdjoint specialization for Quantum.Bell.CompareGTI\"]}")]
-[assembly: SpecializationDeclaration("{\"Kind\":{\"Case\":\"QsControlled\"},\"TypeArguments\":{\"Case\":\"Null\"},\"Information\":{\"Characteristics\":{\"Case\":\"Union\",\"Fields\":[{\"Case\":\"SimpleSet\",\"Fields\":[{\"Case\":\"Adjointable\"}]},{\"Case\":\"SimpleSet\",\"Fields\":[{\"Case\":\"Controllable\"}]}]},\"InferredInformation\":{\"IsSelfAdjoint\":false,\"IsIntrinsic\":false}},\"Parent\":{\"Namespace\":\"Quantum.Bell\",\"Name\":\"CompareGTI\"},\"Attributes\":[],\"SourceFile\":\"/Users/Matt/Documents/Masters/Dissertation/Quantum/Testing/Inital_Test/Program.qs\",\"Position\":{\"Item1\":523,\"Item2\":4},\"HeaderRange\":{\"Item1\":{\"Line\":2,\"Column\":54},\"Item2\":{\"Line\":2,\"Column\":63}},\"Documentation\":[\"automatically generated QsControlled specialization for Quantum.Bell.CompareGTI\"]}")]
-[assembly: SpecializationDeclaration("{\"Kind\":{\"Case\":\"QsControlledAdjoint\"},\"TypeArguments\":{\"Case\":\"Null\"},\"Information\":{\"Characteristics\":{\"Case\":\"Union\",\"Fields\":[{\"Case\":\"SimpleSet\",\"Fields\":[{\"Case\":\"Adjointable\"}]},{\"Case\":\"SimpleSet\",\"Fields\":[{\"Case\":\"Controllable\"}]}]},\"InferredInformation\":{\"IsSelfAdjoint\":false,\"IsIntrinsic\":false}},\"Parent\":{\"Namespace\":\"Quantum.Bell\",\"Name\":\"CompareGTI\"},\"Attributes\":[],\"SourceFile\":\"/Users/Matt/Documents/Masters/Dissertation/Quantum/Testing/Inital_Test/Program.qs\",\"Position\":{\"Item1\":523,\"Item2\":4},\"HeaderRange\":{\"Item1\":{\"Line\":2,\"Column\":54},\"Item2\":{\"Line\":2,\"Column\":63}},\"Documentation\":[\"automatically generated QsControlledAdjoint specialization for Quantum.Bell.CompareGTI\"]}")]
-[assembly: CallableDeclaration("{\"Kind\":{\"Case\":\"Operation\"},\"QualifiedName\":{\"Namespace\":\"Quantum.Bell\",\"Name\":\"MultiplyI\"},\"Attributes\":[],\"Modifiers\":{\"Access\":{\"Case\":\"DefaultAccess\"}},\"SourceFile\":\"/Users/Matt/Documents/Masters/Dissertation/Quantum/Testing/Inital_Test/Program.qs\",\"Position\":{\"Item1\":528,\"Item2\":4},\"SymbolRange\":{\"Item1\":{\"Line\":1,\"Column\":11},\"Item2\":{\"Line\":1,\"Column\":20}},\"ArgumentTuple\":{\"Case\":\"QsTuple\",\"Fields\":[[{\"Case\":\"QsTupleItem\",\"Fields\":[{\"VariableName\":{\"Case\":\"ValidName\",\"Fields\":[\"xs\"]},\"Type\":{\"Case\":\"UserDefinedType\",\"Fields\":[{\"Namespace\":\"Microsoft.Quantum.Arithmetic\",\"Name\":\"LittleEndian\",\"Range\":{\"Case\":\"Value\",\"Fields\":[{\"Item1\":{\"Line\":1,\"Column\":26},\"Item2\":{\"Line\":1,\"Column\":38}}]}}]},\"InferredInformation\":{\"IsMutable\":false,\"HasLocalQuantumDependency\":false},\"Position\":{\"Case\":\"Null\"},\"Range\":{\"Item1\":{\"Line\":1,\"Column\":22},\"Item2\":{\"Line\":1,\"Column\":24}}}]},{\"Case\":\"QsTupleItem\",\"Fields\":[{\"VariableName\":{\"Case\":\"ValidName\",\"Fields\":[\"ys\"]},\"Type\":{\"Case\":\"UserDefinedType\",\"Fields\":[{\"Namespace\":\"Microsoft.Quantum.Arithmetic\",\"Name\":\"LittleEndian\",\"Range\":{\"Case\":\"Value\",\"Fields\":[{\"Item1\":{\"Line\":1,\"Column\":44},\"Item2\":{\"Line\":1,\"Column\":56}}]}}]},\"InferredInformation\":{\"IsMutable\":false,\"HasLocalQuantumDependency\":false},\"Position\":{\"Case\":\"Null\"},\"Range\":{\"Item1\":{\"Line\":1,\"Column\":40},\"Item2\":{\"Line\":1,\"Column\":42}}}]},{\"Case\":\"QsTupleItem\",\"Fields\":[{\"VariableName\":{\"Case\":\"ValidName\",\"Fields\":[\"result\"]},\"Type\":{\"Case\":\"UserDefinedType\",\"Fields\":[{\"Namespace\":\"Microsoft.Quantum.Arithmetic\",\"Name\":\"LittleEndian\",\"Range\":{\"Case\":\"Value\",\"Fields\":[{\"Item1\":{\"Line\":2,\"Column\":34},\"Item2\":{\"Line\":2,\"Column\":46}}]}}]},\"InferredInformation\":{\"IsMutable\":false,\"HasLocalQuantumDependency\":false},\"Position\":{\"Case\":\"Null\"},\"Range\":{\"Item1\":{\"Line\":2,\"Column\":26},\"Item2\":{\"Line\":2,\"Column\":32}}}]}]]},\"Signature\":{\"TypeParameters\":[],\"ArgumentType\":{\"Case\":\"TupleType\",\"Fields\":[[{\"Case\":\"UserDefinedType\",\"Fields\":[{\"Namespace\":\"Microsoft.Quantum.Arithmetic\",\"Name\":\"LittleEndian\",\"Range\":{\"Case\":\"Null\"}}]},{\"Case\":\"UserDefinedType\",\"Fields\":[{\"Namespace\":\"Microsoft.Quantum.Arithmetic\",\"Name\":\"LittleEndian\",\"Range\":{\"Case\":\"Null\"}}]},{\"Case\":\"UserDefinedType\",\"Fields\":[{\"Namespace\":\"Microsoft.Quantum.Arithmetic\",\"Name\":\"LittleEndian\",\"Range\":{\"Case\":\"Null\"}}]}]]},\"ReturnType\":{\"Case\":\"UnitType\"},\"Information\":{\"Characteristics\":{\"Case\":\"Union\",\"Fields\":[{\"Case\":\"SimpleSet\",\"Fields\":[{\"Case\":\"Adjointable\"}]},{\"Case\":\"SimpleSet\",\"Fields\":[{\"Case\":\"Controllable\"}]}]},\"InferredInformation\":{\"IsSelfAdjoint\":false,\"IsIntrinsic\":false}}},\"Documentation\":[]}")]
-[assembly: SpecializationDeclaration("{\"Kind\":{\"Case\":\"QsBody\"},\"TypeArguments\":{\"Case\":\"Null\"},\"Information\":{\"Characteristics\":{\"Case\":\"Union\",\"Fields\":[{\"Case\":\"SimpleSet\",\"Fields\":[{\"Case\":\"Adjointable\"}]},{\"Case\":\"SimpleSet\",\"Fields\":[{\"Case\":\"Controllable\"}]}]},\"InferredInformation\":{\"IsSelfAdjoint\":false,\"IsIntrinsic\":false}},\"Parent\":{\"Namespace\":\"Quantum.Bell\",\"Name\":\"MultiplyI\"},\"Attributes\":[],\"SourceFile\":\"/Users/Matt/Documents/Masters/Dissertation/Quantum/Testing/Inital_Test/Program.qs\",\"Position\":{\"Item1\":530,\"Item2\":8},\"HeaderRange\":{\"Item1\":{\"Line\":1,\"Column\":1},\"Item2\":{\"Line\":1,\"Column\":5}},\"Documentation\":[]}")]
-[assembly: SpecializationDeclaration("{\"Kind\":{\"Case\":\"QsAdjoint\"},\"TypeArguments\":{\"Case\":\"Null\"},\"Information\":{\"Characteristics\":{\"Case\":\"Union\",\"Fields\":[{\"Case\":\"SimpleSet\",\"Fields\":[{\"Case\":\"Adjointable\"}]},{\"Case\":\"SimpleSet\",\"Fields\":[{\"Case\":\"Controllable\"}]}]},\"InferredInformation\":{\"IsSelfAdjoint\":false,\"IsIntrinsic\":false}},\"Parent\":{\"Namespace\":\"Quantum.Bell\",\"Name\":\"MultiplyI\"},\"Attributes\":[],\"SourceFile\":\"/Users/Matt/Documents/Masters/Dissertation/Quantum/Testing/Inital_Test/Program.qs\",\"Position\":{\"Item1\":560,\"Item2\":8},\"HeaderRange\":{\"Item1\":{\"Line\":1,\"Column\":1},\"Item2\":{\"Line\":1,\"Column\":8}},\"Documentation\":[]}")]
-[assembly: SpecializationDeclaration("{\"Kind\":{\"Case\":\"QsControlled\"},\"TypeArguments\":{\"Case\":\"Null\"},\"Information\":{\"Characteristics\":{\"Case\":\"Union\",\"Fields\":[{\"Case\":\"SimpleSet\",\"Fields\":[{\"Case\":\"Adjointable\"}]},{\"Case\":\"SimpleSet\",\"Fields\":[{\"Case\":\"Controllable\"}]}]},\"InferredInformation\":{\"IsSelfAdjoint\":false,\"IsIntrinsic\":false}},\"Parent\":{\"Namespace\":\"Quantum.Bell\",\"Name\":\"MultiplyI\"},\"Attributes\":[],\"SourceFile\":\"/Users/Matt/Documents/Masters/Dissertation/Quantum/Testing/Inital_Test/Program.qs\",\"Position\":{\"Item1\":543,\"Item2\":8},\"HeaderRange\":{\"Item1\":{\"Line\":1,\"Column\":1},\"Item2\":{\"Line\":1,\"Column\":11}},\"Documentation\":[]}")]
-[assembly: SpecializationDeclaration("{\"Kind\":{\"Case\":\"QsControlledAdjoint\"},\"TypeArguments\":{\"Case\":\"Null\"},\"Information\":{\"Characteristics\":{\"Case\":\"Union\",\"Fields\":[{\"Case\":\"SimpleSet\",\"Fields\":[{\"Case\":\"Adjointable\"}]},{\"Case\":\"SimpleSet\",\"Fields\":[{\"Case\":\"Controllable\"}]}]},\"InferredInformation\":{\"IsSelfAdjoint\":false,\"IsIntrinsic\":false}},\"Parent\":{\"Namespace\":\"Quantum.Bell\",\"Name\":\"MultiplyI\"},\"Attributes\":[],\"SourceFile\":\"/Users/Matt/Documents/Masters/Dissertation/Quantum/Testing/Inital_Test/Program.qs\",\"Position\":{\"Item1\":561,\"Item2\":8},\"HeaderRange\":{\"Item1\":{\"Line\":1,\"Column\":1},\"Item2\":{\"Line\":1,\"Column\":19}},\"Documentation\":[]}")]
-[assembly: CallableDeclaration("{\"Kind\":{\"Case\":\"Operation\"},\"QualifiedName\":{\"Namespace\":\"Quantum.Bell\",\"Name\":\"SquareI\"},\"Attributes\":[],\"Modifiers\":{\"Access\":{\"Case\":\"DefaultAccess\"}},\"SourceFile\":\"/Users/Matt/Documents/Masters/Dissertation/Quantum/Testing/Inital_Test/Program.qs\",\"Position\":{\"Item1\":566,\"Item2\":4},\"SymbolRange\":{\"Item1\":{\"Line\":1,\"Column\":11},\"Item2\":{\"Line\":1,\"Column\":18}},\"ArgumentTuple\":{\"Case\":\"QsTuple\",\"Fields\":[[{\"Case\":\"QsTupleItem\",\"Fields\":[{\"VariableName\":{\"Case\":\"ValidName\",\"Fields\":[\"xs\"]},\"Type\":{\"Case\":\"UserDefinedType\",\"Fields\":[{\"Namespace\":\"Microsoft.Quantum.Arithmetic\",\"Name\":\"LittleEndian\",\"Range\":{\"Case\":\"Value\",\"Fields\":[{\"Item1\":{\"Line\":1,\"Column\":24},\"Item2\":{\"Line\":1,\"Column\":36}}]}}]},\"InferredInformation\":{\"IsMutable\":false,\"HasLocalQuantumDependency\":false},\"Position\":{\"Case\":\"Null\"},\"Range\":{\"Item1\":{\"Line\":1,\"Column\":20},\"Item2\":{\"Line\":1,\"Column\":22}}}]},{\"Case\":\"QsTupleItem\",\"Fields\":[{\"VariableName\":{\"Case\":\"ValidName\",\"Fields\":[\"result\"]},\"Type\":{\"Case\":\"UserDefinedType\",\"Fields\":[{\"Namespace\":\"Microsoft.Quantum.Arithmetic\",\"Name\":\"LittleEndian\",\"Range\":{\"Case\":\"Value\",\"Fields\":[{\"Item1\":{\"Line\":1,\"Column\":46},\"Item2\":{\"Line\":1,\"Column\":58}}]}}]},\"InferredInformation\":{\"IsMutable\":false,\"HasLocalQuantumDependency\":false},\"Position\":{\"Case\":\"Null\"},\"Range\":{\"Item1\":{\"Line\":1,\"Column\":38},\"Item2\":{\"Line\":1,\"Column\":44}}}]}]]},\"Signature\":{\"TypeParameters\":[],\"ArgumentType\":{\"Case\":\"TupleType\",\"Fields\":[[{\"Case\":\"UserDefinedType\",\"Fields\":[{\"Namespace\":\"Microsoft.Quantum.Arithmetic\",\"Name\":\"LittleEndian\",\"Range\":{\"Case\":\"Null\"}}]},{\"Case\":\"UserDefinedType\",\"Fields\":[{\"Namespace\":\"Microsoft.Quantum.Arithmetic\",\"Name\":\"LittleEndian\",\"Range\":{\"Case\":\"Null\"}}]}]]},\"ReturnType\":{\"Case\":\"UnitType\"},\"Information\":{\"Characteristics\":{\"Case\":\"Union\",\"Fields\":[{\"Case\":\"SimpleSet\",\"Fields\":[{\"Case\":\"Adjointable\"}]},{\"Case\":\"SimpleSet\",\"Fields\":[{\"Case\":\"Controllable\"}]}]},\"InferredInformation\":{\"IsSelfAdjoint\":false,\"IsIntrinsic\":false}}},\"Documentation\":[]}")]
-[assembly: SpecializationDeclaration("{\"Kind\":{\"Case\":\"QsBody\"},\"TypeArguments\":{\"Case\":\"Null\"},\"Information\":{\"Characteristics\":{\"Case\":\"Union\",\"Fields\":[{\"Case\":\"SimpleSet\",\"Fields\":[{\"Case\":\"Adjointable\"}]},{\"Case\":\"SimpleSet\",\"Fields\":[{\"Case\":\"Controllable\"}]}]},\"InferredInformation\":{\"IsSelfAdjoint\":false,\"IsIntrinsic\":false}},\"Parent\":{\"Namespace\":\"Quantum.Bell\",\"Name\":\"SquareI\"},\"Attributes\":[],\"SourceFile\":\"/Users/Matt/Documents/Masters/Dissertation/Quantum/Testing/Inital_Test/Program.qs\",\"Position\":{\"Item1\":567,\"Item2\":8},\"HeaderRange\":{\"Item1\":{\"Line\":1,\"Column\":1},\"Item2\":{\"Line\":1,\"Column\":5}},\"Documentation\":[]}")]
-[assembly: SpecializationDeclaration("{\"Kind\":{\"Case\":\"QsAdjoint\"},\"TypeArguments\":{\"Case\":\"Null\"},\"Information\":{\"Characteristics\":{\"Case\":\"Union\",\"Fields\":[{\"Case\":\"SimpleSet\",\"Fields\":[{\"Case\":\"Adjointable\"}]},{\"Case\":\"SimpleSet\",\"Fields\":[{\"Case\":\"Controllable\"}]}]},\"InferredInformation\":{\"IsSelfAdjoint\":false,\"IsIntrinsic\":false}},\"Parent\":{\"Namespace\":\"Quantum.Bell\",\"Name\":\"SquareI\"},\"Attributes\":[],\"SourceFile\":\"/Users/Matt/Documents/Masters/Dissertation/Quantum/Testing/Inital_Test/Program.qs\",\"Position\":{\"Item1\":586,\"Item2\":8},\"HeaderRange\":{\"Item1\":{\"Line\":1,\"Column\":1},\"Item2\":{\"Line\":1,\"Column\":8}},\"Documentation\":[]}")]
-[assembly: SpecializationDeclaration("{\"Kind\":{\"Case\":\"QsControlled\"},\"TypeArguments\":{\"Case\":\"Null\"},\"Information\":{\"Characteristics\":{\"Case\":\"Union\",\"Fields\":[{\"Case\":\"SimpleSet\",\"Fields\":[{\"Case\":\"Adjointable\"}]},{\"Case\":\"SimpleSet\",\"Fields\":[{\"Case\":\"Controllable\"}]}]},\"InferredInformation\":{\"IsSelfAdjoint\":false,\"IsIntrinsic\":false}},\"Parent\":{\"Namespace\":\"Quantum.Bell\",\"Name\":\"SquareI\"},\"Attributes\":[],\"SourceFile\":\"/Users/Matt/Documents/Masters/Dissertation/Quantum/Testing/Inital_Test/Program.qs\",\"Position\":{\"Item1\":570,\"Item2\":8},\"HeaderRange\":{\"Item1\":{\"Line\":1,\"Column\":1},\"Item2\":{\"Line\":1,\"Column\":11}},\"Documentation\":[]}")]
-[assembly: SpecializationDeclaration("{\"Kind\":{\"Case\":\"QsControlledAdjoint\"},\"TypeArguments\":{\"Case\":\"Null\"},\"Information\":{\"Characteristics\":{\"Case\":\"Union\",\"Fields\":[{\"Case\":\"SimpleSet\",\"Fields\":[{\"Case\":\"Adjointable\"}]},{\"Case\":\"SimpleSet\",\"Fields\":[{\"Case\":\"Controllable\"}]}]},\"InferredInformation\":{\"IsSelfAdjoint\":false,\"IsIntrinsic\":false}},\"Parent\":{\"Namespace\":\"Quantum.Bell\",\"Name\":\"SquareI\"},\"Attributes\":[],\"SourceFile\":\"/Users/Matt/Documents/Masters/Dissertation/Quantum/Testing/Inital_Test/Program.qs\",\"Position\":{\"Item1\":587,\"Item2\":8},\"HeaderRange\":{\"Item1\":{\"Line\":1,\"Column\":1},\"Item2\":{\"Line\":1,\"Column\":19}},\"Documentation\":[]}")]
-[assembly: CallableDeclaration("{\"Kind\":{\"Case\":\"Operation\"},\"QualifiedName\":{\"Namespace\":\"Quantum.Bell\",\"Name\":\"MultiplySI\"},\"Attributes\":[],\"Modifiers\":{\"Access\":{\"Case\":\"DefaultAccess\"}},\"SourceFile\":\"/Users/Matt/Documents/Masters/Dissertation/Quantum/Testing/Inital_Test/Program.qs\",\"Position\":{\"Item1\":591,\"Item2\":4},\"SymbolRange\":{\"Item1\":{\"Line\":1,\"Column\":11},\"Item2\":{\"Line\":1,\"Column\":21}},\"ArgumentTuple\":{\"Case\":\"QsTuple\",\"Fields\":[[{\"Case\":\"QsTupleItem\",\"Fields\":[{\"VariableName\":{\"Case\":\"ValidName\",\"Fields\":[\"xs\"]},\"Type\":{\"Case\":\"UserDefinedType\",\"Fields\":[{\"Namespace\":\"Quantum.Bell\",\"Name\":\"SignedLittleEndian\",\"Range\":{\"Case\":\"Value\",\"Fields\":[{\"Item1\":{\"Line\":1,\"Column\":27},\"Item2\":{\"Line\":1,\"Column\":45}}]}}]},\"InferredInformation\":{\"IsMutable\":false,\"HasLocalQuantumDependency\":false},\"Position\":{\"Case\":\"Null\"},\"Range\":{\"Item1\":{\"Line\":1,\"Column\":23},\"Item2\":{\"Line\":1,\"Column\":25}}}]},{\"Case\":\"QsTupleItem\",\"Fields\":[{\"VariableName\":{\"Case\":\"ValidName\",\"Fields\":[\"ys\"]},\"Type\":{\"Case\":\"UserDefinedType\",\"Fields\":[{\"Namespace\":\"Quantum.Bell\",\"Name\":\"SignedLittleEndian\",\"Range\":{\"Case\":\"Value\",\"Fields\":[{\"Item1\":{\"Line\":2,\"Column\":31},\"Item2\":{\"Line\":2,\"Column\":49}}]}}]},\"InferredInformation\":{\"IsMutable\":false,\"HasLocalQuantumDependency\":false},\"Position\":{\"Case\":\"Null\"},\"Range\":{\"Item1\":{\"Line\":2,\"Column\":27},\"Item2\":{\"Line\":2,\"Column\":29}}}]},{\"Case\":\"QsTupleItem\",\"Fields\":[{\"VariableName\":{\"Case\":\"ValidName\",\"Fields\":[\"result\"]},\"Type\":{\"Case\":\"UserDefinedType\",\"Fields\":[{\"Namespace\":\"Quantum.Bell\",\"Name\":\"SignedLittleEndian\",\"Range\":{\"Case\":\"Value\",\"Fields\":[{\"Item1\":{\"Line\":3,\"Column\":35},\"Item2\":{\"Line\":3,\"Column\":53}}]}}]},\"InferredInformation\":{\"IsMutable\":false,\"HasLocalQuantumDependency\":false},\"Position\":{\"Case\":\"Null\"},\"Range\":{\"Item1\":{\"Line\":3,\"Column\":27},\"Item2\":{\"Line\":3,\"Column\":33}}}]}]]},\"Signature\":{\"TypeParameters\":[],\"ArgumentType\":{\"Case\":\"TupleType\",\"Fields\":[[{\"Case\":\"UserDefinedType\",\"Fields\":[{\"Namespace\":\"Quantum.Bell\",\"Name\":\"SignedLittleEndian\",\"Range\":{\"Case\":\"Null\"}}]},{\"Case\":\"UserDefinedType\",\"Fields\":[{\"Namespace\":\"Quantum.Bell\",\"Name\":\"SignedLittleEndian\",\"Range\":{\"Case\":\"Null\"}}]},{\"Case\":\"UserDefinedType\",\"Fields\":[{\"Namespace\":\"Quantum.Bell\",\"Name\":\"SignedLittleEndian\",\"Range\":{\"Case\":\"Null\"}}]}]]},\"ReturnType\":{\"Case\":\"UnitType\"},\"Information\":{\"Characteristics\":{\"Case\":\"Union\",\"Fields\":[{\"Case\":\"SimpleSet\",\"Fields\":[{\"Case\":\"Adjointable\"}]},{\"Case\":\"SimpleSet\",\"Fields\":[{\"Case\":\"Controllable\"}]}]},\"InferredInformation\":{\"IsSelfAdjoint\":false,\"IsIntrinsic\":false}}},\"Documentation\":[]}")]
-[assembly: SpecializationDeclaration("{\"Kind\":{\"Case\":\"QsBody\"},\"TypeArguments\":{\"Case\":\"Null\"},\"Information\":{\"Characteristics\":{\"Case\":\"Union\",\"Fields\":[{\"Case\":\"SimpleSet\",\"Fields\":[{\"Case\":\"Adjointable\"}]},{\"Case\":\"SimpleSet\",\"Fields\":[{\"Case\":\"Controllable\"}]}]},\"InferredInformation\":{\"IsSelfAdjoint\":false,\"IsIntrinsic\":false}},\"Parent\":{\"Namespace\":\"Quantum.Bell\",\"Name\":\"MultiplySI\"},\"Attributes\":[],\"SourceFile\":\"/Users/Matt/Documents/Masters/Dissertation/Quantum/Testing/Inital_Test/Program.qs\",\"Position\":{\"Item1\":594,\"Item2\":8},\"HeaderRange\":{\"Item1\":{\"Line\":1,\"Column\":1},\"Item2\":{\"Line\":1,\"Column\":5}},\"Documentation\":[]}")]
-[assembly: SpecializationDeclaration("{\"Kind\":{\"Case\":\"QsAdjoint\"},\"TypeArguments\":{\"Case\":\"Null\"},\"Information\":{\"Characteristics\":{\"Case\":\"Union\",\"Fields\":[{\"Case\":\"SimpleSet\",\"Fields\":[{\"Case\":\"Adjointable\"}]},{\"Case\":\"SimpleSet\",\"Fields\":[{\"Case\":\"Controllable\"}]}]},\"InferredInformation\":{\"IsSelfAdjoint\":false,\"IsIntrinsic\":false}},\"Parent\":{\"Namespace\":\"Quantum.Bell\",\"Name\":\"MultiplySI\"},\"Attributes\":[],\"SourceFile\":\"/Users/Matt/Documents/Masters/Dissertation/Quantum/Testing/Inital_Test/Program.qs\",\"Position\":{\"Item1\":618,\"Item2\":8},\"HeaderRange\":{\"Item1\":{\"Line\":1,\"Column\":1},\"Item2\":{\"Line\":1,\"Column\":8}},\"Documentation\":[]}")]
-[assembly: SpecializationDeclaration("{\"Kind\":{\"Case\":\"QsControlled\"},\"TypeArguments\":{\"Case\":\"Null\"},\"Information\":{\"Characteristics\":{\"Case\":\"Union\",\"Fields\":[{\"Case\":\"SimpleSet\",\"Fields\":[{\"Case\":\"Adjointable\"}]},{\"Case\":\"SimpleSet\",\"Fields\":[{\"Case\":\"Controllable\"}]}]},\"InferredInformation\":{\"IsSelfAdjoint\":false,\"IsIntrinsic\":false}},\"Parent\":{\"Namespace\":\"Quantum.Bell\",\"Name\":\"MultiplySI\"},\"Attributes\":[],\"SourceFile\":\"/Users/Matt/Documents/Masters/Dissertation/Quantum/Testing/Inital_Test/Program.qs\",\"Position\":{\"Item1\":597,\"Item2\":8},\"HeaderRange\":{\"Item1\":{\"Line\":1,\"Column\":1},\"Item2\":{\"Line\":1,\"Column\":11}},\"Documentation\":[]}")]
-[assembly: SpecializationDeclaration("{\"Kind\":{\"Case\":\"QsControlledAdjoint\"},\"TypeArguments\":{\"Case\":\"Null\"},\"Information\":{\"Characteristics\":{\"Case\":\"Union\",\"Fields\":[{\"Case\":\"SimpleSet\",\"Fields\":[{\"Case\":\"Adjointable\"}]},{\"Case\":\"SimpleSet\",\"Fields\":[{\"Case\":\"Controllable\"}]}]},\"InferredInformation\":{\"IsSelfAdjoint\":false,\"IsIntrinsic\":false}},\"Parent\":{\"Namespace\":\"Quantum.Bell\",\"Name\":\"MultiplySI\"},\"Attributes\":[],\"SourceFile\":\"/Users/Matt/Documents/Masters/Dissertation/Quantum/Testing/Inital_Test/Program.qs\",\"Position\":{\"Item1\":619,\"Item2\":8},\"HeaderRange\":{\"Item1\":{\"Line\":1,\"Column\":1},\"Item2\":{\"Line\":1,\"Column\":19}},\"Documentation\":[]}")]
-[assembly: CallableDeclaration("{\"Kind\":{\"Case\":\"Operation\"},\"QualifiedName\":{\"Namespace\":\"Quantum.Bell\",\"Name\":\"Invert2sSI\"},\"Attributes\":[],\"Modifiers\":{\"Access\":{\"Case\":\"DefaultAccess\"}},\"SourceFile\":\"/Users/Matt/Documents/Masters/Dissertation/Quantum/Testing/Inital_Test/Program.qs\",\"Position\":{\"Item1\":622,\"Item2\":5},\"SymbolRange\":{\"Item1\":{\"Line\":1,\"Column\":11},\"Item2\":{\"Line\":1,\"Column\":21}},\"ArgumentTuple\":{\"Case\":\"QsTuple\",\"Fields\":[[{\"Case\":\"QsTupleItem\",\"Fields\":[{\"VariableName\":{\"Case\":\"ValidName\",\"Fields\":[\"xs\"]},\"Type\":{\"Case\":\"UserDefinedType\",\"Fields\":[{\"Namespace\":\"Quantum.Bell\",\"Name\":\"SignedLittleEndian\",\"Range\":{\"Case\":\"Value\",\"Fields\":[{\"Item1\":{\"Line\":1,\"Column\":27},\"Item2\":{\"Line\":1,\"Column\":45}}]}}]},\"InferredInformation\":{\"IsMutable\":false,\"HasLocalQuantumDependency\":false},\"Position\":{\"Case\":\"Null\"},\"Range\":{\"Item1\":{\"Line\":1,\"Column\":23},\"Item2\":{\"Line\":1,\"Column\":25}}}]}]]},\"Signature\":{\"TypeParameters\":[],\"ArgumentType\":{\"Case\":\"UserDefinedType\",\"Fields\":[{\"Namespace\":\"Quantum.Bell\",\"Name\":\"SignedLittleEndian\",\"Range\":{\"Case\":\"Null\"}}]},\"ReturnType\":{\"Case\":\"UnitType\"},\"Information\":{\"Characteristics\":{\"Case\":\"Union\",\"Fields\":[{\"Case\":\"SimpleSet\",\"Fields\":[{\"Case\":\"Adjointable\"}]},{\"Case\":\"SimpleSet\",\"Fields\":[{\"Case\":\"Controllable\"}]}]},\"InferredInformation\":{\"IsSelfAdjoint\":false,\"IsIntrinsic\":false}}},\"Documentation\":[]}")]
-[assembly: SpecializationDeclaration("{\"Kind\":{\"Case\":\"QsBody\"},\"TypeArguments\":{\"Case\":\"Null\"},\"Information\":{\"Characteristics\":{\"Case\":\"Union\",\"Fields\":[{\"Case\":\"SimpleSet\",\"Fields\":[{\"Case\":\"Adjointable\"}]},{\"Case\":\"SimpleSet\",\"Fields\":[{\"Case\":\"Controllable\"}]}]},\"InferredInformation\":{\"IsSelfAdjoint\":false,\"IsIntrinsic\":false}},\"Parent\":{\"Namespace\":\"Quantum.Bell\",\"Name\":\"Invert2sSI\"},\"Attributes\":[],\"SourceFile\":\"/Users/Matt/Documents/Masters/Dissertation/Quantum/Testing/Inital_Test/Program.qs\",\"Position\":{\"Item1\":623,\"Item2\":8},\"HeaderRange\":{\"Item1\":{\"Line\":1,\"Column\":1},\"Item2\":{\"Line\":1,\"Column\":5}},\"Documentation\":[]}")]
-[assembly: SpecializationDeclaration("{\"Kind\":{\"Case\":\"QsAdjoint\"},\"TypeArguments\":{\"Case\":\"Null\"},\"Information\":{\"Characteristics\":{\"Case\":\"Union\",\"Fields\":[{\"Case\":\"SimpleSet\",\"Fields\":[{\"Case\":\"Adjointable\"}]},{\"Case\":\"SimpleSet\",\"Fields\":[{\"Case\":\"Controllable\"}]}]},\"InferredInformation\":{\"IsSelfAdjoint\":false,\"IsIntrinsic\":false}},\"Parent\":{\"Namespace\":\"Quantum.Bell\",\"Name\":\"Invert2sSI\"},\"Attributes\":[],\"SourceFile\":\"/Users/Matt/Documents/Masters/Dissertation/Quantum/Testing/Inital_Test/Program.qs\",\"Position\":{\"Item1\":635,\"Item2\":8},\"HeaderRange\":{\"Item1\":{\"Line\":1,\"Column\":1},\"Item2\":{\"Line\":1,\"Column\":8}},\"Documentation\":[]}")]
-[assembly: SpecializationDeclaration("{\"Kind\":{\"Case\":\"QsControlled\"},\"TypeArguments\":{\"Case\":\"Null\"},\"Information\":{\"Characteristics\":{\"Case\":\"Union\",\"Fields\":[{\"Case\":\"SimpleSet\",\"Fields\":[{\"Case\":\"Adjointable\"}]},{\"Case\":\"SimpleSet\",\"Fields\":[{\"Case\":\"Controllable\"}]}]},\"InferredInformation\":{\"IsSelfAdjoint\":false,\"IsIntrinsic\":false}},\"Parent\":{\"Namespace\":\"Quantum.Bell\",\"Name\":\"Invert2sSI\"},\"Attributes\":[],\"SourceFile\":\"/Users/Matt/Documents/Masters/Dissertation/Quantum/Testing/Inital_Test/Program.qs\",\"Position\":{\"Item1\":626,\"Item2\":8},\"HeaderRange\":{\"Item1\":{\"Line\":1,\"Column\":1},\"Item2\":{\"Line\":1,\"Column\":11}},\"Documentation\":[]}")]
-[assembly: SpecializationDeclaration("{\"Kind\":{\"Case\":\"QsControlledAdjoint\"},\"TypeArguments\":{\"Case\":\"Null\"},\"Information\":{\"Characteristics\":{\"Case\":\"Union\",\"Fields\":[{\"Case\":\"SimpleSet\",\"Fields\":[{\"Case\":\"Adjointable\"}]},{\"Case\":\"SimpleSet\",\"Fields\":[{\"Case\":\"Controllable\"}]}]},\"InferredInformation\":{\"IsSelfAdjoint\":false,\"IsIntrinsic\":false}},\"Parent\":{\"Namespace\":\"Quantum.Bell\",\"Name\":\"Invert2sSI\"},\"Attributes\":[],\"SourceFile\":\"/Users/Matt/Documents/Masters/Dissertation/Quantum/Testing/Inital_Test/Program.qs\",\"Position\":{\"Item1\":636,\"Item2\":8},\"HeaderRange\":{\"Item1\":{\"Line\":1,\"Column\":1},\"Item2\":{\"Line\":1,\"Column\":19}},\"Documentation\":[]}")]
+[assembly: CallableDeclaration("{\"Kind\":{\"Case\":\"Operation\"},\"QualifiedName\":{\"Namespace\":\"Quantum.Bell\",\"Name\":\"CFCControl\"},\"Attributes\":[],\"Modifiers\":{\"Access\":{\"Case\":\"DefaultAccess\"}},\"SourceFile\":\"/Users/Matt/Documents/Masters/Dissertation/Quantum/Testing/Inital_Test/Program.qs\",\"Position\":{\"Item1\":24,\"Item2\":0},\"SymbolRange\":{\"Item1\":{\"Line\":1,\"Column\":11},\"Item2\":{\"Line\":1,\"Column\":21}},\"ArgumentTuple\":{\"Case\":\"QsTuple\",\"Fields\":[[{\"Case\":\"QsTupleItem\",\"Fields\":[{\"VariableName\":{\"Case\":\"ValidName\",\"Fields\":[\"n\"]},\"Type\":{\"Case\":\"Int\"},\"InferredInformation\":{\"IsMutable\":false,\"HasLocalQuantumDependency\":false},\"Position\":{\"Case\":\"Null\"},\"Range\":{\"Item1\":{\"Line\":1,\"Column\":22},\"Item2\":{\"Line\":1,\"Column\":23}}}]}]]},\"Signature\":{\"TypeParameters\":[],\"ArgumentType\":{\"Case\":\"Int\"},\"ReturnType\":{\"Case\":\"TupleType\",\"Fields\":[[{\"Case\":\"Int\"},{\"Case\":\"BigInt\"}]]},\"Information\":{\"Characteristics\":{\"Case\":\"EmptySet\"},\"InferredInformation\":{\"IsSelfAdjoint\":false,\"IsIntrinsic\":false}}},\"Documentation\":[]}")]
+[assembly: SpecializationDeclaration("{\"Kind\":{\"Case\":\"QsBody\"},\"TypeArguments\":{\"Case\":\"Null\"},\"Information\":{\"Characteristics\":{\"Case\":\"EmptySet\"},\"InferredInformation\":{\"IsSelfAdjoint\":false,\"IsIntrinsic\":false}},\"Parent\":{\"Namespace\":\"Quantum.Bell\",\"Name\":\"CFCControl\"},\"Attributes\":[],\"SourceFile\":\"/Users/Matt/Documents/Masters/Dissertation/Quantum/Testing/Inital_Test/Program.qs\",\"Position\":{\"Item1\":24,\"Item2\":0},\"HeaderRange\":{\"Item1\":{\"Line\":1,\"Column\":11},\"Item2\":{\"Line\":1,\"Column\":21}},\"Documentation\":[]}")]
+[assembly: CallableDeclaration("{\"Kind\":{\"Case\":\"Operation\"},\"QualifiedName\":{\"Namespace\":\"Quantum.Bell\",\"Name\":\"CFC\"},\"Attributes\":[],\"Modifiers\":{\"Access\":{\"Case\":\"DefaultAccess\"}},\"SourceFile\":\"/Users/Matt/Documents/Masters/Dissertation/Quantum/Testing/Inital_Test/Program.qs\",\"Position\":{\"Item1\":47,\"Item2\":0},\"SymbolRange\":{\"Item1\":{\"Line\":1,\"Column\":11},\"Item2\":{\"Line\":1,\"Column\":14}},\"ArgumentTuple\":{\"Case\":\"QsTuple\",\"Fields\":[[{\"Case\":\"QsTupleItem\",\"Fields\":[{\"VariableName\":{\"Case\":\"ValidName\",\"Fields\":[\"p\"]},\"Type\":{\"Case\":\"ArrayType\",\"Fields\":[{\"Case\":\"Qubit\"}]},\"InferredInformation\":{\"IsMutable\":false,\"HasLocalQuantumDependency\":false},\"Position\":{\"Case\":\"Null\"},\"Range\":{\"Item1\":{\"Line\":1,\"Column\":15},\"Item2\":{\"Line\":1,\"Column\":16}}}]},{\"Case\":\"QsTupleItem\",\"Fields\":[{\"VariableName\":{\"Case\":\"ValidName\",\"Fields\":[\"m\"]},\"Type\":{\"Case\":\"ArrayType\",\"Fields\":[{\"Case\":\"Qubit\"}]},\"InferredInformation\":{\"IsMutable\":false,\"HasLocalQuantumDependency\":false},\"Position\":{\"Case\":\"Null\"},\"Range\":{\"Item1\":{\"Line\":1,\"Column\":25},\"Item2\":{\"Line\":1,\"Column\":26}}}]},{\"Case\":\"QsTupleItem\",\"Fields\":[{\"VariableName\":{\"Case\":\"ValidName\",\"Fields\":[\"u\"]},\"Type\":{\"Case\":\"ArrayType\",\"Fields\":[{\"Case\":\"Qubit\"}]},\"InferredInformation\":{\"IsMutable\":false,\"HasLocalQuantumDependency\":false},\"Position\":{\"Case\":\"Null\"},\"Range\":{\"Item1\":{\"Line\":1,\"Column\":35},\"Item2\":{\"Line\":1,\"Column\":36}}}]}]]},\"Signature\":{\"TypeParameters\":[],\"ArgumentType\":{\"Case\":\"TupleType\",\"Fields\":[[{\"Case\":\"ArrayType\",\"Fields\":[{\"Case\":\"Qubit\"}]},{\"Case\":\"ArrayType\",\"Fields\":[{\"Case\":\"Qubit\"}]},{\"Case\":\"ArrayType\",\"Fields\":[{\"Case\":\"Qubit\"}]}]]},\"ReturnType\":{\"Case\":\"Int\"},\"Information\":{\"Characteristics\":{\"Case\":\"EmptySet\"},\"InferredInformation\":{\"IsSelfAdjoint\":false,\"IsIntrinsic\":false}}},\"Documentation\":[]}")]
+[assembly: SpecializationDeclaration("{\"Kind\":{\"Case\":\"QsBody\"},\"TypeArguments\":{\"Case\":\"Null\"},\"Information\":{\"Characteristics\":{\"Case\":\"EmptySet\"},\"InferredInformation\":{\"IsSelfAdjoint\":false,\"IsIntrinsic\":false}},\"Parent\":{\"Namespace\":\"Quantum.Bell\",\"Name\":\"CFC\"},\"Attributes\":[],\"SourceFile\":\"/Users/Matt/Documents/Masters/Dissertation/Quantum/Testing/Inital_Test/Program.qs\",\"Position\":{\"Item1\":47,\"Item2\":0},\"HeaderRange\":{\"Item1\":{\"Line\":1,\"Column\":11},\"Item2\":{\"Line\":1,\"Column\":14}},\"Documentation\":[]}")]
+[assembly: CallableDeclaration("{\"Kind\":{\"Case\":\"Operation\"},\"QualifiedName\":{\"Namespace\":\"Quantum.Bell\",\"Name\":\"CFCMain\"},\"Attributes\":[],\"Modifiers\":{\"Access\":{\"Case\":\"DefaultAccess\"}},\"SourceFile\":\"/Users/Matt/Documents/Masters/Dissertation/Quantum/Testing/Inital_Test/Program.qs\",\"Position\":{\"Item1\":71,\"Item2\":0},\"SymbolRange\":{\"Item1\":{\"Line\":1,\"Column\":11},\"Item2\":{\"Line\":1,\"Column\":18}},\"ArgumentTuple\":{\"Case\":\"QsTuple\",\"Fields\":[[{\"Case\":\"QsTupleItem\",\"Fields\":[{\"VariableName\":{\"Case\":\"ValidName\",\"Fields\":[\"p\"]},\"Type\":{\"Case\":\"ArrayType\",\"Fields\":[{\"Case\":\"Qubit\"}]},\"InferredInformation\":{\"IsMutable\":false,\"HasLocalQuantumDependency\":false},\"Position\":{\"Case\":\"Null\"},\"Range\":{\"Item1\":{\"Line\":1,\"Column\":19},\"Item2\":{\"Line\":1,\"Column\":20}}}]},{\"Case\":\"QsTupleItem\",\"Fields\":[{\"VariableName\":{\"Case\":\"ValidName\",\"Fields\":[\"m\"]},\"Type\":{\"Case\":\"ArrayType\",\"Fields\":[{\"Case\":\"Qubit\"}]},\"InferredInformation\":{\"IsMutable\":false,\"HasLocalQuantumDependency\":false},\"Position\":{\"Case\":\"Null\"},\"Range\":{\"Item1\":{\"Line\":1,\"Column\":29},\"Item2\":{\"Line\":1,\"Column\":30}}}]},{\"Case\":\"QsTupleItem\",\"Fields\":[{\"VariableName\":{\"Case\":\"ValidName\",\"Fields\":[\"u\"]},\"Type\":{\"Case\":\"ArrayType\",\"Fields\":[{\"Case\":\"Qubit\"}]},\"InferredInformation\":{\"IsMutable\":false,\"HasLocalQuantumDependency\":false},\"Position\":{\"Case\":\"Null\"},\"Range\":{\"Item1\":{\"Line\":1,\"Column\":39},\"Item2\":{\"Line\":1,\"Column\":40}}}]}]]},\"Signature\":{\"TypeParameters\":[],\"ArgumentType\":{\"Case\":\"TupleType\",\"Fields\":[[{\"Case\":\"ArrayType\",\"Fields\":[{\"Case\":\"Qubit\"}]},{\"Case\":\"ArrayType\",\"Fields\":[{\"Case\":\"Qubit\"}]},{\"Case\":\"ArrayType\",\"Fields\":[{\"Case\":\"Qubit\"}]}]]},\"ReturnType\":{\"Case\":\"UnitType\"},\"Information\":{\"Characteristics\":{\"Case\":\"SimpleSet\",\"Fields\":[{\"Case\":\"Controllable\"}]},\"InferredInformation\":{\"IsSelfAdjoint\":false,\"IsIntrinsic\":false}}},\"Documentation\":[]}")]
+[assembly: SpecializationDeclaration("{\"Kind\":{\"Case\":\"QsBody\"},\"TypeArguments\":{\"Case\":\"Null\"},\"Information\":{\"Characteristics\":{\"Case\":\"SimpleSet\",\"Fields\":[{\"Case\":\"Controllable\"}]},\"InferredInformation\":{\"IsSelfAdjoint\":false,\"IsIntrinsic\":false}},\"Parent\":{\"Namespace\":\"Quantum.Bell\",\"Name\":\"CFCMain\"},\"Attributes\":[],\"SourceFile\":\"/Users/Matt/Documents/Masters/Dissertation/Quantum/Testing/Inital_Test/Program.qs\",\"Position\":{\"Item1\":71,\"Item2\":0},\"HeaderRange\":{\"Item1\":{\"Line\":1,\"Column\":11},\"Item2\":{\"Line\":1,\"Column\":18}},\"Documentation\":[]}")]
+[assembly: SpecializationDeclaration("{\"Kind\":{\"Case\":\"QsControlled\"},\"TypeArguments\":{\"Case\":\"Null\"},\"Information\":{\"Characteristics\":{\"Case\":\"SimpleSet\",\"Fields\":[{\"Case\":\"Controllable\"}]},\"InferredInformation\":{\"IsSelfAdjoint\":false,\"IsIntrinsic\":false}},\"Parent\":{\"Namespace\":\"Quantum.Bell\",\"Name\":\"CFCMain\"},\"Attributes\":[],\"SourceFile\":\"/Users/Matt/Documents/Masters/Dissertation/Quantum/Testing/Inital_Test/Program.qs\",\"Position\":{\"Item1\":71,\"Item2\":0},\"HeaderRange\":{\"Item1\":{\"Line\":1,\"Column\":58},\"Item2\":{\"Line\":1,\"Column\":61}},\"Documentation\":[\"automatically generated QsControlled specialization for Quantum.Bell.CFCMain\"]}")]
+[assembly: CallableDeclaration("{\"Kind\":{\"Case\":\"Operation\"},\"QualifiedName\":{\"Namespace\":\"Quantum.Bell\",\"Name\":\"CFExtractRes\"},\"Attributes\":[],\"Modifiers\":{\"Access\":{\"Case\":\"DefaultAccess\"}},\"SourceFile\":\"/Users/Matt/Documents/Masters/Dissertation/Quantum/Testing/Inital_Test/Program.qs\",\"Position\":{\"Item1\":272,\"Item2\":0},\"SymbolRange\":{\"Item1\":{\"Line\":1,\"Column\":11},\"Item2\":{\"Line\":1,\"Column\":23}},\"ArgumentTuple\":{\"Case\":\"QsTuple\",\"Fields\":[[{\"Case\":\"QsTupleItem\",\"Fields\":[{\"VariableName\":{\"Case\":\"ValidName\",\"Fields\":[\"res\"]},\"Type\":{\"Case\":\"ArrayType\",\"Fields\":[{\"Case\":\"Qubit\"}]},\"InferredInformation\":{\"IsMutable\":false,\"HasLocalQuantumDependency\":false},\"Position\":{\"Case\":\"Null\"},\"Range\":{\"Item1\":{\"Line\":1,\"Column\":24},\"Item2\":{\"Line\":1,\"Column\":27}}}]},{\"Case\":\"QsTupleItem\",\"Fields\":[{\"VariableName\":{\"Case\":\"ValidName\",\"Fields\":[\"m\"]},\"Type\":{\"Case\":\"ArrayType\",\"Fields\":[{\"Case\":\"Qubit\"}]},\"InferredInformation\":{\"IsMutable\":false,\"HasLocalQuantumDependency\":false},\"Position\":{\"Case\":\"Null\"},\"Range\":{\"Item1\":{\"Line\":1,\"Column\":36},\"Item2\":{\"Line\":1,\"Column\":37}}}]},{\"Case\":\"QsTupleItem\",\"Fields\":[{\"VariableName\":{\"Case\":\"ValidName\",\"Fields\":[\"r2\"]},\"Type\":{\"Case\":\"ArrayType\",\"Fields\":[{\"Case\":\"Qubit\"}]},\"InferredInformation\":{\"IsMutable\":false,\"HasLocalQuantumDependency\":false},\"Position\":{\"Case\":\"Null\"},\"Range\":{\"Item1\":{\"Line\":1,\"Column\":46},\"Item2\":{\"Line\":1,\"Column\":48}}}]},{\"Case\":\"QsTupleItem\",\"Fields\":[{\"VariableName\":{\"Case\":\"ValidName\",\"Fields\":[\"s1\"]},\"Type\":{\"Case\":\"ArrayType\",\"Fields\":[{\"Case\":\"Qubit\"}]},\"InferredInformation\":{\"IsMutable\":false,\"HasLocalQuantumDependency\":false},\"Position\":{\"Case\":\"Null\"},\"Range\":{\"Item1\":{\"Line\":1,\"Column\":57},\"Item2\":{\"Line\":1,\"Column\":59}}}]},{\"Case\":\"QsTupleItem\",\"Fields\":[{\"VariableName\":{\"Case\":\"ValidName\",\"Fields\":[\"s2\"]},\"Type\":{\"Case\":\"ArrayType\",\"Fields\":[{\"Case\":\"Qubit\"}]},\"InferredInformation\":{\"IsMutable\":false,\"HasLocalQuantumDependency\":false},\"Position\":{\"Case\":\"Null\"},\"Range\":{\"Item1\":{\"Line\":1,\"Column\":68},\"Item2\":{\"Line\":1,\"Column\":70}}}]}]]},\"Signature\":{\"TypeParameters\":[],\"ArgumentType\":{\"Case\":\"TupleType\",\"Fields\":[[{\"Case\":\"ArrayType\",\"Fields\":[{\"Case\":\"Qubit\"}]},{\"Case\":\"ArrayType\",\"Fields\":[{\"Case\":\"Qubit\"}]},{\"Case\":\"ArrayType\",\"Fields\":[{\"Case\":\"Qubit\"}]},{\"Case\":\"ArrayType\",\"Fields\":[{\"Case\":\"Qubit\"}]},{\"Case\":\"ArrayType\",\"Fields\":[{\"Case\":\"Qubit\"}]}]]},\"ReturnType\":{\"Case\":\"UnitType\"},\"Information\":{\"Characteristics\":{\"Case\":\"SimpleSet\",\"Fields\":[{\"Case\":\"Controllable\"}]},\"InferredInformation\":{\"IsSelfAdjoint\":false,\"IsIntrinsic\":false}}},\"Documentation\":[]}")]
+[assembly: SpecializationDeclaration("{\"Kind\":{\"Case\":\"QsBody\"},\"TypeArguments\":{\"Case\":\"Null\"},\"Information\":{\"Characteristics\":{\"Case\":\"SimpleSet\",\"Fields\":[{\"Case\":\"Controllable\"}]},\"InferredInformation\":{\"IsSelfAdjoint\":false,\"IsIntrinsic\":false}},\"Parent\":{\"Namespace\":\"Quantum.Bell\",\"Name\":\"CFExtractRes\"},\"Attributes\":[],\"SourceFile\":\"/Users/Matt/Documents/Masters/Dissertation/Quantum/Testing/Inital_Test/Program.qs\",\"Position\":{\"Item1\":273,\"Item2\":4},\"HeaderRange\":{\"Item1\":{\"Line\":1,\"Column\":1},\"Item2\":{\"Line\":1,\"Column\":5}},\"Documentation\":[]}")]
+[assembly: SpecializationDeclaration("{\"Kind\":{\"Case\":\"QsControlled\"},\"TypeArguments\":{\"Case\":\"Null\"},\"Information\":{\"Characteristics\":{\"Case\":\"SimpleSet\",\"Fields\":[{\"Case\":\"Controllable\"}]},\"InferredInformation\":{\"IsSelfAdjoint\":false,\"IsIntrinsic\":false}},\"Parent\":{\"Namespace\":\"Quantum.Bell\",\"Name\":\"CFExtractRes\"},\"Attributes\":[],\"SourceFile\":\"/Users/Matt/Documents/Masters/Dissertation/Quantum/Testing/Inital_Test/Program.qs\",\"Position\":{\"Item1\":297,\"Item2\":4},\"HeaderRange\":{\"Item1\":{\"Line\":1,\"Column\":1},\"Item2\":{\"Line\":1,\"Column\":11}},\"Documentation\":[]}")]
+[assembly: CallableDeclaration("{\"Kind\":{\"Case\":\"Operation\"},\"QualifiedName\":{\"Namespace\":\"Quantum.Bell\",\"Name\":\"CFIteration\"},\"Attributes\":[],\"Modifiers\":{\"Access\":{\"Case\":\"DefaultAccess\"}},\"SourceFile\":\"/Users/Matt/Documents/Masters/Dissertation/Quantum/Testing/Inital_Test/Program.qs\",\"Position\":{\"Item1\":329,\"Item2\":0},\"SymbolRange\":{\"Item1\":{\"Line\":1,\"Column\":11},\"Item2\":{\"Line\":1,\"Column\":22}},\"ArgumentTuple\":{\"Case\":\"QsTuple\",\"Fields\":[[{\"Case\":\"QsTupleItem\",\"Fields\":[{\"VariableName\":{\"Case\":\"ValidName\",\"Fields\":[\"r1\"]},\"Type\":{\"Case\":\"ArrayType\",\"Fields\":[{\"Case\":\"Qubit\"}]},\"InferredInformation\":{\"IsMutable\":false,\"HasLocalQuantumDependency\":false},\"Position\":{\"Case\":\"Null\"},\"Range\":{\"Item1\":{\"Line\":1,\"Column\":24},\"Item2\":{\"Line\":1,\"Column\":26}}}]},{\"Case\":\"QsTupleItem\",\"Fields\":[{\"VariableName\":{\"Case\":\"ValidName\",\"Fields\":[\"r2\"]},\"Type\":{\"Case\":\"ArrayType\",\"Fields\":[{\"Case\":\"Qubit\"}]},\"InferredInformation\":{\"IsMutable\":false,\"HasLocalQuantumDependency\":false},\"Position\":{\"Case\":\"Null\"},\"Range\":{\"Item1\":{\"Line\":1,\"Column\":35},\"Item2\":{\"Line\":1,\"Column\":37}}}]},{\"Case\":\"QsTupleItem\",\"Fields\":[{\"VariableName\":{\"Case\":\"ValidName\",\"Fields\":[\"s1\"]},\"Type\":{\"Case\":\"ArrayType\",\"Fields\":[{\"Case\":\"Qubit\"}]},\"InferredInformation\":{\"IsMutable\":false,\"HasLocalQuantumDependency\":false},\"Position\":{\"Case\":\"Null\"},\"Range\":{\"Item1\":{\"Line\":1,\"Column\":46},\"Item2\":{\"Line\":1,\"Column\":48}}}]},{\"Case\":\"QsTupleItem\",\"Fields\":[{\"VariableName\":{\"Case\":\"ValidName\",\"Fields\":[\"s2\"]},\"Type\":{\"Case\":\"ArrayType\",\"Fields\":[{\"Case\":\"Qubit\"}]},\"InferredInformation\":{\"IsMutable\":false,\"HasLocalQuantumDependency\":false},\"Position\":{\"Case\":\"Null\"},\"Range\":{\"Item1\":{\"Line\":1,\"Column\":57},\"Item2\":{\"Line\":1,\"Column\":59}}}]},{\"Case\":\"QsTupleItem\",\"Fields\":[{\"VariableName\":{\"Case\":\"ValidName\",\"Fields\":[\"quo\"]},\"Type\":{\"Case\":\"ArrayType\",\"Fields\":[{\"Case\":\"Qubit\"}]},\"InferredInformation\":{\"IsMutable\":false,\"HasLocalQuantumDependency\":false},\"Position\":{\"Case\":\"Null\"},\"Range\":{\"Item1\":{\"Line\":1,\"Column\":68},\"Item2\":{\"Line\":1,\"Column\":71}}}]},{\"Case\":\"QsTupleItem\",\"Fields\":[{\"VariableName\":{\"Case\":\"ValidName\",\"Fields\":[\"qTs2\"]},\"Type\":{\"Case\":\"ArrayType\",\"Fields\":[{\"Case\":\"Qubit\"}]},\"InferredInformation\":{\"IsMutable\":false,\"HasLocalQuantumDependency\":false},\"Position\":{\"Case\":\"Null\"},\"Range\":{\"Item1\":{\"Line\":1,\"Column\":80},\"Item2\":{\"Line\":1,\"Column\":84}}}]},{\"Case\":\"QsTupleItem\",\"Fields\":[{\"VariableName\":{\"Case\":\"ValidName\",\"Fields\":[\"anc1\"]},\"Type\":{\"Case\":\"Qubit\"},\"InferredInformation\":{\"IsMutable\":false,\"HasLocalQuantumDependency\":false},\"Position\":{\"Case\":\"Null\"},\"Range\":{\"Item1\":{\"Line\":1,\"Column\":93},\"Item2\":{\"Line\":1,\"Column\":97}}}]},{\"Case\":\"QsTupleItem\",\"Fields\":[{\"VariableName\":{\"Case\":\"ValidName\",\"Fields\":[\"anc2\"]},\"Type\":{\"Case\":\"Qubit\"},\"InferredInformation\":{\"IsMutable\":false,\"HasLocalQuantumDependency\":false},\"Position\":{\"Case\":\"Null\"},\"Range\":{\"Item1\":{\"Line\":1,\"Column\":104},\"Item2\":{\"Line\":1,\"Column\":108}}}]}]]},\"Signature\":{\"TypeParameters\":[],\"ArgumentType\":{\"Case\":\"TupleType\",\"Fields\":[[{\"Case\":\"ArrayType\",\"Fields\":[{\"Case\":\"Qubit\"}]},{\"Case\":\"ArrayType\",\"Fields\":[{\"Case\":\"Qubit\"}]},{\"Case\":\"ArrayType\",\"Fields\":[{\"Case\":\"Qubit\"}]},{\"Case\":\"ArrayType\",\"Fields\":[{\"Case\":\"Qubit\"}]},{\"Case\":\"ArrayType\",\"Fields\":[{\"Case\":\"Qubit\"}]},{\"Case\":\"ArrayType\",\"Fields\":[{\"Case\":\"Qubit\"}]},{\"Case\":\"Qubit\"},{\"Case\":\"Qubit\"}]]},\"ReturnType\":{\"Case\":\"UnitType\"},\"Information\":{\"Characteristics\":{\"Case\":\"Union\",\"Fields\":[{\"Case\":\"SimpleSet\",\"Fields\":[{\"Case\":\"Adjointable\"}]},{\"Case\":\"SimpleSet\",\"Fields\":[{\"Case\":\"Controllable\"}]}]},\"InferredInformation\":{\"IsSelfAdjoint\":false,\"IsIntrinsic\":false}}},\"Documentation\":[]}")]
+[assembly: SpecializationDeclaration("{\"Kind\":{\"Case\":\"QsBody\"},\"TypeArguments\":{\"Case\":\"Null\"},\"Information\":{\"Characteristics\":{\"Case\":\"Union\",\"Fields\":[{\"Case\":\"SimpleSet\",\"Fields\":[{\"Case\":\"Adjointable\"}]},{\"Case\":\"SimpleSet\",\"Fields\":[{\"Case\":\"Controllable\"}]}]},\"InferredInformation\":{\"IsSelfAdjoint\":false,\"IsIntrinsic\":false}},\"Parent\":{\"Namespace\":\"Quantum.Bell\",\"Name\":\"CFIteration\"},\"Attributes\":[],\"SourceFile\":\"/Users/Matt/Documents/Masters/Dissertation/Quantum/Testing/Inital_Test/Program.qs\",\"Position\":{\"Item1\":329,\"Item2\":0},\"HeaderRange\":{\"Item1\":{\"Line\":1,\"Column\":11},\"Item2\":{\"Line\":1,\"Column\":22}},\"Documentation\":[]}")]
+[assembly: SpecializationDeclaration("{\"Kind\":{\"Case\":\"QsAdjoint\"},\"TypeArguments\":{\"Case\":\"Null\"},\"Information\":{\"Characteristics\":{\"Case\":\"Union\",\"Fields\":[{\"Case\":\"SimpleSet\",\"Fields\":[{\"Case\":\"Adjointable\"}]},{\"Case\":\"SimpleSet\",\"Fields\":[{\"Case\":\"Controllable\"}]}]},\"InferredInformation\":{\"IsSelfAdjoint\":false,\"IsIntrinsic\":false}},\"Parent\":{\"Namespace\":\"Quantum.Bell\",\"Name\":\"CFIteration\"},\"Attributes\":[],\"SourceFile\":\"/Users/Matt/Documents/Masters/Dissertation/Quantum/Testing/Inital_Test/Program.qs\",\"Position\":{\"Item1\":329,\"Item2\":0},\"HeaderRange\":{\"Item1\":{\"Line\":1,\"Column\":124},\"Item2\":{\"Line\":1,\"Column\":133}},\"Documentation\":[\"automatically generated QsAdjoint specialization for Quantum.Bell.CFIteration\"]}")]
+[assembly: SpecializationDeclaration("{\"Kind\":{\"Case\":\"QsControlled\"},\"TypeArguments\":{\"Case\":\"Null\"},\"Information\":{\"Characteristics\":{\"Case\":\"Union\",\"Fields\":[{\"Case\":\"SimpleSet\",\"Fields\":[{\"Case\":\"Adjointable\"}]},{\"Case\":\"SimpleSet\",\"Fields\":[{\"Case\":\"Controllable\"}]}]},\"InferredInformation\":{\"IsSelfAdjoint\":false,\"IsIntrinsic\":false}},\"Parent\":{\"Namespace\":\"Quantum.Bell\",\"Name\":\"CFIteration\"},\"Attributes\":[],\"SourceFile\":\"/Users/Matt/Documents/Masters/Dissertation/Quantum/Testing/Inital_Test/Program.qs\",\"Position\":{\"Item1\":329,\"Item2\":0},\"HeaderRange\":{\"Item1\":{\"Line\":1,\"Column\":124},\"Item2\":{\"Line\":1,\"Column\":133}},\"Documentation\":[\"automatically generated QsControlled specialization for Quantum.Bell.CFIteration\"]}")]
+[assembly: SpecializationDeclaration("{\"Kind\":{\"Case\":\"QsControlledAdjoint\"},\"TypeArguments\":{\"Case\":\"Null\"},\"Information\":{\"Characteristics\":{\"Case\":\"Union\",\"Fields\":[{\"Case\":\"SimpleSet\",\"Fields\":[{\"Case\":\"Adjointable\"}]},{\"Case\":\"SimpleSet\",\"Fields\":[{\"Case\":\"Controllable\"}]}]},\"InferredInformation\":{\"IsSelfAdjoint\":false,\"IsIntrinsic\":false}},\"Parent\":{\"Namespace\":\"Quantum.Bell\",\"Name\":\"CFIteration\"},\"Attributes\":[],\"SourceFile\":\"/Users/Matt/Documents/Masters/Dissertation/Quantum/Testing/Inital_Test/Program.qs\",\"Position\":{\"Item1\":329,\"Item2\":0},\"HeaderRange\":{\"Item1\":{\"Line\":1,\"Column\":124},\"Item2\":{\"Line\":1,\"Column\":133}},\"Documentation\":[\"automatically generated QsControlledAdjoint specialization for Quantum.Bell.CFIteration\"]}")]
+[assembly: CallableDeclaration("{\"Kind\":{\"Case\":\"Operation\"},\"QualifiedName\":{\"Namespace\":\"Quantum.Bell\",\"Name\":\"CFCheck\"},\"Attributes\":[],\"Modifiers\":{\"Access\":{\"Case\":\"DefaultAccess\"}},\"SourceFile\":\"/Users/Matt/Documents/Masters/Dissertation/Quantum/Testing/Inital_Test/Program.qs\",\"Position\":{\"Item1\":355,\"Item2\":0},\"SymbolRange\":{\"Item1\":{\"Line\":1,\"Column\":11},\"Item2\":{\"Line\":1,\"Column\":18}},\"ArgumentTuple\":{\"Case\":\"QsTuple\",\"Fields\":[[{\"Case\":\"QsTupleItem\",\"Fields\":[{\"VariableName\":{\"Case\":\"ValidName\",\"Fields\":[\"r2\"]},\"Type\":{\"Case\":\"ArrayType\",\"Fields\":[{\"Case\":\"Qubit\"}]},\"InferredInformation\":{\"IsMutable\":false,\"HasLocalQuantumDependency\":false},\"Position\":{\"Case\":\"Null\"},\"Range\":{\"Item1\":{\"Line\":1,\"Column\":20},\"Item2\":{\"Line\":1,\"Column\":22}}}]},{\"Case\":\"QsTupleItem\",\"Fields\":[{\"VariableName\":{\"Case\":\"ValidName\",\"Fields\":[\"s2\"]},\"Type\":{\"Case\":\"ArrayType\",\"Fields\":[{\"Case\":\"Qubit\"}]},\"InferredInformation\":{\"IsMutable\":false,\"HasLocalQuantumDependency\":false},\"Position\":{\"Case\":\"Null\"},\"Range\":{\"Item1\":{\"Line\":1,\"Column\":31},\"Item2\":{\"Line\":1,\"Column\":33}}}]},{\"Case\":\"QsTupleItem\",\"Fields\":[{\"VariableName\":{\"Case\":\"ValidName\",\"Fields\":[\"m\"]},\"Type\":{\"Case\":\"ArrayType\",\"Fields\":[{\"Case\":\"Qubit\"}]},\"InferredInformation\":{\"IsMutable\":false,\"HasLocalQuantumDependency\":false},\"Position\":{\"Case\":\"Null\"},\"Range\":{\"Item1\":{\"Line\":1,\"Column\":42},\"Item2\":{\"Line\":1,\"Column\":43}}}]},{\"Case\":\"QsTupleItem\",\"Fields\":[{\"VariableName\":{\"Case\":\"ValidName\",\"Fields\":[\"C\"]},\"Type\":{\"Case\":\"Qubit\"},\"InferredInformation\":{\"IsMutable\":false,\"HasLocalQuantumDependency\":false},\"Position\":{\"Case\":\"Null\"},\"Range\":{\"Item1\":{\"Line\":1,\"Column\":52},\"Item2\":{\"Line\":1,\"Column\":53}}}]}]]},\"Signature\":{\"TypeParameters\":[],\"ArgumentType\":{\"Case\":\"TupleType\",\"Fields\":[[{\"Case\":\"ArrayType\",\"Fields\":[{\"Case\":\"Qubit\"}]},{\"Case\":\"ArrayType\",\"Fields\":[{\"Case\":\"Qubit\"}]},{\"Case\":\"ArrayType\",\"Fields\":[{\"Case\":\"Qubit\"}]},{\"Case\":\"Qubit\"}]]},\"ReturnType\":{\"Case\":\"UnitType\"},\"Information\":{\"Characteristics\":{\"Case\":\"Union\",\"Fields\":[{\"Case\":\"SimpleSet\",\"Fields\":[{\"Case\":\"Adjointable\"}]},{\"Case\":\"SimpleSet\",\"Fields\":[{\"Case\":\"Controllable\"}]}]},\"InferredInformation\":{\"IsSelfAdjoint\":false,\"IsIntrinsic\":false}}},\"Documentation\":[]}")]
+[assembly: SpecializationDeclaration("{\"Kind\":{\"Case\":\"QsBody\"},\"TypeArguments\":{\"Case\":\"Null\"},\"Information\":{\"Characteristics\":{\"Case\":\"Union\",\"Fields\":[{\"Case\":\"SimpleSet\",\"Fields\":[{\"Case\":\"Adjointable\"}]},{\"Case\":\"SimpleSet\",\"Fields\":[{\"Case\":\"Controllable\"}]}]},\"InferredInformation\":{\"IsSelfAdjoint\":false,\"IsIntrinsic\":false}},\"Parent\":{\"Namespace\":\"Quantum.Bell\",\"Name\":\"CFCheck\"},\"Attributes\":[],\"SourceFile\":\"/Users/Matt/Documents/Masters/Dissertation/Quantum/Testing/Inital_Test/Program.qs\",\"Position\":{\"Item1\":356,\"Item2\":4},\"HeaderRange\":{\"Item1\":{\"Line\":1,\"Column\":1},\"Item2\":{\"Line\":1,\"Column\":5}},\"Documentation\":[]}")]
+[assembly: SpecializationDeclaration("{\"Kind\":{\"Case\":\"QsAdjoint\"},\"TypeArguments\":{\"Case\":\"Null\"},\"Information\":{\"Characteristics\":{\"Case\":\"Union\",\"Fields\":[{\"Case\":\"SimpleSet\",\"Fields\":[{\"Case\":\"Adjointable\"}]},{\"Case\":\"SimpleSet\",\"Fields\":[{\"Case\":\"Controllable\"}]}]},\"InferredInformation\":{\"IsSelfAdjoint\":false,\"IsIntrinsic\":false}},\"Parent\":{\"Namespace\":\"Quantum.Bell\",\"Name\":\"CFCheck\"},\"Attributes\":[],\"SourceFile\":\"/Users/Matt/Documents/Masters/Dissertation/Quantum/Testing/Inital_Test/Program.qs\",\"Position\":{\"Item1\":355,\"Item2\":0},\"HeaderRange\":{\"Item1\":{\"Line\":1,\"Column\":69},\"Item2\":{\"Line\":1,\"Column\":78}},\"Documentation\":[\"automatically generated QsAdjoint specialization for Quantum.Bell.CFCheck\"]}")]
+[assembly: SpecializationDeclaration("{\"Kind\":{\"Case\":\"QsControlled\"},\"TypeArguments\":{\"Case\":\"Null\"},\"Information\":{\"Characteristics\":{\"Case\":\"Union\",\"Fields\":[{\"Case\":\"SimpleSet\",\"Fields\":[{\"Case\":\"Adjointable\"}]},{\"Case\":\"SimpleSet\",\"Fields\":[{\"Case\":\"Controllable\"}]}]},\"InferredInformation\":{\"IsSelfAdjoint\":false,\"IsIntrinsic\":false}},\"Parent\":{\"Namespace\":\"Quantum.Bell\",\"Name\":\"CFCheck\"},\"Attributes\":[],\"SourceFile\":\"/Users/Matt/Documents/Masters/Dissertation/Quantum/Testing/Inital_Test/Program.qs\",\"Position\":{\"Item1\":382,\"Item2\":4},\"HeaderRange\":{\"Item1\":{\"Line\":1,\"Column\":1},\"Item2\":{\"Line\":1,\"Column\":11}},\"Documentation\":[]}")]
+[assembly: SpecializationDeclaration("{\"Kind\":{\"Case\":\"QsControlledAdjoint\"},\"TypeArguments\":{\"Case\":\"Null\"},\"Information\":{\"Characteristics\":{\"Case\":\"Union\",\"Fields\":[{\"Case\":\"SimpleSet\",\"Fields\":[{\"Case\":\"Adjointable\"}]},{\"Case\":\"SimpleSet\",\"Fields\":[{\"Case\":\"Controllable\"}]}]},\"InferredInformation\":{\"IsSelfAdjoint\":false,\"IsIntrinsic\":false}},\"Parent\":{\"Namespace\":\"Quantum.Bell\",\"Name\":\"CFCheck\"},\"Attributes\":[],\"SourceFile\":\"/Users/Matt/Documents/Masters/Dissertation/Quantum/Testing/Inital_Test/Program.qs\",\"Position\":{\"Item1\":355,\"Item2\":0},\"HeaderRange\":{\"Item1\":{\"Line\":1,\"Column\":69},\"Item2\":{\"Line\":1,\"Column\":78}},\"Documentation\":[\"automatically generated QsControlledAdjoint specialization for Quantum.Bell.CFCheck\"]}")]
+[assembly: CallableDeclaration("{\"Kind\":{\"Case\":\"Operation\"},\"QualifiedName\":{\"Namespace\":\"Quantum.Bell\",\"Name\":\"MinimalMultiplyI\"},\"Attributes\":[],\"Modifiers\":{\"Access\":{\"Case\":\"DefaultAccess\"}},\"SourceFile\":\"/Users/Matt/Documents/Masters/Dissertation/Quantum/Testing/Inital_Test/Program.qs\",\"Position\":{\"Item1\":411,\"Item2\":2},\"SymbolRange\":{\"Item1\":{\"Line\":1,\"Column\":11},\"Item2\":{\"Line\":1,\"Column\":27}},\"ArgumentTuple\":{\"Case\":\"QsTuple\",\"Fields\":[[{\"Case\":\"QsTupleItem\",\"Fields\":[{\"VariableName\":{\"Case\":\"ValidName\",\"Fields\":[\"xs\"]},\"Type\":{\"Case\":\"ArrayType\",\"Fields\":[{\"Case\":\"Qubit\"}]},\"InferredInformation\":{\"IsMutable\":false,\"HasLocalQuantumDependency\":false},\"Position\":{\"Case\":\"Null\"},\"Range\":{\"Item1\":{\"Line\":1,\"Column\":29},\"Item2\":{\"Line\":1,\"Column\":31}}}]},{\"Case\":\"QsTupleItem\",\"Fields\":[{\"VariableName\":{\"Case\":\"ValidName\",\"Fields\":[\"ys\"]},\"Type\":{\"Case\":\"ArrayType\",\"Fields\":[{\"Case\":\"Qubit\"}]},\"InferredInformation\":{\"IsMutable\":false,\"HasLocalQuantumDependency\":false},\"Position\":{\"Case\":\"Null\"},\"Range\":{\"Item1\":{\"Line\":1,\"Column\":42},\"Item2\":{\"Line\":1,\"Column\":44}}}]},{\"Case\":\"QsTupleItem\",\"Fields\":[{\"VariableName\":{\"Case\":\"ValidName\",\"Fields\":[\"result\"]},\"Type\":{\"Case\":\"ArrayType\",\"Fields\":[{\"Case\":\"Qubit\"}]},\"InferredInformation\":{\"IsMutable\":false,\"HasLocalQuantumDependency\":false},\"Position\":{\"Case\":\"Null\"},\"Range\":{\"Item1\":{\"Line\":1,\"Column\":55},\"Item2\":{\"Line\":1,\"Column\":61}}}]}]]},\"Signature\":{\"TypeParameters\":[],\"ArgumentType\":{\"Case\":\"TupleType\",\"Fields\":[[{\"Case\":\"ArrayType\",\"Fields\":[{\"Case\":\"Qubit\"}]},{\"Case\":\"ArrayType\",\"Fields\":[{\"Case\":\"Qubit\"}]},{\"Case\":\"ArrayType\",\"Fields\":[{\"Case\":\"Qubit\"}]}]]},\"ReturnType\":{\"Case\":\"UnitType\"},\"Information\":{\"Characteristics\":{\"Case\":\"EmptySet\"},\"InferredInformation\":{\"IsSelfAdjoint\":false,\"IsIntrinsic\":false}}},\"Documentation\":[]}")]
+[assembly: SpecializationDeclaration("{\"Kind\":{\"Case\":\"QsBody\"},\"TypeArguments\":{\"Case\":\"Null\"},\"Information\":{\"Characteristics\":{\"Case\":\"EmptySet\"},\"InferredInformation\":{\"IsSelfAdjoint\":false,\"IsIntrinsic\":false}},\"Parent\":{\"Namespace\":\"Quantum.Bell\",\"Name\":\"MinimalMultiplyI\"},\"Attributes\":[],\"SourceFile\":\"/Users/Matt/Documents/Masters/Dissertation/Quantum/Testing/Inital_Test/Program.qs\",\"Position\":{\"Item1\":411,\"Item2\":2},\"HeaderRange\":{\"Item1\":{\"Line\":1,\"Column\":11},\"Item2\":{\"Line\":1,\"Column\":27}},\"Documentation\":[]}")]
+[assembly: CallableDeclaration("{\"Kind\":{\"Case\":\"Operation\"},\"QualifiedName\":{\"Namespace\":\"Quantum.Bell\",\"Name\":\"SignedSubtract\"},\"Attributes\":[],\"Modifiers\":{\"Access\":{\"Case\":\"DefaultAccess\"}},\"SourceFile\":\"/Users/Matt/Documents/Masters/Dissertation/Quantum/Testing/Inital_Test/Program.qs\",\"Position\":{\"Item1\":424,\"Item2\":0},\"SymbolRange\":{\"Item1\":{\"Line\":1,\"Column\":11},\"Item2\":{\"Line\":1,\"Column\":25}},\"ArgumentTuple\":{\"Case\":\"QsTuple\",\"Fields\":[[{\"Case\":\"QsTupleItem\",\"Fields\":[{\"VariableName\":{\"Case\":\"ValidName\",\"Fields\":[\"a\"]},\"Type\":{\"Case\":\"ArrayType\",\"Fields\":[{\"Case\":\"Qubit\"}]},\"InferredInformation\":{\"IsMutable\":false,\"HasLocalQuantumDependency\":false},\"Position\":{\"Case\":\"Null\"},\"Range\":{\"Item1\":{\"Line\":1,\"Column\":26},\"Item2\":{\"Line\":1,\"Column\":27}}}]},{\"Case\":\"QsTupleItem\",\"Fields\":[{\"VariableName\":{\"Case\":\"ValidName\",\"Fields\":[\"b\"]},\"Type\":{\"Case\":\"ArrayType\",\"Fields\":[{\"Case\":\"Qubit\"}]},\"InferredInformation\":{\"IsMutable\":false,\"HasLocalQuantumDependency\":false},\"Position\":{\"Case\":\"Null\"},\"Range\":{\"Item1\":{\"Line\":1,\"Column\":36},\"Item2\":{\"Line\":1,\"Column\":37}}}]},{\"Case\":\"QsTupleItem\",\"Fields\":[{\"VariableName\":{\"Case\":\"ValidName\",\"Fields\":[\"anc\"]},\"Type\":{\"Case\":\"Qubit\"},\"InferredInformation\":{\"IsMutable\":false,\"HasLocalQuantumDependency\":false},\"Position\":{\"Case\":\"Null\"},\"Range\":{\"Item1\":{\"Line\":1,\"Column\":46},\"Item2\":{\"Line\":1,\"Column\":49}}}]},{\"Case\":\"QsTupleItem\",\"Fields\":[{\"VariableName\":{\"Case\":\"ValidName\",\"Fields\":[\"anc2\"]},\"Type\":{\"Case\":\"Qubit\"},\"InferredInformation\":{\"IsMutable\":false,\"HasLocalQuantumDependency\":false},\"Position\":{\"Case\":\"Null\"},\"Range\":{\"Item1\":{\"Line\":1,\"Column\":56},\"Item2\":{\"Line\":1,\"Column\":60}}}]}]]},\"Signature\":{\"TypeParameters\":[],\"ArgumentType\":{\"Case\":\"TupleType\",\"Fields\":[[{\"Case\":\"ArrayType\",\"Fields\":[{\"Case\":\"Qubit\"}]},{\"Case\":\"ArrayType\",\"Fields\":[{\"Case\":\"Qubit\"}]},{\"Case\":\"Qubit\"},{\"Case\":\"Qubit\"}]]},\"ReturnType\":{\"Case\":\"UnitType\"},\"Information\":{\"Characteristics\":{\"Case\":\"Union\",\"Fields\":[{\"Case\":\"SimpleSet\",\"Fields\":[{\"Case\":\"Adjointable\"}]},{\"Case\":\"SimpleSet\",\"Fields\":[{\"Case\":\"Controllable\"}]}]},\"InferredInformation\":{\"IsSelfAdjoint\":false,\"IsIntrinsic\":false}}},\"Documentation\":[]}")]
+[assembly: SpecializationDeclaration("{\"Kind\":{\"Case\":\"QsBody\"},\"TypeArguments\":{\"Case\":\"Null\"},\"Information\":{\"Characteristics\":{\"Case\":\"Union\",\"Fields\":[{\"Case\":\"SimpleSet\",\"Fields\":[{\"Case\":\"Adjointable\"}]},{\"Case\":\"SimpleSet\",\"Fields\":[{\"Case\":\"Controllable\"}]}]},\"InferredInformation\":{\"IsSelfAdjoint\":false,\"IsIntrinsic\":false}},\"Parent\":{\"Namespace\":\"Quantum.Bell\",\"Name\":\"SignedSubtract\"},\"Attributes\":[],\"SourceFile\":\"/Users/Matt/Documents/Masters/Dissertation/Quantum/Testing/Inital_Test/Program.qs\",\"Position\":{\"Item1\":425,\"Item2\":4},\"HeaderRange\":{\"Item1\":{\"Line\":1,\"Column\":1},\"Item2\":{\"Line\":1,\"Column\":5}},\"Documentation\":[]}")]
+[assembly: SpecializationDeclaration("{\"Kind\":{\"Case\":\"QsAdjoint\"},\"TypeArguments\":{\"Case\":\"Null\"},\"Information\":{\"Characteristics\":{\"Case\":\"Union\",\"Fields\":[{\"Case\":\"SimpleSet\",\"Fields\":[{\"Case\":\"Adjointable\"}]},{\"Case\":\"SimpleSet\",\"Fields\":[{\"Case\":\"Controllable\"}]}]},\"InferredInformation\":{\"IsSelfAdjoint\":false,\"IsIntrinsic\":false}},\"Parent\":{\"Namespace\":\"Quantum.Bell\",\"Name\":\"SignedSubtract\"},\"Attributes\":[],\"SourceFile\":\"/Users/Matt/Documents/Masters/Dissertation/Quantum/Testing/Inital_Test/Program.qs\",\"Position\":{\"Item1\":444,\"Item2\":4},\"HeaderRange\":{\"Item1\":{\"Line\":1,\"Column\":1},\"Item2\":{\"Line\":1,\"Column\":8}},\"Documentation\":[]}")]
+[assembly: SpecializationDeclaration("{\"Kind\":{\"Case\":\"QsControlled\"},\"TypeArguments\":{\"Case\":\"Null\"},\"Information\":{\"Characteristics\":{\"Case\":\"Union\",\"Fields\":[{\"Case\":\"SimpleSet\",\"Fields\":[{\"Case\":\"Adjointable\"}]},{\"Case\":\"SimpleSet\",\"Fields\":[{\"Case\":\"Controllable\"}]}]},\"InferredInformation\":{\"IsSelfAdjoint\":false,\"IsIntrinsic\":false}},\"Parent\":{\"Namespace\":\"Quantum.Bell\",\"Name\":\"SignedSubtract\"},\"Attributes\":[],\"SourceFile\":\"/Users/Matt/Documents/Masters/Dissertation/Quantum/Testing/Inital_Test/Program.qs\",\"Position\":{\"Item1\":424,\"Item2\":0},\"HeaderRange\":{\"Item1\":{\"Line\":1,\"Column\":76},\"Item2\":{\"Line\":1,\"Column\":85}},\"Documentation\":[\"automatically generated QsControlled specialization for Quantum.Bell.SignedSubtract\"]}")]
+[assembly: SpecializationDeclaration("{\"Kind\":{\"Case\":\"QsControlledAdjoint\"},\"TypeArguments\":{\"Case\":\"Null\"},\"Information\":{\"Characteristics\":{\"Case\":\"Union\",\"Fields\":[{\"Case\":\"SimpleSet\",\"Fields\":[{\"Case\":\"Adjointable\"}]},{\"Case\":\"SimpleSet\",\"Fields\":[{\"Case\":\"Controllable\"}]}]},\"InferredInformation\":{\"IsSelfAdjoint\":false,\"IsIntrinsic\":false}},\"Parent\":{\"Namespace\":\"Quantum.Bell\",\"Name\":\"SignedSubtract\"},\"Attributes\":[],\"SourceFile\":\"/Users/Matt/Documents/Masters/Dissertation/Quantum/Testing/Inital_Test/Program.qs\",\"Position\":{\"Item1\":424,\"Item2\":0},\"HeaderRange\":{\"Item1\":{\"Line\":1,\"Column\":76},\"Item2\":{\"Line\":1,\"Column\":85}},\"Documentation\":[\"automatically generated QsControlledAdjoint specialization for Quantum.Bell.SignedSubtract\"]}")]
+[assembly: CallableDeclaration("{\"Kind\":{\"Case\":\"Operation\"},\"QualifiedName\":{\"Namespace\":\"Quantum.Bell\",\"Name\":\"SignedMultiply\"},\"Attributes\":[],\"Modifiers\":{\"Access\":{\"Case\":\"DefaultAccess\"}},\"SourceFile\":\"/Users/Matt/Documents/Masters/Dissertation/Quantum/Testing/Inital_Test/Program.qs\",\"Position\":{\"Item1\":448,\"Item2\":0},\"SymbolRange\":{\"Item1\":{\"Line\":1,\"Column\":11},\"Item2\":{\"Line\":1,\"Column\":25}},\"ArgumentTuple\":{\"Case\":\"QsTuple\",\"Fields\":[[{\"Case\":\"QsTupleItem\",\"Fields\":[{\"VariableName\":{\"Case\":\"ValidName\",\"Fields\":[\"a\"]},\"Type\":{\"Case\":\"ArrayType\",\"Fields\":[{\"Case\":\"Qubit\"}]},\"InferredInformation\":{\"IsMutable\":false,\"HasLocalQuantumDependency\":false},\"Position\":{\"Case\":\"Null\"},\"Range\":{\"Item1\":{\"Line\":1,\"Column\":26},\"Item2\":{\"Line\":1,\"Column\":27}}}]},{\"Case\":\"QsTupleItem\",\"Fields\":[{\"VariableName\":{\"Case\":\"ValidName\",\"Fields\":[\"b\"]},\"Type\":{\"Case\":\"ArrayType\",\"Fields\":[{\"Case\":\"Qubit\"}]},\"InferredInformation\":{\"IsMutable\":false,\"HasLocalQuantumDependency\":false},\"Position\":{\"Case\":\"Null\"},\"Range\":{\"Item1\":{\"Line\":1,\"Column\":39},\"Item2\":{\"Line\":1,\"Column\":40}}}]},{\"Case\":\"QsTupleItem\",\"Fields\":[{\"VariableName\":{\"Case\":\"ValidName\",\"Fields\":[\"c\"]},\"Type\":{\"Case\":\"ArrayType\",\"Fields\":[{\"Case\":\"Qubit\"}]},\"InferredInformation\":{\"IsMutable\":false,\"HasLocalQuantumDependency\":false},\"Position\":{\"Case\":\"Null\"},\"Range\":{\"Item1\":{\"Line\":1,\"Column\":50},\"Item2\":{\"Line\":1,\"Column\":51}}}]}]]},\"Signature\":{\"TypeParameters\":[],\"ArgumentType\":{\"Case\":\"TupleType\",\"Fields\":[[{\"Case\":\"ArrayType\",\"Fields\":[{\"Case\":\"Qubit\"}]},{\"Case\":\"ArrayType\",\"Fields\":[{\"Case\":\"Qubit\"}]},{\"Case\":\"ArrayType\",\"Fields\":[{\"Case\":\"Qubit\"}]}]]},\"ReturnType\":{\"Case\":\"UnitType\"},\"Information\":{\"Characteristics\":{\"Case\":\"Union\",\"Fields\":[{\"Case\":\"SimpleSet\",\"Fields\":[{\"Case\":\"Adjointable\"}]},{\"Case\":\"SimpleSet\",\"Fields\":[{\"Case\":\"Controllable\"}]}]},\"InferredInformation\":{\"IsSelfAdjoint\":false,\"IsIntrinsic\":false}}},\"Documentation\":[]}")]
+[assembly: SpecializationDeclaration("{\"Kind\":{\"Case\":\"QsBody\"},\"TypeArguments\":{\"Case\":\"Null\"},\"Information\":{\"Characteristics\":{\"Case\":\"Union\",\"Fields\":[{\"Case\":\"SimpleSet\",\"Fields\":[{\"Case\":\"Adjointable\"}]},{\"Case\":\"SimpleSet\",\"Fields\":[{\"Case\":\"Controllable\"}]}]},\"InferredInformation\":{\"IsSelfAdjoint\":false,\"IsIntrinsic\":false}},\"Parent\":{\"Namespace\":\"Quantum.Bell\",\"Name\":\"SignedMultiply\"},\"Attributes\":[],\"SourceFile\":\"/Users/Matt/Documents/Masters/Dissertation/Quantum/Testing/Inital_Test/Program.qs\",\"Position\":{\"Item1\":450,\"Item2\":4},\"HeaderRange\":{\"Item1\":{\"Line\":1,\"Column\":1},\"Item2\":{\"Line\":1,\"Column\":5}},\"Documentation\":[]}")]
+[assembly: SpecializationDeclaration("{\"Kind\":{\"Case\":\"QsAdjoint\"},\"TypeArguments\":{\"Case\":\"Null\"},\"Information\":{\"Characteristics\":{\"Case\":\"Union\",\"Fields\":[{\"Case\":\"SimpleSet\",\"Fields\":[{\"Case\":\"Adjointable\"}]},{\"Case\":\"SimpleSet\",\"Fields\":[{\"Case\":\"Controllable\"}]}]},\"InferredInformation\":{\"IsSelfAdjoint\":false,\"IsIntrinsic\":false}},\"Parent\":{\"Namespace\":\"Quantum.Bell\",\"Name\":\"SignedMultiply\"},\"Attributes\":[],\"SourceFile\":\"/Users/Matt/Documents/Masters/Dissertation/Quantum/Testing/Inital_Test/Program.qs\",\"Position\":{\"Item1\":460,\"Item2\":4},\"HeaderRange\":{\"Item1\":{\"Line\":1,\"Column\":1},\"Item2\":{\"Line\":1,\"Column\":8}},\"Documentation\":[]}")]
+[assembly: SpecializationDeclaration("{\"Kind\":{\"Case\":\"QsControlled\"},\"TypeArguments\":{\"Case\":\"Null\"},\"Information\":{\"Characteristics\":{\"Case\":\"Union\",\"Fields\":[{\"Case\":\"SimpleSet\",\"Fields\":[{\"Case\":\"Adjointable\"}]},{\"Case\":\"SimpleSet\",\"Fields\":[{\"Case\":\"Controllable\"}]}]},\"InferredInformation\":{\"IsSelfAdjoint\":false,\"IsIntrinsic\":false}},\"Parent\":{\"Namespace\":\"Quantum.Bell\",\"Name\":\"SignedMultiply\"},\"Attributes\":[],\"SourceFile\":\"/Users/Matt/Documents/Masters/Dissertation/Quantum/Testing/Inital_Test/Program.qs\",\"Position\":{\"Item1\":448,\"Item2\":0},\"HeaderRange\":{\"Item1\":{\"Line\":1,\"Column\":71},\"Item2\":{\"Line\":1,\"Column\":80}},\"Documentation\":[\"automatically generated QsControlled specialization for Quantum.Bell.SignedMultiply\"]}")]
+[assembly: SpecializationDeclaration("{\"Kind\":{\"Case\":\"QsControlledAdjoint\"},\"TypeArguments\":{\"Case\":\"Null\"},\"Information\":{\"Characteristics\":{\"Case\":\"Union\",\"Fields\":[{\"Case\":\"SimpleSet\",\"Fields\":[{\"Case\":\"Adjointable\"}]},{\"Case\":\"SimpleSet\",\"Fields\":[{\"Case\":\"Controllable\"}]}]},\"InferredInformation\":{\"IsSelfAdjoint\":false,\"IsIntrinsic\":false}},\"Parent\":{\"Namespace\":\"Quantum.Bell\",\"Name\":\"SignedMultiply\"},\"Attributes\":[],\"SourceFile\":\"/Users/Matt/Documents/Masters/Dissertation/Quantum/Testing/Inital_Test/Program.qs\",\"Position\":{\"Item1\":448,\"Item2\":0},\"HeaderRange\":{\"Item1\":{\"Line\":1,\"Column\":71},\"Item2\":{\"Line\":1,\"Column\":80}},\"Documentation\":[\"automatically generated QsControlledAdjoint specialization for Quantum.Bell.SignedMultiply\"]}")]
+[assembly: CallableDeclaration("{\"Kind\":{\"Case\":\"Operation\"},\"QualifiedName\":{\"Namespace\":\"Quantum.Bell\",\"Name\":\"TestingQFT\"},\"Attributes\":[],\"Modifiers\":{\"Access\":{\"Case\":\"DefaultAccess\"}},\"SourceFile\":\"/Users/Matt/Documents/Masters/Dissertation/Quantum/Testing/Inital_Test/Program.qs\",\"Position\":{\"Item1\":468,\"Item2\":0},\"SymbolRange\":{\"Item1\":{\"Line\":1,\"Column\":11},\"Item2\":{\"Line\":1,\"Column\":21}},\"ArgumentTuple\":{\"Case\":\"QsTuple\",\"Fields\":[[]]},\"Signature\":{\"TypeParameters\":[],\"ArgumentType\":{\"Case\":\"UnitType\"},\"ReturnType\":{\"Case\":\"UnitType\"},\"Information\":{\"Characteristics\":{\"Case\":\"EmptySet\"},\"InferredInformation\":{\"IsSelfAdjoint\":false,\"IsIntrinsic\":false}}},\"Documentation\":[]}")]
+[assembly: SpecializationDeclaration("{\"Kind\":{\"Case\":\"QsBody\"},\"TypeArguments\":{\"Case\":\"Null\"},\"Information\":{\"Characteristics\":{\"Case\":\"EmptySet\"},\"InferredInformation\":{\"IsSelfAdjoint\":false,\"IsIntrinsic\":false}},\"Parent\":{\"Namespace\":\"Quantum.Bell\",\"Name\":\"TestingQFT\"},\"Attributes\":[],\"SourceFile\":\"/Users/Matt/Documents/Masters/Dissertation/Quantum/Testing/Inital_Test/Program.qs\",\"Position\":{\"Item1\":468,\"Item2\":0},\"HeaderRange\":{\"Item1\":{\"Line\":1,\"Column\":11},\"Item2\":{\"Line\":1,\"Column\":21}},\"Documentation\":[]}")]
+[assembly: CallableDeclaration("{\"Kind\":{\"Case\":\"Operation\"},\"QualifiedName\":{\"Namespace\":\"Quantum.Bell\",\"Name\":\"QuantumPhaseEstimationTest\"},\"Attributes\":[],\"Modifiers\":{\"Access\":{\"Case\":\"DefaultAccess\"}},\"SourceFile\":\"/Users/Matt/Documents/Masters/Dissertation/Quantum/Testing/Inital_Test/Program.qs\",\"Position\":{\"Item1\":494,\"Item2\":4},\"SymbolRange\":{\"Item1\":{\"Line\":1,\"Column\":11},\"Item2\":{\"Line\":1,\"Column\":37}},\"ArgumentTuple\":{\"Case\":\"QsTuple\",\"Fields\":[[{\"Case\":\"QsTupleItem\",\"Fields\":[{\"VariableName\":{\"Case\":\"ValidName\",\"Fields\":[\"oracle\"]},\"Type\":{\"Case\":\"UserDefinedType\",\"Fields\":[{\"Namespace\":\"Microsoft.Quantum.Oracles\",\"Name\":\"DiscreteOracle\",\"Range\":{\"Case\":\"Value\",\"Fields\":[{\"Item1\":{\"Line\":1,\"Column\":48},\"Item2\":{\"Line\":1,\"Column\":62}}]}}]},\"InferredInformation\":{\"IsMutable\":false,\"HasLocalQuantumDependency\":false},\"Position\":{\"Case\":\"Null\"},\"Range\":{\"Item1\":{\"Line\":1,\"Column\":39},\"Item2\":{\"Line\":1,\"Column\":45}}}]},{\"Case\":\"QsTupleItem\",\"Fields\":[{\"VariableName\":{\"Case\":\"ValidName\",\"Fields\":[\"targetState\"]},\"Type\":{\"Case\":\"ArrayType\",\"Fields\":[{\"Case\":\"Qubit\"}]},\"InferredInformation\":{\"IsMutable\":false,\"HasLocalQuantumDependency\":false},\"Position\":{\"Case\":\"Null\"},\"Range\":{\"Item1\":{\"Line\":1,\"Column\":64},\"Item2\":{\"Line\":1,\"Column\":75}}}]},{\"Case\":\"QsTupleItem\",\"Fields\":[{\"VariableName\":{\"Case\":\"ValidName\",\"Fields\":[\"controlRegister\"]},\"Type\":{\"Case\":\"UserDefinedType\",\"Fields\":[{\"Namespace\":\"Microsoft.Quantum.Arithmetic\",\"Name\":\"BigEndian\",\"Range\":{\"Case\":\"Value\",\"Fields\":[{\"Item1\":{\"Line\":1,\"Column\":105},\"Item2\":{\"Line\":1,\"Column\":114}}]}}]},\"InferredInformation\":{\"IsMutable\":false,\"HasLocalQuantumDependency\":false},\"Position\":{\"Case\":\"Null\"},\"Range\":{\"Item1\":{\"Line\":1,\"Column\":87},\"Item2\":{\"Line\":1,\"Column\":102}}}]}]]},\"Signature\":{\"TypeParameters\":[],\"ArgumentType\":{\"Case\":\"TupleType\",\"Fields\":[[{\"Case\":\"UserDefinedType\",\"Fields\":[{\"Namespace\":\"Microsoft.Quantum.Oracles\",\"Name\":\"DiscreteOracle\",\"Range\":{\"Case\":\"Null\"}}]},{\"Case\":\"ArrayType\",\"Fields\":[{\"Case\":\"Qubit\"}]},{\"Case\":\"UserDefinedType\",\"Fields\":[{\"Namespace\":\"Microsoft.Quantum.Arithmetic\",\"Name\":\"BigEndian\",\"Range\":{\"Case\":\"Null\"}}]}]]},\"ReturnType\":{\"Case\":\"UnitType\"},\"Information\":{\"Characteristics\":{\"Case\":\"Union\",\"Fields\":[{\"Case\":\"SimpleSet\",\"Fields\":[{\"Case\":\"Adjointable\"}]},{\"Case\":\"SimpleSet\",\"Fields\":[{\"Case\":\"Controllable\"}]}]},\"InferredInformation\":{\"IsSelfAdjoint\":false,\"IsIntrinsic\":false}}},\"Documentation\":[]}")]
+[assembly: SpecializationDeclaration("{\"Kind\":{\"Case\":\"QsBody\"},\"TypeArguments\":{\"Case\":\"Null\"},\"Information\":{\"Characteristics\":{\"Case\":\"Union\",\"Fields\":[{\"Case\":\"SimpleSet\",\"Fields\":[{\"Case\":\"Adjointable\"}]},{\"Case\":\"SimpleSet\",\"Fields\":[{\"Case\":\"Controllable\"}]}]},\"InferredInformation\":{\"IsSelfAdjoint\":false,\"IsIntrinsic\":false}},\"Parent\":{\"Namespace\":\"Quantum.Bell\",\"Name\":\"QuantumPhaseEstimationTest\"},\"Attributes\":[],\"SourceFile\":\"/Users/Matt/Documents/Masters/Dissertation/Quantum/Testing/Inital_Test/Program.qs\",\"Position\":{\"Item1\":494,\"Item2\":4},\"HeaderRange\":{\"Item1\":{\"Line\":1,\"Column\":11},\"Item2\":{\"Line\":1,\"Column\":37}},\"Documentation\":[]}")]
+[assembly: SpecializationDeclaration("{\"Kind\":{\"Case\":\"QsAdjoint\"},\"TypeArguments\":{\"Case\":\"Null\"},\"Information\":{\"Characteristics\":{\"Case\":\"Union\",\"Fields\":[{\"Case\":\"SimpleSet\",\"Fields\":[{\"Case\":\"Adjointable\"}]},{\"Case\":\"SimpleSet\",\"Fields\":[{\"Case\":\"Controllable\"}]}]},\"InferredInformation\":{\"IsSelfAdjoint\":false,\"IsIntrinsic\":false}},\"Parent\":{\"Namespace\":\"Quantum.Bell\",\"Name\":\"QuantumPhaseEstimationTest\"},\"Attributes\":[],\"SourceFile\":\"/Users/Matt/Documents/Masters/Dissertation/Quantum/Testing/Inital_Test/Program.qs\",\"Position\":{\"Item1\":494,\"Item2\":4},\"HeaderRange\":{\"Item1\":{\"Line\":1,\"Column\":126},\"Item2\":{\"Line\":1,\"Column\":135}},\"Documentation\":[\"automatically generated QsAdjoint specialization for Quantum.Bell.QuantumPhaseEstimationTest\"]}")]
+[assembly: SpecializationDeclaration("{\"Kind\":{\"Case\":\"QsControlled\"},\"TypeArguments\":{\"Case\":\"Null\"},\"Information\":{\"Characteristics\":{\"Case\":\"Union\",\"Fields\":[{\"Case\":\"SimpleSet\",\"Fields\":[{\"Case\":\"Adjointable\"}]},{\"Case\":\"SimpleSet\",\"Fields\":[{\"Case\":\"Controllable\"}]}]},\"InferredInformation\":{\"IsSelfAdjoint\":false,\"IsIntrinsic\":false}},\"Parent\":{\"Namespace\":\"Quantum.Bell\",\"Name\":\"QuantumPhaseEstimationTest\"},\"Attributes\":[],\"SourceFile\":\"/Users/Matt/Documents/Masters/Dissertation/Quantum/Testing/Inital_Test/Program.qs\",\"Position\":{\"Item1\":494,\"Item2\":4},\"HeaderRange\":{\"Item1\":{\"Line\":1,\"Column\":126},\"Item2\":{\"Line\":1,\"Column\":135}},\"Documentation\":[\"automatically generated QsControlled specialization for Quantum.Bell.QuantumPhaseEstimationTest\"]}")]
+[assembly: SpecializationDeclaration("{\"Kind\":{\"Case\":\"QsControlledAdjoint\"},\"TypeArguments\":{\"Case\":\"Null\"},\"Information\":{\"Characteristics\":{\"Case\":\"Union\",\"Fields\":[{\"Case\":\"SimpleSet\",\"Fields\":[{\"Case\":\"Adjointable\"}]},{\"Case\":\"SimpleSet\",\"Fields\":[{\"Case\":\"Controllable\"}]}]},\"InferredInformation\":{\"IsSelfAdjoint\":false,\"IsIntrinsic\":false}},\"Parent\":{\"Namespace\":\"Quantum.Bell\",\"Name\":\"QuantumPhaseEstimationTest\"},\"Attributes\":[],\"SourceFile\":\"/Users/Matt/Documents/Masters/Dissertation/Quantum/Testing/Inital_Test/Program.qs\",\"Position\":{\"Item1\":494,\"Item2\":4},\"HeaderRange\":{\"Item1\":{\"Line\":1,\"Column\":126},\"Item2\":{\"Line\":1,\"Column\":135}},\"Documentation\":[\"automatically generated QsControlledAdjoint specialization for Quantum.Bell.QuantumPhaseEstimationTest\"]}")]
+[assembly: CallableDeclaration("{\"Kind\":{\"Case\":\"Operation\"},\"QualifiedName\":{\"Namespace\":\"Quantum.Bell\",\"Name\":\"SquareModM\"},\"Attributes\":[],\"Modifiers\":{\"Access\":{\"Case\":\"DefaultAccess\"}},\"SourceFile\":\"/Users/Matt/Documents/Masters/Dissertation/Quantum/Testing/Inital_Test/Program.qs\",\"Position\":{\"Item1\":514,\"Item2\":0},\"SymbolRange\":{\"Item1\":{\"Line\":1,\"Column\":11},\"Item2\":{\"Line\":1,\"Column\":21}},\"ArgumentTuple\":{\"Case\":\"QsTuple\",\"Fields\":[[{\"Case\":\"QsTupleItem\",\"Fields\":[{\"VariableName\":{\"Case\":\"ValidName\",\"Fields\":[\"a\"]},\"Type\":{\"Case\":\"ArrayType\",\"Fields\":[{\"Case\":\"Qubit\"}]},\"InferredInformation\":{\"IsMutable\":false,\"HasLocalQuantumDependency\":false},\"Position\":{\"Case\":\"Null\"},\"Range\":{\"Item1\":{\"Line\":1,\"Column\":22},\"Item2\":{\"Line\":1,\"Column\":23}}}]},{\"Case\":\"QsTupleItem\",\"Fields\":[{\"VariableName\":{\"Case\":\"ValidName\",\"Fields\":[\"Ms\"]},\"Type\":{\"Case\":\"ArrayType\",\"Fields\":[{\"Case\":\"Qubit\"}]},\"InferredInformation\":{\"IsMutable\":false,\"HasLocalQuantumDependency\":false},\"Position\":{\"Case\":\"Null\"},\"Range\":{\"Item1\":{\"Line\":1,\"Column\":32},\"Item2\":{\"Line\":1,\"Column\":34}}}]},{\"Case\":\"QsTupleItem\",\"Fields\":[{\"VariableName\":{\"Case\":\"ValidName\",\"Fields\":[\"Ts\"]},\"Type\":{\"Case\":\"ArrayType\",\"Fields\":[{\"Case\":\"Qubit\"}]},\"InferredInformation\":{\"IsMutable\":false,\"HasLocalQuantumDependency\":false},\"Position\":{\"Case\":\"Null\"},\"Range\":{\"Item1\":{\"Line\":1,\"Column\":43},\"Item2\":{\"Line\":1,\"Column\":45}}}]}]]},\"Signature\":{\"TypeParameters\":[],\"ArgumentType\":{\"Case\":\"TupleType\",\"Fields\":[[{\"Case\":\"ArrayType\",\"Fields\":[{\"Case\":\"Qubit\"}]},{\"Case\":\"ArrayType\",\"Fields\":[{\"Case\":\"Qubit\"}]},{\"Case\":\"ArrayType\",\"Fields\":[{\"Case\":\"Qubit\"}]}]]},\"ReturnType\":{\"Case\":\"UnitType\"},\"Information\":{\"Characteristics\":{\"Case\":\"Union\",\"Fields\":[{\"Case\":\"SimpleSet\",\"Fields\":[{\"Case\":\"Adjointable\"}]},{\"Case\":\"SimpleSet\",\"Fields\":[{\"Case\":\"Controllable\"}]}]},\"InferredInformation\":{\"IsSelfAdjoint\":false,\"IsIntrinsic\":false}}},\"Documentation\":[]}")]
+[assembly: SpecializationDeclaration("{\"Kind\":{\"Case\":\"QsBody\"},\"TypeArguments\":{\"Case\":\"Null\"},\"Information\":{\"Characteristics\":{\"Case\":\"Union\",\"Fields\":[{\"Case\":\"SimpleSet\",\"Fields\":[{\"Case\":\"Adjointable\"}]},{\"Case\":\"SimpleSet\",\"Fields\":[{\"Case\":\"Controllable\"}]}]},\"InferredInformation\":{\"IsSelfAdjoint\":false,\"IsIntrinsic\":false}},\"Parent\":{\"Namespace\":\"Quantum.Bell\",\"Name\":\"SquareModM\"},\"Attributes\":[],\"SourceFile\":\"/Users/Matt/Documents/Masters/Dissertation/Quantum/Testing/Inital_Test/Program.qs\",\"Position\":{\"Item1\":514,\"Item2\":0},\"HeaderRange\":{\"Item1\":{\"Line\":1,\"Column\":11},\"Item2\":{\"Line\":1,\"Column\":21}},\"Documentation\":[]}")]
+[assembly: SpecializationDeclaration("{\"Kind\":{\"Case\":\"QsAdjoint\"},\"TypeArguments\":{\"Case\":\"Null\"},\"Information\":{\"Characteristics\":{\"Case\":\"Union\",\"Fields\":[{\"Case\":\"SimpleSet\",\"Fields\":[{\"Case\":\"Adjointable\"}]},{\"Case\":\"SimpleSet\",\"Fields\":[{\"Case\":\"Controllable\"}]}]},\"InferredInformation\":{\"IsSelfAdjoint\":false,\"IsIntrinsic\":false}},\"Parent\":{\"Namespace\":\"Quantum.Bell\",\"Name\":\"SquareModM\"},\"Attributes\":[],\"SourceFile\":\"/Users/Matt/Documents/Masters/Dissertation/Quantum/Testing/Inital_Test/Program.qs\",\"Position\":{\"Item1\":514,\"Item2\":0},\"HeaderRange\":{\"Item1\":{\"Line\":1,\"Column\":65},\"Item2\":{\"Line\":1,\"Column\":74}},\"Documentation\":[\"automatically generated QsAdjoint specialization for Quantum.Bell.SquareModM\"]}")]
+[assembly: SpecializationDeclaration("{\"Kind\":{\"Case\":\"QsControlled\"},\"TypeArguments\":{\"Case\":\"Null\"},\"Information\":{\"Characteristics\":{\"Case\":\"Union\",\"Fields\":[{\"Case\":\"SimpleSet\",\"Fields\":[{\"Case\":\"Adjointable\"}]},{\"Case\":\"SimpleSet\",\"Fields\":[{\"Case\":\"Controllable\"}]}]},\"InferredInformation\":{\"IsSelfAdjoint\":false,\"IsIntrinsic\":false}},\"Parent\":{\"Namespace\":\"Quantum.Bell\",\"Name\":\"SquareModM\"},\"Attributes\":[],\"SourceFile\":\"/Users/Matt/Documents/Masters/Dissertation/Quantum/Testing/Inital_Test/Program.qs\",\"Position\":{\"Item1\":514,\"Item2\":0},\"HeaderRange\":{\"Item1\":{\"Line\":1,\"Column\":65},\"Item2\":{\"Line\":1,\"Column\":74}},\"Documentation\":[\"automatically generated QsControlled specialization for Quantum.Bell.SquareModM\"]}")]
+[assembly: SpecializationDeclaration("{\"Kind\":{\"Case\":\"QsControlledAdjoint\"},\"TypeArguments\":{\"Case\":\"Null\"},\"Information\":{\"Characteristics\":{\"Case\":\"Union\",\"Fields\":[{\"Case\":\"SimpleSet\",\"Fields\":[{\"Case\":\"Adjointable\"}]},{\"Case\":\"SimpleSet\",\"Fields\":[{\"Case\":\"Controllable\"}]}]},\"InferredInformation\":{\"IsSelfAdjoint\":false,\"IsIntrinsic\":false}},\"Parent\":{\"Namespace\":\"Quantum.Bell\",\"Name\":\"SquareModM\"},\"Attributes\":[],\"SourceFile\":\"/Users/Matt/Documents/Masters/Dissertation/Quantum/Testing/Inital_Test/Program.qs\",\"Position\":{\"Item1\":514,\"Item2\":0},\"HeaderRange\":{\"Item1\":{\"Line\":1,\"Column\":65},\"Item2\":{\"Line\":1,\"Column\":74}},\"Documentation\":[\"automatically generated QsControlledAdjoint specialization for Quantum.Bell.SquareModM\"]}")]
+[assembly: CallableDeclaration("{\"Kind\":{\"Case\":\"Operation\"},\"QualifiedName\":{\"Namespace\":\"Quantum.Bell\",\"Name\":\"MultiplyModM\"},\"Attributes\":[],\"Modifiers\":{\"Access\":{\"Case\":\"DefaultAccess\"}},\"SourceFile\":\"/Users/Matt/Documents/Masters/Dissertation/Quantum/Testing/Inital_Test/Program.qs\",\"Position\":{\"Item1\":527,\"Item2\":0},\"SymbolRange\":{\"Item1\":{\"Line\":1,\"Column\":11},\"Item2\":{\"Line\":1,\"Column\":23}},\"ArgumentTuple\":{\"Case\":\"QsTuple\",\"Fields\":[[{\"Case\":\"QsTupleItem\",\"Fields\":[{\"VariableName\":{\"Case\":\"ValidName\",\"Fields\":[\"a\"]},\"Type\":{\"Case\":\"ArrayType\",\"Fields\":[{\"Case\":\"Qubit\"}]},\"InferredInformation\":{\"IsMutable\":false,\"HasLocalQuantumDependency\":false},\"Position\":{\"Case\":\"Null\"},\"Range\":{\"Item1\":{\"Line\":1,\"Column\":24},\"Item2\":{\"Line\":1,\"Column\":25}}}]},{\"Case\":\"QsTupleItem\",\"Fields\":[{\"VariableName\":{\"Case\":\"ValidName\",\"Fields\":[\"b\"]},\"Type\":{\"Case\":\"ArrayType\",\"Fields\":[{\"Case\":\"Qubit\"}]},\"InferredInformation\":{\"IsMutable\":false,\"HasLocalQuantumDependency\":false},\"Position\":{\"Case\":\"Null\"},\"Range\":{\"Item1\":{\"Line\":1,\"Column\":34},\"Item2\":{\"Line\":1,\"Column\":35}}}]},{\"Case\":\"QsTupleItem\",\"Fields\":[{\"VariableName\":{\"Case\":\"ValidName\",\"Fields\":[\"Ms\"]},\"Type\":{\"Case\":\"ArrayType\",\"Fields\":[{\"Case\":\"Qubit\"}]},\"InferredInformation\":{\"IsMutable\":false,\"HasLocalQuantumDependency\":false},\"Position\":{\"Case\":\"Null\"},\"Range\":{\"Item1\":{\"Line\":1,\"Column\":44},\"Item2\":{\"Line\":1,\"Column\":46}}}]},{\"Case\":\"QsTupleItem\",\"Fields\":[{\"VariableName\":{\"Case\":\"ValidName\",\"Fields\":[\"Ts\"]},\"Type\":{\"Case\":\"ArrayType\",\"Fields\":[{\"Case\":\"Qubit\"}]},\"InferredInformation\":{\"IsMutable\":false,\"HasLocalQuantumDependency\":false},\"Position\":{\"Case\":\"Null\"},\"Range\":{\"Item1\":{\"Line\":1,\"Column\":55},\"Item2\":{\"Line\":1,\"Column\":57}}}]}]]},\"Signature\":{\"TypeParameters\":[],\"ArgumentType\":{\"Case\":\"TupleType\",\"Fields\":[[{\"Case\":\"ArrayType\",\"Fields\":[{\"Case\":\"Qubit\"}]},{\"Case\":\"ArrayType\",\"Fields\":[{\"Case\":\"Qubit\"}]},{\"Case\":\"ArrayType\",\"Fields\":[{\"Case\":\"Qubit\"}]},{\"Case\":\"ArrayType\",\"Fields\":[{\"Case\":\"Qubit\"}]}]]},\"ReturnType\":{\"Case\":\"UnitType\"},\"Information\":{\"Characteristics\":{\"Case\":\"Union\",\"Fields\":[{\"Case\":\"SimpleSet\",\"Fields\":[{\"Case\":\"Adjointable\"}]},{\"Case\":\"SimpleSet\",\"Fields\":[{\"Case\":\"Controllable\"}]}]},\"InferredInformation\":{\"IsSelfAdjoint\":false,\"IsIntrinsic\":false}}},\"Documentation\":[]}")]
+[assembly: SpecializationDeclaration("{\"Kind\":{\"Case\":\"QsBody\"},\"TypeArguments\":{\"Case\":\"Null\"},\"Information\":{\"Characteristics\":{\"Case\":\"Union\",\"Fields\":[{\"Case\":\"SimpleSet\",\"Fields\":[{\"Case\":\"Adjointable\"}]},{\"Case\":\"SimpleSet\",\"Fields\":[{\"Case\":\"Controllable\"}]}]},\"InferredInformation\":{\"IsSelfAdjoint\":false,\"IsIntrinsic\":false}},\"Parent\":{\"Namespace\":\"Quantum.Bell\",\"Name\":\"MultiplyModM\"},\"Attributes\":[],\"SourceFile\":\"/Users/Matt/Documents/Masters/Dissertation/Quantum/Testing/Inital_Test/Program.qs\",\"Position\":{\"Item1\":527,\"Item2\":0},\"HeaderRange\":{\"Item1\":{\"Line\":1,\"Column\":11},\"Item2\":{\"Line\":1,\"Column\":23}},\"Documentation\":[]}")]
+[assembly: SpecializationDeclaration("{\"Kind\":{\"Case\":\"QsAdjoint\"},\"TypeArguments\":{\"Case\":\"Null\"},\"Information\":{\"Characteristics\":{\"Case\":\"Union\",\"Fields\":[{\"Case\":\"SimpleSet\",\"Fields\":[{\"Case\":\"Adjointable\"}]},{\"Case\":\"SimpleSet\",\"Fields\":[{\"Case\":\"Controllable\"}]}]},\"InferredInformation\":{\"IsSelfAdjoint\":false,\"IsIntrinsic\":false}},\"Parent\":{\"Namespace\":\"Quantum.Bell\",\"Name\":\"MultiplyModM\"},\"Attributes\":[],\"SourceFile\":\"/Users/Matt/Documents/Masters/Dissertation/Quantum/Testing/Inital_Test/Program.qs\",\"Position\":{\"Item1\":527,\"Item2\":0},\"HeaderRange\":{\"Item1\":{\"Line\":1,\"Column\":77},\"Item2\":{\"Line\":1,\"Column\":86}},\"Documentation\":[\"automatically generated QsAdjoint specialization for Quantum.Bell.MultiplyModM\"]}")]
+[assembly: SpecializationDeclaration("{\"Kind\":{\"Case\":\"QsControlled\"},\"TypeArguments\":{\"Case\":\"Null\"},\"Information\":{\"Characteristics\":{\"Case\":\"Union\",\"Fields\":[{\"Case\":\"SimpleSet\",\"Fields\":[{\"Case\":\"Adjointable\"}]},{\"Case\":\"SimpleSet\",\"Fields\":[{\"Case\":\"Controllable\"}]}]},\"InferredInformation\":{\"IsSelfAdjoint\":false,\"IsIntrinsic\":false}},\"Parent\":{\"Namespace\":\"Quantum.Bell\",\"Name\":\"MultiplyModM\"},\"Attributes\":[],\"SourceFile\":\"/Users/Matt/Documents/Masters/Dissertation/Quantum/Testing/Inital_Test/Program.qs\",\"Position\":{\"Item1\":527,\"Item2\":0},\"HeaderRange\":{\"Item1\":{\"Line\":1,\"Column\":77},\"Item2\":{\"Line\":1,\"Column\":86}},\"Documentation\":[\"automatically generated QsControlled specialization for Quantum.Bell.MultiplyModM\"]}")]
+[assembly: SpecializationDeclaration("{\"Kind\":{\"Case\":\"QsControlledAdjoint\"},\"TypeArguments\":{\"Case\":\"Null\"},\"Information\":{\"Characteristics\":{\"Case\":\"Union\",\"Fields\":[{\"Case\":\"SimpleSet\",\"Fields\":[{\"Case\":\"Adjointable\"}]},{\"Case\":\"SimpleSet\",\"Fields\":[{\"Case\":\"Controllable\"}]}]},\"InferredInformation\":{\"IsSelfAdjoint\":false,\"IsIntrinsic\":false}},\"Parent\":{\"Namespace\":\"Quantum.Bell\",\"Name\":\"MultiplyModM\"},\"Attributes\":[],\"SourceFile\":\"/Users/Matt/Documents/Masters/Dissertation/Quantum/Testing/Inital_Test/Program.qs\",\"Position\":{\"Item1\":527,\"Item2\":0},\"HeaderRange\":{\"Item1\":{\"Line\":1,\"Column\":77},\"Item2\":{\"Line\":1,\"Column\":86}},\"Documentation\":[\"automatically generated QsControlledAdjoint specialization for Quantum.Bell.MultiplyModM\"]}")]
+[assembly: CallableDeclaration("{\"Kind\":{\"Case\":\"Operation\"},\"QualifiedName\":{\"Namespace\":\"Quantum.Bell\",\"Name\":\"DivideI\"},\"Attributes\":[],\"Modifiers\":{\"Access\":{\"Case\":\"DefaultAccess\"}},\"SourceFile\":\"/Users/Matt/Documents/Masters/Dissertation/Quantum/Testing/Inital_Test/Program.qs\",\"Position\":{\"Item1\":558,\"Item2\":4},\"SymbolRange\":{\"Item1\":{\"Line\":1,\"Column\":11},\"Item2\":{\"Line\":1,\"Column\":18}},\"ArgumentTuple\":{\"Case\":\"QsTuple\",\"Fields\":[[{\"Case\":\"QsTupleItem\",\"Fields\":[{\"VariableName\":{\"Case\":\"ValidName\",\"Fields\":[\"xs\"]},\"Type\":{\"Case\":\"UserDefinedType\",\"Fields\":[{\"Namespace\":\"Microsoft.Quantum.Arithmetic\",\"Name\":\"LittleEndian\",\"Range\":{\"Case\":\"Value\",\"Fields\":[{\"Item1\":{\"Line\":1,\"Column\":24},\"Item2\":{\"Line\":1,\"Column\":36}}]}}]},\"InferredInformation\":{\"IsMutable\":false,\"HasLocalQuantumDependency\":false},\"Position\":{\"Case\":\"Null\"},\"Range\":{\"Item1\":{\"Line\":1,\"Column\":20},\"Item2\":{\"Line\":1,\"Column\":22}}}]},{\"Case\":\"QsTupleItem\",\"Fields\":[{\"VariableName\":{\"Case\":\"ValidName\",\"Fields\":[\"ys\"]},\"Type\":{\"Case\":\"UserDefinedType\",\"Fields\":[{\"Namespace\":\"Microsoft.Quantum.Arithmetic\",\"Name\":\"LittleEndian\",\"Range\":{\"Case\":\"Value\",\"Fields\":[{\"Item1\":{\"Line\":1,\"Column\":42},\"Item2\":{\"Line\":1,\"Column\":54}}]}}]},\"InferredInformation\":{\"IsMutable\":false,\"HasLocalQuantumDependency\":false},\"Position\":{\"Case\":\"Null\"},\"Range\":{\"Item1\":{\"Line\":1,\"Column\":38},\"Item2\":{\"Line\":1,\"Column\":40}}}]},{\"Case\":\"QsTupleItem\",\"Fields\":[{\"VariableName\":{\"Case\":\"ValidName\",\"Fields\":[\"result\"]},\"Type\":{\"Case\":\"UserDefinedType\",\"Fields\":[{\"Namespace\":\"Microsoft.Quantum.Arithmetic\",\"Name\":\"LittleEndian\",\"Range\":{\"Case\":\"Value\",\"Fields\":[{\"Item1\":{\"Line\":2,\"Column\":40},\"Item2\":{\"Line\":2,\"Column\":52}}]}}]},\"InferredInformation\":{\"IsMutable\":false,\"HasLocalQuantumDependency\":false},\"Position\":{\"Case\":\"Null\"},\"Range\":{\"Item1\":{\"Line\":2,\"Column\":32},\"Item2\":{\"Line\":2,\"Column\":38}}}]}]]},\"Signature\":{\"TypeParameters\":[],\"ArgumentType\":{\"Case\":\"TupleType\",\"Fields\":[[{\"Case\":\"UserDefinedType\",\"Fields\":[{\"Namespace\":\"Microsoft.Quantum.Arithmetic\",\"Name\":\"LittleEndian\",\"Range\":{\"Case\":\"Null\"}}]},{\"Case\":\"UserDefinedType\",\"Fields\":[{\"Namespace\":\"Microsoft.Quantum.Arithmetic\",\"Name\":\"LittleEndian\",\"Range\":{\"Case\":\"Null\"}}]},{\"Case\":\"UserDefinedType\",\"Fields\":[{\"Namespace\":\"Microsoft.Quantum.Arithmetic\",\"Name\":\"LittleEndian\",\"Range\":{\"Case\":\"Null\"}}]}]]},\"ReturnType\":{\"Case\":\"UnitType\"},\"Information\":{\"Characteristics\":{\"Case\":\"Union\",\"Fields\":[{\"Case\":\"SimpleSet\",\"Fields\":[{\"Case\":\"Adjointable\"}]},{\"Case\":\"SimpleSet\",\"Fields\":[{\"Case\":\"Controllable\"}]}]},\"InferredInformation\":{\"IsSelfAdjoint\":false,\"IsIntrinsic\":false}}},\"Documentation\":[]}")]
+[assembly: SpecializationDeclaration("{\"Kind\":{\"Case\":\"QsBody\"},\"TypeArguments\":{\"Case\":\"Null\"},\"Information\":{\"Characteristics\":{\"Case\":\"Union\",\"Fields\":[{\"Case\":\"SimpleSet\",\"Fields\":[{\"Case\":\"Adjointable\"}]},{\"Case\":\"SimpleSet\",\"Fields\":[{\"Case\":\"Controllable\"}]}]},\"InferredInformation\":{\"IsSelfAdjoint\":false,\"IsIntrinsic\":false}},\"Parent\":{\"Namespace\":\"Quantum.Bell\",\"Name\":\"DivideI\"},\"Attributes\":[],\"SourceFile\":\"/Users/Matt/Documents/Masters/Dissertation/Quantum/Testing/Inital_Test/Program.qs\",\"Position\":{\"Item1\":560,\"Item2\":8},\"HeaderRange\":{\"Item1\":{\"Line\":1,\"Column\":1},\"Item2\":{\"Line\":1,\"Column\":5}},\"Documentation\":[]}")]
+[assembly: SpecializationDeclaration("{\"Kind\":{\"Case\":\"QsAdjoint\"},\"TypeArguments\":{\"Case\":\"Null\"},\"Information\":{\"Characteristics\":{\"Case\":\"Union\",\"Fields\":[{\"Case\":\"SimpleSet\",\"Fields\":[{\"Case\":\"Adjointable\"}]},{\"Case\":\"SimpleSet\",\"Fields\":[{\"Case\":\"Controllable\"}]}]},\"InferredInformation\":{\"IsSelfAdjoint\":false,\"IsIntrinsic\":false}},\"Parent\":{\"Namespace\":\"Quantum.Bell\",\"Name\":\"DivideI\"},\"Attributes\":[],\"SourceFile\":\"/Users/Matt/Documents/Masters/Dissertation/Quantum/Testing/Inital_Test/Program.qs\",\"Position\":{\"Item1\":583,\"Item2\":8},\"HeaderRange\":{\"Item1\":{\"Line\":1,\"Column\":1},\"Item2\":{\"Line\":1,\"Column\":8}},\"Documentation\":[]}")]
+[assembly: SpecializationDeclaration("{\"Kind\":{\"Case\":\"QsControlled\"},\"TypeArguments\":{\"Case\":\"Null\"},\"Information\":{\"Characteristics\":{\"Case\":\"Union\",\"Fields\":[{\"Case\":\"SimpleSet\",\"Fields\":[{\"Case\":\"Adjointable\"}]},{\"Case\":\"SimpleSet\",\"Fields\":[{\"Case\":\"Controllable\"}]}]},\"InferredInformation\":{\"IsSelfAdjoint\":false,\"IsIntrinsic\":false}},\"Parent\":{\"Namespace\":\"Quantum.Bell\",\"Name\":\"DivideI\"},\"Attributes\":[],\"SourceFile\":\"/Users/Matt/Documents/Masters/Dissertation/Quantum/Testing/Inital_Test/Program.qs\",\"Position\":{\"Item1\":563,\"Item2\":8},\"HeaderRange\":{\"Item1\":{\"Line\":1,\"Column\":1},\"Item2\":{\"Line\":1,\"Column\":11}},\"Documentation\":[]}")]
+[assembly: SpecializationDeclaration("{\"Kind\":{\"Case\":\"QsControlledAdjoint\"},\"TypeArguments\":{\"Case\":\"Null\"},\"Information\":{\"Characteristics\":{\"Case\":\"Union\",\"Fields\":[{\"Case\":\"SimpleSet\",\"Fields\":[{\"Case\":\"Adjointable\"}]},{\"Case\":\"SimpleSet\",\"Fields\":[{\"Case\":\"Controllable\"}]}]},\"InferredInformation\":{\"IsSelfAdjoint\":false,\"IsIntrinsic\":false}},\"Parent\":{\"Namespace\":\"Quantum.Bell\",\"Name\":\"DivideI\"},\"Attributes\":[],\"SourceFile\":\"/Users/Matt/Documents/Masters/Dissertation/Quantum/Testing/Inital_Test/Program.qs\",\"Position\":{\"Item1\":584,\"Item2\":8},\"HeaderRange\":{\"Item1\":{\"Line\":1,\"Column\":1},\"Item2\":{\"Line\":1,\"Column\":19}},\"Documentation\":[]}")]
+[assembly: CallableDeclaration("{\"Kind\":{\"Case\":\"Operation\"},\"QualifiedName\":{\"Namespace\":\"Quantum.Bell\",\"Name\":\"AddI\"},\"Attributes\":[],\"Modifiers\":{\"Access\":{\"Case\":\"DefaultAccess\"}},\"SourceFile\":\"/Users/Matt/Documents/Masters/Dissertation/Quantum/Testing/Inital_Test/Program.qs\",\"Position\":{\"Item1\":589,\"Item2\":4},\"SymbolRange\":{\"Item1\":{\"Line\":1,\"Column\":11},\"Item2\":{\"Line\":1,\"Column\":15}},\"ArgumentTuple\":{\"Case\":\"QsTuple\",\"Fields\":[[{\"Case\":\"QsTupleItem\",\"Fields\":[{\"VariableName\":{\"Case\":\"ValidName\",\"Fields\":[\"xs\"]},\"Type\":{\"Case\":\"UserDefinedType\",\"Fields\":[{\"Namespace\":\"Microsoft.Quantum.Arithmetic\",\"Name\":\"LittleEndian\",\"Range\":{\"Case\":\"Value\",\"Fields\":[{\"Item1\":{\"Line\":1,\"Column\":21},\"Item2\":{\"Line\":1,\"Column\":33}}]}}]},\"InferredInformation\":{\"IsMutable\":false,\"HasLocalQuantumDependency\":false},\"Position\":{\"Case\":\"Null\"},\"Range\":{\"Item1\":{\"Line\":1,\"Column\":17},\"Item2\":{\"Line\":1,\"Column\":19}}}]},{\"Case\":\"QsTupleItem\",\"Fields\":[{\"VariableName\":{\"Case\":\"ValidName\",\"Fields\":[\"ys\"]},\"Type\":{\"Case\":\"UserDefinedType\",\"Fields\":[{\"Namespace\":\"Microsoft.Quantum.Arithmetic\",\"Name\":\"LittleEndian\",\"Range\":{\"Case\":\"Value\",\"Fields\":[{\"Item1\":{\"Line\":1,\"Column\":39},\"Item2\":{\"Line\":1,\"Column\":51}}]}}]},\"InferredInformation\":{\"IsMutable\":false,\"HasLocalQuantumDependency\":false},\"Position\":{\"Case\":\"Null\"},\"Range\":{\"Item1\":{\"Line\":1,\"Column\":35},\"Item2\":{\"Line\":1,\"Column\":37}}}]}]]},\"Signature\":{\"TypeParameters\":[],\"ArgumentType\":{\"Case\":\"TupleType\",\"Fields\":[[{\"Case\":\"UserDefinedType\",\"Fields\":[{\"Namespace\":\"Microsoft.Quantum.Arithmetic\",\"Name\":\"LittleEndian\",\"Range\":{\"Case\":\"Null\"}}]},{\"Case\":\"UserDefinedType\",\"Fields\":[{\"Namespace\":\"Microsoft.Quantum.Arithmetic\",\"Name\":\"LittleEndian\",\"Range\":{\"Case\":\"Null\"}}]}]]},\"ReturnType\":{\"Case\":\"UnitType\"},\"Information\":{\"Characteristics\":{\"Case\":\"Union\",\"Fields\":[{\"Case\":\"SimpleSet\",\"Fields\":[{\"Case\":\"Adjointable\"}]},{\"Case\":\"SimpleSet\",\"Fields\":[{\"Case\":\"Controllable\"}]}]},\"InferredInformation\":{\"IsSelfAdjoint\":false,\"IsIntrinsic\":false}}},\"Documentation\":[]}")]
+[assembly: SpecializationDeclaration("{\"Kind\":{\"Case\":\"QsBody\"},\"TypeArguments\":{\"Case\":\"Null\"},\"Information\":{\"Characteristics\":{\"Case\":\"Union\",\"Fields\":[{\"Case\":\"SimpleSet\",\"Fields\":[{\"Case\":\"Adjointable\"}]},{\"Case\":\"SimpleSet\",\"Fields\":[{\"Case\":\"Controllable\"}]}]},\"InferredInformation\":{\"IsSelfAdjoint\":false,\"IsIntrinsic\":false}},\"Parent\":{\"Namespace\":\"Quantum.Bell\",\"Name\":\"AddI\"},\"Attributes\":[],\"SourceFile\":\"/Users/Matt/Documents/Masters/Dissertation/Quantum/Testing/Inital_Test/Program.qs\",\"Position\":{\"Item1\":589,\"Item2\":4},\"HeaderRange\":{\"Item1\":{\"Line\":1,\"Column\":11},\"Item2\":{\"Line\":1,\"Column\":15}},\"Documentation\":[]}")]
+[assembly: SpecializationDeclaration("{\"Kind\":{\"Case\":\"QsAdjoint\"},\"TypeArguments\":{\"Case\":\"Null\"},\"Information\":{\"Characteristics\":{\"Case\":\"Union\",\"Fields\":[{\"Case\":\"SimpleSet\",\"Fields\":[{\"Case\":\"Adjointable\"}]},{\"Case\":\"SimpleSet\",\"Fields\":[{\"Case\":\"Controllable\"}]}]},\"InferredInformation\":{\"IsSelfAdjoint\":false,\"IsIntrinsic\":false}},\"Parent\":{\"Namespace\":\"Quantum.Bell\",\"Name\":\"AddI\"},\"Attributes\":[],\"SourceFile\":\"/Users/Matt/Documents/Masters/Dissertation/Quantum/Testing/Inital_Test/Program.qs\",\"Position\":{\"Item1\":589,\"Item2\":4},\"HeaderRange\":{\"Item1\":{\"Line\":1,\"Column\":63},\"Item2\":{\"Line\":1,\"Column\":72}},\"Documentation\":[\"automatically generated QsAdjoint specialization for Quantum.Bell.AddI\"]}")]
+[assembly: SpecializationDeclaration("{\"Kind\":{\"Case\":\"QsControlled\"},\"TypeArguments\":{\"Case\":\"Null\"},\"Information\":{\"Characteristics\":{\"Case\":\"Union\",\"Fields\":[{\"Case\":\"SimpleSet\",\"Fields\":[{\"Case\":\"Adjointable\"}]},{\"Case\":\"SimpleSet\",\"Fields\":[{\"Case\":\"Controllable\"}]}]},\"InferredInformation\":{\"IsSelfAdjoint\":false,\"IsIntrinsic\":false}},\"Parent\":{\"Namespace\":\"Quantum.Bell\",\"Name\":\"AddI\"},\"Attributes\":[],\"SourceFile\":\"/Users/Matt/Documents/Masters/Dissertation/Quantum/Testing/Inital_Test/Program.qs\",\"Position\":{\"Item1\":589,\"Item2\":4},\"HeaderRange\":{\"Item1\":{\"Line\":1,\"Column\":63},\"Item2\":{\"Line\":1,\"Column\":72}},\"Documentation\":[\"automatically generated QsControlled specialization for Quantum.Bell.AddI\"]}")]
+[assembly: SpecializationDeclaration("{\"Kind\":{\"Case\":\"QsControlledAdjoint\"},\"TypeArguments\":{\"Case\":\"Null\"},\"Information\":{\"Characteristics\":{\"Case\":\"Union\",\"Fields\":[{\"Case\":\"SimpleSet\",\"Fields\":[{\"Case\":\"Adjointable\"}]},{\"Case\":\"SimpleSet\",\"Fields\":[{\"Case\":\"Controllable\"}]}]},\"InferredInformation\":{\"IsSelfAdjoint\":false,\"IsIntrinsic\":false}},\"Parent\":{\"Namespace\":\"Quantum.Bell\",\"Name\":\"AddI\"},\"Attributes\":[],\"SourceFile\":\"/Users/Matt/Documents/Masters/Dissertation/Quantum/Testing/Inital_Test/Program.qs\",\"Position\":{\"Item1\":589,\"Item2\":4},\"HeaderRange\":{\"Item1\":{\"Line\":1,\"Column\":63},\"Item2\":{\"Line\":1,\"Column\":72}},\"Documentation\":[\"automatically generated QsControlledAdjoint specialization for Quantum.Bell.AddI\"]}")]
+[assembly: CallableDeclaration("{\"Kind\":{\"Case\":\"Operation\"},\"QualifiedName\":{\"Namespace\":\"Quantum.Bell\",\"Name\":\"CompareGTI\"},\"Attributes\":[],\"Modifiers\":{\"Access\":{\"Case\":\"DefaultAccess\"}},\"SourceFile\":\"/Users/Matt/Documents/Masters/Dissertation/Quantum/Testing/Inital_Test/Program.qs\",\"Position\":{\"Item1\":605,\"Item2\":4},\"SymbolRange\":{\"Item1\":{\"Line\":1,\"Column\":11},\"Item2\":{\"Line\":1,\"Column\":21}},\"ArgumentTuple\":{\"Case\":\"QsTuple\",\"Fields\":[[{\"Case\":\"QsTupleItem\",\"Fields\":[{\"VariableName\":{\"Case\":\"ValidName\",\"Fields\":[\"xs\"]},\"Type\":{\"Case\":\"UserDefinedType\",\"Fields\":[{\"Namespace\":\"Microsoft.Quantum.Arithmetic\",\"Name\":\"LittleEndian\",\"Range\":{\"Case\":\"Value\",\"Fields\":[{\"Item1\":{\"Line\":1,\"Column\":27},\"Item2\":{\"Line\":1,\"Column\":39}}]}}]},\"InferredInformation\":{\"IsMutable\":false,\"HasLocalQuantumDependency\":false},\"Position\":{\"Case\":\"Null\"},\"Range\":{\"Item1\":{\"Line\":1,\"Column\":23},\"Item2\":{\"Line\":1,\"Column\":25}}}]},{\"Case\":\"QsTupleItem\",\"Fields\":[{\"VariableName\":{\"Case\":\"ValidName\",\"Fields\":[\"ys\"]},\"Type\":{\"Case\":\"UserDefinedType\",\"Fields\":[{\"Namespace\":\"Microsoft.Quantum.Arithmetic\",\"Name\":\"LittleEndian\",\"Range\":{\"Case\":\"Value\",\"Fields\":[{\"Item1\":{\"Line\":1,\"Column\":45},\"Item2\":{\"Line\":1,\"Column\":57}}]}}]},\"InferredInformation\":{\"IsMutable\":false,\"HasLocalQuantumDependency\":false},\"Position\":{\"Case\":\"Null\"},\"Range\":{\"Item1\":{\"Line\":1,\"Column\":41},\"Item2\":{\"Line\":1,\"Column\":43}}}]},{\"Case\":\"QsTupleItem\",\"Fields\":[{\"VariableName\":{\"Case\":\"ValidName\",\"Fields\":[\"result\"]},\"Type\":{\"Case\":\"Qubit\"},\"InferredInformation\":{\"IsMutable\":false,\"HasLocalQuantumDependency\":false},\"Position\":{\"Case\":\"Null\"},\"Range\":{\"Item1\":{\"Line\":2,\"Column\":29},\"Item2\":{\"Line\":2,\"Column\":35}}}]}]]},\"Signature\":{\"TypeParameters\":[],\"ArgumentType\":{\"Case\":\"TupleType\",\"Fields\":[[{\"Case\":\"UserDefinedType\",\"Fields\":[{\"Namespace\":\"Microsoft.Quantum.Arithmetic\",\"Name\":\"LittleEndian\",\"Range\":{\"Case\":\"Null\"}}]},{\"Case\":\"UserDefinedType\",\"Fields\":[{\"Namespace\":\"Microsoft.Quantum.Arithmetic\",\"Name\":\"LittleEndian\",\"Range\":{\"Case\":\"Null\"}}]},{\"Case\":\"Qubit\"}]]},\"ReturnType\":{\"Case\":\"UnitType\"},\"Information\":{\"Characteristics\":{\"Case\":\"Union\",\"Fields\":[{\"Case\":\"SimpleSet\",\"Fields\":[{\"Case\":\"Adjointable\"}]},{\"Case\":\"SimpleSet\",\"Fields\":[{\"Case\":\"Controllable\"}]}]},\"InferredInformation\":{\"IsSelfAdjoint\":false,\"IsIntrinsic\":false}}},\"Documentation\":[]}")]
+[assembly: SpecializationDeclaration("{\"Kind\":{\"Case\":\"QsBody\"},\"TypeArguments\":{\"Case\":\"Null\"},\"Information\":{\"Characteristics\":{\"Case\":\"Union\",\"Fields\":[{\"Case\":\"SimpleSet\",\"Fields\":[{\"Case\":\"Adjointable\"}]},{\"Case\":\"SimpleSet\",\"Fields\":[{\"Case\":\"Controllable\"}]}]},\"InferredInformation\":{\"IsSelfAdjoint\":false,\"IsIntrinsic\":false}},\"Parent\":{\"Namespace\":\"Quantum.Bell\",\"Name\":\"CompareGTI\"},\"Attributes\":[],\"SourceFile\":\"/Users/Matt/Documents/Masters/Dissertation/Quantum/Testing/Inital_Test/Program.qs\",\"Position\":{\"Item1\":605,\"Item2\":4},\"HeaderRange\":{\"Item1\":{\"Line\":1,\"Column\":11},\"Item2\":{\"Line\":1,\"Column\":21}},\"Documentation\":[]}")]
+[assembly: SpecializationDeclaration("{\"Kind\":{\"Case\":\"QsAdjoint\"},\"TypeArguments\":{\"Case\":\"Null\"},\"Information\":{\"Characteristics\":{\"Case\":\"Union\",\"Fields\":[{\"Case\":\"SimpleSet\",\"Fields\":[{\"Case\":\"Adjointable\"}]},{\"Case\":\"SimpleSet\",\"Fields\":[{\"Case\":\"Controllable\"}]}]},\"InferredInformation\":{\"IsSelfAdjoint\":false,\"IsIntrinsic\":false}},\"Parent\":{\"Namespace\":\"Quantum.Bell\",\"Name\":\"CompareGTI\"},\"Attributes\":[],\"SourceFile\":\"/Users/Matt/Documents/Masters/Dissertation/Quantum/Testing/Inital_Test/Program.qs\",\"Position\":{\"Item1\":605,\"Item2\":4},\"HeaderRange\":{\"Item1\":{\"Line\":2,\"Column\":54},\"Item2\":{\"Line\":2,\"Column\":63}},\"Documentation\":[\"automatically generated QsAdjoint specialization for Quantum.Bell.CompareGTI\"]}")]
+[assembly: SpecializationDeclaration("{\"Kind\":{\"Case\":\"QsControlled\"},\"TypeArguments\":{\"Case\":\"Null\"},\"Information\":{\"Characteristics\":{\"Case\":\"Union\",\"Fields\":[{\"Case\":\"SimpleSet\",\"Fields\":[{\"Case\":\"Adjointable\"}]},{\"Case\":\"SimpleSet\",\"Fields\":[{\"Case\":\"Controllable\"}]}]},\"InferredInformation\":{\"IsSelfAdjoint\":false,\"IsIntrinsic\":false}},\"Parent\":{\"Namespace\":\"Quantum.Bell\",\"Name\":\"CompareGTI\"},\"Attributes\":[],\"SourceFile\":\"/Users/Matt/Documents/Masters/Dissertation/Quantum/Testing/Inital_Test/Program.qs\",\"Position\":{\"Item1\":605,\"Item2\":4},\"HeaderRange\":{\"Item1\":{\"Line\":2,\"Column\":54},\"Item2\":{\"Line\":2,\"Column\":63}},\"Documentation\":[\"automatically generated QsControlled specialization for Quantum.Bell.CompareGTI\"]}")]
+[assembly: SpecializationDeclaration("{\"Kind\":{\"Case\":\"QsControlledAdjoint\"},\"TypeArguments\":{\"Case\":\"Null\"},\"Information\":{\"Characteristics\":{\"Case\":\"Union\",\"Fields\":[{\"Case\":\"SimpleSet\",\"Fields\":[{\"Case\":\"Adjointable\"}]},{\"Case\":\"SimpleSet\",\"Fields\":[{\"Case\":\"Controllable\"}]}]},\"InferredInformation\":{\"IsSelfAdjoint\":false,\"IsIntrinsic\":false}},\"Parent\":{\"Namespace\":\"Quantum.Bell\",\"Name\":\"CompareGTI\"},\"Attributes\":[],\"SourceFile\":\"/Users/Matt/Documents/Masters/Dissertation/Quantum/Testing/Inital_Test/Program.qs\",\"Position\":{\"Item1\":605,\"Item2\":4},\"HeaderRange\":{\"Item1\":{\"Line\":2,\"Column\":54},\"Item2\":{\"Line\":2,\"Column\":63}},\"Documentation\":[\"automatically generated QsControlledAdjoint specialization for Quantum.Bell.CompareGTI\"]}")]
+[assembly: CallableDeclaration("{\"Kind\":{\"Case\":\"Operation\"},\"QualifiedName\":{\"Namespace\":\"Quantum.Bell\",\"Name\":\"MultiplyI\"},\"Attributes\":[],\"Modifiers\":{\"Access\":{\"Case\":\"DefaultAccess\"}},\"SourceFile\":\"/Users/Matt/Documents/Masters/Dissertation/Quantum/Testing/Inital_Test/Program.qs\",\"Position\":{\"Item1\":610,\"Item2\":4},\"SymbolRange\":{\"Item1\":{\"Line\":1,\"Column\":11},\"Item2\":{\"Line\":1,\"Column\":20}},\"ArgumentTuple\":{\"Case\":\"QsTuple\",\"Fields\":[[{\"Case\":\"QsTupleItem\",\"Fields\":[{\"VariableName\":{\"Case\":\"ValidName\",\"Fields\":[\"xs\"]},\"Type\":{\"Case\":\"UserDefinedType\",\"Fields\":[{\"Namespace\":\"Microsoft.Quantum.Arithmetic\",\"Name\":\"LittleEndian\",\"Range\":{\"Case\":\"Value\",\"Fields\":[{\"Item1\":{\"Line\":1,\"Column\":26},\"Item2\":{\"Line\":1,\"Column\":38}}]}}]},\"InferredInformation\":{\"IsMutable\":false,\"HasLocalQuantumDependency\":false},\"Position\":{\"Case\":\"Null\"},\"Range\":{\"Item1\":{\"Line\":1,\"Column\":22},\"Item2\":{\"Line\":1,\"Column\":24}}}]},{\"Case\":\"QsTupleItem\",\"Fields\":[{\"VariableName\":{\"Case\":\"ValidName\",\"Fields\":[\"ys\"]},\"Type\":{\"Case\":\"UserDefinedType\",\"Fields\":[{\"Namespace\":\"Microsoft.Quantum.Arithmetic\",\"Name\":\"LittleEndian\",\"Range\":{\"Case\":\"Value\",\"Fields\":[{\"Item1\":{\"Line\":1,\"Column\":44},\"Item2\":{\"Line\":1,\"Column\":56}}]}}]},\"InferredInformation\":{\"IsMutable\":false,\"HasLocalQuantumDependency\":false},\"Position\":{\"Case\":\"Null\"},\"Range\":{\"Item1\":{\"Line\":1,\"Column\":40},\"Item2\":{\"Line\":1,\"Column\":42}}}]},{\"Case\":\"QsTupleItem\",\"Fields\":[{\"VariableName\":{\"Case\":\"ValidName\",\"Fields\":[\"result\"]},\"Type\":{\"Case\":\"UserDefinedType\",\"Fields\":[{\"Namespace\":\"Microsoft.Quantum.Arithmetic\",\"Name\":\"LittleEndian\",\"Range\":{\"Case\":\"Value\",\"Fields\":[{\"Item1\":{\"Line\":2,\"Column\":34},\"Item2\":{\"Line\":2,\"Column\":46}}]}}]},\"InferredInformation\":{\"IsMutable\":false,\"HasLocalQuantumDependency\":false},\"Position\":{\"Case\":\"Null\"},\"Range\":{\"Item1\":{\"Line\":2,\"Column\":26},\"Item2\":{\"Line\":2,\"Column\":32}}}]}]]},\"Signature\":{\"TypeParameters\":[],\"ArgumentType\":{\"Case\":\"TupleType\",\"Fields\":[[{\"Case\":\"UserDefinedType\",\"Fields\":[{\"Namespace\":\"Microsoft.Quantum.Arithmetic\",\"Name\":\"LittleEndian\",\"Range\":{\"Case\":\"Null\"}}]},{\"Case\":\"UserDefinedType\",\"Fields\":[{\"Namespace\":\"Microsoft.Quantum.Arithmetic\",\"Name\":\"LittleEndian\",\"Range\":{\"Case\":\"Null\"}}]},{\"Case\":\"UserDefinedType\",\"Fields\":[{\"Namespace\":\"Microsoft.Quantum.Arithmetic\",\"Name\":\"LittleEndian\",\"Range\":{\"Case\":\"Null\"}}]}]]},\"ReturnType\":{\"Case\":\"UnitType\"},\"Information\":{\"Characteristics\":{\"Case\":\"Union\",\"Fields\":[{\"Case\":\"SimpleSet\",\"Fields\":[{\"Case\":\"Adjointable\"}]},{\"Case\":\"SimpleSet\",\"Fields\":[{\"Case\":\"Controllable\"}]}]},\"InferredInformation\":{\"IsSelfAdjoint\":false,\"IsIntrinsic\":false}}},\"Documentation\":[]}")]
+[assembly: SpecializationDeclaration("{\"Kind\":{\"Case\":\"QsBody\"},\"TypeArguments\":{\"Case\":\"Null\"},\"Information\":{\"Characteristics\":{\"Case\":\"Union\",\"Fields\":[{\"Case\":\"SimpleSet\",\"Fields\":[{\"Case\":\"Adjointable\"}]},{\"Case\":\"SimpleSet\",\"Fields\":[{\"Case\":\"Controllable\"}]}]},\"InferredInformation\":{\"IsSelfAdjoint\":false,\"IsIntrinsic\":false}},\"Parent\":{\"Namespace\":\"Quantum.Bell\",\"Name\":\"MultiplyI\"},\"Attributes\":[],\"SourceFile\":\"/Users/Matt/Documents/Masters/Dissertation/Quantum/Testing/Inital_Test/Program.qs\",\"Position\":{\"Item1\":612,\"Item2\":8},\"HeaderRange\":{\"Item1\":{\"Line\":1,\"Column\":1},\"Item2\":{\"Line\":1,\"Column\":5}},\"Documentation\":[]}")]
+[assembly: SpecializationDeclaration("{\"Kind\":{\"Case\":\"QsAdjoint\"},\"TypeArguments\":{\"Case\":\"Null\"},\"Information\":{\"Characteristics\":{\"Case\":\"Union\",\"Fields\":[{\"Case\":\"SimpleSet\",\"Fields\":[{\"Case\":\"Adjointable\"}]},{\"Case\":\"SimpleSet\",\"Fields\":[{\"Case\":\"Controllable\"}]}]},\"InferredInformation\":{\"IsSelfAdjoint\":false,\"IsIntrinsic\":false}},\"Parent\":{\"Namespace\":\"Quantum.Bell\",\"Name\":\"MultiplyI\"},\"Attributes\":[],\"SourceFile\":\"/Users/Matt/Documents/Masters/Dissertation/Quantum/Testing/Inital_Test/Program.qs\",\"Position\":{\"Item1\":642,\"Item2\":8},\"HeaderRange\":{\"Item1\":{\"Line\":1,\"Column\":1},\"Item2\":{\"Line\":1,\"Column\":8}},\"Documentation\":[]}")]
+[assembly: SpecializationDeclaration("{\"Kind\":{\"Case\":\"QsControlled\"},\"TypeArguments\":{\"Case\":\"Null\"},\"Information\":{\"Characteristics\":{\"Case\":\"Union\",\"Fields\":[{\"Case\":\"SimpleSet\",\"Fields\":[{\"Case\":\"Adjointable\"}]},{\"Case\":\"SimpleSet\",\"Fields\":[{\"Case\":\"Controllable\"}]}]},\"InferredInformation\":{\"IsSelfAdjoint\":false,\"IsIntrinsic\":false}},\"Parent\":{\"Namespace\":\"Quantum.Bell\",\"Name\":\"MultiplyI\"},\"Attributes\":[],\"SourceFile\":\"/Users/Matt/Documents/Masters/Dissertation/Quantum/Testing/Inital_Test/Program.qs\",\"Position\":{\"Item1\":625,\"Item2\":8},\"HeaderRange\":{\"Item1\":{\"Line\":1,\"Column\":1},\"Item2\":{\"Line\":1,\"Column\":11}},\"Documentation\":[]}")]
+[assembly: SpecializationDeclaration("{\"Kind\":{\"Case\":\"QsControlledAdjoint\"},\"TypeArguments\":{\"Case\":\"Null\"},\"Information\":{\"Characteristics\":{\"Case\":\"Union\",\"Fields\":[{\"Case\":\"SimpleSet\",\"Fields\":[{\"Case\":\"Adjointable\"}]},{\"Case\":\"SimpleSet\",\"Fields\":[{\"Case\":\"Controllable\"}]}]},\"InferredInformation\":{\"IsSelfAdjoint\":false,\"IsIntrinsic\":false}},\"Parent\":{\"Namespace\":\"Quantum.Bell\",\"Name\":\"MultiplyI\"},\"Attributes\":[],\"SourceFile\":\"/Users/Matt/Documents/Masters/Dissertation/Quantum/Testing/Inital_Test/Program.qs\",\"Position\":{\"Item1\":643,\"Item2\":8},\"HeaderRange\":{\"Item1\":{\"Line\":1,\"Column\":1},\"Item2\":{\"Line\":1,\"Column\":19}},\"Documentation\":[]}")]
+[assembly: CallableDeclaration("{\"Kind\":{\"Case\":\"Operation\"},\"QualifiedName\":{\"Namespace\":\"Quantum.Bell\",\"Name\":\"SquareI\"},\"Attributes\":[],\"Modifiers\":{\"Access\":{\"Case\":\"DefaultAccess\"}},\"SourceFile\":\"/Users/Matt/Documents/Masters/Dissertation/Quantum/Testing/Inital_Test/Program.qs\",\"Position\":{\"Item1\":648,\"Item2\":4},\"SymbolRange\":{\"Item1\":{\"Line\":1,\"Column\":11},\"Item2\":{\"Line\":1,\"Column\":18}},\"ArgumentTuple\":{\"Case\":\"QsTuple\",\"Fields\":[[{\"Case\":\"QsTupleItem\",\"Fields\":[{\"VariableName\":{\"Case\":\"ValidName\",\"Fields\":[\"xs\"]},\"Type\":{\"Case\":\"UserDefinedType\",\"Fields\":[{\"Namespace\":\"Microsoft.Quantum.Arithmetic\",\"Name\":\"LittleEndian\",\"Range\":{\"Case\":\"Value\",\"Fields\":[{\"Item1\":{\"Line\":1,\"Column\":24},\"Item2\":{\"Line\":1,\"Column\":36}}]}}]},\"InferredInformation\":{\"IsMutable\":false,\"HasLocalQuantumDependency\":false},\"Position\":{\"Case\":\"Null\"},\"Range\":{\"Item1\":{\"Line\":1,\"Column\":20},\"Item2\":{\"Line\":1,\"Column\":22}}}]},{\"Case\":\"QsTupleItem\",\"Fields\":[{\"VariableName\":{\"Case\":\"ValidName\",\"Fields\":[\"result\"]},\"Type\":{\"Case\":\"UserDefinedType\",\"Fields\":[{\"Namespace\":\"Microsoft.Quantum.Arithmetic\",\"Name\":\"LittleEndian\",\"Range\":{\"Case\":\"Value\",\"Fields\":[{\"Item1\":{\"Line\":1,\"Column\":46},\"Item2\":{\"Line\":1,\"Column\":58}}]}}]},\"InferredInformation\":{\"IsMutable\":false,\"HasLocalQuantumDependency\":false},\"Position\":{\"Case\":\"Null\"},\"Range\":{\"Item1\":{\"Line\":1,\"Column\":38},\"Item2\":{\"Line\":1,\"Column\":44}}}]}]]},\"Signature\":{\"TypeParameters\":[],\"ArgumentType\":{\"Case\":\"TupleType\",\"Fields\":[[{\"Case\":\"UserDefinedType\",\"Fields\":[{\"Namespace\":\"Microsoft.Quantum.Arithmetic\",\"Name\":\"LittleEndian\",\"Range\":{\"Case\":\"Null\"}}]},{\"Case\":\"UserDefinedType\",\"Fields\":[{\"Namespace\":\"Microsoft.Quantum.Arithmetic\",\"Name\":\"LittleEndian\",\"Range\":{\"Case\":\"Null\"}}]}]]},\"ReturnType\":{\"Case\":\"UnitType\"},\"Information\":{\"Characteristics\":{\"Case\":\"Union\",\"Fields\":[{\"Case\":\"SimpleSet\",\"Fields\":[{\"Case\":\"Adjointable\"}]},{\"Case\":\"SimpleSet\",\"Fields\":[{\"Case\":\"Controllable\"}]}]},\"InferredInformation\":{\"IsSelfAdjoint\":false,\"IsIntrinsic\":false}}},\"Documentation\":[]}")]
+[assembly: SpecializationDeclaration("{\"Kind\":{\"Case\":\"QsBody\"},\"TypeArguments\":{\"Case\":\"Null\"},\"Information\":{\"Characteristics\":{\"Case\":\"Union\",\"Fields\":[{\"Case\":\"SimpleSet\",\"Fields\":[{\"Case\":\"Adjointable\"}]},{\"Case\":\"SimpleSet\",\"Fields\":[{\"Case\":\"Controllable\"}]}]},\"InferredInformation\":{\"IsSelfAdjoint\":false,\"IsIntrinsic\":false}},\"Parent\":{\"Namespace\":\"Quantum.Bell\",\"Name\":\"SquareI\"},\"Attributes\":[],\"SourceFile\":\"/Users/Matt/Documents/Masters/Dissertation/Quantum/Testing/Inital_Test/Program.qs\",\"Position\":{\"Item1\":649,\"Item2\":8},\"HeaderRange\":{\"Item1\":{\"Line\":1,\"Column\":1},\"Item2\":{\"Line\":1,\"Column\":5}},\"Documentation\":[]}")]
+[assembly: SpecializationDeclaration("{\"Kind\":{\"Case\":\"QsAdjoint\"},\"TypeArguments\":{\"Case\":\"Null\"},\"Information\":{\"Characteristics\":{\"Case\":\"Union\",\"Fields\":[{\"Case\":\"SimpleSet\",\"Fields\":[{\"Case\":\"Adjointable\"}]},{\"Case\":\"SimpleSet\",\"Fields\":[{\"Case\":\"Controllable\"}]}]},\"InferredInformation\":{\"IsSelfAdjoint\":false,\"IsIntrinsic\":false}},\"Parent\":{\"Namespace\":\"Quantum.Bell\",\"Name\":\"SquareI\"},\"Attributes\":[],\"SourceFile\":\"/Users/Matt/Documents/Masters/Dissertation/Quantum/Testing/Inital_Test/Program.qs\",\"Position\":{\"Item1\":668,\"Item2\":8},\"HeaderRange\":{\"Item1\":{\"Line\":1,\"Column\":1},\"Item2\":{\"Line\":1,\"Column\":8}},\"Documentation\":[]}")]
+[assembly: SpecializationDeclaration("{\"Kind\":{\"Case\":\"QsControlled\"},\"TypeArguments\":{\"Case\":\"Null\"},\"Information\":{\"Characteristics\":{\"Case\":\"Union\",\"Fields\":[{\"Case\":\"SimpleSet\",\"Fields\":[{\"Case\":\"Adjointable\"}]},{\"Case\":\"SimpleSet\",\"Fields\":[{\"Case\":\"Controllable\"}]}]},\"InferredInformation\":{\"IsSelfAdjoint\":false,\"IsIntrinsic\":false}},\"Parent\":{\"Namespace\":\"Quantum.Bell\",\"Name\":\"SquareI\"},\"Attributes\":[],\"SourceFile\":\"/Users/Matt/Documents/Masters/Dissertation/Quantum/Testing/Inital_Test/Program.qs\",\"Position\":{\"Item1\":652,\"Item2\":8},\"HeaderRange\":{\"Item1\":{\"Line\":1,\"Column\":1},\"Item2\":{\"Line\":1,\"Column\":11}},\"Documentation\":[]}")]
+[assembly: SpecializationDeclaration("{\"Kind\":{\"Case\":\"QsControlledAdjoint\"},\"TypeArguments\":{\"Case\":\"Null\"},\"Information\":{\"Characteristics\":{\"Case\":\"Union\",\"Fields\":[{\"Case\":\"SimpleSet\",\"Fields\":[{\"Case\":\"Adjointable\"}]},{\"Case\":\"SimpleSet\",\"Fields\":[{\"Case\":\"Controllable\"}]}]},\"InferredInformation\":{\"IsSelfAdjoint\":false,\"IsIntrinsic\":false}},\"Parent\":{\"Namespace\":\"Quantum.Bell\",\"Name\":\"SquareI\"},\"Attributes\":[],\"SourceFile\":\"/Users/Matt/Documents/Masters/Dissertation/Quantum/Testing/Inital_Test/Program.qs\",\"Position\":{\"Item1\":669,\"Item2\":8},\"HeaderRange\":{\"Item1\":{\"Line\":1,\"Column\":1},\"Item2\":{\"Line\":1,\"Column\":19}},\"Documentation\":[]}")]
+[assembly: CallableDeclaration("{\"Kind\":{\"Case\":\"Operation\"},\"QualifiedName\":{\"Namespace\":\"Quantum.Bell\",\"Name\":\"MultiplySI\"},\"Attributes\":[],\"Modifiers\":{\"Access\":{\"Case\":\"DefaultAccess\"}},\"SourceFile\":\"/Users/Matt/Documents/Masters/Dissertation/Quantum/Testing/Inital_Test/Program.qs\",\"Position\":{\"Item1\":673,\"Item2\":4},\"SymbolRange\":{\"Item1\":{\"Line\":1,\"Column\":11},\"Item2\":{\"Line\":1,\"Column\":21}},\"ArgumentTuple\":{\"Case\":\"QsTuple\",\"Fields\":[[{\"Case\":\"QsTupleItem\",\"Fields\":[{\"VariableName\":{\"Case\":\"ValidName\",\"Fields\":[\"xs\"]},\"Type\":{\"Case\":\"UserDefinedType\",\"Fields\":[{\"Namespace\":\"Quantum.Bell\",\"Name\":\"SignedLittleEndian\",\"Range\":{\"Case\":\"Value\",\"Fields\":[{\"Item1\":{\"Line\":1,\"Column\":27},\"Item2\":{\"Line\":1,\"Column\":45}}]}}]},\"InferredInformation\":{\"IsMutable\":false,\"HasLocalQuantumDependency\":false},\"Position\":{\"Case\":\"Null\"},\"Range\":{\"Item1\":{\"Line\":1,\"Column\":23},\"Item2\":{\"Line\":1,\"Column\":25}}}]},{\"Case\":\"QsTupleItem\",\"Fields\":[{\"VariableName\":{\"Case\":\"ValidName\",\"Fields\":[\"ys\"]},\"Type\":{\"Case\":\"UserDefinedType\",\"Fields\":[{\"Namespace\":\"Quantum.Bell\",\"Name\":\"SignedLittleEndian\",\"Range\":{\"Case\":\"Value\",\"Fields\":[{\"Item1\":{\"Line\":2,\"Column\":31},\"Item2\":{\"Line\":2,\"Column\":49}}]}}]},\"InferredInformation\":{\"IsMutable\":false,\"HasLocalQuantumDependency\":false},\"Position\":{\"Case\":\"Null\"},\"Range\":{\"Item1\":{\"Line\":2,\"Column\":27},\"Item2\":{\"Line\":2,\"Column\":29}}}]},{\"Case\":\"QsTupleItem\",\"Fields\":[{\"VariableName\":{\"Case\":\"ValidName\",\"Fields\":[\"result\"]},\"Type\":{\"Case\":\"UserDefinedType\",\"Fields\":[{\"Namespace\":\"Quantum.Bell\",\"Name\":\"SignedLittleEndian\",\"Range\":{\"Case\":\"Value\",\"Fields\":[{\"Item1\":{\"Line\":3,\"Column\":35},\"Item2\":{\"Line\":3,\"Column\":53}}]}}]},\"InferredInformation\":{\"IsMutable\":false,\"HasLocalQuantumDependency\":false},\"Position\":{\"Case\":\"Null\"},\"Range\":{\"Item1\":{\"Line\":3,\"Column\":27},\"Item2\":{\"Line\":3,\"Column\":33}}}]}]]},\"Signature\":{\"TypeParameters\":[],\"ArgumentType\":{\"Case\":\"TupleType\",\"Fields\":[[{\"Case\":\"UserDefinedType\",\"Fields\":[{\"Namespace\":\"Quantum.Bell\",\"Name\":\"SignedLittleEndian\",\"Range\":{\"Case\":\"Null\"}}]},{\"Case\":\"UserDefinedType\",\"Fields\":[{\"Namespace\":\"Quantum.Bell\",\"Name\":\"SignedLittleEndian\",\"Range\":{\"Case\":\"Null\"}}]},{\"Case\":\"UserDefinedType\",\"Fields\":[{\"Namespace\":\"Quantum.Bell\",\"Name\":\"SignedLittleEndian\",\"Range\":{\"Case\":\"Null\"}}]}]]},\"ReturnType\":{\"Case\":\"UnitType\"},\"Information\":{\"Characteristics\":{\"Case\":\"Union\",\"Fields\":[{\"Case\":\"SimpleSet\",\"Fields\":[{\"Case\":\"Adjointable\"}]},{\"Case\":\"SimpleSet\",\"Fields\":[{\"Case\":\"Controllable\"}]}]},\"InferredInformation\":{\"IsSelfAdjoint\":false,\"IsIntrinsic\":false}}},\"Documentation\":[]}")]
+[assembly: SpecializationDeclaration("{\"Kind\":{\"Case\":\"QsBody\"},\"TypeArguments\":{\"Case\":\"Null\"},\"Information\":{\"Characteristics\":{\"Case\":\"Union\",\"Fields\":[{\"Case\":\"SimpleSet\",\"Fields\":[{\"Case\":\"Adjointable\"}]},{\"Case\":\"SimpleSet\",\"Fields\":[{\"Case\":\"Controllable\"}]}]},\"InferredInformation\":{\"IsSelfAdjoint\":false,\"IsIntrinsic\":false}},\"Parent\":{\"Namespace\":\"Quantum.Bell\",\"Name\":\"MultiplySI\"},\"Attributes\":[],\"SourceFile\":\"/Users/Matt/Documents/Masters/Dissertation/Quantum/Testing/Inital_Test/Program.qs\",\"Position\":{\"Item1\":676,\"Item2\":8},\"HeaderRange\":{\"Item1\":{\"Line\":1,\"Column\":1},\"Item2\":{\"Line\":1,\"Column\":5}},\"Documentation\":[]}")]
+[assembly: SpecializationDeclaration("{\"Kind\":{\"Case\":\"QsAdjoint\"},\"TypeArguments\":{\"Case\":\"Null\"},\"Information\":{\"Characteristics\":{\"Case\":\"Union\",\"Fields\":[{\"Case\":\"SimpleSet\",\"Fields\":[{\"Case\":\"Adjointable\"}]},{\"Case\":\"SimpleSet\",\"Fields\":[{\"Case\":\"Controllable\"}]}]},\"InferredInformation\":{\"IsSelfAdjoint\":false,\"IsIntrinsic\":false}},\"Parent\":{\"Namespace\":\"Quantum.Bell\",\"Name\":\"MultiplySI\"},\"Attributes\":[],\"SourceFile\":\"/Users/Matt/Documents/Masters/Dissertation/Quantum/Testing/Inital_Test/Program.qs\",\"Position\":{\"Item1\":700,\"Item2\":8},\"HeaderRange\":{\"Item1\":{\"Line\":1,\"Column\":1},\"Item2\":{\"Line\":1,\"Column\":8}},\"Documentation\":[]}")]
+[assembly: SpecializationDeclaration("{\"Kind\":{\"Case\":\"QsControlled\"},\"TypeArguments\":{\"Case\":\"Null\"},\"Information\":{\"Characteristics\":{\"Case\":\"Union\",\"Fields\":[{\"Case\":\"SimpleSet\",\"Fields\":[{\"Case\":\"Adjointable\"}]},{\"Case\":\"SimpleSet\",\"Fields\":[{\"Case\":\"Controllable\"}]}]},\"InferredInformation\":{\"IsSelfAdjoint\":false,\"IsIntrinsic\":false}},\"Parent\":{\"Namespace\":\"Quantum.Bell\",\"Name\":\"MultiplySI\"},\"Attributes\":[],\"SourceFile\":\"/Users/Matt/Documents/Masters/Dissertation/Quantum/Testing/Inital_Test/Program.qs\",\"Position\":{\"Item1\":679,\"Item2\":8},\"HeaderRange\":{\"Item1\":{\"Line\":1,\"Column\":1},\"Item2\":{\"Line\":1,\"Column\":11}},\"Documentation\":[]}")]
+[assembly: SpecializationDeclaration("{\"Kind\":{\"Case\":\"QsControlledAdjoint\"},\"TypeArguments\":{\"Case\":\"Null\"},\"Information\":{\"Characteristics\":{\"Case\":\"Union\",\"Fields\":[{\"Case\":\"SimpleSet\",\"Fields\":[{\"Case\":\"Adjointable\"}]},{\"Case\":\"SimpleSet\",\"Fields\":[{\"Case\":\"Controllable\"}]}]},\"InferredInformation\":{\"IsSelfAdjoint\":false,\"IsIntrinsic\":false}},\"Parent\":{\"Namespace\":\"Quantum.Bell\",\"Name\":\"MultiplySI\"},\"Attributes\":[],\"SourceFile\":\"/Users/Matt/Documents/Masters/Dissertation/Quantum/Testing/Inital_Test/Program.qs\",\"Position\":{\"Item1\":701,\"Item2\":8},\"HeaderRange\":{\"Item1\":{\"Line\":1,\"Column\":1},\"Item2\":{\"Line\":1,\"Column\":19}},\"Documentation\":[]}")]
+[assembly: CallableDeclaration("{\"Kind\":{\"Case\":\"Operation\"},\"QualifiedName\":{\"Namespace\":\"Quantum.Bell\",\"Name\":\"Invert2sSI\"},\"Attributes\":[],\"Modifiers\":{\"Access\":{\"Case\":\"DefaultAccess\"}},\"SourceFile\":\"/Users/Matt/Documents/Masters/Dissertation/Quantum/Testing/Inital_Test/Program.qs\",\"Position\":{\"Item1\":704,\"Item2\":5},\"SymbolRange\":{\"Item1\":{\"Line\":1,\"Column\":11},\"Item2\":{\"Line\":1,\"Column\":21}},\"ArgumentTuple\":{\"Case\":\"QsTuple\",\"Fields\":[[{\"Case\":\"QsTupleItem\",\"Fields\":[{\"VariableName\":{\"Case\":\"ValidName\",\"Fields\":[\"xs\"]},\"Type\":{\"Case\":\"UserDefinedType\",\"Fields\":[{\"Namespace\":\"Quantum.Bell\",\"Name\":\"SignedLittleEndian\",\"Range\":{\"Case\":\"Value\",\"Fields\":[{\"Item1\":{\"Line\":1,\"Column\":27},\"Item2\":{\"Line\":1,\"Column\":45}}]}}]},\"InferredInformation\":{\"IsMutable\":false,\"HasLocalQuantumDependency\":false},\"Position\":{\"Case\":\"Null\"},\"Range\":{\"Item1\":{\"Line\":1,\"Column\":23},\"Item2\":{\"Line\":1,\"Column\":25}}}]}]]},\"Signature\":{\"TypeParameters\":[],\"ArgumentType\":{\"Case\":\"UserDefinedType\",\"Fields\":[{\"Namespace\":\"Quantum.Bell\",\"Name\":\"SignedLittleEndian\",\"Range\":{\"Case\":\"Null\"}}]},\"ReturnType\":{\"Case\":\"UnitType\"},\"Information\":{\"Characteristics\":{\"Case\":\"Union\",\"Fields\":[{\"Case\":\"SimpleSet\",\"Fields\":[{\"Case\":\"Adjointable\"}]},{\"Case\":\"SimpleSet\",\"Fields\":[{\"Case\":\"Controllable\"}]}]},\"InferredInformation\":{\"IsSelfAdjoint\":false,\"IsIntrinsic\":false}}},\"Documentation\":[]}")]
+[assembly: SpecializationDeclaration("{\"Kind\":{\"Case\":\"QsBody\"},\"TypeArguments\":{\"Case\":\"Null\"},\"Information\":{\"Characteristics\":{\"Case\":\"Union\",\"Fields\":[{\"Case\":\"SimpleSet\",\"Fields\":[{\"Case\":\"Adjointable\"}]},{\"Case\":\"SimpleSet\",\"Fields\":[{\"Case\":\"Controllable\"}]}]},\"InferredInformation\":{\"IsSelfAdjoint\":false,\"IsIntrinsic\":false}},\"Parent\":{\"Namespace\":\"Quantum.Bell\",\"Name\":\"Invert2sSI\"},\"Attributes\":[],\"SourceFile\":\"/Users/Matt/Documents/Masters/Dissertation/Quantum/Testing/Inital_Test/Program.qs\",\"Position\":{\"Item1\":705,\"Item2\":8},\"HeaderRange\":{\"Item1\":{\"Line\":1,\"Column\":1},\"Item2\":{\"Line\":1,\"Column\":5}},\"Documentation\":[]}")]
+[assembly: SpecializationDeclaration("{\"Kind\":{\"Case\":\"QsAdjoint\"},\"TypeArguments\":{\"Case\":\"Null\"},\"Information\":{\"Characteristics\":{\"Case\":\"Union\",\"Fields\":[{\"Case\":\"SimpleSet\",\"Fields\":[{\"Case\":\"Adjointable\"}]},{\"Case\":\"SimpleSet\",\"Fields\":[{\"Case\":\"Controllable\"}]}]},\"InferredInformation\":{\"IsSelfAdjoint\":false,\"IsIntrinsic\":false}},\"Parent\":{\"Namespace\":\"Quantum.Bell\",\"Name\":\"Invert2sSI\"},\"Attributes\":[],\"SourceFile\":\"/Users/Matt/Documents/Masters/Dissertation/Quantum/Testing/Inital_Test/Program.qs\",\"Position\":{\"Item1\":717,\"Item2\":8},\"HeaderRange\":{\"Item1\":{\"Line\":1,\"Column\":1},\"Item2\":{\"Line\":1,\"Column\":8}},\"Documentation\":[]}")]
+[assembly: SpecializationDeclaration("{\"Kind\":{\"Case\":\"QsControlled\"},\"TypeArguments\":{\"Case\":\"Null\"},\"Information\":{\"Characteristics\":{\"Case\":\"Union\",\"Fields\":[{\"Case\":\"SimpleSet\",\"Fields\":[{\"Case\":\"Adjointable\"}]},{\"Case\":\"SimpleSet\",\"Fields\":[{\"Case\":\"Controllable\"}]}]},\"InferredInformation\":{\"IsSelfAdjoint\":false,\"IsIntrinsic\":false}},\"Parent\":{\"Namespace\":\"Quantum.Bell\",\"Name\":\"Invert2sSI\"},\"Attributes\":[],\"SourceFile\":\"/Users/Matt/Documents/Masters/Dissertation/Quantum/Testing/Inital_Test/Program.qs\",\"Position\":{\"Item1\":708,\"Item2\":8},\"HeaderRange\":{\"Item1\":{\"Line\":1,\"Column\":1},\"Item2\":{\"Line\":1,\"Column\":11}},\"Documentation\":[]}")]
+[assembly: SpecializationDeclaration("{\"Kind\":{\"Case\":\"QsControlledAdjoint\"},\"TypeArguments\":{\"Case\":\"Null\"},\"Information\":{\"Characteristics\":{\"Case\":\"Union\",\"Fields\":[{\"Case\":\"SimpleSet\",\"Fields\":[{\"Case\":\"Adjointable\"}]},{\"Case\":\"SimpleSet\",\"Fields\":[{\"Case\":\"Controllable\"}]}]},\"InferredInformation\":{\"IsSelfAdjoint\":false,\"IsIntrinsic\":false}},\"Parent\":{\"Namespace\":\"Quantum.Bell\",\"Name\":\"Invert2sSI\"},\"Attributes\":[],\"SourceFile\":\"/Users/Matt/Documents/Masters/Dissertation/Quantum/Testing/Inital_Test/Program.qs\",\"Position\":{\"Item1\":718,\"Item2\":8},\"HeaderRange\":{\"Item1\":{\"Line\":1,\"Column\":1},\"Item2\":{\"Line\":1,\"Column\":19}},\"Documentation\":[]}")]
 #line hidden
 namespace Quantum.Bell
 {
@@ -120,7 +128,7 @@ namespace Quantum.Bell
         }
     }
 
-    [SourceLocation("/Users/Matt/Documents/Masters/Dissertation/Quantum/Testing/Inital_Test/Program.qs", OperationFunctor.Body, 13, 28)]
+    [SourceLocation("/Users/Matt/Documents/Masters/Dissertation/Quantum/Testing/Inital_Test/Program.qs", OperationFunctor.Body, 13, 25)]
     public partial class TestD : Operation<QVoid, QVoid>, ICallable
     {
         public TestD(IOperationFactory m) : base(m)
@@ -129,185 +137,25 @@ namespace Quantum.Bell
 
         String ICallable.Name => "TestD";
         String ICallable.FullName => "Quantum.Bell.TestD";
-        protected Allocate Allocate
+        protected ICallable<Int64, (Int64,System.Numerics.BigInteger)> CFCControl
         {
             get;
             set;
         }
 
-        protected Release Release
+        protected ICallable<Int64, System.Numerics.BigInteger> MicrosoftQuantumConvertIntAsBigInt
         {
             get;
             set;
         }
 
-        protected IUnitary<Qubit> MicrosoftQuantumIntrinsicX
+        protected ICallable<Int64, Int64> MicrosoftQuantumMathAbsI
         {
             get;
             set;
         }
 
-        protected ICallable MicrosoftQuantumDiagnosticsDumpMachine
-        {
-            get;
-            set;
-        }
-
-        protected IAdjointable<(IQArray<Qubit>,IQArray<Qubit>,IQArray<Qubit>,Qubit)> CFCheck
-        {
-            get;
-            set;
-        }
-
-        protected ICallable<IQArray<Qubit>, QVoid> ResetAll
-        {
-            get;
-            set;
-        }
-
-        public override Func<QVoid, QVoid> Body => (__in__) =>
-        {
-#line hidden
-            {
-#line 15 "/Users/Matt/Documents/Masters/Dissertation/Quantum/Testing/Inital_Test/Program.qs"
-                var (r1,s1,m,C1) = (Allocate.Apply(2L), Allocate.Apply(3L), Allocate.Apply(2L), Allocate.Apply());
-#line hidden
-                bool __arg1__ = true;
-                try
-                {
-#line 16 "/Users/Matt/Documents/Masters/Dissertation/Quantum/Testing/Inital_Test/Program.qs"
-                    MicrosoftQuantumIntrinsicX.Apply(m[1L]);
-#line 17 "/Users/Matt/Documents/Masters/Dissertation/Quantum/Testing/Inital_Test/Program.qs"
-                    MicrosoftQuantumIntrinsicX.Apply(m[0L]);
-#line 18 "/Users/Matt/Documents/Masters/Dissertation/Quantum/Testing/Inital_Test/Program.qs"
-                    MicrosoftQuantumDiagnosticsDumpMachine.Apply(QVoid.Instance);
-#line 19 "/Users/Matt/Documents/Masters/Dissertation/Quantum/Testing/Inital_Test/Program.qs"
-                    CFCheck.Apply((r1, s1, m, C1));
-#line 20 "/Users/Matt/Documents/Masters/Dissertation/Quantum/Testing/Inital_Test/Program.qs"
-                    MicrosoftQuantumDiagnosticsDumpMachine.Apply(QVoid.Instance);
-#line 21 "/Users/Matt/Documents/Masters/Dissertation/Quantum/Testing/Inital_Test/Program.qs"
-                    CFCheck.Adjoint.Apply((r1, s1, m, C1));
-#line 22 "/Users/Matt/Documents/Masters/Dissertation/Quantum/Testing/Inital_Test/Program.qs"
-                    MicrosoftQuantumDiagnosticsDumpMachine.Apply(QVoid.Instance);
-#line 23 "/Users/Matt/Documents/Masters/Dissertation/Quantum/Testing/Inital_Test/Program.qs"
-                    ResetAll.Apply(QArray<Qubit>.Add(QArray<Qubit>.Add(QArray<Qubit>.Add(r1, s1), m), new QArray<Qubit>(C1)));
-                }
-#line hidden
-                catch
-                {
-                    __arg1__ = false;
-                    throw;
-                }
-#line hidden
-                finally
-                {
-                    if (__arg1__)
-                    {
-#line hidden
-                        Release.Apply(r1);
-#line hidden
-                        Release.Apply(s1);
-#line hidden
-                        Release.Apply(m);
-#line hidden
-                        Release.Apply(C1);
-                    }
-                }
-            }
-
-#line hidden
-            return QVoid.Instance;
-        }
-
-        ;
-        public override void Init()
-        {
-            this.Allocate = this.Factory.Get<Allocate>(typeof(Microsoft.Quantum.Intrinsic.Allocate));
-            this.Release = this.Factory.Get<Release>(typeof(Microsoft.Quantum.Intrinsic.Release));
-            this.MicrosoftQuantumIntrinsicX = this.Factory.Get<IUnitary<Qubit>>(typeof(Microsoft.Quantum.Intrinsic.X));
-            this.MicrosoftQuantumDiagnosticsDumpMachine = this.Factory.Get<ICallable>(typeof(Microsoft.Quantum.Diagnostics.DumpMachine<>));
-            this.CFCheck = this.Factory.Get<IAdjointable<(IQArray<Qubit>,IQArray<Qubit>,IQArray<Qubit>,Qubit)>>(typeof(CFCheck));
-            this.ResetAll = this.Factory.Get<ICallable<IQArray<Qubit>, QVoid>>(typeof(Microsoft.Quantum.Intrinsic.ResetAll));
-        }
-
-        public override IApplyData __dataIn(QVoid data) => data;
-        public override IApplyData __dataOut(QVoid data) => data;
-        public static System.Threading.Tasks.Task<QVoid> Run(IOperationFactory __m__)
-        {
-            return __m__.Run<TestD, QVoid, QVoid>(QVoid.Instance);
-        }
-    }
-
-    [SourceLocation("/Users/Matt/Documents/Masters/Dissertation/Quantum/Testing/Inital_Test/Program.qs", OperationFunctor.Body, 28, 230)]
-    public partial class TestCFC : Operation<QVoid, QVoid>, ICallable
-    {
-        public TestCFC(IOperationFactory m) : base(m)
-        {
-        }
-
-        String ICallable.Name => "TestCFC";
-        String ICallable.FullName => "Quantum.Bell.TestCFC";
-        protected Allocate Allocate
-        {
-            get;
-            set;
-        }
-
-        protected Release Release
-        {
-            get;
-            set;
-        }
-
-        protected IUnitary<Qubit> MicrosoftQuantumIntrinsicX
-        {
-            get;
-            set;
-        }
-
-        protected ICallable Length
-        {
-            get;
-            set;
-        }
-
-        protected ICallable<Double, Int64> MicrosoftQuantumMathCeiling
-        {
-            get;
-            set;
-        }
-
-        protected ICallable<Int64, Double> MicrosoftQuantumConvertIntAsDouble
-        {
-            get;
-            set;
-        }
-
-        protected IAdjointable MicrosoftQuantumCanonApplyToEachA
-        {
-            get;
-            set;
-        }
-
-        protected IUnitary<(Microsoft.Quantum.Arithmetic.LittleEndian,Microsoft.Quantum.Arithmetic.LittleEndian)> AddI
-        {
-            get;
-            set;
-        }
-
-        protected ICallable<IQArray<Qubit>, Microsoft.Quantum.Arithmetic.LittleEndian> MicrosoftQuantumArithmeticLittleEndian
-        {
-            get;
-            set;
-        }
-
-        protected IAdjointable<(IQArray<Qubit>,IQArray<Qubit>,IQArray<Qubit>,Qubit)> CFCheck
-        {
-            get;
-            set;
-        }
-
-        protected IUnitary<(IQArray<Qubit>,IQArray<Qubit>,IQArray<Qubit>,IQArray<Qubit>,IQArray<Qubit>,IQArray<Qubit>,Qubit,Qubit)> CFIteration
+        protected ICallable<System.Numerics.BigInteger, System.Numerics.BigInteger> MicrosoftQuantumMathAbsL
         {
             get;
             set;
@@ -319,25 +167,118 @@ namespace Quantum.Bell
             set;
         }
 
-        protected ICallable<(IQArray<Qubit>,IQArray<Qubit>,IQArray<Qubit>,IQArray<Qubit>,IQArray<Qubit>), QVoid> CFExtractRes
+        public override Func<QVoid, QVoid> Body => (__in__) =>
+        {
+#line 14 "/Users/Matt/Documents/Masters/Dissertation/Quantum/Testing/Inital_Test/Program.qs"
+            var accurate = 1L;
+#line 15 "/Users/Matt/Documents/Masters/Dissertation/Quantum/Testing/Inital_Test/Program.qs"
+            foreach (var n in new QArray<Int64>(0L, 512L, 1024L, 1536L))
+#line hidden
+            {
+#line 16 "/Users/Matt/Documents/Masters/Dissertation/Quantum/Testing/Inital_Test/Program.qs"
+                var (exp,real) = CFCControl.Apply(n);
+#line 18 "/Users/Matt/Documents/Masters/Dissertation/Quantum/Testing/Inital_Test/Program.qs"
+                if ((MicrosoftQuantumConvertIntAsBigInt.Apply(MicrosoftQuantumMathAbsI.Apply(exp)) != MicrosoftQuantumMathAbsL.Apply(real)))
+                {
+#line 19 "/Users/Matt/Documents/Masters/Dissertation/Quantum/Testing/Inital_Test/Program.qs"
+                    accurate = 0L;
+                }
+
+#line 21 "/Users/Matt/Documents/Masters/Dissertation/Quantum/Testing/Inital_Test/Program.qs"
+                Message.Apply(String.Format("{0}:  ({1}, {2})", n, exp, real));
+#line 22 "/Users/Matt/Documents/Masters/Dissertation/Quantum/Testing/Inital_Test/Program.qs"
+                Message.Apply(String.Format("{0}", accurate));
+            }
+
+#line hidden
+            return QVoid.Instance;
+        }
+
+        ;
+        public override void Init()
+        {
+            this.CFCControl = this.Factory.Get<ICallable<Int64, (Int64,System.Numerics.BigInteger)>>(typeof(CFCControl));
+            this.MicrosoftQuantumConvertIntAsBigInt = this.Factory.Get<ICallable<Int64, System.Numerics.BigInteger>>(typeof(Microsoft.Quantum.Convert.IntAsBigInt));
+            this.MicrosoftQuantumMathAbsI = this.Factory.Get<ICallable<Int64, Int64>>(typeof(Microsoft.Quantum.Math.AbsI));
+            this.MicrosoftQuantumMathAbsL = this.Factory.Get<ICallable<System.Numerics.BigInteger, System.Numerics.BigInteger>>(typeof(Microsoft.Quantum.Math.AbsL));
+            this.Message = this.Factory.Get<ICallable<String, QVoid>>(typeof(Microsoft.Quantum.Intrinsic.Message));
+        }
+
+        public override IApplyData __dataIn(QVoid data) => data;
+        public override IApplyData __dataOut(QVoid data) => data;
+        public static System.Threading.Tasks.Task<QVoid> Run(IOperationFactory __m__)
+        {
+            return __m__.Run<TestD, QVoid, QVoid>(QVoid.Instance);
+        }
+    }
+
+    [SourceLocation("/Users/Matt/Documents/Masters/Dissertation/Quantum/Testing/Inital_Test/Program.qs", OperationFunctor.Body, 25, 48)]
+    public partial class CFCControl : Operation<Int64, (Int64,System.Numerics.BigInteger)>, ICallable
+    {
+        public CFCControl(IOperationFactory m) : base(m)
+        {
+        }
+
+        public class Out : QTuple<(Int64,System.Numerics.BigInteger)>, IApplyData
+        {
+            public Out((Int64,System.Numerics.BigInteger) data) : base(data)
+            {
+            }
+
+            System.Collections.Generic.IEnumerable<Qubit> IApplyData.Qubits => null;
+        }
+
+        String ICallable.Name => "CFCControl";
+        String ICallable.FullName => "Quantum.Bell.CFCControl";
+        protected ICallable<(Microsoft.Quantum.Math.BigFraction,System.Numerics.BigInteger), Microsoft.Quantum.Math.BigFraction> MicrosoftQuantumMathContinuedFractionConvergentL
         {
             get;
             set;
         }
 
-        protected IUnitary<(Qubit,Qubit)> MicrosoftQuantumIntrinsicSWAP
+        protected ICallable<(System.Numerics.BigInteger,System.Numerics.BigInteger), Microsoft.Quantum.Math.BigFraction> MicrosoftQuantumMathBigFraction
         {
             get;
             set;
         }
 
-        protected ICallable MicrosoftQuantumDiagnosticsDumpRegister
+        protected ICallable<Int64, System.Numerics.BigInteger> MicrosoftQuantumConvertIntAsBigInt
         {
             get;
             set;
         }
 
-        protected ICallable MicrosoftQuantumDiagnosticsDumpMachine
+        protected Allocate Allocate
+        {
+            get;
+            set;
+        }
+
+        protected Release Release
+        {
+            get;
+            set;
+        }
+
+        protected IUnitary<Qubit> MicrosoftQuantumIntrinsicX
+        {
+            get;
+            set;
+        }
+
+        protected ICallable<(Int64,Int64), IQArray<Boolean>> MicrosoftQuantumConvertIntAsBoolArray
+        {
+            get;
+            set;
+        }
+
+        protected ICallable Length
+        {
+            get;
+            set;
+        }
+
+        protected ICallable<(IQArray<Qubit>,IQArray<Qubit>,IQArray<Qubit>), Int64> CFC
         {
             get;
             set;
@@ -349,410 +290,51 @@ namespace Quantum.Bell
             set;
         }
 
-        public override Func<QVoid, QVoid> Body => (__in__) =>
+        public override Func<Int64, (Int64,System.Numerics.BigInteger)> Body => (__in__) =>
         {
+            var n = __in__;
+#line 26 "/Users/Matt/Documents/Masters/Dissertation/Quantum/Testing/Inital_Test/Program.qs"
+            var res = 0L;
+#line 27 "/Users/Matt/Documents/Masters/Dissertation/Quantum/Testing/Inital_Test/Program.qs"
+            var approximatedFraction = MicrosoftQuantumMathContinuedFractionConvergentL.Apply((new Microsoft.Quantum.Math.BigFraction((MicrosoftQuantumConvertIntAsBigInt.Apply(n), MicrosoftQuantumConvertIntAsBigInt.Apply(2048L))), MicrosoftQuantumConvertIntAsBigInt.Apply(15L)));
+#line 29 "/Users/Matt/Documents/Masters/Dissertation/Quantum/Testing/Inital_Test/Program.qs"
+            var (approximatedNumerator,approximatedDenominator) = approximatedFraction.Data;
 #line hidden
             {
-#line 29 "/Users/Matt/Documents/Masters/Dissertation/Quantum/Testing/Inital_Test/Program.qs"
-                var (p,m,u) = (Allocate.Apply(4L), Allocate.Apply(4L), Allocate.Apply(4L));
+#line 30 "/Users/Matt/Documents/Masters/Dissertation/Quantum/Testing/Inital_Test/Program.qs"
+                var (p,m,u) = (Allocate.Apply(11L), Allocate.Apply(11L), Allocate.Apply(11L));
 #line hidden
                 bool __arg1__ = true;
                 try
                 {
-#line 30 "/Users/Matt/Documents/Masters/Dissertation/Quantum/Testing/Inital_Test/Program.qs"
-                    MicrosoftQuantumIntrinsicX.Apply(m[1L]);
 #line 31 "/Users/Matt/Documents/Masters/Dissertation/Quantum/Testing/Inital_Test/Program.qs"
-                    MicrosoftQuantumIntrinsicX.Apply(m[0L]);
+                    MicrosoftQuantumIntrinsicX.Apply(m[3L]);
 #line 32 "/Users/Matt/Documents/Masters/Dissertation/Quantum/Testing/Inital_Test/Program.qs"
-                    MicrosoftQuantumIntrinsicX.Apply(u[1L]);
+                    MicrosoftQuantumIntrinsicX.Apply(m[2L]);
 #line 33 "/Users/Matt/Documents/Masters/Dissertation/Quantum/Testing/Inital_Test/Program.qs"
-                    MicrosoftQuantumIntrinsicX.Apply(u[2L]);
+                    MicrosoftQuantumIntrinsicX.Apply(m[1L]);
+#line 34 "/Users/Matt/Documents/Masters/Dissertation/Quantum/Testing/Inital_Test/Program.qs"
+                    MicrosoftQuantumIntrinsicX.Apply(m[0L]);
 #line 35 "/Users/Matt/Documents/Masters/Dissertation/Quantum/Testing/Inital_Test/Program.qs"
-                    var len = u.Length;
-#line 36 "/Users/Matt/Documents/Masters/Dissertation/Quantum/Testing/Inital_Test/Program.qs"
-                    var num_its = MicrosoftQuantumMathCeiling.Apply((1.5D * MicrosoftQuantumConvertIntAsDouble.Apply(len)));
+                    var nArr = (IQArray<Boolean>)MicrosoftQuantumConvertIntAsBoolArray.Apply((n, 11L));
 #line 37 "/Users/Matt/Documents/Masters/Dissertation/Quantum/Testing/Inital_Test/Program.qs"
-                    var numAnc = 0L;
+                    foreach (var t in new QRange(0L, (nArr.Length - 1L)))
+#line hidden
+                    {
 #line 38 "/Users/Matt/Documents/Masters/Dissertation/Quantum/Testing/Inital_Test/Program.qs"
-                    var sum = 0L;
+                        if ((nArr[t] == true))
+                        {
 #line 39 "/Users/Matt/Documents/Masters/Dissertation/Quantum/Testing/Inital_Test/Program.qs"
-                    var add = 1L;
-#line 40 "/Users/Matt/Documents/Masters/Dissertation/Quantum/Testing/Inital_Test/Program.qs"
-                    while (true)
-                    {
-#line 41 "/Users/Matt/Documents/Masters/Dissertation/Quantum/Testing/Inital_Test/Program.qs"
-                        sum = (sum + add);
+                            MicrosoftQuantumIntrinsicX.Apply(u[t]);
+                        }
+                    }
+
 #line 42 "/Users/Matt/Documents/Masters/Dissertation/Quantum/Testing/Inital_Test/Program.qs"
-                        add = (add + 1L);
+                    res = CFC.Apply((p, m, u));
 #line 43 "/Users/Matt/Documents/Masters/Dissertation/Quantum/Testing/Inital_Test/Program.qs"
-                        numAnc = (numAnc + 1L);
-                        if ((num_its <= sum))
-                        {
-                            break;
-                        }
-                        else
-                        {
-                        }
-                    }
-
-#line 45 "/Users/Matt/Documents/Masters/Dissertation/Quantum/Testing/Inital_Test/Program.qs"
-                    var origNumAnc = numAnc;
-#line hidden
-                    {
-#line 47 "/Users/Matt/Documents/Masters/Dissertation/Quantum/Testing/Inital_Test/Program.qs"
-                        var (r1,r2,s1,s2,quo,qTs2,C1,anc1,anc2) = (Allocate.Apply((len * numAnc)), Allocate.Apply((len * numAnc)), Allocate.Apply(((len + 1L) * numAnc)), Allocate.Apply(((len + 1L) * numAnc)), Allocate.Apply((len * numAnc)), Allocate.Apply((((2L * len) + 1L) * numAnc)), Allocate.Apply(numAnc), Allocate.Apply(numAnc), Allocate.Apply(numAnc));
-#line hidden
-                        bool __arg2__ = true;
-                        try
-                        {
-#line 48 "/Users/Matt/Documents/Masters/Dissertation/Quantum/Testing/Inital_Test/Program.qs"
-                            var lens = (len + 1L);
-#line 55 "/Users/Matt/Documents/Masters/Dissertation/Quantum/Testing/Inital_Test/Program.qs"
-                            var curReg = 0L;
-#line 56 "/Users/Matt/Documents/Masters/Dissertation/Quantum/Testing/Inital_Test/Program.qs"
-                            var curr = 0L;
-#line 57 "/Users/Matt/Documents/Masters/Dissertation/Quantum/Testing/Inital_Test/Program.qs"
-                            var j = 0L;
-#line 58 "/Users/Matt/Documents/Masters/Dissertation/Quantum/Testing/Inital_Test/Program.qs"
-                            while (true)
-                            {
-#line 60 "/Users/Matt/Documents/Masters/Dissertation/Quantum/Testing/Inital_Test/Program.qs"
-                                foreach (var i in new QRange(0L, (numAnc - 1L)))
-#line hidden
-                                {
-#line 61 "/Users/Matt/Documents/Masters/Dissertation/Quantum/Testing/Inital_Test/Program.qs"
-                                    j = (i + curReg);
-#line 62 "/Users/Matt/Documents/Masters/Dissertation/Quantum/Testing/Inital_Test/Program.qs"
-                                    if ((j == 0L))
-                                    {
-#line 63 "/Users/Matt/Documents/Masters/Dissertation/Quantum/Testing/Inital_Test/Program.qs"
-                                        MicrosoftQuantumCanonApplyToEachA.Apply((MicrosoftQuantumIntrinsicX, r2?.Slice(new QRange(0L, (len - 1L)))));
-#line 64 "/Users/Matt/Documents/Masters/Dissertation/Quantum/Testing/Inital_Test/Program.qs"
-                                        MicrosoftQuantumIntrinsicX.Apply(s1[0L]);
-#line 65 "/Users/Matt/Documents/Masters/Dissertation/Quantum/Testing/Inital_Test/Program.qs"
-                                        AddI.Apply((new Microsoft.Quantum.Arithmetic.LittleEndian(u), new Microsoft.Quantum.Arithmetic.LittleEndian(r1)));
-                                    }
-
-#line 67 "/Users/Matt/Documents/Masters/Dissertation/Quantum/Testing/Inital_Test/Program.qs"
-                                    if ((j != 0L))
-                                    {
-#line 68 "/Users/Matt/Documents/Masters/Dissertation/Quantum/Testing/Inital_Test/Program.qs"
-                                        AddI.Apply((new Microsoft.Quantum.Arithmetic.LittleEndian(r1?.Slice(new QRange(((j * len) - len), ((j * len) - 1L)))), new Microsoft.Quantum.Arithmetic.LittleEndian(r1?.Slice(new QRange((j * len), (((j * len) + len) - 1L))))));
-#line 69 "/Users/Matt/Documents/Masters/Dissertation/Quantum/Testing/Inital_Test/Program.qs"
-                                        AddI.Apply((new Microsoft.Quantum.Arithmetic.LittleEndian(r2?.Slice(new QRange(((j * len) - len), ((j * len) - 1L)))), new Microsoft.Quantum.Arithmetic.LittleEndian(r2?.Slice(new QRange((j * len), (((j * len) + len) - 1L))))));
-#line 71 "/Users/Matt/Documents/Masters/Dissertation/Quantum/Testing/Inital_Test/Program.qs"
-                                        AddI.Apply((new Microsoft.Quantum.Arithmetic.LittleEndian(s1?.Slice(new QRange(((j * lens) - lens), ((j * lens) - 1L)))), new Microsoft.Quantum.Arithmetic.LittleEndian(s1?.Slice(new QRange((j * lens), (((j * lens) + lens) - 1L))))));
-#line 72 "/Users/Matt/Documents/Masters/Dissertation/Quantum/Testing/Inital_Test/Program.qs"
-                                        AddI.Apply((new Microsoft.Quantum.Arithmetic.LittleEndian(s2?.Slice(new QRange(((j * lens) - lens), ((j * lens) - 1L)))), new Microsoft.Quantum.Arithmetic.LittleEndian(s2?.Slice(new QRange((j * lens), (((j * lens) + lens) - 1L))))));
-                                    }
-
-#line 75 "/Users/Matt/Documents/Masters/Dissertation/Quantum/Testing/Inital_Test/Program.qs"
-                                    CFCheck.Apply((r2?.Slice(new QRange((j * len), (((j * len) + len) - 1L))), s2?.Slice(new QRange((j * lens), (((j * lens) + lens) - 1L))), m, C1[j]));
-#line 76 "/Users/Matt/Documents/Masters/Dissertation/Quantum/Testing/Inital_Test/Program.qs"
-                                    MicrosoftQuantumIntrinsicX.Apply(C1[j]);
-#line 77 "/Users/Matt/Documents/Masters/Dissertation/Quantum/Testing/Inital_Test/Program.qs"
-                                    CFIteration.Controlled.Apply((new QArray<Qubit>(C1[j]), (r1?.Slice(new QRange((j * len), (((j * len) + len) - 1L))), r2?.Slice(new QRange((j * len), (((j * len) + len) - 1L))), s1?.Slice(new QRange((j * lens), (((j * lens) + lens) - 1L))), s2?.Slice(new QRange((j * lens), (((j * lens) + lens) - 1L))), quo?.Slice(new QRange((j * len), (((j * len) + len) - 1L))), qTs2?.Slice(new QRange((j * ((2L * len) + 1L)), (((j * ((2L * len) + 1L)) + ((2L * len) + 1L)) - 1L))), anc1[j], anc2[j])));
-#line 79 "/Users/Matt/Documents/Masters/Dissertation/Quantum/Testing/Inital_Test/Program.qs"
-                                    if ((((i + curr) + 1L) == num_its))
-                                    {
-#line 80 "/Users/Matt/Documents/Masters/Dissertation/Quantum/Testing/Inital_Test/Program.qs"
-                                        Message.Apply("Found");
-#line 81 "/Users/Matt/Documents/Masters/Dissertation/Quantum/Testing/Inital_Test/Program.qs"
-                                        CFExtractRes.Apply((p, m, r2?.Slice(new QRange((j * len), (((j * len) + len) - 1L))), s1?.Slice(new QRange((j * lens), (((j * lens) + lens) - 1L))), s2?.Slice(new QRange((j * lens), (((j * lens) + lens) - 1L)))));
-                                    }
-                                }
-
-#line 86 "/Users/Matt/Documents/Masters/Dissertation/Quantum/Testing/Inital_Test/Program.qs"
-                                var q = 0L;
-#line 87 "/Users/Matt/Documents/Masters/Dissertation/Quantum/Testing/Inital_Test/Program.qs"
-                                foreach (var k in new QRange(0L, (numAnc - 2L)))
-#line hidden
-                                {
-#line 88 "/Users/Matt/Documents/Masters/Dissertation/Quantum/Testing/Inital_Test/Program.qs"
-                                    q = ((numAnc - 2L) - k);
-#line 89 "/Users/Matt/Documents/Masters/Dissertation/Quantum/Testing/Inital_Test/Program.qs"
-                                    j = (q + curReg);
-#line 91 "/Users/Matt/Documents/Masters/Dissertation/Quantum/Testing/Inital_Test/Program.qs"
-                                    CFIteration.Adjoint.Controlled.Apply((new QArray<Qubit>(C1[j]), (r1?.Slice(new QRange((j * len), (((j * len) + len) - 1L))), r2?.Slice(new QRange((j * len), (((j * len) + len) - 1L))), s1?.Slice(new QRange((j * lens), (((j * lens) + lens) - 1L))), s2?.Slice(new QRange((j * lens), (((j * lens) + lens) - 1L))), quo?.Slice(new QRange((j * len), (((j * len) + len) - 1L))), qTs2?.Slice(new QRange((j * ((2L * len) + 1L)), (((j * ((2L * len) + 1L)) + ((2L * len) + 1L)) - 1L))), anc1[j], anc2[j])));
-#line 92 "/Users/Matt/Documents/Masters/Dissertation/Quantum/Testing/Inital_Test/Program.qs"
-                                    MicrosoftQuantumIntrinsicX.Apply(C1[j]);
-#line 93 "/Users/Matt/Documents/Masters/Dissertation/Quantum/Testing/Inital_Test/Program.qs"
-                                    CFCheck.Adjoint.Apply((r2?.Slice(new QRange((j * len), (((j * len) + len) - 1L))), s2?.Slice(new QRange((j * lens), (((j * lens) + lens) - 1L))), m, C1[j]));
-#line 95 "/Users/Matt/Documents/Masters/Dissertation/Quantum/Testing/Inital_Test/Program.qs"
-                                    if ((j != 0L))
-                                    {
-#line 96 "/Users/Matt/Documents/Masters/Dissertation/Quantum/Testing/Inital_Test/Program.qs"
-                                        AddI.Adjoint.Apply((new Microsoft.Quantum.Arithmetic.LittleEndian(r1?.Slice(new QRange(((j * len) - len), ((j * len) - 1L)))), new Microsoft.Quantum.Arithmetic.LittleEndian(r1?.Slice(new QRange((j * len), (((j * len) + len) - 1L))))));
-#line 97 "/Users/Matt/Documents/Masters/Dissertation/Quantum/Testing/Inital_Test/Program.qs"
-                                        AddI.Adjoint.Apply((new Microsoft.Quantum.Arithmetic.LittleEndian(r2?.Slice(new QRange(((j * len) - len), ((j * len) - 1L)))), new Microsoft.Quantum.Arithmetic.LittleEndian(r2?.Slice(new QRange((j * len), (((j * len) + len) - 1L))))));
-#line 99 "/Users/Matt/Documents/Masters/Dissertation/Quantum/Testing/Inital_Test/Program.qs"
-                                        AddI.Adjoint.Apply((new Microsoft.Quantum.Arithmetic.LittleEndian(s1?.Slice(new QRange(((j * lens) - lens), ((j * lens) - 1L)))), new Microsoft.Quantum.Arithmetic.LittleEndian(s1?.Slice(new QRange((j * lens), (((j * lens) + lens) - 1L))))));
-#line 100 "/Users/Matt/Documents/Masters/Dissertation/Quantum/Testing/Inital_Test/Program.qs"
-                                        AddI.Adjoint.Apply((new Microsoft.Quantum.Arithmetic.LittleEndian(s2?.Slice(new QRange(((j * lens) - lens), ((j * lens) - 1L)))), new Microsoft.Quantum.Arithmetic.LittleEndian(s2?.Slice(new QRange((j * lens), (((j * lens) + lens) - 1L))))));
-                                    }
-
-#line 102 "/Users/Matt/Documents/Masters/Dissertation/Quantum/Testing/Inital_Test/Program.qs"
-                                    if ((j == 0L))
-                                    {
-#line 103 "/Users/Matt/Documents/Masters/Dissertation/Quantum/Testing/Inital_Test/Program.qs"
-                                        MicrosoftQuantumCanonApplyToEachA.Apply((MicrosoftQuantumIntrinsicX, r2?.Slice(new QRange(0L, (len - 1L)))));
-#line 104 "/Users/Matt/Documents/Masters/Dissertation/Quantum/Testing/Inital_Test/Program.qs"
-                                        MicrosoftQuantumIntrinsicX.Apply(s1[0L]);
-#line 105 "/Users/Matt/Documents/Masters/Dissertation/Quantum/Testing/Inital_Test/Program.qs"
-                                        AddI.Adjoint.Apply((new Microsoft.Quantum.Arithmetic.LittleEndian(u), new Microsoft.Quantum.Arithmetic.LittleEndian(r1)));
-                                    }
-                                }
-
-#line 110 "/Users/Matt/Documents/Masters/Dissertation/Quantum/Testing/Inital_Test/Program.qs"
-                                if ((curReg != (origNumAnc - 1L)))
-                                {
-#line 111 "/Users/Matt/Documents/Masters/Dissertation/Quantum/Testing/Inital_Test/Program.qs"
-                                    foreach (var i in new QRange(0L, (len - 1L)))
-#line hidden
-                                    {
-#line 112 "/Users/Matt/Documents/Masters/Dissertation/Quantum/Testing/Inital_Test/Program.qs"
-                                        MicrosoftQuantumIntrinsicSWAP.Apply((r1[((curReg * len) + i)], r1[(i + ((origNumAnc - 1L) * len))]));
-#line 113 "/Users/Matt/Documents/Masters/Dissertation/Quantum/Testing/Inital_Test/Program.qs"
-                                        MicrosoftQuantumIntrinsicSWAP.Apply((r2[((curReg * len) + i)], r2[(i + ((origNumAnc - 1L) * len))]));
-#line 114 "/Users/Matt/Documents/Masters/Dissertation/Quantum/Testing/Inital_Test/Program.qs"
-                                        MicrosoftQuantumIntrinsicSWAP.Apply((quo[((curReg * len) + i)], quo[(i + ((origNumAnc - 1L) * len))]));
-                                    }
-
-#line 117 "/Users/Matt/Documents/Masters/Dissertation/Quantum/Testing/Inital_Test/Program.qs"
-                                    foreach (var i in new QRange(0L, (lens - 1L)))
-#line hidden
-                                    {
-#line 118 "/Users/Matt/Documents/Masters/Dissertation/Quantum/Testing/Inital_Test/Program.qs"
-                                        MicrosoftQuantumIntrinsicSWAP.Apply((s1[((curReg * lens) + i)], s1[(i + ((origNumAnc - 1L) * lens))]));
-#line 119 "/Users/Matt/Documents/Masters/Dissertation/Quantum/Testing/Inital_Test/Program.qs"
-                                        MicrosoftQuantumIntrinsicSWAP.Apply((s2[((curReg * lens) + i)], s2[(i + ((origNumAnc - 1L) * lens))]));
-                                    }
-
-#line 122 "/Users/Matt/Documents/Masters/Dissertation/Quantum/Testing/Inital_Test/Program.qs"
-                                    foreach (var i in new QRange(0L, (2L * len)))
-#line hidden
-                                    {
-#line 123 "/Users/Matt/Documents/Masters/Dissertation/Quantum/Testing/Inital_Test/Program.qs"
-                                        MicrosoftQuantumIntrinsicSWAP.Apply((qTs2[((curReg * ((2L * len) + 1L)) + i)], qTs2[(i + ((origNumAnc - 1L) * ((2L * len) + 1L)))]));
-                                    }
-
-#line 126 "/Users/Matt/Documents/Masters/Dissertation/Quantum/Testing/Inital_Test/Program.qs"
-                                    MicrosoftQuantumIntrinsicSWAP.Apply((C1[curReg], C1[(origNumAnc - 1L)]));
-#line 127 "/Users/Matt/Documents/Masters/Dissertation/Quantum/Testing/Inital_Test/Program.qs"
-                                    MicrosoftQuantumIntrinsicSWAP.Apply((anc1[curReg], anc1[(origNumAnc - 1L)]));
-#line 128 "/Users/Matt/Documents/Masters/Dissertation/Quantum/Testing/Inital_Test/Program.qs"
-                                    MicrosoftQuantumIntrinsicSWAP.Apply((anc2[curReg], anc2[(origNumAnc - 1L)]));
-                                }
-
-#line 132 "/Users/Matt/Documents/Masters/Dissertation/Quantum/Testing/Inital_Test/Program.qs"
-                                curr = (curr + numAnc);
-#line 133 "/Users/Matt/Documents/Masters/Dissertation/Quantum/Testing/Inital_Test/Program.qs"
-                                numAnc = (numAnc - 1L);
-#line 134 "/Users/Matt/Documents/Masters/Dissertation/Quantum/Testing/Inital_Test/Program.qs"
-                                curReg = (curReg + 1L);
-                                if ((numAnc == 0L))
-                                {
-                                    break;
-                                }
-                                else
-                                {
-                                }
-                            }
-
-#line 139 "/Users/Matt/Documents/Masters/Dissertation/Quantum/Testing/Inital_Test/Program.qs"
-                            while (true)
-                            {
-#line 140 "/Users/Matt/Documents/Masters/Dissertation/Quantum/Testing/Inital_Test/Program.qs"
-                                curReg = (curReg - 1L);
-#line 141 "/Users/Matt/Documents/Masters/Dissertation/Quantum/Testing/Inital_Test/Program.qs"
-                                numAnc = (numAnc + 1L);
-#line 142 "/Users/Matt/Documents/Masters/Dissertation/Quantum/Testing/Inital_Test/Program.qs"
-                                curr = (curr - numAnc);
-#line 145 "/Users/Matt/Documents/Masters/Dissertation/Quantum/Testing/Inital_Test/Program.qs"
-                                if ((curReg != (origNumAnc - 1L)))
-                                {
-#line 146 "/Users/Matt/Documents/Masters/Dissertation/Quantum/Testing/Inital_Test/Program.qs"
-                                    foreach (var i in new QRange(0L, (len - 1L)))
-#line hidden
-                                    {
-#line 147 "/Users/Matt/Documents/Masters/Dissertation/Quantum/Testing/Inital_Test/Program.qs"
-                                        MicrosoftQuantumIntrinsicSWAP.Apply((r1[((curReg * len) + i)], r1[(i + ((origNumAnc - 1L) * len))]));
-#line 148 "/Users/Matt/Documents/Masters/Dissertation/Quantum/Testing/Inital_Test/Program.qs"
-                                        MicrosoftQuantumIntrinsicSWAP.Apply((r2[((curReg * len) + i)], r2[(i + ((origNumAnc - 1L) * len))]));
-#line 149 "/Users/Matt/Documents/Masters/Dissertation/Quantum/Testing/Inital_Test/Program.qs"
-                                        MicrosoftQuantumIntrinsicSWAP.Apply((quo[((curReg * len) + i)], quo[(i + ((origNumAnc - 1L) * len))]));
-                                    }
-
-#line 151 "/Users/Matt/Documents/Masters/Dissertation/Quantum/Testing/Inital_Test/Program.qs"
-                                    foreach (var i in new QRange(0L, (lens - 1L)))
-#line hidden
-                                    {
-#line 152 "/Users/Matt/Documents/Masters/Dissertation/Quantum/Testing/Inital_Test/Program.qs"
-                                        MicrosoftQuantumIntrinsicSWAP.Apply((s1[((curReg * lens) + i)], s1[(i + ((origNumAnc - 1L) * lens))]));
-#line 153 "/Users/Matt/Documents/Masters/Dissertation/Quantum/Testing/Inital_Test/Program.qs"
-                                        MicrosoftQuantumIntrinsicSWAP.Apply((s2[((curReg * lens) + i)], s2[(i + ((origNumAnc - 1L) * lens))]));
-                                    }
-
-#line 155 "/Users/Matt/Documents/Masters/Dissertation/Quantum/Testing/Inital_Test/Program.qs"
-                                    foreach (var i in new QRange(0L, (2L * len)))
-#line hidden
-                                    {
-#line 156 "/Users/Matt/Documents/Masters/Dissertation/Quantum/Testing/Inital_Test/Program.qs"
-                                        MicrosoftQuantumIntrinsicSWAP.Apply((qTs2[((curReg * ((2L * len) + 1L)) + i)], qTs2[(i + ((origNumAnc - 1L) * ((2L * len) + 1L)))]));
-                                    }
-
-#line 158 "/Users/Matt/Documents/Masters/Dissertation/Quantum/Testing/Inital_Test/Program.qs"
-                                    MicrosoftQuantumIntrinsicSWAP.Apply((C1[curReg], C1[(origNumAnc - 1L)]));
-#line 159 "/Users/Matt/Documents/Masters/Dissertation/Quantum/Testing/Inital_Test/Program.qs"
-                                    MicrosoftQuantumIntrinsicSWAP.Apply((anc1[curReg], anc1[(origNumAnc - 1L)]));
-#line 160 "/Users/Matt/Documents/Masters/Dissertation/Quantum/Testing/Inital_Test/Program.qs"
-                                    MicrosoftQuantumIntrinsicSWAP.Apply((anc2[curReg], anc2[(origNumAnc - 1L)]));
-                                }
-
-#line 164 "/Users/Matt/Documents/Masters/Dissertation/Quantum/Testing/Inital_Test/Program.qs"
-                                foreach (var q in new QRange(0L, (numAnc - 2L)))
-#line hidden
-                                {
-#line 165 "/Users/Matt/Documents/Masters/Dissertation/Quantum/Testing/Inital_Test/Program.qs"
-                                    j = (q + curReg);
-#line 167 "/Users/Matt/Documents/Masters/Dissertation/Quantum/Testing/Inital_Test/Program.qs"
-                                    if ((j == 0L))
-                                    {
-#line 168 "/Users/Matt/Documents/Masters/Dissertation/Quantum/Testing/Inital_Test/Program.qs"
-                                        MicrosoftQuantumCanonApplyToEachA.Apply((MicrosoftQuantumIntrinsicX, r2?.Slice(new QRange(0L, (len - 1L)))));
-#line 169 "/Users/Matt/Documents/Masters/Dissertation/Quantum/Testing/Inital_Test/Program.qs"
-                                        MicrosoftQuantumIntrinsicX.Apply(s1[0L]);
-#line 170 "/Users/Matt/Documents/Masters/Dissertation/Quantum/Testing/Inital_Test/Program.qs"
-                                        AddI.Apply((new Microsoft.Quantum.Arithmetic.LittleEndian(u), new Microsoft.Quantum.Arithmetic.LittleEndian(r1)));
-                                    }
-
-#line 173 "/Users/Matt/Documents/Masters/Dissertation/Quantum/Testing/Inital_Test/Program.qs"
-                                    if ((j != 0L))
-                                    {
-#line 174 "/Users/Matt/Documents/Masters/Dissertation/Quantum/Testing/Inital_Test/Program.qs"
-                                        AddI.Apply((new Microsoft.Quantum.Arithmetic.LittleEndian(r1?.Slice(new QRange(((j * len) - len), ((j * len) - 1L)))), new Microsoft.Quantum.Arithmetic.LittleEndian(r1?.Slice(new QRange((j * len), (((j * len) + len) - 1L))))));
-#line 175 "/Users/Matt/Documents/Masters/Dissertation/Quantum/Testing/Inital_Test/Program.qs"
-                                        AddI.Apply((new Microsoft.Quantum.Arithmetic.LittleEndian(r2?.Slice(new QRange(((j * len) - len), ((j * len) - 1L)))), new Microsoft.Quantum.Arithmetic.LittleEndian(r2?.Slice(new QRange((j * len), (((j * len) + len) - 1L))))));
-#line 177 "/Users/Matt/Documents/Masters/Dissertation/Quantum/Testing/Inital_Test/Program.qs"
-                                        AddI.Apply((new Microsoft.Quantum.Arithmetic.LittleEndian(s1?.Slice(new QRange(((j * lens) - lens), ((j * lens) - 1L)))), new Microsoft.Quantum.Arithmetic.LittleEndian(s1?.Slice(new QRange((j * lens), (((j * lens) + lens) - 1L))))));
-#line 178 "/Users/Matt/Documents/Masters/Dissertation/Quantum/Testing/Inital_Test/Program.qs"
-                                        AddI.Apply((new Microsoft.Quantum.Arithmetic.LittleEndian(s2?.Slice(new QRange(((j * lens) - lens), ((j * lens) - 1L)))), new Microsoft.Quantum.Arithmetic.LittleEndian(s2?.Slice(new QRange((j * lens), (((j * lens) + lens) - 1L))))));
-                                    }
-
-#line 181 "/Users/Matt/Documents/Masters/Dissertation/Quantum/Testing/Inital_Test/Program.qs"
-                                    CFCheck.Apply((r2?.Slice(new QRange((j * len), (((j * len) + len) - 1L))), s2?.Slice(new QRange((j * lens), (((j * lens) + lens) - 1L))), m, C1[j]));
-#line 182 "/Users/Matt/Documents/Masters/Dissertation/Quantum/Testing/Inital_Test/Program.qs"
-                                    MicrosoftQuantumIntrinsicX.Apply(C1[j]);
-#line 183 "/Users/Matt/Documents/Masters/Dissertation/Quantum/Testing/Inital_Test/Program.qs"
-                                    CFIteration.Controlled.Apply((new QArray<Qubit>(C1[j]), (r1?.Slice(new QRange((j * len), (((j * len) + len) - 1L))), r2?.Slice(new QRange((j * len), (((j * len) + len) - 1L))), s1?.Slice(new QRange((j * lens), (((j * lens) + lens) - 1L))), s2?.Slice(new QRange((j * lens), (((j * lens) + lens) - 1L))), quo?.Slice(new QRange((j * len), (((j * len) + len) - 1L))), qTs2?.Slice(new QRange((j * ((2L * len) + 1L)), (((j * ((2L * len) + 1L)) + ((2L * len) + 1L)) - 1L))), anc1[j], anc2[j])));
-                                }
-
-#line 187 "/Users/Matt/Documents/Masters/Dissertation/Quantum/Testing/Inital_Test/Program.qs"
-                                foreach (var k in new QRange(0L, (numAnc - 1L)))
-#line hidden
-                                {
-#line 188 "/Users/Matt/Documents/Masters/Dissertation/Quantum/Testing/Inital_Test/Program.qs"
-                                    var i = ((numAnc - 1L) - k);
-#line 189 "/Users/Matt/Documents/Masters/Dissertation/Quantum/Testing/Inital_Test/Program.qs"
-                                    j = (i + curReg);
-#line 191 "/Users/Matt/Documents/Masters/Dissertation/Quantum/Testing/Inital_Test/Program.qs"
-                                    CFIteration.Adjoint.Controlled.Apply((new QArray<Qubit>(C1[j]), (r1?.Slice(new QRange((j * len), (((j * len) + len) - 1L))), r2?.Slice(new QRange((j * len), (((j * len) + len) - 1L))), s1?.Slice(new QRange((j * lens), (((j * lens) + lens) - 1L))), s2?.Slice(new QRange((j * lens), (((j * lens) + lens) - 1L))), quo?.Slice(new QRange((j * len), (((j * len) + len) - 1L))), qTs2?.Slice(new QRange((j * ((2L * len) + 1L)), (((j * ((2L * len) + 1L)) + ((2L * len) + 1L)) - 1L))), anc1[j], anc2[j])));
-#line 192 "/Users/Matt/Documents/Masters/Dissertation/Quantum/Testing/Inital_Test/Program.qs"
-                                    MicrosoftQuantumIntrinsicX.Apply(C1[j]);
-#line 193 "/Users/Matt/Documents/Masters/Dissertation/Quantum/Testing/Inital_Test/Program.qs"
-                                    CFCheck.Adjoint.Apply((r2?.Slice(new QRange((j * len), (((j * len) + len) - 1L))), s2?.Slice(new QRange((j * lens), (((j * lens) + lens) - 1L))), m, C1[j]));
-#line 197 "/Users/Matt/Documents/Masters/Dissertation/Quantum/Testing/Inital_Test/Program.qs"
-                                    if ((j != 0L))
-                                    {
-#line 198 "/Users/Matt/Documents/Masters/Dissertation/Quantum/Testing/Inital_Test/Program.qs"
-                                        AddI.Adjoint.Apply((new Microsoft.Quantum.Arithmetic.LittleEndian(r1?.Slice(new QRange(((j * len) - len), ((j * len) - 1L)))), new Microsoft.Quantum.Arithmetic.LittleEndian(r1?.Slice(new QRange((j * len), (((j * len) + len) - 1L))))));
-#line 199 "/Users/Matt/Documents/Masters/Dissertation/Quantum/Testing/Inital_Test/Program.qs"
-                                        AddI.Adjoint.Apply((new Microsoft.Quantum.Arithmetic.LittleEndian(r2?.Slice(new QRange(((j * len) - len), ((j * len) - 1L)))), new Microsoft.Quantum.Arithmetic.LittleEndian(r2?.Slice(new QRange((j * len), (((j * len) + len) - 1L))))));
-#line 201 "/Users/Matt/Documents/Masters/Dissertation/Quantum/Testing/Inital_Test/Program.qs"
-                                        AddI.Adjoint.Apply((new Microsoft.Quantum.Arithmetic.LittleEndian(s1?.Slice(new QRange(((j * lens) - lens), ((j * lens) - 1L)))), new Microsoft.Quantum.Arithmetic.LittleEndian(s1?.Slice(new QRange((j * lens), (((j * lens) + lens) - 1L))))));
-#line 202 "/Users/Matt/Documents/Masters/Dissertation/Quantum/Testing/Inital_Test/Program.qs"
-                                        AddI.Adjoint.Apply((new Microsoft.Quantum.Arithmetic.LittleEndian(s2?.Slice(new QRange(((j * lens) - lens), ((j * lens) - 1L)))), new Microsoft.Quantum.Arithmetic.LittleEndian(s2?.Slice(new QRange((j * lens), (((j * lens) + lens) - 1L))))));
-                                    }
-
-#line 205 "/Users/Matt/Documents/Masters/Dissertation/Quantum/Testing/Inital_Test/Program.qs"
-                                    if ((j == 0L))
-                                    {
-#line 206 "/Users/Matt/Documents/Masters/Dissertation/Quantum/Testing/Inital_Test/Program.qs"
-                                        MicrosoftQuantumCanonApplyToEachA.Apply((MicrosoftQuantumIntrinsicX, r2?.Slice(new QRange(0L, (len - 1L)))));
-#line 207 "/Users/Matt/Documents/Masters/Dissertation/Quantum/Testing/Inital_Test/Program.qs"
-                                        MicrosoftQuantumIntrinsicX.Apply(s1[0L]);
-#line 208 "/Users/Matt/Documents/Masters/Dissertation/Quantum/Testing/Inital_Test/Program.qs"
-                                        AddI.Adjoint.Apply((new Microsoft.Quantum.Arithmetic.LittleEndian(u), new Microsoft.Quantum.Arithmetic.LittleEndian(r1)));
-                                    }
-                                }
-
-#line 211 "/Users/Matt/Documents/Masters/Dissertation/Quantum/Testing/Inital_Test/Program.qs"
-                                Message.Apply("Round complete");
-                                if ((numAnc == origNumAnc))
-                                {
-                                    break;
-                                }
-                                else
-                                {
-                                }
-                            }
-
-#line 214 "/Users/Matt/Documents/Masters/Dissertation/Quantum/Testing/Inital_Test/Program.qs"
-                            MicrosoftQuantumDiagnosticsDumpRegister.Apply((QVoid.Instance, r1));
-#line 215 "/Users/Matt/Documents/Masters/Dissertation/Quantum/Testing/Inital_Test/Program.qs"
-                            MicrosoftQuantumDiagnosticsDumpRegister.Apply((QVoid.Instance, r2));
-#line 216 "/Users/Matt/Documents/Masters/Dissertation/Quantum/Testing/Inital_Test/Program.qs"
-                            MicrosoftQuantumDiagnosticsDumpRegister.Apply((QVoid.Instance, s1));
-#line 217 "/Users/Matt/Documents/Masters/Dissertation/Quantum/Testing/Inital_Test/Program.qs"
-                            MicrosoftQuantumDiagnosticsDumpRegister.Apply((QVoid.Instance, s2));
-#line 218 "/Users/Matt/Documents/Masters/Dissertation/Quantum/Testing/Inital_Test/Program.qs"
-                            MicrosoftQuantumDiagnosticsDumpRegister.Apply((QVoid.Instance, quo));
-#line 219 "/Users/Matt/Documents/Masters/Dissertation/Quantum/Testing/Inital_Test/Program.qs"
-                            MicrosoftQuantumDiagnosticsDumpRegister.Apply((QVoid.Instance, qTs2));
-#line 220 "/Users/Matt/Documents/Masters/Dissertation/Quantum/Testing/Inital_Test/Program.qs"
-                            MicrosoftQuantumDiagnosticsDumpRegister.Apply((QVoid.Instance, C1));
-#line 221 "/Users/Matt/Documents/Masters/Dissertation/Quantum/Testing/Inital_Test/Program.qs"
-                            MicrosoftQuantumDiagnosticsDumpRegister.Apply((QVoid.Instance, anc1));
-#line 222 "/Users/Matt/Documents/Masters/Dissertation/Quantum/Testing/Inital_Test/Program.qs"
-                            MicrosoftQuantumDiagnosticsDumpRegister.Apply((QVoid.Instance, anc2));
-                        }
-#line hidden
-                        catch
-                        {
-                            __arg2__ = false;
-                            throw;
-                        }
-#line hidden
-                        finally
-                        {
-                            if (__arg2__)
-                            {
-#line hidden
-                                Release.Apply(r1);
-#line hidden
-                                Release.Apply(r2);
-#line hidden
-                                Release.Apply(s1);
-#line hidden
-                                Release.Apply(s2);
-#line hidden
-                                Release.Apply(quo);
-#line hidden
-                                Release.Apply(qTs2);
-#line hidden
-                                Release.Apply(C1);
-#line hidden
-                                Release.Apply(anc1);
-#line hidden
-                                Release.Apply(anc2);
-                            }
-                        }
-                    }
-
-#line 225 "/Users/Matt/Documents/Masters/Dissertation/Quantum/Testing/Inital_Test/Program.qs"
-                    MicrosoftQuantumDiagnosticsDumpMachine.Apply(QVoid.Instance);
-#line 226 "/Users/Matt/Documents/Masters/Dissertation/Quantum/Testing/Inital_Test/Program.qs"
-                    ResetAll.Apply(QArray<Qubit>.Add(QArray<Qubit>.Add(m, u), p));
+                    ResetAll.Apply(QArray<Qubit>.Add(QArray<Qubit>.Add(p, m), u));
+#line 44 "/Users/Matt/Documents/Masters/Dissertation/Quantum/Testing/Inital_Test/Program.qs"
+                    return (res, approximatedDenominator);
                 }
 #line hidden
                 catch
@@ -774,6 +356,1001 @@ namespace Quantum.Bell
                     }
                 }
             }
+        }
+
+        ;
+        public override void Init()
+        {
+            this.MicrosoftQuantumMathContinuedFractionConvergentL = this.Factory.Get<ICallable<(Microsoft.Quantum.Math.BigFraction,System.Numerics.BigInteger), Microsoft.Quantum.Math.BigFraction>>(typeof(Microsoft.Quantum.Math.ContinuedFractionConvergentL));
+            this.MicrosoftQuantumMathBigFraction = this.Factory.Get<ICallable<(System.Numerics.BigInteger,System.Numerics.BigInteger), Microsoft.Quantum.Math.BigFraction>>(typeof(Microsoft.Quantum.Math.BigFraction));
+            this.MicrosoftQuantumConvertIntAsBigInt = this.Factory.Get<ICallable<Int64, System.Numerics.BigInteger>>(typeof(Microsoft.Quantum.Convert.IntAsBigInt));
+            this.Allocate = this.Factory.Get<Allocate>(typeof(Microsoft.Quantum.Intrinsic.Allocate));
+            this.Release = this.Factory.Get<Release>(typeof(Microsoft.Quantum.Intrinsic.Release));
+            this.MicrosoftQuantumIntrinsicX = this.Factory.Get<IUnitary<Qubit>>(typeof(Microsoft.Quantum.Intrinsic.X));
+            this.MicrosoftQuantumConvertIntAsBoolArray = this.Factory.Get<ICallable<(Int64,Int64), IQArray<Boolean>>>(typeof(Microsoft.Quantum.Convert.IntAsBoolArray));
+            this.Length = this.Factory.Get<ICallable>(typeof(Microsoft.Quantum.Core.Length<>));
+            this.CFC = this.Factory.Get<ICallable<(IQArray<Qubit>,IQArray<Qubit>,IQArray<Qubit>), Int64>>(typeof(CFC));
+            this.ResetAll = this.Factory.Get<ICallable<IQArray<Qubit>, QVoid>>(typeof(Microsoft.Quantum.Intrinsic.ResetAll));
+        }
+
+        public override IApplyData __dataIn(Int64 data) => new QTuple<Int64>(data);
+        public override IApplyData __dataOut((Int64,System.Numerics.BigInteger) data) => new Out(data);
+        public static System.Threading.Tasks.Task<(Int64,System.Numerics.BigInteger)> Run(IOperationFactory __m__, Int64 n)
+        {
+            return __m__.Run<CFCControl, Int64, (Int64,System.Numerics.BigInteger)>(n);
+        }
+    }
+
+    [SourceLocation("/Users/Matt/Documents/Masters/Dissertation/Quantum/Testing/Inital_Test/Program.qs", OperationFunctor.Body, 48, 72)]
+    public partial class CFC : Operation<(IQArray<Qubit>,IQArray<Qubit>,IQArray<Qubit>), Int64>, ICallable
+    {
+        public CFC(IOperationFactory m) : base(m)
+        {
+        }
+
+        public class In : QTuple<(IQArray<Qubit>,IQArray<Qubit>,IQArray<Qubit>)>, IApplyData
+        {
+            public In((IQArray<Qubit>,IQArray<Qubit>,IQArray<Qubit>) data) : base(data)
+            {
+            }
+
+            System.Collections.Generic.IEnumerable<Qubit> IApplyData.Qubits
+            {
+                get
+                {
+                    return Qubit.Concat(((IApplyData)Data.Item1)?.Qubits, ((IApplyData)Data.Item2)?.Qubits, ((IApplyData)Data.Item3)?.Qubits);
+                }
+            }
+        }
+
+        String ICallable.Name => "CFC";
+        String ICallable.FullName => "Quantum.Bell.CFC";
+        protected Allocate Allocate
+        {
+            get;
+            set;
+        }
+
+        protected Release Release
+        {
+            get;
+            set;
+        }
+
+        protected IAdjointable MicrosoftQuantumCanonApplyToEachA
+        {
+            get;
+            set;
+        }
+
+        protected IUnitary<Qubit> MicrosoftQuantumIntrinsicX
+        {
+            get;
+            set;
+        }
+
+        protected IControllable<(IQArray<Qubit>,IQArray<Qubit>,IQArray<Qubit>)> CFCMain
+        {
+            get;
+            set;
+        }
+
+        protected ICallable<Microsoft.Quantum.Arithmetic.LittleEndian, Int64> MicrosoftQuantumArithmeticMeasureInteger
+        {
+            get;
+            set;
+        }
+
+        protected ICallable<IQArray<Qubit>, Microsoft.Quantum.Arithmetic.LittleEndian> MicrosoftQuantumArithmeticLittleEndian
+        {
+            get;
+            set;
+        }
+
+        public override Func<(IQArray<Qubit>,IQArray<Qubit>,IQArray<Qubit>), Int64> Body => (__in__) =>
+        {
+            var (p,m,u) = __in__;
+#line 49 "/Users/Matt/Documents/Masters/Dissertation/Quantum/Testing/Inital_Test/Program.qs"
+            var result = 0L;
+#line hidden
+            {
+#line 50 "/Users/Matt/Documents/Masters/Dissertation/Quantum/Testing/Inital_Test/Program.qs"
+                var c = Allocate.Apply();
+#line hidden
+                bool __arg1__ = true;
+                try
+                {
+#line 52 "/Users/Matt/Documents/Masters/Dissertation/Quantum/Testing/Inital_Test/Program.qs"
+                    MicrosoftQuantumCanonApplyToEachA.Apply((MicrosoftQuantumIntrinsicX, u));
+#line 53 "/Users/Matt/Documents/Masters/Dissertation/Quantum/Testing/Inital_Test/Program.qs"
+                    MicrosoftQuantumIntrinsicX.Controlled.Apply((u, c));
+#line 54 "/Users/Matt/Documents/Masters/Dissertation/Quantum/Testing/Inital_Test/Program.qs"
+                    MicrosoftQuantumCanonApplyToEachA.Apply((MicrosoftQuantumIntrinsicX, u));
+#line 55 "/Users/Matt/Documents/Masters/Dissertation/Quantum/Testing/Inital_Test/Program.qs"
+                    MicrosoftQuantumIntrinsicX.Apply(c);
+#line 57 "/Users/Matt/Documents/Masters/Dissertation/Quantum/Testing/Inital_Test/Program.qs"
+                    CFCMain.Controlled.Apply((new QArray<Qubit>(c), (p, m, u)));
+#line 59 "/Users/Matt/Documents/Masters/Dissertation/Quantum/Testing/Inital_Test/Program.qs"
+                    MicrosoftQuantumIntrinsicX.Apply(c);
+#line 60 "/Users/Matt/Documents/Masters/Dissertation/Quantum/Testing/Inital_Test/Program.qs"
+                    MicrosoftQuantumCanonApplyToEachA.Apply((MicrosoftQuantumIntrinsicX, u));
+#line 61 "/Users/Matt/Documents/Masters/Dissertation/Quantum/Testing/Inital_Test/Program.qs"
+                    MicrosoftQuantumIntrinsicX.Controlled.Apply((u, c));
+#line 62 "/Users/Matt/Documents/Masters/Dissertation/Quantum/Testing/Inital_Test/Program.qs"
+                    MicrosoftQuantumCanonApplyToEachA.Apply((MicrosoftQuantumIntrinsicX, u));
+#line 64 "/Users/Matt/Documents/Masters/Dissertation/Quantum/Testing/Inital_Test/Program.qs"
+                    result = MicrosoftQuantumArithmeticMeasureInteger.Apply(new Microsoft.Quantum.Arithmetic.LittleEndian(p));
+                }
+#line hidden
+                catch
+                {
+                    __arg1__ = false;
+                    throw;
+                }
+#line hidden
+                finally
+                {
+                    if (__arg1__)
+                    {
+#line hidden
+                        Release.Apply(c);
+                    }
+                }
+            }
+
+#line 67 "/Users/Matt/Documents/Masters/Dissertation/Quantum/Testing/Inital_Test/Program.qs"
+            return result;
+        }
+
+        ;
+        public override void Init()
+        {
+            this.Allocate = this.Factory.Get<Allocate>(typeof(Microsoft.Quantum.Intrinsic.Allocate));
+            this.Release = this.Factory.Get<Release>(typeof(Microsoft.Quantum.Intrinsic.Release));
+            this.MicrosoftQuantumCanonApplyToEachA = this.Factory.Get<IAdjointable>(typeof(Microsoft.Quantum.Canon.ApplyToEachA<>));
+            this.MicrosoftQuantumIntrinsicX = this.Factory.Get<IUnitary<Qubit>>(typeof(Microsoft.Quantum.Intrinsic.X));
+            this.CFCMain = this.Factory.Get<IControllable<(IQArray<Qubit>,IQArray<Qubit>,IQArray<Qubit>)>>(typeof(CFCMain));
+            this.MicrosoftQuantumArithmeticMeasureInteger = this.Factory.Get<ICallable<Microsoft.Quantum.Arithmetic.LittleEndian, Int64>>(typeof(Microsoft.Quantum.Arithmetic.MeasureInteger));
+            this.MicrosoftQuantumArithmeticLittleEndian = this.Factory.Get<ICallable<IQArray<Qubit>, Microsoft.Quantum.Arithmetic.LittleEndian>>(typeof(Microsoft.Quantum.Arithmetic.LittleEndian));
+        }
+
+        public override IApplyData __dataIn((IQArray<Qubit>,IQArray<Qubit>,IQArray<Qubit>) data) => new In(data);
+        public override IApplyData __dataOut(Int64 data) => new QTuple<Int64>(data);
+        public static System.Threading.Tasks.Task<Int64> Run(IOperationFactory __m__, IQArray<Qubit> p, IQArray<Qubit> m, IQArray<Qubit> u)
+        {
+            return __m__.Run<CFC, (IQArray<Qubit>,IQArray<Qubit>,IQArray<Qubit>), Int64>((p, m, u));
+        }
+    }
+
+    [SourceLocation("/Users/Matt/Documents/Masters/Dissertation/Quantum/Testing/Inital_Test/Program.qs", OperationFunctor.Body, 72, 273)]
+    [SourceLocation("/Users/Matt/Documents/Masters/Dissertation/Quantum/Testing/Inital_Test/Program.qs", OperationFunctor.Controlled, 72, 273)]
+    public partial class CFCMain : Controllable<(IQArray<Qubit>,IQArray<Qubit>,IQArray<Qubit>)>, ICallable
+    {
+        public CFCMain(IOperationFactory m) : base(m)
+        {
+        }
+
+        public class In : QTuple<(IQArray<Qubit>,IQArray<Qubit>,IQArray<Qubit>)>, IApplyData
+        {
+            public In((IQArray<Qubit>,IQArray<Qubit>,IQArray<Qubit>) data) : base(data)
+            {
+            }
+
+            System.Collections.Generic.IEnumerable<Qubit> IApplyData.Qubits
+            {
+                get
+                {
+                    return Qubit.Concat(((IApplyData)Data.Item1)?.Qubits, ((IApplyData)Data.Item2)?.Qubits, ((IApplyData)Data.Item3)?.Qubits);
+                }
+            }
+        }
+
+        String ICallable.Name => "CFCMain";
+        String ICallable.FullName => "Quantum.Bell.CFCMain";
+        protected ICallable Length
+        {
+            get;
+            set;
+        }
+
+        protected ICallable<Double, Int64> MicrosoftQuantumMathCeiling
+        {
+            get;
+            set;
+        }
+
+        protected ICallable<Int64, Double> MicrosoftQuantumConvertIntAsDouble
+        {
+            get;
+            set;
+        }
+
+        protected Allocate Allocate
+        {
+            get;
+            set;
+        }
+
+        protected Release Release
+        {
+            get;
+            set;
+        }
+
+        protected IUnitary<Qubit> MicrosoftQuantumIntrinsicX
+        {
+            get;
+            set;
+        }
+
+        protected IUnitary<(Microsoft.Quantum.Arithmetic.LittleEndian,Microsoft.Quantum.Arithmetic.LittleEndian)> AddI
+        {
+            get;
+            set;
+        }
+
+        protected ICallable<IQArray<Qubit>, Microsoft.Quantum.Arithmetic.LittleEndian> MicrosoftQuantumArithmeticLittleEndian
+        {
+            get;
+            set;
+        }
+
+        protected IUnitary<(IQArray<Qubit>,IQArray<Qubit>,IQArray<Qubit>,Qubit)> CFCheck
+        {
+            get;
+            set;
+        }
+
+        protected IUnitary<(IQArray<Qubit>,IQArray<Qubit>,IQArray<Qubit>,IQArray<Qubit>,IQArray<Qubit>,IQArray<Qubit>,Qubit,Qubit)> CFIteration
+        {
+            get;
+            set;
+        }
+
+        protected IControllable<(IQArray<Qubit>,IQArray<Qubit>,IQArray<Qubit>,IQArray<Qubit>,IQArray<Qubit>)> CFExtractRes
+        {
+            get;
+            set;
+        }
+
+        protected IUnitary<(Qubit,Qubit)> MicrosoftQuantumIntrinsicSWAP
+        {
+            get;
+            set;
+        }
+
+        public override Func<(IQArray<Qubit>,IQArray<Qubit>,IQArray<Qubit>), QVoid> Body => (__in__) =>
+        {
+            var (p,m,u) = __in__;
+#line 74 "/Users/Matt/Documents/Masters/Dissertation/Quantum/Testing/Inital_Test/Program.qs"
+            var len = u.Length;
+#line 75 "/Users/Matt/Documents/Masters/Dissertation/Quantum/Testing/Inital_Test/Program.qs"
+            var num_its = MicrosoftQuantumMathCeiling.Apply((1.44D * MicrosoftQuantumConvertIntAsDouble.Apply((len + 1L))));
+#line 76 "/Users/Matt/Documents/Masters/Dissertation/Quantum/Testing/Inital_Test/Program.qs"
+            var numAnc = 0L;
+#line 77 "/Users/Matt/Documents/Masters/Dissertation/Quantum/Testing/Inital_Test/Program.qs"
+            var sum = 0L;
+#line 78 "/Users/Matt/Documents/Masters/Dissertation/Quantum/Testing/Inital_Test/Program.qs"
+            var add = 1L;
+#line 79 "/Users/Matt/Documents/Masters/Dissertation/Quantum/Testing/Inital_Test/Program.qs"
+            while (true)
+            {
+#line 80 "/Users/Matt/Documents/Masters/Dissertation/Quantum/Testing/Inital_Test/Program.qs"
+                sum = (sum + add);
+#line 81 "/Users/Matt/Documents/Masters/Dissertation/Quantum/Testing/Inital_Test/Program.qs"
+                add = (add + 1L);
+#line 82 "/Users/Matt/Documents/Masters/Dissertation/Quantum/Testing/Inital_Test/Program.qs"
+                numAnc = (numAnc + 1L);
+                if ((num_its <= sum))
+                {
+                    break;
+                }
+                else
+                {
+                }
+            }
+
+#line 84 "/Users/Matt/Documents/Masters/Dissertation/Quantum/Testing/Inital_Test/Program.qs"
+            var origNumAnc = numAnc;
+#line hidden
+            {
+#line 86 "/Users/Matt/Documents/Masters/Dissertation/Quantum/Testing/Inital_Test/Program.qs"
+                var (r1,r2,s1,s2,quo,qTs2,C1,anc1,anc2) = (Allocate.Apply(((len + 1L) * numAnc)), Allocate.Apply(((len + 1L) * numAnc)), Allocate.Apply(((len + 2L) * numAnc)), Allocate.Apply(((len + 2L) * numAnc)), Allocate.Apply(((len + 1L) * numAnc)), Allocate.Apply((((2L * (len + 1L)) + 1L) * numAnc)), Allocate.Apply(numAnc), Allocate.Apply(numAnc), Allocate.Apply(numAnc));
+#line hidden
+                bool __arg1__ = true;
+                try
+                {
+#line 87 "/Users/Matt/Documents/Masters/Dissertation/Quantum/Testing/Inital_Test/Program.qs"
+                    len = (len + 1L);
+#line 88 "/Users/Matt/Documents/Masters/Dissertation/Quantum/Testing/Inital_Test/Program.qs"
+                    var lens = (len + 1L);
+#line 91 "/Users/Matt/Documents/Masters/Dissertation/Quantum/Testing/Inital_Test/Program.qs"
+                    var curReg = 0L;
+#line 92 "/Users/Matt/Documents/Masters/Dissertation/Quantum/Testing/Inital_Test/Program.qs"
+                    var curr = 0L;
+#line 93 "/Users/Matt/Documents/Masters/Dissertation/Quantum/Testing/Inital_Test/Program.qs"
+                    var j = 0L;
+#line 95 "/Users/Matt/Documents/Masters/Dissertation/Quantum/Testing/Inital_Test/Program.qs"
+                    while (true)
+                    {
+#line 97 "/Users/Matt/Documents/Masters/Dissertation/Quantum/Testing/Inital_Test/Program.qs"
+                        foreach (var i in new QRange(0L, (numAnc - 1L)))
+#line hidden
+                        {
+#line 99 "/Users/Matt/Documents/Masters/Dissertation/Quantum/Testing/Inital_Test/Program.qs"
+                            j = (i + curReg);
+#line 100 "/Users/Matt/Documents/Masters/Dissertation/Quantum/Testing/Inital_Test/Program.qs"
+                            if ((j == 0L))
+                            {
+#line 102 "/Users/Matt/Documents/Masters/Dissertation/Quantum/Testing/Inital_Test/Program.qs"
+                                MicrosoftQuantumIntrinsicX.Apply(r2[(len - 1L)]);
+#line 103 "/Users/Matt/Documents/Masters/Dissertation/Quantum/Testing/Inital_Test/Program.qs"
+                                MicrosoftQuantumIntrinsicX.Apply(s1[0L]);
+#line 104 "/Users/Matt/Documents/Masters/Dissertation/Quantum/Testing/Inital_Test/Program.qs"
+                                AddI.Apply((new Microsoft.Quantum.Arithmetic.LittleEndian(u), new Microsoft.Quantum.Arithmetic.LittleEndian(r1?.Slice(new QRange(0L, (len - 2L))))));
+                            }
+
+#line 108 "/Users/Matt/Documents/Masters/Dissertation/Quantum/Testing/Inital_Test/Program.qs"
+                            if ((j != 0L))
+                            {
+#line 109 "/Users/Matt/Documents/Masters/Dissertation/Quantum/Testing/Inital_Test/Program.qs"
+                                AddI.Apply((new Microsoft.Quantum.Arithmetic.LittleEndian(r1?.Slice(new QRange(((j * len) - len), ((j * len) - 1L)))), new Microsoft.Quantum.Arithmetic.LittleEndian(r1?.Slice(new QRange((j * len), (((j * len) + len) - 1L))))));
+#line 110 "/Users/Matt/Documents/Masters/Dissertation/Quantum/Testing/Inital_Test/Program.qs"
+                                AddI.Apply((new Microsoft.Quantum.Arithmetic.LittleEndian(r2?.Slice(new QRange(((j * len) - len), ((j * len) - 1L)))), new Microsoft.Quantum.Arithmetic.LittleEndian(r2?.Slice(new QRange((j * len), (((j * len) + len) - 1L))))));
+#line 112 "/Users/Matt/Documents/Masters/Dissertation/Quantum/Testing/Inital_Test/Program.qs"
+                                AddI.Apply((new Microsoft.Quantum.Arithmetic.LittleEndian(s1?.Slice(new QRange(((j * lens) - lens), ((j * lens) - 1L)))), new Microsoft.Quantum.Arithmetic.LittleEndian(s1?.Slice(new QRange((j * lens), (((j * lens) + lens) - 1L))))));
+#line 113 "/Users/Matt/Documents/Masters/Dissertation/Quantum/Testing/Inital_Test/Program.qs"
+                                AddI.Apply((new Microsoft.Quantum.Arithmetic.LittleEndian(s2?.Slice(new QRange(((j * lens) - lens), ((j * lens) - 1L)))), new Microsoft.Quantum.Arithmetic.LittleEndian(s2?.Slice(new QRange((j * lens), (((j * lens) + lens) - 1L))))));
+                            }
+
+#line 117 "/Users/Matt/Documents/Masters/Dissertation/Quantum/Testing/Inital_Test/Program.qs"
+                            CFCheck.Apply((r2?.Slice(new QRange((j * len), (((j * len) + len) - 1L))), s2?.Slice(new QRange((j * lens), (((j * lens) + lens) - 1L))), m, C1[j]));
+#line 118 "/Users/Matt/Documents/Masters/Dissertation/Quantum/Testing/Inital_Test/Program.qs"
+                            MicrosoftQuantumIntrinsicX.Apply(C1[j]);
+#line 119 "/Users/Matt/Documents/Masters/Dissertation/Quantum/Testing/Inital_Test/Program.qs"
+                            CFIteration.Controlled.Apply((new QArray<Qubit>(C1[j]), (r1?.Slice(new QRange((j * len), (((j * len) + len) - 1L))), r2?.Slice(new QRange((j * len), (((j * len) + len) - 1L))), s1?.Slice(new QRange((j * lens), (((j * lens) + lens) - 1L))), s2?.Slice(new QRange((j * lens), (((j * lens) + lens) - 1L))), quo?.Slice(new QRange((j * len), (((j * len) + len) - 1L))), qTs2?.Slice(new QRange((j * ((2L * len) + 1L)), (((j * ((2L * len) + 1L)) + ((2L * len) + 1L)) - 1L))), anc1[j], anc2[j])));
+#line 121 "/Users/Matt/Documents/Masters/Dissertation/Quantum/Testing/Inital_Test/Program.qs"
+                            if ((((i + curr) + 1L) == num_its))
+                            {
+#line 122 "/Users/Matt/Documents/Masters/Dissertation/Quantum/Testing/Inital_Test/Program.qs"
+                                CFExtractRes.Apply((p, m, r2?.Slice(new QRange((j * len), (((j * len) + len) - 1L))), s1?.Slice(new QRange((j * lens), (((j * lens) + lens) - 1L))), s2?.Slice(new QRange((j * lens), (((j * lens) + lens) - 1L)))));
+                            }
+                        }
+
+#line 129 "/Users/Matt/Documents/Masters/Dissertation/Quantum/Testing/Inital_Test/Program.qs"
+                        var q = 0L;
+#line 130 "/Users/Matt/Documents/Masters/Dissertation/Quantum/Testing/Inital_Test/Program.qs"
+                        foreach (var k in new QRange(0L, (numAnc - 2L)))
+#line hidden
+                        {
+#line 131 "/Users/Matt/Documents/Masters/Dissertation/Quantum/Testing/Inital_Test/Program.qs"
+                            q = ((numAnc - 2L) - k);
+#line 132 "/Users/Matt/Documents/Masters/Dissertation/Quantum/Testing/Inital_Test/Program.qs"
+                            j = (q + curReg);
+#line 134 "/Users/Matt/Documents/Masters/Dissertation/Quantum/Testing/Inital_Test/Program.qs"
+                            CFIteration.Adjoint.Controlled.Apply((new QArray<Qubit>(C1[j]), (r1?.Slice(new QRange((j * len), (((j * len) + len) - 1L))), r2?.Slice(new QRange((j * len), (((j * len) + len) - 1L))), s1?.Slice(new QRange((j * lens), (((j * lens) + lens) - 1L))), s2?.Slice(new QRange((j * lens), (((j * lens) + lens) - 1L))), quo?.Slice(new QRange((j * len), (((j * len) + len) - 1L))), qTs2?.Slice(new QRange((j * ((2L * len) + 1L)), (((j * ((2L * len) + 1L)) + ((2L * len) + 1L)) - 1L))), anc1[j], anc2[j])));
+#line 135 "/Users/Matt/Documents/Masters/Dissertation/Quantum/Testing/Inital_Test/Program.qs"
+                            MicrosoftQuantumIntrinsicX.Apply(C1[j]);
+#line 136 "/Users/Matt/Documents/Masters/Dissertation/Quantum/Testing/Inital_Test/Program.qs"
+                            CFCheck.Adjoint.Apply((r2?.Slice(new QRange((j * len), (((j * len) + len) - 1L))), s2?.Slice(new QRange((j * lens), (((j * lens) + lens) - 1L))), m, C1[j]));
+#line 138 "/Users/Matt/Documents/Masters/Dissertation/Quantum/Testing/Inital_Test/Program.qs"
+                            if ((j != 0L))
+                            {
+#line 139 "/Users/Matt/Documents/Masters/Dissertation/Quantum/Testing/Inital_Test/Program.qs"
+                                AddI.Adjoint.Apply((new Microsoft.Quantum.Arithmetic.LittleEndian(r1?.Slice(new QRange(((j * len) - len), ((j * len) - 1L)))), new Microsoft.Quantum.Arithmetic.LittleEndian(r1?.Slice(new QRange((j * len), (((j * len) + len) - 1L))))));
+#line 140 "/Users/Matt/Documents/Masters/Dissertation/Quantum/Testing/Inital_Test/Program.qs"
+                                AddI.Adjoint.Apply((new Microsoft.Quantum.Arithmetic.LittleEndian(r2?.Slice(new QRange(((j * len) - len), ((j * len) - 1L)))), new Microsoft.Quantum.Arithmetic.LittleEndian(r2?.Slice(new QRange((j * len), (((j * len) + len) - 1L))))));
+#line 142 "/Users/Matt/Documents/Masters/Dissertation/Quantum/Testing/Inital_Test/Program.qs"
+                                AddI.Adjoint.Apply((new Microsoft.Quantum.Arithmetic.LittleEndian(s1?.Slice(new QRange(((j * lens) - lens), ((j * lens) - 1L)))), new Microsoft.Quantum.Arithmetic.LittleEndian(s1?.Slice(new QRange((j * lens), (((j * lens) + lens) - 1L))))));
+#line 143 "/Users/Matt/Documents/Masters/Dissertation/Quantum/Testing/Inital_Test/Program.qs"
+                                AddI.Adjoint.Apply((new Microsoft.Quantum.Arithmetic.LittleEndian(s2?.Slice(new QRange(((j * lens) - lens), ((j * lens) - 1L)))), new Microsoft.Quantum.Arithmetic.LittleEndian(s2?.Slice(new QRange((j * lens), (((j * lens) + lens) - 1L))))));
+                            }
+
+#line 145 "/Users/Matt/Documents/Masters/Dissertation/Quantum/Testing/Inital_Test/Program.qs"
+                            if ((j == 0L))
+                            {
+#line 147 "/Users/Matt/Documents/Masters/Dissertation/Quantum/Testing/Inital_Test/Program.qs"
+                                MicrosoftQuantumIntrinsicX.Apply(r2[(len - 1L)]);
+#line 148 "/Users/Matt/Documents/Masters/Dissertation/Quantum/Testing/Inital_Test/Program.qs"
+                                MicrosoftQuantumIntrinsicX.Apply(s1[0L]);
+#line 149 "/Users/Matt/Documents/Masters/Dissertation/Quantum/Testing/Inital_Test/Program.qs"
+                                AddI.Adjoint.Apply((new Microsoft.Quantum.Arithmetic.LittleEndian(u), new Microsoft.Quantum.Arithmetic.LittleEndian(r1?.Slice(new QRange(0L, (len - 2L))))));
+                            }
+                        }
+
+#line 156 "/Users/Matt/Documents/Masters/Dissertation/Quantum/Testing/Inital_Test/Program.qs"
+                        if ((curReg != (origNumAnc - 1L)))
+                        {
+#line 157 "/Users/Matt/Documents/Masters/Dissertation/Quantum/Testing/Inital_Test/Program.qs"
+                            foreach (var i in new QRange(0L, (len - 1L)))
+#line hidden
+                            {
+#line 158 "/Users/Matt/Documents/Masters/Dissertation/Quantum/Testing/Inital_Test/Program.qs"
+                                MicrosoftQuantumIntrinsicSWAP.Apply((r1[((curReg * len) + i)], r1[(i + ((origNumAnc - 1L) * len))]));
+#line 159 "/Users/Matt/Documents/Masters/Dissertation/Quantum/Testing/Inital_Test/Program.qs"
+                                MicrosoftQuantumIntrinsicSWAP.Apply((r2[((curReg * len) + i)], r2[(i + ((origNumAnc - 1L) * len))]));
+#line 160 "/Users/Matt/Documents/Masters/Dissertation/Quantum/Testing/Inital_Test/Program.qs"
+                                MicrosoftQuantumIntrinsicSWAP.Apply((quo[((curReg * len) + i)], quo[(i + ((origNumAnc - 1L) * len))]));
+                            }
+
+#line 163 "/Users/Matt/Documents/Masters/Dissertation/Quantum/Testing/Inital_Test/Program.qs"
+                            foreach (var i in new QRange(0L, (lens - 1L)))
+#line hidden
+                            {
+#line 164 "/Users/Matt/Documents/Masters/Dissertation/Quantum/Testing/Inital_Test/Program.qs"
+                                MicrosoftQuantumIntrinsicSWAP.Apply((s1[((curReg * lens) + i)], s1[(i + ((origNumAnc - 1L) * lens))]));
+#line 165 "/Users/Matt/Documents/Masters/Dissertation/Quantum/Testing/Inital_Test/Program.qs"
+                                MicrosoftQuantumIntrinsicSWAP.Apply((s2[((curReg * lens) + i)], s2[(i + ((origNumAnc - 1L) * lens))]));
+                            }
+
+#line 168 "/Users/Matt/Documents/Masters/Dissertation/Quantum/Testing/Inital_Test/Program.qs"
+                            foreach (var i in new QRange(0L, (2L * len)))
+#line hidden
+                            {
+#line 169 "/Users/Matt/Documents/Masters/Dissertation/Quantum/Testing/Inital_Test/Program.qs"
+                                MicrosoftQuantumIntrinsicSWAP.Apply((qTs2[((curReg * ((2L * len) + 1L)) + i)], qTs2[(i + ((origNumAnc - 1L) * ((2L * len) + 1L)))]));
+                            }
+
+#line 172 "/Users/Matt/Documents/Masters/Dissertation/Quantum/Testing/Inital_Test/Program.qs"
+                            MicrosoftQuantumIntrinsicSWAP.Apply((C1[curReg], C1[(origNumAnc - 1L)]));
+#line 173 "/Users/Matt/Documents/Masters/Dissertation/Quantum/Testing/Inital_Test/Program.qs"
+                            MicrosoftQuantumIntrinsicSWAP.Apply((anc1[curReg], anc1[(origNumAnc - 1L)]));
+#line 174 "/Users/Matt/Documents/Masters/Dissertation/Quantum/Testing/Inital_Test/Program.qs"
+                            MicrosoftQuantumIntrinsicSWAP.Apply((anc2[curReg], anc2[(origNumAnc - 1L)]));
+                        }
+
+#line 179 "/Users/Matt/Documents/Masters/Dissertation/Quantum/Testing/Inital_Test/Program.qs"
+                        curr = (curr + numAnc);
+#line 180 "/Users/Matt/Documents/Masters/Dissertation/Quantum/Testing/Inital_Test/Program.qs"
+                        numAnc = (numAnc - 1L);
+#line 181 "/Users/Matt/Documents/Masters/Dissertation/Quantum/Testing/Inital_Test/Program.qs"
+                        curReg = (curReg + 1L);
+                        if ((numAnc == 0L))
+                        {
+                            break;
+                        }
+                        else
+                        {
+                        }
+                    }
+
+#line 186 "/Users/Matt/Documents/Masters/Dissertation/Quantum/Testing/Inital_Test/Program.qs"
+                    while (true)
+                    {
+#line 187 "/Users/Matt/Documents/Masters/Dissertation/Quantum/Testing/Inital_Test/Program.qs"
+                        curReg = (curReg - 1L);
+#line 188 "/Users/Matt/Documents/Masters/Dissertation/Quantum/Testing/Inital_Test/Program.qs"
+                        numAnc = (numAnc + 1L);
+#line 189 "/Users/Matt/Documents/Masters/Dissertation/Quantum/Testing/Inital_Test/Program.qs"
+                        curr = (curr - numAnc);
+#line 192 "/Users/Matt/Documents/Masters/Dissertation/Quantum/Testing/Inital_Test/Program.qs"
+                        if ((curReg != (origNumAnc - 1L)))
+                        {
+#line 193 "/Users/Matt/Documents/Masters/Dissertation/Quantum/Testing/Inital_Test/Program.qs"
+                            foreach (var i in new QRange(0L, (len - 1L)))
+#line hidden
+                            {
+#line 194 "/Users/Matt/Documents/Masters/Dissertation/Quantum/Testing/Inital_Test/Program.qs"
+                                MicrosoftQuantumIntrinsicSWAP.Apply((r1[((curReg * len) + i)], r1[(i + ((origNumAnc - 1L) * len))]));
+#line 195 "/Users/Matt/Documents/Masters/Dissertation/Quantum/Testing/Inital_Test/Program.qs"
+                                MicrosoftQuantumIntrinsicSWAP.Apply((r2[((curReg * len) + i)], r2[(i + ((origNumAnc - 1L) * len))]));
+#line 196 "/Users/Matt/Documents/Masters/Dissertation/Quantum/Testing/Inital_Test/Program.qs"
+                                MicrosoftQuantumIntrinsicSWAP.Apply((quo[((curReg * len) + i)], quo[(i + ((origNumAnc - 1L) * len))]));
+                            }
+
+#line 198 "/Users/Matt/Documents/Masters/Dissertation/Quantum/Testing/Inital_Test/Program.qs"
+                            foreach (var i in new QRange(0L, (lens - 1L)))
+#line hidden
+                            {
+#line 199 "/Users/Matt/Documents/Masters/Dissertation/Quantum/Testing/Inital_Test/Program.qs"
+                                MicrosoftQuantumIntrinsicSWAP.Apply((s1[((curReg * lens) + i)], s1[(i + ((origNumAnc - 1L) * lens))]));
+#line 200 "/Users/Matt/Documents/Masters/Dissertation/Quantum/Testing/Inital_Test/Program.qs"
+                                MicrosoftQuantumIntrinsicSWAP.Apply((s2[((curReg * lens) + i)], s2[(i + ((origNumAnc - 1L) * lens))]));
+                            }
+
+#line 202 "/Users/Matt/Documents/Masters/Dissertation/Quantum/Testing/Inital_Test/Program.qs"
+                            foreach (var i in new QRange(0L, (2L * len)))
+#line hidden
+                            {
+#line 203 "/Users/Matt/Documents/Masters/Dissertation/Quantum/Testing/Inital_Test/Program.qs"
+                                MicrosoftQuantumIntrinsicSWAP.Apply((qTs2[((curReg * ((2L * len) + 1L)) + i)], qTs2[(i + ((origNumAnc - 1L) * ((2L * len) + 1L)))]));
+                            }
+
+#line 205 "/Users/Matt/Documents/Masters/Dissertation/Quantum/Testing/Inital_Test/Program.qs"
+                            MicrosoftQuantumIntrinsicSWAP.Apply((C1[curReg], C1[(origNumAnc - 1L)]));
+#line 206 "/Users/Matt/Documents/Masters/Dissertation/Quantum/Testing/Inital_Test/Program.qs"
+                            MicrosoftQuantumIntrinsicSWAP.Apply((anc1[curReg], anc1[(origNumAnc - 1L)]));
+#line 207 "/Users/Matt/Documents/Masters/Dissertation/Quantum/Testing/Inital_Test/Program.qs"
+                            MicrosoftQuantumIntrinsicSWAP.Apply((anc2[curReg], anc2[(origNumAnc - 1L)]));
+                        }
+
+#line 210 "/Users/Matt/Documents/Masters/Dissertation/Quantum/Testing/Inital_Test/Program.qs"
+                        foreach (var q in new QRange(0L, (numAnc - 2L)))
+#line hidden
+                        {
+#line 211 "/Users/Matt/Documents/Masters/Dissertation/Quantum/Testing/Inital_Test/Program.qs"
+                            j = (q + curReg);
+#line 213 "/Users/Matt/Documents/Masters/Dissertation/Quantum/Testing/Inital_Test/Program.qs"
+                            if ((j == 0L))
+                            {
+#line 215 "/Users/Matt/Documents/Masters/Dissertation/Quantum/Testing/Inital_Test/Program.qs"
+                                MicrosoftQuantumIntrinsicX.Apply(r2[(len - 1L)]);
+#line 216 "/Users/Matt/Documents/Masters/Dissertation/Quantum/Testing/Inital_Test/Program.qs"
+                                MicrosoftQuantumIntrinsicX.Apply(s1[0L]);
+#line 217 "/Users/Matt/Documents/Masters/Dissertation/Quantum/Testing/Inital_Test/Program.qs"
+                                AddI.Apply((new Microsoft.Quantum.Arithmetic.LittleEndian(u), new Microsoft.Quantum.Arithmetic.LittleEndian(r1?.Slice(new QRange(0L, (len - 2L))))));
+                            }
+
+#line 220 "/Users/Matt/Documents/Masters/Dissertation/Quantum/Testing/Inital_Test/Program.qs"
+                            if ((j != 0L))
+                            {
+#line 221 "/Users/Matt/Documents/Masters/Dissertation/Quantum/Testing/Inital_Test/Program.qs"
+                                AddI.Apply((new Microsoft.Quantum.Arithmetic.LittleEndian(r1?.Slice(new QRange(((j * len) - len), ((j * len) - 1L)))), new Microsoft.Quantum.Arithmetic.LittleEndian(r1?.Slice(new QRange((j * len), (((j * len) + len) - 1L))))));
+#line 222 "/Users/Matt/Documents/Masters/Dissertation/Quantum/Testing/Inital_Test/Program.qs"
+                                AddI.Apply((new Microsoft.Quantum.Arithmetic.LittleEndian(r2?.Slice(new QRange(((j * len) - len), ((j * len) - 1L)))), new Microsoft.Quantum.Arithmetic.LittleEndian(r2?.Slice(new QRange((j * len), (((j * len) + len) - 1L))))));
+#line 224 "/Users/Matt/Documents/Masters/Dissertation/Quantum/Testing/Inital_Test/Program.qs"
+                                AddI.Apply((new Microsoft.Quantum.Arithmetic.LittleEndian(s1?.Slice(new QRange(((j * lens) - lens), ((j * lens) - 1L)))), new Microsoft.Quantum.Arithmetic.LittleEndian(s1?.Slice(new QRange((j * lens), (((j * lens) + lens) - 1L))))));
+#line 225 "/Users/Matt/Documents/Masters/Dissertation/Quantum/Testing/Inital_Test/Program.qs"
+                                AddI.Apply((new Microsoft.Quantum.Arithmetic.LittleEndian(s2?.Slice(new QRange(((j * lens) - lens), ((j * lens) - 1L)))), new Microsoft.Quantum.Arithmetic.LittleEndian(s2?.Slice(new QRange((j * lens), (((j * lens) + lens) - 1L))))));
+                            }
+
+#line 228 "/Users/Matt/Documents/Masters/Dissertation/Quantum/Testing/Inital_Test/Program.qs"
+                            CFCheck.Apply((r2?.Slice(new QRange((j * len), (((j * len) + len) - 1L))), s2?.Slice(new QRange((j * lens), (((j * lens) + lens) - 1L))), m, C1[j]));
+#line 229 "/Users/Matt/Documents/Masters/Dissertation/Quantum/Testing/Inital_Test/Program.qs"
+                            MicrosoftQuantumIntrinsicX.Apply(C1[j]);
+#line 230 "/Users/Matt/Documents/Masters/Dissertation/Quantum/Testing/Inital_Test/Program.qs"
+                            CFIteration.Controlled.Apply((new QArray<Qubit>(C1[j]), (r1?.Slice(new QRange((j * len), (((j * len) + len) - 1L))), r2?.Slice(new QRange((j * len), (((j * len) + len) - 1L))), s1?.Slice(new QRange((j * lens), (((j * lens) + lens) - 1L))), s2?.Slice(new QRange((j * lens), (((j * lens) + lens) - 1L))), quo?.Slice(new QRange((j * len), (((j * len) + len) - 1L))), qTs2?.Slice(new QRange((j * ((2L * len) + 1L)), (((j * ((2L * len) + 1L)) + ((2L * len) + 1L)) - 1L))), anc1[j], anc2[j])));
+                        }
+
+#line 234 "/Users/Matt/Documents/Masters/Dissertation/Quantum/Testing/Inital_Test/Program.qs"
+                        foreach (var k in new QRange(0L, (numAnc - 1L)))
+#line hidden
+                        {
+#line 235 "/Users/Matt/Documents/Masters/Dissertation/Quantum/Testing/Inital_Test/Program.qs"
+                            var i = ((numAnc - 1L) - k);
+#line 236 "/Users/Matt/Documents/Masters/Dissertation/Quantum/Testing/Inital_Test/Program.qs"
+                            j = (i + curReg);
+#line 238 "/Users/Matt/Documents/Masters/Dissertation/Quantum/Testing/Inital_Test/Program.qs"
+                            CFIteration.Adjoint.Controlled.Apply((new QArray<Qubit>(C1[j]), (r1?.Slice(new QRange((j * len), (((j * len) + len) - 1L))), r2?.Slice(new QRange((j * len), (((j * len) + len) - 1L))), s1?.Slice(new QRange((j * lens), (((j * lens) + lens) - 1L))), s2?.Slice(new QRange((j * lens), (((j * lens) + lens) - 1L))), quo?.Slice(new QRange((j * len), (((j * len) + len) - 1L))), qTs2?.Slice(new QRange((j * ((2L * len) + 1L)), (((j * ((2L * len) + 1L)) + ((2L * len) + 1L)) - 1L))), anc1[j], anc2[j])));
+#line 239 "/Users/Matt/Documents/Masters/Dissertation/Quantum/Testing/Inital_Test/Program.qs"
+                            MicrosoftQuantumIntrinsicX.Apply(C1[j]);
+#line 240 "/Users/Matt/Documents/Masters/Dissertation/Quantum/Testing/Inital_Test/Program.qs"
+                            CFCheck.Adjoint.Apply((r2?.Slice(new QRange((j * len), (((j * len) + len) - 1L))), s2?.Slice(new QRange((j * lens), (((j * lens) + lens) - 1L))), m, C1[j]));
+#line 244 "/Users/Matt/Documents/Masters/Dissertation/Quantum/Testing/Inital_Test/Program.qs"
+                            if ((j != 0L))
+                            {
+#line 245 "/Users/Matt/Documents/Masters/Dissertation/Quantum/Testing/Inital_Test/Program.qs"
+                                AddI.Adjoint.Apply((new Microsoft.Quantum.Arithmetic.LittleEndian(r1?.Slice(new QRange(((j * len) - len), ((j * len) - 1L)))), new Microsoft.Quantum.Arithmetic.LittleEndian(r1?.Slice(new QRange((j * len), (((j * len) + len) - 1L))))));
+#line 246 "/Users/Matt/Documents/Masters/Dissertation/Quantum/Testing/Inital_Test/Program.qs"
+                                AddI.Adjoint.Apply((new Microsoft.Quantum.Arithmetic.LittleEndian(r2?.Slice(new QRange(((j * len) - len), ((j * len) - 1L)))), new Microsoft.Quantum.Arithmetic.LittleEndian(r2?.Slice(new QRange((j * len), (((j * len) + len) - 1L))))));
+#line 248 "/Users/Matt/Documents/Masters/Dissertation/Quantum/Testing/Inital_Test/Program.qs"
+                                AddI.Adjoint.Apply((new Microsoft.Quantum.Arithmetic.LittleEndian(s1?.Slice(new QRange(((j * lens) - lens), ((j * lens) - 1L)))), new Microsoft.Quantum.Arithmetic.LittleEndian(s1?.Slice(new QRange((j * lens), (((j * lens) + lens) - 1L))))));
+#line 249 "/Users/Matt/Documents/Masters/Dissertation/Quantum/Testing/Inital_Test/Program.qs"
+                                AddI.Adjoint.Apply((new Microsoft.Quantum.Arithmetic.LittleEndian(s2?.Slice(new QRange(((j * lens) - lens), ((j * lens) - 1L)))), new Microsoft.Quantum.Arithmetic.LittleEndian(s2?.Slice(new QRange((j * lens), (((j * lens) + lens) - 1L))))));
+                            }
+
+#line 252 "/Users/Matt/Documents/Masters/Dissertation/Quantum/Testing/Inital_Test/Program.qs"
+                            if ((j == 0L))
+                            {
+#line 254 "/Users/Matt/Documents/Masters/Dissertation/Quantum/Testing/Inital_Test/Program.qs"
+                                MicrosoftQuantumIntrinsicX.Apply(r2[(len - 1L)]);
+#line 255 "/Users/Matt/Documents/Masters/Dissertation/Quantum/Testing/Inital_Test/Program.qs"
+                                MicrosoftQuantumIntrinsicX.Apply(s1[0L]);
+#line 256 "/Users/Matt/Documents/Masters/Dissertation/Quantum/Testing/Inital_Test/Program.qs"
+                                AddI.Adjoint.Apply((new Microsoft.Quantum.Arithmetic.LittleEndian(u), new Microsoft.Quantum.Arithmetic.LittleEndian(r1?.Slice(new QRange(0L, (len - 2L))))));
+                            }
+                        }
+
+                        if ((numAnc == origNumAnc))
+                        {
+                            break;
+                        }
+                        else
+                        {
+                        }
+                    }
+                }
+#line hidden
+                catch
+                {
+                    __arg1__ = false;
+                    throw;
+                }
+#line hidden
+                finally
+                {
+                    if (__arg1__)
+                    {
+#line hidden
+                        Release.Apply(r1);
+#line hidden
+                        Release.Apply(r2);
+#line hidden
+                        Release.Apply(s1);
+#line hidden
+                        Release.Apply(s2);
+#line hidden
+                        Release.Apply(quo);
+#line hidden
+                        Release.Apply(qTs2);
+#line hidden
+                        Release.Apply(C1);
+#line hidden
+                        Release.Apply(anc1);
+#line hidden
+                        Release.Apply(anc2);
+                    }
+                }
+            }
+
+#line hidden
+            return QVoid.Instance;
+        }
+
+        ;
+        public override Func<(IQArray<Qubit>,(IQArray<Qubit>,IQArray<Qubit>,IQArray<Qubit>)), QVoid> ControlledBody => (__in__) =>
+        {
+            var (__controlQubits__,(p,m,u)) = __in__;
+#line 72 "/Users/Matt/Documents/Masters/Dissertation/Quantum/Testing/Inital_Test/Program.qs"
+            var len = u.Length;
+#line 72 "/Users/Matt/Documents/Masters/Dissertation/Quantum/Testing/Inital_Test/Program.qs"
+            var num_its = MicrosoftQuantumMathCeiling.Apply((1.44D * MicrosoftQuantumConvertIntAsDouble.Apply((len + 1L))));
+#line 72 "/Users/Matt/Documents/Masters/Dissertation/Quantum/Testing/Inital_Test/Program.qs"
+            var numAnc = 0L;
+#line 72 "/Users/Matt/Documents/Masters/Dissertation/Quantum/Testing/Inital_Test/Program.qs"
+            var sum = 0L;
+#line 72 "/Users/Matt/Documents/Masters/Dissertation/Quantum/Testing/Inital_Test/Program.qs"
+            var add = 1L;
+#line 72 "/Users/Matt/Documents/Masters/Dissertation/Quantum/Testing/Inital_Test/Program.qs"
+            while (true)
+            {
+#line 72 "/Users/Matt/Documents/Masters/Dissertation/Quantum/Testing/Inital_Test/Program.qs"
+                sum = (sum + add);
+#line 72 "/Users/Matt/Documents/Masters/Dissertation/Quantum/Testing/Inital_Test/Program.qs"
+                add = (add + 1L);
+#line 72 "/Users/Matt/Documents/Masters/Dissertation/Quantum/Testing/Inital_Test/Program.qs"
+                numAnc = (numAnc + 1L);
+                if ((num_its <= sum))
+                {
+                    break;
+                }
+                else
+                {
+                }
+            }
+
+#line 72 "/Users/Matt/Documents/Masters/Dissertation/Quantum/Testing/Inital_Test/Program.qs"
+            var origNumAnc = numAnc;
+#line 72 "/Users/Matt/Documents/Masters/Dissertation/Quantum/Testing/Inital_Test/Program.qs"
+            {
+#line 72 "/Users/Matt/Documents/Masters/Dissertation/Quantum/Testing/Inital_Test/Program.qs"
+                var (r1,r2,s1,s2,quo,qTs2,C1,anc1,anc2) = (Allocate.Apply(((len + 1L) * numAnc)), Allocate.Apply(((len + 1L) * numAnc)), Allocate.Apply(((len + 2L) * numAnc)), Allocate.Apply(((len + 2L) * numAnc)), Allocate.Apply(((len + 1L) * numAnc)), Allocate.Apply((((2L * (len + 1L)) + 1L) * numAnc)), Allocate.Apply(numAnc), Allocate.Apply(numAnc), Allocate.Apply(numAnc));
+#line hidden
+                bool __arg1__ = true;
+                try
+                {
+#line 72 "/Users/Matt/Documents/Masters/Dissertation/Quantum/Testing/Inital_Test/Program.qs"
+                    len = (len + 1L);
+#line 72 "/Users/Matt/Documents/Masters/Dissertation/Quantum/Testing/Inital_Test/Program.qs"
+                    var lens = (len + 1L);
+#line 72 "/Users/Matt/Documents/Masters/Dissertation/Quantum/Testing/Inital_Test/Program.qs"
+                    var curReg = 0L;
+#line 72 "/Users/Matt/Documents/Masters/Dissertation/Quantum/Testing/Inital_Test/Program.qs"
+                    var curr = 0L;
+#line 72 "/Users/Matt/Documents/Masters/Dissertation/Quantum/Testing/Inital_Test/Program.qs"
+                    var j = 0L;
+#line 72 "/Users/Matt/Documents/Masters/Dissertation/Quantum/Testing/Inital_Test/Program.qs"
+                    while (true)
+                    {
+#line 72 "/Users/Matt/Documents/Masters/Dissertation/Quantum/Testing/Inital_Test/Program.qs"
+                        foreach (var i in new QRange(0L, (numAnc - 1L)))
+#line hidden
+                        {
+#line 72 "/Users/Matt/Documents/Masters/Dissertation/Quantum/Testing/Inital_Test/Program.qs"
+                            j = (i + curReg);
+#line 72 "/Users/Matt/Documents/Masters/Dissertation/Quantum/Testing/Inital_Test/Program.qs"
+                            if ((j == 0L))
+                            {
+#line 72 "/Users/Matt/Documents/Masters/Dissertation/Quantum/Testing/Inital_Test/Program.qs"
+                                MicrosoftQuantumIntrinsicX.Controlled.Apply((__controlQubits__, r2[(len - 1L)]));
+#line 72 "/Users/Matt/Documents/Masters/Dissertation/Quantum/Testing/Inital_Test/Program.qs"
+                                MicrosoftQuantumIntrinsicX.Controlled.Apply((__controlQubits__, s1[0L]));
+#line 72 "/Users/Matt/Documents/Masters/Dissertation/Quantum/Testing/Inital_Test/Program.qs"
+                                AddI.Controlled.Apply((__controlQubits__, (new Microsoft.Quantum.Arithmetic.LittleEndian(u), new Microsoft.Quantum.Arithmetic.LittleEndian(r1?.Slice(new QRange(0L, (len - 2L)))))));
+                            }
+
+#line 72 "/Users/Matt/Documents/Masters/Dissertation/Quantum/Testing/Inital_Test/Program.qs"
+                            if ((j != 0L))
+                            {
+#line 72 "/Users/Matt/Documents/Masters/Dissertation/Quantum/Testing/Inital_Test/Program.qs"
+                                AddI.Controlled.Apply((__controlQubits__, (new Microsoft.Quantum.Arithmetic.LittleEndian(r1?.Slice(new QRange(((j * len) - len), ((j * len) - 1L)))), new Microsoft.Quantum.Arithmetic.LittleEndian(r1?.Slice(new QRange((j * len), (((j * len) + len) - 1L)))))));
+#line 72 "/Users/Matt/Documents/Masters/Dissertation/Quantum/Testing/Inital_Test/Program.qs"
+                                AddI.Controlled.Apply((__controlQubits__, (new Microsoft.Quantum.Arithmetic.LittleEndian(r2?.Slice(new QRange(((j * len) - len), ((j * len) - 1L)))), new Microsoft.Quantum.Arithmetic.LittleEndian(r2?.Slice(new QRange((j * len), (((j * len) + len) - 1L)))))));
+#line 72 "/Users/Matt/Documents/Masters/Dissertation/Quantum/Testing/Inital_Test/Program.qs"
+                                AddI.Controlled.Apply((__controlQubits__, (new Microsoft.Quantum.Arithmetic.LittleEndian(s1?.Slice(new QRange(((j * lens) - lens), ((j * lens) - 1L)))), new Microsoft.Quantum.Arithmetic.LittleEndian(s1?.Slice(new QRange((j * lens), (((j * lens) + lens) - 1L)))))));
+#line 72 "/Users/Matt/Documents/Masters/Dissertation/Quantum/Testing/Inital_Test/Program.qs"
+                                AddI.Controlled.Apply((__controlQubits__, (new Microsoft.Quantum.Arithmetic.LittleEndian(s2?.Slice(new QRange(((j * lens) - lens), ((j * lens) - 1L)))), new Microsoft.Quantum.Arithmetic.LittleEndian(s2?.Slice(new QRange((j * lens), (((j * lens) + lens) - 1L)))))));
+                            }
+
+#line 72 "/Users/Matt/Documents/Masters/Dissertation/Quantum/Testing/Inital_Test/Program.qs"
+                            CFCheck.Controlled.Apply((__controlQubits__, (r2?.Slice(new QRange((j * len), (((j * len) + len) - 1L))), s2?.Slice(new QRange((j * lens), (((j * lens) + lens) - 1L))), m, C1[j])));
+#line 72 "/Users/Matt/Documents/Masters/Dissertation/Quantum/Testing/Inital_Test/Program.qs"
+                            MicrosoftQuantumIntrinsicX.Controlled.Apply((__controlQubits__, C1[j]));
+#line 72 "/Users/Matt/Documents/Masters/Dissertation/Quantum/Testing/Inital_Test/Program.qs"
+                            CFIteration.Controlled.Controlled.Apply((__controlQubits__, (new QArray<Qubit>(C1[j]), (r1?.Slice(new QRange((j * len), (((j * len) + len) - 1L))), r2?.Slice(new QRange((j * len), (((j * len) + len) - 1L))), s1?.Slice(new QRange((j * lens), (((j * lens) + lens) - 1L))), s2?.Slice(new QRange((j * lens), (((j * lens) + lens) - 1L))), quo?.Slice(new QRange((j * len), (((j * len) + len) - 1L))), qTs2?.Slice(new QRange((j * ((2L * len) + 1L)), (((j * ((2L * len) + 1L)) + ((2L * len) + 1L)) - 1L))), anc1[j], anc2[j]))));
+#line 72 "/Users/Matt/Documents/Masters/Dissertation/Quantum/Testing/Inital_Test/Program.qs"
+                            if ((((i + curr) + 1L) == num_its))
+                            {
+#line 72 "/Users/Matt/Documents/Masters/Dissertation/Quantum/Testing/Inital_Test/Program.qs"
+                                CFExtractRes.Controlled.Apply((__controlQubits__, (p, m, r2?.Slice(new QRange((j * len), (((j * len) + len) - 1L))), s1?.Slice(new QRange((j * lens), (((j * lens) + lens) - 1L))), s2?.Slice(new QRange((j * lens), (((j * lens) + lens) - 1L))))));
+                            }
+                        }
+
+#line 72 "/Users/Matt/Documents/Masters/Dissertation/Quantum/Testing/Inital_Test/Program.qs"
+                        var q = 0L;
+#line 72 "/Users/Matt/Documents/Masters/Dissertation/Quantum/Testing/Inital_Test/Program.qs"
+                        foreach (var k in new QRange(0L, (numAnc - 2L)))
+#line hidden
+                        {
+#line 72 "/Users/Matt/Documents/Masters/Dissertation/Quantum/Testing/Inital_Test/Program.qs"
+                            q = ((numAnc - 2L) - k);
+#line 72 "/Users/Matt/Documents/Masters/Dissertation/Quantum/Testing/Inital_Test/Program.qs"
+                            j = (q + curReg);
+#line 72 "/Users/Matt/Documents/Masters/Dissertation/Quantum/Testing/Inital_Test/Program.qs"
+                            CFIteration.Adjoint.Controlled.Controlled.Apply((__controlQubits__, (new QArray<Qubit>(C1[j]), (r1?.Slice(new QRange((j * len), (((j * len) + len) - 1L))), r2?.Slice(new QRange((j * len), (((j * len) + len) - 1L))), s1?.Slice(new QRange((j * lens), (((j * lens) + lens) - 1L))), s2?.Slice(new QRange((j * lens), (((j * lens) + lens) - 1L))), quo?.Slice(new QRange((j * len), (((j * len) + len) - 1L))), qTs2?.Slice(new QRange((j * ((2L * len) + 1L)), (((j * ((2L * len) + 1L)) + ((2L * len) + 1L)) - 1L))), anc1[j], anc2[j]))));
+#line 72 "/Users/Matt/Documents/Masters/Dissertation/Quantum/Testing/Inital_Test/Program.qs"
+                            MicrosoftQuantumIntrinsicX.Controlled.Apply((__controlQubits__, C1[j]));
+#line 72 "/Users/Matt/Documents/Masters/Dissertation/Quantum/Testing/Inital_Test/Program.qs"
+                            CFCheck.Adjoint.Controlled.Apply((__controlQubits__, (r2?.Slice(new QRange((j * len), (((j * len) + len) - 1L))), s2?.Slice(new QRange((j * lens), (((j * lens) + lens) - 1L))), m, C1[j])));
+#line 72 "/Users/Matt/Documents/Masters/Dissertation/Quantum/Testing/Inital_Test/Program.qs"
+                            if ((j != 0L))
+                            {
+#line 72 "/Users/Matt/Documents/Masters/Dissertation/Quantum/Testing/Inital_Test/Program.qs"
+                                AddI.Adjoint.Controlled.Apply((__controlQubits__, (new Microsoft.Quantum.Arithmetic.LittleEndian(r1?.Slice(new QRange(((j * len) - len), ((j * len) - 1L)))), new Microsoft.Quantum.Arithmetic.LittleEndian(r1?.Slice(new QRange((j * len), (((j * len) + len) - 1L)))))));
+#line 72 "/Users/Matt/Documents/Masters/Dissertation/Quantum/Testing/Inital_Test/Program.qs"
+                                AddI.Adjoint.Controlled.Apply((__controlQubits__, (new Microsoft.Quantum.Arithmetic.LittleEndian(r2?.Slice(new QRange(((j * len) - len), ((j * len) - 1L)))), new Microsoft.Quantum.Arithmetic.LittleEndian(r2?.Slice(new QRange((j * len), (((j * len) + len) - 1L)))))));
+#line 72 "/Users/Matt/Documents/Masters/Dissertation/Quantum/Testing/Inital_Test/Program.qs"
+                                AddI.Adjoint.Controlled.Apply((__controlQubits__, (new Microsoft.Quantum.Arithmetic.LittleEndian(s1?.Slice(new QRange(((j * lens) - lens), ((j * lens) - 1L)))), new Microsoft.Quantum.Arithmetic.LittleEndian(s1?.Slice(new QRange((j * lens), (((j * lens) + lens) - 1L)))))));
+#line 72 "/Users/Matt/Documents/Masters/Dissertation/Quantum/Testing/Inital_Test/Program.qs"
+                                AddI.Adjoint.Controlled.Apply((__controlQubits__, (new Microsoft.Quantum.Arithmetic.LittleEndian(s2?.Slice(new QRange(((j * lens) - lens), ((j * lens) - 1L)))), new Microsoft.Quantum.Arithmetic.LittleEndian(s2?.Slice(new QRange((j * lens), (((j * lens) + lens) - 1L)))))));
+                            }
+
+#line 72 "/Users/Matt/Documents/Masters/Dissertation/Quantum/Testing/Inital_Test/Program.qs"
+                            if ((j == 0L))
+                            {
+#line 72 "/Users/Matt/Documents/Masters/Dissertation/Quantum/Testing/Inital_Test/Program.qs"
+                                MicrosoftQuantumIntrinsicX.Controlled.Apply((__controlQubits__, r2[(len - 1L)]));
+#line 72 "/Users/Matt/Documents/Masters/Dissertation/Quantum/Testing/Inital_Test/Program.qs"
+                                MicrosoftQuantumIntrinsicX.Controlled.Apply((__controlQubits__, s1[0L]));
+#line 72 "/Users/Matt/Documents/Masters/Dissertation/Quantum/Testing/Inital_Test/Program.qs"
+                                AddI.Adjoint.Controlled.Apply((__controlQubits__, (new Microsoft.Quantum.Arithmetic.LittleEndian(u), new Microsoft.Quantum.Arithmetic.LittleEndian(r1?.Slice(new QRange(0L, (len - 2L)))))));
+                            }
+                        }
+
+#line 72 "/Users/Matt/Documents/Masters/Dissertation/Quantum/Testing/Inital_Test/Program.qs"
+                        if ((curReg != (origNumAnc - 1L)))
+                        {
+#line 72 "/Users/Matt/Documents/Masters/Dissertation/Quantum/Testing/Inital_Test/Program.qs"
+                            foreach (var i in new QRange(0L, (len - 1L)))
+#line hidden
+                            {
+#line 72 "/Users/Matt/Documents/Masters/Dissertation/Quantum/Testing/Inital_Test/Program.qs"
+                                MicrosoftQuantumIntrinsicSWAP.Controlled.Apply((__controlQubits__, (r1[((curReg * len) + i)], r1[(i + ((origNumAnc - 1L) * len))])));
+#line 72 "/Users/Matt/Documents/Masters/Dissertation/Quantum/Testing/Inital_Test/Program.qs"
+                                MicrosoftQuantumIntrinsicSWAP.Controlled.Apply((__controlQubits__, (r2[((curReg * len) + i)], r2[(i + ((origNumAnc - 1L) * len))])));
+#line 72 "/Users/Matt/Documents/Masters/Dissertation/Quantum/Testing/Inital_Test/Program.qs"
+                                MicrosoftQuantumIntrinsicSWAP.Controlled.Apply((__controlQubits__, (quo[((curReg * len) + i)], quo[(i + ((origNumAnc - 1L) * len))])));
+                            }
+
+#line 72 "/Users/Matt/Documents/Masters/Dissertation/Quantum/Testing/Inital_Test/Program.qs"
+                            foreach (var i in new QRange(0L, (lens - 1L)))
+#line hidden
+                            {
+#line 72 "/Users/Matt/Documents/Masters/Dissertation/Quantum/Testing/Inital_Test/Program.qs"
+                                MicrosoftQuantumIntrinsicSWAP.Controlled.Apply((__controlQubits__, (s1[((curReg * lens) + i)], s1[(i + ((origNumAnc - 1L) * lens))])));
+#line 72 "/Users/Matt/Documents/Masters/Dissertation/Quantum/Testing/Inital_Test/Program.qs"
+                                MicrosoftQuantumIntrinsicSWAP.Controlled.Apply((__controlQubits__, (s2[((curReg * lens) + i)], s2[(i + ((origNumAnc - 1L) * lens))])));
+                            }
+
+#line 72 "/Users/Matt/Documents/Masters/Dissertation/Quantum/Testing/Inital_Test/Program.qs"
+                            foreach (var i in new QRange(0L, (2L * len)))
+#line hidden
+                            {
+#line 72 "/Users/Matt/Documents/Masters/Dissertation/Quantum/Testing/Inital_Test/Program.qs"
+                                MicrosoftQuantumIntrinsicSWAP.Controlled.Apply((__controlQubits__, (qTs2[((curReg * ((2L * len) + 1L)) + i)], qTs2[(i + ((origNumAnc - 1L) * ((2L * len) + 1L)))])));
+                            }
+
+#line 72 "/Users/Matt/Documents/Masters/Dissertation/Quantum/Testing/Inital_Test/Program.qs"
+                            MicrosoftQuantumIntrinsicSWAP.Controlled.Apply((__controlQubits__, (C1[curReg], C1[(origNumAnc - 1L)])));
+#line 72 "/Users/Matt/Documents/Masters/Dissertation/Quantum/Testing/Inital_Test/Program.qs"
+                            MicrosoftQuantumIntrinsicSWAP.Controlled.Apply((__controlQubits__, (anc1[curReg], anc1[(origNumAnc - 1L)])));
+#line 72 "/Users/Matt/Documents/Masters/Dissertation/Quantum/Testing/Inital_Test/Program.qs"
+                            MicrosoftQuantumIntrinsicSWAP.Controlled.Apply((__controlQubits__, (anc2[curReg], anc2[(origNumAnc - 1L)])));
+                        }
+
+#line 72 "/Users/Matt/Documents/Masters/Dissertation/Quantum/Testing/Inital_Test/Program.qs"
+                        curr = (curr + numAnc);
+#line 72 "/Users/Matt/Documents/Masters/Dissertation/Quantum/Testing/Inital_Test/Program.qs"
+                        numAnc = (numAnc - 1L);
+#line 72 "/Users/Matt/Documents/Masters/Dissertation/Quantum/Testing/Inital_Test/Program.qs"
+                        curReg = (curReg + 1L);
+                        if ((numAnc == 0L))
+                        {
+                            break;
+                        }
+                        else
+                        {
+                        }
+                    }
+
+#line 72 "/Users/Matt/Documents/Masters/Dissertation/Quantum/Testing/Inital_Test/Program.qs"
+                    while (true)
+                    {
+#line 72 "/Users/Matt/Documents/Masters/Dissertation/Quantum/Testing/Inital_Test/Program.qs"
+                        curReg = (curReg - 1L);
+#line 72 "/Users/Matt/Documents/Masters/Dissertation/Quantum/Testing/Inital_Test/Program.qs"
+                        numAnc = (numAnc + 1L);
+#line 72 "/Users/Matt/Documents/Masters/Dissertation/Quantum/Testing/Inital_Test/Program.qs"
+                        curr = (curr - numAnc);
+#line 72 "/Users/Matt/Documents/Masters/Dissertation/Quantum/Testing/Inital_Test/Program.qs"
+                        if ((curReg != (origNumAnc - 1L)))
+                        {
+#line 72 "/Users/Matt/Documents/Masters/Dissertation/Quantum/Testing/Inital_Test/Program.qs"
+                            foreach (var i in new QRange(0L, (len - 1L)))
+#line hidden
+                            {
+#line 72 "/Users/Matt/Documents/Masters/Dissertation/Quantum/Testing/Inital_Test/Program.qs"
+                                MicrosoftQuantumIntrinsicSWAP.Controlled.Apply((__controlQubits__, (r1[((curReg * len) + i)], r1[(i + ((origNumAnc - 1L) * len))])));
+#line 72 "/Users/Matt/Documents/Masters/Dissertation/Quantum/Testing/Inital_Test/Program.qs"
+                                MicrosoftQuantumIntrinsicSWAP.Controlled.Apply((__controlQubits__, (r2[((curReg * len) + i)], r2[(i + ((origNumAnc - 1L) * len))])));
+#line 72 "/Users/Matt/Documents/Masters/Dissertation/Quantum/Testing/Inital_Test/Program.qs"
+                                MicrosoftQuantumIntrinsicSWAP.Controlled.Apply((__controlQubits__, (quo[((curReg * len) + i)], quo[(i + ((origNumAnc - 1L) * len))])));
+                            }
+
+#line 72 "/Users/Matt/Documents/Masters/Dissertation/Quantum/Testing/Inital_Test/Program.qs"
+                            foreach (var i in new QRange(0L, (lens - 1L)))
+#line hidden
+                            {
+#line 72 "/Users/Matt/Documents/Masters/Dissertation/Quantum/Testing/Inital_Test/Program.qs"
+                                MicrosoftQuantumIntrinsicSWAP.Controlled.Apply((__controlQubits__, (s1[((curReg * lens) + i)], s1[(i + ((origNumAnc - 1L) * lens))])));
+#line 72 "/Users/Matt/Documents/Masters/Dissertation/Quantum/Testing/Inital_Test/Program.qs"
+                                MicrosoftQuantumIntrinsicSWAP.Controlled.Apply((__controlQubits__, (s2[((curReg * lens) + i)], s2[(i + ((origNumAnc - 1L) * lens))])));
+                            }
+
+#line 72 "/Users/Matt/Documents/Masters/Dissertation/Quantum/Testing/Inital_Test/Program.qs"
+                            foreach (var i in new QRange(0L, (2L * len)))
+#line hidden
+                            {
+#line 72 "/Users/Matt/Documents/Masters/Dissertation/Quantum/Testing/Inital_Test/Program.qs"
+                                MicrosoftQuantumIntrinsicSWAP.Controlled.Apply((__controlQubits__, (qTs2[((curReg * ((2L * len) + 1L)) + i)], qTs2[(i + ((origNumAnc - 1L) * ((2L * len) + 1L)))])));
+                            }
+
+#line 72 "/Users/Matt/Documents/Masters/Dissertation/Quantum/Testing/Inital_Test/Program.qs"
+                            MicrosoftQuantumIntrinsicSWAP.Controlled.Apply((__controlQubits__, (C1[curReg], C1[(origNumAnc - 1L)])));
+#line 72 "/Users/Matt/Documents/Masters/Dissertation/Quantum/Testing/Inital_Test/Program.qs"
+                            MicrosoftQuantumIntrinsicSWAP.Controlled.Apply((__controlQubits__, (anc1[curReg], anc1[(origNumAnc - 1L)])));
+#line 72 "/Users/Matt/Documents/Masters/Dissertation/Quantum/Testing/Inital_Test/Program.qs"
+                            MicrosoftQuantumIntrinsicSWAP.Controlled.Apply((__controlQubits__, (anc2[curReg], anc2[(origNumAnc - 1L)])));
+                        }
+
+#line 72 "/Users/Matt/Documents/Masters/Dissertation/Quantum/Testing/Inital_Test/Program.qs"
+                        foreach (var q in new QRange(0L, (numAnc - 2L)))
+#line hidden
+                        {
+#line 72 "/Users/Matt/Documents/Masters/Dissertation/Quantum/Testing/Inital_Test/Program.qs"
+                            j = (q + curReg);
+#line 72 "/Users/Matt/Documents/Masters/Dissertation/Quantum/Testing/Inital_Test/Program.qs"
+                            if ((j == 0L))
+                            {
+#line 72 "/Users/Matt/Documents/Masters/Dissertation/Quantum/Testing/Inital_Test/Program.qs"
+                                MicrosoftQuantumIntrinsicX.Controlled.Apply((__controlQubits__, r2[(len - 1L)]));
+#line 72 "/Users/Matt/Documents/Masters/Dissertation/Quantum/Testing/Inital_Test/Program.qs"
+                                MicrosoftQuantumIntrinsicX.Controlled.Apply((__controlQubits__, s1[0L]));
+#line 72 "/Users/Matt/Documents/Masters/Dissertation/Quantum/Testing/Inital_Test/Program.qs"
+                                AddI.Controlled.Apply((__controlQubits__, (new Microsoft.Quantum.Arithmetic.LittleEndian(u), new Microsoft.Quantum.Arithmetic.LittleEndian(r1?.Slice(new QRange(0L, (len - 2L)))))));
+                            }
+
+#line 72 "/Users/Matt/Documents/Masters/Dissertation/Quantum/Testing/Inital_Test/Program.qs"
+                            if ((j != 0L))
+                            {
+#line 72 "/Users/Matt/Documents/Masters/Dissertation/Quantum/Testing/Inital_Test/Program.qs"
+                                AddI.Controlled.Apply((__controlQubits__, (new Microsoft.Quantum.Arithmetic.LittleEndian(r1?.Slice(new QRange(((j * len) - len), ((j * len) - 1L)))), new Microsoft.Quantum.Arithmetic.LittleEndian(r1?.Slice(new QRange((j * len), (((j * len) + len) - 1L)))))));
+#line 72 "/Users/Matt/Documents/Masters/Dissertation/Quantum/Testing/Inital_Test/Program.qs"
+                                AddI.Controlled.Apply((__controlQubits__, (new Microsoft.Quantum.Arithmetic.LittleEndian(r2?.Slice(new QRange(((j * len) - len), ((j * len) - 1L)))), new Microsoft.Quantum.Arithmetic.LittleEndian(r2?.Slice(new QRange((j * len), (((j * len) + len) - 1L)))))));
+#line 72 "/Users/Matt/Documents/Masters/Dissertation/Quantum/Testing/Inital_Test/Program.qs"
+                                AddI.Controlled.Apply((__controlQubits__, (new Microsoft.Quantum.Arithmetic.LittleEndian(s1?.Slice(new QRange(((j * lens) - lens), ((j * lens) - 1L)))), new Microsoft.Quantum.Arithmetic.LittleEndian(s1?.Slice(new QRange((j * lens), (((j * lens) + lens) - 1L)))))));
+#line 72 "/Users/Matt/Documents/Masters/Dissertation/Quantum/Testing/Inital_Test/Program.qs"
+                                AddI.Controlled.Apply((__controlQubits__, (new Microsoft.Quantum.Arithmetic.LittleEndian(s2?.Slice(new QRange(((j * lens) - lens), ((j * lens) - 1L)))), new Microsoft.Quantum.Arithmetic.LittleEndian(s2?.Slice(new QRange((j * lens), (((j * lens) + lens) - 1L)))))));
+                            }
+
+#line 72 "/Users/Matt/Documents/Masters/Dissertation/Quantum/Testing/Inital_Test/Program.qs"
+                            CFCheck.Controlled.Apply((__controlQubits__, (r2?.Slice(new QRange((j * len), (((j * len) + len) - 1L))), s2?.Slice(new QRange((j * lens), (((j * lens) + lens) - 1L))), m, C1[j])));
+#line 72 "/Users/Matt/Documents/Masters/Dissertation/Quantum/Testing/Inital_Test/Program.qs"
+                            MicrosoftQuantumIntrinsicX.Controlled.Apply((__controlQubits__, C1[j]));
+#line 72 "/Users/Matt/Documents/Masters/Dissertation/Quantum/Testing/Inital_Test/Program.qs"
+                            CFIteration.Controlled.Controlled.Apply((__controlQubits__, (new QArray<Qubit>(C1[j]), (r1?.Slice(new QRange((j * len), (((j * len) + len) - 1L))), r2?.Slice(new QRange((j * len), (((j * len) + len) - 1L))), s1?.Slice(new QRange((j * lens), (((j * lens) + lens) - 1L))), s2?.Slice(new QRange((j * lens), (((j * lens) + lens) - 1L))), quo?.Slice(new QRange((j * len), (((j * len) + len) - 1L))), qTs2?.Slice(new QRange((j * ((2L * len) + 1L)), (((j * ((2L * len) + 1L)) + ((2L * len) + 1L)) - 1L))), anc1[j], anc2[j]))));
+                        }
+
+#line 72 "/Users/Matt/Documents/Masters/Dissertation/Quantum/Testing/Inital_Test/Program.qs"
+                        foreach (var k in new QRange(0L, (numAnc - 1L)))
+#line hidden
+                        {
+#line 72 "/Users/Matt/Documents/Masters/Dissertation/Quantum/Testing/Inital_Test/Program.qs"
+                            var i = ((numAnc - 1L) - k);
+#line 72 "/Users/Matt/Documents/Masters/Dissertation/Quantum/Testing/Inital_Test/Program.qs"
+                            j = (i + curReg);
+#line 72 "/Users/Matt/Documents/Masters/Dissertation/Quantum/Testing/Inital_Test/Program.qs"
+                            CFIteration.Adjoint.Controlled.Controlled.Apply((__controlQubits__, (new QArray<Qubit>(C1[j]), (r1?.Slice(new QRange((j * len), (((j * len) + len) - 1L))), r2?.Slice(new QRange((j * len), (((j * len) + len) - 1L))), s1?.Slice(new QRange((j * lens), (((j * lens) + lens) - 1L))), s2?.Slice(new QRange((j * lens), (((j * lens) + lens) - 1L))), quo?.Slice(new QRange((j * len), (((j * len) + len) - 1L))), qTs2?.Slice(new QRange((j * ((2L * len) + 1L)), (((j * ((2L * len) + 1L)) + ((2L * len) + 1L)) - 1L))), anc1[j], anc2[j]))));
+#line 72 "/Users/Matt/Documents/Masters/Dissertation/Quantum/Testing/Inital_Test/Program.qs"
+                            MicrosoftQuantumIntrinsicX.Controlled.Apply((__controlQubits__, C1[j]));
+#line 72 "/Users/Matt/Documents/Masters/Dissertation/Quantum/Testing/Inital_Test/Program.qs"
+                            CFCheck.Adjoint.Controlled.Apply((__controlQubits__, (r2?.Slice(new QRange((j * len), (((j * len) + len) - 1L))), s2?.Slice(new QRange((j * lens), (((j * lens) + lens) - 1L))), m, C1[j])));
+#line 72 "/Users/Matt/Documents/Masters/Dissertation/Quantum/Testing/Inital_Test/Program.qs"
+                            if ((j != 0L))
+                            {
+#line 72 "/Users/Matt/Documents/Masters/Dissertation/Quantum/Testing/Inital_Test/Program.qs"
+                                AddI.Adjoint.Controlled.Apply((__controlQubits__, (new Microsoft.Quantum.Arithmetic.LittleEndian(r1?.Slice(new QRange(((j * len) - len), ((j * len) - 1L)))), new Microsoft.Quantum.Arithmetic.LittleEndian(r1?.Slice(new QRange((j * len), (((j * len) + len) - 1L)))))));
+#line 72 "/Users/Matt/Documents/Masters/Dissertation/Quantum/Testing/Inital_Test/Program.qs"
+                                AddI.Adjoint.Controlled.Apply((__controlQubits__, (new Microsoft.Quantum.Arithmetic.LittleEndian(r2?.Slice(new QRange(((j * len) - len), ((j * len) - 1L)))), new Microsoft.Quantum.Arithmetic.LittleEndian(r2?.Slice(new QRange((j * len), (((j * len) + len) - 1L)))))));
+#line 72 "/Users/Matt/Documents/Masters/Dissertation/Quantum/Testing/Inital_Test/Program.qs"
+                                AddI.Adjoint.Controlled.Apply((__controlQubits__, (new Microsoft.Quantum.Arithmetic.LittleEndian(s1?.Slice(new QRange(((j * lens) - lens), ((j * lens) - 1L)))), new Microsoft.Quantum.Arithmetic.LittleEndian(s1?.Slice(new QRange((j * lens), (((j * lens) + lens) - 1L)))))));
+#line 72 "/Users/Matt/Documents/Masters/Dissertation/Quantum/Testing/Inital_Test/Program.qs"
+                                AddI.Adjoint.Controlled.Apply((__controlQubits__, (new Microsoft.Quantum.Arithmetic.LittleEndian(s2?.Slice(new QRange(((j * lens) - lens), ((j * lens) - 1L)))), new Microsoft.Quantum.Arithmetic.LittleEndian(s2?.Slice(new QRange((j * lens), (((j * lens) + lens) - 1L)))))));
+                            }
+
+#line 72 "/Users/Matt/Documents/Masters/Dissertation/Quantum/Testing/Inital_Test/Program.qs"
+                            if ((j == 0L))
+                            {
+#line 72 "/Users/Matt/Documents/Masters/Dissertation/Quantum/Testing/Inital_Test/Program.qs"
+                                MicrosoftQuantumIntrinsicX.Controlled.Apply((__controlQubits__, r2[(len - 1L)]));
+#line 72 "/Users/Matt/Documents/Masters/Dissertation/Quantum/Testing/Inital_Test/Program.qs"
+                                MicrosoftQuantumIntrinsicX.Controlled.Apply((__controlQubits__, s1[0L]));
+#line 72 "/Users/Matt/Documents/Masters/Dissertation/Quantum/Testing/Inital_Test/Program.qs"
+                                AddI.Adjoint.Controlled.Apply((__controlQubits__, (new Microsoft.Quantum.Arithmetic.LittleEndian(u), new Microsoft.Quantum.Arithmetic.LittleEndian(r1?.Slice(new QRange(0L, (len - 2L)))))));
+                            }
+                        }
+
+                        if ((numAnc == origNumAnc))
+                        {
+                            break;
+                        }
+                        else
+                        {
+                        }
+                    }
+                }
+#line hidden
+                catch
+                {
+                    __arg1__ = false;
+                    throw;
+                }
+#line hidden
+                finally
+                {
+                    if (__arg1__)
+                    {
+#line hidden
+                        Release.Apply(r1);
+#line hidden
+                        Release.Apply(r2);
+#line hidden
+                        Release.Apply(s1);
+#line hidden
+                        Release.Apply(s2);
+#line hidden
+                        Release.Apply(quo);
+#line hidden
+                        Release.Apply(qTs2);
+#line hidden
+                        Release.Apply(C1);
+#line hidden
+                        Release.Apply(anc1);
+#line hidden
+                        Release.Apply(anc2);
+                    }
+                }
+            }
 
 #line hidden
             return QVoid.Instance;
@@ -782,35 +1359,31 @@ namespace Quantum.Bell
         ;
         public override void Init()
         {
-            this.Allocate = this.Factory.Get<Allocate>(typeof(Microsoft.Quantum.Intrinsic.Allocate));
-            this.Release = this.Factory.Get<Release>(typeof(Microsoft.Quantum.Intrinsic.Release));
-            this.MicrosoftQuantumIntrinsicX = this.Factory.Get<IUnitary<Qubit>>(typeof(Microsoft.Quantum.Intrinsic.X));
             this.Length = this.Factory.Get<ICallable>(typeof(Microsoft.Quantum.Core.Length<>));
             this.MicrosoftQuantumMathCeiling = this.Factory.Get<ICallable<Double, Int64>>(typeof(Microsoft.Quantum.Math.Ceiling));
             this.MicrosoftQuantumConvertIntAsDouble = this.Factory.Get<ICallable<Int64, Double>>(typeof(Microsoft.Quantum.Convert.IntAsDouble));
-            this.MicrosoftQuantumCanonApplyToEachA = this.Factory.Get<IAdjointable>(typeof(Microsoft.Quantum.Canon.ApplyToEachA<>));
+            this.Allocate = this.Factory.Get<Allocate>(typeof(Microsoft.Quantum.Intrinsic.Allocate));
+            this.Release = this.Factory.Get<Release>(typeof(Microsoft.Quantum.Intrinsic.Release));
+            this.MicrosoftQuantumIntrinsicX = this.Factory.Get<IUnitary<Qubit>>(typeof(Microsoft.Quantum.Intrinsic.X));
             this.AddI = this.Factory.Get<IUnitary<(Microsoft.Quantum.Arithmetic.LittleEndian,Microsoft.Quantum.Arithmetic.LittleEndian)>>(typeof(AddI));
             this.MicrosoftQuantumArithmeticLittleEndian = this.Factory.Get<ICallable<IQArray<Qubit>, Microsoft.Quantum.Arithmetic.LittleEndian>>(typeof(Microsoft.Quantum.Arithmetic.LittleEndian));
-            this.CFCheck = this.Factory.Get<IAdjointable<(IQArray<Qubit>,IQArray<Qubit>,IQArray<Qubit>,Qubit)>>(typeof(CFCheck));
+            this.CFCheck = this.Factory.Get<IUnitary<(IQArray<Qubit>,IQArray<Qubit>,IQArray<Qubit>,Qubit)>>(typeof(CFCheck));
             this.CFIteration = this.Factory.Get<IUnitary<(IQArray<Qubit>,IQArray<Qubit>,IQArray<Qubit>,IQArray<Qubit>,IQArray<Qubit>,IQArray<Qubit>,Qubit,Qubit)>>(typeof(CFIteration));
-            this.Message = this.Factory.Get<ICallable<String, QVoid>>(typeof(Microsoft.Quantum.Intrinsic.Message));
-            this.CFExtractRes = this.Factory.Get<ICallable<(IQArray<Qubit>,IQArray<Qubit>,IQArray<Qubit>,IQArray<Qubit>,IQArray<Qubit>), QVoid>>(typeof(CFExtractRes));
+            this.CFExtractRes = this.Factory.Get<IControllable<(IQArray<Qubit>,IQArray<Qubit>,IQArray<Qubit>,IQArray<Qubit>,IQArray<Qubit>)>>(typeof(CFExtractRes));
             this.MicrosoftQuantumIntrinsicSWAP = this.Factory.Get<IUnitary<(Qubit,Qubit)>>(typeof(Microsoft.Quantum.Intrinsic.SWAP));
-            this.MicrosoftQuantumDiagnosticsDumpRegister = this.Factory.Get<ICallable>(typeof(Microsoft.Quantum.Diagnostics.DumpRegister<>));
-            this.MicrosoftQuantumDiagnosticsDumpMachine = this.Factory.Get<ICallable>(typeof(Microsoft.Quantum.Diagnostics.DumpMachine<>));
-            this.ResetAll = this.Factory.Get<ICallable<IQArray<Qubit>, QVoid>>(typeof(Microsoft.Quantum.Intrinsic.ResetAll));
         }
 
-        public override IApplyData __dataIn(QVoid data) => data;
+        public override IApplyData __dataIn((IQArray<Qubit>,IQArray<Qubit>,IQArray<Qubit>) data) => new In(data);
         public override IApplyData __dataOut(QVoid data) => data;
-        public static System.Threading.Tasks.Task<QVoid> Run(IOperationFactory __m__)
+        public static System.Threading.Tasks.Task<QVoid> Run(IOperationFactory __m__, IQArray<Qubit> p, IQArray<Qubit> m, IQArray<Qubit> u)
         {
-            return __m__.Run<TestCFC, QVoid, QVoid>(QVoid.Instance);
+            return __m__.Run<CFCMain, (IQArray<Qubit>,IQArray<Qubit>,IQArray<Qubit>), QVoid>((p, m, u));
         }
     }
 
-    [SourceLocation("/Users/Matt/Documents/Masters/Dissertation/Quantum/Testing/Inital_Test/Program.qs", OperationFunctor.Body, 230, 255)]
-    public partial class CFExtractRes : Operation<(IQArray<Qubit>,IQArray<Qubit>,IQArray<Qubit>,IQArray<Qubit>,IQArray<Qubit>), QVoid>, ICallable
+    [SourceLocation("/Users/Matt/Documents/Masters/Dissertation/Quantum/Testing/Inital_Test/Program.qs", OperationFunctor.Body, 274, 298)]
+    [SourceLocation("/Users/Matt/Documents/Masters/Dissertation/Quantum/Testing/Inital_Test/Program.qs", OperationFunctor.Controlled, 298, 330)]
+    public partial class CFExtractRes : Controllable<(IQArray<Qubit>,IQArray<Qubit>,IQArray<Qubit>,IQArray<Qubit>,IQArray<Qubit>)>, ICallable
     {
         public CFExtractRes(IOperationFactory m) : base(m)
         {
@@ -886,35 +1459,39 @@ namespace Quantum.Bell
             var (res,m,r2,s1,s2) = __in__;
 #line hidden
             {
-#line 233 "/Users/Matt/Documents/Masters/Dissertation/Quantum/Testing/Inital_Test/Program.qs"
-                var (c1,c2,c3) = (Allocate.Apply(), Allocate.Apply(), Allocate.Apply());
+#line 275 "/Users/Matt/Documents/Masters/Dissertation/Quantum/Testing/Inital_Test/Program.qs"
+                var (c1,c2,c3,mPad) = (Allocate.Apply(), Allocate.Apply(), Allocate.Apply(), Allocate.Apply());
 #line hidden
                 bool __arg1__ = true;
                 try
                 {
-#line 234 "/Users/Matt/Documents/Masters/Dissertation/Quantum/Testing/Inital_Test/Program.qs"
+#line 276 "/Users/Matt/Documents/Masters/Dissertation/Quantum/Testing/Inital_Test/Program.qs"
                     MicrosoftQuantumCanonApplyToEachA.Apply((MicrosoftQuantumIntrinsicX, r2));
-#line 235 "/Users/Matt/Documents/Masters/Dissertation/Quantum/Testing/Inital_Test/Program.qs"
+#line 277 "/Users/Matt/Documents/Masters/Dissertation/Quantum/Testing/Inital_Test/Program.qs"
                     MicrosoftQuantumIntrinsicX.Controlled.Apply((r2, c1));
-#line 236 "/Users/Matt/Documents/Masters/Dissertation/Quantum/Testing/Inital_Test/Program.qs"
-                    CompareGTI.Apply((new Microsoft.Quantum.Arithmetic.LittleEndian(m), new Microsoft.Quantum.Arithmetic.LittleEndian(s2?.Slice(new QRange(0L, (s2.Length - 2L)))), c2));
-#line 237 "/Users/Matt/Documents/Masters/Dissertation/Quantum/Testing/Inital_Test/Program.qs"
+#line 279 "/Users/Matt/Documents/Masters/Dissertation/Quantum/Testing/Inital_Test/Program.qs"
+                    CompareGTI.Apply((new Microsoft.Quantum.Arithmetic.LittleEndian(s2?.Slice(new QRange(0L, (s2.Length - 2L)))), new Microsoft.Quantum.Arithmetic.LittleEndian(QArray<Qubit>.Add(m, new QArray<Qubit>(mPad))), c2));
+#line 280 "/Users/Matt/Documents/Masters/Dissertation/Quantum/Testing/Inital_Test/Program.qs"
+                    MicrosoftQuantumIntrinsicX.Apply(c2);
+#line 282 "/Users/Matt/Documents/Masters/Dissertation/Quantum/Testing/Inital_Test/Program.qs"
                     MicrosoftQuantumIntrinsicX.Controlled.Apply((new QArray<Qubit>(c1, c2), c3));
-#line 238 "/Users/Matt/Documents/Masters/Dissertation/Quantum/Testing/Inital_Test/Program.qs"
+#line 283 "/Users/Matt/Documents/Masters/Dissertation/Quantum/Testing/Inital_Test/Program.qs"
                     MicrosoftQuantumIntrinsicX.Apply(c3);
-#line 240 "/Users/Matt/Documents/Masters/Dissertation/Quantum/Testing/Inital_Test/Program.qs"
-                    AddI.Controlled.Apply((new QArray<Qubit>(c1, c2), (new Microsoft.Quantum.Arithmetic.LittleEndian(s2?.Slice(new QRange(0L, (s2.Length - 2L)))), new Microsoft.Quantum.Arithmetic.LittleEndian(res))));
-#line 241 "/Users/Matt/Documents/Masters/Dissertation/Quantum/Testing/Inital_Test/Program.qs"
-                    AddI.Controlled.Apply((new QArray<Qubit>(c3), (new Microsoft.Quantum.Arithmetic.LittleEndian(s1?.Slice(new QRange(0L, (s1.Length - 2L)))), new Microsoft.Quantum.Arithmetic.LittleEndian(res))));
-#line 243 "/Users/Matt/Documents/Masters/Dissertation/Quantum/Testing/Inital_Test/Program.qs"
+#line 285 "/Users/Matt/Documents/Masters/Dissertation/Quantum/Testing/Inital_Test/Program.qs"
+                    AddI.Controlled.Apply((new QArray<Qubit>(c1, c2), (new Microsoft.Quantum.Arithmetic.LittleEndian(s2?.Slice(new QRange(0L, (s2.Length - 2L)))), new Microsoft.Quantum.Arithmetic.LittleEndian(QArray<Qubit>.Add(res, new QArray<Qubit>(mPad))))));
+#line 287 "/Users/Matt/Documents/Masters/Dissertation/Quantum/Testing/Inital_Test/Program.qs"
+                    AddI.Controlled.Apply((new QArray<Qubit>(c3), (new Microsoft.Quantum.Arithmetic.LittleEndian(s1?.Slice(new QRange(0L, (s1.Length - 2L)))), new Microsoft.Quantum.Arithmetic.LittleEndian(QArray<Qubit>.Add(res, new QArray<Qubit>(mPad))))));
+#line 289 "/Users/Matt/Documents/Masters/Dissertation/Quantum/Testing/Inital_Test/Program.qs"
                     MicrosoftQuantumIntrinsicX.Apply(c3);
-#line 244 "/Users/Matt/Documents/Masters/Dissertation/Quantum/Testing/Inital_Test/Program.qs"
+#line 290 "/Users/Matt/Documents/Masters/Dissertation/Quantum/Testing/Inital_Test/Program.qs"
                     MicrosoftQuantumIntrinsicX.Controlled.Apply((new QArray<Qubit>(c1, c2), c3));
-#line 245 "/Users/Matt/Documents/Masters/Dissertation/Quantum/Testing/Inital_Test/Program.qs"
-                    CompareGTI.Adjoint.Apply((new Microsoft.Quantum.Arithmetic.LittleEndian(m), new Microsoft.Quantum.Arithmetic.LittleEndian(s2?.Slice(new QRange(0L, (s2.Length - 2L)))), c2));
-#line 246 "/Users/Matt/Documents/Masters/Dissertation/Quantum/Testing/Inital_Test/Program.qs"
+#line 291 "/Users/Matt/Documents/Masters/Dissertation/Quantum/Testing/Inital_Test/Program.qs"
+                    MicrosoftQuantumIntrinsicX.Apply(c2);
+#line 292 "/Users/Matt/Documents/Masters/Dissertation/Quantum/Testing/Inital_Test/Program.qs"
+                    CompareGTI.Adjoint.Apply((new Microsoft.Quantum.Arithmetic.LittleEndian(s2?.Slice(new QRange(0L, (s2.Length - 2L)))), new Microsoft.Quantum.Arithmetic.LittleEndian(QArray<Qubit>.Add(m, new QArray<Qubit>(mPad))), c2));
+#line 294 "/Users/Matt/Documents/Masters/Dissertation/Quantum/Testing/Inital_Test/Program.qs"
                     MicrosoftQuantumIntrinsicX.Controlled.Apply((r2, c1));
-#line 247 "/Users/Matt/Documents/Masters/Dissertation/Quantum/Testing/Inital_Test/Program.qs"
+#line 295 "/Users/Matt/Documents/Masters/Dissertation/Quantum/Testing/Inital_Test/Program.qs"
                     MicrosoftQuantumCanonApplyToEachA.Apply((MicrosoftQuantumIntrinsicX, r2));
                 }
 #line hidden
@@ -934,6 +1511,76 @@ namespace Quantum.Bell
                         Release.Apply(c2);
 #line hidden
                         Release.Apply(c3);
+#line hidden
+                        Release.Apply(mPad);
+                    }
+                }
+            }
+
+#line hidden
+            return QVoid.Instance;
+        }
+
+        ;
+        public override Func<(IQArray<Qubit>,(IQArray<Qubit>,IQArray<Qubit>,IQArray<Qubit>,IQArray<Qubit>,IQArray<Qubit>)), QVoid> ControlledBody => (__in__) =>
+        {
+            var (cs,(res,m,r2,s1,s2)) = __in__;
+#line hidden
+            {
+#line 299 "/Users/Matt/Documents/Masters/Dissertation/Quantum/Testing/Inital_Test/Program.qs"
+                var (c1,c2,c3,mPad) = (Allocate.Apply(), Allocate.Apply(), Allocate.Apply(), Allocate.Apply());
+#line hidden
+                bool __arg1__ = true;
+                try
+                {
+#line 300 "/Users/Matt/Documents/Masters/Dissertation/Quantum/Testing/Inital_Test/Program.qs"
+                    MicrosoftQuantumCanonApplyToEachA.Apply((MicrosoftQuantumIntrinsicX, r2));
+#line 301 "/Users/Matt/Documents/Masters/Dissertation/Quantum/Testing/Inital_Test/Program.qs"
+                    MicrosoftQuantumIntrinsicX.Controlled.Apply((r2, c1));
+#line 303 "/Users/Matt/Documents/Masters/Dissertation/Quantum/Testing/Inital_Test/Program.qs"
+                    CompareGTI.Apply((new Microsoft.Quantum.Arithmetic.LittleEndian(s2?.Slice(new QRange(0L, (s2.Length - 2L)))), new Microsoft.Quantum.Arithmetic.LittleEndian(QArray<Qubit>.Add(m, new QArray<Qubit>(mPad))), c2));
+#line 304 "/Users/Matt/Documents/Masters/Dissertation/Quantum/Testing/Inital_Test/Program.qs"
+                    MicrosoftQuantumIntrinsicX.Apply(c2);
+#line 306 "/Users/Matt/Documents/Masters/Dissertation/Quantum/Testing/Inital_Test/Program.qs"
+                    MicrosoftQuantumIntrinsicX.Controlled.Apply((new QArray<Qubit>(c1, c2), c3));
+#line 307 "/Users/Matt/Documents/Masters/Dissertation/Quantum/Testing/Inital_Test/Program.qs"
+                    MicrosoftQuantumIntrinsicX.Apply(c3);
+#line 309 "/Users/Matt/Documents/Masters/Dissertation/Quantum/Testing/Inital_Test/Program.qs"
+                    AddI.Controlled.Apply((new QArray<Qubit>(c1, c2), (new Microsoft.Quantum.Arithmetic.LittleEndian(s2?.Slice(new QRange(0L, (s2.Length - 2L)))), new Microsoft.Quantum.Arithmetic.LittleEndian(QArray<Qubit>.Add(res, new QArray<Qubit>(mPad))))));
+#line 311 "/Users/Matt/Documents/Masters/Dissertation/Quantum/Testing/Inital_Test/Program.qs"
+                    AddI.Controlled.Apply((new QArray<Qubit>(c3), (new Microsoft.Quantum.Arithmetic.LittleEndian(s1?.Slice(new QRange(0L, (s1.Length - 2L)))), new Microsoft.Quantum.Arithmetic.LittleEndian(QArray<Qubit>.Add(res, new QArray<Qubit>(mPad))))));
+#line 313 "/Users/Matt/Documents/Masters/Dissertation/Quantum/Testing/Inital_Test/Program.qs"
+                    MicrosoftQuantumIntrinsicX.Apply(c3);
+#line 314 "/Users/Matt/Documents/Masters/Dissertation/Quantum/Testing/Inital_Test/Program.qs"
+                    MicrosoftQuantumIntrinsicX.Controlled.Apply((new QArray<Qubit>(c1, c2), c3));
+#line 315 "/Users/Matt/Documents/Masters/Dissertation/Quantum/Testing/Inital_Test/Program.qs"
+                    MicrosoftQuantumIntrinsicX.Apply(c2);
+#line 316 "/Users/Matt/Documents/Masters/Dissertation/Quantum/Testing/Inital_Test/Program.qs"
+                    CompareGTI.Adjoint.Apply((new Microsoft.Quantum.Arithmetic.LittleEndian(s2?.Slice(new QRange(0L, (s2.Length - 2L)))), new Microsoft.Quantum.Arithmetic.LittleEndian(QArray<Qubit>.Add(m, new QArray<Qubit>(mPad))), c2));
+#line 318 "/Users/Matt/Documents/Masters/Dissertation/Quantum/Testing/Inital_Test/Program.qs"
+                    MicrosoftQuantumIntrinsicX.Controlled.Apply((r2, c1));
+#line 319 "/Users/Matt/Documents/Masters/Dissertation/Quantum/Testing/Inital_Test/Program.qs"
+                    MicrosoftQuantumCanonApplyToEachA.Apply((MicrosoftQuantumIntrinsicX, r2));
+                }
+#line hidden
+                catch
+                {
+                    __arg1__ = false;
+                    throw;
+                }
+#line hidden
+                finally
+                {
+                    if (__arg1__)
+                    {
+#line hidden
+                        Release.Apply(c1);
+#line hidden
+                        Release.Apply(c2);
+#line hidden
+                        Release.Apply(c3);
+#line hidden
+                        Release.Apply(mPad);
                     }
                 }
             }
@@ -963,10 +1610,10 @@ namespace Quantum.Bell
         }
     }
 
-    [SourceLocation("/Users/Matt/Documents/Masters/Dissertation/Quantum/Testing/Inital_Test/Program.qs", OperationFunctor.Body, 255, 303)]
-    [SourceLocation("/Users/Matt/Documents/Masters/Dissertation/Quantum/Testing/Inital_Test/Program.qs", OperationFunctor.Adjoint, 255, 303)]
-    [SourceLocation("/Users/Matt/Documents/Masters/Dissertation/Quantum/Testing/Inital_Test/Program.qs", OperationFunctor.Controlled, 255, 303)]
-    [SourceLocation("/Users/Matt/Documents/Masters/Dissertation/Quantum/Testing/Inital_Test/Program.qs", OperationFunctor.ControlledAdjoint, 255, 303)]
+    [SourceLocation("/Users/Matt/Documents/Masters/Dissertation/Quantum/Testing/Inital_Test/Program.qs", OperationFunctor.Body, 330, 356)]
+    [SourceLocation("/Users/Matt/Documents/Masters/Dissertation/Quantum/Testing/Inital_Test/Program.qs", OperationFunctor.Adjoint, 330, 356)]
+    [SourceLocation("/Users/Matt/Documents/Masters/Dissertation/Quantum/Testing/Inital_Test/Program.qs", OperationFunctor.Controlled, 330, 356)]
+    [SourceLocation("/Users/Matt/Documents/Masters/Dissertation/Quantum/Testing/Inital_Test/Program.qs", OperationFunctor.ControlledAdjoint, 330, 356)]
     public partial class CFIteration : Unitary<(IQArray<Qubit>,IQArray<Qubit>,IQArray<Qubit>,IQArray<Qubit>,IQArray<Qubit>,IQArray<Qubit>,Qubit,Qubit)>, ICallable
     {
         public CFIteration(IOperationFactory m) : base(m)
@@ -1047,37 +1694,37 @@ namespace Quantum.Bell
         public override Func<(IQArray<Qubit>,IQArray<Qubit>,IQArray<Qubit>,IQArray<Qubit>,IQArray<Qubit>,IQArray<Qubit>,Qubit,Qubit), QVoid> Body => (__in__) =>
         {
             var (r1,r2,s1,s2,quo,qTs2,anc1,anc2) = __in__;
-#line 257 "/Users/Matt/Documents/Masters/Dissertation/Quantum/Testing/Inital_Test/Program.qs"
+#line 332 "/Users/Matt/Documents/Masters/Dissertation/Quantum/Testing/Inital_Test/Program.qs"
             var len = r1.Length;
 #line hidden
             {
-#line 258 "/Users/Matt/Documents/Masters/Dissertation/Quantum/Testing/Inital_Test/Program.qs"
+#line 333 "/Users/Matt/Documents/Masters/Dissertation/Quantum/Testing/Inital_Test/Program.qs"
                 var (s2Pad,quoS) = (Allocate.Apply((len + 1L)), Allocate.Apply());
 #line hidden
                 bool __arg1__ = true;
                 try
                 {
-#line 264 "/Users/Matt/Documents/Masters/Dissertation/Quantum/Testing/Inital_Test/Program.qs"
+#line 336 "/Users/Matt/Documents/Masters/Dissertation/Quantum/Testing/Inital_Test/Program.qs"
                     DivideI.Apply((new Microsoft.Quantum.Arithmetic.LittleEndian(r1), new Microsoft.Quantum.Arithmetic.LittleEndian(r2), new Microsoft.Quantum.Arithmetic.LittleEndian(quo)));
-#line 267 "/Users/Matt/Documents/Masters/Dissertation/Quantum/Testing/Inital_Test/Program.qs"
+#line 338 "/Users/Matt/Documents/Masters/Dissertation/Quantum/Testing/Inital_Test/Program.qs"
                     foreach (var i in new QRange(0L, (len - 1L)))
 #line hidden
                     {
-#line 268 "/Users/Matt/Documents/Masters/Dissertation/Quantum/Testing/Inital_Test/Program.qs"
+#line 339 "/Users/Matt/Documents/Masters/Dissertation/Quantum/Testing/Inital_Test/Program.qs"
                         MicrosoftQuantumIntrinsicSWAP.Apply((r1[i], r2[i]));
                     }
 
-#line 276 "/Users/Matt/Documents/Masters/Dissertation/Quantum/Testing/Inital_Test/Program.qs"
+#line 342 "/Users/Matt/Documents/Masters/Dissertation/Quantum/Testing/Inital_Test/Program.qs"
                     SignedMultiply.Apply((s2, QArray<Qubit>.Add(quo, new QArray<Qubit>(quoS)), qTs2));
-#line 279 "/Users/Matt/Documents/Masters/Dissertation/Quantum/Testing/Inital_Test/Program.qs"
+#line 344 "/Users/Matt/Documents/Masters/Dissertation/Quantum/Testing/Inital_Test/Program.qs"
                     foreach (var i in new QRange(0L, (s1.Length - 1L)))
 #line hidden
                     {
-#line 280 "/Users/Matt/Documents/Masters/Dissertation/Quantum/Testing/Inital_Test/Program.qs"
+#line 345 "/Users/Matt/Documents/Masters/Dissertation/Quantum/Testing/Inital_Test/Program.qs"
                         MicrosoftQuantumIntrinsicSWAP.Apply((s1[i], s2[i]));
                     }
 
-#line 290 "/Users/Matt/Documents/Masters/Dissertation/Quantum/Testing/Inital_Test/Program.qs"
+#line 348 "/Users/Matt/Documents/Masters/Dissertation/Quantum/Testing/Inital_Test/Program.qs"
                     SignedSubtract.Apply((QArray<Qubit>.Add(QArray<Qubit>.Add(s2?.Slice(new QRange(0L, (s2.Length - 2L))), s2Pad), new QArray<Qubit>(s2[(s2.Length - 1L)])), qTs2, anc1, anc2));
                 }
 #line hidden
@@ -1107,37 +1754,37 @@ namespace Quantum.Bell
         public override Func<(IQArray<Qubit>,IQArray<Qubit>,IQArray<Qubit>,IQArray<Qubit>,IQArray<Qubit>,IQArray<Qubit>,Qubit,Qubit), QVoid> AdjointBody => (__in__) =>
         {
             var (r1,r2,s1,s2,quo,qTs2,anc1,anc2) = __in__;
-#line 255 "/Users/Matt/Documents/Masters/Dissertation/Quantum/Testing/Inital_Test/Program.qs"
+#line 330 "/Users/Matt/Documents/Masters/Dissertation/Quantum/Testing/Inital_Test/Program.qs"
             var __qsVar0__len__ = r1.Length;
-#line 255 "/Users/Matt/Documents/Masters/Dissertation/Quantum/Testing/Inital_Test/Program.qs"
+#line 330 "/Users/Matt/Documents/Masters/Dissertation/Quantum/Testing/Inital_Test/Program.qs"
             {
-#line 255 "/Users/Matt/Documents/Masters/Dissertation/Quantum/Testing/Inital_Test/Program.qs"
+#line 330 "/Users/Matt/Documents/Masters/Dissertation/Quantum/Testing/Inital_Test/Program.qs"
                 var (__qsVar1__s2Pad__,__qsVar2__quoS__) = (Allocate.Apply((__qsVar0__len__ + 1L)), Allocate.Apply());
 #line hidden
                 bool __arg1__ = true;
                 try
                 {
-#line 255 "/Users/Matt/Documents/Masters/Dissertation/Quantum/Testing/Inital_Test/Program.qs"
+#line 330 "/Users/Matt/Documents/Masters/Dissertation/Quantum/Testing/Inital_Test/Program.qs"
                     SignedSubtract.Adjoint.Apply((QArray<Qubit>.Add(QArray<Qubit>.Add(s2?.Slice(new QRange(0L, (s2.Length - 2L))), __qsVar1__s2Pad__), new QArray<Qubit>(s2[(s2.Length - 1L)])), qTs2, anc1, anc2));
-#line 255 "/Users/Matt/Documents/Masters/Dissertation/Quantum/Testing/Inital_Test/Program.qs"
+#line 330 "/Users/Matt/Documents/Masters/Dissertation/Quantum/Testing/Inital_Test/Program.qs"
                     foreach (var __qsVar4__i__ in RangeReverse.Apply(new QRange(0L, (s1.Length - 1L))))
 #line hidden
                     {
-#line 255 "/Users/Matt/Documents/Masters/Dissertation/Quantum/Testing/Inital_Test/Program.qs"
+#line 330 "/Users/Matt/Documents/Masters/Dissertation/Quantum/Testing/Inital_Test/Program.qs"
                         MicrosoftQuantumIntrinsicSWAP.Adjoint.Apply((s1[__qsVar4__i__], s2[__qsVar4__i__]));
                     }
 
-#line 255 "/Users/Matt/Documents/Masters/Dissertation/Quantum/Testing/Inital_Test/Program.qs"
+#line 330 "/Users/Matt/Documents/Masters/Dissertation/Quantum/Testing/Inital_Test/Program.qs"
                     SignedMultiply.Adjoint.Apply((s2, QArray<Qubit>.Add(quo, new QArray<Qubit>(__qsVar2__quoS__)), qTs2));
-#line 255 "/Users/Matt/Documents/Masters/Dissertation/Quantum/Testing/Inital_Test/Program.qs"
+#line 330 "/Users/Matt/Documents/Masters/Dissertation/Quantum/Testing/Inital_Test/Program.qs"
                     foreach (var __qsVar3__i__ in RangeReverse.Apply(new QRange(0L, (__qsVar0__len__ - 1L))))
 #line hidden
                     {
-#line 255 "/Users/Matt/Documents/Masters/Dissertation/Quantum/Testing/Inital_Test/Program.qs"
+#line 330 "/Users/Matt/Documents/Masters/Dissertation/Quantum/Testing/Inital_Test/Program.qs"
                         MicrosoftQuantumIntrinsicSWAP.Adjoint.Apply((r1[__qsVar3__i__], r2[__qsVar3__i__]));
                     }
 
-#line 255 "/Users/Matt/Documents/Masters/Dissertation/Quantum/Testing/Inital_Test/Program.qs"
+#line 330 "/Users/Matt/Documents/Masters/Dissertation/Quantum/Testing/Inital_Test/Program.qs"
                     DivideI.Adjoint.Apply((new Microsoft.Quantum.Arithmetic.LittleEndian(r1), new Microsoft.Quantum.Arithmetic.LittleEndian(r2), new Microsoft.Quantum.Arithmetic.LittleEndian(quo)));
                 }
 #line hidden
@@ -1167,37 +1814,37 @@ namespace Quantum.Bell
         public override Func<(IQArray<Qubit>,(IQArray<Qubit>,IQArray<Qubit>,IQArray<Qubit>,IQArray<Qubit>,IQArray<Qubit>,IQArray<Qubit>,Qubit,Qubit)), QVoid> ControlledBody => (__in__) =>
         {
             var (__controlQubits__,(r1,r2,s1,s2,quo,qTs2,anc1,anc2)) = __in__;
-#line 255 "/Users/Matt/Documents/Masters/Dissertation/Quantum/Testing/Inital_Test/Program.qs"
+#line 330 "/Users/Matt/Documents/Masters/Dissertation/Quantum/Testing/Inital_Test/Program.qs"
             var len = r1.Length;
-#line 255 "/Users/Matt/Documents/Masters/Dissertation/Quantum/Testing/Inital_Test/Program.qs"
+#line 330 "/Users/Matt/Documents/Masters/Dissertation/Quantum/Testing/Inital_Test/Program.qs"
             {
-#line 255 "/Users/Matt/Documents/Masters/Dissertation/Quantum/Testing/Inital_Test/Program.qs"
+#line 330 "/Users/Matt/Documents/Masters/Dissertation/Quantum/Testing/Inital_Test/Program.qs"
                 var (s2Pad,quoS) = (Allocate.Apply((len + 1L)), Allocate.Apply());
 #line hidden
                 bool __arg1__ = true;
                 try
                 {
-#line 255 "/Users/Matt/Documents/Masters/Dissertation/Quantum/Testing/Inital_Test/Program.qs"
+#line 330 "/Users/Matt/Documents/Masters/Dissertation/Quantum/Testing/Inital_Test/Program.qs"
                     DivideI.Controlled.Apply((__controlQubits__, (new Microsoft.Quantum.Arithmetic.LittleEndian(r1), new Microsoft.Quantum.Arithmetic.LittleEndian(r2), new Microsoft.Quantum.Arithmetic.LittleEndian(quo))));
-#line 255 "/Users/Matt/Documents/Masters/Dissertation/Quantum/Testing/Inital_Test/Program.qs"
+#line 330 "/Users/Matt/Documents/Masters/Dissertation/Quantum/Testing/Inital_Test/Program.qs"
                     foreach (var i in new QRange(0L, (len - 1L)))
 #line hidden
                     {
-#line 255 "/Users/Matt/Documents/Masters/Dissertation/Quantum/Testing/Inital_Test/Program.qs"
+#line 330 "/Users/Matt/Documents/Masters/Dissertation/Quantum/Testing/Inital_Test/Program.qs"
                         MicrosoftQuantumIntrinsicSWAP.Controlled.Apply((__controlQubits__, (r1[i], r2[i])));
                     }
 
-#line 255 "/Users/Matt/Documents/Masters/Dissertation/Quantum/Testing/Inital_Test/Program.qs"
+#line 330 "/Users/Matt/Documents/Masters/Dissertation/Quantum/Testing/Inital_Test/Program.qs"
                     SignedMultiply.Controlled.Apply((__controlQubits__, (s2, QArray<Qubit>.Add(quo, new QArray<Qubit>(quoS)), qTs2)));
-#line 255 "/Users/Matt/Documents/Masters/Dissertation/Quantum/Testing/Inital_Test/Program.qs"
+#line 330 "/Users/Matt/Documents/Masters/Dissertation/Quantum/Testing/Inital_Test/Program.qs"
                     foreach (var i in new QRange(0L, (s1.Length - 1L)))
 #line hidden
                     {
-#line 255 "/Users/Matt/Documents/Masters/Dissertation/Quantum/Testing/Inital_Test/Program.qs"
+#line 330 "/Users/Matt/Documents/Masters/Dissertation/Quantum/Testing/Inital_Test/Program.qs"
                         MicrosoftQuantumIntrinsicSWAP.Controlled.Apply((__controlQubits__, (s1[i], s2[i])));
                     }
 
-#line 255 "/Users/Matt/Documents/Masters/Dissertation/Quantum/Testing/Inital_Test/Program.qs"
+#line 330 "/Users/Matt/Documents/Masters/Dissertation/Quantum/Testing/Inital_Test/Program.qs"
                     SignedSubtract.Controlled.Apply((__controlQubits__, (QArray<Qubit>.Add(QArray<Qubit>.Add(s2?.Slice(new QRange(0L, (s2.Length - 2L))), s2Pad), new QArray<Qubit>(s2[(s2.Length - 1L)])), qTs2, anc1, anc2)));
                 }
 #line hidden
@@ -1227,37 +1874,37 @@ namespace Quantum.Bell
         public override Func<(IQArray<Qubit>,(IQArray<Qubit>,IQArray<Qubit>,IQArray<Qubit>,IQArray<Qubit>,IQArray<Qubit>,IQArray<Qubit>,Qubit,Qubit)), QVoid> ControlledAdjointBody => (__in__) =>
         {
             var (__controlQubits__,(r1,r2,s1,s2,quo,qTs2,anc1,anc2)) = __in__;
-#line 255 "/Users/Matt/Documents/Masters/Dissertation/Quantum/Testing/Inital_Test/Program.qs"
+#line 330 "/Users/Matt/Documents/Masters/Dissertation/Quantum/Testing/Inital_Test/Program.qs"
             var __qsVar0__len__ = r1.Length;
-#line 255 "/Users/Matt/Documents/Masters/Dissertation/Quantum/Testing/Inital_Test/Program.qs"
+#line 330 "/Users/Matt/Documents/Masters/Dissertation/Quantum/Testing/Inital_Test/Program.qs"
             {
-#line 255 "/Users/Matt/Documents/Masters/Dissertation/Quantum/Testing/Inital_Test/Program.qs"
+#line 330 "/Users/Matt/Documents/Masters/Dissertation/Quantum/Testing/Inital_Test/Program.qs"
                 var (__qsVar1__s2Pad__,__qsVar2__quoS__) = (Allocate.Apply((__qsVar0__len__ + 1L)), Allocate.Apply());
 #line hidden
                 bool __arg1__ = true;
                 try
                 {
-#line 255 "/Users/Matt/Documents/Masters/Dissertation/Quantum/Testing/Inital_Test/Program.qs"
+#line 330 "/Users/Matt/Documents/Masters/Dissertation/Quantum/Testing/Inital_Test/Program.qs"
                     SignedSubtract.Adjoint.Controlled.Apply((__controlQubits__, (QArray<Qubit>.Add(QArray<Qubit>.Add(s2?.Slice(new QRange(0L, (s2.Length - 2L))), __qsVar1__s2Pad__), new QArray<Qubit>(s2[(s2.Length - 1L)])), qTs2, anc1, anc2)));
-#line 255 "/Users/Matt/Documents/Masters/Dissertation/Quantum/Testing/Inital_Test/Program.qs"
+#line 330 "/Users/Matt/Documents/Masters/Dissertation/Quantum/Testing/Inital_Test/Program.qs"
                     foreach (var __qsVar4__i__ in RangeReverse.Apply(new QRange(0L, (s1.Length - 1L))))
 #line hidden
                     {
-#line 255 "/Users/Matt/Documents/Masters/Dissertation/Quantum/Testing/Inital_Test/Program.qs"
+#line 330 "/Users/Matt/Documents/Masters/Dissertation/Quantum/Testing/Inital_Test/Program.qs"
                         MicrosoftQuantumIntrinsicSWAP.Adjoint.Controlled.Apply((__controlQubits__, (s1[__qsVar4__i__], s2[__qsVar4__i__])));
                     }
 
-#line 255 "/Users/Matt/Documents/Masters/Dissertation/Quantum/Testing/Inital_Test/Program.qs"
+#line 330 "/Users/Matt/Documents/Masters/Dissertation/Quantum/Testing/Inital_Test/Program.qs"
                     SignedMultiply.Adjoint.Controlled.Apply((__controlQubits__, (s2, QArray<Qubit>.Add(quo, new QArray<Qubit>(__qsVar2__quoS__)), qTs2)));
-#line 255 "/Users/Matt/Documents/Masters/Dissertation/Quantum/Testing/Inital_Test/Program.qs"
+#line 330 "/Users/Matt/Documents/Masters/Dissertation/Quantum/Testing/Inital_Test/Program.qs"
                     foreach (var __qsVar3__i__ in RangeReverse.Apply(new QRange(0L, (__qsVar0__len__ - 1L))))
 #line hidden
                     {
-#line 255 "/Users/Matt/Documents/Masters/Dissertation/Quantum/Testing/Inital_Test/Program.qs"
+#line 330 "/Users/Matt/Documents/Masters/Dissertation/Quantum/Testing/Inital_Test/Program.qs"
                         MicrosoftQuantumIntrinsicSWAP.Adjoint.Controlled.Apply((__controlQubits__, (r1[__qsVar3__i__], r2[__qsVar3__i__])));
                     }
 
-#line 255 "/Users/Matt/Documents/Masters/Dissertation/Quantum/Testing/Inital_Test/Program.qs"
+#line 330 "/Users/Matt/Documents/Masters/Dissertation/Quantum/Testing/Inital_Test/Program.qs"
                     DivideI.Adjoint.Controlled.Apply((__controlQubits__, (new Microsoft.Quantum.Arithmetic.LittleEndian(r1), new Microsoft.Quantum.Arithmetic.LittleEndian(r2), new Microsoft.Quantum.Arithmetic.LittleEndian(quo))));
                 }
 #line hidden
@@ -1305,9 +1952,11 @@ namespace Quantum.Bell
         }
     }
 
-    [SourceLocation("/Users/Matt/Documents/Masters/Dissertation/Quantum/Testing/Inital_Test/Program.qs", OperationFunctor.Body, 303, 330)]
-    [SourceLocation("/Users/Matt/Documents/Masters/Dissertation/Quantum/Testing/Inital_Test/Program.qs", OperationFunctor.Adjoint, 303, 330)]
-    public partial class CFCheck : Adjointable<(IQArray<Qubit>,IQArray<Qubit>,IQArray<Qubit>,Qubit)>, ICallable
+    [SourceLocation("/Users/Matt/Documents/Masters/Dissertation/Quantum/Testing/Inital_Test/Program.qs", OperationFunctor.Body, 357, 383)]
+    [SourceLocation("/Users/Matt/Documents/Masters/Dissertation/Quantum/Testing/Inital_Test/Program.qs", OperationFunctor.Adjoint, 356, 357)]
+    [SourceLocation("/Users/Matt/Documents/Masters/Dissertation/Quantum/Testing/Inital_Test/Program.qs", OperationFunctor.Controlled, 383, 412)]
+    [SourceLocation("/Users/Matt/Documents/Masters/Dissertation/Quantum/Testing/Inital_Test/Program.qs", OperationFunctor.ControlledAdjoint, 356, 357)]
+    public partial class CFCheck : Unitary<(IQArray<Qubit>,IQArray<Qubit>,IQArray<Qubit>,Qubit)>, ICallable
     {
         public CFCheck(IOperationFactory m) : base(m)
         {
@@ -1330,18 +1979,6 @@ namespace Quantum.Bell
 
         String ICallable.Name => "CFCheck";
         String ICallable.FullName => "Quantum.Bell.CFCheck";
-        protected ICallable<IQArray<Qubit>, Microsoft.Quantum.Arithmetic.LittleEndian> MicrosoftQuantumArithmeticLittleEndian
-        {
-            get;
-            set;
-        }
-
-        protected ICallable Length
-        {
-            get;
-            set;
-        }
-
         protected Allocate Allocate
         {
             get;
@@ -1355,6 +1992,18 @@ namespace Quantum.Bell
         }
 
         protected IUnitary<(Microsoft.Quantum.Arithmetic.LittleEndian,Microsoft.Quantum.Arithmetic.LittleEndian,Qubit)> CompareGTI
+        {
+            get;
+            set;
+        }
+
+        protected ICallable<IQArray<Qubit>, Microsoft.Quantum.Arithmetic.LittleEndian> MicrosoftQuantumArithmeticLittleEndian
+        {
+            get;
+            set;
+        }
+
+        protected ICallable Length
         {
             get;
             set;
@@ -1375,44 +2024,42 @@ namespace Quantum.Bell
         public override Func<(IQArray<Qubit>,IQArray<Qubit>,IQArray<Qubit>,Qubit), QVoid> Body => (__in__) =>
         {
             var (r2,s2,m,C) = __in__;
-#line 305 "/Users/Matt/Documents/Masters/Dissertation/Quantum/Testing/Inital_Test/Program.qs"
-            var s2LE = new Microsoft.Quantum.Arithmetic.LittleEndian(s2?.Slice(new QRange(0L, (s2.Length - 2L))));
 #line hidden
             {
-#line 306 "/Users/Matt/Documents/Masters/Dissertation/Quantum/Testing/Inital_Test/Program.qs"
-                var (anc,C2,C3) = (Allocate.Apply(((s2.Length - m.Length) - 1L)), Allocate.Apply(), Allocate.Apply());
+#line 360 "/Users/Matt/Documents/Masters/Dissertation/Quantum/Testing/Inital_Test/Program.qs"
+                var (C2,C3,mPad) = (Allocate.Apply(), Allocate.Apply(), Allocate.Apply());
 #line hidden
                 bool __arg1__ = true;
                 try
                 {
-#line 307 "/Users/Matt/Documents/Masters/Dissertation/Quantum/Testing/Inital_Test/Program.qs"
-                    CompareGTI.Apply((s2LE, new Microsoft.Quantum.Arithmetic.LittleEndian(QArray<Qubit>.Add(m, anc)), C2));
-#line 309 "/Users/Matt/Documents/Masters/Dissertation/Quantum/Testing/Inital_Test/Program.qs"
+#line 362 "/Users/Matt/Documents/Masters/Dissertation/Quantum/Testing/Inital_Test/Program.qs"
+                    CompareGTI.Apply((new Microsoft.Quantum.Arithmetic.LittleEndian(s2?.Slice(new QRange(0L, (s2.Length - 2L)))), new Microsoft.Quantum.Arithmetic.LittleEndian(QArray<Qubit>.Add(m, new QArray<Qubit>(mPad))), C2));
+#line 364 "/Users/Matt/Documents/Masters/Dissertation/Quantum/Testing/Inital_Test/Program.qs"
                     MicrosoftQuantumCanonApplyToEachA.Apply((MicrosoftQuantumIntrinsicX, r2));
-#line 310 "/Users/Matt/Documents/Masters/Dissertation/Quantum/Testing/Inital_Test/Program.qs"
+#line 365 "/Users/Matt/Documents/Masters/Dissertation/Quantum/Testing/Inital_Test/Program.qs"
                     MicrosoftQuantumIntrinsicX.Controlled.Apply((r2, C3));
-#line 311 "/Users/Matt/Documents/Masters/Dissertation/Quantum/Testing/Inital_Test/Program.qs"
+#line 366 "/Users/Matt/Documents/Masters/Dissertation/Quantum/Testing/Inital_Test/Program.qs"
                     MicrosoftQuantumCanonApplyToEachA.Apply((MicrosoftQuantumIntrinsicX, r2));
-#line 313 "/Users/Matt/Documents/Masters/Dissertation/Quantum/Testing/Inital_Test/Program.qs"
+#line 368 "/Users/Matt/Documents/Masters/Dissertation/Quantum/Testing/Inital_Test/Program.qs"
                     MicrosoftQuantumIntrinsicX.Apply(C2);
-#line 314 "/Users/Matt/Documents/Masters/Dissertation/Quantum/Testing/Inital_Test/Program.qs"
+#line 369 "/Users/Matt/Documents/Masters/Dissertation/Quantum/Testing/Inital_Test/Program.qs"
                     MicrosoftQuantumIntrinsicX.Apply(C3);
-#line 315 "/Users/Matt/Documents/Masters/Dissertation/Quantum/Testing/Inital_Test/Program.qs"
+#line 370 "/Users/Matt/Documents/Masters/Dissertation/Quantum/Testing/Inital_Test/Program.qs"
                     MicrosoftQuantumIntrinsicX.Controlled.Apply((new QArray<Qubit>(C2, C3), C));
-#line 316 "/Users/Matt/Documents/Masters/Dissertation/Quantum/Testing/Inital_Test/Program.qs"
+#line 371 "/Users/Matt/Documents/Masters/Dissertation/Quantum/Testing/Inital_Test/Program.qs"
                     MicrosoftQuantumIntrinsicX.Apply(C2);
-#line 317 "/Users/Matt/Documents/Masters/Dissertation/Quantum/Testing/Inital_Test/Program.qs"
+#line 372 "/Users/Matt/Documents/Masters/Dissertation/Quantum/Testing/Inital_Test/Program.qs"
                     MicrosoftQuantumIntrinsicX.Apply(C3);
-#line 318 "/Users/Matt/Documents/Masters/Dissertation/Quantum/Testing/Inital_Test/Program.qs"
+#line 373 "/Users/Matt/Documents/Masters/Dissertation/Quantum/Testing/Inital_Test/Program.qs"
                     MicrosoftQuantumIntrinsicX.Apply(C);
-#line 320 "/Users/Matt/Documents/Masters/Dissertation/Quantum/Testing/Inital_Test/Program.qs"
+#line 375 "/Users/Matt/Documents/Masters/Dissertation/Quantum/Testing/Inital_Test/Program.qs"
                     MicrosoftQuantumCanonApplyToEachA.Apply((MicrosoftQuantumIntrinsicX, r2));
-#line 321 "/Users/Matt/Documents/Masters/Dissertation/Quantum/Testing/Inital_Test/Program.qs"
+#line 376 "/Users/Matt/Documents/Masters/Dissertation/Quantum/Testing/Inital_Test/Program.qs"
                     MicrosoftQuantumIntrinsicX.Controlled.Apply((r2, C3));
-#line 322 "/Users/Matt/Documents/Masters/Dissertation/Quantum/Testing/Inital_Test/Program.qs"
+#line 377 "/Users/Matt/Documents/Masters/Dissertation/Quantum/Testing/Inital_Test/Program.qs"
                     MicrosoftQuantumCanonApplyToEachA.Apply((MicrosoftQuantumIntrinsicX, r2));
-#line 324 "/Users/Matt/Documents/Masters/Dissertation/Quantum/Testing/Inital_Test/Program.qs"
-                    CompareGTI.Adjoint.Apply((s2LE, new Microsoft.Quantum.Arithmetic.LittleEndian(QArray<Qubit>.Add(m, anc)), C2));
+#line 379 "/Users/Matt/Documents/Masters/Dissertation/Quantum/Testing/Inital_Test/Program.qs"
+                    CompareGTI.Adjoint.Apply((new Microsoft.Quantum.Arithmetic.LittleEndian(s2?.Slice(new QRange(0L, (s2.Length - 2L)))), new Microsoft.Quantum.Arithmetic.LittleEndian(QArray<Qubit>.Add(m, new QArray<Qubit>(mPad))), C2));
                 }
 #line hidden
                 catch
@@ -1426,11 +2073,11 @@ namespace Quantum.Bell
                     if (__arg1__)
                     {
 #line hidden
-                        Release.Apply(anc);
-#line hidden
                         Release.Apply(C2);
 #line hidden
                         Release.Apply(C3);
+#line hidden
+                        Release.Apply(mPad);
                     }
                 }
             }
@@ -1443,44 +2090,42 @@ namespace Quantum.Bell
         public override Func<(IQArray<Qubit>,IQArray<Qubit>,IQArray<Qubit>,Qubit), QVoid> AdjointBody => (__in__) =>
         {
             var (r2,s2,m,C) = __in__;
-#line 303 "/Users/Matt/Documents/Masters/Dissertation/Quantum/Testing/Inital_Test/Program.qs"
-            var __qsVar0__s2LE__ = new Microsoft.Quantum.Arithmetic.LittleEndian(s2?.Slice(new QRange(0L, (s2.Length - 2L))));
-#line 303 "/Users/Matt/Documents/Masters/Dissertation/Quantum/Testing/Inital_Test/Program.qs"
+#line 356 "/Users/Matt/Documents/Masters/Dissertation/Quantum/Testing/Inital_Test/Program.qs"
             {
-#line 303 "/Users/Matt/Documents/Masters/Dissertation/Quantum/Testing/Inital_Test/Program.qs"
-                var (__qsVar1__anc__,__qsVar2__C2__,__qsVar3__C3__) = (Allocate.Apply(((s2.Length - m.Length) - 1L)), Allocate.Apply(), Allocate.Apply());
+#line 356 "/Users/Matt/Documents/Masters/Dissertation/Quantum/Testing/Inital_Test/Program.qs"
+                var (__qsVar0__C2__,__qsVar1__C3__,__qsVar2__mPad__) = (Allocate.Apply(), Allocate.Apply(), Allocate.Apply());
 #line hidden
                 bool __arg1__ = true;
                 try
                 {
-#line 303 "/Users/Matt/Documents/Masters/Dissertation/Quantum/Testing/Inital_Test/Program.qs"
-                    CompareGTI.Adjoint.Adjoint.Apply((__qsVar0__s2LE__, new Microsoft.Quantum.Arithmetic.LittleEndian(QArray<Qubit>.Add(m, __qsVar1__anc__)), __qsVar2__C2__));
-#line 303 "/Users/Matt/Documents/Masters/Dissertation/Quantum/Testing/Inital_Test/Program.qs"
+#line 356 "/Users/Matt/Documents/Masters/Dissertation/Quantum/Testing/Inital_Test/Program.qs"
+                    CompareGTI.Adjoint.Adjoint.Apply((new Microsoft.Quantum.Arithmetic.LittleEndian(s2?.Slice(new QRange(0L, (s2.Length - 2L)))), new Microsoft.Quantum.Arithmetic.LittleEndian(QArray<Qubit>.Add(m, new QArray<Qubit>(__qsVar2__mPad__))), __qsVar0__C2__));
+#line 356 "/Users/Matt/Documents/Masters/Dissertation/Quantum/Testing/Inital_Test/Program.qs"
                     MicrosoftQuantumCanonApplyToEachA.Adjoint.Apply((MicrosoftQuantumIntrinsicX, r2));
-#line 303 "/Users/Matt/Documents/Masters/Dissertation/Quantum/Testing/Inital_Test/Program.qs"
-                    MicrosoftQuantumIntrinsicX.Controlled.Adjoint.Apply((r2, __qsVar3__C3__));
-#line 303 "/Users/Matt/Documents/Masters/Dissertation/Quantum/Testing/Inital_Test/Program.qs"
+#line 356 "/Users/Matt/Documents/Masters/Dissertation/Quantum/Testing/Inital_Test/Program.qs"
+                    MicrosoftQuantumIntrinsicX.Controlled.Adjoint.Apply((r2, __qsVar1__C3__));
+#line 356 "/Users/Matt/Documents/Masters/Dissertation/Quantum/Testing/Inital_Test/Program.qs"
                     MicrosoftQuantumCanonApplyToEachA.Adjoint.Apply((MicrosoftQuantumIntrinsicX, r2));
-#line 303 "/Users/Matt/Documents/Masters/Dissertation/Quantum/Testing/Inital_Test/Program.qs"
+#line 356 "/Users/Matt/Documents/Masters/Dissertation/Quantum/Testing/Inital_Test/Program.qs"
                     MicrosoftQuantumIntrinsicX.Adjoint.Apply(C);
-#line 303 "/Users/Matt/Documents/Masters/Dissertation/Quantum/Testing/Inital_Test/Program.qs"
-                    MicrosoftQuantumIntrinsicX.Adjoint.Apply(__qsVar3__C3__);
-#line 303 "/Users/Matt/Documents/Masters/Dissertation/Quantum/Testing/Inital_Test/Program.qs"
-                    MicrosoftQuantumIntrinsicX.Adjoint.Apply(__qsVar2__C2__);
-#line 303 "/Users/Matt/Documents/Masters/Dissertation/Quantum/Testing/Inital_Test/Program.qs"
-                    MicrosoftQuantumIntrinsicX.Controlled.Adjoint.Apply((new QArray<Qubit>(__qsVar2__C2__, __qsVar3__C3__), C));
-#line 303 "/Users/Matt/Documents/Masters/Dissertation/Quantum/Testing/Inital_Test/Program.qs"
-                    MicrosoftQuantumIntrinsicX.Adjoint.Apply(__qsVar3__C3__);
-#line 303 "/Users/Matt/Documents/Masters/Dissertation/Quantum/Testing/Inital_Test/Program.qs"
-                    MicrosoftQuantumIntrinsicX.Adjoint.Apply(__qsVar2__C2__);
-#line 303 "/Users/Matt/Documents/Masters/Dissertation/Quantum/Testing/Inital_Test/Program.qs"
+#line 356 "/Users/Matt/Documents/Masters/Dissertation/Quantum/Testing/Inital_Test/Program.qs"
+                    MicrosoftQuantumIntrinsicX.Adjoint.Apply(__qsVar1__C3__);
+#line 356 "/Users/Matt/Documents/Masters/Dissertation/Quantum/Testing/Inital_Test/Program.qs"
+                    MicrosoftQuantumIntrinsicX.Adjoint.Apply(__qsVar0__C2__);
+#line 356 "/Users/Matt/Documents/Masters/Dissertation/Quantum/Testing/Inital_Test/Program.qs"
+                    MicrosoftQuantumIntrinsicX.Controlled.Adjoint.Apply((new QArray<Qubit>(__qsVar0__C2__, __qsVar1__C3__), C));
+#line 356 "/Users/Matt/Documents/Masters/Dissertation/Quantum/Testing/Inital_Test/Program.qs"
+                    MicrosoftQuantumIntrinsicX.Adjoint.Apply(__qsVar1__C3__);
+#line 356 "/Users/Matt/Documents/Masters/Dissertation/Quantum/Testing/Inital_Test/Program.qs"
+                    MicrosoftQuantumIntrinsicX.Adjoint.Apply(__qsVar0__C2__);
+#line 356 "/Users/Matt/Documents/Masters/Dissertation/Quantum/Testing/Inital_Test/Program.qs"
                     MicrosoftQuantumCanonApplyToEachA.Adjoint.Apply((MicrosoftQuantumIntrinsicX, r2));
-#line 303 "/Users/Matt/Documents/Masters/Dissertation/Quantum/Testing/Inital_Test/Program.qs"
-                    MicrosoftQuantumIntrinsicX.Controlled.Adjoint.Apply((r2, __qsVar3__C3__));
-#line 303 "/Users/Matt/Documents/Masters/Dissertation/Quantum/Testing/Inital_Test/Program.qs"
+#line 356 "/Users/Matt/Documents/Masters/Dissertation/Quantum/Testing/Inital_Test/Program.qs"
+                    MicrosoftQuantumIntrinsicX.Controlled.Adjoint.Apply((r2, __qsVar1__C3__));
+#line 356 "/Users/Matt/Documents/Masters/Dissertation/Quantum/Testing/Inital_Test/Program.qs"
                     MicrosoftQuantumCanonApplyToEachA.Adjoint.Apply((MicrosoftQuantumIntrinsicX, r2));
-#line 303 "/Users/Matt/Documents/Masters/Dissertation/Quantum/Testing/Inital_Test/Program.qs"
-                    CompareGTI.Adjoint.Apply((__qsVar0__s2LE__, new Microsoft.Quantum.Arithmetic.LittleEndian(QArray<Qubit>.Add(m, __qsVar1__anc__)), __qsVar2__C2__));
+#line 356 "/Users/Matt/Documents/Masters/Dissertation/Quantum/Testing/Inital_Test/Program.qs"
+                    CompareGTI.Adjoint.Apply((new Microsoft.Quantum.Arithmetic.LittleEndian(s2?.Slice(new QRange(0L, (s2.Length - 2L)))), new Microsoft.Quantum.Arithmetic.LittleEndian(QArray<Qubit>.Add(m, new QArray<Qubit>(__qsVar2__mPad__))), __qsVar0__C2__));
                 }
 #line hidden
                 catch
@@ -1494,11 +2139,143 @@ namespace Quantum.Bell
                     if (__arg1__)
                     {
 #line hidden
-                        Release.Apply(__qsVar1__anc__);
+                        Release.Apply(__qsVar0__C2__);
 #line hidden
-                        Release.Apply(__qsVar2__C2__);
+                        Release.Apply(__qsVar1__C3__);
 #line hidden
-                        Release.Apply(__qsVar3__C3__);
+                        Release.Apply(__qsVar2__mPad__);
+                    }
+                }
+            }
+
+#line hidden
+            return QVoid.Instance;
+        }
+
+        ;
+        public override Func<(IQArray<Qubit>,(IQArray<Qubit>,IQArray<Qubit>,IQArray<Qubit>,Qubit)), QVoid> ControlledBody => (__in__) =>
+        {
+            var (cs,(r2,s2,m,C)) = __in__;
+#line hidden
+            {
+#line 386 "/Users/Matt/Documents/Masters/Dissertation/Quantum/Testing/Inital_Test/Program.qs"
+                var (C2,C3,mPad) = (Allocate.Apply(), Allocate.Apply(), Allocate.Apply());
+#line hidden
+                bool __arg1__ = true;
+                try
+                {
+#line 388 "/Users/Matt/Documents/Masters/Dissertation/Quantum/Testing/Inital_Test/Program.qs"
+                    CompareGTI.Apply((new Microsoft.Quantum.Arithmetic.LittleEndian(s2?.Slice(new QRange(0L, (s2.Length - 2L)))), new Microsoft.Quantum.Arithmetic.LittleEndian(QArray<Qubit>.Add(m, new QArray<Qubit>(mPad))), C2));
+#line 390 "/Users/Matt/Documents/Masters/Dissertation/Quantum/Testing/Inital_Test/Program.qs"
+                    MicrosoftQuantumCanonApplyToEachA.Apply((MicrosoftQuantumIntrinsicX, r2));
+#line 391 "/Users/Matt/Documents/Masters/Dissertation/Quantum/Testing/Inital_Test/Program.qs"
+                    MicrosoftQuantumIntrinsicX.Controlled.Apply((r2, C3));
+#line 392 "/Users/Matt/Documents/Masters/Dissertation/Quantum/Testing/Inital_Test/Program.qs"
+                    MicrosoftQuantumCanonApplyToEachA.Apply((MicrosoftQuantumIntrinsicX, r2));
+#line 394 "/Users/Matt/Documents/Masters/Dissertation/Quantum/Testing/Inital_Test/Program.qs"
+                    MicrosoftQuantumIntrinsicX.Apply(C2);
+#line 395 "/Users/Matt/Documents/Masters/Dissertation/Quantum/Testing/Inital_Test/Program.qs"
+                    MicrosoftQuantumIntrinsicX.Apply(C3);
+#line 396 "/Users/Matt/Documents/Masters/Dissertation/Quantum/Testing/Inital_Test/Program.qs"
+                    MicrosoftQuantumIntrinsicX.Controlled.Apply((new QArray<Qubit>(C2, C3), C));
+#line 397 "/Users/Matt/Documents/Masters/Dissertation/Quantum/Testing/Inital_Test/Program.qs"
+                    MicrosoftQuantumIntrinsicX.Apply(C2);
+#line 398 "/Users/Matt/Documents/Masters/Dissertation/Quantum/Testing/Inital_Test/Program.qs"
+                    MicrosoftQuantumIntrinsicX.Apply(C3);
+#line 399 "/Users/Matt/Documents/Masters/Dissertation/Quantum/Testing/Inital_Test/Program.qs"
+                    MicrosoftQuantumIntrinsicX.Apply(C);
+#line 401 "/Users/Matt/Documents/Masters/Dissertation/Quantum/Testing/Inital_Test/Program.qs"
+                    MicrosoftQuantumCanonApplyToEachA.Apply((MicrosoftQuantumIntrinsicX, r2));
+#line 402 "/Users/Matt/Documents/Masters/Dissertation/Quantum/Testing/Inital_Test/Program.qs"
+                    MicrosoftQuantumIntrinsicX.Controlled.Apply((r2, C3));
+#line 403 "/Users/Matt/Documents/Masters/Dissertation/Quantum/Testing/Inital_Test/Program.qs"
+                    MicrosoftQuantumCanonApplyToEachA.Apply((MicrosoftQuantumIntrinsicX, r2));
+#line 405 "/Users/Matt/Documents/Masters/Dissertation/Quantum/Testing/Inital_Test/Program.qs"
+                    CompareGTI.Adjoint.Apply((new Microsoft.Quantum.Arithmetic.LittleEndian(s2?.Slice(new QRange(0L, (s2.Length - 2L)))), new Microsoft.Quantum.Arithmetic.LittleEndian(QArray<Qubit>.Add(m, new QArray<Qubit>(mPad))), C2));
+                }
+#line hidden
+                catch
+                {
+                    __arg1__ = false;
+                    throw;
+                }
+#line hidden
+                finally
+                {
+                    if (__arg1__)
+                    {
+#line hidden
+                        Release.Apply(C2);
+#line hidden
+                        Release.Apply(C3);
+#line hidden
+                        Release.Apply(mPad);
+                    }
+                }
+            }
+
+#line hidden
+            return QVoid.Instance;
+        }
+
+        ;
+        public override Func<(IQArray<Qubit>,(IQArray<Qubit>,IQArray<Qubit>,IQArray<Qubit>,Qubit)), QVoid> ControlledAdjointBody => (__in__) =>
+        {
+            var (cs,(r2,s2,m,C)) = __in__;
+#line 356 "/Users/Matt/Documents/Masters/Dissertation/Quantum/Testing/Inital_Test/Program.qs"
+            {
+#line 356 "/Users/Matt/Documents/Masters/Dissertation/Quantum/Testing/Inital_Test/Program.qs"
+                var (__qsVar0__C2__,__qsVar1__C3__,__qsVar2__mPad__) = (Allocate.Apply(), Allocate.Apply(), Allocate.Apply());
+#line hidden
+                bool __arg1__ = true;
+                try
+                {
+#line 356 "/Users/Matt/Documents/Masters/Dissertation/Quantum/Testing/Inital_Test/Program.qs"
+                    CompareGTI.Adjoint.Adjoint.Apply((new Microsoft.Quantum.Arithmetic.LittleEndian(s2?.Slice(new QRange(0L, (s2.Length - 2L)))), new Microsoft.Quantum.Arithmetic.LittleEndian(QArray<Qubit>.Add(m, new QArray<Qubit>(__qsVar2__mPad__))), __qsVar0__C2__));
+#line 356 "/Users/Matt/Documents/Masters/Dissertation/Quantum/Testing/Inital_Test/Program.qs"
+                    MicrosoftQuantumCanonApplyToEachA.Adjoint.Apply((MicrosoftQuantumIntrinsicX, r2));
+#line 356 "/Users/Matt/Documents/Masters/Dissertation/Quantum/Testing/Inital_Test/Program.qs"
+                    MicrosoftQuantumIntrinsicX.Controlled.Adjoint.Apply((r2, __qsVar1__C3__));
+#line 356 "/Users/Matt/Documents/Masters/Dissertation/Quantum/Testing/Inital_Test/Program.qs"
+                    MicrosoftQuantumCanonApplyToEachA.Adjoint.Apply((MicrosoftQuantumIntrinsicX, r2));
+#line 356 "/Users/Matt/Documents/Masters/Dissertation/Quantum/Testing/Inital_Test/Program.qs"
+                    MicrosoftQuantumIntrinsicX.Adjoint.Apply(C);
+#line 356 "/Users/Matt/Documents/Masters/Dissertation/Quantum/Testing/Inital_Test/Program.qs"
+                    MicrosoftQuantumIntrinsicX.Adjoint.Apply(__qsVar1__C3__);
+#line 356 "/Users/Matt/Documents/Masters/Dissertation/Quantum/Testing/Inital_Test/Program.qs"
+                    MicrosoftQuantumIntrinsicX.Adjoint.Apply(__qsVar0__C2__);
+#line 356 "/Users/Matt/Documents/Masters/Dissertation/Quantum/Testing/Inital_Test/Program.qs"
+                    MicrosoftQuantumIntrinsicX.Controlled.Adjoint.Apply((new QArray<Qubit>(__qsVar0__C2__, __qsVar1__C3__), C));
+#line 356 "/Users/Matt/Documents/Masters/Dissertation/Quantum/Testing/Inital_Test/Program.qs"
+                    MicrosoftQuantumIntrinsicX.Adjoint.Apply(__qsVar1__C3__);
+#line 356 "/Users/Matt/Documents/Masters/Dissertation/Quantum/Testing/Inital_Test/Program.qs"
+                    MicrosoftQuantumIntrinsicX.Adjoint.Apply(__qsVar0__C2__);
+#line 356 "/Users/Matt/Documents/Masters/Dissertation/Quantum/Testing/Inital_Test/Program.qs"
+                    MicrosoftQuantumCanonApplyToEachA.Adjoint.Apply((MicrosoftQuantumIntrinsicX, r2));
+#line 356 "/Users/Matt/Documents/Masters/Dissertation/Quantum/Testing/Inital_Test/Program.qs"
+                    MicrosoftQuantumIntrinsicX.Controlled.Adjoint.Apply((r2, __qsVar1__C3__));
+#line 356 "/Users/Matt/Documents/Masters/Dissertation/Quantum/Testing/Inital_Test/Program.qs"
+                    MicrosoftQuantumCanonApplyToEachA.Adjoint.Apply((MicrosoftQuantumIntrinsicX, r2));
+#line 356 "/Users/Matt/Documents/Masters/Dissertation/Quantum/Testing/Inital_Test/Program.qs"
+                    CompareGTI.Adjoint.Apply((new Microsoft.Quantum.Arithmetic.LittleEndian(s2?.Slice(new QRange(0L, (s2.Length - 2L)))), new Microsoft.Quantum.Arithmetic.LittleEndian(QArray<Qubit>.Add(m, new QArray<Qubit>(__qsVar2__mPad__))), __qsVar0__C2__));
+                }
+#line hidden
+                catch
+                {
+                    __arg1__ = false;
+                    throw;
+                }
+#line hidden
+                finally
+                {
+                    if (__arg1__)
+                    {
+#line hidden
+                        Release.Apply(__qsVar0__C2__);
+#line hidden
+                        Release.Apply(__qsVar1__C3__);
+#line hidden
+                        Release.Apply(__qsVar2__mPad__);
                     }
                 }
             }
@@ -1510,11 +2287,11 @@ namespace Quantum.Bell
         ;
         public override void Init()
         {
-            this.MicrosoftQuantumArithmeticLittleEndian = this.Factory.Get<ICallable<IQArray<Qubit>, Microsoft.Quantum.Arithmetic.LittleEndian>>(typeof(Microsoft.Quantum.Arithmetic.LittleEndian));
-            this.Length = this.Factory.Get<ICallable>(typeof(Microsoft.Quantum.Core.Length<>));
             this.Allocate = this.Factory.Get<Allocate>(typeof(Microsoft.Quantum.Intrinsic.Allocate));
             this.Release = this.Factory.Get<Release>(typeof(Microsoft.Quantum.Intrinsic.Release));
             this.CompareGTI = this.Factory.Get<IUnitary<(Microsoft.Quantum.Arithmetic.LittleEndian,Microsoft.Quantum.Arithmetic.LittleEndian,Qubit)>>(typeof(CompareGTI));
+            this.MicrosoftQuantumArithmeticLittleEndian = this.Factory.Get<ICallable<IQArray<Qubit>, Microsoft.Quantum.Arithmetic.LittleEndian>>(typeof(Microsoft.Quantum.Arithmetic.LittleEndian));
+            this.Length = this.Factory.Get<ICallable>(typeof(Microsoft.Quantum.Core.Length<>));
             this.MicrosoftQuantumCanonApplyToEachA = this.Factory.Get<IAdjointable>(typeof(Microsoft.Quantum.Canon.ApplyToEachA<>));
             this.MicrosoftQuantumIntrinsicX = this.Factory.Get<IUnitary<Qubit>>(typeof(Microsoft.Quantum.Intrinsic.X));
         }
@@ -1527,7 +2304,7 @@ namespace Quantum.Bell
         }
     }
 
-    [SourceLocation("/Users/Matt/Documents/Masters/Dissertation/Quantum/Testing/Inital_Test/Program.qs", OperationFunctor.Body, 330, 343)]
+    [SourceLocation("/Users/Matt/Documents/Masters/Dissertation/Quantum/Testing/Inital_Test/Program.qs", OperationFunctor.Body, 412, 425)]
     public partial class MinimalMultiplyI : Operation<(IQArray<Qubit>,IQArray<Qubit>,IQArray<Qubit>), QVoid>, ICallable
     {
         public MinimalMultiplyI(IOperationFactory m) : base(m)
@@ -1584,19 +2361,19 @@ namespace Quantum.Bell
         public override Func<(IQArray<Qubit>,IQArray<Qubit>,IQArray<Qubit>), QVoid> Body => (__in__) =>
         {
             var (xs,ys,result) = __in__;
-#line 331 "/Users/Matt/Documents/Masters/Dissertation/Quantum/Testing/Inital_Test/Program.qs"
+#line 413 "/Users/Matt/Documents/Masters/Dissertation/Quantum/Testing/Inital_Test/Program.qs"
             var lenXs = xs.Length;
-#line 332 "/Users/Matt/Documents/Masters/Dissertation/Quantum/Testing/Inital_Test/Program.qs"
+#line 414 "/Users/Matt/Documents/Masters/Dissertation/Quantum/Testing/Inital_Test/Program.qs"
             var lenYs = ys.Length;
-#line 335 "/Users/Matt/Documents/Masters/Dissertation/Quantum/Testing/Inital_Test/Program.qs"
+#line 417 "/Users/Matt/Documents/Masters/Dissertation/Quantum/Testing/Inital_Test/Program.qs"
             MicrosoftQuantumDiagnosticsEqualityFactI.Apply(((lenXs + lenYs), result.Length, "Minimal multiplication requires result register to be equal to sum of multiplcan registers"));
-#line 336 "/Users/Matt/Documents/Masters/Dissertation/Quantum/Testing/Inital_Test/Program.qs"
+#line 418 "/Users/Matt/Documents/Masters/Dissertation/Quantum/Testing/Inital_Test/Program.qs"
             MicrosoftQuantumDiagnosticsAssertAllZero.Apply(result);
-#line 338 "/Users/Matt/Documents/Masters/Dissertation/Quantum/Testing/Inital_Test/Program.qs"
+#line 420 "/Users/Matt/Documents/Masters/Dissertation/Quantum/Testing/Inital_Test/Program.qs"
             foreach (var i in new QRange(0L, (lenXs - 1L)))
 #line hidden
             {
-#line 339 "/Users/Matt/Documents/Masters/Dissertation/Quantum/Testing/Inital_Test/Program.qs"
+#line 421 "/Users/Matt/Documents/Masters/Dissertation/Quantum/Testing/Inital_Test/Program.qs"
                 AddI.Controlled.Apply((new QArray<Qubit>(xs[i]), (new Microsoft.Quantum.Arithmetic.LittleEndian(ys), new Microsoft.Quantum.Arithmetic.LittleEndian(result?.Slice(new QRange(i, (i + lenYs)))))));
             }
 
@@ -1622,10 +2399,10 @@ namespace Quantum.Bell
         }
     }
 
-    [SourceLocation("/Users/Matt/Documents/Masters/Dissertation/Quantum/Testing/Inital_Test/Program.qs", OperationFunctor.Body, 344, 363)]
-    [SourceLocation("/Users/Matt/Documents/Masters/Dissertation/Quantum/Testing/Inital_Test/Program.qs", OperationFunctor.Adjoint, 363, 367)]
-    [SourceLocation("/Users/Matt/Documents/Masters/Dissertation/Quantum/Testing/Inital_Test/Program.qs", OperationFunctor.Controlled, 343, 344)]
-    [SourceLocation("/Users/Matt/Documents/Masters/Dissertation/Quantum/Testing/Inital_Test/Program.qs", OperationFunctor.ControlledAdjoint, 343, 344)]
+    [SourceLocation("/Users/Matt/Documents/Masters/Dissertation/Quantum/Testing/Inital_Test/Program.qs", OperationFunctor.Body, 426, 445)]
+    [SourceLocation("/Users/Matt/Documents/Masters/Dissertation/Quantum/Testing/Inital_Test/Program.qs", OperationFunctor.Adjoint, 445, 449)]
+    [SourceLocation("/Users/Matt/Documents/Masters/Dissertation/Quantum/Testing/Inital_Test/Program.qs", OperationFunctor.Controlled, 425, 426)]
+    [SourceLocation("/Users/Matt/Documents/Masters/Dissertation/Quantum/Testing/Inital_Test/Program.qs", OperationFunctor.ControlledAdjoint, 425, 426)]
     public partial class SignedSubtract : Unitary<(IQArray<Qubit>,IQArray<Qubit>,Qubit,Qubit)>, ICallable
     {
         public SignedSubtract(IOperationFactory m) : base(m)
@@ -1706,33 +2483,33 @@ namespace Quantum.Bell
         public override Func<(IQArray<Qubit>,IQArray<Qubit>,Qubit,Qubit), QVoid> Body => (__in__) =>
         {
             var (a,b,anc,anc2) = __in__;
-#line 345 "/Users/Matt/Documents/Masters/Dissertation/Quantum/Testing/Inital_Test/Program.qs"
+#line 427 "/Users/Matt/Documents/Masters/Dissertation/Quantum/Testing/Inital_Test/Program.qs"
             MicrosoftQuantumDiagnosticsEqualityFactI.Apply((a.Length, (b.Length + 1L), "Signed Subtraction, a must have one more qubit than b"));
-#line 346 "/Users/Matt/Documents/Masters/Dissertation/Quantum/Testing/Inital_Test/Program.qs"
+#line 428 "/Users/Matt/Documents/Masters/Dissertation/Quantum/Testing/Inital_Test/Program.qs"
             MicrosoftQuantumIntrinsicCNOT.Apply((a[(a.Length - 1L)], anc2));
-#line 347 "/Users/Matt/Documents/Masters/Dissertation/Quantum/Testing/Inital_Test/Program.qs"
+#line 429 "/Users/Matt/Documents/Masters/Dissertation/Quantum/Testing/Inital_Test/Program.qs"
             MicrosoftQuantumIntrinsicCNOT.Apply((b[(b.Length - 1L)], anc2));
-#line 348 "/Users/Matt/Documents/Masters/Dissertation/Quantum/Testing/Inital_Test/Program.qs"
+#line 430 "/Users/Matt/Documents/Masters/Dissertation/Quantum/Testing/Inital_Test/Program.qs"
             MicrosoftQuantumIntrinsicX.Apply(anc2);
-#line 351 "/Users/Matt/Documents/Masters/Dissertation/Quantum/Testing/Inital_Test/Program.qs"
+#line 433 "/Users/Matt/Documents/Masters/Dissertation/Quantum/Testing/Inital_Test/Program.qs"
             CompareGTI.Controlled.Apply((new QArray<Qubit>(anc2), (new Microsoft.Quantum.Arithmetic.LittleEndian(b?.Slice(new QRange(0L, (b.Length - 2L)))), new Microsoft.Quantum.Arithmetic.LittleEndian(a?.Slice(new QRange(0L, (a.Length - 3L)))), anc)));
-#line 352 "/Users/Matt/Documents/Masters/Dissertation/Quantum/Testing/Inital_Test/Program.qs"
+#line 434 "/Users/Matt/Documents/Masters/Dissertation/Quantum/Testing/Inital_Test/Program.qs"
             foreach (var i in new QRange(0L, (a.Length - 3L)))
 #line hidden
             {
-#line 353 "/Users/Matt/Documents/Masters/Dissertation/Quantum/Testing/Inital_Test/Program.qs"
+#line 435 "/Users/Matt/Documents/Masters/Dissertation/Quantum/Testing/Inital_Test/Program.qs"
                 MicrosoftQuantumIntrinsicSWAP.Controlled.Apply((new QArray<Qubit>(anc, anc2), (a[i], b[i])));
             }
 
-#line 355 "/Users/Matt/Documents/Masters/Dissertation/Quantum/Testing/Inital_Test/Program.qs"
+#line 437 "/Users/Matt/Documents/Masters/Dissertation/Quantum/Testing/Inital_Test/Program.qs"
             AddI.Adjoint.Controlled.Apply((new QArray<Qubit>(anc2), (new Microsoft.Quantum.Arithmetic.LittleEndian(b?.Slice(new QRange(0L, (b.Length - 2L)))), new Microsoft.Quantum.Arithmetic.LittleEndian(a?.Slice(new QRange(0L, (a.Length - 3L)))))));
-#line 356 "/Users/Matt/Documents/Masters/Dissertation/Quantum/Testing/Inital_Test/Program.qs"
+#line 438 "/Users/Matt/Documents/Masters/Dissertation/Quantum/Testing/Inital_Test/Program.qs"
             MicrosoftQuantumIntrinsicX.Controlled.Apply((new QArray<Qubit>(anc, anc2), a[(a.Length - 1L)]));
-#line 359 "/Users/Matt/Documents/Masters/Dissertation/Quantum/Testing/Inital_Test/Program.qs"
+#line 441 "/Users/Matt/Documents/Masters/Dissertation/Quantum/Testing/Inital_Test/Program.qs"
             MicrosoftQuantumIntrinsicX.Apply(anc2);
-#line 360 "/Users/Matt/Documents/Masters/Dissertation/Quantum/Testing/Inital_Test/Program.qs"
+#line 442 "/Users/Matt/Documents/Masters/Dissertation/Quantum/Testing/Inital_Test/Program.qs"
             AddI.Controlled.Apply((new QArray<Qubit>(anc2), (new Microsoft.Quantum.Arithmetic.LittleEndian(b?.Slice(new QRange(0L, (b.Length - 2L)))), new Microsoft.Quantum.Arithmetic.LittleEndian(a?.Slice(new QRange(0L, (a.Length - 2L)))))));
-#line 361 "/Users/Matt/Documents/Masters/Dissertation/Quantum/Testing/Inital_Test/Program.qs"
+#line 443 "/Users/Matt/Documents/Masters/Dissertation/Quantum/Testing/Inital_Test/Program.qs"
             MicrosoftQuantumIntrinsicX.Apply(anc2);
 #line hidden
             return QVoid.Instance;
@@ -1742,33 +2519,33 @@ namespace Quantum.Bell
         public override Func<(IQArray<Qubit>,IQArray<Qubit>,Qubit,Qubit), QVoid> AdjointBody => (__in__) =>
         {
             var (a,b,anc,anc2) = __in__;
-#line 363 "/Users/Matt/Documents/Masters/Dissertation/Quantum/Testing/Inital_Test/Program.qs"
+#line 445 "/Users/Matt/Documents/Masters/Dissertation/Quantum/Testing/Inital_Test/Program.qs"
             MicrosoftQuantumDiagnosticsEqualityFactI.Apply((a.Length, (b.Length + 1L), "Signed Subtraction, a must have one more qubit than b"));
-#line 363 "/Users/Matt/Documents/Masters/Dissertation/Quantum/Testing/Inital_Test/Program.qs"
+#line 445 "/Users/Matt/Documents/Masters/Dissertation/Quantum/Testing/Inital_Test/Program.qs"
             MicrosoftQuantumIntrinsicX.Adjoint.Apply(anc2);
-#line 363 "/Users/Matt/Documents/Masters/Dissertation/Quantum/Testing/Inital_Test/Program.qs"
+#line 445 "/Users/Matt/Documents/Masters/Dissertation/Quantum/Testing/Inital_Test/Program.qs"
             AddI.Controlled.Adjoint.Apply((new QArray<Qubit>(anc2), (new Microsoft.Quantum.Arithmetic.LittleEndian(b?.Slice(new QRange(0L, (b.Length - 2L)))), new Microsoft.Quantum.Arithmetic.LittleEndian(a?.Slice(new QRange(0L, (a.Length - 2L)))))));
-#line 363 "/Users/Matt/Documents/Masters/Dissertation/Quantum/Testing/Inital_Test/Program.qs"
+#line 445 "/Users/Matt/Documents/Masters/Dissertation/Quantum/Testing/Inital_Test/Program.qs"
             MicrosoftQuantumIntrinsicX.Adjoint.Apply(anc2);
-#line 363 "/Users/Matt/Documents/Masters/Dissertation/Quantum/Testing/Inital_Test/Program.qs"
+#line 445 "/Users/Matt/Documents/Masters/Dissertation/Quantum/Testing/Inital_Test/Program.qs"
             MicrosoftQuantumIntrinsicX.Controlled.Adjoint.Apply((new QArray<Qubit>(anc, anc2), a[(a.Length - 1L)]));
-#line 363 "/Users/Matt/Documents/Masters/Dissertation/Quantum/Testing/Inital_Test/Program.qs"
+#line 445 "/Users/Matt/Documents/Masters/Dissertation/Quantum/Testing/Inital_Test/Program.qs"
             AddI.Adjoint.Controlled.Adjoint.Apply((new QArray<Qubit>(anc2), (new Microsoft.Quantum.Arithmetic.LittleEndian(b?.Slice(new QRange(0L, (b.Length - 2L)))), new Microsoft.Quantum.Arithmetic.LittleEndian(a?.Slice(new QRange(0L, (a.Length - 3L)))))));
-#line 363 "/Users/Matt/Documents/Masters/Dissertation/Quantum/Testing/Inital_Test/Program.qs"
+#line 445 "/Users/Matt/Documents/Masters/Dissertation/Quantum/Testing/Inital_Test/Program.qs"
             foreach (var __qsVar0__i__ in RangeReverse.Apply(new QRange(0L, (a.Length - 3L))))
 #line hidden
             {
-#line 363 "/Users/Matt/Documents/Masters/Dissertation/Quantum/Testing/Inital_Test/Program.qs"
+#line 445 "/Users/Matt/Documents/Masters/Dissertation/Quantum/Testing/Inital_Test/Program.qs"
                 MicrosoftQuantumIntrinsicSWAP.Controlled.Adjoint.Apply((new QArray<Qubit>(anc, anc2), (a[__qsVar0__i__], b[__qsVar0__i__])));
             }
 
-#line 363 "/Users/Matt/Documents/Masters/Dissertation/Quantum/Testing/Inital_Test/Program.qs"
+#line 445 "/Users/Matt/Documents/Masters/Dissertation/Quantum/Testing/Inital_Test/Program.qs"
             CompareGTI.Controlled.Adjoint.Apply((new QArray<Qubit>(anc2), (new Microsoft.Quantum.Arithmetic.LittleEndian(b?.Slice(new QRange(0L, (b.Length - 2L)))), new Microsoft.Quantum.Arithmetic.LittleEndian(a?.Slice(new QRange(0L, (a.Length - 3L)))), anc)));
-#line 363 "/Users/Matt/Documents/Masters/Dissertation/Quantum/Testing/Inital_Test/Program.qs"
+#line 445 "/Users/Matt/Documents/Masters/Dissertation/Quantum/Testing/Inital_Test/Program.qs"
             MicrosoftQuantumIntrinsicX.Adjoint.Apply(anc2);
-#line 363 "/Users/Matt/Documents/Masters/Dissertation/Quantum/Testing/Inital_Test/Program.qs"
+#line 445 "/Users/Matt/Documents/Masters/Dissertation/Quantum/Testing/Inital_Test/Program.qs"
             MicrosoftQuantumIntrinsicCNOT.Adjoint.Apply((b[(b.Length - 1L)], anc2));
-#line 363 "/Users/Matt/Documents/Masters/Dissertation/Quantum/Testing/Inital_Test/Program.qs"
+#line 445 "/Users/Matt/Documents/Masters/Dissertation/Quantum/Testing/Inital_Test/Program.qs"
             MicrosoftQuantumIntrinsicCNOT.Adjoint.Apply((a[(a.Length - 1L)], anc2));
 #line hidden
             return QVoid.Instance;
@@ -1778,33 +2555,33 @@ namespace Quantum.Bell
         public override Func<(IQArray<Qubit>,(IQArray<Qubit>,IQArray<Qubit>,Qubit,Qubit)), QVoid> ControlledBody => (__in__) =>
         {
             var (__controlQubits__,(a,b,anc,anc2)) = __in__;
-#line 343 "/Users/Matt/Documents/Masters/Dissertation/Quantum/Testing/Inital_Test/Program.qs"
+#line 425 "/Users/Matt/Documents/Masters/Dissertation/Quantum/Testing/Inital_Test/Program.qs"
             MicrosoftQuantumDiagnosticsEqualityFactI.Apply((a.Length, (b.Length + 1L), "Signed Subtraction, a must have one more qubit than b"));
-#line 343 "/Users/Matt/Documents/Masters/Dissertation/Quantum/Testing/Inital_Test/Program.qs"
+#line 425 "/Users/Matt/Documents/Masters/Dissertation/Quantum/Testing/Inital_Test/Program.qs"
             MicrosoftQuantumIntrinsicCNOT.Controlled.Apply((__controlQubits__, (a[(a.Length - 1L)], anc2)));
-#line 343 "/Users/Matt/Documents/Masters/Dissertation/Quantum/Testing/Inital_Test/Program.qs"
+#line 425 "/Users/Matt/Documents/Masters/Dissertation/Quantum/Testing/Inital_Test/Program.qs"
             MicrosoftQuantumIntrinsicCNOT.Controlled.Apply((__controlQubits__, (b[(b.Length - 1L)], anc2)));
-#line 343 "/Users/Matt/Documents/Masters/Dissertation/Quantum/Testing/Inital_Test/Program.qs"
+#line 425 "/Users/Matt/Documents/Masters/Dissertation/Quantum/Testing/Inital_Test/Program.qs"
             MicrosoftQuantumIntrinsicX.Controlled.Apply((__controlQubits__, anc2));
-#line 343 "/Users/Matt/Documents/Masters/Dissertation/Quantum/Testing/Inital_Test/Program.qs"
+#line 425 "/Users/Matt/Documents/Masters/Dissertation/Quantum/Testing/Inital_Test/Program.qs"
             CompareGTI.Controlled.Controlled.Apply((__controlQubits__, (new QArray<Qubit>(anc2), (new Microsoft.Quantum.Arithmetic.LittleEndian(b?.Slice(new QRange(0L, (b.Length - 2L)))), new Microsoft.Quantum.Arithmetic.LittleEndian(a?.Slice(new QRange(0L, (a.Length - 3L)))), anc))));
-#line 343 "/Users/Matt/Documents/Masters/Dissertation/Quantum/Testing/Inital_Test/Program.qs"
+#line 425 "/Users/Matt/Documents/Masters/Dissertation/Quantum/Testing/Inital_Test/Program.qs"
             foreach (var i in new QRange(0L, (a.Length - 3L)))
 #line hidden
             {
-#line 343 "/Users/Matt/Documents/Masters/Dissertation/Quantum/Testing/Inital_Test/Program.qs"
+#line 425 "/Users/Matt/Documents/Masters/Dissertation/Quantum/Testing/Inital_Test/Program.qs"
                 MicrosoftQuantumIntrinsicSWAP.Controlled.Controlled.Apply((__controlQubits__, (new QArray<Qubit>(anc, anc2), (a[i], b[i]))));
             }
 
-#line 343 "/Users/Matt/Documents/Masters/Dissertation/Quantum/Testing/Inital_Test/Program.qs"
+#line 425 "/Users/Matt/Documents/Masters/Dissertation/Quantum/Testing/Inital_Test/Program.qs"
             AddI.Adjoint.Controlled.Controlled.Apply((__controlQubits__, (new QArray<Qubit>(anc2), (new Microsoft.Quantum.Arithmetic.LittleEndian(b?.Slice(new QRange(0L, (b.Length - 2L)))), new Microsoft.Quantum.Arithmetic.LittleEndian(a?.Slice(new QRange(0L, (a.Length - 3L))))))));
-#line 343 "/Users/Matt/Documents/Masters/Dissertation/Quantum/Testing/Inital_Test/Program.qs"
+#line 425 "/Users/Matt/Documents/Masters/Dissertation/Quantum/Testing/Inital_Test/Program.qs"
             MicrosoftQuantumIntrinsicX.Controlled.Controlled.Apply((__controlQubits__, (new QArray<Qubit>(anc, anc2), a[(a.Length - 1L)])));
-#line 343 "/Users/Matt/Documents/Masters/Dissertation/Quantum/Testing/Inital_Test/Program.qs"
+#line 425 "/Users/Matt/Documents/Masters/Dissertation/Quantum/Testing/Inital_Test/Program.qs"
             MicrosoftQuantumIntrinsicX.Controlled.Apply((__controlQubits__, anc2));
-#line 343 "/Users/Matt/Documents/Masters/Dissertation/Quantum/Testing/Inital_Test/Program.qs"
+#line 425 "/Users/Matt/Documents/Masters/Dissertation/Quantum/Testing/Inital_Test/Program.qs"
             AddI.Controlled.Controlled.Apply((__controlQubits__, (new QArray<Qubit>(anc2), (new Microsoft.Quantum.Arithmetic.LittleEndian(b?.Slice(new QRange(0L, (b.Length - 2L)))), new Microsoft.Quantum.Arithmetic.LittleEndian(a?.Slice(new QRange(0L, (a.Length - 2L))))))));
-#line 343 "/Users/Matt/Documents/Masters/Dissertation/Quantum/Testing/Inital_Test/Program.qs"
+#line 425 "/Users/Matt/Documents/Masters/Dissertation/Quantum/Testing/Inital_Test/Program.qs"
             MicrosoftQuantumIntrinsicX.Controlled.Apply((__controlQubits__, anc2));
 #line hidden
             return QVoid.Instance;
@@ -1814,33 +2591,33 @@ namespace Quantum.Bell
         public override Func<(IQArray<Qubit>,(IQArray<Qubit>,IQArray<Qubit>,Qubit,Qubit)), QVoid> ControlledAdjointBody => (__in__) =>
         {
             var (__controlQubits__,(a,b,anc,anc2)) = __in__;
-#line 343 "/Users/Matt/Documents/Masters/Dissertation/Quantum/Testing/Inital_Test/Program.qs"
+#line 425 "/Users/Matt/Documents/Masters/Dissertation/Quantum/Testing/Inital_Test/Program.qs"
             MicrosoftQuantumDiagnosticsEqualityFactI.Apply((a.Length, (b.Length + 1L), "Signed Subtraction, a must have one more qubit than b"));
-#line 343 "/Users/Matt/Documents/Masters/Dissertation/Quantum/Testing/Inital_Test/Program.qs"
+#line 425 "/Users/Matt/Documents/Masters/Dissertation/Quantum/Testing/Inital_Test/Program.qs"
             MicrosoftQuantumIntrinsicX.Adjoint.Controlled.Apply((__controlQubits__, anc2));
-#line 343 "/Users/Matt/Documents/Masters/Dissertation/Quantum/Testing/Inital_Test/Program.qs"
+#line 425 "/Users/Matt/Documents/Masters/Dissertation/Quantum/Testing/Inital_Test/Program.qs"
             AddI.Controlled.Adjoint.Controlled.Apply((__controlQubits__, (new QArray<Qubit>(anc2), (new Microsoft.Quantum.Arithmetic.LittleEndian(b?.Slice(new QRange(0L, (b.Length - 2L)))), new Microsoft.Quantum.Arithmetic.LittleEndian(a?.Slice(new QRange(0L, (a.Length - 2L))))))));
-#line 343 "/Users/Matt/Documents/Masters/Dissertation/Quantum/Testing/Inital_Test/Program.qs"
+#line 425 "/Users/Matt/Documents/Masters/Dissertation/Quantum/Testing/Inital_Test/Program.qs"
             MicrosoftQuantumIntrinsicX.Adjoint.Controlled.Apply((__controlQubits__, anc2));
-#line 343 "/Users/Matt/Documents/Masters/Dissertation/Quantum/Testing/Inital_Test/Program.qs"
+#line 425 "/Users/Matt/Documents/Masters/Dissertation/Quantum/Testing/Inital_Test/Program.qs"
             MicrosoftQuantumIntrinsicX.Controlled.Adjoint.Controlled.Apply((__controlQubits__, (new QArray<Qubit>(anc, anc2), a[(a.Length - 1L)])));
-#line 343 "/Users/Matt/Documents/Masters/Dissertation/Quantum/Testing/Inital_Test/Program.qs"
+#line 425 "/Users/Matt/Documents/Masters/Dissertation/Quantum/Testing/Inital_Test/Program.qs"
             AddI.Adjoint.Controlled.Adjoint.Controlled.Apply((__controlQubits__, (new QArray<Qubit>(anc2), (new Microsoft.Quantum.Arithmetic.LittleEndian(b?.Slice(new QRange(0L, (b.Length - 2L)))), new Microsoft.Quantum.Arithmetic.LittleEndian(a?.Slice(new QRange(0L, (a.Length - 3L))))))));
-#line 343 "/Users/Matt/Documents/Masters/Dissertation/Quantum/Testing/Inital_Test/Program.qs"
+#line 425 "/Users/Matt/Documents/Masters/Dissertation/Quantum/Testing/Inital_Test/Program.qs"
             foreach (var __qsVar0__i__ in RangeReverse.Apply(new QRange(0L, (a.Length - 3L))))
 #line hidden
             {
-#line 343 "/Users/Matt/Documents/Masters/Dissertation/Quantum/Testing/Inital_Test/Program.qs"
+#line 425 "/Users/Matt/Documents/Masters/Dissertation/Quantum/Testing/Inital_Test/Program.qs"
                 MicrosoftQuantumIntrinsicSWAP.Controlled.Adjoint.Controlled.Apply((__controlQubits__, (new QArray<Qubit>(anc, anc2), (a[__qsVar0__i__], b[__qsVar0__i__]))));
             }
 
-#line 343 "/Users/Matt/Documents/Masters/Dissertation/Quantum/Testing/Inital_Test/Program.qs"
+#line 425 "/Users/Matt/Documents/Masters/Dissertation/Quantum/Testing/Inital_Test/Program.qs"
             CompareGTI.Controlled.Adjoint.Controlled.Apply((__controlQubits__, (new QArray<Qubit>(anc2), (new Microsoft.Quantum.Arithmetic.LittleEndian(b?.Slice(new QRange(0L, (b.Length - 2L)))), new Microsoft.Quantum.Arithmetic.LittleEndian(a?.Slice(new QRange(0L, (a.Length - 3L)))), anc))));
-#line 343 "/Users/Matt/Documents/Masters/Dissertation/Quantum/Testing/Inital_Test/Program.qs"
+#line 425 "/Users/Matt/Documents/Masters/Dissertation/Quantum/Testing/Inital_Test/Program.qs"
             MicrosoftQuantumIntrinsicX.Adjoint.Controlled.Apply((__controlQubits__, anc2));
-#line 343 "/Users/Matt/Documents/Masters/Dissertation/Quantum/Testing/Inital_Test/Program.qs"
+#line 425 "/Users/Matt/Documents/Masters/Dissertation/Quantum/Testing/Inital_Test/Program.qs"
             MicrosoftQuantumIntrinsicCNOT.Adjoint.Controlled.Apply((__controlQubits__, (b[(b.Length - 1L)], anc2)));
-#line 343 "/Users/Matt/Documents/Masters/Dissertation/Quantum/Testing/Inital_Test/Program.qs"
+#line 425 "/Users/Matt/Documents/Masters/Dissertation/Quantum/Testing/Inital_Test/Program.qs"
             MicrosoftQuantumIntrinsicCNOT.Adjoint.Controlled.Apply((__controlQubits__, (a[(a.Length - 1L)], anc2)));
 #line hidden
             return QVoid.Instance;
@@ -1868,10 +2645,10 @@ namespace Quantum.Bell
         }
     }
 
-    [SourceLocation("/Users/Matt/Documents/Masters/Dissertation/Quantum/Testing/Inital_Test/Program.qs", OperationFunctor.Body, 369, 379)]
-    [SourceLocation("/Users/Matt/Documents/Masters/Dissertation/Quantum/Testing/Inital_Test/Program.qs", OperationFunctor.Adjoint, 379, 387)]
-    [SourceLocation("/Users/Matt/Documents/Masters/Dissertation/Quantum/Testing/Inital_Test/Program.qs", OperationFunctor.Controlled, 367, 369)]
-    [SourceLocation("/Users/Matt/Documents/Masters/Dissertation/Quantum/Testing/Inital_Test/Program.qs", OperationFunctor.ControlledAdjoint, 367, 369)]
+    [SourceLocation("/Users/Matt/Documents/Masters/Dissertation/Quantum/Testing/Inital_Test/Program.qs", OperationFunctor.Body, 451, 461)]
+    [SourceLocation("/Users/Matt/Documents/Masters/Dissertation/Quantum/Testing/Inital_Test/Program.qs", OperationFunctor.Adjoint, 461, 469)]
+    [SourceLocation("/Users/Matt/Documents/Masters/Dissertation/Quantum/Testing/Inital_Test/Program.qs", OperationFunctor.Controlled, 449, 451)]
+    [SourceLocation("/Users/Matt/Documents/Masters/Dissertation/Quantum/Testing/Inital_Test/Program.qs", OperationFunctor.ControlledAdjoint, 449, 451)]
     public partial class SignedMultiply : Unitary<(IQArray<Qubit>,IQArray<Qubit>,IQArray<Qubit>)>, ICallable
     {
         public SignedMultiply(IOperationFactory m) : base(m)
@@ -1928,19 +2705,19 @@ namespace Quantum.Bell
         public override Func<(IQArray<Qubit>,IQArray<Qubit>,IQArray<Qubit>), QVoid> Body => (__in__) =>
         {
             var (a,b,c) = __in__;
-#line 370 "/Users/Matt/Documents/Masters/Dissertation/Quantum/Testing/Inital_Test/Program.qs"
+#line 452 "/Users/Matt/Documents/Masters/Dissertation/Quantum/Testing/Inital_Test/Program.qs"
             MicrosoftQuantumDiagnosticsEqualityFactI.Apply((((2L * a.Length) - 1L), c.Length, "Signed multiplication requires a (2n-1)-bit result register."));
-#line 371 "/Users/Matt/Documents/Masters/Dissertation/Quantum/Testing/Inital_Test/Program.qs"
+#line 453 "/Users/Matt/Documents/Masters/Dissertation/Quantum/Testing/Inital_Test/Program.qs"
             var aS = a[(a.Length - 1L)];
-#line 372 "/Users/Matt/Documents/Masters/Dissertation/Quantum/Testing/Inital_Test/Program.qs"
+#line 454 "/Users/Matt/Documents/Masters/Dissertation/Quantum/Testing/Inital_Test/Program.qs"
             var bS = b[(b.Length - 1L)];
-#line 373 "/Users/Matt/Documents/Masters/Dissertation/Quantum/Testing/Inital_Test/Program.qs"
+#line 455 "/Users/Matt/Documents/Masters/Dissertation/Quantum/Testing/Inital_Test/Program.qs"
             var cS = c[(c.Length - 1L)];
-#line 374 "/Users/Matt/Documents/Masters/Dissertation/Quantum/Testing/Inital_Test/Program.qs"
+#line 456 "/Users/Matt/Documents/Masters/Dissertation/Quantum/Testing/Inital_Test/Program.qs"
             MicrosoftQuantumIntrinsicCNOT.Apply((aS, cS));
-#line 375 "/Users/Matt/Documents/Masters/Dissertation/Quantum/Testing/Inital_Test/Program.qs"
+#line 457 "/Users/Matt/Documents/Masters/Dissertation/Quantum/Testing/Inital_Test/Program.qs"
             MicrosoftQuantumIntrinsicCNOT.Apply((bS, cS));
-#line 377 "/Users/Matt/Documents/Masters/Dissertation/Quantum/Testing/Inital_Test/Program.qs"
+#line 459 "/Users/Matt/Documents/Masters/Dissertation/Quantum/Testing/Inital_Test/Program.qs"
             MultiplyI.Apply((new Microsoft.Quantum.Arithmetic.LittleEndian(a?.Slice(new QRange(0L, (a.Length - 2L)))), new Microsoft.Quantum.Arithmetic.LittleEndian(b?.Slice(new QRange(0L, (b.Length - 2L)))), new Microsoft.Quantum.Arithmetic.LittleEndian(c?.Slice(new QRange(0L, (c.Length - 2L))))));
 #line hidden
             return QVoid.Instance;
@@ -1950,19 +2727,19 @@ namespace Quantum.Bell
         public override Func<(IQArray<Qubit>,IQArray<Qubit>,IQArray<Qubit>), QVoid> AdjointBody => (__in__) =>
         {
             var (a,b,c) = __in__;
-#line 379 "/Users/Matt/Documents/Masters/Dissertation/Quantum/Testing/Inital_Test/Program.qs"
+#line 461 "/Users/Matt/Documents/Masters/Dissertation/Quantum/Testing/Inital_Test/Program.qs"
             MicrosoftQuantumDiagnosticsEqualityFactI.Apply((((2L * a.Length) - 1L), c.Length, "Signed multiplication requires a (2n-1)-bit result register."));
-#line 379 "/Users/Matt/Documents/Masters/Dissertation/Quantum/Testing/Inital_Test/Program.qs"
+#line 461 "/Users/Matt/Documents/Masters/Dissertation/Quantum/Testing/Inital_Test/Program.qs"
             var __qsVar0__aS__ = a[(a.Length - 1L)];
-#line 379 "/Users/Matt/Documents/Masters/Dissertation/Quantum/Testing/Inital_Test/Program.qs"
+#line 461 "/Users/Matt/Documents/Masters/Dissertation/Quantum/Testing/Inital_Test/Program.qs"
             var __qsVar1__bS__ = b[(b.Length - 1L)];
-#line 379 "/Users/Matt/Documents/Masters/Dissertation/Quantum/Testing/Inital_Test/Program.qs"
+#line 461 "/Users/Matt/Documents/Masters/Dissertation/Quantum/Testing/Inital_Test/Program.qs"
             var __qsVar2__cS__ = c[(c.Length - 1L)];
-#line 379 "/Users/Matt/Documents/Masters/Dissertation/Quantum/Testing/Inital_Test/Program.qs"
+#line 461 "/Users/Matt/Documents/Masters/Dissertation/Quantum/Testing/Inital_Test/Program.qs"
             MultiplyI.Adjoint.Apply((new Microsoft.Quantum.Arithmetic.LittleEndian(a?.Slice(new QRange(0L, (a.Length - 2L)))), new Microsoft.Quantum.Arithmetic.LittleEndian(b?.Slice(new QRange(0L, (b.Length - 2L)))), new Microsoft.Quantum.Arithmetic.LittleEndian(c?.Slice(new QRange(0L, (c.Length - 2L))))));
-#line 379 "/Users/Matt/Documents/Masters/Dissertation/Quantum/Testing/Inital_Test/Program.qs"
+#line 461 "/Users/Matt/Documents/Masters/Dissertation/Quantum/Testing/Inital_Test/Program.qs"
             MicrosoftQuantumIntrinsicCNOT.Adjoint.Apply((__qsVar1__bS__, __qsVar2__cS__));
-#line 379 "/Users/Matt/Documents/Masters/Dissertation/Quantum/Testing/Inital_Test/Program.qs"
+#line 461 "/Users/Matt/Documents/Masters/Dissertation/Quantum/Testing/Inital_Test/Program.qs"
             MicrosoftQuantumIntrinsicCNOT.Adjoint.Apply((__qsVar0__aS__, __qsVar2__cS__));
 #line hidden
             return QVoid.Instance;
@@ -1972,19 +2749,19 @@ namespace Quantum.Bell
         public override Func<(IQArray<Qubit>,(IQArray<Qubit>,IQArray<Qubit>,IQArray<Qubit>)), QVoid> ControlledBody => (__in__) =>
         {
             var (__controlQubits__,(a,b,c)) = __in__;
-#line 367 "/Users/Matt/Documents/Masters/Dissertation/Quantum/Testing/Inital_Test/Program.qs"
+#line 449 "/Users/Matt/Documents/Masters/Dissertation/Quantum/Testing/Inital_Test/Program.qs"
             MicrosoftQuantumDiagnosticsEqualityFactI.Apply((((2L * a.Length) - 1L), c.Length, "Signed multiplication requires a (2n-1)-bit result register."));
-#line 367 "/Users/Matt/Documents/Masters/Dissertation/Quantum/Testing/Inital_Test/Program.qs"
+#line 449 "/Users/Matt/Documents/Masters/Dissertation/Quantum/Testing/Inital_Test/Program.qs"
             var aS = a[(a.Length - 1L)];
-#line 367 "/Users/Matt/Documents/Masters/Dissertation/Quantum/Testing/Inital_Test/Program.qs"
+#line 449 "/Users/Matt/Documents/Masters/Dissertation/Quantum/Testing/Inital_Test/Program.qs"
             var bS = b[(b.Length - 1L)];
-#line 367 "/Users/Matt/Documents/Masters/Dissertation/Quantum/Testing/Inital_Test/Program.qs"
+#line 449 "/Users/Matt/Documents/Masters/Dissertation/Quantum/Testing/Inital_Test/Program.qs"
             var cS = c[(c.Length - 1L)];
-#line 367 "/Users/Matt/Documents/Masters/Dissertation/Quantum/Testing/Inital_Test/Program.qs"
+#line 449 "/Users/Matt/Documents/Masters/Dissertation/Quantum/Testing/Inital_Test/Program.qs"
             MicrosoftQuantumIntrinsicCNOT.Controlled.Apply((__controlQubits__, (aS, cS)));
-#line 367 "/Users/Matt/Documents/Masters/Dissertation/Quantum/Testing/Inital_Test/Program.qs"
+#line 449 "/Users/Matt/Documents/Masters/Dissertation/Quantum/Testing/Inital_Test/Program.qs"
             MicrosoftQuantumIntrinsicCNOT.Controlled.Apply((__controlQubits__, (bS, cS)));
-#line 367 "/Users/Matt/Documents/Masters/Dissertation/Quantum/Testing/Inital_Test/Program.qs"
+#line 449 "/Users/Matt/Documents/Masters/Dissertation/Quantum/Testing/Inital_Test/Program.qs"
             MultiplyI.Controlled.Apply((__controlQubits__, (new Microsoft.Quantum.Arithmetic.LittleEndian(a?.Slice(new QRange(0L, (a.Length - 2L)))), new Microsoft.Quantum.Arithmetic.LittleEndian(b?.Slice(new QRange(0L, (b.Length - 2L)))), new Microsoft.Quantum.Arithmetic.LittleEndian(c?.Slice(new QRange(0L, (c.Length - 2L)))))));
 #line hidden
             return QVoid.Instance;
@@ -1994,19 +2771,19 @@ namespace Quantum.Bell
         public override Func<(IQArray<Qubit>,(IQArray<Qubit>,IQArray<Qubit>,IQArray<Qubit>)), QVoid> ControlledAdjointBody => (__in__) =>
         {
             var (__controlQubits__,(a,b,c)) = __in__;
-#line 367 "/Users/Matt/Documents/Masters/Dissertation/Quantum/Testing/Inital_Test/Program.qs"
+#line 449 "/Users/Matt/Documents/Masters/Dissertation/Quantum/Testing/Inital_Test/Program.qs"
             MicrosoftQuantumDiagnosticsEqualityFactI.Apply((((2L * a.Length) - 1L), c.Length, "Signed multiplication requires a (2n-1)-bit result register."));
-#line 367 "/Users/Matt/Documents/Masters/Dissertation/Quantum/Testing/Inital_Test/Program.qs"
+#line 449 "/Users/Matt/Documents/Masters/Dissertation/Quantum/Testing/Inital_Test/Program.qs"
             var __qsVar0__aS__ = a[(a.Length - 1L)];
-#line 367 "/Users/Matt/Documents/Masters/Dissertation/Quantum/Testing/Inital_Test/Program.qs"
+#line 449 "/Users/Matt/Documents/Masters/Dissertation/Quantum/Testing/Inital_Test/Program.qs"
             var __qsVar1__bS__ = b[(b.Length - 1L)];
-#line 367 "/Users/Matt/Documents/Masters/Dissertation/Quantum/Testing/Inital_Test/Program.qs"
+#line 449 "/Users/Matt/Documents/Masters/Dissertation/Quantum/Testing/Inital_Test/Program.qs"
             var __qsVar2__cS__ = c[(c.Length - 1L)];
-#line 367 "/Users/Matt/Documents/Masters/Dissertation/Quantum/Testing/Inital_Test/Program.qs"
+#line 449 "/Users/Matt/Documents/Masters/Dissertation/Quantum/Testing/Inital_Test/Program.qs"
             MultiplyI.Adjoint.Controlled.Apply((__controlQubits__, (new Microsoft.Quantum.Arithmetic.LittleEndian(a?.Slice(new QRange(0L, (a.Length - 2L)))), new Microsoft.Quantum.Arithmetic.LittleEndian(b?.Slice(new QRange(0L, (b.Length - 2L)))), new Microsoft.Quantum.Arithmetic.LittleEndian(c?.Slice(new QRange(0L, (c.Length - 2L)))))));
-#line 367 "/Users/Matt/Documents/Masters/Dissertation/Quantum/Testing/Inital_Test/Program.qs"
+#line 449 "/Users/Matt/Documents/Masters/Dissertation/Quantum/Testing/Inital_Test/Program.qs"
             MicrosoftQuantumIntrinsicCNOT.Adjoint.Controlled.Apply((__controlQubits__, (__qsVar1__bS__, __qsVar2__cS__)));
-#line 367 "/Users/Matt/Documents/Masters/Dissertation/Quantum/Testing/Inital_Test/Program.qs"
+#line 449 "/Users/Matt/Documents/Masters/Dissertation/Quantum/Testing/Inital_Test/Program.qs"
             MicrosoftQuantumIntrinsicCNOT.Adjoint.Controlled.Apply((__controlQubits__, (__qsVar0__aS__, __qsVar2__cS__)));
 #line hidden
             return QVoid.Instance;
@@ -2030,7 +2807,7 @@ namespace Quantum.Bell
         }
     }
 
-    [SourceLocation("/Users/Matt/Documents/Masters/Dissertation/Quantum/Testing/Inital_Test/Program.qs", OperationFunctor.Body, 387, 413)]
+    [SourceLocation("/Users/Matt/Documents/Masters/Dissertation/Quantum/Testing/Inital_Test/Program.qs", OperationFunctor.Body, 469, 495)]
     public partial class TestingQFT : Operation<QVoid, QVoid>, ICallable
     {
         public TestingQFT(IOperationFactory m) : base(m)
@@ -2125,13 +2902,13 @@ namespace Quantum.Bell
 
         public override Func<QVoid, QVoid> Body => (__in__) =>
         {
-#line 388 "/Users/Matt/Documents/Masters/Dissertation/Quantum/Testing/Inital_Test/Program.qs"
+#line 470 "/Users/Matt/Documents/Masters/Dissertation/Quantum/Testing/Inital_Test/Program.qs"
             var a = 5L;
-#line 389 "/Users/Matt/Documents/Masters/Dissertation/Quantum/Testing/Inital_Test/Program.qs"
+#line 471 "/Users/Matt/Documents/Masters/Dissertation/Quantum/Testing/Inital_Test/Program.qs"
             var m = 21L;
 #line hidden
             {
-#line 391 "/Users/Matt/Documents/Masters/Dissertation/Quantum/Testing/Inital_Test/Program.qs"
+#line 473 "/Users/Matt/Documents/Masters/Dissertation/Quantum/Testing/Inital_Test/Program.qs"
                 var j = Allocate.Apply(9L);
 #line hidden
                 bool __arg1__ = true;
@@ -2139,25 +2916,25 @@ namespace Quantum.Bell
                 {
 #line hidden
                     {
-#line 392 "/Users/Matt/Documents/Masters/Dissertation/Quantum/Testing/Inital_Test/Program.qs"
+#line 474 "/Users/Matt/Documents/Masters/Dissertation/Quantum/Testing/Inital_Test/Program.qs"
                         var r = Allocate.Apply(5L);
 #line hidden
                         bool __arg2__ = true;
                         try
                         {
-#line 393 "/Users/Matt/Documents/Masters/Dissertation/Quantum/Testing/Inital_Test/Program.qs"
+#line 475 "/Users/Matt/Documents/Masters/Dissertation/Quantum/Testing/Inital_Test/Program.qs"
                             var frequencyEstimateNumerator = new Microsoft.Quantum.Arithmetic.LittleEndian(j);
-#line 394 "/Users/Matt/Documents/Masters/Dissertation/Quantum/Testing/Inital_Test/Program.qs"
+#line 476 "/Users/Matt/Documents/Masters/Dissertation/Quantum/Testing/Inital_Test/Program.qs"
                             var eigenstateRegisterLE = new Microsoft.Quantum.Arithmetic.LittleEndian(r);
-#line 395 "/Users/Matt/Documents/Masters/Dissertation/Quantum/Testing/Inital_Test/Program.qs"
+#line 477 "/Users/Matt/Documents/Masters/Dissertation/Quantum/Testing/Inital_Test/Program.qs"
                             MicrosoftQuantumArithmeticApplyXorInPlace.Apply((1L, eigenstateRegisterLE));
-#line 396 "/Users/Matt/Documents/Masters/Dissertation/Quantum/Testing/Inital_Test/Program.qs"
+#line 478 "/Users/Matt/Documents/Masters/Dissertation/Quantum/Testing/Inital_Test/Program.qs"
                             var oracle = new Microsoft.Quantum.Oracles.DiscreteOracle(ApplyOrderFindingOracle.Partial(new Func<(Int64,IQArray<Qubit>), (Int64,Int64,Int64,IQArray<Qubit>)>((__arg3__) => (a, m, __arg3__.Item1, __arg3__.Item2))));
-#line 398 "/Users/Matt/Documents/Masters/Dissertation/Quantum/Testing/Inital_Test/Program.qs"
+#line 480 "/Users/Matt/Documents/Masters/Dissertation/Quantum/Testing/Inital_Test/Program.qs"
                             QuantumPhaseEstimationTest.Apply((oracle, eigenstateRegisterLE.Data, MicrosoftQuantumArithmeticLittleEndianAsBigEndian.Apply(frequencyEstimateNumerator)));
-#line 400 "/Users/Matt/Documents/Masters/Dissertation/Quantum/Testing/Inital_Test/Program.qs"
+#line 482 "/Users/Matt/Documents/Masters/Dissertation/Quantum/Testing/Inital_Test/Program.qs"
                             var mes = MicrosoftQuantumArithmeticMeasureInteger.Apply(new Microsoft.Quantum.Arithmetic.LittleEndian(r));
-#line 401 "/Users/Matt/Documents/Masters/Dissertation/Quantum/Testing/Inital_Test/Program.qs"
+#line 483 "/Users/Matt/Documents/Masters/Dissertation/Quantum/Testing/Inital_Test/Program.qs"
                             Message.Apply(String.Format("{0}", mes));
                         }
 #line hidden
@@ -2177,17 +2954,17 @@ namespace Quantum.Bell
                         }
                     }
 
-#line 404 "/Users/Matt/Documents/Masters/Dissertation/Quantum/Testing/Inital_Test/Program.qs"
+#line 486 "/Users/Matt/Documents/Masters/Dissertation/Quantum/Testing/Inital_Test/Program.qs"
                     MicrosoftQuantumDiagnosticsDumpMachine.Apply("/Users/Matt/Documents/Masters/Dissertation/DisQsharp/Qs_Output3.txt");
-#line 405 "/Users/Matt/Documents/Masters/Dissertation/Quantum/Testing/Inital_Test/Program.qs"
+#line 487 "/Users/Matt/Documents/Masters/Dissertation/Quantum/Testing/Inital_Test/Program.qs"
                     MicrosoftQuantumCanonQFT.Adjoint.Apply(new Microsoft.Quantum.Arithmetic.BigEndian(j));
-#line 406 "/Users/Matt/Documents/Masters/Dissertation/Quantum/Testing/Inital_Test/Program.qs"
+#line 488 "/Users/Matt/Documents/Masters/Dissertation/Quantum/Testing/Inital_Test/Program.qs"
                     MicrosoftQuantumDiagnosticsDumpMachine.Apply("/Users/Matt/Documents/Masters/Dissertation/DisQsharp/Qs_Output4.txt");
-#line 407 "/Users/Matt/Documents/Masters/Dissertation/Quantum/Testing/Inital_Test/Program.qs"
+#line 489 "/Users/Matt/Documents/Masters/Dissertation/Quantum/Testing/Inital_Test/Program.qs"
                     var final_mes = MicrosoftQuantumArithmeticMeasureInteger.Apply(new Microsoft.Quantum.Arithmetic.LittleEndian(j));
-#line 408 "/Users/Matt/Documents/Masters/Dissertation/Quantum/Testing/Inital_Test/Program.qs"
+#line 490 "/Users/Matt/Documents/Masters/Dissertation/Quantum/Testing/Inital_Test/Program.qs"
                     Message.Apply(String.Format("{0}", final_mes));
-#line 409 "/Users/Matt/Documents/Masters/Dissertation/Quantum/Testing/Inital_Test/Program.qs"
+#line 491 "/Users/Matt/Documents/Masters/Dissertation/Quantum/Testing/Inital_Test/Program.qs"
                     ResetAll.Apply(j);
                 }
 #line hidden
@@ -2238,10 +3015,10 @@ namespace Quantum.Bell
         }
     }
 
-    [SourceLocation("/Users/Matt/Documents/Masters/Dissertation/Quantum/Testing/Inital_Test/Program.qs", OperationFunctor.Body, 413, 433)]
-    [SourceLocation("/Users/Matt/Documents/Masters/Dissertation/Quantum/Testing/Inital_Test/Program.qs", OperationFunctor.Adjoint, 413, 433)]
-    [SourceLocation("/Users/Matt/Documents/Masters/Dissertation/Quantum/Testing/Inital_Test/Program.qs", OperationFunctor.Controlled, 413, 433)]
-    [SourceLocation("/Users/Matt/Documents/Masters/Dissertation/Quantum/Testing/Inital_Test/Program.qs", OperationFunctor.ControlledAdjoint, 413, 433)]
+    [SourceLocation("/Users/Matt/Documents/Masters/Dissertation/Quantum/Testing/Inital_Test/Program.qs", OperationFunctor.Body, 495, 515)]
+    [SourceLocation("/Users/Matt/Documents/Masters/Dissertation/Quantum/Testing/Inital_Test/Program.qs", OperationFunctor.Adjoint, 495, 515)]
+    [SourceLocation("/Users/Matt/Documents/Masters/Dissertation/Quantum/Testing/Inital_Test/Program.qs", OperationFunctor.Controlled, 495, 515)]
+    [SourceLocation("/Users/Matt/Documents/Masters/Dissertation/Quantum/Testing/Inital_Test/Program.qs", OperationFunctor.ControlledAdjoint, 495, 515)]
     public partial class QuantumPhaseEstimationTest : Unitary<(Microsoft.Quantum.Oracles.DiscreteOracle,IQArray<Qubit>,Microsoft.Quantum.Arithmetic.BigEndian)>, ICallable
     {
         public QuantumPhaseEstimationTest(IOperationFactory m) : base(m)
@@ -2304,27 +3081,27 @@ namespace Quantum.Bell
         public override Func<(Microsoft.Quantum.Oracles.DiscreteOracle,IQArray<Qubit>,Microsoft.Quantum.Arithmetic.BigEndian), QVoid> Body => (__in__) =>
         {
             var (oracle,targetState,controlRegister) = __in__;
-#line 414 "/Users/Matt/Documents/Masters/Dissertation/Quantum/Testing/Inital_Test/Program.qs"
+#line 496 "/Users/Matt/Documents/Masters/Dissertation/Quantum/Testing/Inital_Test/Program.qs"
             var nQubits = controlRegister.Data.Length;
-#line 415 "/Users/Matt/Documents/Masters/Dissertation/Quantum/Testing/Inital_Test/Program.qs"
+#line 497 "/Users/Matt/Documents/Masters/Dissertation/Quantum/Testing/Inital_Test/Program.qs"
             MicrosoftQuantumDiagnosticsAssertAllZeroWithinTolerance.Apply((controlRegister.Data, 1E-10D));
-#line 416 "/Users/Matt/Documents/Masters/Dissertation/Quantum/Testing/Inital_Test/Program.qs"
+#line 498 "/Users/Matt/Documents/Masters/Dissertation/Quantum/Testing/Inital_Test/Program.qs"
             MicrosoftQuantumCanonApplyToEachCA.Apply((MicrosoftQuantumIntrinsicH, controlRegister.Data));
-#line 417 "/Users/Matt/Documents/Masters/Dissertation/Quantum/Testing/Inital_Test/Program.qs"
+#line 499 "/Users/Matt/Documents/Masters/Dissertation/Quantum/Testing/Inital_Test/Program.qs"
             MicrosoftQuantumDiagnosticsDumpMachine.Apply("/Users/Matt/Documents/Masters/Dissertation/DisQsharp/Qs_Output.txt");
-#line 418 "/Users/Matt/Documents/Masters/Dissertation/Quantum/Testing/Inital_Test/Program.qs"
+#line 500 "/Users/Matt/Documents/Masters/Dissertation/Quantum/Testing/Inital_Test/Program.qs"
             foreach (var idxControlQubit in new QRange(0L, (nQubits - 1L)))
 #line hidden
             {
-#line 419 "/Users/Matt/Documents/Masters/Dissertation/Quantum/Testing/Inital_Test/Program.qs"
+#line 501 "/Users/Matt/Documents/Masters/Dissertation/Quantum/Testing/Inital_Test/Program.qs"
                 var control = controlRegister.Data[idxControlQubit];
-#line 420 "/Users/Matt/Documents/Masters/Dissertation/Quantum/Testing/Inital_Test/Program.qs"
+#line 502 "/Users/Matt/Documents/Masters/Dissertation/Quantum/Testing/Inital_Test/Program.qs"
                 var power = 2L.Pow(((nQubits - idxControlQubit) - 1L));
-#line 421 "/Users/Matt/Documents/Masters/Dissertation/Quantum/Testing/Inital_Test/Program.qs"
+#line 503 "/Users/Matt/Documents/Masters/Dissertation/Quantum/Testing/Inital_Test/Program.qs"
                 oracle.Data.Controlled.Apply((new QArray<Qubit>(control), (power, targetState)));
             }
 
-#line 423 "/Users/Matt/Documents/Masters/Dissertation/Quantum/Testing/Inital_Test/Program.qs"
+#line 505 "/Users/Matt/Documents/Masters/Dissertation/Quantum/Testing/Inital_Test/Program.qs"
             MicrosoftQuantumDiagnosticsDumpMachine.Apply("/Users/Matt/Documents/Masters/Dissertation/DisQsharp/Qs_Output2.txt");
 #line hidden
             return QVoid.Instance;
@@ -2334,27 +3111,27 @@ namespace Quantum.Bell
         public override Func<(Microsoft.Quantum.Oracles.DiscreteOracle,IQArray<Qubit>,Microsoft.Quantum.Arithmetic.BigEndian), QVoid> AdjointBody => (__in__) =>
         {
             var (oracle,targetState,controlRegister) = __in__;
-#line 413 "/Users/Matt/Documents/Masters/Dissertation/Quantum/Testing/Inital_Test/Program.qs"
+#line 495 "/Users/Matt/Documents/Masters/Dissertation/Quantum/Testing/Inital_Test/Program.qs"
             var __qsVar0__nQubits__ = controlRegister.Data.Length;
-#line 413 "/Users/Matt/Documents/Masters/Dissertation/Quantum/Testing/Inital_Test/Program.qs"
+#line 495 "/Users/Matt/Documents/Masters/Dissertation/Quantum/Testing/Inital_Test/Program.qs"
             MicrosoftQuantumDiagnosticsDumpMachine.Apply("/Users/Matt/Documents/Masters/Dissertation/DisQsharp/Qs_Output.txt");
-#line 413 "/Users/Matt/Documents/Masters/Dissertation/Quantum/Testing/Inital_Test/Program.qs"
+#line 495 "/Users/Matt/Documents/Masters/Dissertation/Quantum/Testing/Inital_Test/Program.qs"
             MicrosoftQuantumDiagnosticsDumpMachine.Apply("/Users/Matt/Documents/Masters/Dissertation/DisQsharp/Qs_Output2.txt");
-#line 413 "/Users/Matt/Documents/Masters/Dissertation/Quantum/Testing/Inital_Test/Program.qs"
+#line 495 "/Users/Matt/Documents/Masters/Dissertation/Quantum/Testing/Inital_Test/Program.qs"
             foreach (var __qsVar1__idxControlQubit__ in RangeReverse.Apply(new QRange(0L, (__qsVar0__nQubits__ - 1L))))
 #line hidden
             {
-#line 413 "/Users/Matt/Documents/Masters/Dissertation/Quantum/Testing/Inital_Test/Program.qs"
+#line 495 "/Users/Matt/Documents/Masters/Dissertation/Quantum/Testing/Inital_Test/Program.qs"
                 var __qsVar2__control__ = controlRegister.Data[__qsVar1__idxControlQubit__];
-#line 413 "/Users/Matt/Documents/Masters/Dissertation/Quantum/Testing/Inital_Test/Program.qs"
+#line 495 "/Users/Matt/Documents/Masters/Dissertation/Quantum/Testing/Inital_Test/Program.qs"
                 var __qsVar3__power__ = 2L.Pow(((__qsVar0__nQubits__ - __qsVar1__idxControlQubit__) - 1L));
-#line 413 "/Users/Matt/Documents/Masters/Dissertation/Quantum/Testing/Inital_Test/Program.qs"
+#line 495 "/Users/Matt/Documents/Masters/Dissertation/Quantum/Testing/Inital_Test/Program.qs"
                 oracle.Data.Controlled.Adjoint.Apply((new QArray<Qubit>(__qsVar2__control__), (__qsVar3__power__, targetState)));
             }
 
-#line 413 "/Users/Matt/Documents/Masters/Dissertation/Quantum/Testing/Inital_Test/Program.qs"
+#line 495 "/Users/Matt/Documents/Masters/Dissertation/Quantum/Testing/Inital_Test/Program.qs"
             MicrosoftQuantumCanonApplyToEachCA.Adjoint.Apply((MicrosoftQuantumIntrinsicH, controlRegister.Data));
-#line 413 "/Users/Matt/Documents/Masters/Dissertation/Quantum/Testing/Inital_Test/Program.qs"
+#line 495 "/Users/Matt/Documents/Masters/Dissertation/Quantum/Testing/Inital_Test/Program.qs"
             MicrosoftQuantumDiagnosticsAssertAllZeroWithinTolerance.Adjoint.Apply((controlRegister.Data, 1E-10D));
 #line hidden
             return QVoid.Instance;
@@ -2364,27 +3141,27 @@ namespace Quantum.Bell
         public override Func<(IQArray<Qubit>,(Microsoft.Quantum.Oracles.DiscreteOracle,IQArray<Qubit>,Microsoft.Quantum.Arithmetic.BigEndian)), QVoid> ControlledBody => (__in__) =>
         {
             var (__controlQubits__,(oracle,targetState,controlRegister)) = __in__;
-#line 413 "/Users/Matt/Documents/Masters/Dissertation/Quantum/Testing/Inital_Test/Program.qs"
+#line 495 "/Users/Matt/Documents/Masters/Dissertation/Quantum/Testing/Inital_Test/Program.qs"
             var nQubits = controlRegister.Data.Length;
-#line 413 "/Users/Matt/Documents/Masters/Dissertation/Quantum/Testing/Inital_Test/Program.qs"
+#line 495 "/Users/Matt/Documents/Masters/Dissertation/Quantum/Testing/Inital_Test/Program.qs"
             MicrosoftQuantumDiagnosticsAssertAllZeroWithinTolerance.Controlled.Apply((__controlQubits__, (controlRegister.Data, 1E-10D)));
-#line 413 "/Users/Matt/Documents/Masters/Dissertation/Quantum/Testing/Inital_Test/Program.qs"
+#line 495 "/Users/Matt/Documents/Masters/Dissertation/Quantum/Testing/Inital_Test/Program.qs"
             MicrosoftQuantumCanonApplyToEachCA.Controlled.Apply((__controlQubits__, (MicrosoftQuantumIntrinsicH, controlRegister.Data)));
-#line 413 "/Users/Matt/Documents/Masters/Dissertation/Quantum/Testing/Inital_Test/Program.qs"
+#line 495 "/Users/Matt/Documents/Masters/Dissertation/Quantum/Testing/Inital_Test/Program.qs"
             MicrosoftQuantumDiagnosticsDumpMachine.Apply("/Users/Matt/Documents/Masters/Dissertation/DisQsharp/Qs_Output.txt");
-#line 413 "/Users/Matt/Documents/Masters/Dissertation/Quantum/Testing/Inital_Test/Program.qs"
+#line 495 "/Users/Matt/Documents/Masters/Dissertation/Quantum/Testing/Inital_Test/Program.qs"
             foreach (var idxControlQubit in new QRange(0L, (nQubits - 1L)))
 #line hidden
             {
-#line 413 "/Users/Matt/Documents/Masters/Dissertation/Quantum/Testing/Inital_Test/Program.qs"
+#line 495 "/Users/Matt/Documents/Masters/Dissertation/Quantum/Testing/Inital_Test/Program.qs"
                 var control = controlRegister.Data[idxControlQubit];
-#line 413 "/Users/Matt/Documents/Masters/Dissertation/Quantum/Testing/Inital_Test/Program.qs"
+#line 495 "/Users/Matt/Documents/Masters/Dissertation/Quantum/Testing/Inital_Test/Program.qs"
                 var power = 2L.Pow(((nQubits - idxControlQubit) - 1L));
-#line 413 "/Users/Matt/Documents/Masters/Dissertation/Quantum/Testing/Inital_Test/Program.qs"
+#line 495 "/Users/Matt/Documents/Masters/Dissertation/Quantum/Testing/Inital_Test/Program.qs"
                 oracle.Data.Controlled.Controlled.Apply((__controlQubits__, (new QArray<Qubit>(control), (power, targetState))));
             }
 
-#line 413 "/Users/Matt/Documents/Masters/Dissertation/Quantum/Testing/Inital_Test/Program.qs"
+#line 495 "/Users/Matt/Documents/Masters/Dissertation/Quantum/Testing/Inital_Test/Program.qs"
             MicrosoftQuantumDiagnosticsDumpMachine.Apply("/Users/Matt/Documents/Masters/Dissertation/DisQsharp/Qs_Output2.txt");
 #line hidden
             return QVoid.Instance;
@@ -2394,27 +3171,27 @@ namespace Quantum.Bell
         public override Func<(IQArray<Qubit>,(Microsoft.Quantum.Oracles.DiscreteOracle,IQArray<Qubit>,Microsoft.Quantum.Arithmetic.BigEndian)), QVoid> ControlledAdjointBody => (__in__) =>
         {
             var (__controlQubits__,(oracle,targetState,controlRegister)) = __in__;
-#line 413 "/Users/Matt/Documents/Masters/Dissertation/Quantum/Testing/Inital_Test/Program.qs"
+#line 495 "/Users/Matt/Documents/Masters/Dissertation/Quantum/Testing/Inital_Test/Program.qs"
             var __qsVar0__nQubits__ = controlRegister.Data.Length;
-#line 413 "/Users/Matt/Documents/Masters/Dissertation/Quantum/Testing/Inital_Test/Program.qs"
+#line 495 "/Users/Matt/Documents/Masters/Dissertation/Quantum/Testing/Inital_Test/Program.qs"
             MicrosoftQuantumDiagnosticsDumpMachine.Apply("/Users/Matt/Documents/Masters/Dissertation/DisQsharp/Qs_Output.txt");
-#line 413 "/Users/Matt/Documents/Masters/Dissertation/Quantum/Testing/Inital_Test/Program.qs"
+#line 495 "/Users/Matt/Documents/Masters/Dissertation/Quantum/Testing/Inital_Test/Program.qs"
             MicrosoftQuantumDiagnosticsDumpMachine.Apply("/Users/Matt/Documents/Masters/Dissertation/DisQsharp/Qs_Output2.txt");
-#line 413 "/Users/Matt/Documents/Masters/Dissertation/Quantum/Testing/Inital_Test/Program.qs"
+#line 495 "/Users/Matt/Documents/Masters/Dissertation/Quantum/Testing/Inital_Test/Program.qs"
             foreach (var __qsVar1__idxControlQubit__ in RangeReverse.Apply(new QRange(0L, (__qsVar0__nQubits__ - 1L))))
 #line hidden
             {
-#line 413 "/Users/Matt/Documents/Masters/Dissertation/Quantum/Testing/Inital_Test/Program.qs"
+#line 495 "/Users/Matt/Documents/Masters/Dissertation/Quantum/Testing/Inital_Test/Program.qs"
                 var __qsVar2__control__ = controlRegister.Data[__qsVar1__idxControlQubit__];
-#line 413 "/Users/Matt/Documents/Masters/Dissertation/Quantum/Testing/Inital_Test/Program.qs"
+#line 495 "/Users/Matt/Documents/Masters/Dissertation/Quantum/Testing/Inital_Test/Program.qs"
                 var __qsVar3__power__ = 2L.Pow(((__qsVar0__nQubits__ - __qsVar1__idxControlQubit__) - 1L));
-#line 413 "/Users/Matt/Documents/Masters/Dissertation/Quantum/Testing/Inital_Test/Program.qs"
+#line 495 "/Users/Matt/Documents/Masters/Dissertation/Quantum/Testing/Inital_Test/Program.qs"
                 oracle.Data.Controlled.Adjoint.Controlled.Apply((__controlQubits__, (new QArray<Qubit>(__qsVar2__control__), (__qsVar3__power__, targetState))));
             }
 
-#line 413 "/Users/Matt/Documents/Masters/Dissertation/Quantum/Testing/Inital_Test/Program.qs"
+#line 495 "/Users/Matt/Documents/Masters/Dissertation/Quantum/Testing/Inital_Test/Program.qs"
             MicrosoftQuantumCanonApplyToEachCA.Adjoint.Controlled.Apply((__controlQubits__, (MicrosoftQuantumIntrinsicH, controlRegister.Data)));
-#line 413 "/Users/Matt/Documents/Masters/Dissertation/Quantum/Testing/Inital_Test/Program.qs"
+#line 495 "/Users/Matt/Documents/Masters/Dissertation/Quantum/Testing/Inital_Test/Program.qs"
             MicrosoftQuantumDiagnosticsAssertAllZeroWithinTolerance.Adjoint.Controlled.Apply((__controlQubits__, (controlRegister.Data, 1E-10D)));
 #line hidden
             return QVoid.Instance;
@@ -2439,10 +3216,10 @@ namespace Quantum.Bell
         }
     }
 
-    [SourceLocation("/Users/Matt/Documents/Masters/Dissertation/Quantum/Testing/Inital_Test/Program.qs", OperationFunctor.Body, 433, 446)]
-    [SourceLocation("/Users/Matt/Documents/Masters/Dissertation/Quantum/Testing/Inital_Test/Program.qs", OperationFunctor.Adjoint, 433, 446)]
-    [SourceLocation("/Users/Matt/Documents/Masters/Dissertation/Quantum/Testing/Inital_Test/Program.qs", OperationFunctor.Controlled, 433, 446)]
-    [SourceLocation("/Users/Matt/Documents/Masters/Dissertation/Quantum/Testing/Inital_Test/Program.qs", OperationFunctor.ControlledAdjoint, 433, 446)]
+    [SourceLocation("/Users/Matt/Documents/Masters/Dissertation/Quantum/Testing/Inital_Test/Program.qs", OperationFunctor.Body, 515, 528)]
+    [SourceLocation("/Users/Matt/Documents/Masters/Dissertation/Quantum/Testing/Inital_Test/Program.qs", OperationFunctor.Adjoint, 515, 528)]
+    [SourceLocation("/Users/Matt/Documents/Masters/Dissertation/Quantum/Testing/Inital_Test/Program.qs", OperationFunctor.Controlled, 515, 528)]
+    [SourceLocation("/Users/Matt/Documents/Masters/Dissertation/Quantum/Testing/Inital_Test/Program.qs", OperationFunctor.ControlledAdjoint, 515, 528)]
     public partial class SquareModM : Unitary<(IQArray<Qubit>,IQArray<Qubit>,IQArray<Qubit>)>, ICallable
     {
         public SquareModM(IOperationFactory m) : base(m)
@@ -2511,31 +3288,31 @@ namespace Quantum.Bell
         public override Func<(IQArray<Qubit>,IQArray<Qubit>,IQArray<Qubit>), QVoid> Body => (__in__) =>
         {
             var (a,Ms,Ts) = __in__;
-#line 434 "/Users/Matt/Documents/Masters/Dissertation/Quantum/Testing/Inital_Test/Program.qs"
+#line 516 "/Users/Matt/Documents/Masters/Dissertation/Quantum/Testing/Inital_Test/Program.qs"
             var num = a.Length;
 #line hidden
             {
-#line 435 "/Users/Matt/Documents/Masters/Dissertation/Quantum/Testing/Inital_Test/Program.qs"
+#line 517 "/Users/Matt/Documents/Masters/Dissertation/Quantum/Testing/Inital_Test/Program.qs"
                 var (aS,aSPad) = (Allocate.Apply(num), Allocate.Apply(num));
 #line hidden
                 bool __arg1__ = true;
                 try
                 {
-#line 436 "/Users/Matt/Documents/Masters/Dissertation/Quantum/Testing/Inital_Test/Program.qs"
+#line 518 "/Users/Matt/Documents/Masters/Dissertation/Quantum/Testing/Inital_Test/Program.qs"
                     SquareI.Apply((new Microsoft.Quantum.Arithmetic.LittleEndian(a), new Microsoft.Quantum.Arithmetic.LittleEndian(QArray<Qubit>.Add(aS, aSPad))));
 #line hidden
                     {
-#line 437 "/Users/Matt/Documents/Masters/Dissertation/Quantum/Testing/Inital_Test/Program.qs"
+#line 519 "/Users/Matt/Documents/Masters/Dissertation/Quantum/Testing/Inital_Test/Program.qs"
                         var (anc,MsPad) = (Allocate.Apply((num * 2L)), Allocate.Apply(num));
 #line hidden
                         bool __arg2__ = true;
                         try
                         {
-#line 438 "/Users/Matt/Documents/Masters/Dissertation/Quantum/Testing/Inital_Test/Program.qs"
+#line 520 "/Users/Matt/Documents/Masters/Dissertation/Quantum/Testing/Inital_Test/Program.qs"
                             DivideI.Apply((new Microsoft.Quantum.Arithmetic.LittleEndian(QArray<Qubit>.Add(aS, aSPad)), new Microsoft.Quantum.Arithmetic.LittleEndian(QArray<Qubit>.Add(Ms, MsPad)), new Microsoft.Quantum.Arithmetic.LittleEndian(anc)));
-#line 439 "/Users/Matt/Documents/Masters/Dissertation/Quantum/Testing/Inital_Test/Program.qs"
+#line 521 "/Users/Matt/Documents/Masters/Dissertation/Quantum/Testing/Inital_Test/Program.qs"
                             AddI.Apply((new Microsoft.Quantum.Arithmetic.LittleEndian(aS), new Microsoft.Quantum.Arithmetic.LittleEndian(Ts)));
-#line 440 "/Users/Matt/Documents/Masters/Dissertation/Quantum/Testing/Inital_Test/Program.qs"
+#line 522 "/Users/Matt/Documents/Masters/Dissertation/Quantum/Testing/Inital_Test/Program.qs"
                             DivideI.Adjoint.Apply((new Microsoft.Quantum.Arithmetic.LittleEndian(QArray<Qubit>.Add(aS, aSPad)), new Microsoft.Quantum.Arithmetic.LittleEndian(QArray<Qubit>.Add(Ms, MsPad)), new Microsoft.Quantum.Arithmetic.LittleEndian(anc)));
                         }
 #line hidden
@@ -2557,7 +3334,7 @@ namespace Quantum.Bell
                         }
                     }
 
-#line 442 "/Users/Matt/Documents/Masters/Dissertation/Quantum/Testing/Inital_Test/Program.qs"
+#line 524 "/Users/Matt/Documents/Masters/Dissertation/Quantum/Testing/Inital_Test/Program.qs"
                     SquareI.Adjoint.Apply((new Microsoft.Quantum.Arithmetic.LittleEndian(a), new Microsoft.Quantum.Arithmetic.LittleEndian(QArray<Qubit>.Add(aS, aSPad))));
                 }
 #line hidden
@@ -2587,31 +3364,31 @@ namespace Quantum.Bell
         public override Func<(IQArray<Qubit>,IQArray<Qubit>,IQArray<Qubit>), QVoid> AdjointBody => (__in__) =>
         {
             var (a,Ms,Ts) = __in__;
-#line 433 "/Users/Matt/Documents/Masters/Dissertation/Quantum/Testing/Inital_Test/Program.qs"
+#line 515 "/Users/Matt/Documents/Masters/Dissertation/Quantum/Testing/Inital_Test/Program.qs"
             var __qsVar0__num__ = a.Length;
-#line 433 "/Users/Matt/Documents/Masters/Dissertation/Quantum/Testing/Inital_Test/Program.qs"
+#line 515 "/Users/Matt/Documents/Masters/Dissertation/Quantum/Testing/Inital_Test/Program.qs"
             {
-#line 433 "/Users/Matt/Documents/Masters/Dissertation/Quantum/Testing/Inital_Test/Program.qs"
+#line 515 "/Users/Matt/Documents/Masters/Dissertation/Quantum/Testing/Inital_Test/Program.qs"
                 var (__qsVar1__aS__,__qsVar2__aSPad__) = (Allocate.Apply(__qsVar0__num__), Allocate.Apply(__qsVar0__num__));
 #line hidden
                 bool __arg1__ = true;
                 try
                 {
-#line 433 "/Users/Matt/Documents/Masters/Dissertation/Quantum/Testing/Inital_Test/Program.qs"
+#line 515 "/Users/Matt/Documents/Masters/Dissertation/Quantum/Testing/Inital_Test/Program.qs"
                     SquareI.Adjoint.Adjoint.Apply((new Microsoft.Quantum.Arithmetic.LittleEndian(a), new Microsoft.Quantum.Arithmetic.LittleEndian(QArray<Qubit>.Add(__qsVar1__aS__, __qsVar2__aSPad__))));
-#line 433 "/Users/Matt/Documents/Masters/Dissertation/Quantum/Testing/Inital_Test/Program.qs"
+#line 515 "/Users/Matt/Documents/Masters/Dissertation/Quantum/Testing/Inital_Test/Program.qs"
                     {
-#line 433 "/Users/Matt/Documents/Masters/Dissertation/Quantum/Testing/Inital_Test/Program.qs"
+#line 515 "/Users/Matt/Documents/Masters/Dissertation/Quantum/Testing/Inital_Test/Program.qs"
                         var (__qsVar3__anc__,__qsVar4__MsPad__) = (Allocate.Apply((__qsVar0__num__ * 2L)), Allocate.Apply(__qsVar0__num__));
 #line hidden
                         bool __arg2__ = true;
                         try
                         {
-#line 433 "/Users/Matt/Documents/Masters/Dissertation/Quantum/Testing/Inital_Test/Program.qs"
+#line 515 "/Users/Matt/Documents/Masters/Dissertation/Quantum/Testing/Inital_Test/Program.qs"
                             DivideI.Adjoint.Adjoint.Apply((new Microsoft.Quantum.Arithmetic.LittleEndian(QArray<Qubit>.Add(__qsVar1__aS__, __qsVar2__aSPad__)), new Microsoft.Quantum.Arithmetic.LittleEndian(QArray<Qubit>.Add(Ms, __qsVar4__MsPad__)), new Microsoft.Quantum.Arithmetic.LittleEndian(__qsVar3__anc__)));
-#line 433 "/Users/Matt/Documents/Masters/Dissertation/Quantum/Testing/Inital_Test/Program.qs"
+#line 515 "/Users/Matt/Documents/Masters/Dissertation/Quantum/Testing/Inital_Test/Program.qs"
                             AddI.Adjoint.Apply((new Microsoft.Quantum.Arithmetic.LittleEndian(__qsVar1__aS__), new Microsoft.Quantum.Arithmetic.LittleEndian(Ts)));
-#line 433 "/Users/Matt/Documents/Masters/Dissertation/Quantum/Testing/Inital_Test/Program.qs"
+#line 515 "/Users/Matt/Documents/Masters/Dissertation/Quantum/Testing/Inital_Test/Program.qs"
                             DivideI.Adjoint.Apply((new Microsoft.Quantum.Arithmetic.LittleEndian(QArray<Qubit>.Add(__qsVar1__aS__, __qsVar2__aSPad__)), new Microsoft.Quantum.Arithmetic.LittleEndian(QArray<Qubit>.Add(Ms, __qsVar4__MsPad__)), new Microsoft.Quantum.Arithmetic.LittleEndian(__qsVar3__anc__)));
                         }
 #line hidden
@@ -2633,7 +3410,7 @@ namespace Quantum.Bell
                         }
                     }
 
-#line 433 "/Users/Matt/Documents/Masters/Dissertation/Quantum/Testing/Inital_Test/Program.qs"
+#line 515 "/Users/Matt/Documents/Masters/Dissertation/Quantum/Testing/Inital_Test/Program.qs"
                     SquareI.Adjoint.Apply((new Microsoft.Quantum.Arithmetic.LittleEndian(a), new Microsoft.Quantum.Arithmetic.LittleEndian(QArray<Qubit>.Add(__qsVar1__aS__, __qsVar2__aSPad__))));
                 }
 #line hidden
@@ -2663,31 +3440,31 @@ namespace Quantum.Bell
         public override Func<(IQArray<Qubit>,(IQArray<Qubit>,IQArray<Qubit>,IQArray<Qubit>)), QVoid> ControlledBody => (__in__) =>
         {
             var (__controlQubits__,(a,Ms,Ts)) = __in__;
-#line 433 "/Users/Matt/Documents/Masters/Dissertation/Quantum/Testing/Inital_Test/Program.qs"
+#line 515 "/Users/Matt/Documents/Masters/Dissertation/Quantum/Testing/Inital_Test/Program.qs"
             var num = a.Length;
-#line 433 "/Users/Matt/Documents/Masters/Dissertation/Quantum/Testing/Inital_Test/Program.qs"
+#line 515 "/Users/Matt/Documents/Masters/Dissertation/Quantum/Testing/Inital_Test/Program.qs"
             {
-#line 433 "/Users/Matt/Documents/Masters/Dissertation/Quantum/Testing/Inital_Test/Program.qs"
+#line 515 "/Users/Matt/Documents/Masters/Dissertation/Quantum/Testing/Inital_Test/Program.qs"
                 var (aS,aSPad) = (Allocate.Apply(num), Allocate.Apply(num));
 #line hidden
                 bool __arg1__ = true;
                 try
                 {
-#line 433 "/Users/Matt/Documents/Masters/Dissertation/Quantum/Testing/Inital_Test/Program.qs"
+#line 515 "/Users/Matt/Documents/Masters/Dissertation/Quantum/Testing/Inital_Test/Program.qs"
                     SquareI.Controlled.Apply((__controlQubits__, (new Microsoft.Quantum.Arithmetic.LittleEndian(a), new Microsoft.Quantum.Arithmetic.LittleEndian(QArray<Qubit>.Add(aS, aSPad)))));
-#line 433 "/Users/Matt/Documents/Masters/Dissertation/Quantum/Testing/Inital_Test/Program.qs"
+#line 515 "/Users/Matt/Documents/Masters/Dissertation/Quantum/Testing/Inital_Test/Program.qs"
                     {
-#line 433 "/Users/Matt/Documents/Masters/Dissertation/Quantum/Testing/Inital_Test/Program.qs"
+#line 515 "/Users/Matt/Documents/Masters/Dissertation/Quantum/Testing/Inital_Test/Program.qs"
                         var (anc,MsPad) = (Allocate.Apply((num * 2L)), Allocate.Apply(num));
 #line hidden
                         bool __arg2__ = true;
                         try
                         {
-#line 433 "/Users/Matt/Documents/Masters/Dissertation/Quantum/Testing/Inital_Test/Program.qs"
+#line 515 "/Users/Matt/Documents/Masters/Dissertation/Quantum/Testing/Inital_Test/Program.qs"
                             DivideI.Controlled.Apply((__controlQubits__, (new Microsoft.Quantum.Arithmetic.LittleEndian(QArray<Qubit>.Add(aS, aSPad)), new Microsoft.Quantum.Arithmetic.LittleEndian(QArray<Qubit>.Add(Ms, MsPad)), new Microsoft.Quantum.Arithmetic.LittleEndian(anc))));
-#line 433 "/Users/Matt/Documents/Masters/Dissertation/Quantum/Testing/Inital_Test/Program.qs"
+#line 515 "/Users/Matt/Documents/Masters/Dissertation/Quantum/Testing/Inital_Test/Program.qs"
                             AddI.Controlled.Apply((__controlQubits__, (new Microsoft.Quantum.Arithmetic.LittleEndian(aS), new Microsoft.Quantum.Arithmetic.LittleEndian(Ts))));
-#line 433 "/Users/Matt/Documents/Masters/Dissertation/Quantum/Testing/Inital_Test/Program.qs"
+#line 515 "/Users/Matt/Documents/Masters/Dissertation/Quantum/Testing/Inital_Test/Program.qs"
                             DivideI.Adjoint.Controlled.Apply((__controlQubits__, (new Microsoft.Quantum.Arithmetic.LittleEndian(QArray<Qubit>.Add(aS, aSPad)), new Microsoft.Quantum.Arithmetic.LittleEndian(QArray<Qubit>.Add(Ms, MsPad)), new Microsoft.Quantum.Arithmetic.LittleEndian(anc))));
                         }
 #line hidden
@@ -2709,7 +3486,7 @@ namespace Quantum.Bell
                         }
                     }
 
-#line 433 "/Users/Matt/Documents/Masters/Dissertation/Quantum/Testing/Inital_Test/Program.qs"
+#line 515 "/Users/Matt/Documents/Masters/Dissertation/Quantum/Testing/Inital_Test/Program.qs"
                     SquareI.Adjoint.Controlled.Apply((__controlQubits__, (new Microsoft.Quantum.Arithmetic.LittleEndian(a), new Microsoft.Quantum.Arithmetic.LittleEndian(QArray<Qubit>.Add(aS, aSPad)))));
                 }
 #line hidden
@@ -2739,31 +3516,31 @@ namespace Quantum.Bell
         public override Func<(IQArray<Qubit>,(IQArray<Qubit>,IQArray<Qubit>,IQArray<Qubit>)), QVoid> ControlledAdjointBody => (__in__) =>
         {
             var (__controlQubits__,(a,Ms,Ts)) = __in__;
-#line 433 "/Users/Matt/Documents/Masters/Dissertation/Quantum/Testing/Inital_Test/Program.qs"
+#line 515 "/Users/Matt/Documents/Masters/Dissertation/Quantum/Testing/Inital_Test/Program.qs"
             var __qsVar0__num__ = a.Length;
-#line 433 "/Users/Matt/Documents/Masters/Dissertation/Quantum/Testing/Inital_Test/Program.qs"
+#line 515 "/Users/Matt/Documents/Masters/Dissertation/Quantum/Testing/Inital_Test/Program.qs"
             {
-#line 433 "/Users/Matt/Documents/Masters/Dissertation/Quantum/Testing/Inital_Test/Program.qs"
+#line 515 "/Users/Matt/Documents/Masters/Dissertation/Quantum/Testing/Inital_Test/Program.qs"
                 var (__qsVar1__aS__,__qsVar2__aSPad__) = (Allocate.Apply(__qsVar0__num__), Allocate.Apply(__qsVar0__num__));
 #line hidden
                 bool __arg1__ = true;
                 try
                 {
-#line 433 "/Users/Matt/Documents/Masters/Dissertation/Quantum/Testing/Inital_Test/Program.qs"
+#line 515 "/Users/Matt/Documents/Masters/Dissertation/Quantum/Testing/Inital_Test/Program.qs"
                     SquareI.Adjoint.Adjoint.Controlled.Apply((__controlQubits__, (new Microsoft.Quantum.Arithmetic.LittleEndian(a), new Microsoft.Quantum.Arithmetic.LittleEndian(QArray<Qubit>.Add(__qsVar1__aS__, __qsVar2__aSPad__)))));
-#line 433 "/Users/Matt/Documents/Masters/Dissertation/Quantum/Testing/Inital_Test/Program.qs"
+#line 515 "/Users/Matt/Documents/Masters/Dissertation/Quantum/Testing/Inital_Test/Program.qs"
                     {
-#line 433 "/Users/Matt/Documents/Masters/Dissertation/Quantum/Testing/Inital_Test/Program.qs"
+#line 515 "/Users/Matt/Documents/Masters/Dissertation/Quantum/Testing/Inital_Test/Program.qs"
                         var (__qsVar3__anc__,__qsVar4__MsPad__) = (Allocate.Apply((__qsVar0__num__ * 2L)), Allocate.Apply(__qsVar0__num__));
 #line hidden
                         bool __arg2__ = true;
                         try
                         {
-#line 433 "/Users/Matt/Documents/Masters/Dissertation/Quantum/Testing/Inital_Test/Program.qs"
+#line 515 "/Users/Matt/Documents/Masters/Dissertation/Quantum/Testing/Inital_Test/Program.qs"
                             DivideI.Adjoint.Adjoint.Controlled.Apply((__controlQubits__, (new Microsoft.Quantum.Arithmetic.LittleEndian(QArray<Qubit>.Add(__qsVar1__aS__, __qsVar2__aSPad__)), new Microsoft.Quantum.Arithmetic.LittleEndian(QArray<Qubit>.Add(Ms, __qsVar4__MsPad__)), new Microsoft.Quantum.Arithmetic.LittleEndian(__qsVar3__anc__))));
-#line 433 "/Users/Matt/Documents/Masters/Dissertation/Quantum/Testing/Inital_Test/Program.qs"
+#line 515 "/Users/Matt/Documents/Masters/Dissertation/Quantum/Testing/Inital_Test/Program.qs"
                             AddI.Adjoint.Controlled.Apply((__controlQubits__, (new Microsoft.Quantum.Arithmetic.LittleEndian(__qsVar1__aS__), new Microsoft.Quantum.Arithmetic.LittleEndian(Ts))));
-#line 433 "/Users/Matt/Documents/Masters/Dissertation/Quantum/Testing/Inital_Test/Program.qs"
+#line 515 "/Users/Matt/Documents/Masters/Dissertation/Quantum/Testing/Inital_Test/Program.qs"
                             DivideI.Adjoint.Controlled.Apply((__controlQubits__, (new Microsoft.Quantum.Arithmetic.LittleEndian(QArray<Qubit>.Add(__qsVar1__aS__, __qsVar2__aSPad__)), new Microsoft.Quantum.Arithmetic.LittleEndian(QArray<Qubit>.Add(Ms, __qsVar4__MsPad__)), new Microsoft.Quantum.Arithmetic.LittleEndian(__qsVar3__anc__))));
                         }
 #line hidden
@@ -2785,7 +3562,7 @@ namespace Quantum.Bell
                         }
                     }
 
-#line 433 "/Users/Matt/Documents/Masters/Dissertation/Quantum/Testing/Inital_Test/Program.qs"
+#line 515 "/Users/Matt/Documents/Masters/Dissertation/Quantum/Testing/Inital_Test/Program.qs"
                     SquareI.Adjoint.Controlled.Apply((__controlQubits__, (new Microsoft.Quantum.Arithmetic.LittleEndian(a), new Microsoft.Quantum.Arithmetic.LittleEndian(QArray<Qubit>.Add(__qsVar1__aS__, __qsVar2__aSPad__)))));
                 }
 #line hidden
@@ -2831,10 +3608,10 @@ namespace Quantum.Bell
         }
     }
 
-    [SourceLocation("/Users/Matt/Documents/Masters/Dissertation/Quantum/Testing/Inital_Test/Program.qs", OperationFunctor.Body, 446, 477)]
-    [SourceLocation("/Users/Matt/Documents/Masters/Dissertation/Quantum/Testing/Inital_Test/Program.qs", OperationFunctor.Adjoint, 446, 477)]
-    [SourceLocation("/Users/Matt/Documents/Masters/Dissertation/Quantum/Testing/Inital_Test/Program.qs", OperationFunctor.Controlled, 446, 477)]
-    [SourceLocation("/Users/Matt/Documents/Masters/Dissertation/Quantum/Testing/Inital_Test/Program.qs", OperationFunctor.ControlledAdjoint, 446, 477)]
+    [SourceLocation("/Users/Matt/Documents/Masters/Dissertation/Quantum/Testing/Inital_Test/Program.qs", OperationFunctor.Body, 528, 559)]
+    [SourceLocation("/Users/Matt/Documents/Masters/Dissertation/Quantum/Testing/Inital_Test/Program.qs", OperationFunctor.Adjoint, 528, 559)]
+    [SourceLocation("/Users/Matt/Documents/Masters/Dissertation/Quantum/Testing/Inital_Test/Program.qs", OperationFunctor.Controlled, 528, 559)]
+    [SourceLocation("/Users/Matt/Documents/Masters/Dissertation/Quantum/Testing/Inital_Test/Program.qs", OperationFunctor.ControlledAdjoint, 528, 559)]
     public partial class MultiplyModM : Unitary<(IQArray<Qubit>,IQArray<Qubit>,IQArray<Qubit>,IQArray<Qubit>)>, ICallable
     {
         public MultiplyModM(IOperationFactory m) : base(m)
@@ -2903,31 +3680,31 @@ namespace Quantum.Bell
         public override Func<(IQArray<Qubit>,IQArray<Qubit>,IQArray<Qubit>,IQArray<Qubit>), QVoid> Body => (__in__) =>
         {
             var (a,b,Ms,Ts) = __in__;
-#line 447 "/Users/Matt/Documents/Masters/Dissertation/Quantum/Testing/Inital_Test/Program.qs"
+#line 529 "/Users/Matt/Documents/Masters/Dissertation/Quantum/Testing/Inital_Test/Program.qs"
             var num = a.Length;
 #line hidden
             {
-#line 448 "/Users/Matt/Documents/Masters/Dissertation/Quantum/Testing/Inital_Test/Program.qs"
+#line 530 "/Users/Matt/Documents/Masters/Dissertation/Quantum/Testing/Inital_Test/Program.qs"
                 var (aS,aSPad) = (Allocate.Apply(num), Allocate.Apply(num));
 #line hidden
                 bool __arg1__ = true;
                 try
                 {
-#line 449 "/Users/Matt/Documents/Masters/Dissertation/Quantum/Testing/Inital_Test/Program.qs"
+#line 531 "/Users/Matt/Documents/Masters/Dissertation/Quantum/Testing/Inital_Test/Program.qs"
                     MultiplyI.Apply((new Microsoft.Quantum.Arithmetic.LittleEndian(a), new Microsoft.Quantum.Arithmetic.LittleEndian(b), new Microsoft.Quantum.Arithmetic.LittleEndian(QArray<Qubit>.Add(aS, aSPad))));
 #line hidden
                     {
-#line 450 "/Users/Matt/Documents/Masters/Dissertation/Quantum/Testing/Inital_Test/Program.qs"
+#line 532 "/Users/Matt/Documents/Masters/Dissertation/Quantum/Testing/Inital_Test/Program.qs"
                         var (anc,MsPad) = (Allocate.Apply((num * 2L)), Allocate.Apply(num));
 #line hidden
                         bool __arg2__ = true;
                         try
                         {
-#line 451 "/Users/Matt/Documents/Masters/Dissertation/Quantum/Testing/Inital_Test/Program.qs"
+#line 533 "/Users/Matt/Documents/Masters/Dissertation/Quantum/Testing/Inital_Test/Program.qs"
                             DivideI.Apply((new Microsoft.Quantum.Arithmetic.LittleEndian(QArray<Qubit>.Add(aS, aSPad)), new Microsoft.Quantum.Arithmetic.LittleEndian(QArray<Qubit>.Add(Ms, MsPad)), new Microsoft.Quantum.Arithmetic.LittleEndian(anc)));
-#line 452 "/Users/Matt/Documents/Masters/Dissertation/Quantum/Testing/Inital_Test/Program.qs"
+#line 534 "/Users/Matt/Documents/Masters/Dissertation/Quantum/Testing/Inital_Test/Program.qs"
                             AddI.Apply((new Microsoft.Quantum.Arithmetic.LittleEndian(aS), new Microsoft.Quantum.Arithmetic.LittleEndian(Ts)));
-#line 453 "/Users/Matt/Documents/Masters/Dissertation/Quantum/Testing/Inital_Test/Program.qs"
+#line 535 "/Users/Matt/Documents/Masters/Dissertation/Quantum/Testing/Inital_Test/Program.qs"
                             DivideI.Adjoint.Apply((new Microsoft.Quantum.Arithmetic.LittleEndian(QArray<Qubit>.Add(aS, aSPad)), new Microsoft.Quantum.Arithmetic.LittleEndian(QArray<Qubit>.Add(Ms, MsPad)), new Microsoft.Quantum.Arithmetic.LittleEndian(anc)));
                         }
 #line hidden
@@ -2949,7 +3726,7 @@ namespace Quantum.Bell
                         }
                     }
 
-#line 455 "/Users/Matt/Documents/Masters/Dissertation/Quantum/Testing/Inital_Test/Program.qs"
+#line 537 "/Users/Matt/Documents/Masters/Dissertation/Quantum/Testing/Inital_Test/Program.qs"
                     MultiplyI.Adjoint.Apply((new Microsoft.Quantum.Arithmetic.LittleEndian(a), new Microsoft.Quantum.Arithmetic.LittleEndian(b), new Microsoft.Quantum.Arithmetic.LittleEndian(QArray<Qubit>.Add(aS, aSPad))));
                 }
 #line hidden
@@ -2979,31 +3756,31 @@ namespace Quantum.Bell
         public override Func<(IQArray<Qubit>,IQArray<Qubit>,IQArray<Qubit>,IQArray<Qubit>), QVoid> AdjointBody => (__in__) =>
         {
             var (a,b,Ms,Ts) = __in__;
-#line 446 "/Users/Matt/Documents/Masters/Dissertation/Quantum/Testing/Inital_Test/Program.qs"
+#line 528 "/Users/Matt/Documents/Masters/Dissertation/Quantum/Testing/Inital_Test/Program.qs"
             var __qsVar0__num__ = a.Length;
-#line 446 "/Users/Matt/Documents/Masters/Dissertation/Quantum/Testing/Inital_Test/Program.qs"
+#line 528 "/Users/Matt/Documents/Masters/Dissertation/Quantum/Testing/Inital_Test/Program.qs"
             {
-#line 446 "/Users/Matt/Documents/Masters/Dissertation/Quantum/Testing/Inital_Test/Program.qs"
+#line 528 "/Users/Matt/Documents/Masters/Dissertation/Quantum/Testing/Inital_Test/Program.qs"
                 var (__qsVar1__aS__,__qsVar2__aSPad__) = (Allocate.Apply(__qsVar0__num__), Allocate.Apply(__qsVar0__num__));
 #line hidden
                 bool __arg1__ = true;
                 try
                 {
-#line 446 "/Users/Matt/Documents/Masters/Dissertation/Quantum/Testing/Inital_Test/Program.qs"
+#line 528 "/Users/Matt/Documents/Masters/Dissertation/Quantum/Testing/Inital_Test/Program.qs"
                     MultiplyI.Adjoint.Adjoint.Apply((new Microsoft.Quantum.Arithmetic.LittleEndian(a), new Microsoft.Quantum.Arithmetic.LittleEndian(b), new Microsoft.Quantum.Arithmetic.LittleEndian(QArray<Qubit>.Add(__qsVar1__aS__, __qsVar2__aSPad__))));
-#line 446 "/Users/Matt/Documents/Masters/Dissertation/Quantum/Testing/Inital_Test/Program.qs"
+#line 528 "/Users/Matt/Documents/Masters/Dissertation/Quantum/Testing/Inital_Test/Program.qs"
                     {
-#line 446 "/Users/Matt/Documents/Masters/Dissertation/Quantum/Testing/Inital_Test/Program.qs"
+#line 528 "/Users/Matt/Documents/Masters/Dissertation/Quantum/Testing/Inital_Test/Program.qs"
                         var (__qsVar3__anc__,__qsVar4__MsPad__) = (Allocate.Apply((__qsVar0__num__ * 2L)), Allocate.Apply(__qsVar0__num__));
 #line hidden
                         bool __arg2__ = true;
                         try
                         {
-#line 446 "/Users/Matt/Documents/Masters/Dissertation/Quantum/Testing/Inital_Test/Program.qs"
+#line 528 "/Users/Matt/Documents/Masters/Dissertation/Quantum/Testing/Inital_Test/Program.qs"
                             DivideI.Adjoint.Adjoint.Apply((new Microsoft.Quantum.Arithmetic.LittleEndian(QArray<Qubit>.Add(__qsVar1__aS__, __qsVar2__aSPad__)), new Microsoft.Quantum.Arithmetic.LittleEndian(QArray<Qubit>.Add(Ms, __qsVar4__MsPad__)), new Microsoft.Quantum.Arithmetic.LittleEndian(__qsVar3__anc__)));
-#line 446 "/Users/Matt/Documents/Masters/Dissertation/Quantum/Testing/Inital_Test/Program.qs"
+#line 528 "/Users/Matt/Documents/Masters/Dissertation/Quantum/Testing/Inital_Test/Program.qs"
                             AddI.Adjoint.Apply((new Microsoft.Quantum.Arithmetic.LittleEndian(__qsVar1__aS__), new Microsoft.Quantum.Arithmetic.LittleEndian(Ts)));
-#line 446 "/Users/Matt/Documents/Masters/Dissertation/Quantum/Testing/Inital_Test/Program.qs"
+#line 528 "/Users/Matt/Documents/Masters/Dissertation/Quantum/Testing/Inital_Test/Program.qs"
                             DivideI.Adjoint.Apply((new Microsoft.Quantum.Arithmetic.LittleEndian(QArray<Qubit>.Add(__qsVar1__aS__, __qsVar2__aSPad__)), new Microsoft.Quantum.Arithmetic.LittleEndian(QArray<Qubit>.Add(Ms, __qsVar4__MsPad__)), new Microsoft.Quantum.Arithmetic.LittleEndian(__qsVar3__anc__)));
                         }
 #line hidden
@@ -3025,7 +3802,7 @@ namespace Quantum.Bell
                         }
                     }
 
-#line 446 "/Users/Matt/Documents/Masters/Dissertation/Quantum/Testing/Inital_Test/Program.qs"
+#line 528 "/Users/Matt/Documents/Masters/Dissertation/Quantum/Testing/Inital_Test/Program.qs"
                     MultiplyI.Adjoint.Apply((new Microsoft.Quantum.Arithmetic.LittleEndian(a), new Microsoft.Quantum.Arithmetic.LittleEndian(b), new Microsoft.Quantum.Arithmetic.LittleEndian(QArray<Qubit>.Add(__qsVar1__aS__, __qsVar2__aSPad__))));
                 }
 #line hidden
@@ -3055,31 +3832,31 @@ namespace Quantum.Bell
         public override Func<(IQArray<Qubit>,(IQArray<Qubit>,IQArray<Qubit>,IQArray<Qubit>,IQArray<Qubit>)), QVoid> ControlledBody => (__in__) =>
         {
             var (__controlQubits__,(a,b,Ms,Ts)) = __in__;
-#line 446 "/Users/Matt/Documents/Masters/Dissertation/Quantum/Testing/Inital_Test/Program.qs"
+#line 528 "/Users/Matt/Documents/Masters/Dissertation/Quantum/Testing/Inital_Test/Program.qs"
             var num = a.Length;
-#line 446 "/Users/Matt/Documents/Masters/Dissertation/Quantum/Testing/Inital_Test/Program.qs"
+#line 528 "/Users/Matt/Documents/Masters/Dissertation/Quantum/Testing/Inital_Test/Program.qs"
             {
-#line 446 "/Users/Matt/Documents/Masters/Dissertation/Quantum/Testing/Inital_Test/Program.qs"
+#line 528 "/Users/Matt/Documents/Masters/Dissertation/Quantum/Testing/Inital_Test/Program.qs"
                 var (aS,aSPad) = (Allocate.Apply(num), Allocate.Apply(num));
 #line hidden
                 bool __arg1__ = true;
                 try
                 {
-#line 446 "/Users/Matt/Documents/Masters/Dissertation/Quantum/Testing/Inital_Test/Program.qs"
+#line 528 "/Users/Matt/Documents/Masters/Dissertation/Quantum/Testing/Inital_Test/Program.qs"
                     MultiplyI.Controlled.Apply((__controlQubits__, (new Microsoft.Quantum.Arithmetic.LittleEndian(a), new Microsoft.Quantum.Arithmetic.LittleEndian(b), new Microsoft.Quantum.Arithmetic.LittleEndian(QArray<Qubit>.Add(aS, aSPad)))));
-#line 446 "/Users/Matt/Documents/Masters/Dissertation/Quantum/Testing/Inital_Test/Program.qs"
+#line 528 "/Users/Matt/Documents/Masters/Dissertation/Quantum/Testing/Inital_Test/Program.qs"
                     {
-#line 446 "/Users/Matt/Documents/Masters/Dissertation/Quantum/Testing/Inital_Test/Program.qs"
+#line 528 "/Users/Matt/Documents/Masters/Dissertation/Quantum/Testing/Inital_Test/Program.qs"
                         var (anc,MsPad) = (Allocate.Apply((num * 2L)), Allocate.Apply(num));
 #line hidden
                         bool __arg2__ = true;
                         try
                         {
-#line 446 "/Users/Matt/Documents/Masters/Dissertation/Quantum/Testing/Inital_Test/Program.qs"
+#line 528 "/Users/Matt/Documents/Masters/Dissertation/Quantum/Testing/Inital_Test/Program.qs"
                             DivideI.Controlled.Apply((__controlQubits__, (new Microsoft.Quantum.Arithmetic.LittleEndian(QArray<Qubit>.Add(aS, aSPad)), new Microsoft.Quantum.Arithmetic.LittleEndian(QArray<Qubit>.Add(Ms, MsPad)), new Microsoft.Quantum.Arithmetic.LittleEndian(anc))));
-#line 446 "/Users/Matt/Documents/Masters/Dissertation/Quantum/Testing/Inital_Test/Program.qs"
+#line 528 "/Users/Matt/Documents/Masters/Dissertation/Quantum/Testing/Inital_Test/Program.qs"
                             AddI.Controlled.Apply((__controlQubits__, (new Microsoft.Quantum.Arithmetic.LittleEndian(aS), new Microsoft.Quantum.Arithmetic.LittleEndian(Ts))));
-#line 446 "/Users/Matt/Documents/Masters/Dissertation/Quantum/Testing/Inital_Test/Program.qs"
+#line 528 "/Users/Matt/Documents/Masters/Dissertation/Quantum/Testing/Inital_Test/Program.qs"
                             DivideI.Adjoint.Controlled.Apply((__controlQubits__, (new Microsoft.Quantum.Arithmetic.LittleEndian(QArray<Qubit>.Add(aS, aSPad)), new Microsoft.Quantum.Arithmetic.LittleEndian(QArray<Qubit>.Add(Ms, MsPad)), new Microsoft.Quantum.Arithmetic.LittleEndian(anc))));
                         }
 #line hidden
@@ -3101,7 +3878,7 @@ namespace Quantum.Bell
                         }
                     }
 
-#line 446 "/Users/Matt/Documents/Masters/Dissertation/Quantum/Testing/Inital_Test/Program.qs"
+#line 528 "/Users/Matt/Documents/Masters/Dissertation/Quantum/Testing/Inital_Test/Program.qs"
                     MultiplyI.Adjoint.Controlled.Apply((__controlQubits__, (new Microsoft.Quantum.Arithmetic.LittleEndian(a), new Microsoft.Quantum.Arithmetic.LittleEndian(b), new Microsoft.Quantum.Arithmetic.LittleEndian(QArray<Qubit>.Add(aS, aSPad)))));
                 }
 #line hidden
@@ -3131,31 +3908,31 @@ namespace Quantum.Bell
         public override Func<(IQArray<Qubit>,(IQArray<Qubit>,IQArray<Qubit>,IQArray<Qubit>,IQArray<Qubit>)), QVoid> ControlledAdjointBody => (__in__) =>
         {
             var (__controlQubits__,(a,b,Ms,Ts)) = __in__;
-#line 446 "/Users/Matt/Documents/Masters/Dissertation/Quantum/Testing/Inital_Test/Program.qs"
+#line 528 "/Users/Matt/Documents/Masters/Dissertation/Quantum/Testing/Inital_Test/Program.qs"
             var __qsVar0__num__ = a.Length;
-#line 446 "/Users/Matt/Documents/Masters/Dissertation/Quantum/Testing/Inital_Test/Program.qs"
+#line 528 "/Users/Matt/Documents/Masters/Dissertation/Quantum/Testing/Inital_Test/Program.qs"
             {
-#line 446 "/Users/Matt/Documents/Masters/Dissertation/Quantum/Testing/Inital_Test/Program.qs"
+#line 528 "/Users/Matt/Documents/Masters/Dissertation/Quantum/Testing/Inital_Test/Program.qs"
                 var (__qsVar1__aS__,__qsVar2__aSPad__) = (Allocate.Apply(__qsVar0__num__), Allocate.Apply(__qsVar0__num__));
 #line hidden
                 bool __arg1__ = true;
                 try
                 {
-#line 446 "/Users/Matt/Documents/Masters/Dissertation/Quantum/Testing/Inital_Test/Program.qs"
+#line 528 "/Users/Matt/Documents/Masters/Dissertation/Quantum/Testing/Inital_Test/Program.qs"
                     MultiplyI.Adjoint.Adjoint.Controlled.Apply((__controlQubits__, (new Microsoft.Quantum.Arithmetic.LittleEndian(a), new Microsoft.Quantum.Arithmetic.LittleEndian(b), new Microsoft.Quantum.Arithmetic.LittleEndian(QArray<Qubit>.Add(__qsVar1__aS__, __qsVar2__aSPad__)))));
-#line 446 "/Users/Matt/Documents/Masters/Dissertation/Quantum/Testing/Inital_Test/Program.qs"
+#line 528 "/Users/Matt/Documents/Masters/Dissertation/Quantum/Testing/Inital_Test/Program.qs"
                     {
-#line 446 "/Users/Matt/Documents/Masters/Dissertation/Quantum/Testing/Inital_Test/Program.qs"
+#line 528 "/Users/Matt/Documents/Masters/Dissertation/Quantum/Testing/Inital_Test/Program.qs"
                         var (__qsVar3__anc__,__qsVar4__MsPad__) = (Allocate.Apply((__qsVar0__num__ * 2L)), Allocate.Apply(__qsVar0__num__));
 #line hidden
                         bool __arg2__ = true;
                         try
                         {
-#line 446 "/Users/Matt/Documents/Masters/Dissertation/Quantum/Testing/Inital_Test/Program.qs"
+#line 528 "/Users/Matt/Documents/Masters/Dissertation/Quantum/Testing/Inital_Test/Program.qs"
                             DivideI.Adjoint.Adjoint.Controlled.Apply((__controlQubits__, (new Microsoft.Quantum.Arithmetic.LittleEndian(QArray<Qubit>.Add(__qsVar1__aS__, __qsVar2__aSPad__)), new Microsoft.Quantum.Arithmetic.LittleEndian(QArray<Qubit>.Add(Ms, __qsVar4__MsPad__)), new Microsoft.Quantum.Arithmetic.LittleEndian(__qsVar3__anc__))));
-#line 446 "/Users/Matt/Documents/Masters/Dissertation/Quantum/Testing/Inital_Test/Program.qs"
+#line 528 "/Users/Matt/Documents/Masters/Dissertation/Quantum/Testing/Inital_Test/Program.qs"
                             AddI.Adjoint.Controlled.Apply((__controlQubits__, (new Microsoft.Quantum.Arithmetic.LittleEndian(__qsVar1__aS__), new Microsoft.Quantum.Arithmetic.LittleEndian(Ts))));
-#line 446 "/Users/Matt/Documents/Masters/Dissertation/Quantum/Testing/Inital_Test/Program.qs"
+#line 528 "/Users/Matt/Documents/Masters/Dissertation/Quantum/Testing/Inital_Test/Program.qs"
                             DivideI.Adjoint.Controlled.Apply((__controlQubits__, (new Microsoft.Quantum.Arithmetic.LittleEndian(QArray<Qubit>.Add(__qsVar1__aS__, __qsVar2__aSPad__)), new Microsoft.Quantum.Arithmetic.LittleEndian(QArray<Qubit>.Add(Ms, __qsVar4__MsPad__)), new Microsoft.Quantum.Arithmetic.LittleEndian(__qsVar3__anc__))));
                         }
 #line hidden
@@ -3177,7 +3954,7 @@ namespace Quantum.Bell
                         }
                     }
 
-#line 446 "/Users/Matt/Documents/Masters/Dissertation/Quantum/Testing/Inital_Test/Program.qs"
+#line 528 "/Users/Matt/Documents/Masters/Dissertation/Quantum/Testing/Inital_Test/Program.qs"
                     MultiplyI.Adjoint.Controlled.Apply((__controlQubits__, (new Microsoft.Quantum.Arithmetic.LittleEndian(a), new Microsoft.Quantum.Arithmetic.LittleEndian(b), new Microsoft.Quantum.Arithmetic.LittleEndian(QArray<Qubit>.Add(__qsVar1__aS__, __qsVar2__aSPad__)))));
                 }
 #line hidden
@@ -3223,10 +4000,10 @@ namespace Quantum.Bell
         }
     }
 
-    [SourceLocation("/Users/Matt/Documents/Masters/Dissertation/Quantum/Testing/Inital_Test/Program.qs", OperationFunctor.Body, 479, 482)]
-    [SourceLocation("/Users/Matt/Documents/Masters/Dissertation/Quantum/Testing/Inital_Test/Program.qs", OperationFunctor.Adjoint, 502, 503)]
-    [SourceLocation("/Users/Matt/Documents/Masters/Dissertation/Quantum/Testing/Inital_Test/Program.qs", OperationFunctor.Controlled, 482, 502)]
-    [SourceLocation("/Users/Matt/Documents/Masters/Dissertation/Quantum/Testing/Inital_Test/Program.qs", OperationFunctor.ControlledAdjoint, 503, 508)]
+    [SourceLocation("/Users/Matt/Documents/Masters/Dissertation/Quantum/Testing/Inital_Test/Program.qs", OperationFunctor.Body, 561, 564)]
+    [SourceLocation("/Users/Matt/Documents/Masters/Dissertation/Quantum/Testing/Inital_Test/Program.qs", OperationFunctor.Adjoint, 584, 585)]
+    [SourceLocation("/Users/Matt/Documents/Masters/Dissertation/Quantum/Testing/Inital_Test/Program.qs", OperationFunctor.Controlled, 564, 584)]
+    [SourceLocation("/Users/Matt/Documents/Masters/Dissertation/Quantum/Testing/Inital_Test/Program.qs", OperationFunctor.ControlledAdjoint, 585, 590)]
     public partial class DivideI : Unitary<(Microsoft.Quantum.Arithmetic.LittleEndian,Microsoft.Quantum.Arithmetic.LittleEndian,Microsoft.Quantum.Arithmetic.LittleEndian)>, ICallable
     {
         public DivideI(IOperationFactory m) : base(m)
@@ -3307,7 +4084,7 @@ namespace Quantum.Bell
         public override Func<(Microsoft.Quantum.Arithmetic.LittleEndian,Microsoft.Quantum.Arithmetic.LittleEndian,Microsoft.Quantum.Arithmetic.LittleEndian), QVoid> Body => (__in__) =>
         {
             var (xs,ys,result) = __in__;
-#line 480 "/Users/Matt/Documents/Masters/Dissertation/Quantum/Testing/Inital_Test/Program.qs"
+#line 562 "/Users/Matt/Documents/Masters/Dissertation/Quantum/Testing/Inital_Test/Program.qs"
             self.Controlled.Apply((QArray<Qubit>.Create(0L), (xs, ys, result)));
 #line hidden
             return QVoid.Instance;
@@ -3317,7 +4094,7 @@ namespace Quantum.Bell
         public override Func<(Microsoft.Quantum.Arithmetic.LittleEndian,Microsoft.Quantum.Arithmetic.LittleEndian,Microsoft.Quantum.Arithmetic.LittleEndian), QVoid> AdjointBody => (__in__) =>
         {
             var (xs,ys,result) = __in__;
-#line 502 "/Users/Matt/Documents/Masters/Dissertation/Quantum/Testing/Inital_Test/Program.qs"
+#line 584 "/Users/Matt/Documents/Masters/Dissertation/Quantum/Testing/Inital_Test/Program.qs"
             self.Controlled.Adjoint.Apply((QArray<Qubit>.Create(0L), (xs, ys, result)));
 #line hidden
             return QVoid.Instance;
@@ -3327,27 +4104,27 @@ namespace Quantum.Bell
         public override Func<(IQArray<Qubit>,(Microsoft.Quantum.Arithmetic.LittleEndian,Microsoft.Quantum.Arithmetic.LittleEndian,Microsoft.Quantum.Arithmetic.LittleEndian)), QVoid> ControlledBody => (__in__) =>
         {
             var (controls,(xs,ys,result)) = __in__;
-#line 483 "/Users/Matt/Documents/Masters/Dissertation/Quantum/Testing/Inital_Test/Program.qs"
+#line 565 "/Users/Matt/Documents/Masters/Dissertation/Quantum/Testing/Inital_Test/Program.qs"
             var n = result.Data.Length;
-#line 485 "/Users/Matt/Documents/Masters/Dissertation/Quantum/Testing/Inital_Test/Program.qs"
+#line 567 "/Users/Matt/Documents/Masters/Dissertation/Quantum/Testing/Inital_Test/Program.qs"
             MicrosoftQuantumDiagnosticsEqualityFactI.Apply((n, ys.Data.Length, "Integer division requires\n                           equally-sized registers ys and result."));
-#line 487 "/Users/Matt/Documents/Masters/Dissertation/Quantum/Testing/Inital_Test/Program.qs"
+#line 569 "/Users/Matt/Documents/Masters/Dissertation/Quantum/Testing/Inital_Test/Program.qs"
             MicrosoftQuantumDiagnosticsEqualityFactI.Apply((n, xs.Data.Length, "Integer division\n                            requires an n-bit dividend registers."));
-#line 489 "/Users/Matt/Documents/Masters/Dissertation/Quantum/Testing/Inital_Test/Program.qs"
+#line 571 "/Users/Matt/Documents/Masters/Dissertation/Quantum/Testing/Inital_Test/Program.qs"
             MicrosoftQuantumDiagnosticsAssertAllZero.Apply(result.Data);
-#line 491 "/Users/Matt/Documents/Masters/Dissertation/Quantum/Testing/Inital_Test/Program.qs"
+#line 573 "/Users/Matt/Documents/Masters/Dissertation/Quantum/Testing/Inital_Test/Program.qs"
             var xpadded = new Microsoft.Quantum.Arithmetic.LittleEndian(QArray<Qubit>.Add(xs.Data, result.Data));
-#line 493 "/Users/Matt/Documents/Masters/Dissertation/Quantum/Testing/Inital_Test/Program.qs"
+#line 575 "/Users/Matt/Documents/Masters/Dissertation/Quantum/Testing/Inital_Test/Program.qs"
             foreach (var i in new QRange((n - 1L), -(1L), 0L))
 #line hidden
             {
-#line 494 "/Users/Matt/Documents/Masters/Dissertation/Quantum/Testing/Inital_Test/Program.qs"
+#line 576 "/Users/Matt/Documents/Masters/Dissertation/Quantum/Testing/Inital_Test/Program.qs"
                 var xtrunc = new Microsoft.Quantum.Arithmetic.LittleEndian(xpadded.Data?.Slice(new QRange(i, ((i + n) - 1L))));
-#line 496 "/Users/Matt/Documents/Masters/Dissertation/Quantum/Testing/Inital_Test/Program.qs"
+#line 578 "/Users/Matt/Documents/Masters/Dissertation/Quantum/Testing/Inital_Test/Program.qs"
                 CompareGTI.Controlled.Apply((controls, (ys, xtrunc, result.Data[i])));
-#line 498 "/Users/Matt/Documents/Masters/Dissertation/Quantum/Testing/Inital_Test/Program.qs"
+#line 580 "/Users/Matt/Documents/Masters/Dissertation/Quantum/Testing/Inital_Test/Program.qs"
                 MicrosoftQuantumIntrinsicX.Controlled.Apply((controls, result.Data[i]));
-#line 499 "/Users/Matt/Documents/Masters/Dissertation/Quantum/Testing/Inital_Test/Program.qs"
+#line 581 "/Users/Matt/Documents/Masters/Dissertation/Quantum/Testing/Inital_Test/Program.qs"
                 AddI.Adjoint.Controlled.Apply((new QArray<Qubit>(result.Data[i]), (ys, xtrunc)));
             }
 
@@ -3359,29 +4136,29 @@ namespace Quantum.Bell
         public override Func<(IQArray<Qubit>,(Microsoft.Quantum.Arithmetic.LittleEndian,Microsoft.Quantum.Arithmetic.LittleEndian,Microsoft.Quantum.Arithmetic.LittleEndian)), QVoid> ControlledAdjointBody => (__in__) =>
         {
             var (controls,(xs,ys,result)) = __in__;
-#line 503 "/Users/Matt/Documents/Masters/Dissertation/Quantum/Testing/Inital_Test/Program.qs"
+#line 585 "/Users/Matt/Documents/Masters/Dissertation/Quantum/Testing/Inital_Test/Program.qs"
             var __qsVar0__n__ = result.Data.Length;
-#line 503 "/Users/Matt/Documents/Masters/Dissertation/Quantum/Testing/Inital_Test/Program.qs"
+#line 585 "/Users/Matt/Documents/Masters/Dissertation/Quantum/Testing/Inital_Test/Program.qs"
             MicrosoftQuantumDiagnosticsEqualityFactI.Apply((__qsVar0__n__, ys.Data.Length, "Integer division requires\n                           equally-sized registers ys and result."));
-#line 503 "/Users/Matt/Documents/Masters/Dissertation/Quantum/Testing/Inital_Test/Program.qs"
+#line 585 "/Users/Matt/Documents/Masters/Dissertation/Quantum/Testing/Inital_Test/Program.qs"
             MicrosoftQuantumDiagnosticsEqualityFactI.Apply((__qsVar0__n__, xs.Data.Length, "Integer division\n                            requires an n-bit dividend registers."));
-#line 503 "/Users/Matt/Documents/Masters/Dissertation/Quantum/Testing/Inital_Test/Program.qs"
+#line 585 "/Users/Matt/Documents/Masters/Dissertation/Quantum/Testing/Inital_Test/Program.qs"
             var __qsVar1__xpadded__ = new Microsoft.Quantum.Arithmetic.LittleEndian(QArray<Qubit>.Add(xs.Data, result.Data));
-#line 503 "/Users/Matt/Documents/Masters/Dissertation/Quantum/Testing/Inital_Test/Program.qs"
+#line 585 "/Users/Matt/Documents/Masters/Dissertation/Quantum/Testing/Inital_Test/Program.qs"
             foreach (var __qsVar2__i__ in RangeReverse.Apply(new QRange((__qsVar0__n__ - 1L), -(1L), 0L)))
 #line hidden
             {
-#line 503 "/Users/Matt/Documents/Masters/Dissertation/Quantum/Testing/Inital_Test/Program.qs"
+#line 585 "/Users/Matt/Documents/Masters/Dissertation/Quantum/Testing/Inital_Test/Program.qs"
                 var __qsVar3__xtrunc__ = new Microsoft.Quantum.Arithmetic.LittleEndian(__qsVar1__xpadded__.Data?.Slice(new QRange(__qsVar2__i__, ((__qsVar2__i__ + __qsVar0__n__) - 1L))));
-#line 503 "/Users/Matt/Documents/Masters/Dissertation/Quantum/Testing/Inital_Test/Program.qs"
+#line 585 "/Users/Matt/Documents/Masters/Dissertation/Quantum/Testing/Inital_Test/Program.qs"
                 AddI.Adjoint.Controlled.Adjoint.Apply((new QArray<Qubit>(result.Data[__qsVar2__i__]), (ys, __qsVar3__xtrunc__)));
-#line 503 "/Users/Matt/Documents/Masters/Dissertation/Quantum/Testing/Inital_Test/Program.qs"
+#line 585 "/Users/Matt/Documents/Masters/Dissertation/Quantum/Testing/Inital_Test/Program.qs"
                 MicrosoftQuantumIntrinsicX.Controlled.Adjoint.Apply((controls, result.Data[__qsVar2__i__]));
-#line 503 "/Users/Matt/Documents/Masters/Dissertation/Quantum/Testing/Inital_Test/Program.qs"
+#line 585 "/Users/Matt/Documents/Masters/Dissertation/Quantum/Testing/Inital_Test/Program.qs"
                 CompareGTI.Controlled.Adjoint.Apply((controls, (ys, __qsVar3__xtrunc__, result.Data[__qsVar2__i__])));
             }
 
-#line 503 "/Users/Matt/Documents/Masters/Dissertation/Quantum/Testing/Inital_Test/Program.qs"
+#line 585 "/Users/Matt/Documents/Masters/Dissertation/Quantum/Testing/Inital_Test/Program.qs"
             MicrosoftQuantumDiagnosticsAssertAllZero.Adjoint.Apply(result.Data);
 #line hidden
             return QVoid.Instance;
@@ -3409,10 +4186,10 @@ namespace Quantum.Bell
         }
     }
 
-    [SourceLocation("/Users/Matt/Documents/Masters/Dissertation/Quantum/Testing/Inital_Test/Program.qs", OperationFunctor.Body, 508, 524)]
-    [SourceLocation("/Users/Matt/Documents/Masters/Dissertation/Quantum/Testing/Inital_Test/Program.qs", OperationFunctor.Adjoint, 508, 524)]
-    [SourceLocation("/Users/Matt/Documents/Masters/Dissertation/Quantum/Testing/Inital_Test/Program.qs", OperationFunctor.Controlled, 508, 524)]
-    [SourceLocation("/Users/Matt/Documents/Masters/Dissertation/Quantum/Testing/Inital_Test/Program.qs", OperationFunctor.ControlledAdjoint, 508, 524)]
+    [SourceLocation("/Users/Matt/Documents/Masters/Dissertation/Quantum/Testing/Inital_Test/Program.qs", OperationFunctor.Body, 590, 606)]
+    [SourceLocation("/Users/Matt/Documents/Masters/Dissertation/Quantum/Testing/Inital_Test/Program.qs", OperationFunctor.Adjoint, 590, 606)]
+    [SourceLocation("/Users/Matt/Documents/Masters/Dissertation/Quantum/Testing/Inital_Test/Program.qs", OperationFunctor.Controlled, 590, 606)]
+    [SourceLocation("/Users/Matt/Documents/Masters/Dissertation/Quantum/Testing/Inital_Test/Program.qs", OperationFunctor.ControlledAdjoint, 590, 606)]
     public partial class AddI : Unitary<(Microsoft.Quantum.Arithmetic.LittleEndian,Microsoft.Quantum.Arithmetic.LittleEndian)>, ICallable
     {
         public AddI(IOperationFactory m) : base(m)
@@ -3487,23 +4264,23 @@ namespace Quantum.Bell
         public override Func<(Microsoft.Quantum.Arithmetic.LittleEndian,Microsoft.Quantum.Arithmetic.LittleEndian), QVoid> Body => (__in__) =>
         {
             var (xs,ys) = __in__;
-#line 509 "/Users/Matt/Documents/Masters/Dissertation/Quantum/Testing/Inital_Test/Program.qs"
+#line 591 "/Users/Matt/Documents/Masters/Dissertation/Quantum/Testing/Inital_Test/Program.qs"
             if ((xs.Data.Length == ys.Data.Length))
             {
-#line 510 "/Users/Matt/Documents/Masters/Dissertation/Quantum/Testing/Inital_Test/Program.qs"
+#line 592 "/Users/Matt/Documents/Masters/Dissertation/Quantum/Testing/Inital_Test/Program.qs"
                 MicrosoftQuantumArithmeticRippleCarryAdderNoCarryTTK.Apply((xs, ys));
             }
             else if ((ys.Data.Length > xs.Data.Length))
             {
 #line hidden
                 {
-#line 513 "/Users/Matt/Documents/Masters/Dissertation/Quantum/Testing/Inital_Test/Program.qs"
+#line 595 "/Users/Matt/Documents/Masters/Dissertation/Quantum/Testing/Inital_Test/Program.qs"
                     var qs = Allocate.Apply(((ys.Data.Length - xs.Data.Length) - 1L));
 #line hidden
                     bool __arg1__ = true;
                     try
                     {
-#line 514 "/Users/Matt/Documents/Masters/Dissertation/Quantum/Testing/Inital_Test/Program.qs"
+#line 596 "/Users/Matt/Documents/Masters/Dissertation/Quantum/Testing/Inital_Test/Program.qs"
                         MicrosoftQuantumArithmeticRippleCarryAdderTTK.Apply((new Microsoft.Quantum.Arithmetic.LittleEndian(QArray<Qubit>.Add(xs.Data, qs)), new Microsoft.Quantum.Arithmetic.LittleEndian(MicrosoftQuantumArraysMost.Apply<IQArray<Qubit>>(ys.Data)), MicrosoftQuantumArraysTail.Apply<Qubit>(ys.Data)));
                     }
 #line hidden
@@ -3525,7 +4302,7 @@ namespace Quantum.Bell
             }
             else
             {
-#line 519 "/Users/Matt/Documents/Masters/Dissertation/Quantum/Testing/Inital_Test/Program.qs"
+#line 601 "/Users/Matt/Documents/Masters/Dissertation/Quantum/Testing/Inital_Test/Program.qs"
                 throw new ExecutionFailException("xs must not contain more qubits than ys!");
             }
 
@@ -3537,23 +4314,23 @@ namespace Quantum.Bell
         public override Func<(Microsoft.Quantum.Arithmetic.LittleEndian,Microsoft.Quantum.Arithmetic.LittleEndian), QVoid> AdjointBody => (__in__) =>
         {
             var (xs,ys) = __in__;
-#line 508 "/Users/Matt/Documents/Masters/Dissertation/Quantum/Testing/Inital_Test/Program.qs"
+#line 590 "/Users/Matt/Documents/Masters/Dissertation/Quantum/Testing/Inital_Test/Program.qs"
             if ((xs.Data.Length == ys.Data.Length))
             {
-#line 508 "/Users/Matt/Documents/Masters/Dissertation/Quantum/Testing/Inital_Test/Program.qs"
+#line 590 "/Users/Matt/Documents/Masters/Dissertation/Quantum/Testing/Inital_Test/Program.qs"
                 MicrosoftQuantumArithmeticRippleCarryAdderNoCarryTTK.Adjoint.Apply((xs, ys));
             }
             else if ((ys.Data.Length > xs.Data.Length))
             {
-#line 508 "/Users/Matt/Documents/Masters/Dissertation/Quantum/Testing/Inital_Test/Program.qs"
+#line 590 "/Users/Matt/Documents/Masters/Dissertation/Quantum/Testing/Inital_Test/Program.qs"
                 {
-#line 508 "/Users/Matt/Documents/Masters/Dissertation/Quantum/Testing/Inital_Test/Program.qs"
+#line 590 "/Users/Matt/Documents/Masters/Dissertation/Quantum/Testing/Inital_Test/Program.qs"
                     var __qsVar0__qs__ = Allocate.Apply(((ys.Data.Length - xs.Data.Length) - 1L));
 #line hidden
                     bool __arg1__ = true;
                     try
                     {
-#line 508 "/Users/Matt/Documents/Masters/Dissertation/Quantum/Testing/Inital_Test/Program.qs"
+#line 590 "/Users/Matt/Documents/Masters/Dissertation/Quantum/Testing/Inital_Test/Program.qs"
                         MicrosoftQuantumArithmeticRippleCarryAdderTTK.Adjoint.Apply((new Microsoft.Quantum.Arithmetic.LittleEndian(QArray<Qubit>.Add(xs.Data, __qsVar0__qs__)), new Microsoft.Quantum.Arithmetic.LittleEndian(MicrosoftQuantumArraysMost.Apply<IQArray<Qubit>>(ys.Data)), MicrosoftQuantumArraysTail.Apply<Qubit>(ys.Data)));
                     }
 #line hidden
@@ -3575,7 +4352,7 @@ namespace Quantum.Bell
             }
             else
             {
-#line 508 "/Users/Matt/Documents/Masters/Dissertation/Quantum/Testing/Inital_Test/Program.qs"
+#line 590 "/Users/Matt/Documents/Masters/Dissertation/Quantum/Testing/Inital_Test/Program.qs"
                 throw new ExecutionFailException("xs must not contain more qubits than ys!");
             }
 
@@ -3587,23 +4364,23 @@ namespace Quantum.Bell
         public override Func<(IQArray<Qubit>,(Microsoft.Quantum.Arithmetic.LittleEndian,Microsoft.Quantum.Arithmetic.LittleEndian)), QVoid> ControlledBody => (__in__) =>
         {
             var (__controlQubits__,(xs,ys)) = __in__;
-#line 508 "/Users/Matt/Documents/Masters/Dissertation/Quantum/Testing/Inital_Test/Program.qs"
+#line 590 "/Users/Matt/Documents/Masters/Dissertation/Quantum/Testing/Inital_Test/Program.qs"
             if ((xs.Data.Length == ys.Data.Length))
             {
-#line 508 "/Users/Matt/Documents/Masters/Dissertation/Quantum/Testing/Inital_Test/Program.qs"
+#line 590 "/Users/Matt/Documents/Masters/Dissertation/Quantum/Testing/Inital_Test/Program.qs"
                 MicrosoftQuantumArithmeticRippleCarryAdderNoCarryTTK.Controlled.Apply((__controlQubits__, (xs, ys)));
             }
             else if ((ys.Data.Length > xs.Data.Length))
             {
-#line 508 "/Users/Matt/Documents/Masters/Dissertation/Quantum/Testing/Inital_Test/Program.qs"
+#line 590 "/Users/Matt/Documents/Masters/Dissertation/Quantum/Testing/Inital_Test/Program.qs"
                 {
-#line 508 "/Users/Matt/Documents/Masters/Dissertation/Quantum/Testing/Inital_Test/Program.qs"
+#line 590 "/Users/Matt/Documents/Masters/Dissertation/Quantum/Testing/Inital_Test/Program.qs"
                     var qs = Allocate.Apply(((ys.Data.Length - xs.Data.Length) - 1L));
 #line hidden
                     bool __arg1__ = true;
                     try
                     {
-#line 508 "/Users/Matt/Documents/Masters/Dissertation/Quantum/Testing/Inital_Test/Program.qs"
+#line 590 "/Users/Matt/Documents/Masters/Dissertation/Quantum/Testing/Inital_Test/Program.qs"
                         MicrosoftQuantumArithmeticRippleCarryAdderTTK.Controlled.Apply((__controlQubits__, (new Microsoft.Quantum.Arithmetic.LittleEndian(QArray<Qubit>.Add(xs.Data, qs)), new Microsoft.Quantum.Arithmetic.LittleEndian(MicrosoftQuantumArraysMost.Apply<IQArray<Qubit>>(ys.Data)), MicrosoftQuantumArraysTail.Apply<Qubit>(ys.Data))));
                     }
 #line hidden
@@ -3625,7 +4402,7 @@ namespace Quantum.Bell
             }
             else
             {
-#line 508 "/Users/Matt/Documents/Masters/Dissertation/Quantum/Testing/Inital_Test/Program.qs"
+#line 590 "/Users/Matt/Documents/Masters/Dissertation/Quantum/Testing/Inital_Test/Program.qs"
                 throw new ExecutionFailException("xs must not contain more qubits than ys!");
             }
 
@@ -3637,23 +4414,23 @@ namespace Quantum.Bell
         public override Func<(IQArray<Qubit>,(Microsoft.Quantum.Arithmetic.LittleEndian,Microsoft.Quantum.Arithmetic.LittleEndian)), QVoid> ControlledAdjointBody => (__in__) =>
         {
             var (__controlQubits__,(xs,ys)) = __in__;
-#line 508 "/Users/Matt/Documents/Masters/Dissertation/Quantum/Testing/Inital_Test/Program.qs"
+#line 590 "/Users/Matt/Documents/Masters/Dissertation/Quantum/Testing/Inital_Test/Program.qs"
             if ((xs.Data.Length == ys.Data.Length))
             {
-#line 508 "/Users/Matt/Documents/Masters/Dissertation/Quantum/Testing/Inital_Test/Program.qs"
+#line 590 "/Users/Matt/Documents/Masters/Dissertation/Quantum/Testing/Inital_Test/Program.qs"
                 MicrosoftQuantumArithmeticRippleCarryAdderNoCarryTTK.Adjoint.Controlled.Apply((__controlQubits__, (xs, ys)));
             }
             else if ((ys.Data.Length > xs.Data.Length))
             {
-#line 508 "/Users/Matt/Documents/Masters/Dissertation/Quantum/Testing/Inital_Test/Program.qs"
+#line 590 "/Users/Matt/Documents/Masters/Dissertation/Quantum/Testing/Inital_Test/Program.qs"
                 {
-#line 508 "/Users/Matt/Documents/Masters/Dissertation/Quantum/Testing/Inital_Test/Program.qs"
+#line 590 "/Users/Matt/Documents/Masters/Dissertation/Quantum/Testing/Inital_Test/Program.qs"
                     var __qsVar0__qs__ = Allocate.Apply(((ys.Data.Length - xs.Data.Length) - 1L));
 #line hidden
                     bool __arg1__ = true;
                     try
                     {
-#line 508 "/Users/Matt/Documents/Masters/Dissertation/Quantum/Testing/Inital_Test/Program.qs"
+#line 590 "/Users/Matt/Documents/Masters/Dissertation/Quantum/Testing/Inital_Test/Program.qs"
                         MicrosoftQuantumArithmeticRippleCarryAdderTTK.Adjoint.Controlled.Apply((__controlQubits__, (new Microsoft.Quantum.Arithmetic.LittleEndian(QArray<Qubit>.Add(xs.Data, __qsVar0__qs__)), new Microsoft.Quantum.Arithmetic.LittleEndian(MicrosoftQuantumArraysMost.Apply<IQArray<Qubit>>(ys.Data)), MicrosoftQuantumArraysTail.Apply<Qubit>(ys.Data))));
                     }
 #line hidden
@@ -3675,7 +4452,7 @@ namespace Quantum.Bell
             }
             else
             {
-#line 508 "/Users/Matt/Documents/Masters/Dissertation/Quantum/Testing/Inital_Test/Program.qs"
+#line 590 "/Users/Matt/Documents/Masters/Dissertation/Quantum/Testing/Inital_Test/Program.qs"
                 throw new ExecutionFailException("xs must not contain more qubits than ys!");
             }
 
@@ -3704,10 +4481,10 @@ namespace Quantum.Bell
         }
     }
 
-    [SourceLocation("/Users/Matt/Documents/Masters/Dissertation/Quantum/Testing/Inital_Test/Program.qs", OperationFunctor.Body, 524, 529)]
-    [SourceLocation("/Users/Matt/Documents/Masters/Dissertation/Quantum/Testing/Inital_Test/Program.qs", OperationFunctor.Adjoint, 524, 529)]
-    [SourceLocation("/Users/Matt/Documents/Masters/Dissertation/Quantum/Testing/Inital_Test/Program.qs", OperationFunctor.Controlled, 524, 529)]
-    [SourceLocation("/Users/Matt/Documents/Masters/Dissertation/Quantum/Testing/Inital_Test/Program.qs", OperationFunctor.ControlledAdjoint, 524, 529)]
+    [SourceLocation("/Users/Matt/Documents/Masters/Dissertation/Quantum/Testing/Inital_Test/Program.qs", OperationFunctor.Body, 606, 611)]
+    [SourceLocation("/Users/Matt/Documents/Masters/Dissertation/Quantum/Testing/Inital_Test/Program.qs", OperationFunctor.Adjoint, 606, 611)]
+    [SourceLocation("/Users/Matt/Documents/Masters/Dissertation/Quantum/Testing/Inital_Test/Program.qs", OperationFunctor.Controlled, 606, 611)]
+    [SourceLocation("/Users/Matt/Documents/Masters/Dissertation/Quantum/Testing/Inital_Test/Program.qs", OperationFunctor.ControlledAdjoint, 606, 611)]
     public partial class CompareGTI : Unitary<(Microsoft.Quantum.Arithmetic.LittleEndian,Microsoft.Quantum.Arithmetic.LittleEndian,Qubit)>, ICallable
     {
         public CompareGTI(IOperationFactory m) : base(m)
@@ -3740,7 +4517,7 @@ namespace Quantum.Bell
         public override Func<(Microsoft.Quantum.Arithmetic.LittleEndian,Microsoft.Quantum.Arithmetic.LittleEndian,Qubit), QVoid> Body => (__in__) =>
         {
             var (xs,ys,result) = __in__;
-#line 526 "/Users/Matt/Documents/Masters/Dissertation/Quantum/Testing/Inital_Test/Program.qs"
+#line 608 "/Users/Matt/Documents/Masters/Dissertation/Quantum/Testing/Inital_Test/Program.qs"
             MicrosoftQuantumArithmeticGreaterThan.Apply((xs, ys, result));
 #line hidden
             return QVoid.Instance;
@@ -3750,7 +4527,7 @@ namespace Quantum.Bell
         public override Func<(Microsoft.Quantum.Arithmetic.LittleEndian,Microsoft.Quantum.Arithmetic.LittleEndian,Qubit), QVoid> AdjointBody => (__in__) =>
         {
             var (xs,ys,result) = __in__;
-#line 524 "/Users/Matt/Documents/Masters/Dissertation/Quantum/Testing/Inital_Test/Program.qs"
+#line 606 "/Users/Matt/Documents/Masters/Dissertation/Quantum/Testing/Inital_Test/Program.qs"
             MicrosoftQuantumArithmeticGreaterThan.Adjoint.Apply((xs, ys, result));
 #line hidden
             return QVoid.Instance;
@@ -3760,7 +4537,7 @@ namespace Quantum.Bell
         public override Func<(IQArray<Qubit>,(Microsoft.Quantum.Arithmetic.LittleEndian,Microsoft.Quantum.Arithmetic.LittleEndian,Qubit)), QVoid> ControlledBody => (__in__) =>
         {
             var (__controlQubits__,(xs,ys,result)) = __in__;
-#line 524 "/Users/Matt/Documents/Masters/Dissertation/Quantum/Testing/Inital_Test/Program.qs"
+#line 606 "/Users/Matt/Documents/Masters/Dissertation/Quantum/Testing/Inital_Test/Program.qs"
             MicrosoftQuantumArithmeticGreaterThan.Controlled.Apply((__controlQubits__, (xs, ys, result)));
 #line hidden
             return QVoid.Instance;
@@ -3770,7 +4547,7 @@ namespace Quantum.Bell
         public override Func<(IQArray<Qubit>,(Microsoft.Quantum.Arithmetic.LittleEndian,Microsoft.Quantum.Arithmetic.LittleEndian,Qubit)), QVoid> ControlledAdjointBody => (__in__) =>
         {
             var (__controlQubits__,(xs,ys,result)) = __in__;
-#line 524 "/Users/Matt/Documents/Masters/Dissertation/Quantum/Testing/Inital_Test/Program.qs"
+#line 606 "/Users/Matt/Documents/Masters/Dissertation/Quantum/Testing/Inital_Test/Program.qs"
             MicrosoftQuantumArithmeticGreaterThan.Adjoint.Controlled.Apply((__controlQubits__, (xs, ys, result)));
 #line hidden
             return QVoid.Instance;
@@ -3790,10 +4567,10 @@ namespace Quantum.Bell
         }
     }
 
-    [SourceLocation("/Users/Matt/Documents/Masters/Dissertation/Quantum/Testing/Inital_Test/Program.qs", OperationFunctor.Body, 531, 544)]
-    [SourceLocation("/Users/Matt/Documents/Masters/Dissertation/Quantum/Testing/Inital_Test/Program.qs", OperationFunctor.Adjoint, 561, 562)]
-    [SourceLocation("/Users/Matt/Documents/Masters/Dissertation/Quantum/Testing/Inital_Test/Program.qs", OperationFunctor.Controlled, 544, 561)]
-    [SourceLocation("/Users/Matt/Documents/Masters/Dissertation/Quantum/Testing/Inital_Test/Program.qs", OperationFunctor.ControlledAdjoint, 562, 567)]
+    [SourceLocation("/Users/Matt/Documents/Masters/Dissertation/Quantum/Testing/Inital_Test/Program.qs", OperationFunctor.Body, 613, 626)]
+    [SourceLocation("/Users/Matt/Documents/Masters/Dissertation/Quantum/Testing/Inital_Test/Program.qs", OperationFunctor.Adjoint, 643, 644)]
+    [SourceLocation("/Users/Matt/Documents/Masters/Dissertation/Quantum/Testing/Inital_Test/Program.qs", OperationFunctor.Controlled, 626, 643)]
+    [SourceLocation("/Users/Matt/Documents/Masters/Dissertation/Quantum/Testing/Inital_Test/Program.qs", OperationFunctor.ControlledAdjoint, 644, 649)]
     public partial class MultiplyI : Unitary<(Microsoft.Quantum.Arithmetic.LittleEndian,Microsoft.Quantum.Arithmetic.LittleEndian,Microsoft.Quantum.Arithmetic.LittleEndian)>, ICallable
     {
         public MultiplyI(IOperationFactory m) : base(m)
@@ -3874,19 +4651,19 @@ namespace Quantum.Bell
         public override Func<(Microsoft.Quantum.Arithmetic.LittleEndian,Microsoft.Quantum.Arithmetic.LittleEndian,Microsoft.Quantum.Arithmetic.LittleEndian), QVoid> Body => (__in__) =>
         {
             var (xs,ys,result) = __in__;
-#line 532 "/Users/Matt/Documents/Masters/Dissertation/Quantum/Testing/Inital_Test/Program.qs"
+#line 614 "/Users/Matt/Documents/Masters/Dissertation/Quantum/Testing/Inital_Test/Program.qs"
             var n = xs.Data.Length;
-#line 534 "/Users/Matt/Documents/Masters/Dissertation/Quantum/Testing/Inital_Test/Program.qs"
+#line 616 "/Users/Matt/Documents/Masters/Dissertation/Quantum/Testing/Inital_Test/Program.qs"
             MicrosoftQuantumDiagnosticsEqualityFactI.Apply((n, ys.Data.Length, "Integer multiplication requires\n                           equally-sized registers xs and ys."));
-#line 536 "/Users/Matt/Documents/Masters/Dissertation/Quantum/Testing/Inital_Test/Program.qs"
+#line 618 "/Users/Matt/Documents/Masters/Dissertation/Quantum/Testing/Inital_Test/Program.qs"
             MicrosoftQuantumDiagnosticsEqualityFactI.Apply(((2L * n), result.Data.Length, "Integer multiplication\n                            requires a 2n-bit result registers."));
-#line 538 "/Users/Matt/Documents/Masters/Dissertation/Quantum/Testing/Inital_Test/Program.qs"
+#line 620 "/Users/Matt/Documents/Masters/Dissertation/Quantum/Testing/Inital_Test/Program.qs"
             MicrosoftQuantumDiagnosticsAssertAllZero.Apply(result.Data);
-#line 540 "/Users/Matt/Documents/Masters/Dissertation/Quantum/Testing/Inital_Test/Program.qs"
+#line 622 "/Users/Matt/Documents/Masters/Dissertation/Quantum/Testing/Inital_Test/Program.qs"
             foreach (var i in new QRange(0L, (n - 1L)))
 #line hidden
             {
-#line 541 "/Users/Matt/Documents/Masters/Dissertation/Quantum/Testing/Inital_Test/Program.qs"
+#line 623 "/Users/Matt/Documents/Masters/Dissertation/Quantum/Testing/Inital_Test/Program.qs"
                 AddI.Controlled.Apply((new QArray<Qubit>(xs.Data[i]), (ys, new Microsoft.Quantum.Arithmetic.LittleEndian(result.Data?.Slice(new QRange(i, (i + n)))))));
             }
 
@@ -3898,21 +4675,21 @@ namespace Quantum.Bell
         public override Func<(Microsoft.Quantum.Arithmetic.LittleEndian,Microsoft.Quantum.Arithmetic.LittleEndian,Microsoft.Quantum.Arithmetic.LittleEndian), QVoid> AdjointBody => (__in__) =>
         {
             var (xs,ys,result) = __in__;
-#line 561 "/Users/Matt/Documents/Masters/Dissertation/Quantum/Testing/Inital_Test/Program.qs"
+#line 643 "/Users/Matt/Documents/Masters/Dissertation/Quantum/Testing/Inital_Test/Program.qs"
             var __qsVar0__n__ = xs.Data.Length;
-#line 561 "/Users/Matt/Documents/Masters/Dissertation/Quantum/Testing/Inital_Test/Program.qs"
+#line 643 "/Users/Matt/Documents/Masters/Dissertation/Quantum/Testing/Inital_Test/Program.qs"
             MicrosoftQuantumDiagnosticsEqualityFactI.Apply((__qsVar0__n__, ys.Data.Length, "Integer multiplication requires\n                           equally-sized registers xs and ys."));
-#line 561 "/Users/Matt/Documents/Masters/Dissertation/Quantum/Testing/Inital_Test/Program.qs"
+#line 643 "/Users/Matt/Documents/Masters/Dissertation/Quantum/Testing/Inital_Test/Program.qs"
             MicrosoftQuantumDiagnosticsEqualityFactI.Apply(((2L * __qsVar0__n__), result.Data.Length, "Integer multiplication\n                            requires a 2n-bit result registers."));
-#line 561 "/Users/Matt/Documents/Masters/Dissertation/Quantum/Testing/Inital_Test/Program.qs"
+#line 643 "/Users/Matt/Documents/Masters/Dissertation/Quantum/Testing/Inital_Test/Program.qs"
             foreach (var __qsVar1__i__ in RangeReverse.Apply(new QRange(0L, (__qsVar0__n__ - 1L))))
 #line hidden
             {
-#line 561 "/Users/Matt/Documents/Masters/Dissertation/Quantum/Testing/Inital_Test/Program.qs"
+#line 643 "/Users/Matt/Documents/Masters/Dissertation/Quantum/Testing/Inital_Test/Program.qs"
                 AddI.Controlled.Adjoint.Apply((new QArray<Qubit>(xs.Data[__qsVar1__i__]), (ys, new Microsoft.Quantum.Arithmetic.LittleEndian(result.Data?.Slice(new QRange(__qsVar1__i__, (__qsVar1__i__ + __qsVar0__n__)))))));
             }
 
-#line 561 "/Users/Matt/Documents/Masters/Dissertation/Quantum/Testing/Inital_Test/Program.qs"
+#line 643 "/Users/Matt/Documents/Masters/Dissertation/Quantum/Testing/Inital_Test/Program.qs"
             MicrosoftQuantumDiagnosticsAssertAllZero.Adjoint.Apply(result.Data);
 #line hidden
             return QVoid.Instance;
@@ -3922,31 +4699,31 @@ namespace Quantum.Bell
         public override Func<(IQArray<Qubit>,(Microsoft.Quantum.Arithmetic.LittleEndian,Microsoft.Quantum.Arithmetic.LittleEndian,Microsoft.Quantum.Arithmetic.LittleEndian)), QVoid> ControlledBody => (__in__) =>
         {
             var (controls,(xs,ys,result)) = __in__;
-#line 545 "/Users/Matt/Documents/Masters/Dissertation/Quantum/Testing/Inital_Test/Program.qs"
+#line 627 "/Users/Matt/Documents/Masters/Dissertation/Quantum/Testing/Inital_Test/Program.qs"
             var n = xs.Data.Length;
-#line 547 "/Users/Matt/Documents/Masters/Dissertation/Quantum/Testing/Inital_Test/Program.qs"
+#line 629 "/Users/Matt/Documents/Masters/Dissertation/Quantum/Testing/Inital_Test/Program.qs"
             MicrosoftQuantumDiagnosticsEqualityFactI.Apply((n, ys.Data.Length, "Integer multiplication requires\n                           equally-sized registers xs and ys."));
-#line 549 "/Users/Matt/Documents/Masters/Dissertation/Quantum/Testing/Inital_Test/Program.qs"
+#line 631 "/Users/Matt/Documents/Masters/Dissertation/Quantum/Testing/Inital_Test/Program.qs"
             MicrosoftQuantumDiagnosticsEqualityFactI.Apply(((2L * n), result.Data.Length, "Integer multiplication\n                            requires a 2n-bit result registers."));
-#line 551 "/Users/Matt/Documents/Masters/Dissertation/Quantum/Testing/Inital_Test/Program.qs"
+#line 633 "/Users/Matt/Documents/Masters/Dissertation/Quantum/Testing/Inital_Test/Program.qs"
             MicrosoftQuantumDiagnosticsAssertAllZero.Apply(result.Data);
 #line hidden
             {
-#line 553 "/Users/Matt/Documents/Masters/Dissertation/Quantum/Testing/Inital_Test/Program.qs"
+#line 635 "/Users/Matt/Documents/Masters/Dissertation/Quantum/Testing/Inital_Test/Program.qs"
                 var anc = Allocate.Apply();
 #line hidden
                 bool __arg1__ = true;
                 try
                 {
-#line 554 "/Users/Matt/Documents/Masters/Dissertation/Quantum/Testing/Inital_Test/Program.qs"
+#line 636 "/Users/Matt/Documents/Masters/Dissertation/Quantum/Testing/Inital_Test/Program.qs"
                     foreach (var i in new QRange(0L, (n - 1L)))
 #line hidden
                     {
-#line 555 "/Users/Matt/Documents/Masters/Dissertation/Quantum/Testing/Inital_Test/Program.qs"
+#line 637 "/Users/Matt/Documents/Masters/Dissertation/Quantum/Testing/Inital_Test/Program.qs"
                         MicrosoftQuantumIntrinsicCNOT.Controlled.Apply((controls, (xs.Data[i], anc)));
-#line 556 "/Users/Matt/Documents/Masters/Dissertation/Quantum/Testing/Inital_Test/Program.qs"
+#line 638 "/Users/Matt/Documents/Masters/Dissertation/Quantum/Testing/Inital_Test/Program.qs"
                         AddI.Controlled.Apply((new QArray<Qubit>(anc), (ys, new Microsoft.Quantum.Arithmetic.LittleEndian(result.Data?.Slice(new QRange(i, (i + n)))))));
-#line 557 "/Users/Matt/Documents/Masters/Dissertation/Quantum/Testing/Inital_Test/Program.qs"
+#line 639 "/Users/Matt/Documents/Masters/Dissertation/Quantum/Testing/Inital_Test/Program.qs"
                         MicrosoftQuantumIntrinsicCNOT.Controlled.Apply((controls, (xs.Data[i], anc)));
                     }
                 }
@@ -3975,29 +4752,29 @@ namespace Quantum.Bell
         public override Func<(IQArray<Qubit>,(Microsoft.Quantum.Arithmetic.LittleEndian,Microsoft.Quantum.Arithmetic.LittleEndian,Microsoft.Quantum.Arithmetic.LittleEndian)), QVoid> ControlledAdjointBody => (__in__) =>
         {
             var (controls,(xs,ys,result)) = __in__;
-#line 562 "/Users/Matt/Documents/Masters/Dissertation/Quantum/Testing/Inital_Test/Program.qs"
+#line 644 "/Users/Matt/Documents/Masters/Dissertation/Quantum/Testing/Inital_Test/Program.qs"
             var __qsVar0__n__ = xs.Data.Length;
-#line 562 "/Users/Matt/Documents/Masters/Dissertation/Quantum/Testing/Inital_Test/Program.qs"
+#line 644 "/Users/Matt/Documents/Masters/Dissertation/Quantum/Testing/Inital_Test/Program.qs"
             MicrosoftQuantumDiagnosticsEqualityFactI.Apply((__qsVar0__n__, ys.Data.Length, "Integer multiplication requires\n                           equally-sized registers xs and ys."));
-#line 562 "/Users/Matt/Documents/Masters/Dissertation/Quantum/Testing/Inital_Test/Program.qs"
+#line 644 "/Users/Matt/Documents/Masters/Dissertation/Quantum/Testing/Inital_Test/Program.qs"
             MicrosoftQuantumDiagnosticsEqualityFactI.Apply(((2L * __qsVar0__n__), result.Data.Length, "Integer multiplication\n                            requires a 2n-bit result registers."));
-#line 562 "/Users/Matt/Documents/Masters/Dissertation/Quantum/Testing/Inital_Test/Program.qs"
+#line 644 "/Users/Matt/Documents/Masters/Dissertation/Quantum/Testing/Inital_Test/Program.qs"
             {
-#line 562 "/Users/Matt/Documents/Masters/Dissertation/Quantum/Testing/Inital_Test/Program.qs"
+#line 644 "/Users/Matt/Documents/Masters/Dissertation/Quantum/Testing/Inital_Test/Program.qs"
                 var __qsVar1__anc__ = Allocate.Apply();
 #line hidden
                 bool __arg1__ = true;
                 try
                 {
-#line 562 "/Users/Matt/Documents/Masters/Dissertation/Quantum/Testing/Inital_Test/Program.qs"
+#line 644 "/Users/Matt/Documents/Masters/Dissertation/Quantum/Testing/Inital_Test/Program.qs"
                     foreach (var __qsVar2__i__ in RangeReverse.Apply(new QRange(0L, (__qsVar0__n__ - 1L))))
 #line hidden
                     {
-#line 562 "/Users/Matt/Documents/Masters/Dissertation/Quantum/Testing/Inital_Test/Program.qs"
+#line 644 "/Users/Matt/Documents/Masters/Dissertation/Quantum/Testing/Inital_Test/Program.qs"
                         MicrosoftQuantumIntrinsicCNOT.Controlled.Adjoint.Apply((controls, (xs.Data[__qsVar2__i__], __qsVar1__anc__)));
-#line 562 "/Users/Matt/Documents/Masters/Dissertation/Quantum/Testing/Inital_Test/Program.qs"
+#line 644 "/Users/Matt/Documents/Masters/Dissertation/Quantum/Testing/Inital_Test/Program.qs"
                         AddI.Controlled.Adjoint.Apply((new QArray<Qubit>(__qsVar1__anc__), (ys, new Microsoft.Quantum.Arithmetic.LittleEndian(result.Data?.Slice(new QRange(__qsVar2__i__, (__qsVar2__i__ + __qsVar0__n__)))))));
-#line 562 "/Users/Matt/Documents/Masters/Dissertation/Quantum/Testing/Inital_Test/Program.qs"
+#line 644 "/Users/Matt/Documents/Masters/Dissertation/Quantum/Testing/Inital_Test/Program.qs"
                         MicrosoftQuantumIntrinsicCNOT.Controlled.Adjoint.Apply((controls, (xs.Data[__qsVar2__i__], __qsVar1__anc__)));
                     }
                 }
@@ -4018,7 +4795,7 @@ namespace Quantum.Bell
                 }
             }
 
-#line 562 "/Users/Matt/Documents/Masters/Dissertation/Quantum/Testing/Inital_Test/Program.qs"
+#line 644 "/Users/Matt/Documents/Masters/Dissertation/Quantum/Testing/Inital_Test/Program.qs"
             MicrosoftQuantumDiagnosticsAssertAllZero.Adjoint.Apply(result.Data);
 #line hidden
             return QVoid.Instance;
@@ -4046,10 +4823,10 @@ namespace Quantum.Bell
         }
     }
 
-    [SourceLocation("/Users/Matt/Documents/Masters/Dissertation/Quantum/Testing/Inital_Test/Program.qs", OperationFunctor.Body, 568, 571)]
-    [SourceLocation("/Users/Matt/Documents/Masters/Dissertation/Quantum/Testing/Inital_Test/Program.qs", OperationFunctor.Adjoint, 587, 588)]
-    [SourceLocation("/Users/Matt/Documents/Masters/Dissertation/Quantum/Testing/Inital_Test/Program.qs", OperationFunctor.Controlled, 571, 587)]
-    [SourceLocation("/Users/Matt/Documents/Masters/Dissertation/Quantum/Testing/Inital_Test/Program.qs", OperationFunctor.ControlledAdjoint, 588, 592)]
+    [SourceLocation("/Users/Matt/Documents/Masters/Dissertation/Quantum/Testing/Inital_Test/Program.qs", OperationFunctor.Body, 650, 653)]
+    [SourceLocation("/Users/Matt/Documents/Masters/Dissertation/Quantum/Testing/Inital_Test/Program.qs", OperationFunctor.Adjoint, 669, 670)]
+    [SourceLocation("/Users/Matt/Documents/Masters/Dissertation/Quantum/Testing/Inital_Test/Program.qs", OperationFunctor.Controlled, 653, 669)]
+    [SourceLocation("/Users/Matt/Documents/Masters/Dissertation/Quantum/Testing/Inital_Test/Program.qs", OperationFunctor.ControlledAdjoint, 670, 674)]
     public partial class SquareI : Unitary<(Microsoft.Quantum.Arithmetic.LittleEndian,Microsoft.Quantum.Arithmetic.LittleEndian)>, ICallable
     {
         public SquareI(IOperationFactory m) : base(m)
@@ -4136,7 +4913,7 @@ namespace Quantum.Bell
         public override Func<(Microsoft.Quantum.Arithmetic.LittleEndian,Microsoft.Quantum.Arithmetic.LittleEndian), QVoid> Body => (__in__) =>
         {
             var (xs,result) = __in__;
-#line 569 "/Users/Matt/Documents/Masters/Dissertation/Quantum/Testing/Inital_Test/Program.qs"
+#line 651 "/Users/Matt/Documents/Masters/Dissertation/Quantum/Testing/Inital_Test/Program.qs"
             self.Controlled.Apply((QArray<Qubit>.Create(0L), (xs, result)));
 #line hidden
             return QVoid.Instance;
@@ -4146,7 +4923,7 @@ namespace Quantum.Bell
         public override Func<(Microsoft.Quantum.Arithmetic.LittleEndian,Microsoft.Quantum.Arithmetic.LittleEndian), QVoid> AdjointBody => (__in__) =>
         {
             var (xs,result) = __in__;
-#line 587 "/Users/Matt/Documents/Masters/Dissertation/Quantum/Testing/Inital_Test/Program.qs"
+#line 669 "/Users/Matt/Documents/Masters/Dissertation/Quantum/Testing/Inital_Test/Program.qs"
             self.Controlled.Adjoint.Apply((QArray<Qubit>.Create(0L), (xs, result)));
 #line hidden
             return QVoid.Instance;
@@ -4156,29 +4933,29 @@ namespace Quantum.Bell
         public override Func<(IQArray<Qubit>,(Microsoft.Quantum.Arithmetic.LittleEndian,Microsoft.Quantum.Arithmetic.LittleEndian)), QVoid> ControlledBody => (__in__) =>
         {
             var (controls,(xs,result)) = __in__;
-#line 572 "/Users/Matt/Documents/Masters/Dissertation/Quantum/Testing/Inital_Test/Program.qs"
+#line 654 "/Users/Matt/Documents/Masters/Dissertation/Quantum/Testing/Inital_Test/Program.qs"
             var n = xs.Data.Length;
-#line 574 "/Users/Matt/Documents/Masters/Dissertation/Quantum/Testing/Inital_Test/Program.qs"
+#line 656 "/Users/Matt/Documents/Masters/Dissertation/Quantum/Testing/Inital_Test/Program.qs"
             MicrosoftQuantumDiagnosticsEqualityFactI.Apply(((2L * n), result.Data.Length, "Integer multiplication\n                            requires a 2n-bit result registers."));
-#line 576 "/Users/Matt/Documents/Masters/Dissertation/Quantum/Testing/Inital_Test/Program.qs"
+#line 658 "/Users/Matt/Documents/Masters/Dissertation/Quantum/Testing/Inital_Test/Program.qs"
             MicrosoftQuantumDiagnosticsAssertAllZero.Apply(result.Data);
 #line hidden
             {
-#line 578 "/Users/Matt/Documents/Masters/Dissertation/Quantum/Testing/Inital_Test/Program.qs"
+#line 660 "/Users/Matt/Documents/Masters/Dissertation/Quantum/Testing/Inital_Test/Program.qs"
                 var anc = Allocate.Apply();
 #line hidden
                 bool __arg1__ = true;
                 try
                 {
-#line 579 "/Users/Matt/Documents/Masters/Dissertation/Quantum/Testing/Inital_Test/Program.qs"
+#line 661 "/Users/Matt/Documents/Masters/Dissertation/Quantum/Testing/Inital_Test/Program.qs"
                     foreach (var i in new QRange(0L, (n - 1L)))
 #line hidden
                     {
-#line 580 "/Users/Matt/Documents/Masters/Dissertation/Quantum/Testing/Inital_Test/Program.qs"
+#line 662 "/Users/Matt/Documents/Masters/Dissertation/Quantum/Testing/Inital_Test/Program.qs"
                         MicrosoftQuantumIntrinsicCNOT.Controlled.Apply((controls, (xs.Data[i], anc)));
-#line 581 "/Users/Matt/Documents/Masters/Dissertation/Quantum/Testing/Inital_Test/Program.qs"
+#line 663 "/Users/Matt/Documents/Masters/Dissertation/Quantum/Testing/Inital_Test/Program.qs"
                         AddI.Controlled.Apply((new QArray<Qubit>(anc), (xs, new Microsoft.Quantum.Arithmetic.LittleEndian(result.Data?.Slice(new QRange(i, (i + n)))))));
-#line 583 "/Users/Matt/Documents/Masters/Dissertation/Quantum/Testing/Inital_Test/Program.qs"
+#line 665 "/Users/Matt/Documents/Masters/Dissertation/Quantum/Testing/Inital_Test/Program.qs"
                         MicrosoftQuantumIntrinsicCNOT.Controlled.Apply((controls, (xs.Data[i], anc)));
                     }
                 }
@@ -4207,27 +4984,27 @@ namespace Quantum.Bell
         public override Func<(IQArray<Qubit>,(Microsoft.Quantum.Arithmetic.LittleEndian,Microsoft.Quantum.Arithmetic.LittleEndian)), QVoid> ControlledAdjointBody => (__in__) =>
         {
             var (controls,(xs,result)) = __in__;
-#line 588 "/Users/Matt/Documents/Masters/Dissertation/Quantum/Testing/Inital_Test/Program.qs"
+#line 670 "/Users/Matt/Documents/Masters/Dissertation/Quantum/Testing/Inital_Test/Program.qs"
             var __qsVar0__n__ = xs.Data.Length;
-#line 588 "/Users/Matt/Documents/Masters/Dissertation/Quantum/Testing/Inital_Test/Program.qs"
+#line 670 "/Users/Matt/Documents/Masters/Dissertation/Quantum/Testing/Inital_Test/Program.qs"
             MicrosoftQuantumDiagnosticsEqualityFactI.Apply(((2L * __qsVar0__n__), result.Data.Length, "Integer multiplication\n                            requires a 2n-bit result registers."));
-#line 588 "/Users/Matt/Documents/Masters/Dissertation/Quantum/Testing/Inital_Test/Program.qs"
+#line 670 "/Users/Matt/Documents/Masters/Dissertation/Quantum/Testing/Inital_Test/Program.qs"
             {
-#line 588 "/Users/Matt/Documents/Masters/Dissertation/Quantum/Testing/Inital_Test/Program.qs"
+#line 670 "/Users/Matt/Documents/Masters/Dissertation/Quantum/Testing/Inital_Test/Program.qs"
                 var __qsVar1__anc__ = Allocate.Apply();
 #line hidden
                 bool __arg1__ = true;
                 try
                 {
-#line 588 "/Users/Matt/Documents/Masters/Dissertation/Quantum/Testing/Inital_Test/Program.qs"
+#line 670 "/Users/Matt/Documents/Masters/Dissertation/Quantum/Testing/Inital_Test/Program.qs"
                     foreach (var __qsVar2__i__ in RangeReverse.Apply(new QRange(0L, (__qsVar0__n__ - 1L))))
 #line hidden
                     {
-#line 588 "/Users/Matt/Documents/Masters/Dissertation/Quantum/Testing/Inital_Test/Program.qs"
+#line 670 "/Users/Matt/Documents/Masters/Dissertation/Quantum/Testing/Inital_Test/Program.qs"
                         MicrosoftQuantumIntrinsicCNOT.Controlled.Adjoint.Apply((controls, (xs.Data[__qsVar2__i__], __qsVar1__anc__)));
-#line 588 "/Users/Matt/Documents/Masters/Dissertation/Quantum/Testing/Inital_Test/Program.qs"
+#line 670 "/Users/Matt/Documents/Masters/Dissertation/Quantum/Testing/Inital_Test/Program.qs"
                         AddI.Controlled.Adjoint.Apply((new QArray<Qubit>(__qsVar1__anc__), (xs, new Microsoft.Quantum.Arithmetic.LittleEndian(result.Data?.Slice(new QRange(__qsVar2__i__, (__qsVar2__i__ + __qsVar0__n__)))))));
-#line 588 "/Users/Matt/Documents/Masters/Dissertation/Quantum/Testing/Inital_Test/Program.qs"
+#line 670 "/Users/Matt/Documents/Masters/Dissertation/Quantum/Testing/Inital_Test/Program.qs"
                         MicrosoftQuantumIntrinsicCNOT.Controlled.Adjoint.Apply((controls, (xs.Data[__qsVar2__i__], __qsVar1__anc__)));
                     }
                 }
@@ -4248,7 +5025,7 @@ namespace Quantum.Bell
                 }
             }
 
-#line 588 "/Users/Matt/Documents/Masters/Dissertation/Quantum/Testing/Inital_Test/Program.qs"
+#line 670 "/Users/Matt/Documents/Masters/Dissertation/Quantum/Testing/Inital_Test/Program.qs"
             MicrosoftQuantumDiagnosticsAssertAllZero.Adjoint.Apply(result.Data);
 #line hidden
             return QVoid.Instance;
@@ -4277,10 +5054,10 @@ namespace Quantum.Bell
         }
     }
 
-    [SourceLocation("/Users/Matt/Documents/Masters/Dissertation/Quantum/Testing/Inital_Test/Program.qs", OperationFunctor.Body, 595, 598)]
-    [SourceLocation("/Users/Matt/Documents/Masters/Dissertation/Quantum/Testing/Inital_Test/Program.qs", OperationFunctor.Adjoint, 619, 620)]
-    [SourceLocation("/Users/Matt/Documents/Masters/Dissertation/Quantum/Testing/Inital_Test/Program.qs", OperationFunctor.Controlled, 598, 619)]
-    [SourceLocation("/Users/Matt/Documents/Masters/Dissertation/Quantum/Testing/Inital_Test/Program.qs", OperationFunctor.ControlledAdjoint, 620, 623)]
+    [SourceLocation("/Users/Matt/Documents/Masters/Dissertation/Quantum/Testing/Inital_Test/Program.qs", OperationFunctor.Body, 677, 680)]
+    [SourceLocation("/Users/Matt/Documents/Masters/Dissertation/Quantum/Testing/Inital_Test/Program.qs", OperationFunctor.Adjoint, 701, 702)]
+    [SourceLocation("/Users/Matt/Documents/Masters/Dissertation/Quantum/Testing/Inital_Test/Program.qs", OperationFunctor.Controlled, 680, 701)]
+    [SourceLocation("/Users/Matt/Documents/Masters/Dissertation/Quantum/Testing/Inital_Test/Program.qs", OperationFunctor.ControlledAdjoint, 702, 705)]
     public partial class MultiplySI : Unitary<(SignedLittleEndian,SignedLittleEndian,SignedLittleEndian)>, ICallable
     {
         public MultiplySI(IOperationFactory m) : base(m)
@@ -4355,7 +5132,7 @@ namespace Quantum.Bell
         public override Func<(SignedLittleEndian,SignedLittleEndian,SignedLittleEndian), QVoid> Body => (__in__) =>
         {
             var (xs,ys,result) = __in__;
-#line 596 "/Users/Matt/Documents/Masters/Dissertation/Quantum/Testing/Inital_Test/Program.qs"
+#line 678 "/Users/Matt/Documents/Masters/Dissertation/Quantum/Testing/Inital_Test/Program.qs"
             self.Controlled.Apply((QArray<Qubit>.Create(0L), (xs, ys, result)));
 #line hidden
             return QVoid.Instance;
@@ -4365,7 +5142,7 @@ namespace Quantum.Bell
         public override Func<(SignedLittleEndian,SignedLittleEndian,SignedLittleEndian), QVoid> AdjointBody => (__in__) =>
         {
             var (xs,ys,result) = __in__;
-#line 619 "/Users/Matt/Documents/Masters/Dissertation/Quantum/Testing/Inital_Test/Program.qs"
+#line 701 "/Users/Matt/Documents/Masters/Dissertation/Quantum/Testing/Inital_Test/Program.qs"
             self.Controlled.Adjoint.Apply((QArray<Qubit>.Create(0L), (xs, ys, result)));
 #line hidden
             return QVoid.Instance;
@@ -4375,39 +5152,39 @@ namespace Quantum.Bell
         public override Func<(IQArray<Qubit>,(SignedLittleEndian,SignedLittleEndian,SignedLittleEndian)), QVoid> ControlledBody => (__in__) =>
         {
             var (controls,(xs,ys,result)) = __in__;
-#line 599 "/Users/Matt/Documents/Masters/Dissertation/Quantum/Testing/Inital_Test/Program.qs"
+#line 681 "/Users/Matt/Documents/Masters/Dissertation/Quantum/Testing/Inital_Test/Program.qs"
             var n = xs.Data.Data.Length;
 #line hidden
             {
-#line 600 "/Users/Matt/Documents/Masters/Dissertation/Quantum/Testing/Inital_Test/Program.qs"
+#line 682 "/Users/Matt/Documents/Masters/Dissertation/Quantum/Testing/Inital_Test/Program.qs"
                 var (signx,signy) = (Allocate.Apply(), Allocate.Apply());
 #line hidden
                 bool __arg1__ = true;
                 try
                 {
-#line 601 "/Users/Matt/Documents/Masters/Dissertation/Quantum/Testing/Inital_Test/Program.qs"
+#line 683 "/Users/Matt/Documents/Masters/Dissertation/Quantum/Testing/Inital_Test/Program.qs"
                     MicrosoftQuantumIntrinsicCNOT.Apply((MicrosoftQuantumArraysTail.Apply<Qubit>(xs.Data.Data), signx));
-#line 602 "/Users/Matt/Documents/Masters/Dissertation/Quantum/Testing/Inital_Test/Program.qs"
+#line 684 "/Users/Matt/Documents/Masters/Dissertation/Quantum/Testing/Inital_Test/Program.qs"
                     MicrosoftQuantumIntrinsicCNOT.Apply((MicrosoftQuantumArraysTail.Apply<Qubit>(ys.Data.Data), signy));
-#line 603 "/Users/Matt/Documents/Masters/Dissertation/Quantum/Testing/Inital_Test/Program.qs"
+#line 685 "/Users/Matt/Documents/Masters/Dissertation/Quantum/Testing/Inital_Test/Program.qs"
                     Invert2sSI.Controlled.Apply((new QArray<Qubit>(signx), xs));
-#line 604 "/Users/Matt/Documents/Masters/Dissertation/Quantum/Testing/Inital_Test/Program.qs"
+#line 686 "/Users/Matt/Documents/Masters/Dissertation/Quantum/Testing/Inital_Test/Program.qs"
                     Invert2sSI.Controlled.Apply((new QArray<Qubit>(signy), ys));
-#line 606 "/Users/Matt/Documents/Masters/Dissertation/Quantum/Testing/Inital_Test/Program.qs"
+#line 688 "/Users/Matt/Documents/Masters/Dissertation/Quantum/Testing/Inital_Test/Program.qs"
                     MultiplyI.Controlled.Apply((controls, (xs.Data, ys.Data, result.Data)));
-#line 607 "/Users/Matt/Documents/Masters/Dissertation/Quantum/Testing/Inital_Test/Program.qs"
+#line 689 "/Users/Matt/Documents/Masters/Dissertation/Quantum/Testing/Inital_Test/Program.qs"
                     MicrosoftQuantumIntrinsicCNOT.Apply((signx, signy));
-#line 610 "/Users/Matt/Documents/Masters/Dissertation/Quantum/Testing/Inital_Test/Program.qs"
+#line 692 "/Users/Matt/Documents/Masters/Dissertation/Quantum/Testing/Inital_Test/Program.qs"
                     Invert2sSI.Controlled.Apply((new QArray<Qubit>(signy), result));
-#line 611 "/Users/Matt/Documents/Masters/Dissertation/Quantum/Testing/Inital_Test/Program.qs"
+#line 693 "/Users/Matt/Documents/Masters/Dissertation/Quantum/Testing/Inital_Test/Program.qs"
                     MicrosoftQuantumIntrinsicCNOT.Apply((signx, signy));
-#line 613 "/Users/Matt/Documents/Masters/Dissertation/Quantum/Testing/Inital_Test/Program.qs"
+#line 695 "/Users/Matt/Documents/Masters/Dissertation/Quantum/Testing/Inital_Test/Program.qs"
                     Invert2sSI.Adjoint.Controlled.Apply((new QArray<Qubit>(signx), xs));
-#line 614 "/Users/Matt/Documents/Masters/Dissertation/Quantum/Testing/Inital_Test/Program.qs"
+#line 696 "/Users/Matt/Documents/Masters/Dissertation/Quantum/Testing/Inital_Test/Program.qs"
                     Invert2sSI.Adjoint.Controlled.Apply((new QArray<Qubit>(signy), ys));
-#line 615 "/Users/Matt/Documents/Masters/Dissertation/Quantum/Testing/Inital_Test/Program.qs"
+#line 697 "/Users/Matt/Documents/Masters/Dissertation/Quantum/Testing/Inital_Test/Program.qs"
                     MicrosoftQuantumIntrinsicCNOT.Apply((MicrosoftQuantumArraysTail.Apply<Qubit>(xs.Data.Data), signx));
-#line 616 "/Users/Matt/Documents/Masters/Dissertation/Quantum/Testing/Inital_Test/Program.qs"
+#line 698 "/Users/Matt/Documents/Masters/Dissertation/Quantum/Testing/Inital_Test/Program.qs"
                     MicrosoftQuantumIntrinsicCNOT.Apply((MicrosoftQuantumArraysTail.Apply<Qubit>(ys.Data.Data), signy));
                 }
 #line hidden
@@ -4437,39 +5214,39 @@ namespace Quantum.Bell
         public override Func<(IQArray<Qubit>,(SignedLittleEndian,SignedLittleEndian,SignedLittleEndian)), QVoid> ControlledAdjointBody => (__in__) =>
         {
             var (controls,(xs,ys,result)) = __in__;
-#line 620 "/Users/Matt/Documents/Masters/Dissertation/Quantum/Testing/Inital_Test/Program.qs"
+#line 702 "/Users/Matt/Documents/Masters/Dissertation/Quantum/Testing/Inital_Test/Program.qs"
             var __qsVar0__n__ = xs.Data.Data.Length;
-#line 620 "/Users/Matt/Documents/Masters/Dissertation/Quantum/Testing/Inital_Test/Program.qs"
+#line 702 "/Users/Matt/Documents/Masters/Dissertation/Quantum/Testing/Inital_Test/Program.qs"
             {
-#line 620 "/Users/Matt/Documents/Masters/Dissertation/Quantum/Testing/Inital_Test/Program.qs"
+#line 702 "/Users/Matt/Documents/Masters/Dissertation/Quantum/Testing/Inital_Test/Program.qs"
                 var (__qsVar1__signx__,__qsVar2__signy__) = (Allocate.Apply(), Allocate.Apply());
 #line hidden
                 bool __arg1__ = true;
                 try
                 {
-#line 620 "/Users/Matt/Documents/Masters/Dissertation/Quantum/Testing/Inital_Test/Program.qs"
+#line 702 "/Users/Matt/Documents/Masters/Dissertation/Quantum/Testing/Inital_Test/Program.qs"
                     MicrosoftQuantumIntrinsicCNOT.Adjoint.Apply((MicrosoftQuantumArraysTail.Apply<Qubit>(ys.Data.Data), __qsVar2__signy__));
-#line 620 "/Users/Matt/Documents/Masters/Dissertation/Quantum/Testing/Inital_Test/Program.qs"
+#line 702 "/Users/Matt/Documents/Masters/Dissertation/Quantum/Testing/Inital_Test/Program.qs"
                     MicrosoftQuantumIntrinsicCNOT.Adjoint.Apply((MicrosoftQuantumArraysTail.Apply<Qubit>(xs.Data.Data), __qsVar1__signx__));
-#line 620 "/Users/Matt/Documents/Masters/Dissertation/Quantum/Testing/Inital_Test/Program.qs"
+#line 702 "/Users/Matt/Documents/Masters/Dissertation/Quantum/Testing/Inital_Test/Program.qs"
                     Invert2sSI.Adjoint.Controlled.Adjoint.Apply((new QArray<Qubit>(__qsVar2__signy__), ys));
-#line 620 "/Users/Matt/Documents/Masters/Dissertation/Quantum/Testing/Inital_Test/Program.qs"
+#line 702 "/Users/Matt/Documents/Masters/Dissertation/Quantum/Testing/Inital_Test/Program.qs"
                     Invert2sSI.Adjoint.Controlled.Adjoint.Apply((new QArray<Qubit>(__qsVar1__signx__), xs));
-#line 620 "/Users/Matt/Documents/Masters/Dissertation/Quantum/Testing/Inital_Test/Program.qs"
+#line 702 "/Users/Matt/Documents/Masters/Dissertation/Quantum/Testing/Inital_Test/Program.qs"
                     MicrosoftQuantumIntrinsicCNOT.Adjoint.Apply((__qsVar1__signx__, __qsVar2__signy__));
-#line 620 "/Users/Matt/Documents/Masters/Dissertation/Quantum/Testing/Inital_Test/Program.qs"
+#line 702 "/Users/Matt/Documents/Masters/Dissertation/Quantum/Testing/Inital_Test/Program.qs"
                     Invert2sSI.Controlled.Adjoint.Apply((new QArray<Qubit>(__qsVar2__signy__), result));
-#line 620 "/Users/Matt/Documents/Masters/Dissertation/Quantum/Testing/Inital_Test/Program.qs"
+#line 702 "/Users/Matt/Documents/Masters/Dissertation/Quantum/Testing/Inital_Test/Program.qs"
                     MicrosoftQuantumIntrinsicCNOT.Adjoint.Apply((__qsVar1__signx__, __qsVar2__signy__));
-#line 620 "/Users/Matt/Documents/Masters/Dissertation/Quantum/Testing/Inital_Test/Program.qs"
+#line 702 "/Users/Matt/Documents/Masters/Dissertation/Quantum/Testing/Inital_Test/Program.qs"
                     MultiplyI.Controlled.Adjoint.Apply((controls, (xs.Data, ys.Data, result.Data)));
-#line 620 "/Users/Matt/Documents/Masters/Dissertation/Quantum/Testing/Inital_Test/Program.qs"
+#line 702 "/Users/Matt/Documents/Masters/Dissertation/Quantum/Testing/Inital_Test/Program.qs"
                     Invert2sSI.Controlled.Adjoint.Apply((new QArray<Qubit>(__qsVar2__signy__), ys));
-#line 620 "/Users/Matt/Documents/Masters/Dissertation/Quantum/Testing/Inital_Test/Program.qs"
+#line 702 "/Users/Matt/Documents/Masters/Dissertation/Quantum/Testing/Inital_Test/Program.qs"
                     Invert2sSI.Controlled.Adjoint.Apply((new QArray<Qubit>(__qsVar1__signx__), xs));
-#line 620 "/Users/Matt/Documents/Masters/Dissertation/Quantum/Testing/Inital_Test/Program.qs"
+#line 702 "/Users/Matt/Documents/Masters/Dissertation/Quantum/Testing/Inital_Test/Program.qs"
                     MicrosoftQuantumIntrinsicCNOT.Adjoint.Apply((MicrosoftQuantumArraysTail.Apply<Qubit>(ys.Data.Data), __qsVar2__signy__));
-#line 620 "/Users/Matt/Documents/Masters/Dissertation/Quantum/Testing/Inital_Test/Program.qs"
+#line 702 "/Users/Matt/Documents/Masters/Dissertation/Quantum/Testing/Inital_Test/Program.qs"
                     MicrosoftQuantumIntrinsicCNOT.Adjoint.Apply((MicrosoftQuantumArraysTail.Apply<Qubit>(xs.Data.Data), __qsVar1__signx__));
                 }
 #line hidden
@@ -4516,10 +5293,10 @@ namespace Quantum.Bell
         }
     }
 
-    [SourceLocation("/Users/Matt/Documents/Masters/Dissertation/Quantum/Testing/Inital_Test/Program.qs", OperationFunctor.Body, 624, 627)]
-    [SourceLocation("/Users/Matt/Documents/Masters/Dissertation/Quantum/Testing/Inital_Test/Program.qs", OperationFunctor.Adjoint, 636, 637)]
-    [SourceLocation("/Users/Matt/Documents/Masters/Dissertation/Quantum/Testing/Inital_Test/Program.qs", OperationFunctor.Controlled, 627, 636)]
-    [SourceLocation("/Users/Matt/Documents/Masters/Dissertation/Quantum/Testing/Inital_Test/Program.qs", OperationFunctor.ControlledAdjoint, 637, -1)]
+    [SourceLocation("/Users/Matt/Documents/Masters/Dissertation/Quantum/Testing/Inital_Test/Program.qs", OperationFunctor.Body, 706, 709)]
+    [SourceLocation("/Users/Matt/Documents/Masters/Dissertation/Quantum/Testing/Inital_Test/Program.qs", OperationFunctor.Adjoint, 718, 719)]
+    [SourceLocation("/Users/Matt/Documents/Masters/Dissertation/Quantum/Testing/Inital_Test/Program.qs", OperationFunctor.Controlled, 709, 718)]
+    [SourceLocation("/Users/Matt/Documents/Masters/Dissertation/Quantum/Testing/Inital_Test/Program.qs", OperationFunctor.ControlledAdjoint, 719, -1)]
     public partial class Invert2sSI : Unitary<SignedLittleEndian>, ICallable
     {
         public Invert2sSI(IOperationFactory m) : base(m)
@@ -4579,7 +5356,7 @@ namespace Quantum.Bell
         public override Func<SignedLittleEndian, QVoid> Body => (__in__) =>
         {
             var xs = __in__;
-#line 625 "/Users/Matt/Documents/Masters/Dissertation/Quantum/Testing/Inital_Test/Program.qs"
+#line 707 "/Users/Matt/Documents/Masters/Dissertation/Quantum/Testing/Inital_Test/Program.qs"
             self.Controlled.Apply((QArray<Qubit>.Create(0L), xs));
 #line hidden
             return QVoid.Instance;
@@ -4589,7 +5366,7 @@ namespace Quantum.Bell
         public override Func<SignedLittleEndian, QVoid> AdjointBody => (__in__) =>
         {
             var xs = __in__;
-#line 636 "/Users/Matt/Documents/Masters/Dissertation/Quantum/Testing/Inital_Test/Program.qs"
+#line 718 "/Users/Matt/Documents/Masters/Dissertation/Quantum/Testing/Inital_Test/Program.qs"
             self.Controlled.Adjoint.Apply((QArray<Qubit>.Create(0L), xs));
 #line hidden
             return QVoid.Instance;
@@ -4599,21 +5376,21 @@ namespace Quantum.Bell
         public override Func<(IQArray<Qubit>,SignedLittleEndian), QVoid> ControlledBody => (__in__) =>
         {
             var (controls,xs) = __in__;
-#line 628 "/Users/Matt/Documents/Masters/Dissertation/Quantum/Testing/Inital_Test/Program.qs"
+#line 710 "/Users/Matt/Documents/Masters/Dissertation/Quantum/Testing/Inital_Test/Program.qs"
             MicrosoftQuantumCanonApplyToEachCA.Apply((MicrosoftQuantumIntrinsicX.Controlled.Partial(new Func<Qubit, (IQArray<Qubit>,Qubit)>((__arg1__) => (controls, __arg1__))), xs.Data.Data));
 #line hidden
             {
-#line 630 "/Users/Matt/Documents/Masters/Dissertation/Quantum/Testing/Inital_Test/Program.qs"
+#line 712 "/Users/Matt/Documents/Masters/Dissertation/Quantum/Testing/Inital_Test/Program.qs"
                 var ancillas = Allocate.Apply(xs.Data.Data.Length);
 #line hidden
                 bool __arg2__ = true;
                 try
                 {
-#line 631 "/Users/Matt/Documents/Masters/Dissertation/Quantum/Testing/Inital_Test/Program.qs"
+#line 713 "/Users/Matt/Documents/Masters/Dissertation/Quantum/Testing/Inital_Test/Program.qs"
                     MicrosoftQuantumIntrinsicX.Controlled.Apply((controls, ancillas[0L]));
-#line 632 "/Users/Matt/Documents/Masters/Dissertation/Quantum/Testing/Inital_Test/Program.qs"
+#line 714 "/Users/Matt/Documents/Masters/Dissertation/Quantum/Testing/Inital_Test/Program.qs"
                     AddI.Apply((new Microsoft.Quantum.Arithmetic.LittleEndian(ancillas), xs.Data));
-#line 633 "/Users/Matt/Documents/Masters/Dissertation/Quantum/Testing/Inital_Test/Program.qs"
+#line 715 "/Users/Matt/Documents/Masters/Dissertation/Quantum/Testing/Inital_Test/Program.qs"
                     MicrosoftQuantumIntrinsicX.Controlled.Apply((controls, ancillas[0L]));
                 }
 #line hidden
@@ -4641,19 +5418,19 @@ namespace Quantum.Bell
         public override Func<(IQArray<Qubit>,SignedLittleEndian), QVoid> ControlledAdjointBody => (__in__) =>
         {
             var (controls,xs) = __in__;
-#line 637 "/Users/Matt/Documents/Masters/Dissertation/Quantum/Testing/Inital_Test/Program.qs"
+#line 719 "/Users/Matt/Documents/Masters/Dissertation/Quantum/Testing/Inital_Test/Program.qs"
             {
-#line 637 "/Users/Matt/Documents/Masters/Dissertation/Quantum/Testing/Inital_Test/Program.qs"
+#line 719 "/Users/Matt/Documents/Masters/Dissertation/Quantum/Testing/Inital_Test/Program.qs"
                 var __qsVar0__ancillas__ = Allocate.Apply(xs.Data.Data.Length);
 #line hidden
                 bool __arg1__ = true;
                 try
                 {
-#line 637 "/Users/Matt/Documents/Masters/Dissertation/Quantum/Testing/Inital_Test/Program.qs"
+#line 719 "/Users/Matt/Documents/Masters/Dissertation/Quantum/Testing/Inital_Test/Program.qs"
                     MicrosoftQuantumIntrinsicX.Controlled.Adjoint.Apply((controls, __qsVar0__ancillas__[0L]));
-#line 637 "/Users/Matt/Documents/Masters/Dissertation/Quantum/Testing/Inital_Test/Program.qs"
+#line 719 "/Users/Matt/Documents/Masters/Dissertation/Quantum/Testing/Inital_Test/Program.qs"
                     AddI.Adjoint.Apply((new Microsoft.Quantum.Arithmetic.LittleEndian(__qsVar0__ancillas__), xs.Data));
-#line 637 "/Users/Matt/Documents/Masters/Dissertation/Quantum/Testing/Inital_Test/Program.qs"
+#line 719 "/Users/Matt/Documents/Masters/Dissertation/Quantum/Testing/Inital_Test/Program.qs"
                     MicrosoftQuantumIntrinsicX.Controlled.Adjoint.Apply((controls, __qsVar0__ancillas__[0L]));
                 }
 #line hidden
@@ -4673,7 +5450,7 @@ namespace Quantum.Bell
                 }
             }
 
-#line 637 "/Users/Matt/Documents/Masters/Dissertation/Quantum/Testing/Inital_Test/Program.qs"
+#line 719 "/Users/Matt/Documents/Masters/Dissertation/Quantum/Testing/Inital_Test/Program.qs"
             MicrosoftQuantumCanonApplyToEachCA.Adjoint.Apply((MicrosoftQuantumIntrinsicX.Controlled.Partial(new Func<Qubit, (IQArray<Qubit>,Qubit)>((__arg2__) => (controls, __arg2__))), xs.Data.Data));
 #line hidden
             return QVoid.Instance;

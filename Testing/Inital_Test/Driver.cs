@@ -20,7 +20,7 @@ namespace Quantum.Bell
             }
 
              var sim = new ToffoliSimulator();
-             var res = TestCFC.Run(sim).Result;
+             var res = TestD.Run(sim).Result;
         }
     }
 }
