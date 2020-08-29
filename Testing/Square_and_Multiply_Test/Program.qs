@@ -1,0 +1,477 @@
+﻿namespace ModularMultiplication.Testing {
+
+
+    open Microsoft.Quantum.Intrinsic;
+    open Microsoft.Quantum.Arithmetic;
+    open Microsoft.Quantum.Convert;
+    open Microsoft.Quantum.Math;
+    open Microsoft.Quantum.Diagnostics;
+    open Microsoft.Quantum.Canon;
+    open Microsoft.Quantum.Arrays;
+
+
+operation Testing_with_Toffoli(aI:BigInt,jI:BigInt,mI:BigInt,numBits:Int):Int{
+    let aArr = BigIntAsBoolArray(aI);
+    let jArr = BigIntAsBoolArray(jI);
+    let mArr = BigIntAsBoolArray(mI);
+    using ((a,m,j,t) = (Qubit[numBits],Qubit[numBits],Qubit[numBits],Qubit[numBits])){
+        //Setting the a and m into quantum registers
+        for (i in 0..(Length(aArr) -1)){
+            if (aArr[i] == true){X(a[i]);}
+        }
+        for (i in 0..(Length(jArr) -1)){
+            if (jArr[i] == true){X(j[i]);}
+        }
+        for (i in 0..(Length(mArr) -1)){
+            if (mArr[i] == true){X(m[i]);}
+        }
+
+        //Carrying out modular squaring
+        SquareAndMultiply(a,m,j,t);
+        
+
+        //Collecting the result
+        let result = MeasureInteger(LittleEndian(t));
+        ResetAll(a+j+m+t);
+        return result;
+    }
+
+}
+
+
+
+///////SQUARE AND MULTIPLY/////////////
+/////////NEEDS REFACTORING////////////////
+operation SquareAndMultiply(a:Qubit[],m:Qubit[],j:Qubit[],result:Qubit[]): Unit{
+
+        body(...){
+        let len = Length(j) - 1;
+        mutable numAnc = 0;
+        mutable sum = 0;
+        mutable add = 1;
+        repeat {
+            set sum = sum + add;
+            set add = add + 1;
+            set numAnc = numAnc + 1;
+        }until (len <= sum);
+        let origNumAnc = numAnc;
+
+        
+        let lenA = Length(a);
+        using ((v,c,z,az,ld) = (Qubit[lenA*numAnc],Qubit(),Qubit(),Qubit(),Qubit())){
+
+                mutable curr = 0;
+                mutable curReg = 0;
+        
+                //Checking for j = 0
+                ApplyToEachA(X,j);
+                Controlled X(j,az);
+                ApplyToEachA(X,j);
+                X(az);
+     
+                repeat{
+                for (i in 0..(numAnc-1)){
+
+                    if ((i+curr+1)<=(Length(j)-1)){
+                    //Checking for remainder of j being all zero
+                    ApplyToEachA(X,j[(Length(j) - 1 - (i+curr+1))...]);
+                    Controlled X(j[(Length(j) - 1 - (i+curr+1))...],z);
+                    ApplyToEachA(X,j[(Length(j) - 1 - (i+curr+1))...]);
+                    X(z);
+
+                    //checking for last digit and zero
+                    ApplyToEachA(X,j[(Length(j) - 1 - (i+curr))...]);
+                    Controlled X(j[(Length(j) - 1 - (i+curr))...],ld);
+                    ApplyToEachA(X,j[(Length(j) - 1 - (i+curr))...]);
+                    X(ld);
+
+
+                    //setting control qubit for is j[i] = 1
+                    Controlled X([j[(Length(j) - 1 - (i+curr+1))]],c);
+                    
+                    //Conducting square and multiply iteration
+                    Controlled SquareAndMultiplyIteration([az],(a,(a+v)[((i + curReg)*lenA)..((((i + curReg)*lenA)+lenA)-1)],m,c,z,ld,v[((i + curReg)*lenA)..((((i + curReg)*lenA)+lenA)-1)]));
+
+                    
+                    //If all j is all zero setting target to 1 as a^0=1
+                    X(az);
+                    Controlled X([az],v[((i+curReg)*lenA)]);
+                    X(az);
+                    
+
+
+                    //Resetting control qubit for is j[i]=1
+                    Controlled X([j[(Length(j) - 1 - (i+curr+1))]],c);
+                    
+                    
+                    //Resseting for last digit and zero
+                    X(ld);
+                    ApplyToEachA(X,j[(Length(j) - 1 - (i+curr))...]);
+                    Controlled X(j[(Length(j) - 1 - (i+curr))...],ld);
+                    ApplyToEachA(X,j[(Length(j) - 1 - (i+curr))...]);
+                    
+                    //Resetting remainder of j zero qubit
+                    X(z);
+                    ApplyToEachA(X,j[(Length(j) - 1 - (i+curr+1))...]);
+                    Controlled X(j[(Length(j) - 1 - (i+curr+1))...],z);
+                    ApplyToEachA(X,j[(Length(j) - 1 - (i+curr+1))...]);
+                    }
+                    if ((i+curr+1) == (Length(j)-1)){
+                        AddI(LittleEndian(v[((i + curReg)*lenA)..((((i + curReg)*lenA)+lenA)-1)]),LittleEndian(result));
+                    }
+                    
+                }
+                
+                mutable q=0;
+                for (k in 0..(numAnc-2)){
+
+                    set q = (numAnc-2) - k;
+                    if ((q+curr+1)<=(Length(j)-1)){
+                    //Checking for remainder of j being all zero
+                    ApplyToEachA(X,j[(Length(j) - 1 - (q+curr+1))...]);
+                    Controlled X(j[(Length(j) - 1 - (q+curr+1))...],z);
+                    ApplyToEachA(X,j[(Length(j) - 1 - (q+curr+1))...]);
+                    X(z);
+
+                    
+                    ApplyToEachA(X,j[(Length(j) - 1 - (q+curr))...]);
+                    Controlled X(j[(Length(j) - 1 - (q+curr))...],ld);
+                    ApplyToEachA(X,j[(Length(j) - 1 - (q+curr))...]);
+                    X(ld);
+
+
+                    //setting control qubit for is j[i] = 1
+                    Controlled X([j[(Length(j) - 1 - (q+curr+1))]],c);
+                    
+                    
+                    //Conducting square and multiply iteration
+                    Controlled Adjoint SquareAndMultiplyIteration([az],(a,(a+v)[((q + curReg)*lenA)..((((q+ curReg)*lenA)+lenA)-1)],m,c,z,ld,v[((q+ curReg)*lenA)..((((q+ curReg)*lenA)+lenA)-1)]));
+                    //If all j is all zero setting target to 1 as a^0=1
+                    X(az);
+                    Controlled X([az],v[((q+curReg)*lenA)]);
+                    X(az);
+
+                    //Resetting control qubit for is j[i]=1
+                    Controlled X([j[(Length(j) - 1 - (q+curr+1))]],c);
+
+                    X(ld);
+                    ApplyToEachA(X,j[(Length(j) - 1 - (q+curr))...]);
+                    Controlled X(j[(Length(j) - 1 - (q+curr))...],ld);
+                    ApplyToEachA(X,j[(Length(j) - 1 - (q+curr))...]);
+                    
+
+                    //Resetting remainder of j zero qubit
+                    X(z);
+                    ApplyToEachA(X,j[(Length(j) - 1 - (q+curr+1))...]);
+                    Controlled X(j[(Length(j) - 1 - (q+curr+1))...],z);
+                    ApplyToEachA(X,j[(Length(j) - 1 - (q+curr+1))...]);
+                    
+                    }
+                
+                }
+                
+                if (curReg != (origNumAnc-1)){
+                for (i in 0..(lenA-1)){
+                    SWAP(v[i+ curReg*lenA],v[i + (origNumAnc-1)*lenA]);
+                }}
+                
+
+                set curr = curr + numAnc;
+                set curReg = curReg + 1;
+                set numAnc = numAnc -1;
+                
+                }until (numAnc == 0);
+
+
+
+                repeat{
+                    set numAnc = numAnc + 1;
+                    set curReg = curReg - 1;
+                    set curr = curr - numAnc;
+
+                    if (curReg != (origNumAnc-1)){
+                    for (i in 0..(lenA-1)){
+                        SWAP(v[i+ curReg*lenA],v[i + (origNumAnc-1)*lenA]);
+                    }}
+                    for (q in 0..(numAnc-2)){
+                    if ((q+curr+1)<=(Length(j)-1)){
+                    //Checking for remainder of j being all zero
+                    ApplyToEachA(X,j[(Length(j) - 1 - (q+curr+1))...]);
+                    Controlled X(j[(Length(j) - 1 - (q+curr+1))...],z);
+                    ApplyToEachA(X,j[(Length(j) - 1 - (q+curr+1))...]);
+                    X(z);
+
+                    ApplyToEachA(X,j[(Length(j) - 1 - (q+curr))...]);
+                    Controlled X(j[(Length(j) - 1 - (q+curr))...],ld);
+                    ApplyToEachA(X,j[(Length(j) - 1 - (q+curr))...]);
+                    X(ld);
+
+                    
+
+
+                    //setting control qubit for is j[i] = 1
+                    Controlled X([j[(Length(j) - 1 - (q+curr+1))]],c);
+                    
+
+                    //Conducting square and multiply iteration
+                    Controlled SquareAndMultiplyIteration([az],(a,(a+v)[((q + curReg)*lenA)..((((q+ curReg)*lenA)+lenA)-1)],m,c,z,ld,v[((q+ curReg)*lenA)..((((q+ curReg)*lenA)+lenA)-1)]));
+                    //If all j is all zero setting target to 1 as a^0=1
+                    X(az);
+                    Controlled X([az],v[((q+curReg)*lenA)]);
+                    X(az);
+
+                    
+                    //Resetting control qubit for is j[i]=1
+                    Controlled X([j[(Length(j) - 1 - (q+curr+1))]],c);
+
+
+
+                    X(ld);
+                    ApplyToEachA(X,j[(Length(j) - 1 - (q+curr))...]);
+                    Controlled X(j[(Length(j) - 1 - (q+curr))...],ld);
+                    ApplyToEachA(X,j[(Length(j) - 1 - (q+curr))...]);
+                    
+                    //Resetting remainder of j zero qubit
+                    X(z);
+                    ApplyToEachA(X,j[(Length(j) - 1 - (q+curr+1))...]);
+                    Controlled X(j[(Length(j) - 1 - (q+curr+1))...],z);
+                    ApplyToEachA(X,j[(Length(j) - 1 - (q+curr+1))...]);
+                    
+                    }
+
+
+                }
+                mutable g = 0;
+                for (k in 0..(numAnc-1)){
+                    set g = (numAnc -1) - k;
+                    
+                    if ((g+curr+1)<=(Length(j)-1)){
+                    //Checking for remainder of j being all zero
+                    ApplyToEachA(X,j[(Length(j) - 1 - (g+curr+1))...]);
+                    Controlled X(j[(Length(j) - 1 - (g+curr+1))...],z);
+                    ApplyToEachA(X,j[(Length(j) - 1 - (g+curr+1))...]);
+                    X(z);
+
+                    
+                    ApplyToEachA(X,j[(Length(j) - 1 - (g+curr))...]);
+                    Controlled X(j[(Length(j) - 1 - (g+curr))...],ld);
+                    ApplyToEachA(X,j[(Length(j) - 1 - (g+curr))...]);
+                    X(ld);
+
+                    
+
+
+                    //setting control qubit for is j[i] = 1
+                    Controlled X([j[(Length(j) - 1 - (g+curr+1))]],c);
+
+                    
+                    //Conducting square and multiply iteration
+                    Controlled Adjoint SquareAndMultiplyIteration([az],(a,(a+v)[((g + curReg)*lenA)..((((g + curReg)*lenA)+lenA)-1)],m,c,z,ld,v[((g + curReg)*lenA)..((((g + curReg)*lenA)+lenA)-1)]));
+                    //If all j is all zero setting target to 1 as a^0=1
+
+                    X(az);
+                    Controlled X([az],v[((g+curReg)*lenA)]);
+                    X(az);
+                    
+
+
+                    //Resetting control qubit for is j[i]=1
+                    Controlled X([j[(Length(j) - 1 - (g+curr+1))]],c);
+
+                    X(ld);
+                    ApplyToEachA(X,j[(Length(j) - 1 - (g+curr))...]);
+                    Controlled X(j[(Length(j) - 1 - (g+curr))...],ld);
+                    ApplyToEachA(X,j[(Length(j) - 1 - (g+curr))...]);
+                    
+
+                    //Resetting remainder of j zero qubit
+                    X(z);
+                    ApplyToEachA(X,j[(Length(j) - 1 - (g+curr+1))...]);
+                    Controlled X(j[(Length(j) - 1 - (g+curr+1))...],z);
+                    ApplyToEachA(X,j[(Length(j) - 1 - (g+curr+1))...]);
+                    }
+
+                }
+                
+                }until(numAnc == origNumAnc);
+
+
+                //Resetting control all zero qubit
+                X(az);
+                ApplyToEachA(X,j);
+                Controlled X(j,az);
+                ApplyToEachA(X,j);
+
+                
+
+                
+        }  
+        
+        
+}        
+    
+}
+
+
+operation SquareAndMultiplyIteration(a:Qubit[],v:Qubit[],m:Qubit[],c:Qubit,z:Qubit,ld:Qubit,t:Qubit[]) : Unit is Adj + Ctl{
+        X(z);
+        Controlled AddI([z],(LittleEndian(v),LittleEndian(t)));
+        X(z);
+
+        X(ld);
+        Controlled AddI([z,ld],(LittleEndian(v),LittleEndian(t)));
+        X(ld);
+
+        using (anc = Qubit[Length(v)]){
+        Controlled SquareModM([z,ld],(v,m,anc));
+        Controlled MultiplyModM([z,c,ld],(a,anc,m,t));
+        X(c);
+        Controlled AddI([z,c,ld],(LittleEndian(anc),LittleEndian(t)));
+        X(c);
+        
+
+        Controlled Adjoint SquareModM([z,ld],(v,m,anc));
+        } 
+}
+
+operation SquareModM(a:Qubit[],Ms:Qubit[],Ts:Qubit[]) : Unit is Adj + Ctl{
+    let num = Length(a);
+    using ((aS,aSPad) = (Qubit[num],Qubit[num])){
+        SquareI(LittleEndian(a),LittleEndian(aS + aSPad));
+        using ((anc,MsPad) = (Qubit[num*2],Qubit[num])){
+            DivideI(LittleEndian(aS + aSPad),LittleEndian(Ms + MsPad),LittleEndian(anc));
+            AddI(LittleEndian(aS),LittleEndian(Ts));
+            Adjoint DivideI(LittleEndian(aS + aSPad),LittleEndian(Ms + MsPad),LittleEndian(anc));
+        } 
+        Adjoint  SquareI(LittleEndian(a),LittleEndian(aS + aSPad)); 
+    }  
+}
+
+operation MultiplyModM(a:Qubit[],b:Qubit[],Ms:Qubit[],Ts:Qubit[]) : Unit is Adj + Ctl{
+    let num = Length(a);
+    using ((aS,aSPad) = (Qubit[num],Qubit[num])){
+        MultiplyI(LittleEndian(a),LittleEndian(b),LittleEndian(aS + aSPad));
+        using ((anc,MsPad) = (Qubit[num*2],Qubit[num])){
+            DivideI(LittleEndian(aS + aSPad),LittleEndian(Ms + MsPad),LittleEndian(anc));
+            AddI(LittleEndian(aS),LittleEndian(Ts));
+            Adjoint DivideI(LittleEndian(aS + aSPad),LittleEndian(Ms + MsPad),LittleEndian(anc));
+        } 
+        Adjoint  MultiplyI(LittleEndian(a),LittleEndian(b),LittleEndian(aS + aSPad));
+    }  
+}
+
+operation AddI (xs: LittleEndian, ys: LittleEndian) : Unit is Adj + Ctl {
+        if (Length(xs!) == Length(ys!)) {
+            RippleCarryAdderNoCarryTTK(xs, ys);
+        }
+        elif (Length(ys!) > Length(xs!)) {
+            using (qs = Qubit[Length(ys!) - Length(xs!) - 1]){
+                RippleCarryAdderTTK(LittleEndian(xs! + qs),
+                                    LittleEndian(Most(ys!)), Tail(ys!));
+            }
+        }
+        else {
+            fail "xs must not contain more qubits than ys!";
+        }
+    }
+
+    operation CompareGTI (xs: LittleEndian, ys: LittleEndian,
+                            result: Qubit) : Unit is Adj + Ctl {
+        GreaterThan(xs, ys, result);
+    }
+
+
+    operation MultiplyI (xs: LittleEndian, ys: LittleEndian,
+                         result: LittleEndian) : Unit {
+        body (...) {
+            let n = Length(xs!);
+
+            EqualityFactI(n, Length(ys!), "Integer multiplication requires
+                           equally-sized registers xs and ys.");
+            EqualityFactI(2 * n, Length(result!), "Integer multiplication
+                            requires a 2n-bit result registers.");
+            AssertAllZero(result!);
+
+            for (i in 0..n-1) {
+                (Controlled AddI) ([xs![i]], (ys, LittleEndian(result![i..i+n])));
+            }
+        }
+        controlled (controls, ...) {
+            let n = Length(xs!);
+
+            EqualityFactI(n, Length(ys!), "Integer multiplication requires
+                           equally-sized registers xs and ys.");
+            EqualityFactI(2 * n, Length(result!), "Integer multiplication
+                            requires a 2n-bit result registers.");
+            AssertAllZero(result!);
+
+            using (anc = Qubit()) {
+                for (i in 0..n-1) {
+                    (Controlled CNOT) (controls, (xs![i], anc));
+                    (Controlled AddI) ([anc], (ys, LittleEndian(result![i..i+n])));
+                    (Controlled CNOT) (controls, (xs![i], anc));
+                }
+            }
+        }
+        adjoint auto;
+        adjoint controlled auto;
+    } 
+
+
+    operation SquareI (xs: LittleEndian, result: LittleEndian) : Unit {
+        body (...) {
+            (Controlled SquareI) (new Qubit[0], (xs, result));
+        }
+        controlled (controls, ...) {
+            let n = Length(xs!);
+
+            EqualityFactI(2 * n, Length(result!), "Integer multiplication
+                            requires a 2n-bit result registers.");
+            AssertAllZero(result!);
+
+            using (anc = Qubit()) {
+                for (i in 0..n-1) {
+                    (Controlled CNOT) (controls, (xs![i], anc));
+                    (Controlled AddI) ([anc], (xs,
+                        LittleEndian(result![i..i+n])));
+                    (Controlled CNOT) (controls, (xs![i], anc));
+                }
+            }
+        }
+        adjoint auto;
+        adjoint controlled auto;
+    }
+
+
+operation DivideI (xs: LittleEndian, ys: LittleEndian,
+                               result: LittleEndian) : Unit {
+        body (...) {
+            (Controlled DivideI) (new Qubit[0], (xs, ys, result));
+        }
+        controlled (controls, ...) {
+            let n = Length(result!);
+
+            EqualityFactI(n, Length(ys!), "Integer division requires
+                           equally-sized registers ys and result.");
+            EqualityFactI(n, Length(xs!), "Integer division
+                            requires an n-bit dividend registers.");
+            AssertAllZero(result!);
+
+            let xpadded = LittleEndian(xs! + result!);
+
+            for (i in (n-1)..(-1)..0) {
+                let xtrunc = LittleEndian(xpadded![i..i+n-1]);
+                
+                (Controlled CompareGTI) (controls, (ys, xtrunc, result![i]));
+                // if ys > xtrunc, we don't subtract:
+                (Controlled X) (controls, result![i]);
+                (Controlled Adjoint AddI) ([result![i]], (ys, xtrunc));
+            }
+        }
+        adjoint auto;
+        adjoint controlled auto;
+    }
+
+
+
+}
