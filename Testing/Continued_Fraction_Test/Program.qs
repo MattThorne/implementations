@@ -11,6 +11,18 @@
     open Microsoft.Quantum.Measurement;
     newtype SignedLittleEndian = LittleEndian;
 
+operation Testing_in_Superposition(bitSize: Int):Unit{
+
+using ((p,m,u)=(Qubit[bitSize],Qubit[bitSize],Qubit[bitSize])){
+
+    let res = CFC(p,m,u);
+
+}
+
+
+}
+
+
 
 
 operation CFCControl(n: Int,mI:Int,bitSize:Int) : (Int,BigInt){

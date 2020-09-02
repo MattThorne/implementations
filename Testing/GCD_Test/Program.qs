@@ -13,6 +13,22 @@
 
 
 
+
+operation Testing_in_Superposition(bitSize:Int):Unit{
+
+
+using ((d,a,b)=(Qubit[bitSize],Qubit[bitSize],Qubit[bitSize])){
+
+    GCDMain(d,a,b);
+}
+
+
+}
+            
+
+
+
+
 operation TestGCD(aI:Int, bI:Int, bitSize:Int) : Int{
     let aArr = IntAsBoolArray(aI,bitSize);
     let bArr = IntAsBoolArray(bI,bitSize);

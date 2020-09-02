@@ -10,7 +10,7 @@
     open Microsoft.Quantum.Arrays;
 
 
-operation Testing_with_Toffoli(mI:BigInt,numBits:Int, Ran: BigInt):Int{
+operation Testing_with_Toffoli(mI:BigInt,numBits:Int, Ran: Int):Int{
     let mArr = BigIntAsBoolArray(mI);
     using ((a,m) = (Qubit[numBits],Qubit[numBits])){
         //Setting the a and m into quantum registers
@@ -32,7 +32,7 @@ operation Testing_with_Toffoli(mI:BigInt,numBits:Int, Ran: BigInt):Int{
 
 operation Testing_in_Superposition(Ran: Int, numQubits: Int): Unit{
 using ((a,m) = (Qubit[numQubits],Qubit[numQubits])){
-        //Putting both a and m into superposition
+        //Putting m into superposition
         ApplyToEach(H,m);
         
         
@@ -40,10 +40,10 @@ using ((a,m) = (Qubit[numQubits],Qubit[numQubits])){
         
         //DumpMachine("TestingInSuperpositionResults.txt");
 
-        //GenerateA(m,a,Ran);
+        GenerateA(m,a,Ran);
 
         //Print out Result
-        DumpMachine("TestingInSuperpositionResults.txt");
+        //DumpMachine("TestingInSuperpositionResults.txt");
         ResetAll(a+m);
     } 
 }
@@ -53,7 +53,7 @@ using ((a,m) = (Qubit[numQubits],Qubit[numQubits])){
     //Generates a = 1 + (R mod (M-1))
     //takes |M>|0> -> |M>|a>
     //Ms must be superpostition greater than 1
-    operation GenerateA(Ms:Qubit[],As: Qubit[],Ran: BigInt) : Unit{
+    operation GenerateA(Ms:Qubit[],As: Qubit[],Ran: Int) : Unit{
       let num = Length(Ms);
       using ((tmp1,tmp2,tmpM) = (Qubit[num],Qubit[num],Qubit[num])){
             //Generate Random int between 1 <= Ran <= (upper bound of m - 1)
@@ -64,7 +64,7 @@ using ((a,m) = (Qubit[numQubits],Qubit[numQubits])){
           ApplyToEachA(X,tmpM);
           AddI(LittleEndian(Ms),LittleEndian(tmpM));
 
-          let RanArr = BigIntAsBoolArray(Ran);
+          let RanArr = IntAsBoolArray(Ran,num);
           //Encoding Ran into the quantum register tmp1
           for (i in 0..(Length(tmp1)-1)){
             if (RanArr[i] == true){

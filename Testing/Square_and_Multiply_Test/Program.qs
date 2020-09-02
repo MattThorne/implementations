@@ -10,6 +10,17 @@
     open Microsoft.Quantum.Arrays;
 
 
+
+operation analysis(i:Int):Unit{
+
+using ((a,b,c,d) = (Qubit[i],Qubit[i],Qubit[i],Qubit[i])){
+
+    MultiplyModM(a,b,c,d);
+}
+}
+
+
+
 operation Testing_with_Toffoli(aI:BigInt,jI:BigInt,mI:BigInt,numBits:Int):Int{
     let aArr = BigIntAsBoolArray(aI);
     let jArr = BigIntAsBoolArray(jI);
@@ -35,6 +46,22 @@ operation Testing_with_Toffoli(aI:BigInt,jI:BigInt,mI:BigInt,numBits:Int):Int{
         ResetAll(a+j+m+t);
         return result;
     }
+
+}
+
+operation Testing_in_Superposition(bitSize: Int): Unit{
+    using ((a,m,j,t) = (Qubit[bitSize],Qubit[bitSize],Qubit[(2*bitSize) + 1],Qubit[bitSize])){
+        
+
+        //Carrying out modular squaring
+        SquareAndMultiply(a,m,j,t);
+        
+        
+        
+        ResetAll(a+j+m+t);
+    }
+
+
 
 }
 
