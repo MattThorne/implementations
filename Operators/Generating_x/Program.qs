@@ -1,4 +1,12 @@
-﻿namespace SignedMultiply.Testing {
+﻿/////////////////////////////////////////////////////////////////////////
+//This program implements the selection of x step in Shor's algorithm  //
+//in superposition                                                     //
+//Performing the transformation |N>|0> -> |a>|x>                       //
+//Where x = 1 + R mod N and R is a random number less than N           //
+/////////////////////////////////////////////////////////////////////////
+
+
+namespace SignedMultiply.Testing {
 
 
     open Microsoft.Quantum.Intrinsic;

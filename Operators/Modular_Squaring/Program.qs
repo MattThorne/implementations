@@ -1,4 +1,12 @@
-﻿namespace ModularSquaring.Testing {
+﻿/////////////////////////////////////////////////////////////////////////
+//This program implements a fully reversible Modular squaring operation//
+//Performing the transformation |a>|b>|0> -> |a>|b>|a^2 mod b>         //
+/////////////////////////////////////////////////////////////////////////
+
+
+
+
+namespace ModularSquaring.Testing {
 
 
     open Microsoft.Quantum.Intrinsic;

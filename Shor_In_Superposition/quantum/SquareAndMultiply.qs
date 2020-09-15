@@ -4,7 +4,7 @@
 //Performing the transformation |a>|b>|c>|0> -> |a>|b>|a^b mod c>        //
 ///////////////////////////////////////////////////////////////////////////
 
-namespace ModularMultiplication.Testing {
+namespace ShorInSuperposition {
 
 
     open Microsoft.Quantum.Intrinsic;
@@ -16,44 +16,8 @@ namespace ModularMultiplication.Testing {
     open Microsoft.Quantum.Arrays;
 
 
-operation Testing_with_Toffoli(aI:BigInt,jI:BigInt,mI:BigInt,numBits:Int):Int{
-    let aArr = BigIntAsBoolArray(aI);
-    let jArr = BigIntAsBoolArray(jI);
-    let mArr = BigIntAsBoolArray(mI);
-    using ((a,m,j,t) = (Qubit[numBits],Qubit[numBits],Qubit[numBits],Qubit[numBits])){
-        //Setting the a and m into quantum registers
-        for (i in 0..(Length(aArr) -1)){
-            if (aArr[i] == true){X(a[i]);}
-        }
-        for (i in 0..(Length(jArr) -1)){
-            if (jArr[i] == true){X(j[i]);}
-        }
-        for (i in 0..(Length(mArr) -1)){
-            if (mArr[i] == true){X(m[i]);}
-        }
 
-        //Carrying out modular squaring
-        SquareAndMultiply(a,m,j,t);
-        
 
-        //Collecting the result
-        let result = MeasureInteger(LittleEndian(t));
-        ResetAll(a+j+m+t);
-        return result;
-    }
-
-}
-
-operation Testing_in_Superposition(bitSize: Int): Unit{
-    using ((a,m,j,t) = (Qubit[bitSize],Qubit[bitSize],Qubit[2*bitSize + 1],Qubit[bitSize])){
-        
-        
-        SquareAndMultiply(a,m,j,t);
-        
-        ResetAll(a+j+m+t);
-    }
-
-}
 
 operation SquareAndMultiply(a:Qubit[],m:Qubit[],j:Qubit[],result:Qubit[]): Unit{
     let lenJ = Length(j);
@@ -73,8 +37,8 @@ operation SquareAndMultiply(a:Qubit[],m:Qubit[],j:Qubit[],result:Qubit[]): Unit{
                 ApplyToEachA(X,j);
                 X(az);
 
-                set arr w/= (0..(Length(arr)-1)) <- Pebble(1,numAnc,arr,a,m,j,result,v,c,z,az,ld);
-                set arr w/= (0..(Length(arr)-1)) <- Unpebble(1,numAnc,arr,a,m,j,result,v,c,z,az,ld);
+                set arr w/= (0..(Length(arr)-1)) <- SMPebble(1,numAnc,arr,a,m,j,result,v,c,z,az,ld);
+                set arr w/= (0..(Length(arr)-1)) <- SMUnpebble(1,numAnc,arr,a,m,j,result,v,c,z,az,ld);
 
                 //Resetting control all zero qubit
                 X(az);
@@ -91,39 +55,39 @@ operation SquareAndMultiply(a:Qubit[],m:Qubit[],j:Qubit[],result:Qubit[]): Unit{
 
 
 
-operation Pebble(s: Int, n:Int, arr:Int[],a:Qubit[],m:Qubit[],j:Qubit[],result:Qubit[],v:Qubit[],c:Qubit,z:Qubit,az:Qubit,ld:Qubit): Int[]{
+operation SMPebble(s: Int, n:Int, arr:Int[],a:Qubit[],m:Qubit[],j:Qubit[],result:Qubit[],v:Qubit[],c:Qubit,z:Qubit,az:Qubit,ld:Qubit): Int[]{
     mutable narr = new Int[0];
     for (i in 0..(Length(arr) -1)){
         set narr += [arr[i]]; 
     }
     if (n!=0){
         let t = s + PowI(2,(n-1));
-        set narr w/= (0..(Length(narr)-1)) <- Pebble(s,(n-1),narr,a,m,j,result,v,c,z,az,ld);
+        set narr w/= (0..(Length(narr)-1)) <- SMPebble(s,(n-1),narr,a,m,j,result,v,c,z,az,ld);
         //put a free pebble on node t
         set narr w/= (0..(Length(narr)-1)) <- SquareAndMultiplyStep(t,narr,1,a,m,j,result,v,c,z,az,ld);
         // Message($"{narr}");
         // DumpRegister((),v);
-        set narr w/= (0..(Length(narr)-1)) <- Unpebble(s,(n-1),narr,a,m,j,result,v,c,z,az,ld);
-        set narr w/= (0..(Length(narr)-1)) <- Pebble(t,(n-1),narr,a,m,j,result,v,c,z,az,ld);
+        set narr w/= (0..(Length(narr)-1)) <- SMUnpebble(s,(n-1),narr,a,m,j,result,v,c,z,az,ld);
+        set narr w/= (0..(Length(narr)-1)) <- SMPebble(t,(n-1),narr,a,m,j,result,v,c,z,az,ld);
         
     }
     return narr;
 }
 
-operation Unpebble(s: Int, n:Int, arr:Int[],a:Qubit[],m:Qubit[],j:Qubit[],result:Qubit[],v:Qubit[],c:Qubit,z:Qubit,az:Qubit,ld:Qubit):Int[]{
+operation SMUnpebble(s: Int, n:Int, arr:Int[],a:Qubit[],m:Qubit[],j:Qubit[],result:Qubit[],v:Qubit[],c:Qubit,z:Qubit,az:Qubit,ld:Qubit):Int[]{
     mutable narr = new Int[0];
     for (i in 0..(Length(arr) -1)){
         set narr += [arr[i]]; 
     }
     if (n!=0){
         let t = s + PowI(2,(n-1));
-        set narr w/= (0..(Length(narr)-1)) <-Unpebble(t,(n-1),narr,a,m,j,result,v,c,z,az,ld);
-        set narr w/= (0..(Length(narr)-1)) <-Pebble(s,(n-1),narr,a,m,j,result,v,c,z,az,ld);
+        set narr w/= (0..(Length(narr)-1)) <-SMUnpebble(t,(n-1),narr,a,m,j,result,v,c,z,az,ld);
+        set narr w/= (0..(Length(narr)-1)) <-SMPebble(s,(n-1),narr,a,m,j,result,v,c,z,az,ld);
         //take a  pebble from node t
         set narr w/= (0..(Length(narr)-1)) <- SquareAndMultiplyStep(t,narr,0,a,m,j,result,v,c,z,az,ld);
         // Message($"{narr}");
         // DumpRegister((),v);
-        set narr w/= (0..(Length(narr)-1)) <-Unpebble(s,(n-1),narr,a,m,j,result,v,c,z,az,ld);
+        set narr w/= (0..(Length(narr)-1)) <-SMUnpebble(s,(n-1),narr,a,m,j,result,v,c,z,az,ld);
     }
     return narr;
 }
@@ -309,7 +273,6 @@ operation SquareAndMultiplyStep(t:Int,arr:Int[] ,d:Int,a:Qubit[],m:Qubit[],j:Qub
 }
 
 
-
 operation SquareAndMultiplyIteration(a:Qubit[],v:Qubit[],m:Qubit[],c:Qubit,z:Qubit,ld:Qubit,t:Qubit[]) : Unit is Adj + Ctl{
         X(z);
         Controlled AddI([z],(LittleEndian(v),LittleEndian(t)));
@@ -330,145 +293,5 @@ operation SquareAndMultiplyIteration(a:Qubit[],v:Qubit[],m:Qubit[],c:Qubit,z:Qub
         Controlled Adjoint SquareModM([z,ld],(v,m,anc));
         } 
 }
-
-operation SquareModM(a:Qubit[],Ms:Qubit[],Ts:Qubit[]) : Unit is Adj + Ctl{
-    let num = Length(a);
-    using ((aS,aSPad) = (Qubit[num],Qubit[num])){
-        SquareI(LittleEndian(a),LittleEndian(aS + aSPad));
-        using ((anc,MsPad) = (Qubit[num*2],Qubit[num])){
-            DivideI(LittleEndian(aS + aSPad),LittleEndian(Ms + MsPad),LittleEndian(anc));
-            AddI(LittleEndian(aS),LittleEndian(Ts));
-            Adjoint DivideI(LittleEndian(aS + aSPad),LittleEndian(Ms + MsPad),LittleEndian(anc));
-        } 
-        Adjoint  SquareI(LittleEndian(a),LittleEndian(aS + aSPad)); 
-    }  
-}
-
-operation MultiplyModM(a:Qubit[],b:Qubit[],Ms:Qubit[],Ts:Qubit[]) : Unit is Adj + Ctl{
-    let num = Length(a);
-    using ((aS,aSPad) = (Qubit[num],Qubit[num])){
-        MultiplyI(LittleEndian(a),LittleEndian(b),LittleEndian(aS + aSPad));
-        using ((anc,MsPad) = (Qubit[num*2],Qubit[num])){
-            DivideI(LittleEndian(aS + aSPad),LittleEndian(Ms + MsPad),LittleEndian(anc));
-            AddI(LittleEndian(aS),LittleEndian(Ts));
-            Adjoint DivideI(LittleEndian(aS + aSPad),LittleEndian(Ms + MsPad),LittleEndian(anc));
-        } 
-        Adjoint  MultiplyI(LittleEndian(a),LittleEndian(b),LittleEndian(aS + aSPad));
-    }  
-}
-
-operation AddI (xs: LittleEndian, ys: LittleEndian) : Unit is Adj + Ctl {
-        if (Length(xs!) == Length(ys!)) {
-            RippleCarryAdderNoCarryTTK(xs, ys);
-        }
-        elif (Length(ys!) > Length(xs!)) {
-            using (qs = Qubit[Length(ys!) - Length(xs!) - 1]){
-                RippleCarryAdderTTK(LittleEndian(xs! + qs),
-                                    LittleEndian(Most(ys!)), Tail(ys!));
-            }
-        }
-        else {
-            fail "xs must not contain more qubits than ys!";
-        }
-    }
-
-    operation CompareGTI (xs: LittleEndian, ys: LittleEndian,
-                            result: Qubit) : Unit is Adj + Ctl {
-        GreaterThan(xs, ys, result);
-    }
-
-
-    operation MultiplyI (xs: LittleEndian, ys: LittleEndian,
-                         result: LittleEndian) : Unit {
-        body (...) {
-            let n = Length(xs!);
-
-            EqualityFactI(n, Length(ys!), "Integer multiplication requires
-                           equally-sized registers xs and ys.");
-            EqualityFactI(2 * n, Length(result!), "Integer multiplication
-                            requires a 2n-bit result registers.");
-            AssertAllZero(result!);
-
-            for (i in 0..n-1) {
-                (Controlled AddI) ([xs![i]], (ys, LittleEndian(result![i..i+n])));
-            }
-        }
-        controlled (controls, ...) {
-            let n = Length(xs!);
-
-            EqualityFactI(n, Length(ys!), "Integer multiplication requires
-                           equally-sized registers xs and ys.");
-            EqualityFactI(2 * n, Length(result!), "Integer multiplication
-                            requires a 2n-bit result registers.");
-            AssertAllZero(result!);
-
-            using (anc = Qubit()) {
-                for (i in 0..n-1) {
-                    (Controlled CNOT) (controls, (xs![i], anc));
-                    (Controlled AddI) ([anc], (ys, LittleEndian(result![i..i+n])));
-                    (Controlled CNOT) (controls, (xs![i], anc));
-                }
-            }
-        }
-        adjoint auto;
-        adjoint controlled auto;
-    } 
-
-
-    operation SquareI (xs: LittleEndian, result: LittleEndian) : Unit {
-        body (...) {
-            (Controlled SquareI) (new Qubit[0], (xs, result));
-        }
-        controlled (controls, ...) {
-            let n = Length(xs!);
-
-            EqualityFactI(2 * n, Length(result!), "Integer multiplication
-                            requires a 2n-bit result registers.");
-            AssertAllZero(result!);
-
-            using (anc = Qubit()) {
-                for (i in 0..n-1) {
-                    (Controlled CNOT) (controls, (xs![i], anc));
-                    (Controlled AddI) ([anc], (xs,
-                        LittleEndian(result![i..i+n])));
-                    (Controlled CNOT) (controls, (xs![i], anc));
-                }
-            }
-        }
-        adjoint auto;
-        adjoint controlled auto;
-    }
-
-
-operation DivideI (xs: LittleEndian, ys: LittleEndian,
-                               result: LittleEndian) : Unit {
-        body (...) {
-            (Controlled DivideI) (new Qubit[0], (xs, ys, result));
-        }
-        controlled (controls, ...) {
-            let n = Length(result!);
-
-            EqualityFactI(n, Length(ys!), "Integer division requires
-                           equally-sized registers ys and result.");
-            EqualityFactI(n, Length(xs!), "Integer division
-                            requires an n-bit dividend registers.");
-            AssertAllZero(result!);
-
-            let xpadded = LittleEndian(xs! + result!);
-
-            for (i in (n-1)..(-1)..0) {
-                let xtrunc = LittleEndian(xpadded![i..i+n-1]);
-                
-                (Controlled CompareGTI) (controls, (ys, xtrunc, result![i]));
-                // if ys > xtrunc, we don't subtract:
-                (Controlled X) (controls, result![i]);
-                (Controlled Adjoint AddI) ([result![i]], (ys, xtrunc));
-            }
-        }
-        adjoint auto;
-        adjoint controlled auto;
-    }
-
-
 
 }

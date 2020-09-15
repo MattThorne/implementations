@@ -1,4 +1,11 @@
-﻿namespace SignedMultiply.Testing {
+﻿/////////////////////////////////////////////////////////////////////////
+//This program implements a fully reversible Signed Multiply operation //
+//Performing the transformation |a>|b>|0> -> |a>|b>|a*b>               //
+// Where both a and b are signed integers                              //
+/////////////////////////////////////////////////////////////////////////
+
+
+namespace SignedMultiply.Testing {
 
 
     open Microsoft.Quantum.Intrinsic;

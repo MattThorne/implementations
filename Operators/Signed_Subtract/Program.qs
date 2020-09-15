@@ -1,4 +1,11 @@
-﻿namespace SignedSubtract.Testing {
+﻿//////////////////////////////////////////////////////////////////////////////////////
+//This program implements a fully reversible Signed subtraction operation/          //
+//Performing the transformation |a>|b>|0>|0> -> |a>|b>|a - b>|garbage>              //
+//Where a and b are both signed integers                                            //
+//Since there is garbage in the output this implementation is not optimal in space. //
+//////////////////////////////////////////////////////////////////////////////////////
+
+namespace SignedSubtract.Testing {
 
 
     open Microsoft.Quantum.Intrinsic;

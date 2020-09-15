@@ -6,7 +6,7 @@
 /////////////////////////////////////////////////////////////////////////
 
 
-namespace Quantum.Bell {
+namespace ShorInSuperposition {
     open Microsoft.Quantum.Intrinsic;
     open Microsoft.Quantum.Arithmetic;
     open Microsoft.Quantum.Convert;
@@ -17,41 +17,8 @@ namespace Quantum.Bell {
     open Microsoft.Quantum.Diagnostics;
     open Microsoft.Quantum.Arrays;
     open Microsoft.Quantum.Measurement;
-    newtype SignedLittleEndian = LittleEndian;
 
 
-
-
-operation Testing_in_Superposition(bitSize:Int):Unit{
-
-
-using ((d,a,b)=(Qubit[bitSize],Qubit[bitSize],Qubit[bitSize])){
-
-    GCDMain(d,a,b);
-}
-}
-            
-
-operation TestGCD(aI:Int, bI:Int, bitSize:Int) : Int{
-    let aArr = IntAsBoolArray(aI,bitSize);
-    let bArr = IntAsBoolArray(bI,bitSize);
-
-using ((d,a,b)=(Qubit[bitSize],Qubit[bitSize],Qubit[bitSize])){
-
-    for (i in 0..(bitSize-1)){
-        if (aArr[i] == true){X(a[i]);}
-        if (bArr[i] == true){X(b[i]);}
-    }
-    
-
-    GCDMain(d,a,b);
-    let res = MeasureInteger(LittleEndian(d));
-    
-    ResetAll(d+a+b);
-    return res;
-}
-   
-}
 
 operation GCDMain(p:Qubit[],m:Qubit[],u:Qubit[]):Unit{
     let len = Length(u);
@@ -63,46 +30,46 @@ operation GCDMain(p:Qubit[],m:Qubit[],u:Qubit[]):Unit{
     set numAnc = numAnc + 1;  
     using ((r1,r2,s1,s2,t1,t2,quo,qTs2,qTt2,C1,anc1,anc2,anc3,anc4) = (Qubit[(len+1)*numAnc],Qubit[(len+1)*numAnc],Qubit[(len + 2)*numAnc],Qubit[(len + 2)*numAnc],Qubit[(len + 2)*numAnc],Qubit[(len + 2)*numAnc],Qubit[(len+1)*numAnc],Qubit[(2*(len+1) + 1)*numAnc],Qubit[(2*(len+1) + 1)*numAnc],Qubit[numAnc],Qubit[numAnc],Qubit[numAnc],Qubit[numAnc],Qubit[numAnc])){
         set numAnc = numAnc - 1; 
-        set arr w/= (0..(Length(arr)-1)) <- Pebble(1,numAnc,arr,p,m,u,r1,r2,s1,s2,t1,t2,quo,qTs2,qTt2,C1,anc1,anc2,anc3,anc4);
-        set arr w/= (0..(Length(arr)-1)) <- Unpebble(1,numAnc,arr,p,m,u,r1,r2,s1,s2,t1,t2,quo,qTs2,qTt2,C1,anc1,anc2,anc3,anc4);
+        set arr w/= (0..(Length(arr)-1)) <- GCDPebble(1,numAnc,arr,p,m,u,r1,r2,s1,s2,t1,t2,quo,qTs2,qTt2,C1,anc1,anc2,anc3,anc4);
+        set arr w/= (0..(Length(arr)-1)) <- GCDUnpebble(1,numAnc,arr,p,m,u,r1,r2,s1,s2,t1,t2,quo,qTs2,qTt2,C1,anc1,anc2,anc3,anc4);
 
     }
 }
 
 
-operation Pebble(s: Int, n:Int, arr:Int[],p:Qubit[],m:Qubit[],u:Qubit[],r1:Qubit[],r2:Qubit[],s1:Qubit[],s2:Qubit[],t1:Qubit[],t2:Qubit[],quo:Qubit[],qTs2:Qubit[],qTt2:Qubit[],C1:Qubit[],anc1:Qubit[],anc2:Qubit[],anc3:Qubit[],anc4:Qubit[]): Int[]{
+operation GCDPebble(s: Int, n:Int, arr:Int[],p:Qubit[],m:Qubit[],u:Qubit[],r1:Qubit[],r2:Qubit[],s1:Qubit[],s2:Qubit[],t1:Qubit[],t2:Qubit[],quo:Qubit[],qTs2:Qubit[],qTt2:Qubit[],C1:Qubit[],anc1:Qubit[],anc2:Qubit[],anc3:Qubit[],anc4:Qubit[]): Int[]{
     mutable narr = new Int[0];
     for (i in 0..(Length(arr) -1)){
         set narr += [arr[i]]; 
     }
     if (n!=0){
         let t = s + PowI(2,(n-1));
-        set narr w/= (0..(Length(narr)-1)) <- Pebble(s,(n-1),narr,p,m,u,r1,r2,s1,s2,t1,t2,quo,qTs2,qTt2,C1,anc1,anc2,anc3,anc4);
+        set narr w/= (0..(Length(narr)-1)) <- GCDPebble(s,(n-1),narr,p,m,u,r1,r2,s1,s2,t1,t2,quo,qTs2,qTt2,C1,anc1,anc2,anc3,anc4);
         //put a free pebble on node t
         set narr w/= (0..(Length(narr)-1)) <- GCDStep(t,narr,1,p,m,u,r1,r2,s1,s2,t1,t2,quo,qTs2,qTt2,C1,anc1,anc2,anc3,anc4);
         // Message($"{narr}");
         // DumpRegister((),v);
-        set narr w/= (0..(Length(narr)-1)) <- Unpebble(s,(n-1),narr,p,m,u,r1,r2,s1,s2,t1,t2,quo,qTs2,qTt2,C1,anc1,anc2,anc3,anc4);
-        set narr w/= (0..(Length(narr)-1)) <- Pebble(t,(n-1),narr,p,m,u,r1,r2,s1,s2,t1,t2,quo,qTs2,qTt2,C1,anc1,anc2,anc3,anc4);
+        set narr w/= (0..(Length(narr)-1)) <- GCDUnpebble(s,(n-1),narr,p,m,u,r1,r2,s1,s2,t1,t2,quo,qTs2,qTt2,C1,anc1,anc2,anc3,anc4);
+        set narr w/= (0..(Length(narr)-1)) <- GCDPebble(t,(n-1),narr,p,m,u,r1,r2,s1,s2,t1,t2,quo,qTs2,qTt2,C1,anc1,anc2,anc3,anc4);
         
     }
     return narr;
 }
 
-operation Unpebble(s: Int, n:Int, arr:Int[],p:Qubit[],m:Qubit[],u:Qubit[],r1:Qubit[],r2:Qubit[],s1:Qubit[],s2:Qubit[],t1:Qubit[],t2:Qubit[],quo:Qubit[],qTs2:Qubit[],qTt2:Qubit[],C1:Qubit[],anc1:Qubit[],anc2:Qubit[],anc3:Qubit[],anc4:Qubit[]):Int[]{
+operation GCDUnpebble(s: Int, n:Int, arr:Int[],p:Qubit[],m:Qubit[],u:Qubit[],r1:Qubit[],r2:Qubit[],s1:Qubit[],s2:Qubit[],t1:Qubit[],t2:Qubit[],quo:Qubit[],qTs2:Qubit[],qTt2:Qubit[],C1:Qubit[],anc1:Qubit[],anc2:Qubit[],anc3:Qubit[],anc4:Qubit[]):Int[]{
     mutable narr = new Int[0];
     for (i in 0..(Length(arr) -1)){
         set narr += [arr[i]]; 
     }
     if (n!=0){
         let t = s + PowI(2,(n-1));
-        set narr w/= (0..(Length(narr)-1)) <-Unpebble(t,(n-1),narr,p,m,u,r1,r2,s1,s2,t1,t2,quo,qTs2,qTt2,C1,anc1,anc2,anc3,anc4);
-        set narr w/= (0..(Length(narr)-1)) <-Pebble(s,(n-1),narr,p,m,u,r1,r2,s1,s2,t1,t2,quo,qTs2,qTt2,C1,anc1,anc2,anc3,anc4);
+        set narr w/= (0..(Length(narr)-1)) <-GCDUnpebble(t,(n-1),narr,p,m,u,r1,r2,s1,s2,t1,t2,quo,qTs2,qTt2,C1,anc1,anc2,anc3,anc4);
+        set narr w/= (0..(Length(narr)-1)) <-GCDPebble(s,(n-1),narr,p,m,u,r1,r2,s1,s2,t1,t2,quo,qTs2,qTt2,C1,anc1,anc2,anc3,anc4);
         //take a  pebble from node t
         set narr w/= (0..(Length(narr)-1)) <- GCDStep(t,narr,0,p,m,u,r1,r2,s1,s2,t1,t2,quo,qTs2,qTt2,C1,anc1,anc2,anc3,anc4);
         // Message($"{narr}");
         // DumpRegister((),v);
-        set narr w/= (0..(Length(narr)-1)) <-Unpebble(s,(n-1),narr,p,m,u,r1,r2,s1,s2,t1,t2,quo,qTs2,qTt2,C1,anc1,anc2,anc3,anc4);
+        set narr w/= (0..(Length(narr)-1)) <-GCDUnpebble(s,(n-1),narr,p,m,u,r1,r2,s1,s2,t1,t2,quo,qTs2,qTt2,C1,anc1,anc2,anc3,anc4);
     }
     return narr;
 }
@@ -312,215 +279,4 @@ operation GCDCheck (r2:Qubit[],C:Qubit):Unit is Adj + Ctl{
                 (Controlled AddI) ([xs[i]], (LittleEndian(ys), LittleEndian(result[i..i+lenYs])));
             }
     }
-
-
-
-
-
-
-
-//|a>|b> =>  |a-b>|b>
-operation SignedSubtract(a:Qubit[],b:Qubit[],anc:Qubit,anc2:Qubit):Unit is Adj + Ctl{
-    body(...){
-    EqualityFactI(Length(a) , Length(b) + 1, "Signed Subtraction, a must have one more qubit than b");
-    CNOT(a[Length(a)-1],anc2);
-    CNOT(b[Length(b)-1],anc2);
-    X(anc2);
-
-    
-    Controlled CompareGTI([anc2],(LittleEndian(b[0..(Length(b)-2)]),LittleEndian(a[0..(Length(a)-3)]),anc));
-    for (i in 0..(Length(a)-3)){
-        Controlled SWAP([anc,anc2],(a[i],b[i]));
-    }
-    Controlled Adjoint AddI([anc2],(LittleEndian(b[0..(Length(b)-2)]),LittleEndian(a[0..(Length(a)-3)])));
-    Controlled X([anc,anc2],a[Length(a)-1]);
-
-
-    X(anc2);
-    Controlled AddI([anc2],(LittleEndian(b[0..(Length(b)-2)]),LittleEndian(a[0..(Length(a)-2)])));
-    X(anc2);
-    }
-    adjoint invert;
-}
-
-
-operation SignedMultiply(a : Qubit[], b:Qubit[], c:Qubit[]) : Unit is Adj + Ctl{
-    
-    body(...){
-    EqualityFactI((2*Length(a) - 1), Length(c), "Signed multiplication requires a (2n-1)-bit result register.");
-    let aS = a[Length(a) - 1];
-    let bS = b[Length(b) - 1];
-    let cS = c[Length(c)- 1];
-    CNOT(aS,cS);
-    CNOT(bS,cS);
-
-    MultiplyI(LittleEndian(a[0..(Length(a)-2)]),LittleEndian(b[0..(Length(b)-2)]),LittleEndian(c[0..(Length(c)-2)]));
-    }
-    adjoint invert;
-}
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-operation SquareModM(a:Qubit[],Ms:Qubit[],Ts:Qubit[]) : Unit is Adj + Ctl{
-    let num = Length(a);
-    using ((aS,aSPad) = (Qubit[num],Qubit[num])){
-        SquareI(LittleEndian(a),LittleEndian(aS + aSPad));
-        using ((anc,MsPad) = (Qubit[num*2],Qubit[num])){
-            DivideI(LittleEndian(aS + aSPad),LittleEndian(Ms + MsPad),LittleEndian(anc));
-            AddI(LittleEndian(aS),LittleEndian(Ts));
-            Adjoint DivideI(LittleEndian(aS + aSPad),LittleEndian(Ms + MsPad),LittleEndian(anc));
-        } 
-        Adjoint  SquareI(LittleEndian(a),LittleEndian(aS + aSPad)); 
-    }  
-}
-
-operation MultiplyModM(a:Qubit[],b:Qubit[],Ms:Qubit[],Ts:Qubit[]) : Unit is Adj + Ctl{
-    let num = Length(a);
-    using ((aS,aSPad) = (Qubit[num],Qubit[num])){
-        MultiplyI(LittleEndian(a),LittleEndian(b),LittleEndian(aS + aSPad));
-        using ((anc,MsPad) = (Qubit[num*2],Qubit[num])){
-            DivideI(LittleEndian(aS + aSPad),LittleEndian(Ms + MsPad),LittleEndian(anc));
-            AddI(LittleEndian(aS),LittleEndian(Ts));
-            Adjoint DivideI(LittleEndian(aS + aSPad),LittleEndian(Ms + MsPad),LittleEndian(anc));
-        } 
-        Adjoint  MultiplyI(LittleEndian(a),LittleEndian(b),LittleEndian(aS + aSPad));
-    }  
-}
-
-
-
-
-
-
-
-
-    operation DivideI (xs: LittleEndian, ys: LittleEndian,
-                               result: LittleEndian) : Unit {
-        body (...) {
-            (Controlled DivideI) (new Qubit[0], (xs, ys, result));
-        }
-        controlled (controls, ...) {
-            let n = Length(result!);
-
-            EqualityFactI(n, Length(ys!), "Integer division requires
-                           equally-sized registers ys and result.");
-            EqualityFactI(n, Length(xs!), "Integer division
-                            requires an n-bit dividend registers.");
-            AssertAllZero(result!);
-
-            let xpadded = LittleEndian(xs! + result!);
-
-            for (i in (n-1)..(-1)..0) {
-                let xtrunc = LittleEndian(xpadded![i..i+n-1]);
-                
-                (Controlled CompareGTI) (controls, (ys, xtrunc, result![i]));
-                // if ys > xtrunc, we don't subtract:
-                (Controlled X) (controls, result![i]);
-                (Controlled Adjoint AddI) ([result![i]], (ys, xtrunc));
-            }
-        }
-        adjoint auto;
-        adjoint controlled auto;
-    }
-
-
-
-    operation AddI (xs: LittleEndian, ys: LittleEndian) : Unit is Adj + Ctl {
-        if (Length(xs!) == Length(ys!)) {
-            RippleCarryAdderNoCarryTTK(xs, ys);
-        }
-        elif (Length(ys!) > Length(xs!)) {
-            using (qs = Qubit[Length(ys!) - Length(xs!) - 1]){
-                RippleCarryAdderTTK(LittleEndian(xs! + qs),
-                                    LittleEndian(Most(ys!)), Tail(ys!));
-            }
-        }
-        else {
-            fail "xs must not contain more qubits than ys!";
-        }
-    }
-
-   
-    operation CompareGTI (xs: LittleEndian, ys: LittleEndian,
-                            result: Qubit) : Unit is Adj + Ctl {
-        GreaterThan(xs, ys, result);
-    }
-
-    operation MultiplyI (xs: LittleEndian, ys: LittleEndian,
-                         result: LittleEndian) : Unit {
-        body (...) {
-            let n = Length(xs!);
-
-            EqualityFactI(n, Length(ys!), "Integer multiplication requires
-                           equally-sized registers xs and ys.");
-            EqualityFactI(2 * n, Length(result!), "Integer multiplication
-                            requires a 2n-bit result registers.");
-            AssertAllZero(result!);
-
-            for (i in 0..n-1) {
-                (Controlled AddI) ([xs![i]], (ys, LittleEndian(result![i..i+n])));
-            }
-        }
-        controlled (controls, ...) {
-            let n = Length(xs!);
-
-            EqualityFactI(n, Length(ys!), "Integer multiplication requires
-                           equally-sized registers xs and ys.");
-            EqualityFactI(2 * n, Length(result!), "Integer multiplication
-                            requires a 2n-bit result registers.");
-            AssertAllZero(result!);
-
-            using (anc = Qubit()) {
-                for (i in 0..n-1) {
-                    (Controlled CNOT) (controls, (xs![i], anc));
-                    (Controlled AddI) ([anc], (ys, LittleEndian(result![i..i+n])));
-                    (Controlled CNOT) (controls, (xs![i], anc));
-                }
-            }
-        }
-        adjoint auto;
-        adjoint controlled auto;
-    } 
-
-
-
-    operation SquareI (xs: LittleEndian, result: LittleEndian) : Unit {
-        body (...) {
-            (Controlled SquareI) (new Qubit[0], (xs, result));
-        }
-        controlled (controls, ...) {
-            let n = Length(xs!);
-
-            EqualityFactI(2 * n, Length(result!), "Integer multiplication
-                            requires a 2n-bit result registers.");
-            AssertAllZero(result!);
-
-            using (anc = Qubit()) {
-                for (i in 0..n-1) {
-                    (Controlled CNOT) (controls, (xs![i], anc));
-                    (Controlled AddI) ([anc], (xs,
-                        LittleEndian(result![i..i+n])));
-                    (Controlled CNOT) (controls, (xs![i], anc));
-                }
-            }
-        }
-        adjoint auto;
-        adjoint controlled auto;
-    }
-
-    
-
-
-
 }

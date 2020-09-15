@@ -1,4 +1,9 @@
-﻿namespace ModularMultiplication.Testing {
+﻿///////////////////////////////////////////////////////////////////////////////
+//This program implements a fully reversible Modular multiplication operation//
+//Performing the transformation |a>|b>|c>|0> -> |a>|b>|c>|a*b mod c>         //
+///////////////////////////////////////////////////////////////////////////////
+
+namespace ModularMultiplication.Testing {
 
 
     open Microsoft.Quantum.Intrinsic;
