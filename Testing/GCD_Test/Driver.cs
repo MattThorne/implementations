@@ -14,25 +14,23 @@ namespace Quantum.Bell
         { 
             
             //THE RESOURCE ESTIMATOR
-            ResourcesEstimator estimator = new ResourcesEstimator();
-            Testing_in_Superposition.Run(estimator,20).Wait();
-            Console.WriteLine(estimator.ToTSV());
+            // ResourcesEstimator estimator = new ResourcesEstimator();
+            // Testing_in_Superposition.Run(estimator,20).Wait();
+            // Console.WriteLine(estimator.ToTSV());
  
-            //  var sim = new ToffoliSimulator();
-             
-             
-            //  for (int i=0;i<100;i++){
-            //  int a = 512;
-            //  int b = 400+i;
-            //  int [] requiredBits = {Size(a),Size(b)};
-            //  int numBits = requiredBits.Max();
+            var sim = new ToffoliSimulator();
+            for (int i=0;i<100;i++){
+             int a = 512 + i;
+             int b = 400;
+             int [] requiredBits = {Size(a),Size(b)};
+             int numBits = requiredBits.Max();
     
-            //  var Quantum = TestGCD.Run(sim,a,b,numBits).Result;
-            //  Console.WriteLine("{0}",numBits);
-            //  Console.WriteLine("GCD({0},{1})",a,b);
-            //  Console.WriteLine("Quantum Result: {0}",Quantum);
-            //  Console.WriteLine("Classical Result: {0}",(GCD(a,b)));
-            //  }
+             var Quantum = TestGCD.Run(sim,a,b,numBits).Result;
+             Console.WriteLine("{0}",numBits);
+             Console.WriteLine("GCD({0},{1})",a,b);
+             Console.WriteLine("Quantum Result: {0}",Quantum);
+             Console.WriteLine("Classical Result: {0}",(GCD(a,b)));
+            }
         }
 public static int Size(int bits) {
   int size = 0;

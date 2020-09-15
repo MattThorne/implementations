@@ -7957,9 +7957,9 @@
   "project": {
     "version": "1.0.0",
     "restore": {
-      "projectUniqueName": "/Users/Matt/Documents/Masters/Dissertation/Quantum/Testing/Modular_Squaring_Test/test-mt.csproj",
-      "projectName": "test-mt",
-      "projectPath": "/Users/Matt/Documents/Masters/Dissertation/Quantum/Testing/Modular_Squaring_Test/test-mt.csproj",
+      "projectUniqueName": "/Users/Matt/Documents/Masters/Dissertation/Quantum/Testing/Modular_Squaring_Test/Mod_Sqr.csproj",
+      "projectName": "Mod_Sqr",
+      "projectPath": "/Users/Matt/Documents/Masters/Dissertation/Quantum/Testing/Modular_Squaring_Test/Mod_Sqr.csproj",
       "packagesPath": "/Users/Matt/.nuget/packages/",
       "outputPath": "/Users/Matt/Documents/Masters/Dissertation/Quantum/Testing/Modular_Squaring_Test/obj/",
       "projectStyle": "PackageReference",

@@ -21,13 +21,8 @@ using ((d,a,b)=(Qubit[bitSize],Qubit[bitSize],Qubit[bitSize])){
 
     GCDMain(d,a,b);
 }
-
-
 }
             
-
-
-
 
 operation TestGCD(aI:Int, bI:Int, bitSize:Int) : Int{
     let aArr = IntAsBoolArray(aI,bitSize);
@@ -50,227 +45,171 @@ using ((d,a,b)=(Qubit[bitSize],Qubit[bitSize],Qubit[bitSize])){
    
 }
 
+operation GCDMain(p:Qubit[],m:Qubit[],u:Qubit[]):Unit{
+    let len = Length(u);
+    mutable numAnc = Ceiling(Lg(1.44*IntAsDouble(len + 1))) + 1;
+    //Message($"{numAnc}");
 
-
-operation GCDMain(d:Qubit[],m:Qubit[],g:Qubit[]):Unit is Ctl{
-
-        mutable len = Length(g);
-        let num_its = Ceiling(1.44*IntAsDouble(len + 1));
-        mutable numAnc = 0;
-        mutable sum = 0;
-        mutable add = 1;
-        repeat {
-            set sum = sum + add;
-            set add = add + 1;
-            set numAnc = numAnc + 1;
-        }until (num_its <= sum);
-        let origNumAnc = numAnc;
-
+    mutable arr = new Int[numAnc + 2]; // last item in array used to contol if result has been found
+    set arr w/= 0 <- 1;
+    set numAnc = numAnc + 1;  
     using ((r1,r2,s1,s2,t1,t2,quo,qTs2,qTt2,C1,anc1,anc2,anc3,anc4) = (Qubit[(len+1)*numAnc],Qubit[(len+1)*numAnc],Qubit[(len + 2)*numAnc],Qubit[(len + 2)*numAnc],Qubit[(len + 2)*numAnc],Qubit[(len + 2)*numAnc],Qubit[(len+1)*numAnc],Qubit[(2*(len+1) + 1)*numAnc],Qubit[(2*(len+1) + 1)*numAnc],Qubit[numAnc],Qubit[numAnc],Qubit[numAnc],Qubit[numAnc],Qubit[numAnc])){
-        set len = len + 1;
-        let lens = len + 1;
+        set numAnc = numAnc - 1; 
+        set arr w/= (0..(Length(arr)-1)) <- Pebble(1,numAnc,arr,p,m,u,r1,r2,s1,s2,t1,t2,quo,qTs2,qTt2,C1,anc1,anc2,anc3,anc4);
+        set arr w/= (0..(Length(arr)-1)) <- Unpebble(1,numAnc,arr,p,m,u,r1,r2,s1,s2,t1,t2,quo,qTs2,qTt2,C1,anc1,anc2,anc3,anc4);
 
-        
-        mutable curReg = 0;
-        mutable curr = 0;
-        mutable j = 0;
-        
-        repeat{
-            ////ASCENDING////////
-            for (i in 0..(numAnc-1)){
-                
-                set j = i+curReg;
-                if (j==0){
-                    X(s1[0]);
-                    X(t2[0]);
-                    AddI(LittleEndian(g),LittleEndian(r1[0..(len -2)]));
-                    AddI(LittleEndian(m),LittleEndian(r2[0..(len -2)]));
-                }
-                
-                
-                if (j != 0){
-                AddI(LittleEndian(r1[((j*len) - len)..((j*len)-1)]),LittleEndian(r1[(j*len)..((j*len)+len-1)]));
-                AddI(LittleEndian(r2[((j*len) - len)..((j*len)-1)]),LittleEndian(r2[(j*len)..((j*len)+len-1)]));
-                
-                AddI(LittleEndian(s1[((j*lens) - lens)..((j*lens)-1)]),LittleEndian(s1[(j*lens)..((j*lens)+lens-1)]));
-                AddI(LittleEndian(s2[((j*lens) - lens)..((j*lens)-1)]),LittleEndian(s2[(j*lens)..((j*lens)+lens-1)]));
-
-                AddI(LittleEndian(t1[((j*lens) - lens)..((j*lens)-1)]),LittleEndian(t1[(j*lens)..((j*lens)+lens-1)]));
-                AddI(LittleEndian(t2[((j*lens) - lens)..((j*lens)-1)]),LittleEndian(t2[(j*lens)..((j*lens)+lens-1)]));
-                }
-                
-
-                GCDCheck(r2[(j*len)..((j*len)+len-1)],C1[j]);//C1 set to 1 if either r2=0 or s2>m
-                X(C1[j]);
-
-                Controlled GCDIteration([C1[j]],(r1[(j*len)..((j*len)+len-1)],r2[(j*len)..((j*len)+len-1)],s1[(j*lens)..((j*lens)+lens-1)],s2[(j*lens)..((j*lens)+lens-1)],t1[(j*lens)..((j*lens)+lens-1)],t2[(j*lens)..((j*lens)+lens-1)],quo[(j*len)..((j*len)+len-1)],qTs2[(j*(2*len+1))..((j*(2*len+1))+(2*len+1)-1)],qTt2[(j*(2*len+1))..((j*(2*len+1))+(2*len+1)-1)],anc1[j],anc2[j],anc3[j],anc4[j]));
-                
-                if ((i + curr + 1) == num_its){
-                    ///GCDExtractRes(res:Qubit[],g:Qubit[],m:Qubit[],s1:Qubit[],t1:Qubit[])
-
-                    GCDExtractRes(d,g,m,s1[(j*lens)..((j*lens)+lens-1)],t1[(j*lens)..((j*lens)+lens-1)]);
-                }
-            }
-            ////DESCENDING////////
-            mutable q=0;
-            for (k in 0..(numAnc-2)){
-                set q = (numAnc-2) - k;
-                set j = q+curReg;
-                
-                Controlled Adjoint GCDIteration([C1[j]],(r1[(j*len)..((j*len)+len-1)],r2[(j*len)..((j*len)+len-1)],s1[(j*lens)..((j*lens)+lens-1)],s2[(j*lens)..((j*lens)+lens-1)],t1[(j*lens)..((j*lens)+lens-1)],t2[(j*lens)..((j*lens)+lens-1)],quo[(j*len)..((j*len)+len-1)],qTs2[(j*(2*len+1))..((j*(2*len+1))+(2*len+1)-1)],qTt2[(j*(2*len+1))..((j*(2*len+1))+(2*len+1)-1)],anc1[j],anc2[j],anc3[j],anc4[j]));
-                
-                X(C1[j]);
-                Adjoint GCDCheck(r2[(j*len)..((j*len)+len-1)],C1[j]);//C1 set to 1 if either r2=0 or s2>m
-                
-                if (j != 0){
-                Adjoint AddI(LittleEndian(r1[((j*len) - len)..((j*len)-1)]),LittleEndian(r1[(j*len)..((j*len)+len-1)]));
-                Adjoint AddI(LittleEndian(r2[((j*len) - len)..((j*len)-1)]),LittleEndian(r2[(j*len)..((j*len)+len-1)]));
-                
-                Adjoint AddI(LittleEndian(s1[((j*lens) - lens)..((j*lens)-1)]),LittleEndian(s1[(j*lens)..((j*lens)+lens-1)]));
-                Adjoint AddI(LittleEndian(s2[((j*lens) - lens)..((j*lens)-1)]),LittleEndian(s2[(j*lens)..((j*lens)+lens-1)]));
-
-                Adjoint AddI(LittleEndian(t1[((j*lens) - lens)..((j*lens)-1)]),LittleEndian(t1[(j*lens)..((j*lens)+lens-1)]));
-                Adjoint AddI(LittleEndian(t2[((j*lens) - lens)..((j*lens)-1)]),LittleEndian(t2[(j*lens)..((j*lens)+lens-1)]));
-                }
-                if (j==0){
-                    X(s1[0]);
-                    X(t2[0]);
-                    Adjoint AddI(LittleEndian(g),LittleEndian(r1[0..(len -2)]));
-                    Adjoint AddI(LittleEndian(m),LittleEndian(r2[0..(len -2)]));
-                }
-
-
-            }
-
-            ///SWAPPING//////
-            if (curReg != (origNumAnc-1)){
-            for (i in 0..(len-1)){
-                SWAP(r1[curReg*len + i],r1[i + (origNumAnc-1)*len]);
-                SWAP(r2[curReg*len + i],r2[i + (origNumAnc-1)*len]);
-                SWAP(quo[curReg*len + i],quo[i + (origNumAnc-1)*len]);
-            }
-            
-            for (i in 0..(lens-1)){
-                SWAP(s1[curReg*lens + i],s1[i + (origNumAnc-1)*lens]);
-                SWAP(s2[curReg*lens + i],s2[i + (origNumAnc-1)*lens]);
-                SWAP(t1[curReg*lens + i],t1[i + (origNumAnc-1)*lens]);
-                SWAP(t2[curReg*lens + i],t2[i + (origNumAnc-1)*lens]);
-            }
-            
-            for (i in 0..(2*len)){
-                SWAP(qTs2[curReg*(2*len + 1) + i],qTs2[i + (origNumAnc-1)*(2*len + 1)]);
-                SWAP(qTt2[curReg*(2*len + 1) + i],qTt2[i + (origNumAnc-1)*(2*len + 1)]);
-            }
-            
-            SWAP(C1[curReg],C1[origNumAnc-1]);
-            SWAP(anc1[curReg],anc1[origNumAnc-1]);
-            SWAP(anc2[curReg],anc2[origNumAnc-1]);
-            SWAP(anc3[curReg],anc2[origNumAnc-1]);
-            SWAP(anc4[curReg],anc2[origNumAnc-1]);
-            
-            }
-
-            
-            set curr = curr + numAnc;
-            set numAnc = numAnc -1;
-            set curReg = curReg + 1;
-            
-        }until(numAnc==0);
-
-
-//HERE//
-        /////Resetting////
-        repeat{
-            set curReg = curReg - 1;
-            set numAnc = numAnc + 1;
-            set curr = curr - numAnc;
-            
-            ///SWAPPING//////
-            if (curReg != (origNumAnc-1)){
-            for (i in 0..(len-1)){
-                SWAP(r1[curReg*len + i],r1[i + (origNumAnc-1)*len]);
-                SWAP(r2[curReg*len + i],r2[i + (origNumAnc-1)*len]);
-                SWAP(quo[curReg*len + i],quo[i + (origNumAnc-1)*len]);
-            }
-            for (i in 0..(lens-1)){
-                SWAP(s1[curReg*lens + i],s1[i + (origNumAnc-1)*lens]);
-                SWAP(s2[curReg*lens + i],s2[i + (origNumAnc-1)*lens]);
-                SWAP(t1[curReg*lens + i],t1[i + (origNumAnc-1)*lens]);
-                SWAP(t2[curReg*lens + i],t2[i + (origNumAnc-1)*lens]);
-            }
-            for (i in 0..(2*len)){
-                SWAP(qTs2[curReg*(2*len + 1) + i],qTs2[i + (origNumAnc-1)*(2*len + 1)]);
-                SWAP(qTt2[curReg*(2*len + 1) + i],qTt2[i + (origNumAnc-1)*(2*len + 1)]);
-            }
-            SWAP(C1[curReg],C1[origNumAnc-1]);
-            SWAP(anc1[curReg],anc1[origNumAnc-1]);
-            SWAP(anc2[curReg],anc2[origNumAnc-1]);
-            SWAP(anc3[curReg],anc2[origNumAnc-1]);
-            SWAP(anc4[curReg],anc2[origNumAnc-1]);
-            }
-            ////Adjoint DESCENDING////////
-            for (q in 0..(numAnc-2)){
-                set j = q+curReg;
-
-                if (j==0){
-                    //ApplyToEachA(X,r2[0..(len-1)]);
-                    X(s1[0]);
-                    X(t2[0]);
-                    AddI(LittleEndian(g),LittleEndian(r1[0..(len -2)]));
-                    AddI(LittleEndian(m),LittleEndian(r2[0..(len -2)]));
-                }
-
-                if (j != 0){
-                AddI(LittleEndian(r1[((j*len) - len)..((j*len)-1)]),LittleEndian(r1[(j*len)..((j*len)+len-1)]));
-                AddI(LittleEndian(r2[((j*len) - len)..((j*len)-1)]),LittleEndian(r2[(j*len)..((j*len)+len-1)]));
-                
-                AddI(LittleEndian(s1[((j*lens) - lens)..((j*lens)-1)]),LittleEndian(s1[(j*lens)..((j*lens)+lens-1)]));
-                AddI(LittleEndian(s2[((j*lens) - lens)..((j*lens)-1)]),LittleEndian(s2[(j*lens)..((j*lens)+lens-1)]));
-
-                AddI(LittleEndian(t1[((j*lens) - lens)..((j*lens)-1)]),LittleEndian(t1[(j*lens)..((j*lens)+lens-1)]));
-                AddI(LittleEndian(t2[((j*lens) - lens)..((j*lens)-1)]),LittleEndian(t2[(j*lens)..((j*lens)+lens-1)]));
-                }
-
-                GCDCheck(r2[(j*len)..((j*len)+len-1)],C1[j]);//C1 set to 1 if either r2=0 or s2>m
-                X(C1[j]);
-                Controlled GCDIteration([C1[j]],(r1[(j*len)..((j*len)+len-1)],r2[(j*len)..((j*len)+len-1)],s1[(j*lens)..((j*lens)+lens-1)],s2[(j*lens)..((j*lens)+lens-1)],t1[(j*lens)..((j*lens)+lens-1)],t2[(j*lens)..((j*lens)+lens-1)],quo[(j*len)..((j*len)+len-1)],qTs2[(j*(2*len+1))..((j*(2*len+1))+(2*len+1)-1)],qTt2[(j*(2*len+1))..((j*(2*len+1))+(2*len+1)-1)],anc1[j],anc2[j],anc3[j],anc4[j]));
-
-            }
-            ////Adjoint ASCENDING////////
-            for (k in 0..(numAnc-1)){
-                let i = (numAnc-1) - k;
-                set j = i+curReg;
-
-                Controlled Adjoint GCDIteration([C1[j]],(r1[(j*len)..((j*len)+len-1)],r2[(j*len)..((j*len)+len-1)],s1[(j*lens)..((j*lens)+lens-1)],s2[(j*lens)..((j*lens)+lens-1)],t1[(j*lens)..((j*lens)+lens-1)],t2[(j*lens)..((j*lens)+lens-1)],quo[(j*len)..((j*len)+len-1)],qTs2[(j*(2*len+1))..((j*(2*len+1))+(2*len+1)-1)],qTt2[(j*(2*len+1))..((j*(2*len+1))+(2*len+1)-1)],anc1[j],anc2[j],anc3[j],anc4[j]));
-                X(C1[j]);
-                Adjoint GCDCheck(r2[(j*len)..((j*len)+len-1)],C1[j]);//C1 set to 1 if either r2=0 or s2>m
-                
-                
-                if (j != 0){
-                Adjoint AddI(LittleEndian(r1[((j*len) - len)..((j*len)-1)]),LittleEndian(r1[(j*len)..((j*len)+len-1)]));
-                Adjoint AddI(LittleEndian(r2[((j*len) - len)..((j*len)-1)]),LittleEndian(r2[(j*len)..((j*len)+len-1)]));
-                
-                Adjoint AddI(LittleEndian(s1[((j*lens) - lens)..((j*lens)-1)]),LittleEndian(s1[(j*lens)..((j*lens)+lens-1)]));
-                Adjoint AddI(LittleEndian(s2[((j*lens) - lens)..((j*lens)-1)]),LittleEndian(s2[(j*lens)..((j*lens)+lens-1)]));
-
-                Adjoint AddI(LittleEndian(t1[((j*lens) - lens)..((j*lens)-1)]),LittleEndian(t1[(j*lens)..((j*lens)+lens-1)]));
-                Adjoint AddI(LittleEndian(t2[((j*lens) - lens)..((j*lens)-1)]),LittleEndian(t2[(j*lens)..((j*lens)+lens-1)]));
-                }
-
-                if (j==0){
-                        X(s1[0]);
-                    X(t2[0]);
-                    Adjoint AddI(LittleEndian(g),LittleEndian(r1[0..(len -2)]));
-                    Adjoint AddI(LittleEndian(m),LittleEndian(r2[0..(len -2)]));
-                    }
-            }
-            
-            
-        }until (numAnc==origNumAnc);
     }
+}
+
+
+operation Pebble(s: Int, n:Int, arr:Int[],p:Qubit[],m:Qubit[],u:Qubit[],r1:Qubit[],r2:Qubit[],s1:Qubit[],s2:Qubit[],t1:Qubit[],t2:Qubit[],quo:Qubit[],qTs2:Qubit[],qTt2:Qubit[],C1:Qubit[],anc1:Qubit[],anc2:Qubit[],anc3:Qubit[],anc4:Qubit[]): Int[]{
+    mutable narr = new Int[0];
+    for (i in 0..(Length(arr) -1)){
+        set narr += [arr[i]]; 
+    }
+    if (n!=0){
+        let t = s + PowI(2,(n-1));
+        set narr w/= (0..(Length(narr)-1)) <- Pebble(s,(n-1),narr,p,m,u,r1,r2,s1,s2,t1,t2,quo,qTs2,qTt2,C1,anc1,anc2,anc3,anc4);
+        //put a free pebble on node t
+        set narr w/= (0..(Length(narr)-1)) <- GCDStep(t,narr,1,p,m,u,r1,r2,s1,s2,t1,t2,quo,qTs2,qTt2,C1,anc1,anc2,anc3,anc4);
+        // Message($"{narr}");
+        // DumpRegister((),v);
+        set narr w/= (0..(Length(narr)-1)) <- Unpebble(s,(n-1),narr,p,m,u,r1,r2,s1,s2,t1,t2,quo,qTs2,qTt2,C1,anc1,anc2,anc3,anc4);
+        set narr w/= (0..(Length(narr)-1)) <- Pebble(t,(n-1),narr,p,m,u,r1,r2,s1,s2,t1,t2,quo,qTs2,qTt2,C1,anc1,anc2,anc3,anc4);
+        
+    }
+    return narr;
+}
+
+operation Unpebble(s: Int, n:Int, arr:Int[],p:Qubit[],m:Qubit[],u:Qubit[],r1:Qubit[],r2:Qubit[],s1:Qubit[],s2:Qubit[],t1:Qubit[],t2:Qubit[],quo:Qubit[],qTs2:Qubit[],qTt2:Qubit[],C1:Qubit[],anc1:Qubit[],anc2:Qubit[],anc3:Qubit[],anc4:Qubit[]):Int[]{
+    mutable narr = new Int[0];
+    for (i in 0..(Length(arr) -1)){
+        set narr += [arr[i]]; 
+    }
+    if (n!=0){
+        let t = s + PowI(2,(n-1));
+        set narr w/= (0..(Length(narr)-1)) <-Unpebble(t,(n-1),narr,p,m,u,r1,r2,s1,s2,t1,t2,quo,qTs2,qTt2,C1,anc1,anc2,anc3,anc4);
+        set narr w/= (0..(Length(narr)-1)) <-Pebble(s,(n-1),narr,p,m,u,r1,r2,s1,s2,t1,t2,quo,qTs2,qTt2,C1,anc1,anc2,anc3,anc4);
+        //take a  pebble from node t
+        set narr w/= (0..(Length(narr)-1)) <- GCDStep(t,narr,0,p,m,u,r1,r2,s1,s2,t1,t2,quo,qTs2,qTt2,C1,anc1,anc2,anc3,anc4);
+        // Message($"{narr}");
+        // DumpRegister((),v);
+        set narr w/= (0..(Length(narr)-1)) <-Unpebble(s,(n-1),narr,p,m,u,r1,r2,s1,s2,t1,t2,quo,qTs2,qTt2,C1,anc1,anc2,anc3,anc4);
+    }
+    return narr;
+}
+
+operation GCDStep(t:Int,arr:Int[] ,d:Int,p:Qubit[],m:Qubit[],u:Qubit[],r1:Qubit[],r2:Qubit[],s1:Qubit[],s2:Qubit[],t1:Qubit[],t2:Qubit[],quo:Qubit[],qTs2:Qubit[],qTt2:Qubit[],C1:Qubit[],anc1:Qubit[],anc2:Qubit[],anc3:Qubit[],anc4:Qubit[]):Int[]{
+    mutable narr = new Int[0];
+    for (k in 0..(Length(arr) -1)){
+        set narr += [arr[k]]; 
     }
 
 
+    mutable next = 0;
+    mutable curr = 0;
+    let len = Length(u) + 1;
+    let lens = len + 1;
+
+    if ((t == 2) and (d==1)){
+        X(s1[0]);
+        X(t2[0]);
+        AddI(LittleEndian(u),LittleEndian(r1[0..(len -2)]));
+        AddI(LittleEndian(m),LittleEndian(r2[0..(len -2)]));
+    }
+    
+    
+    //Find Current Register
+    mutable found = false;
+    mutable i = 0;
+    repeat{
+        if (arr[i] == (t-1)){
+            set curr = i;
+            set found = true;
+        }
+        set i = i + 1;
+    }until (found == true);
+
+    if (d==1){
+
+        //Finds first empty item in a
+        set found = false;
+        set i = 0; 
+        repeat{
+        if (arr[i] == 0){
+            set next = i;
+            set found = true;
+        }
+        set i = i + 1;
+        }until (found == true);
+    //set arr[next] = arr[next] + (arr[curr] + 1);
+    set narr w/= next <- narr[next] + (narr[curr] + 1);
+
+
+    //Conduct Pebble calculation
+    AddI(LittleEndian(r1[(curr*len)..((curr*len) + len-1)]),LittleEndian(r1[(next*len)..((next*len) + len-1)]));
+    AddI(LittleEndian(r2[(curr*len)..((curr*len) + len-1)]),LittleEndian(r2[(next*len)..((next*len) + len-1)]));
+    
+    AddI(LittleEndian(s1[(curr*lens)..((curr*lens) + lens -1)]),LittleEndian(s1[(next*lens)..((next*lens) + lens -1)]));
+    AddI(LittleEndian(s2[(curr*lens)..((curr*lens) + lens -1)]),LittleEndian(s2[(next*lens)..((next*lens) + lens -1)]));
+
+    AddI(LittleEndian(t1[(curr*lens)..((curr*lens) + lens -1)]),LittleEndian(t1[(next*lens)..((next*lens) + lens -1)]));
+    AddI(LittleEndian(t2[(curr*lens)..((curr*lens) + lens -1)]),LittleEndian(t2[(next*lens)..((next*lens) + lens -1)]));
+    
+
+    GCDCheck(r2[(next*len)..((next*len) + len-1)],C1[next]);//C1 set to 1 if either r2=0 or s2>m
+    X(C1[next]);
+
+    Controlled GCDIteration([C1[next]],(r1[(next*len)..((next*len) + len-1)],r2[(next*len)..((next*len) + len-1)],s1[(next*lens)..((next*lens) + lens -1)],s2[(next*lens)..((next*lens) + lens -1)],t1[(next*lens)..((next*lens) + lens -1)],t2[(next*lens)..((next*lens) + lens -1)],quo[(next*len)..((next*len)+len-1)],qTs2[(next*(2*len+1))..((next*(2*len+1))+(2*len+1)-1)],qTt2[(next*(2*len+1))..((next*(2*len+1))+(2*len+1)-1)],anc1[next],anc2[next],anc3[next],anc4[next]));
+    if ((Ceiling(1.44*IntAsDouble(len)) <= narr[next]) and (narr[Length(narr)-1] == 0)){
+        GCDExtractRes(p,u,m,s1[(next*lens)..((next*lens)+lens-1)],t1[(next*lens)..((next*lens)+lens-1)]);
+        set narr w/= (Length(narr)-1) <- 1;
+    }
+    
+    }
+
+
+    if (d==0){
+        
+        set found = false;
+        set i = 0;
+        repeat{
+        if (arr[i] == t){
+            set next = i;
+            set found = true;
+        }
+        set i = i + 1;
+    }until (found == true);
+
+    Controlled Adjoint GCDIteration([C1[next]],(r1[(next*len)..((next*len) + len-1)],r2[(next*len)..((next*len) + len-1)],s1[(next*lens)..((next*lens) + lens -1)],s2[(next*lens)..((next*lens) + lens -1)],t1[(next*lens)..((next*lens) + lens -1)],t2[(next*lens)..((next*lens) + lens -1)],quo[(next*len)..((next*len)+len-1)],qTs2[(next*(2*len+1))..((next*(2*len+1))+(2*len+1)-1)],qTt2[(next*(2*len+1))..((next*(2*len+1))+(2*len+1)-1)],anc1[next],anc2[next],anc3[next],anc4[next]));
+    X(C1[next]);
+    Adjoint GCDCheck(r2[(next*len)..((next*len) + len-1)],C1[next]);//C1 set to 1 if either r2=0 or s2>m
+
+
+    Adjoint AddI(LittleEndian(r1[(curr*len)..((curr*len) + len-1)]),LittleEndian(r1[(next*len)..((next*len) + len-1)]));
+    Adjoint AddI(LittleEndian(r2[(curr*len)..((curr*len) + len-1)]),LittleEndian(r2[(next*len)..((next*len) + len-1)]));
+    
+    Adjoint AddI(LittleEndian(s1[(curr*lens)..((curr*lens) + lens -1)]),LittleEndian(s1[(next*lens)..((next*lens) + lens -1)]));
+    Adjoint AddI(LittleEndian(s2[(curr*lens)..((curr*lens) + lens -1)]),LittleEndian(s2[(next*lens)..((next*lens) + lens -1)]));
+
+    Adjoint AddI(LittleEndian(t1[(curr*lens)..((curr*lens) + lens -1)]),LittleEndian(t1[(next*lens)..((next*lens) + lens -1)]));
+    Adjoint AddI(LittleEndian(t2[(curr*lens)..((curr*lens) + lens -1)]),LittleEndian(t2[(next*lens)..((next*lens) + lens -1)]));
+    
+
+    set narr w/= next <- narr[next] - (narr[curr] + 1);
+    }
+
+
+    if ((t == 2) and (d==0)){
+        X(s1[0]);
+        X(t2[0]);
+        Adjoint AddI(LittleEndian(u),LittleEndian(r1[0..(len -2)]));
+        Adjoint AddI(LittleEndian(m),LittleEndian(r2[0..(len -2)]));
+    }
+    
+
+    return narr;
+}
 
 
 operation GCDExtractRes(res:Qubit[],g:Qubit[],m:Qubit[],s1:Qubit[],t1:Qubit[]):Unit is Ctl{
