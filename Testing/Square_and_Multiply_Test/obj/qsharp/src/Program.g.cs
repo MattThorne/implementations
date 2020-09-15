@@ -17,56 +17,54 @@ using Microsoft.Quantum.Simulation.Core;
 [assembly: SpecializationDeclaration("{\"Kind\":{\"Case\":\"QsBody\"},\"TypeArguments\":{\"Case\":\"Null\"},\"Information\":{\"Characteristics\":{\"Case\":\"EmptySet\"},\"InferredInformation\":{\"IsSelfAdjoint\":false,\"IsIntrinsic\":false}},\"Parent\":{\"Namespace\":\"ModularMultiplication.Testing\",\"Name\":\"Testing_with_Toffoli\"},\"Attributes\":[],\"SourceFile\":\"/Users/Matt/Documents/Masters/Dissertation/Quantum/Testing/Square_and_Multiply_Test/Program.qs\",\"Position\":{\"Item1\":12,\"Item2\":0},\"HeaderRange\":{\"Item1\":{\"Line\":1,\"Column\":11},\"Item2\":{\"Line\":1,\"Column\":31}},\"Documentation\":[]}")]
 [assembly: CallableDeclaration("{\"Kind\":{\"Case\":\"Operation\"},\"QualifiedName\":{\"Namespace\":\"ModularMultiplication.Testing\",\"Name\":\"Testing_in_Superposition\"},\"Attributes\":[],\"Modifiers\":{\"Access\":{\"Case\":\"DefaultAccess\"}},\"SourceFile\":\"/Users/Matt/Documents/Masters/Dissertation/Quantum/Testing/Square_and_Multiply_Test/Program.qs\",\"Position\":{\"Item1\":40,\"Item2\":0},\"SymbolRange\":{\"Item1\":{\"Line\":1,\"Column\":11},\"Item2\":{\"Line\":1,\"Column\":35}},\"ArgumentTuple\":{\"Case\":\"QsTuple\",\"Fields\":[[{\"Case\":\"QsTupleItem\",\"Fields\":[{\"VariableName\":{\"Case\":\"ValidName\",\"Fields\":[\"bitSize\"]},\"Type\":{\"Case\":\"Int\"},\"InferredInformation\":{\"IsMutable\":false,\"HasLocalQuantumDependency\":false},\"Position\":{\"Case\":\"Null\"},\"Range\":{\"Item1\":{\"Line\":1,\"Column\":36},\"Item2\":{\"Line\":1,\"Column\":43}}}]}]]},\"Signature\":{\"TypeParameters\":[],\"ArgumentType\":{\"Case\":\"Int\"},\"ReturnType\":{\"Case\":\"UnitType\"},\"Information\":{\"Characteristics\":{\"Case\":\"EmptySet\"},\"InferredInformation\":{\"IsSelfAdjoint\":false,\"IsIntrinsic\":false}}},\"Documentation\":[]}")]
 [assembly: SpecializationDeclaration("{\"Kind\":{\"Case\":\"QsBody\"},\"TypeArguments\":{\"Case\":\"Null\"},\"Information\":{\"Characteristics\":{\"Case\":\"EmptySet\"},\"InferredInformation\":{\"IsSelfAdjoint\":false,\"IsIntrinsic\":false}},\"Parent\":{\"Namespace\":\"ModularMultiplication.Testing\",\"Name\":\"Testing_in_Superposition\"},\"Attributes\":[],\"SourceFile\":\"/Users/Matt/Documents/Masters/Dissertation/Quantum/Testing/Square_and_Multiply_Test/Program.qs\",\"Position\":{\"Item1\":40,\"Item2\":0},\"HeaderRange\":{\"Item1\":{\"Line\":1,\"Column\":11},\"Item2\":{\"Line\":1,\"Column\":35}},\"Documentation\":[]}")]
-[assembly: CallableDeclaration("{\"Kind\":{\"Case\":\"Operation\"},\"QualifiedName\":{\"Namespace\":\"ModularMultiplication.Testing\",\"Name\":\"SquareAndMultiplyNew\"},\"Attributes\":[],\"Modifiers\":{\"Access\":{\"Case\":\"DefaultAccess\"}},\"SourceFile\":\"/Users/Matt/Documents/Masters/Dissertation/Quantum/Testing/Square_and_Multiply_Test/Program.qs\",\"Position\":{\"Item1\":51,\"Item2\":0},\"SymbolRange\":{\"Item1\":{\"Line\":1,\"Column\":11},\"Item2\":{\"Line\":1,\"Column\":31}},\"ArgumentTuple\":{\"Case\":\"QsTuple\",\"Fields\":[[{\"Case\":\"QsTupleItem\",\"Fields\":[{\"VariableName\":{\"Case\":\"ValidName\",\"Fields\":[\"a\"]},\"Type\":{\"Case\":\"ArrayType\",\"Fields\":[{\"Case\":\"Qubit\"}]},\"InferredInformation\":{\"IsMutable\":false,\"HasLocalQuantumDependency\":false},\"Position\":{\"Case\":\"Null\"},\"Range\":{\"Item1\":{\"Line\":1,\"Column\":32},\"Item2\":{\"Line\":1,\"Column\":33}}}]},{\"Case\":\"QsTupleItem\",\"Fields\":[{\"VariableName\":{\"Case\":\"ValidName\",\"Fields\":[\"m\"]},\"Type\":{\"Case\":\"ArrayType\",\"Fields\":[{\"Case\":\"Qubit\"}]},\"InferredInformation\":{\"IsMutable\":false,\"HasLocalQuantumDependency\":false},\"Position\":{\"Case\":\"Null\"},\"Range\":{\"Item1\":{\"Line\":1,\"Column\":42},\"Item2\":{\"Line\":1,\"Column\":43}}}]},{\"Case\":\"QsTupleItem\",\"Fields\":[{\"VariableName\":{\"Case\":\"ValidName\",\"Fields\":[\"j\"]},\"Type\":{\"Case\":\"ArrayType\",\"Fields\":[{\"Case\":\"Qubit\"}]},\"InferredInformation\":{\"IsMutable\":false,\"HasLocalQuantumDependency\":false},\"Position\":{\"Case\":\"Null\"},\"Range\":{\"Item1\":{\"Line\":1,\"Column\":52},\"Item2\":{\"Line\":1,\"Column\":53}}}]},{\"Case\":\"QsTupleItem\",\"Fields\":[{\"VariableName\":{\"Case\":\"ValidName\",\"Fields\":[\"result\"]},\"Type\":{\"Case\":\"ArrayType\",\"Fields\":[{\"Case\":\"Qubit\"}]},\"InferredInformation\":{\"IsMutable\":false,\"HasLocalQuantumDependency\":false},\"Position\":{\"Case\":\"Null\"},\"Range\":{\"Item1\":{\"Line\":1,\"Column\":62},\"Item2\":{\"Line\":1,\"Column\":68}}}]}]]},\"Signature\":{\"TypeParameters\":[],\"ArgumentType\":{\"Case\":\"TupleType\",\"Fields\":[[{\"Case\":\"ArrayType\",\"Fields\":[{\"Case\":\"Qubit\"}]},{\"Case\":\"ArrayType\",\"Fields\":[{\"Case\":\"Qubit\"}]},{\"Case\":\"ArrayType\",\"Fields\":[{\"Case\":\"Qubit\"}]},{\"Case\":\"ArrayType\",\"Fields\":[{\"Case\":\"Qubit\"}]}]]},\"ReturnType\":{\"Case\":\"UnitType\"},\"Information\":{\"Characteristics\":{\"Case\":\"EmptySet\"},\"InferredInformation\":{\"IsSelfAdjoint\":false,\"IsIntrinsic\":false}}},\"Documentation\":[]}")]
-[assembly: SpecializationDeclaration("{\"Kind\":{\"Case\":\"QsBody\"},\"TypeArguments\":{\"Case\":\"Null\"},\"Information\":{\"Characteristics\":{\"Case\":\"EmptySet\"},\"InferredInformation\":{\"IsSelfAdjoint\":false,\"IsIntrinsic\":false}},\"Parent\":{\"Namespace\":\"ModularMultiplication.Testing\",\"Name\":\"SquareAndMultiplyNew\"},\"Attributes\":[],\"SourceFile\":\"/Users/Matt/Documents/Masters/Dissertation/Quantum/Testing/Square_and_Multiply_Test/Program.qs\",\"Position\":{\"Item1\":51,\"Item2\":0},\"HeaderRange\":{\"Item1\":{\"Line\":1,\"Column\":11},\"Item2\":{\"Line\":1,\"Column\":31}},\"Documentation\":[]}")]
-[assembly: CallableDeclaration("{\"Kind\":{\"Case\":\"Operation\"},\"QualifiedName\":{\"Namespace\":\"ModularMultiplication.Testing\",\"Name\":\"Pebble\"},\"Attributes\":[],\"Modifiers\":{\"Access\":{\"Case\":\"DefaultAccess\"}},\"SourceFile\":\"/Users/Matt/Documents/Masters/Dissertation/Quantum/Testing/Square_and_Multiply_Test/Program.qs\",\"Position\":{\"Item1\":94,\"Item2\":0},\"SymbolRange\":{\"Item1\":{\"Line\":1,\"Column\":11},\"Item2\":{\"Line\":1,\"Column\":17}},\"ArgumentTuple\":{\"Case\":\"QsTuple\",\"Fields\":[[{\"Case\":\"QsTupleItem\",\"Fields\":[{\"VariableName\":{\"Case\":\"ValidName\",\"Fields\":[\"s\"]},\"Type\":{\"Case\":\"Int\"},\"InferredInformation\":{\"IsMutable\":false,\"HasLocalQuantumDependency\":false},\"Position\":{\"Case\":\"Null\"},\"Range\":{\"Item1\":{\"Line\":1,\"Column\":18},\"Item2\":{\"Line\":1,\"Column\":19}}}]},{\"Case\":\"QsTupleItem\",\"Fields\":[{\"VariableName\":{\"Case\":\"ValidName\",\"Fields\":[\"n\"]},\"Type\":{\"Case\":\"Int\"},\"InferredInformation\":{\"IsMutable\":false,\"HasLocalQuantumDependency\":false},\"Position\":{\"Case\":\"Null\"},\"Range\":{\"Item1\":{\"Line\":1,\"Column\":26},\"Item2\":{\"Line\":1,\"Column\":27}}}]},{\"Case\":\"QsTupleItem\",\"Fields\":[{\"VariableName\":{\"Case\":\"ValidName\",\"Fields\":[\"arr\"]},\"Type\":{\"Case\":\"ArrayType\",\"Fields\":[{\"Case\":\"Int\"}]},\"InferredInformation\":{\"IsMutable\":false,\"HasLocalQuantumDependency\":false},\"Position\":{\"Case\":\"Null\"},\"Range\":{\"Item1\":{\"Line\":1,\"Column\":33},\"Item2\":{\"Line\":1,\"Column\":36}}}]},{\"Case\":\"QsTupleItem\",\"Fields\":[{\"VariableName\":{\"Case\":\"ValidName\",\"Fields\":[\"a\"]},\"Type\":{\"Case\":\"ArrayType\",\"Fields\":[{\"Case\":\"Qubit\"}]},\"InferredInformation\":{\"IsMutable\":false,\"HasLocalQuantumDependency\":false},\"Position\":{\"Case\":\"Null\"},\"Range\":{\"Item1\":{\"Line\":1,\"Column\":43},\"Item2\":{\"Line\":1,\"Column\":44}}}]},{\"Case\":\"QsTupleItem\",\"Fields\":[{\"VariableName\":{\"Case\":\"ValidName\",\"Fields\":[\"m\"]},\"Type\":{\"Case\":\"ArrayType\",\"Fields\":[{\"Case\":\"Qubit\"}]},\"InferredInformation\":{\"IsMutable\":false,\"HasLocalQuantumDependency\":false},\"Position\":{\"Case\":\"Null\"},\"Range\":{\"Item1\":{\"Line\":1,\"Column\":53},\"Item2\":{\"Line\":1,\"Column\":54}}}]},{\"Case\":\"QsTupleItem\",\"Fields\":[{\"VariableName\":{\"Case\":\"ValidName\",\"Fields\":[\"j\"]},\"Type\":{\"Case\":\"ArrayType\",\"Fields\":[{\"Case\":\"Qubit\"}]},\"InferredInformation\":{\"IsMutable\":false,\"HasLocalQuantumDependency\":false},\"Position\":{\"Case\":\"Null\"},\"Range\":{\"Item1\":{\"Line\":1,\"Column\":63},\"Item2\":{\"Line\":1,\"Column\":64}}}]},{\"Case\":\"QsTupleItem\",\"Fields\":[{\"VariableName\":{\"Case\":\"ValidName\",\"Fields\":[\"result\"]},\"Type\":{\"Case\":\"ArrayType\",\"Fields\":[{\"Case\":\"Qubit\"}]},\"InferredInformation\":{\"IsMutable\":false,\"HasLocalQuantumDependency\":false},\"Position\":{\"Case\":\"Null\"},\"Range\":{\"Item1\":{\"Line\":1,\"Column\":73},\"Item2\":{\"Line\":1,\"Column\":79}}}]},{\"Case\":\"QsTupleItem\",\"Fields\":[{\"VariableName\":{\"Case\":\"ValidName\",\"Fields\":[\"v\"]},\"Type\":{\"Case\":\"ArrayType\",\"Fields\":[{\"Case\":\"Qubit\"}]},\"InferredInformation\":{\"IsMutable\":false,\"HasLocalQuantumDependency\":false},\"Position\":{\"Case\":\"Null\"},\"Range\":{\"Item1\":{\"Line\":1,\"Column\":88},\"Item2\":{\"Line\":1,\"Column\":89}}}]},{\"Case\":\"QsTupleItem\",\"Fields\":[{\"VariableName\":{\"Case\":\"ValidName\",\"Fields\":[\"c\"]},\"Type\":{\"Case\":\"Qubit\"},\"InferredInformation\":{\"IsMutable\":false,\"HasLocalQuantumDependency\":false},\"Position\":{\"Case\":\"Null\"},\"Range\":{\"Item1\":{\"Line\":1,\"Column\":98},\"Item2\":{\"Line\":1,\"Column\":99}}}]},{\"Case\":\"QsTupleItem\",\"Fields\":[{\"VariableName\":{\"Case\":\"ValidName\",\"Fields\":[\"z\"]},\"Type\":{\"Case\":\"Qubit\"},\"InferredInformation\":{\"IsMutable\":false,\"HasLocalQuantumDependency\":false},\"Position\":{\"Case\":\"Null\"},\"Range\":{\"Item1\":{\"Line\":1,\"Column\":106},\"Item2\":{\"Line\":1,\"Column\":107}}}]},{\"Case\":\"QsTupleItem\",\"Fields\":[{\"VariableName\":{\"Case\":\"ValidName\",\"Fields\":[\"az\"]},\"Type\":{\"Case\":\"Qubit\"},\"InferredInformation\":{\"IsMutable\":false,\"HasLocalQuantumDependency\":false},\"Position\":{\"Case\":\"Null\"},\"Range\":{\"Item1\":{\"Line\":1,\"Column\":114},\"Item2\":{\"Line\":1,\"Column\":116}}}]},{\"Case\":\"QsTupleItem\",\"Fields\":[{\"VariableName\":{\"Case\":\"ValidName\",\"Fields\":[\"ld\"]},\"Type\":{\"Case\":\"Qubit\"},\"InferredInformation\":{\"IsMutable\":false,\"HasLocalQuantumDependency\":false},\"Position\":{\"Case\":\"Null\"},\"Range\":{\"Item1\":{\"Line\":1,\"Column\":123},\"Item2\":{\"Line\":1,\"Column\":125}}}]}]]},\"Signature\":{\"TypeParameters\":[],\"ArgumentType\":{\"Case\":\"TupleType\",\"Fields\":[[{\"Case\":\"Int\"},{\"Case\":\"Int\"},{\"Case\":\"ArrayType\",\"Fields\":[{\"Case\":\"Int\"}]},{\"Case\":\"ArrayType\",\"Fields\":[{\"Case\":\"Qubit\"}]},{\"Case\":\"ArrayType\",\"Fields\":[{\"Case\":\"Qubit\"}]},{\"Case\":\"ArrayType\",\"Fields\":[{\"Case\":\"Qubit\"}]},{\"Case\":\"ArrayType\",\"Fields\":[{\"Case\":\"Qubit\"}]},{\"Case\":\"ArrayType\",\"Fields\":[{\"Case\":\"Qubit\"}]},{\"Case\":\"Qubit\"},{\"Case\":\"Qubit\"},{\"Case\":\"Qubit\"},{\"Case\":\"Qubit\"}]]},\"ReturnType\":{\"Case\":\"ArrayType\",\"Fields\":[{\"Case\":\"Int\"}]},\"Information\":{\"Characteristics\":{\"Case\":\"EmptySet\"},\"InferredInformation\":{\"IsSelfAdjoint\":false,\"IsIntrinsic\":false}}},\"Documentation\":[]}")]
-[assembly: SpecializationDeclaration("{\"Kind\":{\"Case\":\"QsBody\"},\"TypeArguments\":{\"Case\":\"Null\"},\"Information\":{\"Characteristics\":{\"Case\":\"EmptySet\"},\"InferredInformation\":{\"IsSelfAdjoint\":false,\"IsIntrinsic\":false}},\"Parent\":{\"Namespace\":\"ModularMultiplication.Testing\",\"Name\":\"Pebble\"},\"Attributes\":[],\"SourceFile\":\"/Users/Matt/Documents/Masters/Dissertation/Quantum/Testing/Square_and_Multiply_Test/Program.qs\",\"Position\":{\"Item1\":94,\"Item2\":0},\"HeaderRange\":{\"Item1\":{\"Line\":1,\"Column\":11},\"Item2\":{\"Line\":1,\"Column\":17}},\"Documentation\":[]}")]
-[assembly: CallableDeclaration("{\"Kind\":{\"Case\":\"Operation\"},\"QualifiedName\":{\"Namespace\":\"ModularMultiplication.Testing\",\"Name\":\"Unpebble\"},\"Attributes\":[],\"Modifiers\":{\"Access\":{\"Case\":\"DefaultAccess\"}},\"SourceFile\":\"/Users/Matt/Documents/Masters/Dissertation/Quantum/Testing/Square_and_Multiply_Test/Program.qs\",\"Position\":{\"Item1\":113,\"Item2\":0},\"SymbolRange\":{\"Item1\":{\"Line\":1,\"Column\":11},\"Item2\":{\"Line\":1,\"Column\":19}},\"ArgumentTuple\":{\"Case\":\"QsTuple\",\"Fields\":[[{\"Case\":\"QsTupleItem\",\"Fields\":[{\"VariableName\":{\"Case\":\"ValidName\",\"Fields\":[\"s\"]},\"Type\":{\"Case\":\"Int\"},\"InferredInformation\":{\"IsMutable\":false,\"HasLocalQuantumDependency\":false},\"Position\":{\"Case\":\"Null\"},\"Range\":{\"Item1\":{\"Line\":1,\"Column\":20},\"Item2\":{\"Line\":1,\"Column\":21}}}]},{\"Case\":\"QsTupleItem\",\"Fields\":[{\"VariableName\":{\"Case\":\"ValidName\",\"Fields\":[\"n\"]},\"Type\":{\"Case\":\"Int\"},\"InferredInformation\":{\"IsMutable\":false,\"HasLocalQuantumDependency\":false},\"Position\":{\"Case\":\"Null\"},\"Range\":{\"Item1\":{\"Line\":1,\"Column\":28},\"Item2\":{\"Line\":1,\"Column\":29}}}]},{\"Case\":\"QsTupleItem\",\"Fields\":[{\"VariableName\":{\"Case\":\"ValidName\",\"Fields\":[\"arr\"]},\"Type\":{\"Case\":\"ArrayType\",\"Fields\":[{\"Case\":\"Int\"}]},\"InferredInformation\":{\"IsMutable\":false,\"HasLocalQuantumDependency\":false},\"Position\":{\"Case\":\"Null\"},\"Range\":{\"Item1\":{\"Line\":1,\"Column\":35},\"Item2\":{\"Line\":1,\"Column\":38}}}]},{\"Case\":\"QsTupleItem\",\"Fields\":[{\"VariableName\":{\"Case\":\"ValidName\",\"Fields\":[\"a\"]},\"Type\":{\"Case\":\"ArrayType\",\"Fields\":[{\"Case\":\"Qubit\"}]},\"InferredInformation\":{\"IsMutable\":false,\"HasLocalQuantumDependency\":false},\"Position\":{\"Case\":\"Null\"},\"Range\":{\"Item1\":{\"Line\":1,\"Column\":45},\"Item2\":{\"Line\":1,\"Column\":46}}}]},{\"Case\":\"QsTupleItem\",\"Fields\":[{\"VariableName\":{\"Case\":\"ValidName\",\"Fields\":[\"m\"]},\"Type\":{\"Case\":\"ArrayType\",\"Fields\":[{\"Case\":\"Qubit\"}]},\"InferredInformation\":{\"IsMutable\":false,\"HasLocalQuantumDependency\":false},\"Position\":{\"Case\":\"Null\"},\"Range\":{\"Item1\":{\"Line\":1,\"Column\":55},\"Item2\":{\"Line\":1,\"Column\":56}}}]},{\"Case\":\"QsTupleItem\",\"Fields\":[{\"VariableName\":{\"Case\":\"ValidName\",\"Fields\":[\"j\"]},\"Type\":{\"Case\":\"ArrayType\",\"Fields\":[{\"Case\":\"Qubit\"}]},\"InferredInformation\":{\"IsMutable\":false,\"HasLocalQuantumDependency\":false},\"Position\":{\"Case\":\"Null\"},\"Range\":{\"Item1\":{\"Line\":1,\"Column\":65},\"Item2\":{\"Line\":1,\"Column\":66}}}]},{\"Case\":\"QsTupleItem\",\"Fields\":[{\"VariableName\":{\"Case\":\"ValidName\",\"Fields\":[\"result\"]},\"Type\":{\"Case\":\"ArrayType\",\"Fields\":[{\"Case\":\"Qubit\"}]},\"InferredInformation\":{\"IsMutable\":false,\"HasLocalQuantumDependency\":false},\"Position\":{\"Case\":\"Null\"},\"Range\":{\"Item1\":{\"Line\":1,\"Column\":75},\"Item2\":{\"Line\":1,\"Column\":81}}}]},{\"Case\":\"QsTupleItem\",\"Fields\":[{\"VariableName\":{\"Case\":\"ValidName\",\"Fields\":[\"v\"]},\"Type\":{\"Case\":\"ArrayType\",\"Fields\":[{\"Case\":\"Qubit\"}]},\"InferredInformation\":{\"IsMutable\":false,\"HasLocalQuantumDependency\":false},\"Position\":{\"Case\":\"Null\"},\"Range\":{\"Item1\":{\"Line\":1,\"Column\":90},\"Item2\":{\"Line\":1,\"Column\":91}}}]},{\"Case\":\"QsTupleItem\",\"Fields\":[{\"VariableName\":{\"Case\":\"ValidName\",\"Fields\":[\"c\"]},\"Type\":{\"Case\":\"Qubit\"},\"InferredInformation\":{\"IsMutable\":false,\"HasLocalQuantumDependency\":false},\"Position\":{\"Case\":\"Null\"},\"Range\":{\"Item1\":{\"Line\":1,\"Column\":100},\"Item2\":{\"Line\":1,\"Column\":101}}}]},{\"Case\":\"QsTupleItem\",\"Fields\":[{\"VariableName\":{\"Case\":\"ValidName\",\"Fields\":[\"z\"]},\"Type\":{\"Case\":\"Qubit\"},\"InferredInformation\":{\"IsMutable\":false,\"HasLocalQuantumDependency\":false},\"Position\":{\"Case\":\"Null\"},\"Range\":{\"Item1\":{\"Line\":1,\"Column\":108},\"Item2\":{\"Line\":1,\"Column\":109}}}]},{\"Case\":\"QsTupleItem\",\"Fields\":[{\"VariableName\":{\"Case\":\"ValidName\",\"Fields\":[\"az\"]},\"Type\":{\"Case\":\"Qubit\"},\"InferredInformation\":{\"IsMutable\":false,\"HasLocalQuantumDependency\":false},\"Position\":{\"Case\":\"Null\"},\"Range\":{\"Item1\":{\"Line\":1,\"Column\":116},\"Item2\":{\"Line\":1,\"Column\":118}}}]},{\"Case\":\"QsTupleItem\",\"Fields\":[{\"VariableName\":{\"Case\":\"ValidName\",\"Fields\":[\"ld\"]},\"Type\":{\"Case\":\"Qubit\"},\"InferredInformation\":{\"IsMutable\":false,\"HasLocalQuantumDependency\":false},\"Position\":{\"Case\":\"Null\"},\"Range\":{\"Item1\":{\"Line\":1,\"Column\":125},\"Item2\":{\"Line\":1,\"Column\":127}}}]}]]},\"Signature\":{\"TypeParameters\":[],\"ArgumentType\":{\"Case\":\"TupleType\",\"Fields\":[[{\"Case\":\"Int\"},{\"Case\":\"Int\"},{\"Case\":\"ArrayType\",\"Fields\":[{\"Case\":\"Int\"}]},{\"Case\":\"ArrayType\",\"Fields\":[{\"Case\":\"Qubit\"}]},{\"Case\":\"ArrayType\",\"Fields\":[{\"Case\":\"Qubit\"}]},{\"Case\":\"ArrayType\",\"Fields\":[{\"Case\":\"Qubit\"}]},{\"Case\":\"ArrayType\",\"Fields\":[{\"Case\":\"Qubit\"}]},{\"Case\":\"ArrayType\",\"Fields\":[{\"Case\":\"Qubit\"}]},{\"Case\":\"Qubit\"},{\"Case\":\"Qubit\"},{\"Case\":\"Qubit\"},{\"Case\":\"Qubit\"}]]},\"ReturnType\":{\"Case\":\"ArrayType\",\"Fields\":[{\"Case\":\"Int\"}]},\"Information\":{\"Characteristics\":{\"Case\":\"EmptySet\"},\"InferredInformation\":{\"IsSelfAdjoint\":false,\"IsIntrinsic\":false}}},\"Documentation\":[]}")]
-[assembly: SpecializationDeclaration("{\"Kind\":{\"Case\":\"QsBody\"},\"TypeArguments\":{\"Case\":\"Null\"},\"Information\":{\"Characteristics\":{\"Case\":\"EmptySet\"},\"InferredInformation\":{\"IsSelfAdjoint\":false,\"IsIntrinsic\":false}},\"Parent\":{\"Namespace\":\"ModularMultiplication.Testing\",\"Name\":\"Unpebble\"},\"Attributes\":[],\"SourceFile\":\"/Users/Matt/Documents/Masters/Dissertation/Quantum/Testing/Square_and_Multiply_Test/Program.qs\",\"Position\":{\"Item1\":113,\"Item2\":0},\"HeaderRange\":{\"Item1\":{\"Line\":1,\"Column\":11},\"Item2\":{\"Line\":1,\"Column\":19}},\"Documentation\":[]}")]
-[assembly: CallableDeclaration("{\"Kind\":{\"Case\":\"Operation\"},\"QualifiedName\":{\"Namespace\":\"ModularMultiplication.Testing\",\"Name\":\"SquareAndMultiplyStep\"},\"Attributes\":[],\"Modifiers\":{\"Access\":{\"Case\":\"DefaultAccess\"}},\"SourceFile\":\"/Users/Matt/Documents/Masters/Dissertation/Quantum/Testing/Square_and_Multiply_Test/Program.qs\",\"Position\":{\"Item1\":131,\"Item2\":0},\"SymbolRange\":{\"Item1\":{\"Line\":1,\"Column\":11},\"Item2\":{\"Line\":1,\"Column\":32}},\"ArgumentTuple\":{\"Case\":\"QsTuple\",\"Fields\":[[{\"Case\":\"QsTupleItem\",\"Fields\":[{\"VariableName\":{\"Case\":\"ValidName\",\"Fields\":[\"t\"]},\"Type\":{\"Case\":\"Int\"},\"InferredInformation\":{\"IsMutable\":false,\"HasLocalQuantumDependency\":false},\"Position\":{\"Case\":\"Null\"},\"Range\":{\"Item1\":{\"Line\":1,\"Column\":33},\"Item2\":{\"Line\":1,\"Column\":34}}}]},{\"Case\":\"QsTupleItem\",\"Fields\":[{\"VariableName\":{\"Case\":\"ValidName\",\"Fields\":[\"arr\"]},\"Type\":{\"Case\":\"ArrayType\",\"Fields\":[{\"Case\":\"Int\"}]},\"InferredInformation\":{\"IsMutable\":false,\"HasLocalQuantumDependency\":false},\"Position\":{\"Case\":\"Null\"},\"Range\":{\"Item1\":{\"Line\":1,\"Column\":39},\"Item2\":{\"Line\":1,\"Column\":42}}}]},{\"Case\":\"QsTupleItem\",\"Fields\":[{\"VariableName\":{\"Case\":\"ValidName\",\"Fields\":[\"d\"]},\"Type\":{\"Case\":\"Int\"},\"InferredInformation\":{\"IsMutable\":false,\"HasLocalQuantumDependency\":false},\"Position\":{\"Case\":\"Null\"},\"Range\":{\"Item1\":{\"Line\":1,\"Column\":50},\"Item2\":{\"Line\":1,\"Column\":51}}}]},{\"Case\":\"QsTupleItem\",\"Fields\":[{\"VariableName\":{\"Case\":\"ValidName\",\"Fields\":[\"a\"]},\"Type\":{\"Case\":\"ArrayType\",\"Fields\":[{\"Case\":\"Qubit\"}]},\"InferredInformation\":{\"IsMutable\":false,\"HasLocalQuantumDependency\":false},\"Position\":{\"Case\":\"Null\"},\"Range\":{\"Item1\":{\"Line\":1,\"Column\":56},\"Item2\":{\"Line\":1,\"Column\":57}}}]},{\"Case\":\"QsTupleItem\",\"Fields\":[{\"VariableName\":{\"Case\":\"ValidName\",\"Fields\":[\"m\"]},\"Type\":{\"Case\":\"ArrayType\",\"Fields\":[{\"Case\":\"Qubit\"}]},\"InferredInformation\":{\"IsMutable\":false,\"HasLocalQuantumDependency\":false},\"Position\":{\"Case\":\"Null\"},\"Range\":{\"Item1\":{\"Line\":1,\"Column\":66},\"Item2\":{\"Line\":1,\"Column\":67}}}]},{\"Case\":\"QsTupleItem\",\"Fields\":[{\"VariableName\":{\"Case\":\"ValidName\",\"Fields\":[\"j\"]},\"Type\":{\"Case\":\"ArrayType\",\"Fields\":[{\"Case\":\"Qubit\"}]},\"InferredInformation\":{\"IsMutable\":false,\"HasLocalQuantumDependency\":false},\"Position\":{\"Case\":\"Null\"},\"Range\":{\"Item1\":{\"Line\":1,\"Column\":76},\"Item2\":{\"Line\":1,\"Column\":77}}}]},{\"Case\":\"QsTupleItem\",\"Fields\":[{\"VariableName\":{\"Case\":\"ValidName\",\"Fields\":[\"result\"]},\"Type\":{\"Case\":\"ArrayType\",\"Fields\":[{\"Case\":\"Qubit\"}]},\"InferredInformation\":{\"IsMutable\":false,\"HasLocalQuantumDependency\":false},\"Position\":{\"Case\":\"Null\"},\"Range\":{\"Item1\":{\"Line\":1,\"Column\":86},\"Item2\":{\"Line\":1,\"Column\":92}}}]},{\"Case\":\"QsTupleItem\",\"Fields\":[{\"VariableName\":{\"Case\":\"ValidName\",\"Fields\":[\"v\"]},\"Type\":{\"Case\":\"ArrayType\",\"Fields\":[{\"Case\":\"Qubit\"}]},\"InferredInformation\":{\"IsMutable\":false,\"HasLocalQuantumDependency\":false},\"Position\":{\"Case\":\"Null\"},\"Range\":{\"Item1\":{\"Line\":1,\"Column\":101},\"Item2\":{\"Line\":1,\"Column\":102}}}]},{\"Case\":\"QsTupleItem\",\"Fields\":[{\"VariableName\":{\"Case\":\"ValidName\",\"Fields\":[\"c\"]},\"Type\":{\"Case\":\"Qubit\"},\"InferredInformation\":{\"IsMutable\":false,\"HasLocalQuantumDependency\":false},\"Position\":{\"Case\":\"Null\"},\"Range\":{\"Item1\":{\"Line\":1,\"Column\":111},\"Item2\":{\"Line\":1,\"Column\":112}}}]},{\"Case\":\"QsTupleItem\",\"Fields\":[{\"VariableName\":{\"Case\":\"ValidName\",\"Fields\":[\"z\"]},\"Type\":{\"Case\":\"Qubit\"},\"InferredInformation\":{\"IsMutable\":false,\"HasLocalQuantumDependency\":false},\"Position\":{\"Case\":\"Null\"},\"Range\":{\"Item1\":{\"Line\":1,\"Column\":119},\"Item2\":{\"Line\":1,\"Column\":120}}}]},{\"Case\":\"QsTupleItem\",\"Fields\":[{\"VariableName\":{\"Case\":\"ValidName\",\"Fields\":[\"az\"]},\"Type\":{\"Case\":\"Qubit\"},\"InferredInformation\":{\"IsMutable\":false,\"HasLocalQuantumDependency\":false},\"Position\":{\"Case\":\"Null\"},\"Range\":{\"Item1\":{\"Line\":1,\"Column\":127},\"Item2\":{\"Line\":1,\"Column\":129}}}]},{\"Case\":\"QsTupleItem\",\"Fields\":[{\"VariableName\":{\"Case\":\"ValidName\",\"Fields\":[\"ld\"]},\"Type\":{\"Case\":\"Qubit\"},\"InferredInformation\":{\"IsMutable\":false,\"HasLocalQuantumDependency\":false},\"Position\":{\"Case\":\"Null\"},\"Range\":{\"Item1\":{\"Line\":1,\"Column\":136},\"Item2\":{\"Line\":1,\"Column\":138}}}]}]]},\"Signature\":{\"TypeParameters\":[],\"ArgumentType\":{\"Case\":\"TupleType\",\"Fields\":[[{\"Case\":\"Int\"},{\"Case\":\"ArrayType\",\"Fields\":[{\"Case\":\"Int\"}]},{\"Case\":\"Int\"},{\"Case\":\"ArrayType\",\"Fields\":[{\"Case\":\"Qubit\"}]},{\"Case\":\"ArrayType\",\"Fields\":[{\"Case\":\"Qubit\"}]},{\"Case\":\"ArrayType\",\"Fields\":[{\"Case\":\"Qubit\"}]},{\"Case\":\"ArrayType\",\"Fields\":[{\"Case\":\"Qubit\"}]},{\"Case\":\"ArrayType\",\"Fields\":[{\"Case\":\"Qubit\"}]},{\"Case\":\"Qubit\"},{\"Case\":\"Qubit\"},{\"Case\":\"Qubit\"},{\"Case\":\"Qubit\"}]]},\"ReturnType\":{\"Case\":\"ArrayType\",\"Fields\":[{\"Case\":\"Int\"}]},\"Information\":{\"Characteristics\":{\"Case\":\"EmptySet\"},\"InferredInformation\":{\"IsSelfAdjoint\":false,\"IsIntrinsic\":false}}},\"Documentation\":[]}")]
-[assembly: SpecializationDeclaration("{\"Kind\":{\"Case\":\"QsBody\"},\"TypeArguments\":{\"Case\":\"Null\"},\"Information\":{\"Characteristics\":{\"Case\":\"EmptySet\"},\"InferredInformation\":{\"IsSelfAdjoint\":false,\"IsIntrinsic\":false}},\"Parent\":{\"Namespace\":\"ModularMultiplication.Testing\",\"Name\":\"SquareAndMultiplyStep\"},\"Attributes\":[],\"SourceFile\":\"/Users/Matt/Documents/Masters/Dissertation/Quantum/Testing/Square_and_Multiply_Test/Program.qs\",\"Position\":{\"Item1\":131,\"Item2\":0},\"HeaderRange\":{\"Item1\":{\"Line\":1,\"Column\":11},\"Item2\":{\"Line\":1,\"Column\":32}},\"Documentation\":[]}")]
-[assembly: CallableDeclaration("{\"Kind\":{\"Case\":\"Operation\"},\"QualifiedName\":{\"Namespace\":\"ModularMultiplication.Testing\",\"Name\":\"SquareAndMultiply\"},\"Attributes\":[],\"Modifiers\":{\"Access\":{\"Case\":\"DefaultAccess\"}},\"SourceFile\":\"/Users/Matt/Documents/Masters/Dissertation/Quantum/Testing/Square_and_Multiply_Test/Program.qs\",\"Position\":{\"Item1\":314,\"Item2\":0},\"SymbolRange\":{\"Item1\":{\"Line\":1,\"Column\":11},\"Item2\":{\"Line\":1,\"Column\":28}},\"ArgumentTuple\":{\"Case\":\"QsTuple\",\"Fields\":[[{\"Case\":\"QsTupleItem\",\"Fields\":[{\"VariableName\":{\"Case\":\"ValidName\",\"Fields\":[\"a\"]},\"Type\":{\"Case\":\"ArrayType\",\"Fields\":[{\"Case\":\"Qubit\"}]},\"InferredInformation\":{\"IsMutable\":false,\"HasLocalQuantumDependency\":false},\"Position\":{\"Case\":\"Null\"},\"Range\":{\"Item1\":{\"Line\":1,\"Column\":29},\"Item2\":{\"Line\":1,\"Column\":30}}}]},{\"Case\":\"QsTupleItem\",\"Fields\":[{\"VariableName\":{\"Case\":\"ValidName\",\"Fields\":[\"m\"]},\"Type\":{\"Case\":\"ArrayType\",\"Fields\":[{\"Case\":\"Qubit\"}]},\"InferredInformation\":{\"IsMutable\":false,\"HasLocalQuantumDependency\":false},\"Position\":{\"Case\":\"Null\"},\"Range\":{\"Item1\":{\"Line\":1,\"Column\":39},\"Item2\":{\"Line\":1,\"Column\":40}}}]},{\"Case\":\"QsTupleItem\",\"Fields\":[{\"VariableName\":{\"Case\":\"ValidName\",\"Fields\":[\"j\"]},\"Type\":{\"Case\":\"ArrayType\",\"Fields\":[{\"Case\":\"Qubit\"}]},\"InferredInformation\":{\"IsMutable\":false,\"HasLocalQuantumDependency\":false},\"Position\":{\"Case\":\"Null\"},\"Range\":{\"Item1\":{\"Line\":1,\"Column\":49},\"Item2\":{\"Line\":1,\"Column\":50}}}]},{\"Case\":\"QsTupleItem\",\"Fields\":[{\"VariableName\":{\"Case\":\"ValidName\",\"Fields\":[\"result\"]},\"Type\":{\"Case\":\"ArrayType\",\"Fields\":[{\"Case\":\"Qubit\"}]},\"InferredInformation\":{\"IsMutable\":false,\"HasLocalQuantumDependency\":false},\"Position\":{\"Case\":\"Null\"},\"Range\":{\"Item1\":{\"Line\":1,\"Column\":59},\"Item2\":{\"Line\":1,\"Column\":65}}}]}]]},\"Signature\":{\"TypeParameters\":[],\"ArgumentType\":{\"Case\":\"TupleType\",\"Fields\":[[{\"Case\":\"ArrayType\",\"Fields\":[{\"Case\":\"Qubit\"}]},{\"Case\":\"ArrayType\",\"Fields\":[{\"Case\":\"Qubit\"}]},{\"Case\":\"ArrayType\",\"Fields\":[{\"Case\":\"Qubit\"}]},{\"Case\":\"ArrayType\",\"Fields\":[{\"Case\":\"Qubit\"}]}]]},\"ReturnType\":{\"Case\":\"UnitType\"},\"Information\":{\"Characteristics\":{\"Case\":\"EmptySet\"},\"InferredInformation\":{\"IsSelfAdjoint\":false,\"IsIntrinsic\":false}}},\"Documentation\":[\"SQUARE AND MULTIPLY/////////////\",\"NEEDS REFACTORING////////////////\"]}")]
-[assembly: SpecializationDeclaration("{\"Kind\":{\"Case\":\"QsBody\"},\"TypeArguments\":{\"Case\":\"Null\"},\"Information\":{\"Characteristics\":{\"Case\":\"EmptySet\"},\"InferredInformation\":{\"IsSelfAdjoint\":false,\"IsIntrinsic\":false}},\"Parent\":{\"Namespace\":\"ModularMultiplication.Testing\",\"Name\":\"SquareAndMultiply\"},\"Attributes\":[],\"SourceFile\":\"/Users/Matt/Documents/Masters/Dissertation/Quantum/Testing/Square_and_Multiply_Test/Program.qs\",\"Position\":{\"Item1\":316,\"Item2\":8},\"HeaderRange\":{\"Item1\":{\"Line\":1,\"Column\":1},\"Item2\":{\"Line\":1,\"Column\":5}},\"Documentation\":[]}")]
-[assembly: CallableDeclaration("{\"Kind\":{\"Case\":\"Operation\"},\"QualifiedName\":{\"Namespace\":\"ModularMultiplication.Testing\",\"Name\":\"SquareAndMultiplyIteration\"},\"Attributes\":[],\"Modifiers\":{\"Access\":{\"Case\":\"DefaultAccess\"}},\"SourceFile\":\"/Users/Matt/Documents/Masters/Dissertation/Quantum/Testing/Square_and_Multiply_Test/Program.qs\",\"Position\":{\"Item1\":585,\"Item2\":0},\"SymbolRange\":{\"Item1\":{\"Line\":1,\"Column\":11},\"Item2\":{\"Line\":1,\"Column\":37}},\"ArgumentTuple\":{\"Case\":\"QsTuple\",\"Fields\":[[{\"Case\":\"QsTupleItem\",\"Fields\":[{\"VariableName\":{\"Case\":\"ValidName\",\"Fields\":[\"a\"]},\"Type\":{\"Case\":\"ArrayType\",\"Fields\":[{\"Case\":\"Qubit\"}]},\"InferredInformation\":{\"IsMutable\":false,\"HasLocalQuantumDependency\":false},\"Position\":{\"Case\":\"Null\"},\"Range\":{\"Item1\":{\"Line\":1,\"Column\":38},\"Item2\":{\"Line\":1,\"Column\":39}}}]},{\"Case\":\"QsTupleItem\",\"Fields\":[{\"VariableName\":{\"Case\":\"ValidName\",\"Fields\":[\"v\"]},\"Type\":{\"Case\":\"ArrayType\",\"Fields\":[{\"Case\":\"Qubit\"}]},\"InferredInformation\":{\"IsMutable\":false,\"HasLocalQuantumDependency\":false},\"Position\":{\"Case\":\"Null\"},\"Range\":{\"Item1\":{\"Line\":1,\"Column\":48},\"Item2\":{\"Line\":1,\"Column\":49}}}]},{\"Case\":\"QsTupleItem\",\"Fields\":[{\"VariableName\":{\"Case\":\"ValidName\",\"Fields\":[\"m\"]},\"Type\":{\"Case\":\"ArrayType\",\"Fields\":[{\"Case\":\"Qubit\"}]},\"InferredInformation\":{\"IsMutable\":false,\"HasLocalQuantumDependency\":false},\"Position\":{\"Case\":\"Null\"},\"Range\":{\"Item1\":{\"Line\":1,\"Column\":58},\"Item2\":{\"Line\":1,\"Column\":59}}}]},{\"Case\":\"QsTupleItem\",\"Fields\":[{\"VariableName\":{\"Case\":\"ValidName\",\"Fields\":[\"c\"]},\"Type\":{\"Case\":\"Qubit\"},\"InferredInformation\":{\"IsMutable\":false,\"HasLocalQuantumDependency\":false},\"Position\":{\"Case\":\"Null\"},\"Range\":{\"Item1\":{\"Line\":1,\"Column\":68},\"Item2\":{\"Line\":1,\"Column\":69}}}]},{\"Case\":\"QsTupleItem\",\"Fields\":[{\"VariableName\":{\"Case\":\"ValidName\",\"Fields\":[\"z\"]},\"Type\":{\"Case\":\"Qubit\"},\"InferredInformation\":{\"IsMutable\":false,\"HasLocalQuantumDependency\":false},\"Position\":{\"Case\":\"Null\"},\"Range\":{\"Item1\":{\"Line\":1,\"Column\":76},\"Item2\":{\"Line\":1,\"Column\":77}}}]},{\"Case\":\"QsTupleItem\",\"Fields\":[{\"VariableName\":{\"Case\":\"ValidName\",\"Fields\":[\"ld\"]},\"Type\":{\"Case\":\"Qubit\"},\"InferredInformation\":{\"IsMutable\":false,\"HasLocalQuantumDependency\":false},\"Position\":{\"Case\":\"Null\"},\"Range\":{\"Item1\":{\"Line\":1,\"Column\":84},\"Item2\":{\"Line\":1,\"Column\":86}}}]},{\"Case\":\"QsTupleItem\",\"Fields\":[{\"VariableName\":{\"Case\":\"ValidName\",\"Fields\":[\"t\"]},\"Type\":{\"Case\":\"ArrayType\",\"Fields\":[{\"Case\":\"Qubit\"}]},\"InferredInformation\":{\"IsMutable\":false,\"HasLocalQuantumDependency\":false},\"Position\":{\"Case\":\"Null\"},\"Range\":{\"Item1\":{\"Line\":1,\"Column\":93},\"Item2\":{\"Line\":1,\"Column\":94}}}]}]]},\"Signature\":{\"TypeParameters\":[],\"ArgumentType\":{\"Case\":\"TupleType\",\"Fields\":[[{\"Case\":\"ArrayType\",\"Fields\":[{\"Case\":\"Qubit\"}]},{\"Case\":\"ArrayType\",\"Fields\":[{\"Case\":\"Qubit\"}]},{\"Case\":\"ArrayType\",\"Fields\":[{\"Case\":\"Qubit\"}]},{\"Case\":\"Qubit\"},{\"Case\":\"Qubit\"},{\"Case\":\"Qubit\"},{\"Case\":\"ArrayType\",\"Fields\":[{\"Case\":\"Qubit\"}]}]]},\"ReturnType\":{\"Case\":\"UnitType\"},\"Information\":{\"Characteristics\":{\"Case\":\"Union\",\"Fields\":[{\"Case\":\"SimpleSet\",\"Fields\":[{\"Case\":\"Adjointable\"}]},{\"Case\":\"SimpleSet\",\"Fields\":[{\"Case\":\"Controllable\"}]}]},\"InferredInformation\":{\"IsSelfAdjoint\":false,\"IsIntrinsic\":false}}},\"Documentation\":[]}")]
-[assembly: SpecializationDeclaration("{\"Kind\":{\"Case\":\"QsBody\"},\"TypeArguments\":{\"Case\":\"Null\"},\"Information\":{\"Characteristics\":{\"Case\":\"Union\",\"Fields\":[{\"Case\":\"SimpleSet\",\"Fields\":[{\"Case\":\"Adjointable\"}]},{\"Case\":\"SimpleSet\",\"Fields\":[{\"Case\":\"Controllable\"}]}]},\"InferredInformation\":{\"IsSelfAdjoint\":false,\"IsIntrinsic\":false}},\"Parent\":{\"Namespace\":\"ModularMultiplication.Testing\",\"Name\":\"SquareAndMultiplyIteration\"},\"Attributes\":[],\"SourceFile\":\"/Users/Matt/Documents/Masters/Dissertation/Quantum/Testing/Square_and_Multiply_Test/Program.qs\",\"Position\":{\"Item1\":585,\"Item2\":0},\"HeaderRange\":{\"Item1\":{\"Line\":1,\"Column\":11},\"Item2\":{\"Line\":1,\"Column\":37}},\"Documentation\":[]}")]
-[assembly: SpecializationDeclaration("{\"Kind\":{\"Case\":\"QsAdjoint\"},\"TypeArguments\":{\"Case\":\"Null\"},\"Information\":{\"Characteristics\":{\"Case\":\"Union\",\"Fields\":[{\"Case\":\"SimpleSet\",\"Fields\":[{\"Case\":\"Adjointable\"}]},{\"Case\":\"SimpleSet\",\"Fields\":[{\"Case\":\"Controllable\"}]}]},\"InferredInformation\":{\"IsSelfAdjoint\":false,\"IsIntrinsic\":false}},\"Parent\":{\"Namespace\":\"ModularMultiplication.Testing\",\"Name\":\"SquareAndMultiplyIteration\"},\"Attributes\":[],\"SourceFile\":\"/Users/Matt/Documents/Masters/Dissertation/Quantum/Testing/Square_and_Multiply_Test/Program.qs\",\"Position\":{\"Item1\":585,\"Item2\":0},\"HeaderRange\":{\"Item1\":{\"Line\":1,\"Column\":114},\"Item2\":{\"Line\":1,\"Column\":123}},\"Documentation\":[\"automatically generated QsAdjoint specialization for ModularMultiplication.Testing.SquareAndMultiplyIteration\"]}")]
-[assembly: SpecializationDeclaration("{\"Kind\":{\"Case\":\"QsControlled\"},\"TypeArguments\":{\"Case\":\"Null\"},\"Information\":{\"Characteristics\":{\"Case\":\"Union\",\"Fields\":[{\"Case\":\"SimpleSet\",\"Fields\":[{\"Case\":\"Adjointable\"}]},{\"Case\":\"SimpleSet\",\"Fields\":[{\"Case\":\"Controllable\"}]}]},\"InferredInformation\":{\"IsSelfAdjoint\":false,\"IsIntrinsic\":false}},\"Parent\":{\"Namespace\":\"ModularMultiplication.Testing\",\"Name\":\"SquareAndMultiplyIteration\"},\"Attributes\":[],\"SourceFile\":\"/Users/Matt/Documents/Masters/Dissertation/Quantum/Testing/Square_and_Multiply_Test/Program.qs\",\"Position\":{\"Item1\":585,\"Item2\":0},\"HeaderRange\":{\"Item1\":{\"Line\":1,\"Column\":114},\"Item2\":{\"Line\":1,\"Column\":123}},\"Documentation\":[\"automatically generated QsControlled specialization for ModularMultiplication.Testing.SquareAndMultiplyIteration\"]}")]
-[assembly: SpecializationDeclaration("{\"Kind\":{\"Case\":\"QsControlledAdjoint\"},\"TypeArguments\":{\"Case\":\"Null\"},\"Information\":{\"Characteristics\":{\"Case\":\"Union\",\"Fields\":[{\"Case\":\"SimpleSet\",\"Fields\":[{\"Case\":\"Adjointable\"}]},{\"Case\":\"SimpleSet\",\"Fields\":[{\"Case\":\"Controllable\"}]}]},\"InferredInformation\":{\"IsSelfAdjoint\":false,\"IsIntrinsic\":false}},\"Parent\":{\"Namespace\":\"ModularMultiplication.Testing\",\"Name\":\"SquareAndMultiplyIteration\"},\"Attributes\":[],\"SourceFile\":\"/Users/Matt/Documents/Masters/Dissertation/Quantum/Testing/Square_and_Multiply_Test/Program.qs\",\"Position\":{\"Item1\":585,\"Item2\":0},\"HeaderRange\":{\"Item1\":{\"Line\":1,\"Column\":114},\"Item2\":{\"Line\":1,\"Column\":123}},\"Documentation\":[\"automatically generated QsControlledAdjoint specialization for ModularMultiplication.Testing.SquareAndMultiplyIteration\"]}")]
-[assembly: CallableDeclaration("{\"Kind\":{\"Case\":\"Operation\"},\"QualifiedName\":{\"Namespace\":\"ModularMultiplication.Testing\",\"Name\":\"SquareModM\"},\"Attributes\":[],\"Modifiers\":{\"Access\":{\"Case\":\"DefaultAccess\"}},\"SourceFile\":\"/Users/Matt/Documents/Masters/Dissertation/Quantum/Testing/Square_and_Multiply_Test/Program.qs\",\"Position\":{\"Item1\":606,\"Item2\":0},\"SymbolRange\":{\"Item1\":{\"Line\":1,\"Column\":11},\"Item2\":{\"Line\":1,\"Column\":21}},\"ArgumentTuple\":{\"Case\":\"QsTuple\",\"Fields\":[[{\"Case\":\"QsTupleItem\",\"Fields\":[{\"VariableName\":{\"Case\":\"ValidName\",\"Fields\":[\"a\"]},\"Type\":{\"Case\":\"ArrayType\",\"Fields\":[{\"Case\":\"Qubit\"}]},\"InferredInformation\":{\"IsMutable\":false,\"HasLocalQuantumDependency\":false},\"Position\":{\"Case\":\"Null\"},\"Range\":{\"Item1\":{\"Line\":1,\"Column\":22},\"Item2\":{\"Line\":1,\"Column\":23}}}]},{\"Case\":\"QsTupleItem\",\"Fields\":[{\"VariableName\":{\"Case\":\"ValidName\",\"Fields\":[\"Ms\"]},\"Type\":{\"Case\":\"ArrayType\",\"Fields\":[{\"Case\":\"Qubit\"}]},\"InferredInformation\":{\"IsMutable\":false,\"HasLocalQuantumDependency\":false},\"Position\":{\"Case\":\"Null\"},\"Range\":{\"Item1\":{\"Line\":1,\"Column\":32},\"Item2\":{\"Line\":1,\"Column\":34}}}]},{\"Case\":\"QsTupleItem\",\"Fields\":[{\"VariableName\":{\"Case\":\"ValidName\",\"Fields\":[\"Ts\"]},\"Type\":{\"Case\":\"ArrayType\",\"Fields\":[{\"Case\":\"Qubit\"}]},\"InferredInformation\":{\"IsMutable\":false,\"HasLocalQuantumDependency\":false},\"Position\":{\"Case\":\"Null\"},\"Range\":{\"Item1\":{\"Line\":1,\"Column\":43},\"Item2\":{\"Line\":1,\"Column\":45}}}]}]]},\"Signature\":{\"TypeParameters\":[],\"ArgumentType\":{\"Case\":\"TupleType\",\"Fields\":[[{\"Case\":\"ArrayType\",\"Fields\":[{\"Case\":\"Qubit\"}]},{\"Case\":\"ArrayType\",\"Fields\":[{\"Case\":\"Qubit\"}]},{\"Case\":\"ArrayType\",\"Fields\":[{\"Case\":\"Qubit\"}]}]]},\"ReturnType\":{\"Case\":\"UnitType\"},\"Information\":{\"Characteristics\":{\"Case\":\"Union\",\"Fields\":[{\"Case\":\"SimpleSet\",\"Fields\":[{\"Case\":\"Adjointable\"}]},{\"Case\":\"SimpleSet\",\"Fields\":[{\"Case\":\"Controllable\"}]}]},\"InferredInformation\":{\"IsSelfAdjoint\":false,\"IsIntrinsic\":false}}},\"Documentation\":[]}")]
-[assembly: SpecializationDeclaration("{\"Kind\":{\"Case\":\"QsBody\"},\"TypeArguments\":{\"Case\":\"Null\"},\"Information\":{\"Characteristics\":{\"Case\":\"Union\",\"Fields\":[{\"Case\":\"SimpleSet\",\"Fields\":[{\"Case\":\"Adjointable\"}]},{\"Case\":\"SimpleSet\",\"Fields\":[{\"Case\":\"Controllable\"}]}]},\"InferredInformation\":{\"IsSelfAdjoint\":false,\"IsIntrinsic\":false}},\"Parent\":{\"Namespace\":\"ModularMultiplication.Testing\",\"Name\":\"SquareModM\"},\"Attributes\":[],\"SourceFile\":\"/Users/Matt/Documents/Masters/Dissertation/Quantum/Testing/Square_and_Multiply_Test/Program.qs\",\"Position\":{\"Item1\":606,\"Item2\":0},\"HeaderRange\":{\"Item1\":{\"Line\":1,\"Column\":11},\"Item2\":{\"Line\":1,\"Column\":21}},\"Documentation\":[]}")]
-[assembly: SpecializationDeclaration("{\"Kind\":{\"Case\":\"QsAdjoint\"},\"TypeArguments\":{\"Case\":\"Null\"},\"Information\":{\"Characteristics\":{\"Case\":\"Union\",\"Fields\":[{\"Case\":\"SimpleSet\",\"Fields\":[{\"Case\":\"Adjointable\"}]},{\"Case\":\"SimpleSet\",\"Fields\":[{\"Case\":\"Controllable\"}]}]},\"InferredInformation\":{\"IsSelfAdjoint\":false,\"IsIntrinsic\":false}},\"Parent\":{\"Namespace\":\"ModularMultiplication.Testing\",\"Name\":\"SquareModM\"},\"Attributes\":[],\"SourceFile\":\"/Users/Matt/Documents/Masters/Dissertation/Quantum/Testing/Square_and_Multiply_Test/Program.qs\",\"Position\":{\"Item1\":606,\"Item2\":0},\"HeaderRange\":{\"Item1\":{\"Line\":1,\"Column\":65},\"Item2\":{\"Line\":1,\"Column\":74}},\"Documentation\":[\"automatically generated QsAdjoint specialization for ModularMultiplication.Testing.SquareModM\"]}")]
-[assembly: SpecializationDeclaration("{\"Kind\":{\"Case\":\"QsControlled\"},\"TypeArguments\":{\"Case\":\"Null\"},\"Information\":{\"Characteristics\":{\"Case\":\"Union\",\"Fields\":[{\"Case\":\"SimpleSet\",\"Fields\":[{\"Case\":\"Adjointable\"}]},{\"Case\":\"SimpleSet\",\"Fields\":[{\"Case\":\"Controllable\"}]}]},\"InferredInformation\":{\"IsSelfAdjoint\":false,\"IsIntrinsic\":false}},\"Parent\":{\"Namespace\":\"ModularMultiplication.Testing\",\"Name\":\"SquareModM\"},\"Attributes\":[],\"SourceFile\":\"/Users/Matt/Documents/Masters/Dissertation/Quantum/Testing/Square_and_Multiply_Test/Program.qs\",\"Position\":{\"Item1\":606,\"Item2\":0},\"HeaderRange\":{\"Item1\":{\"Line\":1,\"Column\":65},\"Item2\":{\"Line\":1,\"Column\":74}},\"Documentation\":[\"automatically generated QsControlled specialization for ModularMultiplication.Testing.SquareModM\"]}")]
-[assembly: SpecializationDeclaration("{\"Kind\":{\"Case\":\"QsControlledAdjoint\"},\"TypeArguments\":{\"Case\":\"Null\"},\"Information\":{\"Characteristics\":{\"Case\":\"Union\",\"Fields\":[{\"Case\":\"SimpleSet\",\"Fields\":[{\"Case\":\"Adjointable\"}]},{\"Case\":\"SimpleSet\",\"Fields\":[{\"Case\":\"Controllable\"}]}]},\"InferredInformation\":{\"IsSelfAdjoint\":false,\"IsIntrinsic\":false}},\"Parent\":{\"Namespace\":\"ModularMultiplication.Testing\",\"Name\":\"SquareModM\"},\"Attributes\":[],\"SourceFile\":\"/Users/Matt/Documents/Masters/Dissertation/Quantum/Testing/Square_and_Multiply_Test/Program.qs\",\"Position\":{\"Item1\":606,\"Item2\":0},\"HeaderRange\":{\"Item1\":{\"Line\":1,\"Column\":65},\"Item2\":{\"Line\":1,\"Column\":74}},\"Documentation\":[\"automatically generated QsControlledAdjoint specialization for ModularMultiplication.Testing.SquareModM\"]}")]
-[assembly: CallableDeclaration("{\"Kind\":{\"Case\":\"Operation\"},\"QualifiedName\":{\"Namespace\":\"ModularMultiplication.Testing\",\"Name\":\"MultiplyModM\"},\"Attributes\":[],\"Modifiers\":{\"Access\":{\"Case\":\"DefaultAccess\"}},\"SourceFile\":\"/Users/Matt/Documents/Masters/Dissertation/Quantum/Testing/Square_and_Multiply_Test/Program.qs\",\"Position\":{\"Item1\":619,\"Item2\":0},\"SymbolRange\":{\"Item1\":{\"Line\":1,\"Column\":11},\"Item2\":{\"Line\":1,\"Column\":23}},\"ArgumentTuple\":{\"Case\":\"QsTuple\",\"Fields\":[[{\"Case\":\"QsTupleItem\",\"Fields\":[{\"VariableName\":{\"Case\":\"ValidName\",\"Fields\":[\"a\"]},\"Type\":{\"Case\":\"ArrayType\",\"Fields\":[{\"Case\":\"Qubit\"}]},\"InferredInformation\":{\"IsMutable\":false,\"HasLocalQuantumDependency\":false},\"Position\":{\"Case\":\"Null\"},\"Range\":{\"Item1\":{\"Line\":1,\"Column\":24},\"Item2\":{\"Line\":1,\"Column\":25}}}]},{\"Case\":\"QsTupleItem\",\"Fields\":[{\"VariableName\":{\"Case\":\"ValidName\",\"Fields\":[\"b\"]},\"Type\":{\"Case\":\"ArrayType\",\"Fields\":[{\"Case\":\"Qubit\"}]},\"InferredInformation\":{\"IsMutable\":false,\"HasLocalQuantumDependency\":false},\"Position\":{\"Case\":\"Null\"},\"Range\":{\"Item1\":{\"Line\":1,\"Column\":34},\"Item2\":{\"Line\":1,\"Column\":35}}}]},{\"Case\":\"QsTupleItem\",\"Fields\":[{\"VariableName\":{\"Case\":\"ValidName\",\"Fields\":[\"Ms\"]},\"Type\":{\"Case\":\"ArrayType\",\"Fields\":[{\"Case\":\"Qubit\"}]},\"InferredInformation\":{\"IsMutable\":false,\"HasLocalQuantumDependency\":false},\"Position\":{\"Case\":\"Null\"},\"Range\":{\"Item1\":{\"Line\":1,\"Column\":44},\"Item2\":{\"Line\":1,\"Column\":46}}}]},{\"Case\":\"QsTupleItem\",\"Fields\":[{\"VariableName\":{\"Case\":\"ValidName\",\"Fields\":[\"Ts\"]},\"Type\":{\"Case\":\"ArrayType\",\"Fields\":[{\"Case\":\"Qubit\"}]},\"InferredInformation\":{\"IsMutable\":false,\"HasLocalQuantumDependency\":false},\"Position\":{\"Case\":\"Null\"},\"Range\":{\"Item1\":{\"Line\":1,\"Column\":55},\"Item2\":{\"Line\":1,\"Column\":57}}}]}]]},\"Signature\":{\"TypeParameters\":[],\"ArgumentType\":{\"Case\":\"TupleType\",\"Fields\":[[{\"Case\":\"ArrayType\",\"Fields\":[{\"Case\":\"Qubit\"}]},{\"Case\":\"ArrayType\",\"Fields\":[{\"Case\":\"Qubit\"}]},{\"Case\":\"ArrayType\",\"Fields\":[{\"Case\":\"Qubit\"}]},{\"Case\":\"ArrayType\",\"Fields\":[{\"Case\":\"Qubit\"}]}]]},\"ReturnType\":{\"Case\":\"UnitType\"},\"Information\":{\"Characteristics\":{\"Case\":\"Union\",\"Fields\":[{\"Case\":\"SimpleSet\",\"Fields\":[{\"Case\":\"Adjointable\"}]},{\"Case\":\"SimpleSet\",\"Fields\":[{\"Case\":\"Controllable\"}]}]},\"InferredInformation\":{\"IsSelfAdjoint\":false,\"IsIntrinsic\":false}}},\"Documentation\":[]}")]
-[assembly: SpecializationDeclaration("{\"Kind\":{\"Case\":\"QsBody\"},\"TypeArguments\":{\"Case\":\"Null\"},\"Information\":{\"Characteristics\":{\"Case\":\"Union\",\"Fields\":[{\"Case\":\"SimpleSet\",\"Fields\":[{\"Case\":\"Adjointable\"}]},{\"Case\":\"SimpleSet\",\"Fields\":[{\"Case\":\"Controllable\"}]}]},\"InferredInformation\":{\"IsSelfAdjoint\":false,\"IsIntrinsic\":false}},\"Parent\":{\"Namespace\":\"ModularMultiplication.Testing\",\"Name\":\"MultiplyModM\"},\"Attributes\":[],\"SourceFile\":\"/Users/Matt/Documents/Masters/Dissertation/Quantum/Testing/Square_and_Multiply_Test/Program.qs\",\"Position\":{\"Item1\":619,\"Item2\":0},\"HeaderRange\":{\"Item1\":{\"Line\":1,\"Column\":11},\"Item2\":{\"Line\":1,\"Column\":23}},\"Documentation\":[]}")]
-[assembly: SpecializationDeclaration("{\"Kind\":{\"Case\":\"QsAdjoint\"},\"TypeArguments\":{\"Case\":\"Null\"},\"Information\":{\"Characteristics\":{\"Case\":\"Union\",\"Fields\":[{\"Case\":\"SimpleSet\",\"Fields\":[{\"Case\":\"Adjointable\"}]},{\"Case\":\"SimpleSet\",\"Fields\":[{\"Case\":\"Controllable\"}]}]},\"InferredInformation\":{\"IsSelfAdjoint\":false,\"IsIntrinsic\":false}},\"Parent\":{\"Namespace\":\"ModularMultiplication.Testing\",\"Name\":\"MultiplyModM\"},\"Attributes\":[],\"SourceFile\":\"/Users/Matt/Documents/Masters/Dissertation/Quantum/Testing/Square_and_Multiply_Test/Program.qs\",\"Position\":{\"Item1\":619,\"Item2\":0},\"HeaderRange\":{\"Item1\":{\"Line\":1,\"Column\":77},\"Item2\":{\"Line\":1,\"Column\":86}},\"Documentation\":[\"automatically generated QsAdjoint specialization for ModularMultiplication.Testing.MultiplyModM\"]}")]
-[assembly: SpecializationDeclaration("{\"Kind\":{\"Case\":\"QsControlled\"},\"TypeArguments\":{\"Case\":\"Null\"},\"Information\":{\"Characteristics\":{\"Case\":\"Union\",\"Fields\":[{\"Case\":\"SimpleSet\",\"Fields\":[{\"Case\":\"Adjointable\"}]},{\"Case\":\"SimpleSet\",\"Fields\":[{\"Case\":\"Controllable\"}]}]},\"InferredInformation\":{\"IsSelfAdjoint\":false,\"IsIntrinsic\":false}},\"Parent\":{\"Namespace\":\"ModularMultiplication.Testing\",\"Name\":\"MultiplyModM\"},\"Attributes\":[],\"SourceFile\":\"/Users/Matt/Documents/Masters/Dissertation/Quantum/Testing/Square_and_Multiply_Test/Program.qs\",\"Position\":{\"Item1\":619,\"Item2\":0},\"HeaderRange\":{\"Item1\":{\"Line\":1,\"Column\":77},\"Item2\":{\"Line\":1,\"Column\":86}},\"Documentation\":[\"automatically generated QsControlled specialization for ModularMultiplication.Testing.MultiplyModM\"]}")]
-[assembly: SpecializationDeclaration("{\"Kind\":{\"Case\":\"QsControlledAdjoint\"},\"TypeArguments\":{\"Case\":\"Null\"},\"Information\":{\"Characteristics\":{\"Case\":\"Union\",\"Fields\":[{\"Case\":\"SimpleSet\",\"Fields\":[{\"Case\":\"Adjointable\"}]},{\"Case\":\"SimpleSet\",\"Fields\":[{\"Case\":\"Controllable\"}]}]},\"InferredInformation\":{\"IsSelfAdjoint\":false,\"IsIntrinsic\":false}},\"Parent\":{\"Namespace\":\"ModularMultiplication.Testing\",\"Name\":\"MultiplyModM\"},\"Attributes\":[],\"SourceFile\":\"/Users/Matt/Documents/Masters/Dissertation/Quantum/Testing/Square_and_Multiply_Test/Program.qs\",\"Position\":{\"Item1\":619,\"Item2\":0},\"HeaderRange\":{\"Item1\":{\"Line\":1,\"Column\":77},\"Item2\":{\"Line\":1,\"Column\":86}},\"Documentation\":[\"automatically generated QsControlledAdjoint specialization for ModularMultiplication.Testing.MultiplyModM\"]}")]
-[assembly: CallableDeclaration("{\"Kind\":{\"Case\":\"Operation\"},\"QualifiedName\":{\"Namespace\":\"ModularMultiplication.Testing\",\"Name\":\"AddI\"},\"Attributes\":[],\"Modifiers\":{\"Access\":{\"Case\":\"DefaultAccess\"}},\"SourceFile\":\"/Users/Matt/Documents/Masters/Dissertation/Quantum/Testing/Square_and_Multiply_Test/Program.qs\",\"Position\":{\"Item1\":632,\"Item2\":0},\"SymbolRange\":{\"Item1\":{\"Line\":1,\"Column\":11},\"Item2\":{\"Line\":1,\"Column\":15}},\"ArgumentTuple\":{\"Case\":\"QsTuple\",\"Fields\":[[{\"Case\":\"QsTupleItem\",\"Fields\":[{\"VariableName\":{\"Case\":\"ValidName\",\"Fields\":[\"xs\"]},\"Type\":{\"Case\":\"UserDefinedType\",\"Fields\":[{\"Namespace\":\"Microsoft.Quantum.Arithmetic\",\"Name\":\"LittleEndian\",\"Range\":{\"Case\":\"Value\",\"Fields\":[{\"Item1\":{\"Line\":1,\"Column\":21},\"Item2\":{\"Line\":1,\"Column\":33}}]}}]},\"InferredInformation\":{\"IsMutable\":false,\"HasLocalQuantumDependency\":false},\"Position\":{\"Case\":\"Null\"},\"Range\":{\"Item1\":{\"Line\":1,\"Column\":17},\"Item2\":{\"Line\":1,\"Column\":19}}}]},{\"Case\":\"QsTupleItem\",\"Fields\":[{\"VariableName\":{\"Case\":\"ValidName\",\"Fields\":[\"ys\"]},\"Type\":{\"Case\":\"UserDefinedType\",\"Fields\":[{\"Namespace\":\"Microsoft.Quantum.Arithmetic\",\"Name\":\"LittleEndian\",\"Range\":{\"Case\":\"Value\",\"Fields\":[{\"Item1\":{\"Line\":1,\"Column\":39},\"Item2\":{\"Line\":1,\"Column\":51}}]}}]},\"InferredInformation\":{\"IsMutable\":false,\"HasLocalQuantumDependency\":false},\"Position\":{\"Case\":\"Null\"},\"Range\":{\"Item1\":{\"Line\":1,\"Column\":35},\"Item2\":{\"Line\":1,\"Column\":37}}}]}]]},\"Signature\":{\"TypeParameters\":[],\"ArgumentType\":{\"Case\":\"TupleType\",\"Fields\":[[{\"Case\":\"UserDefinedType\",\"Fields\":[{\"Namespace\":\"Microsoft.Quantum.Arithmetic\",\"Name\":\"LittleEndian\",\"Range\":{\"Case\":\"Null\"}}]},{\"Case\":\"UserDefinedType\",\"Fields\":[{\"Namespace\":\"Microsoft.Quantum.Arithmetic\",\"Name\":\"LittleEndian\",\"Range\":{\"Case\":\"Null\"}}]}]]},\"ReturnType\":{\"Case\":\"UnitType\"},\"Information\":{\"Characteristics\":{\"Case\":\"Union\",\"Fields\":[{\"Case\":\"SimpleSet\",\"Fields\":[{\"Case\":\"Adjointable\"}]},{\"Case\":\"SimpleSet\",\"Fields\":[{\"Case\":\"Controllable\"}]}]},\"InferredInformation\":{\"IsSelfAdjoint\":false,\"IsIntrinsic\":false}}},\"Documentation\":[]}")]
-[assembly: SpecializationDeclaration("{\"Kind\":{\"Case\":\"QsBody\"},\"TypeArguments\":{\"Case\":\"Null\"},\"Information\":{\"Characteristics\":{\"Case\":\"Union\",\"Fields\":[{\"Case\":\"SimpleSet\",\"Fields\":[{\"Case\":\"Adjointable\"}]},{\"Case\":\"SimpleSet\",\"Fields\":[{\"Case\":\"Controllable\"}]}]},\"InferredInformation\":{\"IsSelfAdjoint\":false,\"IsIntrinsic\":false}},\"Parent\":{\"Namespace\":\"ModularMultiplication.Testing\",\"Name\":\"AddI\"},\"Attributes\":[],\"SourceFile\":\"/Users/Matt/Documents/Masters/Dissertation/Quantum/Testing/Square_and_Multiply_Test/Program.qs\",\"Position\":{\"Item1\":632,\"Item2\":0},\"HeaderRange\":{\"Item1\":{\"Line\":1,\"Column\":11},\"Item2\":{\"Line\":1,\"Column\":15}},\"Documentation\":[]}")]
-[assembly: SpecializationDeclaration("{\"Kind\":{\"Case\":\"QsAdjoint\"},\"TypeArguments\":{\"Case\":\"Null\"},\"Information\":{\"Characteristics\":{\"Case\":\"Union\",\"Fields\":[{\"Case\":\"SimpleSet\",\"Fields\":[{\"Case\":\"Adjointable\"}]},{\"Case\":\"SimpleSet\",\"Fields\":[{\"Case\":\"Controllable\"}]}]},\"InferredInformation\":{\"IsSelfAdjoint\":false,\"IsIntrinsic\":false}},\"Parent\":{\"Namespace\":\"ModularMultiplication.Testing\",\"Name\":\"AddI\"},\"Attributes\":[],\"SourceFile\":\"/Users/Matt/Documents/Masters/Dissertation/Quantum/Testing/Square_and_Multiply_Test/Program.qs\",\"Position\":{\"Item1\":632,\"Item2\":0},\"HeaderRange\":{\"Item1\":{\"Line\":1,\"Column\":63},\"Item2\":{\"Line\":1,\"Column\":72}},\"Documentation\":[\"automatically generated QsAdjoint specialization for ModularMultiplication.Testing.AddI\"]}")]
-[assembly: SpecializationDeclaration("{\"Kind\":{\"Case\":\"QsControlled\"},\"TypeArguments\":{\"Case\":\"Null\"},\"Information\":{\"Characteristics\":{\"Case\":\"Union\",\"Fields\":[{\"Case\":\"SimpleSet\",\"Fields\":[{\"Case\":\"Adjointable\"}]},{\"Case\":\"SimpleSet\",\"Fields\":[{\"Case\":\"Controllable\"}]}]},\"InferredInformation\":{\"IsSelfAdjoint\":false,\"IsIntrinsic\":false}},\"Parent\":{\"Namespace\":\"ModularMultiplication.Testing\",\"Name\":\"AddI\"},\"Attributes\":[],\"SourceFile\":\"/Users/Matt/Documents/Masters/Dissertation/Quantum/Testing/Square_and_Multiply_Test/Program.qs\",\"Position\":{\"Item1\":632,\"Item2\":0},\"HeaderRange\":{\"Item1\":{\"Line\":1,\"Column\":63},\"Item2\":{\"Line\":1,\"Column\":72}},\"Documentation\":[\"automatically generated QsControlled specialization for ModularMultiplication.Testing.AddI\"]}")]
-[assembly: SpecializationDeclaration("{\"Kind\":{\"Case\":\"QsControlledAdjoint\"},\"TypeArguments\":{\"Case\":\"Null\"},\"Information\":{\"Characteristics\":{\"Case\":\"Union\",\"Fields\":[{\"Case\":\"SimpleSet\",\"Fields\":[{\"Case\":\"Adjointable\"}]},{\"Case\":\"SimpleSet\",\"Fields\":[{\"Case\":\"Controllable\"}]}]},\"InferredInformation\":{\"IsSelfAdjoint\":false,\"IsIntrinsic\":false}},\"Parent\":{\"Namespace\":\"ModularMultiplication.Testing\",\"Name\":\"AddI\"},\"Attributes\":[],\"SourceFile\":\"/Users/Matt/Documents/Masters/Dissertation/Quantum/Testing/Square_and_Multiply_Test/Program.qs\",\"Position\":{\"Item1\":632,\"Item2\":0},\"HeaderRange\":{\"Item1\":{\"Line\":1,\"Column\":63},\"Item2\":{\"Line\":1,\"Column\":72}},\"Documentation\":[\"automatically generated QsControlledAdjoint specialization for ModularMultiplication.Testing.AddI\"]}")]
-[assembly: CallableDeclaration("{\"Kind\":{\"Case\":\"Operation\"},\"QualifiedName\":{\"Namespace\":\"ModularMultiplication.Testing\",\"Name\":\"CompareGTI\"},\"Attributes\":[],\"Modifiers\":{\"Access\":{\"Case\":\"DefaultAccess\"}},\"SourceFile\":\"/Users/Matt/Documents/Masters/Dissertation/Quantum/Testing/Square_and_Multiply_Test/Program.qs\",\"Position\":{\"Item1\":647,\"Item2\":4},\"SymbolRange\":{\"Item1\":{\"Line\":1,\"Column\":11},\"Item2\":{\"Line\":1,\"Column\":21}},\"ArgumentTuple\":{\"Case\":\"QsTuple\",\"Fields\":[[{\"Case\":\"QsTupleItem\",\"Fields\":[{\"VariableName\":{\"Case\":\"ValidName\",\"Fields\":[\"xs\"]},\"Type\":{\"Case\":\"UserDefinedType\",\"Fields\":[{\"Namespace\":\"Microsoft.Quantum.Arithmetic\",\"Name\":\"LittleEndian\",\"Range\":{\"Case\":\"Value\",\"Fields\":[{\"Item1\":{\"Line\":1,\"Column\":27},\"Item2\":{\"Line\":1,\"Column\":39}}]}}]},\"InferredInformation\":{\"IsMutable\":false,\"HasLocalQuantumDependency\":false},\"Position\":{\"Case\":\"Null\"},\"Range\":{\"Item1\":{\"Line\":1,\"Column\":23},\"Item2\":{\"Line\":1,\"Column\":25}}}]},{\"Case\":\"QsTupleItem\",\"Fields\":[{\"VariableName\":{\"Case\":\"ValidName\",\"Fields\":[\"ys\"]},\"Type\":{\"Case\":\"UserDefinedType\",\"Fields\":[{\"Namespace\":\"Microsoft.Quantum.Arithmetic\",\"Name\":\"LittleEndian\",\"Range\":{\"Case\":\"Value\",\"Fields\":[{\"Item1\":{\"Line\":1,\"Column\":45},\"Item2\":{\"Line\":1,\"Column\":57}}]}}]},\"InferredInformation\":{\"IsMutable\":false,\"HasLocalQuantumDependency\":false},\"Position\":{\"Case\":\"Null\"},\"Range\":{\"Item1\":{\"Line\":1,\"Column\":41},\"Item2\":{\"Line\":1,\"Column\":43}}}]},{\"Case\":\"QsTupleItem\",\"Fields\":[{\"VariableName\":{\"Case\":\"ValidName\",\"Fields\":[\"result\"]},\"Type\":{\"Case\":\"Qubit\"},\"InferredInformation\":{\"IsMutable\":false,\"HasLocalQuantumDependency\":false},\"Position\":{\"Case\":\"Null\"},\"Range\":{\"Item1\":{\"Line\":2,\"Column\":29},\"Item2\":{\"Line\":2,\"Column\":35}}}]}]]},\"Signature\":{\"TypeParameters\":[],\"ArgumentType\":{\"Case\":\"TupleType\",\"Fields\":[[{\"Case\":\"UserDefinedType\",\"Fields\":[{\"Namespace\":\"Microsoft.Quantum.Arithmetic\",\"Name\":\"LittleEndian\",\"Range\":{\"Case\":\"Null\"}}]},{\"Case\":\"UserDefinedType\",\"Fields\":[{\"Namespace\":\"Microsoft.Quantum.Arithmetic\",\"Name\":\"LittleEndian\",\"Range\":{\"Case\":\"Null\"}}]},{\"Case\":\"Qubit\"}]]},\"ReturnType\":{\"Case\":\"UnitType\"},\"Information\":{\"Characteristics\":{\"Case\":\"Union\",\"Fields\":[{\"Case\":\"SimpleSet\",\"Fields\":[{\"Case\":\"Adjointable\"}]},{\"Case\":\"SimpleSet\",\"Fields\":[{\"Case\":\"Controllable\"}]}]},\"InferredInformation\":{\"IsSelfAdjoint\":false,\"IsIntrinsic\":false}}},\"Documentation\":[]}")]
-[assembly: SpecializationDeclaration("{\"Kind\":{\"Case\":\"QsBody\"},\"TypeArguments\":{\"Case\":\"Null\"},\"Information\":{\"Characteristics\":{\"Case\":\"Union\",\"Fields\":[{\"Case\":\"SimpleSet\",\"Fields\":[{\"Case\":\"Adjointable\"}]},{\"Case\":\"SimpleSet\",\"Fields\":[{\"Case\":\"Controllable\"}]}]},\"InferredInformation\":{\"IsSelfAdjoint\":false,\"IsIntrinsic\":false}},\"Parent\":{\"Namespace\":\"ModularMultiplication.Testing\",\"Name\":\"CompareGTI\"},\"Attributes\":[],\"SourceFile\":\"/Users/Matt/Documents/Masters/Dissertation/Quantum/Testing/Square_and_Multiply_Test/Program.qs\",\"Position\":{\"Item1\":647,\"Item2\":4},\"HeaderRange\":{\"Item1\":{\"Line\":1,\"Column\":11},\"Item2\":{\"Line\":1,\"Column\":21}},\"Documentation\":[]}")]
-[assembly: SpecializationDeclaration("{\"Kind\":{\"Case\":\"QsAdjoint\"},\"TypeArguments\":{\"Case\":\"Null\"},\"Information\":{\"Characteristics\":{\"Case\":\"Union\",\"Fields\":[{\"Case\":\"SimpleSet\",\"Fields\":[{\"Case\":\"Adjointable\"}]},{\"Case\":\"SimpleSet\",\"Fields\":[{\"Case\":\"Controllable\"}]}]},\"InferredInformation\":{\"IsSelfAdjoint\":false,\"IsIntrinsic\":false}},\"Parent\":{\"Namespace\":\"ModularMultiplication.Testing\",\"Name\":\"CompareGTI\"},\"Attributes\":[],\"SourceFile\":\"/Users/Matt/Documents/Masters/Dissertation/Quantum/Testing/Square_and_Multiply_Test/Program.qs\",\"Position\":{\"Item1\":647,\"Item2\":4},\"HeaderRange\":{\"Item1\":{\"Line\":2,\"Column\":54},\"Item2\":{\"Line\":2,\"Column\":63}},\"Documentation\":[\"automatically generated QsAdjoint specialization for ModularMultiplication.Testing.CompareGTI\"]}")]
-[assembly: SpecializationDeclaration("{\"Kind\":{\"Case\":\"QsControlled\"},\"TypeArguments\":{\"Case\":\"Null\"},\"Information\":{\"Characteristics\":{\"Case\":\"Union\",\"Fields\":[{\"Case\":\"SimpleSet\",\"Fields\":[{\"Case\":\"Adjointable\"}]},{\"Case\":\"SimpleSet\",\"Fields\":[{\"Case\":\"Controllable\"}]}]},\"InferredInformation\":{\"IsSelfAdjoint\":false,\"IsIntrinsic\":false}},\"Parent\":{\"Namespace\":\"ModularMultiplication.Testing\",\"Name\":\"CompareGTI\"},\"Attributes\":[],\"SourceFile\":\"/Users/Matt/Documents/Masters/Dissertation/Quantum/Testing/Square_and_Multiply_Test/Program.qs\",\"Position\":{\"Item1\":647,\"Item2\":4},\"HeaderRange\":{\"Item1\":{\"Line\":2,\"Column\":54},\"Item2\":{\"Line\":2,\"Column\":63}},\"Documentation\":[\"automatically generated QsControlled specialization for ModularMultiplication.Testing.CompareGTI\"]}")]
-[assembly: SpecializationDeclaration("{\"Kind\":{\"Case\":\"QsControlledAdjoint\"},\"TypeArguments\":{\"Case\":\"Null\"},\"Information\":{\"Characteristics\":{\"Case\":\"Union\",\"Fields\":[{\"Case\":\"SimpleSet\",\"Fields\":[{\"Case\":\"Adjointable\"}]},{\"Case\":\"SimpleSet\",\"Fields\":[{\"Case\":\"Controllable\"}]}]},\"InferredInformation\":{\"IsSelfAdjoint\":false,\"IsIntrinsic\":false}},\"Parent\":{\"Namespace\":\"ModularMultiplication.Testing\",\"Name\":\"CompareGTI\"},\"Attributes\":[],\"SourceFile\":\"/Users/Matt/Documents/Masters/Dissertation/Quantum/Testing/Square_and_Multiply_Test/Program.qs\",\"Position\":{\"Item1\":647,\"Item2\":4},\"HeaderRange\":{\"Item1\":{\"Line\":2,\"Column\":54},\"Item2\":{\"Line\":2,\"Column\":63}},\"Documentation\":[\"automatically generated QsControlledAdjoint specialization for ModularMultiplication.Testing.CompareGTI\"]}")]
-[assembly: CallableDeclaration("{\"Kind\":{\"Case\":\"Operation\"},\"QualifiedName\":{\"Namespace\":\"ModularMultiplication.Testing\",\"Name\":\"MultiplyI\"},\"Attributes\":[],\"Modifiers\":{\"Access\":{\"Case\":\"DefaultAccess\"}},\"SourceFile\":\"/Users/Matt/Documents/Masters/Dissertation/Quantum/Testing/Square_and_Multiply_Test/Program.qs\",\"Position\":{\"Item1\":653,\"Item2\":4},\"SymbolRange\":{\"Item1\":{\"Line\":1,\"Column\":11},\"Item2\":{\"Line\":1,\"Column\":20}},\"ArgumentTuple\":{\"Case\":\"QsTuple\",\"Fields\":[[{\"Case\":\"QsTupleItem\",\"Fields\":[{\"VariableName\":{\"Case\":\"ValidName\",\"Fields\":[\"xs\"]},\"Type\":{\"Case\":\"UserDefinedType\",\"Fields\":[{\"Namespace\":\"Microsoft.Quantum.Arithmetic\",\"Name\":\"LittleEndian\",\"Range\":{\"Case\":\"Value\",\"Fields\":[{\"Item1\":{\"Line\":1,\"Column\":26},\"Item2\":{\"Line\":1,\"Column\":38}}]}}]},\"InferredInformation\":{\"IsMutable\":false,\"HasLocalQuantumDependency\":false},\"Position\":{\"Case\":\"Null\"},\"Range\":{\"Item1\":{\"Line\":1,\"Column\":22},\"Item2\":{\"Line\":1,\"Column\":24}}}]},{\"Case\":\"QsTupleItem\",\"Fields\":[{\"VariableName\":{\"Case\":\"ValidName\",\"Fields\":[\"ys\"]},\"Type\":{\"Case\":\"UserDefinedType\",\"Fields\":[{\"Namespace\":\"Microsoft.Quantum.Arithmetic\",\"Name\":\"LittleEndian\",\"Range\":{\"Case\":\"Value\",\"Fields\":[{\"Item1\":{\"Line\":1,\"Column\":44},\"Item2\":{\"Line\":1,\"Column\":56}}]}}]},\"InferredInformation\":{\"IsMutable\":false,\"HasLocalQuantumDependency\":false},\"Position\":{\"Case\":\"Null\"},\"Range\":{\"Item1\":{\"Line\":1,\"Column\":40},\"Item2\":{\"Line\":1,\"Column\":42}}}]},{\"Case\":\"QsTupleItem\",\"Fields\":[{\"VariableName\":{\"Case\":\"ValidName\",\"Fields\":[\"result\"]},\"Type\":{\"Case\":\"UserDefinedType\",\"Fields\":[{\"Namespace\":\"Microsoft.Quantum.Arithmetic\",\"Name\":\"LittleEndian\",\"Range\":{\"Case\":\"Value\",\"Fields\":[{\"Item1\":{\"Line\":2,\"Column\":34},\"Item2\":{\"Line\":2,\"Column\":46}}]}}]},\"InferredInformation\":{\"IsMutable\":false,\"HasLocalQuantumDependency\":false},\"Position\":{\"Case\":\"Null\"},\"Range\":{\"Item1\":{\"Line\":2,\"Column\":26},\"Item2\":{\"Line\":2,\"Column\":32}}}]}]]},\"Signature\":{\"TypeParameters\":[],\"ArgumentType\":{\"Case\":\"TupleType\",\"Fields\":[[{\"Case\":\"UserDefinedType\",\"Fields\":[{\"Namespace\":\"Microsoft.Quantum.Arithmetic\",\"Name\":\"LittleEndian\",\"Range\":{\"Case\":\"Null\"}}]},{\"Case\":\"UserDefinedType\",\"Fields\":[{\"Namespace\":\"Microsoft.Quantum.Arithmetic\",\"Name\":\"LittleEndian\",\"Range\":{\"Case\":\"Null\"}}]},{\"Case\":\"UserDefinedType\",\"Fields\":[{\"Namespace\":\"Microsoft.Quantum.Arithmetic\",\"Name\":\"LittleEndian\",\"Range\":{\"Case\":\"Null\"}}]}]]},\"ReturnType\":{\"Case\":\"UnitType\"},\"Information\":{\"Characteristics\":{\"Case\":\"Union\",\"Fields\":[{\"Case\":\"SimpleSet\",\"Fields\":[{\"Case\":\"Adjointable\"}]},{\"Case\":\"SimpleSet\",\"Fields\":[{\"Case\":\"Controllable\"}]}]},\"InferredInformation\":{\"IsSelfAdjoint\":false,\"IsIntrinsic\":false}}},\"Documentation\":[]}")]
-[assembly: SpecializationDeclaration("{\"Kind\":{\"Case\":\"QsBody\"},\"TypeArguments\":{\"Case\":\"Null\"},\"Information\":{\"Characteristics\":{\"Case\":\"Union\",\"Fields\":[{\"Case\":\"SimpleSet\",\"Fields\":[{\"Case\":\"Adjointable\"}]},{\"Case\":\"SimpleSet\",\"Fields\":[{\"Case\":\"Controllable\"}]}]},\"InferredInformation\":{\"IsSelfAdjoint\":false,\"IsIntrinsic\":false}},\"Parent\":{\"Namespace\":\"ModularMultiplication.Testing\",\"Name\":\"MultiplyI\"},\"Attributes\":[],\"SourceFile\":\"/Users/Matt/Documents/Masters/Dissertation/Quantum/Testing/Square_and_Multiply_Test/Program.qs\",\"Position\":{\"Item1\":655,\"Item2\":8},\"HeaderRange\":{\"Item1\":{\"Line\":1,\"Column\":1},\"Item2\":{\"Line\":1,\"Column\":5}},\"Documentation\":[]}")]
-[assembly: SpecializationDeclaration("{\"Kind\":{\"Case\":\"QsAdjoint\"},\"TypeArguments\":{\"Case\":\"Null\"},\"Information\":{\"Characteristics\":{\"Case\":\"Union\",\"Fields\":[{\"Case\":\"SimpleSet\",\"Fields\":[{\"Case\":\"Adjointable\"}]},{\"Case\":\"SimpleSet\",\"Fields\":[{\"Case\":\"Controllable\"}]}]},\"InferredInformation\":{\"IsSelfAdjoint\":false,\"IsIntrinsic\":false}},\"Parent\":{\"Namespace\":\"ModularMultiplication.Testing\",\"Name\":\"MultiplyI\"},\"Attributes\":[],\"SourceFile\":\"/Users/Matt/Documents/Masters/Dissertation/Quantum/Testing/Square_and_Multiply_Test/Program.qs\",\"Position\":{\"Item1\":685,\"Item2\":8},\"HeaderRange\":{\"Item1\":{\"Line\":1,\"Column\":1},\"Item2\":{\"Line\":1,\"Column\":8}},\"Documentation\":[]}")]
-[assembly: SpecializationDeclaration("{\"Kind\":{\"Case\":\"QsControlled\"},\"TypeArguments\":{\"Case\":\"Null\"},\"Information\":{\"Characteristics\":{\"Case\":\"Union\",\"Fields\":[{\"Case\":\"SimpleSet\",\"Fields\":[{\"Case\":\"Adjointable\"}]},{\"Case\":\"SimpleSet\",\"Fields\":[{\"Case\":\"Controllable\"}]}]},\"InferredInformation\":{\"IsSelfAdjoint\":false,\"IsIntrinsic\":false}},\"Parent\":{\"Namespace\":\"ModularMultiplication.Testing\",\"Name\":\"MultiplyI\"},\"Attributes\":[],\"SourceFile\":\"/Users/Matt/Documents/Masters/Dissertation/Quantum/Testing/Square_and_Multiply_Test/Program.qs\",\"Position\":{\"Item1\":668,\"Item2\":8},\"HeaderRange\":{\"Item1\":{\"Line\":1,\"Column\":1},\"Item2\":{\"Line\":1,\"Column\":11}},\"Documentation\":[]}")]
-[assembly: SpecializationDeclaration("{\"Kind\":{\"Case\":\"QsControlledAdjoint\"},\"TypeArguments\":{\"Case\":\"Null\"},\"Information\":{\"Characteristics\":{\"Case\":\"Union\",\"Fields\":[{\"Case\":\"SimpleSet\",\"Fields\":[{\"Case\":\"Adjointable\"}]},{\"Case\":\"SimpleSet\",\"Fields\":[{\"Case\":\"Controllable\"}]}]},\"InferredInformation\":{\"IsSelfAdjoint\":false,\"IsIntrinsic\":false}},\"Parent\":{\"Namespace\":\"ModularMultiplication.Testing\",\"Name\":\"MultiplyI\"},\"Attributes\":[],\"SourceFile\":\"/Users/Matt/Documents/Masters/Dissertation/Quantum/Testing/Square_and_Multiply_Test/Program.qs\",\"Position\":{\"Item1\":686,\"Item2\":8},\"HeaderRange\":{\"Item1\":{\"Line\":1,\"Column\":1},\"Item2\":{\"Line\":1,\"Column\":19}},\"Documentation\":[]}")]
-[assembly: CallableDeclaration("{\"Kind\":{\"Case\":\"Operation\"},\"QualifiedName\":{\"Namespace\":\"ModularMultiplication.Testing\",\"Name\":\"SquareI\"},\"Attributes\":[],\"Modifiers\":{\"Access\":{\"Case\":\"DefaultAccess\"}},\"SourceFile\":\"/Users/Matt/Documents/Masters/Dissertation/Quantum/Testing/Square_and_Multiply_Test/Program.qs\",\"Position\":{\"Item1\":690,\"Item2\":4},\"SymbolRange\":{\"Item1\":{\"Line\":1,\"Column\":11},\"Item2\":{\"Line\":1,\"Column\":18}},\"ArgumentTuple\":{\"Case\":\"QsTuple\",\"Fields\":[[{\"Case\":\"QsTupleItem\",\"Fields\":[{\"VariableName\":{\"Case\":\"ValidName\",\"Fields\":[\"xs\"]},\"Type\":{\"Case\":\"UserDefinedType\",\"Fields\":[{\"Namespace\":\"Microsoft.Quantum.Arithmetic\",\"Name\":\"LittleEndian\",\"Range\":{\"Case\":\"Value\",\"Fields\":[{\"Item1\":{\"Line\":1,\"Column\":24},\"Item2\":{\"Line\":1,\"Column\":36}}]}}]},\"InferredInformation\":{\"IsMutable\":false,\"HasLocalQuantumDependency\":false},\"Position\":{\"Case\":\"Null\"},\"Range\":{\"Item1\":{\"Line\":1,\"Column\":20},\"Item2\":{\"Line\":1,\"Column\":22}}}]},{\"Case\":\"QsTupleItem\",\"Fields\":[{\"VariableName\":{\"Case\":\"ValidName\",\"Fields\":[\"result\"]},\"Type\":{\"Case\":\"UserDefinedType\",\"Fields\":[{\"Namespace\":\"Microsoft.Quantum.Arithmetic\",\"Name\":\"LittleEndian\",\"Range\":{\"Case\":\"Value\",\"Fields\":[{\"Item1\":{\"Line\":1,\"Column\":46},\"Item2\":{\"Line\":1,\"Column\":58}}]}}]},\"InferredInformation\":{\"IsMutable\":false,\"HasLocalQuantumDependency\":false},\"Position\":{\"Case\":\"Null\"},\"Range\":{\"Item1\":{\"Line\":1,\"Column\":38},\"Item2\":{\"Line\":1,\"Column\":44}}}]}]]},\"Signature\":{\"TypeParameters\":[],\"ArgumentType\":{\"Case\":\"TupleType\",\"Fields\":[[{\"Case\":\"UserDefinedType\",\"Fields\":[{\"Namespace\":\"Microsoft.Quantum.Arithmetic\",\"Name\":\"LittleEndian\",\"Range\":{\"Case\":\"Null\"}}]},{\"Case\":\"UserDefinedType\",\"Fields\":[{\"Namespace\":\"Microsoft.Quantum.Arithmetic\",\"Name\":\"LittleEndian\",\"Range\":{\"Case\":\"Null\"}}]}]]},\"ReturnType\":{\"Case\":\"UnitType\"},\"Information\":{\"Characteristics\":{\"Case\":\"Union\",\"Fields\":[{\"Case\":\"SimpleSet\",\"Fields\":[{\"Case\":\"Adjointable\"}]},{\"Case\":\"SimpleSet\",\"Fields\":[{\"Case\":\"Controllable\"}]}]},\"InferredInformation\":{\"IsSelfAdjoint\":false,\"IsIntrinsic\":false}}},\"Documentation\":[]}")]
-[assembly: SpecializationDeclaration("{\"Kind\":{\"Case\":\"QsBody\"},\"TypeArguments\":{\"Case\":\"Null\"},\"Information\":{\"Characteristics\":{\"Case\":\"Union\",\"Fields\":[{\"Case\":\"SimpleSet\",\"Fields\":[{\"Case\":\"Adjointable\"}]},{\"Case\":\"SimpleSet\",\"Fields\":[{\"Case\":\"Controllable\"}]}]},\"InferredInformation\":{\"IsSelfAdjoint\":false,\"IsIntrinsic\":false}},\"Parent\":{\"Namespace\":\"ModularMultiplication.Testing\",\"Name\":\"SquareI\"},\"Attributes\":[],\"SourceFile\":\"/Users/Matt/Documents/Masters/Dissertation/Quantum/Testing/Square_and_Multiply_Test/Program.qs\",\"Position\":{\"Item1\":691,\"Item2\":8},\"HeaderRange\":{\"Item1\":{\"Line\":1,\"Column\":1},\"Item2\":{\"Line\":1,\"Column\":5}},\"Documentation\":[]}")]
-[assembly: SpecializationDeclaration("{\"Kind\":{\"Case\":\"QsAdjoint\"},\"TypeArguments\":{\"Case\":\"Null\"},\"Information\":{\"Characteristics\":{\"Case\":\"Union\",\"Fields\":[{\"Case\":\"SimpleSet\",\"Fields\":[{\"Case\":\"Adjointable\"}]},{\"Case\":\"SimpleSet\",\"Fields\":[{\"Case\":\"Controllable\"}]}]},\"InferredInformation\":{\"IsSelfAdjoint\":false,\"IsIntrinsic\":false}},\"Parent\":{\"Namespace\":\"ModularMultiplication.Testing\",\"Name\":\"SquareI\"},\"Attributes\":[],\"SourceFile\":\"/Users/Matt/Documents/Masters/Dissertation/Quantum/Testing/Square_and_Multiply_Test/Program.qs\",\"Position\":{\"Item1\":710,\"Item2\":8},\"HeaderRange\":{\"Item1\":{\"Line\":1,\"Column\":1},\"Item2\":{\"Line\":1,\"Column\":8}},\"Documentation\":[]}")]
-[assembly: SpecializationDeclaration("{\"Kind\":{\"Case\":\"QsControlled\"},\"TypeArguments\":{\"Case\":\"Null\"},\"Information\":{\"Characteristics\":{\"Case\":\"Union\",\"Fields\":[{\"Case\":\"SimpleSet\",\"Fields\":[{\"Case\":\"Adjointable\"}]},{\"Case\":\"SimpleSet\",\"Fields\":[{\"Case\":\"Controllable\"}]}]},\"InferredInformation\":{\"IsSelfAdjoint\":false,\"IsIntrinsic\":false}},\"Parent\":{\"Namespace\":\"ModularMultiplication.Testing\",\"Name\":\"SquareI\"},\"Attributes\":[],\"SourceFile\":\"/Users/Matt/Documents/Masters/Dissertation/Quantum/Testing/Square_and_Multiply_Test/Program.qs\",\"Position\":{\"Item1\":694,\"Item2\":8},\"HeaderRange\":{\"Item1\":{\"Line\":1,\"Column\":1},\"Item2\":{\"Line\":1,\"Column\":11}},\"Documentation\":[]}")]
-[assembly: SpecializationDeclaration("{\"Kind\":{\"Case\":\"QsControlledAdjoint\"},\"TypeArguments\":{\"Case\":\"Null\"},\"Information\":{\"Characteristics\":{\"Case\":\"Union\",\"Fields\":[{\"Case\":\"SimpleSet\",\"Fields\":[{\"Case\":\"Adjointable\"}]},{\"Case\":\"SimpleSet\",\"Fields\":[{\"Case\":\"Controllable\"}]}]},\"InferredInformation\":{\"IsSelfAdjoint\":false,\"IsIntrinsic\":false}},\"Parent\":{\"Namespace\":\"ModularMultiplication.Testing\",\"Name\":\"SquareI\"},\"Attributes\":[],\"SourceFile\":\"/Users/Matt/Documents/Masters/Dissertation/Quantum/Testing/Square_and_Multiply_Test/Program.qs\",\"Position\":{\"Item1\":711,\"Item2\":8},\"HeaderRange\":{\"Item1\":{\"Line\":1,\"Column\":1},\"Item2\":{\"Line\":1,\"Column\":19}},\"Documentation\":[]}")]
-[assembly: CallableDeclaration("{\"Kind\":{\"Case\":\"Operation\"},\"QualifiedName\":{\"Namespace\":\"ModularMultiplication.Testing\",\"Name\":\"DivideI\"},\"Attributes\":[],\"Modifiers\":{\"Access\":{\"Case\":\"DefaultAccess\"}},\"SourceFile\":\"/Users/Matt/Documents/Masters/Dissertation/Quantum/Testing/Square_and_Multiply_Test/Program.qs\",\"Position\":{\"Item1\":715,\"Item2\":0},\"SymbolRange\":{\"Item1\":{\"Line\":1,\"Column\":11},\"Item2\":{\"Line\":1,\"Column\":18}},\"ArgumentTuple\":{\"Case\":\"QsTuple\",\"Fields\":[[{\"Case\":\"QsTupleItem\",\"Fields\":[{\"VariableName\":{\"Case\":\"ValidName\",\"Fields\":[\"xs\"]},\"Type\":{\"Case\":\"UserDefinedType\",\"Fields\":[{\"Namespace\":\"Microsoft.Quantum.Arithmetic\",\"Name\":\"LittleEndian\",\"Range\":{\"Case\":\"Value\",\"Fields\":[{\"Item1\":{\"Line\":1,\"Column\":24},\"Item2\":{\"Line\":1,\"Column\":36}}]}}]},\"InferredInformation\":{\"IsMutable\":false,\"HasLocalQuantumDependency\":false},\"Position\":{\"Case\":\"Null\"},\"Range\":{\"Item1\":{\"Line\":1,\"Column\":20},\"Item2\":{\"Line\":1,\"Column\":22}}}]},{\"Case\":\"QsTupleItem\",\"Fields\":[{\"VariableName\":{\"Case\":\"ValidName\",\"Fields\":[\"ys\"]},\"Type\":{\"Case\":\"UserDefinedType\",\"Fields\":[{\"Namespace\":\"Microsoft.Quantum.Arithmetic\",\"Name\":\"LittleEndian\",\"Range\":{\"Case\":\"Value\",\"Fields\":[{\"Item1\":{\"Line\":1,\"Column\":42},\"Item2\":{\"Line\":1,\"Column\":54}}]}}]},\"InferredInformation\":{\"IsMutable\":false,\"HasLocalQuantumDependency\":false},\"Position\":{\"Case\":\"Null\"},\"Range\":{\"Item1\":{\"Line\":1,\"Column\":38},\"Item2\":{\"Line\":1,\"Column\":40}}}]},{\"Case\":\"QsTupleItem\",\"Fields\":[{\"VariableName\":{\"Case\":\"ValidName\",\"Fields\":[\"result\"]},\"Type\":{\"Case\":\"UserDefinedType\",\"Fields\":[{\"Namespace\":\"Microsoft.Quantum.Arithmetic\",\"Name\":\"LittleEndian\",\"Range\":{\"Case\":\"Value\",\"Fields\":[{\"Item1\":{\"Line\":2,\"Column\":40},\"Item2\":{\"Line\":2,\"Column\":52}}]}}]},\"InferredInformation\":{\"IsMutable\":false,\"HasLocalQuantumDependency\":false},\"Position\":{\"Case\":\"Null\"},\"Range\":{\"Item1\":{\"Line\":2,\"Column\":32},\"Item2\":{\"Line\":2,\"Column\":38}}}]}]]},\"Signature\":{\"TypeParameters\":[],\"ArgumentType\":{\"Case\":\"TupleType\",\"Fields\":[[{\"Case\":\"UserDefinedType\",\"Fields\":[{\"Namespace\":\"Microsoft.Quantum.Arithmetic\",\"Name\":\"LittleEndian\",\"Range\":{\"Case\":\"Null\"}}]},{\"Case\":\"UserDefinedType\",\"Fields\":[{\"Namespace\":\"Microsoft.Quantum.Arithmetic\",\"Name\":\"LittleEndian\",\"Range\":{\"Case\":\"Null\"}}]},{\"Case\":\"UserDefinedType\",\"Fields\":[{\"Namespace\":\"Microsoft.Quantum.Arithmetic\",\"Name\":\"LittleEndian\",\"Range\":{\"Case\":\"Null\"}}]}]]},\"ReturnType\":{\"Case\":\"UnitType\"},\"Information\":{\"Characteristics\":{\"Case\":\"Union\",\"Fields\":[{\"Case\":\"SimpleSet\",\"Fields\":[{\"Case\":\"Adjointable\"}]},{\"Case\":\"SimpleSet\",\"Fields\":[{\"Case\":\"Controllable\"}]}]},\"InferredInformation\":{\"IsSelfAdjoint\":false,\"IsIntrinsic\":false}}},\"Documentation\":[]}")]
-[assembly: SpecializationDeclaration("{\"Kind\":{\"Case\":\"QsBody\"},\"TypeArguments\":{\"Case\":\"Null\"},\"Information\":{\"Characteristics\":{\"Case\":\"Union\",\"Fields\":[{\"Case\":\"SimpleSet\",\"Fields\":[{\"Case\":\"Adjointable\"}]},{\"Case\":\"SimpleSet\",\"Fields\":[{\"Case\":\"Controllable\"}]}]},\"InferredInformation\":{\"IsSelfAdjoint\":false,\"IsIntrinsic\":false}},\"Parent\":{\"Namespace\":\"ModularMultiplication.Testing\",\"Name\":\"DivideI\"},\"Attributes\":[],\"SourceFile\":\"/Users/Matt/Documents/Masters/Dissertation/Quantum/Testing/Square_and_Multiply_Test/Program.qs\",\"Position\":{\"Item1\":717,\"Item2\":8},\"HeaderRange\":{\"Item1\":{\"Line\":1,\"Column\":1},\"Item2\":{\"Line\":1,\"Column\":5}},\"Documentation\":[]}")]
-[assembly: SpecializationDeclaration("{\"Kind\":{\"Case\":\"QsAdjoint\"},\"TypeArguments\":{\"Case\":\"Null\"},\"Information\":{\"Characteristics\":{\"Case\":\"Union\",\"Fields\":[{\"Case\":\"SimpleSet\",\"Fields\":[{\"Case\":\"Adjointable\"}]},{\"Case\":\"SimpleSet\",\"Fields\":[{\"Case\":\"Controllable\"}]}]},\"InferredInformation\":{\"IsSelfAdjoint\":false,\"IsIntrinsic\":false}},\"Parent\":{\"Namespace\":\"ModularMultiplication.Testing\",\"Name\":\"DivideI\"},\"Attributes\":[],\"SourceFile\":\"/Users/Matt/Documents/Masters/Dissertation/Quantum/Testing/Square_and_Multiply_Test/Program.qs\",\"Position\":{\"Item1\":740,\"Item2\":8},\"HeaderRange\":{\"Item1\":{\"Line\":1,\"Column\":1},\"Item2\":{\"Line\":1,\"Column\":8}},\"Documentation\":[]}")]
-[assembly: SpecializationDeclaration("{\"Kind\":{\"Case\":\"QsControlled\"},\"TypeArguments\":{\"Case\":\"Null\"},\"Information\":{\"Characteristics\":{\"Case\":\"Union\",\"Fields\":[{\"Case\":\"SimpleSet\",\"Fields\":[{\"Case\":\"Adjointable\"}]},{\"Case\":\"SimpleSet\",\"Fields\":[{\"Case\":\"Controllable\"}]}]},\"InferredInformation\":{\"IsSelfAdjoint\":false,\"IsIntrinsic\":false}},\"Parent\":{\"Namespace\":\"ModularMultiplication.Testing\",\"Name\":\"DivideI\"},\"Attributes\":[],\"SourceFile\":\"/Users/Matt/Documents/Masters/Dissertation/Quantum/Testing/Square_and_Multiply_Test/Program.qs\",\"Position\":{\"Item1\":720,\"Item2\":8},\"HeaderRange\":{\"Item1\":{\"Line\":1,\"Column\":1},\"Item2\":{\"Line\":1,\"Column\":11}},\"Documentation\":[]}")]
-[assembly: SpecializationDeclaration("{\"Kind\":{\"Case\":\"QsControlledAdjoint\"},\"TypeArguments\":{\"Case\":\"Null\"},\"Information\":{\"Characteristics\":{\"Case\":\"Union\",\"Fields\":[{\"Case\":\"SimpleSet\",\"Fields\":[{\"Case\":\"Adjointable\"}]},{\"Case\":\"SimpleSet\",\"Fields\":[{\"Case\":\"Controllable\"}]}]},\"InferredInformation\":{\"IsSelfAdjoint\":false,\"IsIntrinsic\":false}},\"Parent\":{\"Namespace\":\"ModularMultiplication.Testing\",\"Name\":\"DivideI\"},\"Attributes\":[],\"SourceFile\":\"/Users/Matt/Documents/Masters/Dissertation/Quantum/Testing/Square_and_Multiply_Test/Program.qs\",\"Position\":{\"Item1\":741,\"Item2\":8},\"HeaderRange\":{\"Item1\":{\"Line\":1,\"Column\":1},\"Item2\":{\"Line\":1,\"Column\":19}},\"Documentation\":[]}")]
+[assembly: CallableDeclaration("{\"Kind\":{\"Case\":\"Operation\"},\"QualifiedName\":{\"Namespace\":\"ModularMultiplication.Testing\",\"Name\":\"SquareAndMultiply\"},\"Attributes\":[],\"Modifiers\":{\"Access\":{\"Case\":\"DefaultAccess\"}},\"SourceFile\":\"/Users/Matt/Documents/Masters/Dissertation/Quantum/Testing/Square_and_Multiply_Test/Program.qs\",\"Position\":{\"Item1\":51,\"Item2\":0},\"SymbolRange\":{\"Item1\":{\"Line\":1,\"Column\":11},\"Item2\":{\"Line\":1,\"Column\":28}},\"ArgumentTuple\":{\"Case\":\"QsTuple\",\"Fields\":[[{\"Case\":\"QsTupleItem\",\"Fields\":[{\"VariableName\":{\"Case\":\"ValidName\",\"Fields\":[\"a\"]},\"Type\":{\"Case\":\"ArrayType\",\"Fields\":[{\"Case\":\"Qubit\"}]},\"InferredInformation\":{\"IsMutable\":false,\"HasLocalQuantumDependency\":false},\"Position\":{\"Case\":\"Null\"},\"Range\":{\"Item1\":{\"Line\":1,\"Column\":29},\"Item2\":{\"Line\":1,\"Column\":30}}}]},{\"Case\":\"QsTupleItem\",\"Fields\":[{\"VariableName\":{\"Case\":\"ValidName\",\"Fields\":[\"m\"]},\"Type\":{\"Case\":\"ArrayType\",\"Fields\":[{\"Case\":\"Qubit\"}]},\"InferredInformation\":{\"IsMutable\":false,\"HasLocalQuantumDependency\":false},\"Position\":{\"Case\":\"Null\"},\"Range\":{\"Item1\":{\"Line\":1,\"Column\":39},\"Item2\":{\"Line\":1,\"Column\":40}}}]},{\"Case\":\"QsTupleItem\",\"Fields\":[{\"VariableName\":{\"Case\":\"ValidName\",\"Fields\":[\"j\"]},\"Type\":{\"Case\":\"ArrayType\",\"Fields\":[{\"Case\":\"Qubit\"}]},\"InferredInformation\":{\"IsMutable\":false,\"HasLocalQuantumDependency\":false},\"Position\":{\"Case\":\"Null\"},\"Range\":{\"Item1\":{\"Line\":1,\"Column\":49},\"Item2\":{\"Line\":1,\"Column\":50}}}]},{\"Case\":\"QsTupleItem\",\"Fields\":[{\"VariableName\":{\"Case\":\"ValidName\",\"Fields\":[\"result\"]},\"Type\":{\"Case\":\"ArrayType\",\"Fields\":[{\"Case\":\"Qubit\"}]},\"InferredInformation\":{\"IsMutable\":false,\"HasLocalQuantumDependency\":false},\"Position\":{\"Case\":\"Null\"},\"Range\":{\"Item1\":{\"Line\":1,\"Column\":59},\"Item2\":{\"Line\":1,\"Column\":65}}}]}]]},\"Signature\":{\"TypeParameters\":[],\"ArgumentType\":{\"Case\":\"TupleType\",\"Fields\":[[{\"Case\":\"ArrayType\",\"Fields\":[{\"Case\":\"Qubit\"}]},{\"Case\":\"ArrayType\",\"Fields\":[{\"Case\":\"Qubit\"}]},{\"Case\":\"ArrayType\",\"Fields\":[{\"Case\":\"Qubit\"}]},{\"Case\":\"ArrayType\",\"Fields\":[{\"Case\":\"Qubit\"}]}]]},\"ReturnType\":{\"Case\":\"UnitType\"},\"Information\":{\"Characteristics\":{\"Case\":\"EmptySet\"},\"InferredInformation\":{\"IsSelfAdjoint\":false,\"IsIntrinsic\":false}}},\"Documentation\":[]}")]
+[assembly: SpecializationDeclaration("{\"Kind\":{\"Case\":\"QsBody\"},\"TypeArguments\":{\"Case\":\"Null\"},\"Information\":{\"Characteristics\":{\"Case\":\"EmptySet\"},\"InferredInformation\":{\"IsSelfAdjoint\":false,\"IsIntrinsic\":false}},\"Parent\":{\"Namespace\":\"ModularMultiplication.Testing\",\"Name\":\"SquareAndMultiply\"},\"Attributes\":[],\"SourceFile\":\"/Users/Matt/Documents/Masters/Dissertation/Quantum/Testing/Square_and_Multiply_Test/Program.qs\",\"Position\":{\"Item1\":51,\"Item2\":0},\"HeaderRange\":{\"Item1\":{\"Line\":1,\"Column\":11},\"Item2\":{\"Line\":1,\"Column\":28}},\"Documentation\":[]}")]
+[assembly: CallableDeclaration("{\"Kind\":{\"Case\":\"Operation\"},\"QualifiedName\":{\"Namespace\":\"ModularMultiplication.Testing\",\"Name\":\"Pebble\"},\"Attributes\":[],\"Modifiers\":{\"Access\":{\"Case\":\"DefaultAccess\"}},\"SourceFile\":\"/Users/Matt/Documents/Masters/Dissertation/Quantum/Testing/Square_and_Multiply_Test/Program.qs\",\"Position\":{\"Item1\":87,\"Item2\":0},\"SymbolRange\":{\"Item1\":{\"Line\":1,\"Column\":11},\"Item2\":{\"Line\":1,\"Column\":17}},\"ArgumentTuple\":{\"Case\":\"QsTuple\",\"Fields\":[[{\"Case\":\"QsTupleItem\",\"Fields\":[{\"VariableName\":{\"Case\":\"ValidName\",\"Fields\":[\"s\"]},\"Type\":{\"Case\":\"Int\"},\"InferredInformation\":{\"IsMutable\":false,\"HasLocalQuantumDependency\":false},\"Position\":{\"Case\":\"Null\"},\"Range\":{\"Item1\":{\"Line\":1,\"Column\":18},\"Item2\":{\"Line\":1,\"Column\":19}}}]},{\"Case\":\"QsTupleItem\",\"Fields\":[{\"VariableName\":{\"Case\":\"ValidName\",\"Fields\":[\"n\"]},\"Type\":{\"Case\":\"Int\"},\"InferredInformation\":{\"IsMutable\":false,\"HasLocalQuantumDependency\":false},\"Position\":{\"Case\":\"Null\"},\"Range\":{\"Item1\":{\"Line\":1,\"Column\":26},\"Item2\":{\"Line\":1,\"Column\":27}}}]},{\"Case\":\"QsTupleItem\",\"Fields\":[{\"VariableName\":{\"Case\":\"ValidName\",\"Fields\":[\"arr\"]},\"Type\":{\"Case\":\"ArrayType\",\"Fields\":[{\"Case\":\"Int\"}]},\"InferredInformation\":{\"IsMutable\":false,\"HasLocalQuantumDependency\":false},\"Position\":{\"Case\":\"Null\"},\"Range\":{\"Item1\":{\"Line\":1,\"Column\":33},\"Item2\":{\"Line\":1,\"Column\":36}}}]},{\"Case\":\"QsTupleItem\",\"Fields\":[{\"VariableName\":{\"Case\":\"ValidName\",\"Fields\":[\"a\"]},\"Type\":{\"Case\":\"ArrayType\",\"Fields\":[{\"Case\":\"Qubit\"}]},\"InferredInformation\":{\"IsMutable\":false,\"HasLocalQuantumDependency\":false},\"Position\":{\"Case\":\"Null\"},\"Range\":{\"Item1\":{\"Line\":1,\"Column\":43},\"Item2\":{\"Line\":1,\"Column\":44}}}]},{\"Case\":\"QsTupleItem\",\"Fields\":[{\"VariableName\":{\"Case\":\"ValidName\",\"Fields\":[\"m\"]},\"Type\":{\"Case\":\"ArrayType\",\"Fields\":[{\"Case\":\"Qubit\"}]},\"InferredInformation\":{\"IsMutable\":false,\"HasLocalQuantumDependency\":false},\"Position\":{\"Case\":\"Null\"},\"Range\":{\"Item1\":{\"Line\":1,\"Column\":53},\"Item2\":{\"Line\":1,\"Column\":54}}}]},{\"Case\":\"QsTupleItem\",\"Fields\":[{\"VariableName\":{\"Case\":\"ValidName\",\"Fields\":[\"j\"]},\"Type\":{\"Case\":\"ArrayType\",\"Fields\":[{\"Case\":\"Qubit\"}]},\"InferredInformation\":{\"IsMutable\":false,\"HasLocalQuantumDependency\":false},\"Position\":{\"Case\":\"Null\"},\"Range\":{\"Item1\":{\"Line\":1,\"Column\":63},\"Item2\":{\"Line\":1,\"Column\":64}}}]},{\"Case\":\"QsTupleItem\",\"Fields\":[{\"VariableName\":{\"Case\":\"ValidName\",\"Fields\":[\"result\"]},\"Type\":{\"Case\":\"ArrayType\",\"Fields\":[{\"Case\":\"Qubit\"}]},\"InferredInformation\":{\"IsMutable\":false,\"HasLocalQuantumDependency\":false},\"Position\":{\"Case\":\"Null\"},\"Range\":{\"Item1\":{\"Line\":1,\"Column\":73},\"Item2\":{\"Line\":1,\"Column\":79}}}]},{\"Case\":\"QsTupleItem\",\"Fields\":[{\"VariableName\":{\"Case\":\"ValidName\",\"Fields\":[\"v\"]},\"Type\":{\"Case\":\"ArrayType\",\"Fields\":[{\"Case\":\"Qubit\"}]},\"InferredInformation\":{\"IsMutable\":false,\"HasLocalQuantumDependency\":false},\"Position\":{\"Case\":\"Null\"},\"Range\":{\"Item1\":{\"Line\":1,\"Column\":88},\"Item2\":{\"Line\":1,\"Column\":89}}}]},{\"Case\":\"QsTupleItem\",\"Fields\":[{\"VariableName\":{\"Case\":\"ValidName\",\"Fields\":[\"c\"]},\"Type\":{\"Case\":\"Qubit\"},\"InferredInformation\":{\"IsMutable\":false,\"HasLocalQuantumDependency\":false},\"Position\":{\"Case\":\"Null\"},\"Range\":{\"Item1\":{\"Line\":1,\"Column\":98},\"Item2\":{\"Line\":1,\"Column\":99}}}]},{\"Case\":\"QsTupleItem\",\"Fields\":[{\"VariableName\":{\"Case\":\"ValidName\",\"Fields\":[\"z\"]},\"Type\":{\"Case\":\"Qubit\"},\"InferredInformation\":{\"IsMutable\":false,\"HasLocalQuantumDependency\":false},\"Position\":{\"Case\":\"Null\"},\"Range\":{\"Item1\":{\"Line\":1,\"Column\":106},\"Item2\":{\"Line\":1,\"Column\":107}}}]},{\"Case\":\"QsTupleItem\",\"Fields\":[{\"VariableName\":{\"Case\":\"ValidName\",\"Fields\":[\"az\"]},\"Type\":{\"Case\":\"Qubit\"},\"InferredInformation\":{\"IsMutable\":false,\"HasLocalQuantumDependency\":false},\"Position\":{\"Case\":\"Null\"},\"Range\":{\"Item1\":{\"Line\":1,\"Column\":114},\"Item2\":{\"Line\":1,\"Column\":116}}}]},{\"Case\":\"QsTupleItem\",\"Fields\":[{\"VariableName\":{\"Case\":\"ValidName\",\"Fields\":[\"ld\"]},\"Type\":{\"Case\":\"Qubit\"},\"InferredInformation\":{\"IsMutable\":false,\"HasLocalQuantumDependency\":false},\"Position\":{\"Case\":\"Null\"},\"Range\":{\"Item1\":{\"Line\":1,\"Column\":123},\"Item2\":{\"Line\":1,\"Column\":125}}}]}]]},\"Signature\":{\"TypeParameters\":[],\"ArgumentType\":{\"Case\":\"TupleType\",\"Fields\":[[{\"Case\":\"Int\"},{\"Case\":\"Int\"},{\"Case\":\"ArrayType\",\"Fields\":[{\"Case\":\"Int\"}]},{\"Case\":\"ArrayType\",\"Fields\":[{\"Case\":\"Qubit\"}]},{\"Case\":\"ArrayType\",\"Fields\":[{\"Case\":\"Qubit\"}]},{\"Case\":\"ArrayType\",\"Fields\":[{\"Case\":\"Qubit\"}]},{\"Case\":\"ArrayType\",\"Fields\":[{\"Case\":\"Qubit\"}]},{\"Case\":\"ArrayType\",\"Fields\":[{\"Case\":\"Qubit\"}]},{\"Case\":\"Qubit\"},{\"Case\":\"Qubit\"},{\"Case\":\"Qubit\"},{\"Case\":\"Qubit\"}]]},\"ReturnType\":{\"Case\":\"ArrayType\",\"Fields\":[{\"Case\":\"Int\"}]},\"Information\":{\"Characteristics\":{\"Case\":\"EmptySet\"},\"InferredInformation\":{\"IsSelfAdjoint\":false,\"IsIntrinsic\":false}}},\"Documentation\":[]}")]
+[assembly: SpecializationDeclaration("{\"Kind\":{\"Case\":\"QsBody\"},\"TypeArguments\":{\"Case\":\"Null\"},\"Information\":{\"Characteristics\":{\"Case\":\"EmptySet\"},\"InferredInformation\":{\"IsSelfAdjoint\":false,\"IsIntrinsic\":false}},\"Parent\":{\"Namespace\":\"ModularMultiplication.Testing\",\"Name\":\"Pebble\"},\"Attributes\":[],\"SourceFile\":\"/Users/Matt/Documents/Masters/Dissertation/Quantum/Testing/Square_and_Multiply_Test/Program.qs\",\"Position\":{\"Item1\":87,\"Item2\":0},\"HeaderRange\":{\"Item1\":{\"Line\":1,\"Column\":11},\"Item2\":{\"Line\":1,\"Column\":17}},\"Documentation\":[]}")]
+[assembly: CallableDeclaration("{\"Kind\":{\"Case\":\"Operation\"},\"QualifiedName\":{\"Namespace\":\"ModularMultiplication.Testing\",\"Name\":\"Unpebble\"},\"Attributes\":[],\"Modifiers\":{\"Access\":{\"Case\":\"DefaultAccess\"}},\"SourceFile\":\"/Users/Matt/Documents/Masters/Dissertation/Quantum/Testing/Square_and_Multiply_Test/Program.qs\",\"Position\":{\"Item1\":106,\"Item2\":0},\"SymbolRange\":{\"Item1\":{\"Line\":1,\"Column\":11},\"Item2\":{\"Line\":1,\"Column\":19}},\"ArgumentTuple\":{\"Case\":\"QsTuple\",\"Fields\":[[{\"Case\":\"QsTupleItem\",\"Fields\":[{\"VariableName\":{\"Case\":\"ValidName\",\"Fields\":[\"s\"]},\"Type\":{\"Case\":\"Int\"},\"InferredInformation\":{\"IsMutable\":false,\"HasLocalQuantumDependency\":false},\"Position\":{\"Case\":\"Null\"},\"Range\":{\"Item1\":{\"Line\":1,\"Column\":20},\"Item2\":{\"Line\":1,\"Column\":21}}}]},{\"Case\":\"QsTupleItem\",\"Fields\":[{\"VariableName\":{\"Case\":\"ValidName\",\"Fields\":[\"n\"]},\"Type\":{\"Case\":\"Int\"},\"InferredInformation\":{\"IsMutable\":false,\"HasLocalQuantumDependency\":false},\"Position\":{\"Case\":\"Null\"},\"Range\":{\"Item1\":{\"Line\":1,\"Column\":28},\"Item2\":{\"Line\":1,\"Column\":29}}}]},{\"Case\":\"QsTupleItem\",\"Fields\":[{\"VariableName\":{\"Case\":\"ValidName\",\"Fields\":[\"arr\"]},\"Type\":{\"Case\":\"ArrayType\",\"Fields\":[{\"Case\":\"Int\"}]},\"InferredInformation\":{\"IsMutable\":false,\"HasLocalQuantumDependency\":false},\"Position\":{\"Case\":\"Null\"},\"Range\":{\"Item1\":{\"Line\":1,\"Column\":35},\"Item2\":{\"Line\":1,\"Column\":38}}}]},{\"Case\":\"QsTupleItem\",\"Fields\":[{\"VariableName\":{\"Case\":\"ValidName\",\"Fields\":[\"a\"]},\"Type\":{\"Case\":\"ArrayType\",\"Fields\":[{\"Case\":\"Qubit\"}]},\"InferredInformation\":{\"IsMutable\":false,\"HasLocalQuantumDependency\":false},\"Position\":{\"Case\":\"Null\"},\"Range\":{\"Item1\":{\"Line\":1,\"Column\":45},\"Item2\":{\"Line\":1,\"Column\":46}}}]},{\"Case\":\"QsTupleItem\",\"Fields\":[{\"VariableName\":{\"Case\":\"ValidName\",\"Fields\":[\"m\"]},\"Type\":{\"Case\":\"ArrayType\",\"Fields\":[{\"Case\":\"Qubit\"}]},\"InferredInformation\":{\"IsMutable\":false,\"HasLocalQuantumDependency\":false},\"Position\":{\"Case\":\"Null\"},\"Range\":{\"Item1\":{\"Line\":1,\"Column\":55},\"Item2\":{\"Line\":1,\"Column\":56}}}]},{\"Case\":\"QsTupleItem\",\"Fields\":[{\"VariableName\":{\"Case\":\"ValidName\",\"Fields\":[\"j\"]},\"Type\":{\"Case\":\"ArrayType\",\"Fields\":[{\"Case\":\"Qubit\"}]},\"InferredInformation\":{\"IsMutable\":false,\"HasLocalQuantumDependency\":false},\"Position\":{\"Case\":\"Null\"},\"Range\":{\"Item1\":{\"Line\":1,\"Column\":65},\"Item2\":{\"Line\":1,\"Column\":66}}}]},{\"Case\":\"QsTupleItem\",\"Fields\":[{\"VariableName\":{\"Case\":\"ValidName\",\"Fields\":[\"result\"]},\"Type\":{\"Case\":\"ArrayType\",\"Fields\":[{\"Case\":\"Qubit\"}]},\"InferredInformation\":{\"IsMutable\":false,\"HasLocalQuantumDependency\":false},\"Position\":{\"Case\":\"Null\"},\"Range\":{\"Item1\":{\"Line\":1,\"Column\":75},\"Item2\":{\"Line\":1,\"Column\":81}}}]},{\"Case\":\"QsTupleItem\",\"Fields\":[{\"VariableName\":{\"Case\":\"ValidName\",\"Fields\":[\"v\"]},\"Type\":{\"Case\":\"ArrayType\",\"Fields\":[{\"Case\":\"Qubit\"}]},\"InferredInformation\":{\"IsMutable\":false,\"HasLocalQuantumDependency\":false},\"Position\":{\"Case\":\"Null\"},\"Range\":{\"Item1\":{\"Line\":1,\"Column\":90},\"Item2\":{\"Line\":1,\"Column\":91}}}]},{\"Case\":\"QsTupleItem\",\"Fields\":[{\"VariableName\":{\"Case\":\"ValidName\",\"Fields\":[\"c\"]},\"Type\":{\"Case\":\"Qubit\"},\"InferredInformation\":{\"IsMutable\":false,\"HasLocalQuantumDependency\":false},\"Position\":{\"Case\":\"Null\"},\"Range\":{\"Item1\":{\"Line\":1,\"Column\":100},\"Item2\":{\"Line\":1,\"Column\":101}}}]},{\"Case\":\"QsTupleItem\",\"Fields\":[{\"VariableName\":{\"Case\":\"ValidName\",\"Fields\":[\"z\"]},\"Type\":{\"Case\":\"Qubit\"},\"InferredInformation\":{\"IsMutable\":false,\"HasLocalQuantumDependency\":false},\"Position\":{\"Case\":\"Null\"},\"Range\":{\"Item1\":{\"Line\":1,\"Column\":108},\"Item2\":{\"Line\":1,\"Column\":109}}}]},{\"Case\":\"QsTupleItem\",\"Fields\":[{\"VariableName\":{\"Case\":\"ValidName\",\"Fields\":[\"az\"]},\"Type\":{\"Case\":\"Qubit\"},\"InferredInformation\":{\"IsMutable\":false,\"HasLocalQuantumDependency\":false},\"Position\":{\"Case\":\"Null\"},\"Range\":{\"Item1\":{\"Line\":1,\"Column\":116},\"Item2\":{\"Line\":1,\"Column\":118}}}]},{\"Case\":\"QsTupleItem\",\"Fields\":[{\"VariableName\":{\"Case\":\"ValidName\",\"Fields\":[\"ld\"]},\"Type\":{\"Case\":\"Qubit\"},\"InferredInformation\":{\"IsMutable\":false,\"HasLocalQuantumDependency\":false},\"Position\":{\"Case\":\"Null\"},\"Range\":{\"Item1\":{\"Line\":1,\"Column\":125},\"Item2\":{\"Line\":1,\"Column\":127}}}]}]]},\"Signature\":{\"TypeParameters\":[],\"ArgumentType\":{\"Case\":\"TupleType\",\"Fields\":[[{\"Case\":\"Int\"},{\"Case\":\"Int\"},{\"Case\":\"ArrayType\",\"Fields\":[{\"Case\":\"Int\"}]},{\"Case\":\"ArrayType\",\"Fields\":[{\"Case\":\"Qubit\"}]},{\"Case\":\"ArrayType\",\"Fields\":[{\"Case\":\"Qubit\"}]},{\"Case\":\"ArrayType\",\"Fields\":[{\"Case\":\"Qubit\"}]},{\"Case\":\"ArrayType\",\"Fields\":[{\"Case\":\"Qubit\"}]},{\"Case\":\"ArrayType\",\"Fields\":[{\"Case\":\"Qubit\"}]},{\"Case\":\"Qubit\"},{\"Case\":\"Qubit\"},{\"Case\":\"Qubit\"},{\"Case\":\"Qubit\"}]]},\"ReturnType\":{\"Case\":\"ArrayType\",\"Fields\":[{\"Case\":\"Int\"}]},\"Information\":{\"Characteristics\":{\"Case\":\"EmptySet\"},\"InferredInformation\":{\"IsSelfAdjoint\":false,\"IsIntrinsic\":false}}},\"Documentation\":[]}")]
+[assembly: SpecializationDeclaration("{\"Kind\":{\"Case\":\"QsBody\"},\"TypeArguments\":{\"Case\":\"Null\"},\"Information\":{\"Characteristics\":{\"Case\":\"EmptySet\"},\"InferredInformation\":{\"IsSelfAdjoint\":false,\"IsIntrinsic\":false}},\"Parent\":{\"Namespace\":\"ModularMultiplication.Testing\",\"Name\":\"Unpebble\"},\"Attributes\":[],\"SourceFile\":\"/Users/Matt/Documents/Masters/Dissertation/Quantum/Testing/Square_and_Multiply_Test/Program.qs\",\"Position\":{\"Item1\":106,\"Item2\":0},\"HeaderRange\":{\"Item1\":{\"Line\":1,\"Column\":11},\"Item2\":{\"Line\":1,\"Column\":19}},\"Documentation\":[]}")]
+[assembly: CallableDeclaration("{\"Kind\":{\"Case\":\"Operation\"},\"QualifiedName\":{\"Namespace\":\"ModularMultiplication.Testing\",\"Name\":\"SquareAndMultiplyStep\"},\"Attributes\":[],\"Modifiers\":{\"Access\":{\"Case\":\"DefaultAccess\"}},\"SourceFile\":\"/Users/Matt/Documents/Masters/Dissertation/Quantum/Testing/Square_and_Multiply_Test/Program.qs\",\"Position\":{\"Item1\":124,\"Item2\":0},\"SymbolRange\":{\"Item1\":{\"Line\":1,\"Column\":11},\"Item2\":{\"Line\":1,\"Column\":32}},\"ArgumentTuple\":{\"Case\":\"QsTuple\",\"Fields\":[[{\"Case\":\"QsTupleItem\",\"Fields\":[{\"VariableName\":{\"Case\":\"ValidName\",\"Fields\":[\"t\"]},\"Type\":{\"Case\":\"Int\"},\"InferredInformation\":{\"IsMutable\":false,\"HasLocalQuantumDependency\":false},\"Position\":{\"Case\":\"Null\"},\"Range\":{\"Item1\":{\"Line\":1,\"Column\":33},\"Item2\":{\"Line\":1,\"Column\":34}}}]},{\"Case\":\"QsTupleItem\",\"Fields\":[{\"VariableName\":{\"Case\":\"ValidName\",\"Fields\":[\"arr\"]},\"Type\":{\"Case\":\"ArrayType\",\"Fields\":[{\"Case\":\"Int\"}]},\"InferredInformation\":{\"IsMutable\":false,\"HasLocalQuantumDependency\":false},\"Position\":{\"Case\":\"Null\"},\"Range\":{\"Item1\":{\"Line\":1,\"Column\":39},\"Item2\":{\"Line\":1,\"Column\":42}}}]},{\"Case\":\"QsTupleItem\",\"Fields\":[{\"VariableName\":{\"Case\":\"ValidName\",\"Fields\":[\"d\"]},\"Type\":{\"Case\":\"Int\"},\"InferredInformation\":{\"IsMutable\":false,\"HasLocalQuantumDependency\":false},\"Position\":{\"Case\":\"Null\"},\"Range\":{\"Item1\":{\"Line\":1,\"Column\":50},\"Item2\":{\"Line\":1,\"Column\":51}}}]},{\"Case\":\"QsTupleItem\",\"Fields\":[{\"VariableName\":{\"Case\":\"ValidName\",\"Fields\":[\"a\"]},\"Type\":{\"Case\":\"ArrayType\",\"Fields\":[{\"Case\":\"Qubit\"}]},\"InferredInformation\":{\"IsMutable\":false,\"HasLocalQuantumDependency\":false},\"Position\":{\"Case\":\"Null\"},\"Range\":{\"Item1\":{\"Line\":1,\"Column\":56},\"Item2\":{\"Line\":1,\"Column\":57}}}]},{\"Case\":\"QsTupleItem\",\"Fields\":[{\"VariableName\":{\"Case\":\"ValidName\",\"Fields\":[\"m\"]},\"Type\":{\"Case\":\"ArrayType\",\"Fields\":[{\"Case\":\"Qubit\"}]},\"InferredInformation\":{\"IsMutable\":false,\"HasLocalQuantumDependency\":false},\"Position\":{\"Case\":\"Null\"},\"Range\":{\"Item1\":{\"Line\":1,\"Column\":66},\"Item2\":{\"Line\":1,\"Column\":67}}}]},{\"Case\":\"QsTupleItem\",\"Fields\":[{\"VariableName\":{\"Case\":\"ValidName\",\"Fields\":[\"j\"]},\"Type\":{\"Case\":\"ArrayType\",\"Fields\":[{\"Case\":\"Qubit\"}]},\"InferredInformation\":{\"IsMutable\":false,\"HasLocalQuantumDependency\":false},\"Position\":{\"Case\":\"Null\"},\"Range\":{\"Item1\":{\"Line\":1,\"Column\":76},\"Item2\":{\"Line\":1,\"Column\":77}}}]},{\"Case\":\"QsTupleItem\",\"Fields\":[{\"VariableName\":{\"Case\":\"ValidName\",\"Fields\":[\"result\"]},\"Type\":{\"Case\":\"ArrayType\",\"Fields\":[{\"Case\":\"Qubit\"}]},\"InferredInformation\":{\"IsMutable\":false,\"HasLocalQuantumDependency\":false},\"Position\":{\"Case\":\"Null\"},\"Range\":{\"Item1\":{\"Line\":1,\"Column\":86},\"Item2\":{\"Line\":1,\"Column\":92}}}]},{\"Case\":\"QsTupleItem\",\"Fields\":[{\"VariableName\":{\"Case\":\"ValidName\",\"Fields\":[\"v\"]},\"Type\":{\"Case\":\"ArrayType\",\"Fields\":[{\"Case\":\"Qubit\"}]},\"InferredInformation\":{\"IsMutable\":false,\"HasLocalQuantumDependency\":false},\"Position\":{\"Case\":\"Null\"},\"Range\":{\"Item1\":{\"Line\":1,\"Column\":101},\"Item2\":{\"Line\":1,\"Column\":102}}}]},{\"Case\":\"QsTupleItem\",\"Fields\":[{\"VariableName\":{\"Case\":\"ValidName\",\"Fields\":[\"c\"]},\"Type\":{\"Case\":\"Qubit\"},\"InferredInformation\":{\"IsMutable\":false,\"HasLocalQuantumDependency\":false},\"Position\":{\"Case\":\"Null\"},\"Range\":{\"Item1\":{\"Line\":1,\"Column\":111},\"Item2\":{\"Line\":1,\"Column\":112}}}]},{\"Case\":\"QsTupleItem\",\"Fields\":[{\"VariableName\":{\"Case\":\"ValidName\",\"Fields\":[\"z\"]},\"Type\":{\"Case\":\"Qubit\"},\"InferredInformation\":{\"IsMutable\":false,\"HasLocalQuantumDependency\":false},\"Position\":{\"Case\":\"Null\"},\"Range\":{\"Item1\":{\"Line\":1,\"Column\":119},\"Item2\":{\"Line\":1,\"Column\":120}}}]},{\"Case\":\"QsTupleItem\",\"Fields\":[{\"VariableName\":{\"Case\":\"ValidName\",\"Fields\":[\"az\"]},\"Type\":{\"Case\":\"Qubit\"},\"InferredInformation\":{\"IsMutable\":false,\"HasLocalQuantumDependency\":false},\"Position\":{\"Case\":\"Null\"},\"Range\":{\"Item1\":{\"Line\":1,\"Column\":127},\"Item2\":{\"Line\":1,\"Column\":129}}}]},{\"Case\":\"QsTupleItem\",\"Fields\":[{\"VariableName\":{\"Case\":\"ValidName\",\"Fields\":[\"ld\"]},\"Type\":{\"Case\":\"Qubit\"},\"InferredInformation\":{\"IsMutable\":false,\"HasLocalQuantumDependency\":false},\"Position\":{\"Case\":\"Null\"},\"Range\":{\"Item1\":{\"Line\":1,\"Column\":136},\"Item2\":{\"Line\":1,\"Column\":138}}}]}]]},\"Signature\":{\"TypeParameters\":[],\"ArgumentType\":{\"Case\":\"TupleType\",\"Fields\":[[{\"Case\":\"Int\"},{\"Case\":\"ArrayType\",\"Fields\":[{\"Case\":\"Int\"}]},{\"Case\":\"Int\"},{\"Case\":\"ArrayType\",\"Fields\":[{\"Case\":\"Qubit\"}]},{\"Case\":\"ArrayType\",\"Fields\":[{\"Case\":\"Qubit\"}]},{\"Case\":\"ArrayType\",\"Fields\":[{\"Case\":\"Qubit\"}]},{\"Case\":\"ArrayType\",\"Fields\":[{\"Case\":\"Qubit\"}]},{\"Case\":\"ArrayType\",\"Fields\":[{\"Case\":\"Qubit\"}]},{\"Case\":\"Qubit\"},{\"Case\":\"Qubit\"},{\"Case\":\"Qubit\"},{\"Case\":\"Qubit\"}]]},\"ReturnType\":{\"Case\":\"ArrayType\",\"Fields\":[{\"Case\":\"Int\"}]},\"Information\":{\"Characteristics\":{\"Case\":\"EmptySet\"},\"InferredInformation\":{\"IsSelfAdjoint\":false,\"IsIntrinsic\":false}}},\"Documentation\":[]}")]
+[assembly: SpecializationDeclaration("{\"Kind\":{\"Case\":\"QsBody\"},\"TypeArguments\":{\"Case\":\"Null\"},\"Information\":{\"Characteristics\":{\"Case\":\"EmptySet\"},\"InferredInformation\":{\"IsSelfAdjoint\":false,\"IsIntrinsic\":false}},\"Parent\":{\"Namespace\":\"ModularMultiplication.Testing\",\"Name\":\"SquareAndMultiplyStep\"},\"Attributes\":[],\"SourceFile\":\"/Users/Matt/Documents/Masters/Dissertation/Quantum/Testing/Square_and_Multiply_Test/Program.qs\",\"Position\":{\"Item1\":124,\"Item2\":0},\"HeaderRange\":{\"Item1\":{\"Line\":1,\"Column\":11},\"Item2\":{\"Line\":1,\"Column\":32}},\"Documentation\":[]}")]
+[assembly: CallableDeclaration("{\"Kind\":{\"Case\":\"Operation\"},\"QualifiedName\":{\"Namespace\":\"ModularMultiplication.Testing\",\"Name\":\"SquareAndMultiplyIteration\"},\"Attributes\":[],\"Modifiers\":{\"Access\":{\"Case\":\"DefaultAccess\"}},\"SourceFile\":\"/Users/Matt/Documents/Masters/Dissertation/Quantum/Testing/Square_and_Multiply_Test/Program.qs\",\"Position\":{\"Item1\":306,\"Item2\":0},\"SymbolRange\":{\"Item1\":{\"Line\":1,\"Column\":11},\"Item2\":{\"Line\":1,\"Column\":37}},\"ArgumentTuple\":{\"Case\":\"QsTuple\",\"Fields\":[[{\"Case\":\"QsTupleItem\",\"Fields\":[{\"VariableName\":{\"Case\":\"ValidName\",\"Fields\":[\"a\"]},\"Type\":{\"Case\":\"ArrayType\",\"Fields\":[{\"Case\":\"Qubit\"}]},\"InferredInformation\":{\"IsMutable\":false,\"HasLocalQuantumDependency\":false},\"Position\":{\"Case\":\"Null\"},\"Range\":{\"Item1\":{\"Line\":1,\"Column\":38},\"Item2\":{\"Line\":1,\"Column\":39}}}]},{\"Case\":\"QsTupleItem\",\"Fields\":[{\"VariableName\":{\"Case\":\"ValidName\",\"Fields\":[\"v\"]},\"Type\":{\"Case\":\"ArrayType\",\"Fields\":[{\"Case\":\"Qubit\"}]},\"InferredInformation\":{\"IsMutable\":false,\"HasLocalQuantumDependency\":false},\"Position\":{\"Case\":\"Null\"},\"Range\":{\"Item1\":{\"Line\":1,\"Column\":48},\"Item2\":{\"Line\":1,\"Column\":49}}}]},{\"Case\":\"QsTupleItem\",\"Fields\":[{\"VariableName\":{\"Case\":\"ValidName\",\"Fields\":[\"m\"]},\"Type\":{\"Case\":\"ArrayType\",\"Fields\":[{\"Case\":\"Qubit\"}]},\"InferredInformation\":{\"IsMutable\":false,\"HasLocalQuantumDependency\":false},\"Position\":{\"Case\":\"Null\"},\"Range\":{\"Item1\":{\"Line\":1,\"Column\":58},\"Item2\":{\"Line\":1,\"Column\":59}}}]},{\"Case\":\"QsTupleItem\",\"Fields\":[{\"VariableName\":{\"Case\":\"ValidName\",\"Fields\":[\"c\"]},\"Type\":{\"Case\":\"Qubit\"},\"InferredInformation\":{\"IsMutable\":false,\"HasLocalQuantumDependency\":false},\"Position\":{\"Case\":\"Null\"},\"Range\":{\"Item1\":{\"Line\":1,\"Column\":68},\"Item2\":{\"Line\":1,\"Column\":69}}}]},{\"Case\":\"QsTupleItem\",\"Fields\":[{\"VariableName\":{\"Case\":\"ValidName\",\"Fields\":[\"z\"]},\"Type\":{\"Case\":\"Qubit\"},\"InferredInformation\":{\"IsMutable\":false,\"HasLocalQuantumDependency\":false},\"Position\":{\"Case\":\"Null\"},\"Range\":{\"Item1\":{\"Line\":1,\"Column\":76},\"Item2\":{\"Line\":1,\"Column\":77}}}]},{\"Case\":\"QsTupleItem\",\"Fields\":[{\"VariableName\":{\"Case\":\"ValidName\",\"Fields\":[\"ld\"]},\"Type\":{\"Case\":\"Qubit\"},\"InferredInformation\":{\"IsMutable\":false,\"HasLocalQuantumDependency\":false},\"Position\":{\"Case\":\"Null\"},\"Range\":{\"Item1\":{\"Line\":1,\"Column\":84},\"Item2\":{\"Line\":1,\"Column\":86}}}]},{\"Case\":\"QsTupleItem\",\"Fields\":[{\"VariableName\":{\"Case\":\"ValidName\",\"Fields\":[\"t\"]},\"Type\":{\"Case\":\"ArrayType\",\"Fields\":[{\"Case\":\"Qubit\"}]},\"InferredInformation\":{\"IsMutable\":false,\"HasLocalQuantumDependency\":false},\"Position\":{\"Case\":\"Null\"},\"Range\":{\"Item1\":{\"Line\":1,\"Column\":93},\"Item2\":{\"Line\":1,\"Column\":94}}}]}]]},\"Signature\":{\"TypeParameters\":[],\"ArgumentType\":{\"Case\":\"TupleType\",\"Fields\":[[{\"Case\":\"ArrayType\",\"Fields\":[{\"Case\":\"Qubit\"}]},{\"Case\":\"ArrayType\",\"Fields\":[{\"Case\":\"Qubit\"}]},{\"Case\":\"ArrayType\",\"Fields\":[{\"Case\":\"Qubit\"}]},{\"Case\":\"Qubit\"},{\"Case\":\"Qubit\"},{\"Case\":\"Qubit\"},{\"Case\":\"ArrayType\",\"Fields\":[{\"Case\":\"Qubit\"}]}]]},\"ReturnType\":{\"Case\":\"UnitType\"},\"Information\":{\"Characteristics\":{\"Case\":\"Union\",\"Fields\":[{\"Case\":\"SimpleSet\",\"Fields\":[{\"Case\":\"Adjointable\"}]},{\"Case\":\"SimpleSet\",\"Fields\":[{\"Case\":\"Controllable\"}]}]},\"InferredInformation\":{\"IsSelfAdjoint\":false,\"IsIntrinsic\":false}}},\"Documentation\":[]}")]
+[assembly: SpecializationDeclaration("{\"Kind\":{\"Case\":\"QsBody\"},\"TypeArguments\":{\"Case\":\"Null\"},\"Information\":{\"Characteristics\":{\"Case\":\"Union\",\"Fields\":[{\"Case\":\"SimpleSet\",\"Fields\":[{\"Case\":\"Adjointable\"}]},{\"Case\":\"SimpleSet\",\"Fields\":[{\"Case\":\"Controllable\"}]}]},\"InferredInformation\":{\"IsSelfAdjoint\":false,\"IsIntrinsic\":false}},\"Parent\":{\"Namespace\":\"ModularMultiplication.Testing\",\"Name\":\"SquareAndMultiplyIteration\"},\"Attributes\":[],\"SourceFile\":\"/Users/Matt/Documents/Masters/Dissertation/Quantum/Testing/Square_and_Multiply_Test/Program.qs\",\"Position\":{\"Item1\":306,\"Item2\":0},\"HeaderRange\":{\"Item1\":{\"Line\":1,\"Column\":11},\"Item2\":{\"Line\":1,\"Column\":37}},\"Documentation\":[]}")]
+[assembly: SpecializationDeclaration("{\"Kind\":{\"Case\":\"QsAdjoint\"},\"TypeArguments\":{\"Case\":\"Null\"},\"Information\":{\"Characteristics\":{\"Case\":\"Union\",\"Fields\":[{\"Case\":\"SimpleSet\",\"Fields\":[{\"Case\":\"Adjointable\"}]},{\"Case\":\"SimpleSet\",\"Fields\":[{\"Case\":\"Controllable\"}]}]},\"InferredInformation\":{\"IsSelfAdjoint\":false,\"IsIntrinsic\":false}},\"Parent\":{\"Namespace\":\"ModularMultiplication.Testing\",\"Name\":\"SquareAndMultiplyIteration\"},\"Attributes\":[],\"SourceFile\":\"/Users/Matt/Documents/Masters/Dissertation/Quantum/Testing/Square_and_Multiply_Test/Program.qs\",\"Position\":{\"Item1\":306,\"Item2\":0},\"HeaderRange\":{\"Item1\":{\"Line\":1,\"Column\":114},\"Item2\":{\"Line\":1,\"Column\":123}},\"Documentation\":[\"automatically generated QsAdjoint specialization for ModularMultiplication.Testing.SquareAndMultiplyIteration\"]}")]
+[assembly: SpecializationDeclaration("{\"Kind\":{\"Case\":\"QsControlled\"},\"TypeArguments\":{\"Case\":\"Null\"},\"Information\":{\"Characteristics\":{\"Case\":\"Union\",\"Fields\":[{\"Case\":\"SimpleSet\",\"Fields\":[{\"Case\":\"Adjointable\"}]},{\"Case\":\"SimpleSet\",\"Fields\":[{\"Case\":\"Controllable\"}]}]},\"InferredInformation\":{\"IsSelfAdjoint\":false,\"IsIntrinsic\":false}},\"Parent\":{\"Namespace\":\"ModularMultiplication.Testing\",\"Name\":\"SquareAndMultiplyIteration\"},\"Attributes\":[],\"SourceFile\":\"/Users/Matt/Documents/Masters/Dissertation/Quantum/Testing/Square_and_Multiply_Test/Program.qs\",\"Position\":{\"Item1\":306,\"Item2\":0},\"HeaderRange\":{\"Item1\":{\"Line\":1,\"Column\":114},\"Item2\":{\"Line\":1,\"Column\":123}},\"Documentation\":[\"automatically generated QsControlled specialization for ModularMultiplication.Testing.SquareAndMultiplyIteration\"]}")]
+[assembly: SpecializationDeclaration("{\"Kind\":{\"Case\":\"QsControlledAdjoint\"},\"TypeArguments\":{\"Case\":\"Null\"},\"Information\":{\"Characteristics\":{\"Case\":\"Union\",\"Fields\":[{\"Case\":\"SimpleSet\",\"Fields\":[{\"Case\":\"Adjointable\"}]},{\"Case\":\"SimpleSet\",\"Fields\":[{\"Case\":\"Controllable\"}]}]},\"InferredInformation\":{\"IsSelfAdjoint\":false,\"IsIntrinsic\":false}},\"Parent\":{\"Namespace\":\"ModularMultiplication.Testing\",\"Name\":\"SquareAndMultiplyIteration\"},\"Attributes\":[],\"SourceFile\":\"/Users/Matt/Documents/Masters/Dissertation/Quantum/Testing/Square_and_Multiply_Test/Program.qs\",\"Position\":{\"Item1\":306,\"Item2\":0},\"HeaderRange\":{\"Item1\":{\"Line\":1,\"Column\":114},\"Item2\":{\"Line\":1,\"Column\":123}},\"Documentation\":[\"automatically generated QsControlledAdjoint specialization for ModularMultiplication.Testing.SquareAndMultiplyIteration\"]}")]
+[assembly: CallableDeclaration("{\"Kind\":{\"Case\":\"Operation\"},\"QualifiedName\":{\"Namespace\":\"ModularMultiplication.Testing\",\"Name\":\"SquareModM\"},\"Attributes\":[],\"Modifiers\":{\"Access\":{\"Case\":\"DefaultAccess\"}},\"SourceFile\":\"/Users/Matt/Documents/Masters/Dissertation/Quantum/Testing/Square_and_Multiply_Test/Program.qs\",\"Position\":{\"Item1\":327,\"Item2\":0},\"SymbolRange\":{\"Item1\":{\"Line\":1,\"Column\":11},\"Item2\":{\"Line\":1,\"Column\":21}},\"ArgumentTuple\":{\"Case\":\"QsTuple\",\"Fields\":[[{\"Case\":\"QsTupleItem\",\"Fields\":[{\"VariableName\":{\"Case\":\"ValidName\",\"Fields\":[\"a\"]},\"Type\":{\"Case\":\"ArrayType\",\"Fields\":[{\"Case\":\"Qubit\"}]},\"InferredInformation\":{\"IsMutable\":false,\"HasLocalQuantumDependency\":false},\"Position\":{\"Case\":\"Null\"},\"Range\":{\"Item1\":{\"Line\":1,\"Column\":22},\"Item2\":{\"Line\":1,\"Column\":23}}}]},{\"Case\":\"QsTupleItem\",\"Fields\":[{\"VariableName\":{\"Case\":\"ValidName\",\"Fields\":[\"Ms\"]},\"Type\":{\"Case\":\"ArrayType\",\"Fields\":[{\"Case\":\"Qubit\"}]},\"InferredInformation\":{\"IsMutable\":false,\"HasLocalQuantumDependency\":false},\"Position\":{\"Case\":\"Null\"},\"Range\":{\"Item1\":{\"Line\":1,\"Column\":32},\"Item2\":{\"Line\":1,\"Column\":34}}}]},{\"Case\":\"QsTupleItem\",\"Fields\":[{\"VariableName\":{\"Case\":\"ValidName\",\"Fields\":[\"Ts\"]},\"Type\":{\"Case\":\"ArrayType\",\"Fields\":[{\"Case\":\"Qubit\"}]},\"InferredInformation\":{\"IsMutable\":false,\"HasLocalQuantumDependency\":false},\"Position\":{\"Case\":\"Null\"},\"Range\":{\"Item1\":{\"Line\":1,\"Column\":43},\"Item2\":{\"Line\":1,\"Column\":45}}}]}]]},\"Signature\":{\"TypeParameters\":[],\"ArgumentType\":{\"Case\":\"TupleType\",\"Fields\":[[{\"Case\":\"ArrayType\",\"Fields\":[{\"Case\":\"Qubit\"}]},{\"Case\":\"ArrayType\",\"Fields\":[{\"Case\":\"Qubit\"}]},{\"Case\":\"ArrayType\",\"Fields\":[{\"Case\":\"Qubit\"}]}]]},\"ReturnType\":{\"Case\":\"UnitType\"},\"Information\":{\"Characteristics\":{\"Case\":\"Union\",\"Fields\":[{\"Case\":\"SimpleSet\",\"Fields\":[{\"Case\":\"Adjointable\"}]},{\"Case\":\"SimpleSet\",\"Fields\":[{\"Case\":\"Controllable\"}]}]},\"InferredInformation\":{\"IsSelfAdjoint\":false,\"IsIntrinsic\":false}}},\"Documentation\":[]}")]
+[assembly: SpecializationDeclaration("{\"Kind\":{\"Case\":\"QsBody\"},\"TypeArguments\":{\"Case\":\"Null\"},\"Information\":{\"Characteristics\":{\"Case\":\"Union\",\"Fields\":[{\"Case\":\"SimpleSet\",\"Fields\":[{\"Case\":\"Adjointable\"}]},{\"Case\":\"SimpleSet\",\"Fields\":[{\"Case\":\"Controllable\"}]}]},\"InferredInformation\":{\"IsSelfAdjoint\":false,\"IsIntrinsic\":false}},\"Parent\":{\"Namespace\":\"ModularMultiplication.Testing\",\"Name\":\"SquareModM\"},\"Attributes\":[],\"SourceFile\":\"/Users/Matt/Documents/Masters/Dissertation/Quantum/Testing/Square_and_Multiply_Test/Program.qs\",\"Position\":{\"Item1\":327,\"Item2\":0},\"HeaderRange\":{\"Item1\":{\"Line\":1,\"Column\":11},\"Item2\":{\"Line\":1,\"Column\":21}},\"Documentation\":[]}")]
+[assembly: SpecializationDeclaration("{\"Kind\":{\"Case\":\"QsAdjoint\"},\"TypeArguments\":{\"Case\":\"Null\"},\"Information\":{\"Characteristics\":{\"Case\":\"Union\",\"Fields\":[{\"Case\":\"SimpleSet\",\"Fields\":[{\"Case\":\"Adjointable\"}]},{\"Case\":\"SimpleSet\",\"Fields\":[{\"Case\":\"Controllable\"}]}]},\"InferredInformation\":{\"IsSelfAdjoint\":false,\"IsIntrinsic\":false}},\"Parent\":{\"Namespace\":\"ModularMultiplication.Testing\",\"Name\":\"SquareModM\"},\"Attributes\":[],\"SourceFile\":\"/Users/Matt/Documents/Masters/Dissertation/Quantum/Testing/Square_and_Multiply_Test/Program.qs\",\"Position\":{\"Item1\":327,\"Item2\":0},\"HeaderRange\":{\"Item1\":{\"Line\":1,\"Column\":65},\"Item2\":{\"Line\":1,\"Column\":74}},\"Documentation\":[\"automatically generated QsAdjoint specialization for ModularMultiplication.Testing.SquareModM\"]}")]
+[assembly: SpecializationDeclaration("{\"Kind\":{\"Case\":\"QsControlled\"},\"TypeArguments\":{\"Case\":\"Null\"},\"Information\":{\"Characteristics\":{\"Case\":\"Union\",\"Fields\":[{\"Case\":\"SimpleSet\",\"Fields\":[{\"Case\":\"Adjointable\"}]},{\"Case\":\"SimpleSet\",\"Fields\":[{\"Case\":\"Controllable\"}]}]},\"InferredInformation\":{\"IsSelfAdjoint\":false,\"IsIntrinsic\":false}},\"Parent\":{\"Namespace\":\"ModularMultiplication.Testing\",\"Name\":\"SquareModM\"},\"Attributes\":[],\"SourceFile\":\"/Users/Matt/Documents/Masters/Dissertation/Quantum/Testing/Square_and_Multiply_Test/Program.qs\",\"Position\":{\"Item1\":327,\"Item2\":0},\"HeaderRange\":{\"Item1\":{\"Line\":1,\"Column\":65},\"Item2\":{\"Line\":1,\"Column\":74}},\"Documentation\":[\"automatically generated QsControlled specialization for ModularMultiplication.Testing.SquareModM\"]}")]
+[assembly: SpecializationDeclaration("{\"Kind\":{\"Case\":\"QsControlledAdjoint\"},\"TypeArguments\":{\"Case\":\"Null\"},\"Information\":{\"Characteristics\":{\"Case\":\"Union\",\"Fields\":[{\"Case\":\"SimpleSet\",\"Fields\":[{\"Case\":\"Adjointable\"}]},{\"Case\":\"SimpleSet\",\"Fields\":[{\"Case\":\"Controllable\"}]}]},\"InferredInformation\":{\"IsSelfAdjoint\":false,\"IsIntrinsic\":false}},\"Parent\":{\"Namespace\":\"ModularMultiplication.Testing\",\"Name\":\"SquareModM\"},\"Attributes\":[],\"SourceFile\":\"/Users/Matt/Documents/Masters/Dissertation/Quantum/Testing/Square_and_Multiply_Test/Program.qs\",\"Position\":{\"Item1\":327,\"Item2\":0},\"HeaderRange\":{\"Item1\":{\"Line\":1,\"Column\":65},\"Item2\":{\"Line\":1,\"Column\":74}},\"Documentation\":[\"automatically generated QsControlledAdjoint specialization for ModularMultiplication.Testing.SquareModM\"]}")]
+[assembly: CallableDeclaration("{\"Kind\":{\"Case\":\"Operation\"},\"QualifiedName\":{\"Namespace\":\"ModularMultiplication.Testing\",\"Name\":\"MultiplyModM\"},\"Attributes\":[],\"Modifiers\":{\"Access\":{\"Case\":\"DefaultAccess\"}},\"SourceFile\":\"/Users/Matt/Documents/Masters/Dissertation/Quantum/Testing/Square_and_Multiply_Test/Program.qs\",\"Position\":{\"Item1\":340,\"Item2\":0},\"SymbolRange\":{\"Item1\":{\"Line\":1,\"Column\":11},\"Item2\":{\"Line\":1,\"Column\":23}},\"ArgumentTuple\":{\"Case\":\"QsTuple\",\"Fields\":[[{\"Case\":\"QsTupleItem\",\"Fields\":[{\"VariableName\":{\"Case\":\"ValidName\",\"Fields\":[\"a\"]},\"Type\":{\"Case\":\"ArrayType\",\"Fields\":[{\"Case\":\"Qubit\"}]},\"InferredInformation\":{\"IsMutable\":false,\"HasLocalQuantumDependency\":false},\"Position\":{\"Case\":\"Null\"},\"Range\":{\"Item1\":{\"Line\":1,\"Column\":24},\"Item2\":{\"Line\":1,\"Column\":25}}}]},{\"Case\":\"QsTupleItem\",\"Fields\":[{\"VariableName\":{\"Case\":\"ValidName\",\"Fields\":[\"b\"]},\"Type\":{\"Case\":\"ArrayType\",\"Fields\":[{\"Case\":\"Qubit\"}]},\"InferredInformation\":{\"IsMutable\":false,\"HasLocalQuantumDependency\":false},\"Position\":{\"Case\":\"Null\"},\"Range\":{\"Item1\":{\"Line\":1,\"Column\":34},\"Item2\":{\"Line\":1,\"Column\":35}}}]},{\"Case\":\"QsTupleItem\",\"Fields\":[{\"VariableName\":{\"Case\":\"ValidName\",\"Fields\":[\"Ms\"]},\"Type\":{\"Case\":\"ArrayType\",\"Fields\":[{\"Case\":\"Qubit\"}]},\"InferredInformation\":{\"IsMutable\":false,\"HasLocalQuantumDependency\":false},\"Position\":{\"Case\":\"Null\"},\"Range\":{\"Item1\":{\"Line\":1,\"Column\":44},\"Item2\":{\"Line\":1,\"Column\":46}}}]},{\"Case\":\"QsTupleItem\",\"Fields\":[{\"VariableName\":{\"Case\":\"ValidName\",\"Fields\":[\"Ts\"]},\"Type\":{\"Case\":\"ArrayType\",\"Fields\":[{\"Case\":\"Qubit\"}]},\"InferredInformation\":{\"IsMutable\":false,\"HasLocalQuantumDependency\":false},\"Position\":{\"Case\":\"Null\"},\"Range\":{\"Item1\":{\"Line\":1,\"Column\":55},\"Item2\":{\"Line\":1,\"Column\":57}}}]}]]},\"Signature\":{\"TypeParameters\":[],\"ArgumentType\":{\"Case\":\"TupleType\",\"Fields\":[[{\"Case\":\"ArrayType\",\"Fields\":[{\"Case\":\"Qubit\"}]},{\"Case\":\"ArrayType\",\"Fields\":[{\"Case\":\"Qubit\"}]},{\"Case\":\"ArrayType\",\"Fields\":[{\"Case\":\"Qubit\"}]},{\"Case\":\"ArrayType\",\"Fields\":[{\"Case\":\"Qubit\"}]}]]},\"ReturnType\":{\"Case\":\"UnitType\"},\"Information\":{\"Characteristics\":{\"Case\":\"Union\",\"Fields\":[{\"Case\":\"SimpleSet\",\"Fields\":[{\"Case\":\"Adjointable\"}]},{\"Case\":\"SimpleSet\",\"Fields\":[{\"Case\":\"Controllable\"}]}]},\"InferredInformation\":{\"IsSelfAdjoint\":false,\"IsIntrinsic\":false}}},\"Documentation\":[]}")]
+[assembly: SpecializationDeclaration("{\"Kind\":{\"Case\":\"QsBody\"},\"TypeArguments\":{\"Case\":\"Null\"},\"Information\":{\"Characteristics\":{\"Case\":\"Union\",\"Fields\":[{\"Case\":\"SimpleSet\",\"Fields\":[{\"Case\":\"Adjointable\"}]},{\"Case\":\"SimpleSet\",\"Fields\":[{\"Case\":\"Controllable\"}]}]},\"InferredInformation\":{\"IsSelfAdjoint\":false,\"IsIntrinsic\":false}},\"Parent\":{\"Namespace\":\"ModularMultiplication.Testing\",\"Name\":\"MultiplyModM\"},\"Attributes\":[],\"SourceFile\":\"/Users/Matt/Documents/Masters/Dissertation/Quantum/Testing/Square_and_Multiply_Test/Program.qs\",\"Position\":{\"Item1\":340,\"Item2\":0},\"HeaderRange\":{\"Item1\":{\"Line\":1,\"Column\":11},\"Item2\":{\"Line\":1,\"Column\":23}},\"Documentation\":[]}")]
+[assembly: SpecializationDeclaration("{\"Kind\":{\"Case\":\"QsAdjoint\"},\"TypeArguments\":{\"Case\":\"Null\"},\"Information\":{\"Characteristics\":{\"Case\":\"Union\",\"Fields\":[{\"Case\":\"SimpleSet\",\"Fields\":[{\"Case\":\"Adjointable\"}]},{\"Case\":\"SimpleSet\",\"Fields\":[{\"Case\":\"Controllable\"}]}]},\"InferredInformation\":{\"IsSelfAdjoint\":false,\"IsIntrinsic\":false}},\"Parent\":{\"Namespace\":\"ModularMultiplication.Testing\",\"Name\":\"MultiplyModM\"},\"Attributes\":[],\"SourceFile\":\"/Users/Matt/Documents/Masters/Dissertation/Quantum/Testing/Square_and_Multiply_Test/Program.qs\",\"Position\":{\"Item1\":340,\"Item2\":0},\"HeaderRange\":{\"Item1\":{\"Line\":1,\"Column\":77},\"Item2\":{\"Line\":1,\"Column\":86}},\"Documentation\":[\"automatically generated QsAdjoint specialization for ModularMultiplication.Testing.MultiplyModM\"]}")]
+[assembly: SpecializationDeclaration("{\"Kind\":{\"Case\":\"QsControlled\"},\"TypeArguments\":{\"Case\":\"Null\"},\"Information\":{\"Characteristics\":{\"Case\":\"Union\",\"Fields\":[{\"Case\":\"SimpleSet\",\"Fields\":[{\"Case\":\"Adjointable\"}]},{\"Case\":\"SimpleSet\",\"Fields\":[{\"Case\":\"Controllable\"}]}]},\"InferredInformation\":{\"IsSelfAdjoint\":false,\"IsIntrinsic\":false}},\"Parent\":{\"Namespace\":\"ModularMultiplication.Testing\",\"Name\":\"MultiplyModM\"},\"Attributes\":[],\"SourceFile\":\"/Users/Matt/Documents/Masters/Dissertation/Quantum/Testing/Square_and_Multiply_Test/Program.qs\",\"Position\":{\"Item1\":340,\"Item2\":0},\"HeaderRange\":{\"Item1\":{\"Line\":1,\"Column\":77},\"Item2\":{\"Line\":1,\"Column\":86}},\"Documentation\":[\"automatically generated QsControlled specialization for ModularMultiplication.Testing.MultiplyModM\"]}")]
+[assembly: SpecializationDeclaration("{\"Kind\":{\"Case\":\"QsControlledAdjoint\"},\"TypeArguments\":{\"Case\":\"Null\"},\"Information\":{\"Characteristics\":{\"Case\":\"Union\",\"Fields\":[{\"Case\":\"SimpleSet\",\"Fields\":[{\"Case\":\"Adjointable\"}]},{\"Case\":\"SimpleSet\",\"Fields\":[{\"Case\":\"Controllable\"}]}]},\"InferredInformation\":{\"IsSelfAdjoint\":false,\"IsIntrinsic\":false}},\"Parent\":{\"Namespace\":\"ModularMultiplication.Testing\",\"Name\":\"MultiplyModM\"},\"Attributes\":[],\"SourceFile\":\"/Users/Matt/Documents/Masters/Dissertation/Quantum/Testing/Square_and_Multiply_Test/Program.qs\",\"Position\":{\"Item1\":340,\"Item2\":0},\"HeaderRange\":{\"Item1\":{\"Line\":1,\"Column\":77},\"Item2\":{\"Line\":1,\"Column\":86}},\"Documentation\":[\"automatically generated QsControlledAdjoint specialization for ModularMultiplication.Testing.MultiplyModM\"]}")]
+[assembly: CallableDeclaration("{\"Kind\":{\"Case\":\"Operation\"},\"QualifiedName\":{\"Namespace\":\"ModularMultiplication.Testing\",\"Name\":\"AddI\"},\"Attributes\":[],\"Modifiers\":{\"Access\":{\"Case\":\"DefaultAccess\"}},\"SourceFile\":\"/Users/Matt/Documents/Masters/Dissertation/Quantum/Testing/Square_and_Multiply_Test/Program.qs\",\"Position\":{\"Item1\":353,\"Item2\":0},\"SymbolRange\":{\"Item1\":{\"Line\":1,\"Column\":11},\"Item2\":{\"Line\":1,\"Column\":15}},\"ArgumentTuple\":{\"Case\":\"QsTuple\",\"Fields\":[[{\"Case\":\"QsTupleItem\",\"Fields\":[{\"VariableName\":{\"Case\":\"ValidName\",\"Fields\":[\"xs\"]},\"Type\":{\"Case\":\"UserDefinedType\",\"Fields\":[{\"Namespace\":\"Microsoft.Quantum.Arithmetic\",\"Name\":\"LittleEndian\",\"Range\":{\"Case\":\"Value\",\"Fields\":[{\"Item1\":{\"Line\":1,\"Column\":21},\"Item2\":{\"Line\":1,\"Column\":33}}]}}]},\"InferredInformation\":{\"IsMutable\":false,\"HasLocalQuantumDependency\":false},\"Position\":{\"Case\":\"Null\"},\"Range\":{\"Item1\":{\"Line\":1,\"Column\":17},\"Item2\":{\"Line\":1,\"Column\":19}}}]},{\"Case\":\"QsTupleItem\",\"Fields\":[{\"VariableName\":{\"Case\":\"ValidName\",\"Fields\":[\"ys\"]},\"Type\":{\"Case\":\"UserDefinedType\",\"Fields\":[{\"Namespace\":\"Microsoft.Quantum.Arithmetic\",\"Name\":\"LittleEndian\",\"Range\":{\"Case\":\"Value\",\"Fields\":[{\"Item1\":{\"Line\":1,\"Column\":39},\"Item2\":{\"Line\":1,\"Column\":51}}]}}]},\"InferredInformation\":{\"IsMutable\":false,\"HasLocalQuantumDependency\":false},\"Position\":{\"Case\":\"Null\"},\"Range\":{\"Item1\":{\"Line\":1,\"Column\":35},\"Item2\":{\"Line\":1,\"Column\":37}}}]}]]},\"Signature\":{\"TypeParameters\":[],\"ArgumentType\":{\"Case\":\"TupleType\",\"Fields\":[[{\"Case\":\"UserDefinedType\",\"Fields\":[{\"Namespace\":\"Microsoft.Quantum.Arithmetic\",\"Name\":\"LittleEndian\",\"Range\":{\"Case\":\"Null\"}}]},{\"Case\":\"UserDefinedType\",\"Fields\":[{\"Namespace\":\"Microsoft.Quantum.Arithmetic\",\"Name\":\"LittleEndian\",\"Range\":{\"Case\":\"Null\"}}]}]]},\"ReturnType\":{\"Case\":\"UnitType\"},\"Information\":{\"Characteristics\":{\"Case\":\"Union\",\"Fields\":[{\"Case\":\"SimpleSet\",\"Fields\":[{\"Case\":\"Adjointable\"}]},{\"Case\":\"SimpleSet\",\"Fields\":[{\"Case\":\"Controllable\"}]}]},\"InferredInformation\":{\"IsSelfAdjoint\":false,\"IsIntrinsic\":false}}},\"Documentation\":[]}")]
+[assembly: SpecializationDeclaration("{\"Kind\":{\"Case\":\"QsBody\"},\"TypeArguments\":{\"Case\":\"Null\"},\"Information\":{\"Characteristics\":{\"Case\":\"Union\",\"Fields\":[{\"Case\":\"SimpleSet\",\"Fields\":[{\"Case\":\"Adjointable\"}]},{\"Case\":\"SimpleSet\",\"Fields\":[{\"Case\":\"Controllable\"}]}]},\"InferredInformation\":{\"IsSelfAdjoint\":false,\"IsIntrinsic\":false}},\"Parent\":{\"Namespace\":\"ModularMultiplication.Testing\",\"Name\":\"AddI\"},\"Attributes\":[],\"SourceFile\":\"/Users/Matt/Documents/Masters/Dissertation/Quantum/Testing/Square_and_Multiply_Test/Program.qs\",\"Position\":{\"Item1\":353,\"Item2\":0},\"HeaderRange\":{\"Item1\":{\"Line\":1,\"Column\":11},\"Item2\":{\"Line\":1,\"Column\":15}},\"Documentation\":[]}")]
+[assembly: SpecializationDeclaration("{\"Kind\":{\"Case\":\"QsAdjoint\"},\"TypeArguments\":{\"Case\":\"Null\"},\"Information\":{\"Characteristics\":{\"Case\":\"Union\",\"Fields\":[{\"Case\":\"SimpleSet\",\"Fields\":[{\"Case\":\"Adjointable\"}]},{\"Case\":\"SimpleSet\",\"Fields\":[{\"Case\":\"Controllable\"}]}]},\"InferredInformation\":{\"IsSelfAdjoint\":false,\"IsIntrinsic\":false}},\"Parent\":{\"Namespace\":\"ModularMultiplication.Testing\",\"Name\":\"AddI\"},\"Attributes\":[],\"SourceFile\":\"/Users/Matt/Documents/Masters/Dissertation/Quantum/Testing/Square_and_Multiply_Test/Program.qs\",\"Position\":{\"Item1\":353,\"Item2\":0},\"HeaderRange\":{\"Item1\":{\"Line\":1,\"Column\":63},\"Item2\":{\"Line\":1,\"Column\":72}},\"Documentation\":[\"automatically generated QsAdjoint specialization for ModularMultiplication.Testing.AddI\"]}")]
+[assembly: SpecializationDeclaration("{\"Kind\":{\"Case\":\"QsControlled\"},\"TypeArguments\":{\"Case\":\"Null\"},\"Information\":{\"Characteristics\":{\"Case\":\"Union\",\"Fields\":[{\"Case\":\"SimpleSet\",\"Fields\":[{\"Case\":\"Adjointable\"}]},{\"Case\":\"SimpleSet\",\"Fields\":[{\"Case\":\"Controllable\"}]}]},\"InferredInformation\":{\"IsSelfAdjoint\":false,\"IsIntrinsic\":false}},\"Parent\":{\"Namespace\":\"ModularMultiplication.Testing\",\"Name\":\"AddI\"},\"Attributes\":[],\"SourceFile\":\"/Users/Matt/Documents/Masters/Dissertation/Quantum/Testing/Square_and_Multiply_Test/Program.qs\",\"Position\":{\"Item1\":353,\"Item2\":0},\"HeaderRange\":{\"Item1\":{\"Line\":1,\"Column\":63},\"Item2\":{\"Line\":1,\"Column\":72}},\"Documentation\":[\"automatically generated QsControlled specialization for ModularMultiplication.Testing.AddI\"]}")]
+[assembly: SpecializationDeclaration("{\"Kind\":{\"Case\":\"QsControlledAdjoint\"},\"TypeArguments\":{\"Case\":\"Null\"},\"Information\":{\"Characteristics\":{\"Case\":\"Union\",\"Fields\":[{\"Case\":\"SimpleSet\",\"Fields\":[{\"Case\":\"Adjointable\"}]},{\"Case\":\"SimpleSet\",\"Fields\":[{\"Case\":\"Controllable\"}]}]},\"InferredInformation\":{\"IsSelfAdjoint\":false,\"IsIntrinsic\":false}},\"Parent\":{\"Namespace\":\"ModularMultiplication.Testing\",\"Name\":\"AddI\"},\"Attributes\":[],\"SourceFile\":\"/Users/Matt/Documents/Masters/Dissertation/Quantum/Testing/Square_and_Multiply_Test/Program.qs\",\"Position\":{\"Item1\":353,\"Item2\":0},\"HeaderRange\":{\"Item1\":{\"Line\":1,\"Column\":63},\"Item2\":{\"Line\":1,\"Column\":72}},\"Documentation\":[\"automatically generated QsControlledAdjoint specialization for ModularMultiplication.Testing.AddI\"]}")]
+[assembly: CallableDeclaration("{\"Kind\":{\"Case\":\"Operation\"},\"QualifiedName\":{\"Namespace\":\"ModularMultiplication.Testing\",\"Name\":\"CompareGTI\"},\"Attributes\":[],\"Modifiers\":{\"Access\":{\"Case\":\"DefaultAccess\"}},\"SourceFile\":\"/Users/Matt/Documents/Masters/Dissertation/Quantum/Testing/Square_and_Multiply_Test/Program.qs\",\"Position\":{\"Item1\":368,\"Item2\":4},\"SymbolRange\":{\"Item1\":{\"Line\":1,\"Column\":11},\"Item2\":{\"Line\":1,\"Column\":21}},\"ArgumentTuple\":{\"Case\":\"QsTuple\",\"Fields\":[[{\"Case\":\"QsTupleItem\",\"Fields\":[{\"VariableName\":{\"Case\":\"ValidName\",\"Fields\":[\"xs\"]},\"Type\":{\"Case\":\"UserDefinedType\",\"Fields\":[{\"Namespace\":\"Microsoft.Quantum.Arithmetic\",\"Name\":\"LittleEndian\",\"Range\":{\"Case\":\"Value\",\"Fields\":[{\"Item1\":{\"Line\":1,\"Column\":27},\"Item2\":{\"Line\":1,\"Column\":39}}]}}]},\"InferredInformation\":{\"IsMutable\":false,\"HasLocalQuantumDependency\":false},\"Position\":{\"Case\":\"Null\"},\"Range\":{\"Item1\":{\"Line\":1,\"Column\":23},\"Item2\":{\"Line\":1,\"Column\":25}}}]},{\"Case\":\"QsTupleItem\",\"Fields\":[{\"VariableName\":{\"Case\":\"ValidName\",\"Fields\":[\"ys\"]},\"Type\":{\"Case\":\"UserDefinedType\",\"Fields\":[{\"Namespace\":\"Microsoft.Quantum.Arithmetic\",\"Name\":\"LittleEndian\",\"Range\":{\"Case\":\"Value\",\"Fields\":[{\"Item1\":{\"Line\":1,\"Column\":45},\"Item2\":{\"Line\":1,\"Column\":57}}]}}]},\"InferredInformation\":{\"IsMutable\":false,\"HasLocalQuantumDependency\":false},\"Position\":{\"Case\":\"Null\"},\"Range\":{\"Item1\":{\"Line\":1,\"Column\":41},\"Item2\":{\"Line\":1,\"Column\":43}}}]},{\"Case\":\"QsTupleItem\",\"Fields\":[{\"VariableName\":{\"Case\":\"ValidName\",\"Fields\":[\"result\"]},\"Type\":{\"Case\":\"Qubit\"},\"InferredInformation\":{\"IsMutable\":false,\"HasLocalQuantumDependency\":false},\"Position\":{\"Case\":\"Null\"},\"Range\":{\"Item1\":{\"Line\":2,\"Column\":29},\"Item2\":{\"Line\":2,\"Column\":35}}}]}]]},\"Signature\":{\"TypeParameters\":[],\"ArgumentType\":{\"Case\":\"TupleType\",\"Fields\":[[{\"Case\":\"UserDefinedType\",\"Fields\":[{\"Namespace\":\"Microsoft.Quantum.Arithmetic\",\"Name\":\"LittleEndian\",\"Range\":{\"Case\":\"Null\"}}]},{\"Case\":\"UserDefinedType\",\"Fields\":[{\"Namespace\":\"Microsoft.Quantum.Arithmetic\",\"Name\":\"LittleEndian\",\"Range\":{\"Case\":\"Null\"}}]},{\"Case\":\"Qubit\"}]]},\"ReturnType\":{\"Case\":\"UnitType\"},\"Information\":{\"Characteristics\":{\"Case\":\"Union\",\"Fields\":[{\"Case\":\"SimpleSet\",\"Fields\":[{\"Case\":\"Adjointable\"}]},{\"Case\":\"SimpleSet\",\"Fields\":[{\"Case\":\"Controllable\"}]}]},\"InferredInformation\":{\"IsSelfAdjoint\":false,\"IsIntrinsic\":false}}},\"Documentation\":[]}")]
+[assembly: SpecializationDeclaration("{\"Kind\":{\"Case\":\"QsBody\"},\"TypeArguments\":{\"Case\":\"Null\"},\"Information\":{\"Characteristics\":{\"Case\":\"Union\",\"Fields\":[{\"Case\":\"SimpleSet\",\"Fields\":[{\"Case\":\"Adjointable\"}]},{\"Case\":\"SimpleSet\",\"Fields\":[{\"Case\":\"Controllable\"}]}]},\"InferredInformation\":{\"IsSelfAdjoint\":false,\"IsIntrinsic\":false}},\"Parent\":{\"Namespace\":\"ModularMultiplication.Testing\",\"Name\":\"CompareGTI\"},\"Attributes\":[],\"SourceFile\":\"/Users/Matt/Documents/Masters/Dissertation/Quantum/Testing/Square_and_Multiply_Test/Program.qs\",\"Position\":{\"Item1\":368,\"Item2\":4},\"HeaderRange\":{\"Item1\":{\"Line\":1,\"Column\":11},\"Item2\":{\"Line\":1,\"Column\":21}},\"Documentation\":[]}")]
+[assembly: SpecializationDeclaration("{\"Kind\":{\"Case\":\"QsAdjoint\"},\"TypeArguments\":{\"Case\":\"Null\"},\"Information\":{\"Characteristics\":{\"Case\":\"Union\",\"Fields\":[{\"Case\":\"SimpleSet\",\"Fields\":[{\"Case\":\"Adjointable\"}]},{\"Case\":\"SimpleSet\",\"Fields\":[{\"Case\":\"Controllable\"}]}]},\"InferredInformation\":{\"IsSelfAdjoint\":false,\"IsIntrinsic\":false}},\"Parent\":{\"Namespace\":\"ModularMultiplication.Testing\",\"Name\":\"CompareGTI\"},\"Attributes\":[],\"SourceFile\":\"/Users/Matt/Documents/Masters/Dissertation/Quantum/Testing/Square_and_Multiply_Test/Program.qs\",\"Position\":{\"Item1\":368,\"Item2\":4},\"HeaderRange\":{\"Item1\":{\"Line\":2,\"Column\":54},\"Item2\":{\"Line\":2,\"Column\":63}},\"Documentation\":[\"automatically generated QsAdjoint specialization for ModularMultiplication.Testing.CompareGTI\"]}")]
+[assembly: SpecializationDeclaration("{\"Kind\":{\"Case\":\"QsControlled\"},\"TypeArguments\":{\"Case\":\"Null\"},\"Information\":{\"Characteristics\":{\"Case\":\"Union\",\"Fields\":[{\"Case\":\"SimpleSet\",\"Fields\":[{\"Case\":\"Adjointable\"}]},{\"Case\":\"SimpleSet\",\"Fields\":[{\"Case\":\"Controllable\"}]}]},\"InferredInformation\":{\"IsSelfAdjoint\":false,\"IsIntrinsic\":false}},\"Parent\":{\"Namespace\":\"ModularMultiplication.Testing\",\"Name\":\"CompareGTI\"},\"Attributes\":[],\"SourceFile\":\"/Users/Matt/Documents/Masters/Dissertation/Quantum/Testing/Square_and_Multiply_Test/Program.qs\",\"Position\":{\"Item1\":368,\"Item2\":4},\"HeaderRange\":{\"Item1\":{\"Line\":2,\"Column\":54},\"Item2\":{\"Line\":2,\"Column\":63}},\"Documentation\":[\"automatically generated QsControlled specialization for ModularMultiplication.Testing.CompareGTI\"]}")]
+[assembly: SpecializationDeclaration("{\"Kind\":{\"Case\":\"QsControlledAdjoint\"},\"TypeArguments\":{\"Case\":\"Null\"},\"Information\":{\"Characteristics\":{\"Case\":\"Union\",\"Fields\":[{\"Case\":\"SimpleSet\",\"Fields\":[{\"Case\":\"Adjointable\"}]},{\"Case\":\"SimpleSet\",\"Fields\":[{\"Case\":\"Controllable\"}]}]},\"InferredInformation\":{\"IsSelfAdjoint\":false,\"IsIntrinsic\":false}},\"Parent\":{\"Namespace\":\"ModularMultiplication.Testing\",\"Name\":\"CompareGTI\"},\"Attributes\":[],\"SourceFile\":\"/Users/Matt/Documents/Masters/Dissertation/Quantum/Testing/Square_and_Multiply_Test/Program.qs\",\"Position\":{\"Item1\":368,\"Item2\":4},\"HeaderRange\":{\"Item1\":{\"Line\":2,\"Column\":54},\"Item2\":{\"Line\":2,\"Column\":63}},\"Documentation\":[\"automatically generated QsControlledAdjoint specialization for ModularMultiplication.Testing.CompareGTI\"]}")]
+[assembly: CallableDeclaration("{\"Kind\":{\"Case\":\"Operation\"},\"QualifiedName\":{\"Namespace\":\"ModularMultiplication.Testing\",\"Name\":\"MultiplyI\"},\"Attributes\":[],\"Modifiers\":{\"Access\":{\"Case\":\"DefaultAccess\"}},\"SourceFile\":\"/Users/Matt/Documents/Masters/Dissertation/Quantum/Testing/Square_and_Multiply_Test/Program.qs\",\"Position\":{\"Item1\":374,\"Item2\":4},\"SymbolRange\":{\"Item1\":{\"Line\":1,\"Column\":11},\"Item2\":{\"Line\":1,\"Column\":20}},\"ArgumentTuple\":{\"Case\":\"QsTuple\",\"Fields\":[[{\"Case\":\"QsTupleItem\",\"Fields\":[{\"VariableName\":{\"Case\":\"ValidName\",\"Fields\":[\"xs\"]},\"Type\":{\"Case\":\"UserDefinedType\",\"Fields\":[{\"Namespace\":\"Microsoft.Quantum.Arithmetic\",\"Name\":\"LittleEndian\",\"Range\":{\"Case\":\"Value\",\"Fields\":[{\"Item1\":{\"Line\":1,\"Column\":26},\"Item2\":{\"Line\":1,\"Column\":38}}]}}]},\"InferredInformation\":{\"IsMutable\":false,\"HasLocalQuantumDependency\":false},\"Position\":{\"Case\":\"Null\"},\"Range\":{\"Item1\":{\"Line\":1,\"Column\":22},\"Item2\":{\"Line\":1,\"Column\":24}}}]},{\"Case\":\"QsTupleItem\",\"Fields\":[{\"VariableName\":{\"Case\":\"ValidName\",\"Fields\":[\"ys\"]},\"Type\":{\"Case\":\"UserDefinedType\",\"Fields\":[{\"Namespace\":\"Microsoft.Quantum.Arithmetic\",\"Name\":\"LittleEndian\",\"Range\":{\"Case\":\"Value\",\"Fields\":[{\"Item1\":{\"Line\":1,\"Column\":44},\"Item2\":{\"Line\":1,\"Column\":56}}]}}]},\"InferredInformation\":{\"IsMutable\":false,\"HasLocalQuantumDependency\":false},\"Position\":{\"Case\":\"Null\"},\"Range\":{\"Item1\":{\"Line\":1,\"Column\":40},\"Item2\":{\"Line\":1,\"Column\":42}}}]},{\"Case\":\"QsTupleItem\",\"Fields\":[{\"VariableName\":{\"Case\":\"ValidName\",\"Fields\":[\"result\"]},\"Type\":{\"Case\":\"UserDefinedType\",\"Fields\":[{\"Namespace\":\"Microsoft.Quantum.Arithmetic\",\"Name\":\"LittleEndian\",\"Range\":{\"Case\":\"Value\",\"Fields\":[{\"Item1\":{\"Line\":2,\"Column\":34},\"Item2\":{\"Line\":2,\"Column\":46}}]}}]},\"InferredInformation\":{\"IsMutable\":false,\"HasLocalQuantumDependency\":false},\"Position\":{\"Case\":\"Null\"},\"Range\":{\"Item1\":{\"Line\":2,\"Column\":26},\"Item2\":{\"Line\":2,\"Column\":32}}}]}]]},\"Signature\":{\"TypeParameters\":[],\"ArgumentType\":{\"Case\":\"TupleType\",\"Fields\":[[{\"Case\":\"UserDefinedType\",\"Fields\":[{\"Namespace\":\"Microsoft.Quantum.Arithmetic\",\"Name\":\"LittleEndian\",\"Range\":{\"Case\":\"Null\"}}]},{\"Case\":\"UserDefinedType\",\"Fields\":[{\"Namespace\":\"Microsoft.Quantum.Arithmetic\",\"Name\":\"LittleEndian\",\"Range\":{\"Case\":\"Null\"}}]},{\"Case\":\"UserDefinedType\",\"Fields\":[{\"Namespace\":\"Microsoft.Quantum.Arithmetic\",\"Name\":\"LittleEndian\",\"Range\":{\"Case\":\"Null\"}}]}]]},\"ReturnType\":{\"Case\":\"UnitType\"},\"Information\":{\"Characteristics\":{\"Case\":\"Union\",\"Fields\":[{\"Case\":\"SimpleSet\",\"Fields\":[{\"Case\":\"Adjointable\"}]},{\"Case\":\"SimpleSet\",\"Fields\":[{\"Case\":\"Controllable\"}]}]},\"InferredInformation\":{\"IsSelfAdjoint\":false,\"IsIntrinsic\":false}}},\"Documentation\":[]}")]
+[assembly: SpecializationDeclaration("{\"Kind\":{\"Case\":\"QsBody\"},\"TypeArguments\":{\"Case\":\"Null\"},\"Information\":{\"Characteristics\":{\"Case\":\"Union\",\"Fields\":[{\"Case\":\"SimpleSet\",\"Fields\":[{\"Case\":\"Adjointable\"}]},{\"Case\":\"SimpleSet\",\"Fields\":[{\"Case\":\"Controllable\"}]}]},\"InferredInformation\":{\"IsSelfAdjoint\":false,\"IsIntrinsic\":false}},\"Parent\":{\"Namespace\":\"ModularMultiplication.Testing\",\"Name\":\"MultiplyI\"},\"Attributes\":[],\"SourceFile\":\"/Users/Matt/Documents/Masters/Dissertation/Quantum/Testing/Square_and_Multiply_Test/Program.qs\",\"Position\":{\"Item1\":376,\"Item2\":8},\"HeaderRange\":{\"Item1\":{\"Line\":1,\"Column\":1},\"Item2\":{\"Line\":1,\"Column\":5}},\"Documentation\":[]}")]
+[assembly: SpecializationDeclaration("{\"Kind\":{\"Case\":\"QsAdjoint\"},\"TypeArguments\":{\"Case\":\"Null\"},\"Information\":{\"Characteristics\":{\"Case\":\"Union\",\"Fields\":[{\"Case\":\"SimpleSet\",\"Fields\":[{\"Case\":\"Adjointable\"}]},{\"Case\":\"SimpleSet\",\"Fields\":[{\"Case\":\"Controllable\"}]}]},\"InferredInformation\":{\"IsSelfAdjoint\":false,\"IsIntrinsic\":false}},\"Parent\":{\"Namespace\":\"ModularMultiplication.Testing\",\"Name\":\"MultiplyI\"},\"Attributes\":[],\"SourceFile\":\"/Users/Matt/Documents/Masters/Dissertation/Quantum/Testing/Square_and_Multiply_Test/Program.qs\",\"Position\":{\"Item1\":406,\"Item2\":8},\"HeaderRange\":{\"Item1\":{\"Line\":1,\"Column\":1},\"Item2\":{\"Line\":1,\"Column\":8}},\"Documentation\":[]}")]
+[assembly: SpecializationDeclaration("{\"Kind\":{\"Case\":\"QsControlled\"},\"TypeArguments\":{\"Case\":\"Null\"},\"Information\":{\"Characteristics\":{\"Case\":\"Union\",\"Fields\":[{\"Case\":\"SimpleSet\",\"Fields\":[{\"Case\":\"Adjointable\"}]},{\"Case\":\"SimpleSet\",\"Fields\":[{\"Case\":\"Controllable\"}]}]},\"InferredInformation\":{\"IsSelfAdjoint\":false,\"IsIntrinsic\":false}},\"Parent\":{\"Namespace\":\"ModularMultiplication.Testing\",\"Name\":\"MultiplyI\"},\"Attributes\":[],\"SourceFile\":\"/Users/Matt/Documents/Masters/Dissertation/Quantum/Testing/Square_and_Multiply_Test/Program.qs\",\"Position\":{\"Item1\":389,\"Item2\":8},\"HeaderRange\":{\"Item1\":{\"Line\":1,\"Column\":1},\"Item2\":{\"Line\":1,\"Column\":11}},\"Documentation\":[]}")]
+[assembly: SpecializationDeclaration("{\"Kind\":{\"Case\":\"QsControlledAdjoint\"},\"TypeArguments\":{\"Case\":\"Null\"},\"Information\":{\"Characteristics\":{\"Case\":\"Union\",\"Fields\":[{\"Case\":\"SimpleSet\",\"Fields\":[{\"Case\":\"Adjointable\"}]},{\"Case\":\"SimpleSet\",\"Fields\":[{\"Case\":\"Controllable\"}]}]},\"InferredInformation\":{\"IsSelfAdjoint\":false,\"IsIntrinsic\":false}},\"Parent\":{\"Namespace\":\"ModularMultiplication.Testing\",\"Name\":\"MultiplyI\"},\"Attributes\":[],\"SourceFile\":\"/Users/Matt/Documents/Masters/Dissertation/Quantum/Testing/Square_and_Multiply_Test/Program.qs\",\"Position\":{\"Item1\":407,\"Item2\":8},\"HeaderRange\":{\"Item1\":{\"Line\":1,\"Column\":1},\"Item2\":{\"Line\":1,\"Column\":19}},\"Documentation\":[]}")]
+[assembly: CallableDeclaration("{\"Kind\":{\"Case\":\"Operation\"},\"QualifiedName\":{\"Namespace\":\"ModularMultiplication.Testing\",\"Name\":\"SquareI\"},\"Attributes\":[],\"Modifiers\":{\"Access\":{\"Case\":\"DefaultAccess\"}},\"SourceFile\":\"/Users/Matt/Documents/Masters/Dissertation/Quantum/Testing/Square_and_Multiply_Test/Program.qs\",\"Position\":{\"Item1\":411,\"Item2\":4},\"SymbolRange\":{\"Item1\":{\"Line\":1,\"Column\":11},\"Item2\":{\"Line\":1,\"Column\":18}},\"ArgumentTuple\":{\"Case\":\"QsTuple\",\"Fields\":[[{\"Case\":\"QsTupleItem\",\"Fields\":[{\"VariableName\":{\"Case\":\"ValidName\",\"Fields\":[\"xs\"]},\"Type\":{\"Case\":\"UserDefinedType\",\"Fields\":[{\"Namespace\":\"Microsoft.Quantum.Arithmetic\",\"Name\":\"LittleEndian\",\"Range\":{\"Case\":\"Value\",\"Fields\":[{\"Item1\":{\"Line\":1,\"Column\":24},\"Item2\":{\"Line\":1,\"Column\":36}}]}}]},\"InferredInformation\":{\"IsMutable\":false,\"HasLocalQuantumDependency\":false},\"Position\":{\"Case\":\"Null\"},\"Range\":{\"Item1\":{\"Line\":1,\"Column\":20},\"Item2\":{\"Line\":1,\"Column\":22}}}]},{\"Case\":\"QsTupleItem\",\"Fields\":[{\"VariableName\":{\"Case\":\"ValidName\",\"Fields\":[\"result\"]},\"Type\":{\"Case\":\"UserDefinedType\",\"Fields\":[{\"Namespace\":\"Microsoft.Quantum.Arithmetic\",\"Name\":\"LittleEndian\",\"Range\":{\"Case\":\"Value\",\"Fields\":[{\"Item1\":{\"Line\":1,\"Column\":46},\"Item2\":{\"Line\":1,\"Column\":58}}]}}]},\"InferredInformation\":{\"IsMutable\":false,\"HasLocalQuantumDependency\":false},\"Position\":{\"Case\":\"Null\"},\"Range\":{\"Item1\":{\"Line\":1,\"Column\":38},\"Item2\":{\"Line\":1,\"Column\":44}}}]}]]},\"Signature\":{\"TypeParameters\":[],\"ArgumentType\":{\"Case\":\"TupleType\",\"Fields\":[[{\"Case\":\"UserDefinedType\",\"Fields\":[{\"Namespace\":\"Microsoft.Quantum.Arithmetic\",\"Name\":\"LittleEndian\",\"Range\":{\"Case\":\"Null\"}}]},{\"Case\":\"UserDefinedType\",\"Fields\":[{\"Namespace\":\"Microsoft.Quantum.Arithmetic\",\"Name\":\"LittleEndian\",\"Range\":{\"Case\":\"Null\"}}]}]]},\"ReturnType\":{\"Case\":\"UnitType\"},\"Information\":{\"Characteristics\":{\"Case\":\"Union\",\"Fields\":[{\"Case\":\"SimpleSet\",\"Fields\":[{\"Case\":\"Adjointable\"}]},{\"Case\":\"SimpleSet\",\"Fields\":[{\"Case\":\"Controllable\"}]}]},\"InferredInformation\":{\"IsSelfAdjoint\":false,\"IsIntrinsic\":false}}},\"Documentation\":[]}")]
+[assembly: SpecializationDeclaration("{\"Kind\":{\"Case\":\"QsBody\"},\"TypeArguments\":{\"Case\":\"Null\"},\"Information\":{\"Characteristics\":{\"Case\":\"Union\",\"Fields\":[{\"Case\":\"SimpleSet\",\"Fields\":[{\"Case\":\"Adjointable\"}]},{\"Case\":\"SimpleSet\",\"Fields\":[{\"Case\":\"Controllable\"}]}]},\"InferredInformation\":{\"IsSelfAdjoint\":false,\"IsIntrinsic\":false}},\"Parent\":{\"Namespace\":\"ModularMultiplication.Testing\",\"Name\":\"SquareI\"},\"Attributes\":[],\"SourceFile\":\"/Users/Matt/Documents/Masters/Dissertation/Quantum/Testing/Square_and_Multiply_Test/Program.qs\",\"Position\":{\"Item1\":412,\"Item2\":8},\"HeaderRange\":{\"Item1\":{\"Line\":1,\"Column\":1},\"Item2\":{\"Line\":1,\"Column\":5}},\"Documentation\":[]}")]
+[assembly: SpecializationDeclaration("{\"Kind\":{\"Case\":\"QsAdjoint\"},\"TypeArguments\":{\"Case\":\"Null\"},\"Information\":{\"Characteristics\":{\"Case\":\"Union\",\"Fields\":[{\"Case\":\"SimpleSet\",\"Fields\":[{\"Case\":\"Adjointable\"}]},{\"Case\":\"SimpleSet\",\"Fields\":[{\"Case\":\"Controllable\"}]}]},\"InferredInformation\":{\"IsSelfAdjoint\":false,\"IsIntrinsic\":false}},\"Parent\":{\"Namespace\":\"ModularMultiplication.Testing\",\"Name\":\"SquareI\"},\"Attributes\":[],\"SourceFile\":\"/Users/Matt/Documents/Masters/Dissertation/Quantum/Testing/Square_and_Multiply_Test/Program.qs\",\"Position\":{\"Item1\":431,\"Item2\":8},\"HeaderRange\":{\"Item1\":{\"Line\":1,\"Column\":1},\"Item2\":{\"Line\":1,\"Column\":8}},\"Documentation\":[]}")]
+[assembly: SpecializationDeclaration("{\"Kind\":{\"Case\":\"QsControlled\"},\"TypeArguments\":{\"Case\":\"Null\"},\"Information\":{\"Characteristics\":{\"Case\":\"Union\",\"Fields\":[{\"Case\":\"SimpleSet\",\"Fields\":[{\"Case\":\"Adjointable\"}]},{\"Case\":\"SimpleSet\",\"Fields\":[{\"Case\":\"Controllable\"}]}]},\"InferredInformation\":{\"IsSelfAdjoint\":false,\"IsIntrinsic\":false}},\"Parent\":{\"Namespace\":\"ModularMultiplication.Testing\",\"Name\":\"SquareI\"},\"Attributes\":[],\"SourceFile\":\"/Users/Matt/Documents/Masters/Dissertation/Quantum/Testing/Square_and_Multiply_Test/Program.qs\",\"Position\":{\"Item1\":415,\"Item2\":8},\"HeaderRange\":{\"Item1\":{\"Line\":1,\"Column\":1},\"Item2\":{\"Line\":1,\"Column\":11}},\"Documentation\":[]}")]
+[assembly: SpecializationDeclaration("{\"Kind\":{\"Case\":\"QsControlledAdjoint\"},\"TypeArguments\":{\"Case\":\"Null\"},\"Information\":{\"Characteristics\":{\"Case\":\"Union\",\"Fields\":[{\"Case\":\"SimpleSet\",\"Fields\":[{\"Case\":\"Adjointable\"}]},{\"Case\":\"SimpleSet\",\"Fields\":[{\"Case\":\"Controllable\"}]}]},\"InferredInformation\":{\"IsSelfAdjoint\":false,\"IsIntrinsic\":false}},\"Parent\":{\"Namespace\":\"ModularMultiplication.Testing\",\"Name\":\"SquareI\"},\"Attributes\":[],\"SourceFile\":\"/Users/Matt/Documents/Masters/Dissertation/Quantum/Testing/Square_and_Multiply_Test/Program.qs\",\"Position\":{\"Item1\":432,\"Item2\":8},\"HeaderRange\":{\"Item1\":{\"Line\":1,\"Column\":1},\"Item2\":{\"Line\":1,\"Column\":19}},\"Documentation\":[]}")]
+[assembly: CallableDeclaration("{\"Kind\":{\"Case\":\"Operation\"},\"QualifiedName\":{\"Namespace\":\"ModularMultiplication.Testing\",\"Name\":\"DivideI\"},\"Attributes\":[],\"Modifiers\":{\"Access\":{\"Case\":\"DefaultAccess\"}},\"SourceFile\":\"/Users/Matt/Documents/Masters/Dissertation/Quantum/Testing/Square_and_Multiply_Test/Program.qs\",\"Position\":{\"Item1\":436,\"Item2\":0},\"SymbolRange\":{\"Item1\":{\"Line\":1,\"Column\":11},\"Item2\":{\"Line\":1,\"Column\":18}},\"ArgumentTuple\":{\"Case\":\"QsTuple\",\"Fields\":[[{\"Case\":\"QsTupleItem\",\"Fields\":[{\"VariableName\":{\"Case\":\"ValidName\",\"Fields\":[\"xs\"]},\"Type\":{\"Case\":\"UserDefinedType\",\"Fields\":[{\"Namespace\":\"Microsoft.Quantum.Arithmetic\",\"Name\":\"LittleEndian\",\"Range\":{\"Case\":\"Value\",\"Fields\":[{\"Item1\":{\"Line\":1,\"Column\":24},\"Item2\":{\"Line\":1,\"Column\":36}}]}}]},\"InferredInformation\":{\"IsMutable\":false,\"HasLocalQuantumDependency\":false},\"Position\":{\"Case\":\"Null\"},\"Range\":{\"Item1\":{\"Line\":1,\"Column\":20},\"Item2\":{\"Line\":1,\"Column\":22}}}]},{\"Case\":\"QsTupleItem\",\"Fields\":[{\"VariableName\":{\"Case\":\"ValidName\",\"Fields\":[\"ys\"]},\"Type\":{\"Case\":\"UserDefinedType\",\"Fields\":[{\"Namespace\":\"Microsoft.Quantum.Arithmetic\",\"Name\":\"LittleEndian\",\"Range\":{\"Case\":\"Value\",\"Fields\":[{\"Item1\":{\"Line\":1,\"Column\":42},\"Item2\":{\"Line\":1,\"Column\":54}}]}}]},\"InferredInformation\":{\"IsMutable\":false,\"HasLocalQuantumDependency\":false},\"Position\":{\"Case\":\"Null\"},\"Range\":{\"Item1\":{\"Line\":1,\"Column\":38},\"Item2\":{\"Line\":1,\"Column\":40}}}]},{\"Case\":\"QsTupleItem\",\"Fields\":[{\"VariableName\":{\"Case\":\"ValidName\",\"Fields\":[\"result\"]},\"Type\":{\"Case\":\"UserDefinedType\",\"Fields\":[{\"Namespace\":\"Microsoft.Quantum.Arithmetic\",\"Name\":\"LittleEndian\",\"Range\":{\"Case\":\"Value\",\"Fields\":[{\"Item1\":{\"Line\":2,\"Column\":40},\"Item2\":{\"Line\":2,\"Column\":52}}]}}]},\"InferredInformation\":{\"IsMutable\":false,\"HasLocalQuantumDependency\":false},\"Position\":{\"Case\":\"Null\"},\"Range\":{\"Item1\":{\"Line\":2,\"Column\":32},\"Item2\":{\"Line\":2,\"Column\":38}}}]}]]},\"Signature\":{\"TypeParameters\":[],\"ArgumentType\":{\"Case\":\"TupleType\",\"Fields\":[[{\"Case\":\"UserDefinedType\",\"Fields\":[{\"Namespace\":\"Microsoft.Quantum.Arithmetic\",\"Name\":\"LittleEndian\",\"Range\":{\"Case\":\"Null\"}}]},{\"Case\":\"UserDefinedType\",\"Fields\":[{\"Namespace\":\"Microsoft.Quantum.Arithmetic\",\"Name\":\"LittleEndian\",\"Range\":{\"Case\":\"Null\"}}]},{\"Case\":\"UserDefinedType\",\"Fields\":[{\"Namespace\":\"Microsoft.Quantum.Arithmetic\",\"Name\":\"LittleEndian\",\"Range\":{\"Case\":\"Null\"}}]}]]},\"ReturnType\":{\"Case\":\"UnitType\"},\"Information\":{\"Characteristics\":{\"Case\":\"Union\",\"Fields\":[{\"Case\":\"SimpleSet\",\"Fields\":[{\"Case\":\"Adjointable\"}]},{\"Case\":\"SimpleSet\",\"Fields\":[{\"Case\":\"Controllable\"}]}]},\"InferredInformation\":{\"IsSelfAdjoint\":false,\"IsIntrinsic\":false}}},\"Documentation\":[]}")]
+[assembly: SpecializationDeclaration("{\"Kind\":{\"Case\":\"QsBody\"},\"TypeArguments\":{\"Case\":\"Null\"},\"Information\":{\"Characteristics\":{\"Case\":\"Union\",\"Fields\":[{\"Case\":\"SimpleSet\",\"Fields\":[{\"Case\":\"Adjointable\"}]},{\"Case\":\"SimpleSet\",\"Fields\":[{\"Case\":\"Controllable\"}]}]},\"InferredInformation\":{\"IsSelfAdjoint\":false,\"IsIntrinsic\":false}},\"Parent\":{\"Namespace\":\"ModularMultiplication.Testing\",\"Name\":\"DivideI\"},\"Attributes\":[],\"SourceFile\":\"/Users/Matt/Documents/Masters/Dissertation/Quantum/Testing/Square_and_Multiply_Test/Program.qs\",\"Position\":{\"Item1\":438,\"Item2\":8},\"HeaderRange\":{\"Item1\":{\"Line\":1,\"Column\":1},\"Item2\":{\"Line\":1,\"Column\":5}},\"Documentation\":[]}")]
+[assembly: SpecializationDeclaration("{\"Kind\":{\"Case\":\"QsAdjoint\"},\"TypeArguments\":{\"Case\":\"Null\"},\"Information\":{\"Characteristics\":{\"Case\":\"Union\",\"Fields\":[{\"Case\":\"SimpleSet\",\"Fields\":[{\"Case\":\"Adjointable\"}]},{\"Case\":\"SimpleSet\",\"Fields\":[{\"Case\":\"Controllable\"}]}]},\"InferredInformation\":{\"IsSelfAdjoint\":false,\"IsIntrinsic\":false}},\"Parent\":{\"Namespace\":\"ModularMultiplication.Testing\",\"Name\":\"DivideI\"},\"Attributes\":[],\"SourceFile\":\"/Users/Matt/Documents/Masters/Dissertation/Quantum/Testing/Square_and_Multiply_Test/Program.qs\",\"Position\":{\"Item1\":461,\"Item2\":8},\"HeaderRange\":{\"Item1\":{\"Line\":1,\"Column\":1},\"Item2\":{\"Line\":1,\"Column\":8}},\"Documentation\":[]}")]
+[assembly: SpecializationDeclaration("{\"Kind\":{\"Case\":\"QsControlled\"},\"TypeArguments\":{\"Case\":\"Null\"},\"Information\":{\"Characteristics\":{\"Case\":\"Union\",\"Fields\":[{\"Case\":\"SimpleSet\",\"Fields\":[{\"Case\":\"Adjointable\"}]},{\"Case\":\"SimpleSet\",\"Fields\":[{\"Case\":\"Controllable\"}]}]},\"InferredInformation\":{\"IsSelfAdjoint\":false,\"IsIntrinsic\":false}},\"Parent\":{\"Namespace\":\"ModularMultiplication.Testing\",\"Name\":\"DivideI\"},\"Attributes\":[],\"SourceFile\":\"/Users/Matt/Documents/Masters/Dissertation/Quantum/Testing/Square_and_Multiply_Test/Program.qs\",\"Position\":{\"Item1\":441,\"Item2\":8},\"HeaderRange\":{\"Item1\":{\"Line\":1,\"Column\":1},\"Item2\":{\"Line\":1,\"Column\":11}},\"Documentation\":[]}")]
+[assembly: SpecializationDeclaration("{\"Kind\":{\"Case\":\"QsControlledAdjoint\"},\"TypeArguments\":{\"Case\":\"Null\"},\"Information\":{\"Characteristics\":{\"Case\":\"Union\",\"Fields\":[{\"Case\":\"SimpleSet\",\"Fields\":[{\"Case\":\"Adjointable\"}]},{\"Case\":\"SimpleSet\",\"Fields\":[{\"Case\":\"Controllable\"}]}]},\"InferredInformation\":{\"IsSelfAdjoint\":false,\"IsIntrinsic\":false}},\"Parent\":{\"Namespace\":\"ModularMultiplication.Testing\",\"Name\":\"DivideI\"},\"Attributes\":[],\"SourceFile\":\"/Users/Matt/Documents/Masters/Dissertation/Quantum/Testing/Square_and_Multiply_Test/Program.qs\",\"Position\":{\"Item1\":462,\"Item2\":8},\"HeaderRange\":{\"Item1\":{\"Line\":1,\"Column\":1},\"Item2\":{\"Line\":1,\"Column\":19}},\"Documentation\":[]}")]
 #line hidden
 namespace ModularMultiplication.Testing
 {
@@ -118,7 +116,7 @@ namespace ModularMultiplication.Testing
             set;
         }
 
-        protected ICallable<(IQArray<Qubit>,IQArray<Qubit>,IQArray<Qubit>,IQArray<Qubit>), QVoid> SquareAndMultiplyNew
+        protected ICallable<(IQArray<Qubit>,IQArray<Qubit>,IQArray<Qubit>,IQArray<Qubit>), QVoid> SquareAndMultiply
         {
             get;
             set;
@@ -196,7 +194,7 @@ namespace ModularMultiplication.Testing
                     }
 
 #line 30 "/Users/Matt/Documents/Masters/Dissertation/Quantum/Testing/Square_and_Multiply_Test/Program.qs"
-                    SquareAndMultiplyNew.Apply((a, m, j, t));
+                    SquareAndMultiply.Apply((a, m, j, t));
 #line 34 "/Users/Matt/Documents/Masters/Dissertation/Quantum/Testing/Square_and_Multiply_Test/Program.qs"
                     var result = MicrosoftQuantumArithmeticMeasureInteger.Apply(new Microsoft.Quantum.Arithmetic.LittleEndian(t));
 #line 35 "/Users/Matt/Documents/Masters/Dissertation/Quantum/Testing/Square_and_Multiply_Test/Program.qs"
@@ -236,7 +234,7 @@ namespace ModularMultiplication.Testing
             this.Release = this.Factory.Get<Release>(typeof(Microsoft.Quantum.Intrinsic.Release));
             this.Length = this.Factory.Get<ICallable>(typeof(Microsoft.Quantum.Core.Length<>));
             this.MicrosoftQuantumIntrinsicX = this.Factory.Get<IUnitary<Qubit>>(typeof(Microsoft.Quantum.Intrinsic.X));
-            this.SquareAndMultiplyNew = this.Factory.Get<ICallable<(IQArray<Qubit>,IQArray<Qubit>,IQArray<Qubit>,IQArray<Qubit>), QVoid>>(typeof(SquareAndMultiplyNew));
+            this.SquareAndMultiply = this.Factory.Get<ICallable<(IQArray<Qubit>,IQArray<Qubit>,IQArray<Qubit>,IQArray<Qubit>), QVoid>>(typeof(SquareAndMultiply));
             this.MicrosoftQuantumArithmeticMeasureInteger = this.Factory.Get<ICallable<Microsoft.Quantum.Arithmetic.LittleEndian, Int64>>(typeof(Microsoft.Quantum.Arithmetic.MeasureInteger));
             this.MicrosoftQuantumArithmeticLittleEndian = this.Factory.Get<ICallable<IQArray<Qubit>, Microsoft.Quantum.Arithmetic.LittleEndian>>(typeof(Microsoft.Quantum.Arithmetic.LittleEndian));
             this.ResetAll = this.Factory.Get<ICallable<IQArray<Qubit>, QVoid>>(typeof(Microsoft.Quantum.Intrinsic.ResetAll));
@@ -271,7 +269,7 @@ namespace ModularMultiplication.Testing
             set;
         }
 
-        protected ICallable<(IQArray<Qubit>,IQArray<Qubit>,IQArray<Qubit>,IQArray<Qubit>), QVoid> SquareAndMultiplyNew
+        protected ICallable<(IQArray<Qubit>,IQArray<Qubit>,IQArray<Qubit>,IQArray<Qubit>), QVoid> SquareAndMultiply
         {
             get;
             set;
@@ -295,7 +293,7 @@ namespace ModularMultiplication.Testing
                 try
                 {
 #line 45 "/Users/Matt/Documents/Masters/Dissertation/Quantum/Testing/Square_and_Multiply_Test/Program.qs"
-                    SquareAndMultiplyNew.Apply((a, m, j, t));
+                    SquareAndMultiply.Apply((a, m, j, t));
 #line 47 "/Users/Matt/Documents/Masters/Dissertation/Quantum/Testing/Square_and_Multiply_Test/Program.qs"
                     ResetAll.Apply(QArray<Qubit>.Add(QArray<Qubit>.Add(QArray<Qubit>.Add(a, j), m), t));
                 }
@@ -331,7 +329,7 @@ namespace ModularMultiplication.Testing
         {
             this.Allocate = this.Factory.Get<Allocate>(typeof(Microsoft.Quantum.Intrinsic.Allocate));
             this.Release = this.Factory.Get<Release>(typeof(Microsoft.Quantum.Intrinsic.Release));
-            this.SquareAndMultiplyNew = this.Factory.Get<ICallable<(IQArray<Qubit>,IQArray<Qubit>,IQArray<Qubit>,IQArray<Qubit>), QVoid>>(typeof(SquareAndMultiplyNew));
+            this.SquareAndMultiply = this.Factory.Get<ICallable<(IQArray<Qubit>,IQArray<Qubit>,IQArray<Qubit>,IQArray<Qubit>), QVoid>>(typeof(SquareAndMultiply));
             this.ResetAll = this.Factory.Get<ICallable<IQArray<Qubit>, QVoid>>(typeof(Microsoft.Quantum.Intrinsic.ResetAll));
         }
 
@@ -343,10 +341,10 @@ namespace ModularMultiplication.Testing
         }
     }
 
-    [SourceLocation("/Users/Matt/Documents/Masters/Dissertation/Quantum/Testing/Square_and_Multiply_Test/Program.qs", OperationFunctor.Body, 52, 95)]
-    public partial class SquareAndMultiplyNew : Operation<(IQArray<Qubit>,IQArray<Qubit>,IQArray<Qubit>,IQArray<Qubit>), QVoid>, ICallable
+    [SourceLocation("/Users/Matt/Documents/Masters/Dissertation/Quantum/Testing/Square_and_Multiply_Test/Program.qs", OperationFunctor.Body, 52, 88)]
+    public partial class SquareAndMultiply : Operation<(IQArray<Qubit>,IQArray<Qubit>,IQArray<Qubit>,IQArray<Qubit>), QVoid>, ICallable
     {
-        public SquareAndMultiplyNew(IOperationFactory m) : base(m)
+        public SquareAndMultiply(IOperationFactory m) : base(m)
         {
         }
 
@@ -365,8 +363,8 @@ namespace ModularMultiplication.Testing
             }
         }
 
-        String ICallable.Name => "SquareAndMultiplyNew";
-        String ICallable.FullName => "ModularMultiplication.Testing.SquareAndMultiplyNew";
+        String ICallable.Name => "SquareAndMultiply";
+        String ICallable.FullName => "ModularMultiplication.Testing.SquareAndMultiply";
         protected ICallable Length
         {
             get;
@@ -456,17 +454,17 @@ namespace ModularMultiplication.Testing
                     MicrosoftQuantumCanonApplyToEachA.Apply((MicrosoftQuantumIntrinsicX, j));
 #line 68 "/Users/Matt/Documents/Masters/Dissertation/Quantum/Testing/Square_and_Multiply_Test/Program.qs"
                     MicrosoftQuantumIntrinsicX.Apply(az);
-#line 72 "/Users/Matt/Documents/Masters/Dissertation/Quantum/Testing/Square_and_Multiply_Test/Program.qs"
+#line 70 "/Users/Matt/Documents/Masters/Dissertation/Quantum/Testing/Square_and_Multiply_Test/Program.qs"
                     arr.Modify(new QRange(0L, (arr.Length - 1L)), Pebble.Apply((1L, numAnc, arr?.Copy(), a, m, j, result, v, c, z, az, ld)));
-#line 73 "/Users/Matt/Documents/Masters/Dissertation/Quantum/Testing/Square_and_Multiply_Test/Program.qs"
+#line 71 "/Users/Matt/Documents/Masters/Dissertation/Quantum/Testing/Square_and_Multiply_Test/Program.qs"
                     arr.Modify(new QRange(0L, (arr.Length - 1L)), Unpebble.Apply((1L, numAnc, arr?.Copy(), a, m, j, result, v, c, z, az, ld)));
-#line 81 "/Users/Matt/Documents/Masters/Dissertation/Quantum/Testing/Square_and_Multiply_Test/Program.qs"
+#line 74 "/Users/Matt/Documents/Masters/Dissertation/Quantum/Testing/Square_and_Multiply_Test/Program.qs"
                     MicrosoftQuantumIntrinsicX.Apply(az);
-#line 82 "/Users/Matt/Documents/Masters/Dissertation/Quantum/Testing/Square_and_Multiply_Test/Program.qs"
+#line 75 "/Users/Matt/Documents/Masters/Dissertation/Quantum/Testing/Square_and_Multiply_Test/Program.qs"
                     MicrosoftQuantumCanonApplyToEachA.Apply((MicrosoftQuantumIntrinsicX, j));
-#line 83 "/Users/Matt/Documents/Masters/Dissertation/Quantum/Testing/Square_and_Multiply_Test/Program.qs"
+#line 76 "/Users/Matt/Documents/Masters/Dissertation/Quantum/Testing/Square_and_Multiply_Test/Program.qs"
                     MicrosoftQuantumIntrinsicX.Controlled.Apply((j, az));
-#line 84 "/Users/Matt/Documents/Masters/Dissertation/Quantum/Testing/Square_and_Multiply_Test/Program.qs"
+#line 77 "/Users/Matt/Documents/Masters/Dissertation/Quantum/Testing/Square_and_Multiply_Test/Program.qs"
                     MicrosoftQuantumCanonApplyToEachA.Apply((MicrosoftQuantumIntrinsicX, j));
                 }
 #line hidden
@@ -517,11 +515,11 @@ namespace ModularMultiplication.Testing
         public override IApplyData __dataOut(QVoid data) => data;
         public static System.Threading.Tasks.Task<QVoid> Run(IOperationFactory __m__, IQArray<Qubit> a, IQArray<Qubit> m, IQArray<Qubit> j, IQArray<Qubit> result)
         {
-            return __m__.Run<SquareAndMultiplyNew, (IQArray<Qubit>,IQArray<Qubit>,IQArray<Qubit>,IQArray<Qubit>), QVoid>((a, m, j, result));
+            return __m__.Run<SquareAndMultiply, (IQArray<Qubit>,IQArray<Qubit>,IQArray<Qubit>,IQArray<Qubit>), QVoid>((a, m, j, result));
         }
     }
 
-    [SourceLocation("/Users/Matt/Documents/Masters/Dissertation/Quantum/Testing/Square_and_Multiply_Test/Program.qs", OperationFunctor.Body, 95, 114)]
+    [SourceLocation("/Users/Matt/Documents/Masters/Dissertation/Quantum/Testing/Square_and_Multiply_Test/Program.qs", OperationFunctor.Body, 88, 107)]
     public partial class Pebble : Operation<(Int64,Int64,IQArray<Int64>,IQArray<Qubit>,IQArray<Qubit>,IQArray<Qubit>,IQArray<Qubit>,IQArray<Qubit>,Qubit,Qubit,Qubit,Qubit), IQArray<Int64>>, ICallable
     {
         public Pebble(IOperationFactory m) : base(m)
@@ -578,32 +576,32 @@ namespace ModularMultiplication.Testing
         public override Func<(Int64,Int64,IQArray<Int64>,IQArray<Qubit>,IQArray<Qubit>,IQArray<Qubit>,IQArray<Qubit>,IQArray<Qubit>,Qubit,Qubit,Qubit,Qubit), IQArray<Int64>> Body => (__in__) =>
         {
             var (s,n,arr,a,m,j,result,v,c,z,az,ld) = __in__;
-#line 96 "/Users/Matt/Documents/Masters/Dissertation/Quantum/Testing/Square_and_Multiply_Test/Program.qs"
+#line 89 "/Users/Matt/Documents/Masters/Dissertation/Quantum/Testing/Square_and_Multiply_Test/Program.qs"
             var narr = QArray<Int64>.Create(0L);
-#line 97 "/Users/Matt/Documents/Masters/Dissertation/Quantum/Testing/Square_and_Multiply_Test/Program.qs"
+#line 90 "/Users/Matt/Documents/Masters/Dissertation/Quantum/Testing/Square_and_Multiply_Test/Program.qs"
             foreach (var i in new QRange(0L, (arr.Length - 1L)))
 #line hidden
             {
-#line 98 "/Users/Matt/Documents/Masters/Dissertation/Quantum/Testing/Square_and_Multiply_Test/Program.qs"
+#line 91 "/Users/Matt/Documents/Masters/Dissertation/Quantum/Testing/Square_and_Multiply_Test/Program.qs"
                 narr = QArray<Int64>.Add(narr, new QArray<Int64>(arr[i]));
             }
 
-#line 100 "/Users/Matt/Documents/Masters/Dissertation/Quantum/Testing/Square_and_Multiply_Test/Program.qs"
+#line 93 "/Users/Matt/Documents/Masters/Dissertation/Quantum/Testing/Square_and_Multiply_Test/Program.qs"
             if ((n != 0L))
             {
-#line 101 "/Users/Matt/Documents/Masters/Dissertation/Quantum/Testing/Square_and_Multiply_Test/Program.qs"
+#line 94 "/Users/Matt/Documents/Masters/Dissertation/Quantum/Testing/Square_and_Multiply_Test/Program.qs"
                 var t = (s + MicrosoftQuantumMathPowI.Apply((2L, (n - 1L))));
-#line 102 "/Users/Matt/Documents/Masters/Dissertation/Quantum/Testing/Square_and_Multiply_Test/Program.qs"
+#line 95 "/Users/Matt/Documents/Masters/Dissertation/Quantum/Testing/Square_and_Multiply_Test/Program.qs"
                 narr.Modify(new QRange(0L, (narr.Length - 1L)), self.Apply<IQArray<Int64>>((s, (n - 1L), narr?.Copy(), a, m, j, result, v, c, z, az, ld)));
-#line 104 "/Users/Matt/Documents/Masters/Dissertation/Quantum/Testing/Square_and_Multiply_Test/Program.qs"
+#line 97 "/Users/Matt/Documents/Masters/Dissertation/Quantum/Testing/Square_and_Multiply_Test/Program.qs"
                 narr.Modify(new QRange(0L, (narr.Length - 1L)), SquareAndMultiplyStep.Apply((t, narr?.Copy(), 1L, a, m, j, result, v, c, z, az, ld)));
-#line 107 "/Users/Matt/Documents/Masters/Dissertation/Quantum/Testing/Square_and_Multiply_Test/Program.qs"
+#line 100 "/Users/Matt/Documents/Masters/Dissertation/Quantum/Testing/Square_and_Multiply_Test/Program.qs"
                 narr.Modify(new QRange(0L, (narr.Length - 1L)), Unpebble.Apply((s, (n - 1L), narr?.Copy(), a, m, j, result, v, c, z, az, ld)));
-#line 108 "/Users/Matt/Documents/Masters/Dissertation/Quantum/Testing/Square_and_Multiply_Test/Program.qs"
+#line 101 "/Users/Matt/Documents/Masters/Dissertation/Quantum/Testing/Square_and_Multiply_Test/Program.qs"
                 narr.Modify(new QRange(0L, (narr.Length - 1L)), self.Apply<IQArray<Int64>>((t, (n - 1L), narr?.Copy(), a, m, j, result, v, c, z, az, ld)));
             }
 
-#line 111 "/Users/Matt/Documents/Masters/Dissertation/Quantum/Testing/Square_and_Multiply_Test/Program.qs"
+#line 104 "/Users/Matt/Documents/Masters/Dissertation/Quantum/Testing/Square_and_Multiply_Test/Program.qs"
             return narr;
         }
 
@@ -625,7 +623,7 @@ namespace ModularMultiplication.Testing
         }
     }
 
-    [SourceLocation("/Users/Matt/Documents/Masters/Dissertation/Quantum/Testing/Square_and_Multiply_Test/Program.qs", OperationFunctor.Body, 114, 132)]
+    [SourceLocation("/Users/Matt/Documents/Masters/Dissertation/Quantum/Testing/Square_and_Multiply_Test/Program.qs", OperationFunctor.Body, 107, 125)]
     public partial class Unpebble : Operation<(Int64,Int64,IQArray<Int64>,IQArray<Qubit>,IQArray<Qubit>,IQArray<Qubit>,IQArray<Qubit>,IQArray<Qubit>,Qubit,Qubit,Qubit,Qubit), IQArray<Int64>>, ICallable
     {
         public Unpebble(IOperationFactory m) : base(m)
@@ -682,32 +680,32 @@ namespace ModularMultiplication.Testing
         public override Func<(Int64,Int64,IQArray<Int64>,IQArray<Qubit>,IQArray<Qubit>,IQArray<Qubit>,IQArray<Qubit>,IQArray<Qubit>,Qubit,Qubit,Qubit,Qubit), IQArray<Int64>> Body => (__in__) =>
         {
             var (s,n,arr,a,m,j,result,v,c,z,az,ld) = __in__;
-#line 115 "/Users/Matt/Documents/Masters/Dissertation/Quantum/Testing/Square_and_Multiply_Test/Program.qs"
+#line 108 "/Users/Matt/Documents/Masters/Dissertation/Quantum/Testing/Square_and_Multiply_Test/Program.qs"
             var narr = QArray<Int64>.Create(0L);
-#line 116 "/Users/Matt/Documents/Masters/Dissertation/Quantum/Testing/Square_and_Multiply_Test/Program.qs"
+#line 109 "/Users/Matt/Documents/Masters/Dissertation/Quantum/Testing/Square_and_Multiply_Test/Program.qs"
             foreach (var i in new QRange(0L, (arr.Length - 1L)))
 #line hidden
             {
-#line 117 "/Users/Matt/Documents/Masters/Dissertation/Quantum/Testing/Square_and_Multiply_Test/Program.qs"
+#line 110 "/Users/Matt/Documents/Masters/Dissertation/Quantum/Testing/Square_and_Multiply_Test/Program.qs"
                 narr = QArray<Int64>.Add(narr, new QArray<Int64>(arr[i]));
             }
 
-#line 119 "/Users/Matt/Documents/Masters/Dissertation/Quantum/Testing/Square_and_Multiply_Test/Program.qs"
+#line 112 "/Users/Matt/Documents/Masters/Dissertation/Quantum/Testing/Square_and_Multiply_Test/Program.qs"
             if ((n != 0L))
             {
-#line 120 "/Users/Matt/Documents/Masters/Dissertation/Quantum/Testing/Square_and_Multiply_Test/Program.qs"
+#line 113 "/Users/Matt/Documents/Masters/Dissertation/Quantum/Testing/Square_and_Multiply_Test/Program.qs"
                 var t = (s + MicrosoftQuantumMathPowI.Apply((2L, (n - 1L))));
-#line 121 "/Users/Matt/Documents/Masters/Dissertation/Quantum/Testing/Square_and_Multiply_Test/Program.qs"
+#line 114 "/Users/Matt/Documents/Masters/Dissertation/Quantum/Testing/Square_and_Multiply_Test/Program.qs"
                 narr.Modify(new QRange(0L, (narr.Length - 1L)), self.Apply<IQArray<Int64>>((t, (n - 1L), narr?.Copy(), a, m, j, result, v, c, z, az, ld)));
-#line 122 "/Users/Matt/Documents/Masters/Dissertation/Quantum/Testing/Square_and_Multiply_Test/Program.qs"
+#line 115 "/Users/Matt/Documents/Masters/Dissertation/Quantum/Testing/Square_and_Multiply_Test/Program.qs"
                 narr.Modify(new QRange(0L, (narr.Length - 1L)), Pebble.Apply((s, (n - 1L), narr?.Copy(), a, m, j, result, v, c, z, az, ld)));
-#line 124 "/Users/Matt/Documents/Masters/Dissertation/Quantum/Testing/Square_and_Multiply_Test/Program.qs"
+#line 117 "/Users/Matt/Documents/Masters/Dissertation/Quantum/Testing/Square_and_Multiply_Test/Program.qs"
                 narr.Modify(new QRange(0L, (narr.Length - 1L)), SquareAndMultiplyStep.Apply((t, narr?.Copy(), 0L, a, m, j, result, v, c, z, az, ld)));
-#line 127 "/Users/Matt/Documents/Masters/Dissertation/Quantum/Testing/Square_and_Multiply_Test/Program.qs"
+#line 120 "/Users/Matt/Documents/Masters/Dissertation/Quantum/Testing/Square_and_Multiply_Test/Program.qs"
                 narr.Modify(new QRange(0L, (narr.Length - 1L)), self.Apply<IQArray<Int64>>((s, (n - 1L), narr?.Copy(), a, m, j, result, v, c, z, az, ld)));
             }
 
-#line 129 "/Users/Matt/Documents/Masters/Dissertation/Quantum/Testing/Square_and_Multiply_Test/Program.qs"
+#line 122 "/Users/Matt/Documents/Masters/Dissertation/Quantum/Testing/Square_and_Multiply_Test/Program.qs"
             return narr;
         }
 
@@ -729,7 +727,7 @@ namespace ModularMultiplication.Testing
         }
     }
 
-    [SourceLocation("/Users/Matt/Documents/Masters/Dissertation/Quantum/Testing/Square_and_Multiply_Test/Program.qs", OperationFunctor.Body, 132, 315)]
+    [SourceLocation("/Users/Matt/Documents/Masters/Dissertation/Quantum/Testing/Square_and_Multiply_Test/Program.qs", OperationFunctor.Body, 125, 307)]
     public partial class SquareAndMultiplyStep : Operation<(Int64,IQArray<Int64>,Int64,IQArray<Qubit>,IQArray<Qubit>,IQArray<Qubit>,IQArray<Qubit>,IQArray<Qubit>,Qubit,Qubit,Qubit,Qubit), IQArray<Int64>>, ICallable
     {
         public SquareAndMultiplyStep(IOperationFactory m) : base(m)
@@ -792,39 +790,39 @@ namespace ModularMultiplication.Testing
         public override Func<(Int64,IQArray<Int64>,Int64,IQArray<Qubit>,IQArray<Qubit>,IQArray<Qubit>,IQArray<Qubit>,IQArray<Qubit>,Qubit,Qubit,Qubit,Qubit), IQArray<Int64>> Body => (__in__) =>
         {
             var (t,arr,d,a,m,j,result,v,c,z,az,ld) = __in__;
-#line 136 "/Users/Matt/Documents/Masters/Dissertation/Quantum/Testing/Square_and_Multiply_Test/Program.qs"
+#line 129 "/Users/Matt/Documents/Masters/Dissertation/Quantum/Testing/Square_and_Multiply_Test/Program.qs"
             var narr = QArray<Int64>.Create(0L);
-#line 137 "/Users/Matt/Documents/Masters/Dissertation/Quantum/Testing/Square_and_Multiply_Test/Program.qs"
+#line 130 "/Users/Matt/Documents/Masters/Dissertation/Quantum/Testing/Square_and_Multiply_Test/Program.qs"
             foreach (var k in new QRange(0L, (arr.Length - 1L)))
 #line hidden
             {
-#line 138 "/Users/Matt/Documents/Masters/Dissertation/Quantum/Testing/Square_and_Multiply_Test/Program.qs"
+#line 131 "/Users/Matt/Documents/Masters/Dissertation/Quantum/Testing/Square_and_Multiply_Test/Program.qs"
                 narr = QArray<Int64>.Add(narr, new QArray<Int64>(arr[k]));
             }
 
-#line 142 "/Users/Matt/Documents/Masters/Dissertation/Quantum/Testing/Square_and_Multiply_Test/Program.qs"
+#line 135 "/Users/Matt/Documents/Masters/Dissertation/Quantum/Testing/Square_and_Multiply_Test/Program.qs"
             var next = 0L;
-#line 143 "/Users/Matt/Documents/Masters/Dissertation/Quantum/Testing/Square_and_Multiply_Test/Program.qs"
+#line 136 "/Users/Matt/Documents/Masters/Dissertation/Quantum/Testing/Square_and_Multiply_Test/Program.qs"
             var curr = 0L;
-#line 144 "/Users/Matt/Documents/Masters/Dissertation/Quantum/Testing/Square_and_Multiply_Test/Program.qs"
+#line 137 "/Users/Matt/Documents/Masters/Dissertation/Quantum/Testing/Square_and_Multiply_Test/Program.qs"
             var lenA = a.Length;
-#line 149 "/Users/Matt/Documents/Masters/Dissertation/Quantum/Testing/Square_and_Multiply_Test/Program.qs"
+#line 142 "/Users/Matt/Documents/Masters/Dissertation/Quantum/Testing/Square_and_Multiply_Test/Program.qs"
             var found = false;
-#line 150 "/Users/Matt/Documents/Masters/Dissertation/Quantum/Testing/Square_and_Multiply_Test/Program.qs"
+#line 143 "/Users/Matt/Documents/Masters/Dissertation/Quantum/Testing/Square_and_Multiply_Test/Program.qs"
             var i = 0L;
-#line 151 "/Users/Matt/Documents/Masters/Dissertation/Quantum/Testing/Square_and_Multiply_Test/Program.qs"
+#line 144 "/Users/Matt/Documents/Masters/Dissertation/Quantum/Testing/Square_and_Multiply_Test/Program.qs"
             while (true)
             {
-#line 152 "/Users/Matt/Documents/Masters/Dissertation/Quantum/Testing/Square_and_Multiply_Test/Program.qs"
+#line 145 "/Users/Matt/Documents/Masters/Dissertation/Quantum/Testing/Square_and_Multiply_Test/Program.qs"
                 if ((arr[i] == (t - 1L)))
                 {
-#line 153 "/Users/Matt/Documents/Masters/Dissertation/Quantum/Testing/Square_and_Multiply_Test/Program.qs"
+#line 146 "/Users/Matt/Documents/Masters/Dissertation/Quantum/Testing/Square_and_Multiply_Test/Program.qs"
                     curr = i;
-#line 154 "/Users/Matt/Documents/Masters/Dissertation/Quantum/Testing/Square_and_Multiply_Test/Program.qs"
+#line 147 "/Users/Matt/Documents/Masters/Dissertation/Quantum/Testing/Square_and_Multiply_Test/Program.qs"
                     found = true;
                 }
 
-#line 156 "/Users/Matt/Documents/Masters/Dissertation/Quantum/Testing/Square_and_Multiply_Test/Program.qs"
+#line 149 "/Users/Matt/Documents/Masters/Dissertation/Quantum/Testing/Square_and_Multiply_Test/Program.qs"
                 i = (i + 1L);
                 if ((found == true))
                 {
@@ -835,26 +833,26 @@ namespace ModularMultiplication.Testing
                 }
             }
 
-#line 160 "/Users/Matt/Documents/Masters/Dissertation/Quantum/Testing/Square_and_Multiply_Test/Program.qs"
+#line 153 "/Users/Matt/Documents/Masters/Dissertation/Quantum/Testing/Square_and_Multiply_Test/Program.qs"
             if ((d == 1L))
             {
-#line 163 "/Users/Matt/Documents/Masters/Dissertation/Quantum/Testing/Square_and_Multiply_Test/Program.qs"
+#line 156 "/Users/Matt/Documents/Masters/Dissertation/Quantum/Testing/Square_and_Multiply_Test/Program.qs"
                 found = false;
-#line 164 "/Users/Matt/Documents/Masters/Dissertation/Quantum/Testing/Square_and_Multiply_Test/Program.qs"
+#line 157 "/Users/Matt/Documents/Masters/Dissertation/Quantum/Testing/Square_and_Multiply_Test/Program.qs"
                 i = 0L;
-#line 165 "/Users/Matt/Documents/Masters/Dissertation/Quantum/Testing/Square_and_Multiply_Test/Program.qs"
+#line 158 "/Users/Matt/Documents/Masters/Dissertation/Quantum/Testing/Square_and_Multiply_Test/Program.qs"
                 while (true)
                 {
-#line 166 "/Users/Matt/Documents/Masters/Dissertation/Quantum/Testing/Square_and_Multiply_Test/Program.qs"
+#line 159 "/Users/Matt/Documents/Masters/Dissertation/Quantum/Testing/Square_and_Multiply_Test/Program.qs"
                     if ((arr[i] == 0L))
                     {
-#line 167 "/Users/Matt/Documents/Masters/Dissertation/Quantum/Testing/Square_and_Multiply_Test/Program.qs"
+#line 160 "/Users/Matt/Documents/Masters/Dissertation/Quantum/Testing/Square_and_Multiply_Test/Program.qs"
                         next = i;
-#line 168 "/Users/Matt/Documents/Masters/Dissertation/Quantum/Testing/Square_and_Multiply_Test/Program.qs"
+#line 161 "/Users/Matt/Documents/Masters/Dissertation/Quantum/Testing/Square_and_Multiply_Test/Program.qs"
                         found = true;
                     }
 
-#line 170 "/Users/Matt/Documents/Masters/Dissertation/Quantum/Testing/Square_and_Multiply_Test/Program.qs"
+#line 163 "/Users/Matt/Documents/Masters/Dissertation/Quantum/Testing/Square_and_Multiply_Test/Program.qs"
                     i = (i + 1L);
                     if ((found == true))
                     {
@@ -865,87 +863,87 @@ namespace ModularMultiplication.Testing
                     }
                 }
 
-#line 174 "/Users/Matt/Documents/Masters/Dissertation/Quantum/Testing/Square_and_Multiply_Test/Program.qs"
+#line 167 "/Users/Matt/Documents/Masters/Dissertation/Quantum/Testing/Square_and_Multiply_Test/Program.qs"
                 narr.Modify(next, (narr[next] + (narr[curr] + 1L)));
-#line 178 "/Users/Matt/Documents/Masters/Dissertation/Quantum/Testing/Square_and_Multiply_Test/Program.qs"
+#line 171 "/Users/Matt/Documents/Masters/Dissertation/Quantum/Testing/Square_and_Multiply_Test/Program.qs"
                 if (((narr[next] - 1L) <= (j.Length - 1L)))
                 {
-#line 182 "/Users/Matt/Documents/Masters/Dissertation/Quantum/Testing/Square_and_Multiply_Test/Program.qs"
+#line 175 "/Users/Matt/Documents/Masters/Dissertation/Quantum/Testing/Square_and_Multiply_Test/Program.qs"
                     MicrosoftQuantumCanonApplyToEachA.Apply((MicrosoftQuantumIntrinsicX, j?.Slice(new QRange(((j.Length - 1L) - narr[curr]), (j.Length - 1L)))));
-#line 183 "/Users/Matt/Documents/Masters/Dissertation/Quantum/Testing/Square_and_Multiply_Test/Program.qs"
+#line 176 "/Users/Matt/Documents/Masters/Dissertation/Quantum/Testing/Square_and_Multiply_Test/Program.qs"
                     MicrosoftQuantumIntrinsicX.Controlled.Apply((j?.Slice(new QRange(((j.Length - 1L) - narr[curr]), (j.Length - 1L))), z));
-#line 184 "/Users/Matt/Documents/Masters/Dissertation/Quantum/Testing/Square_and_Multiply_Test/Program.qs"
+#line 177 "/Users/Matt/Documents/Masters/Dissertation/Quantum/Testing/Square_and_Multiply_Test/Program.qs"
                     MicrosoftQuantumCanonApplyToEachA.Apply((MicrosoftQuantumIntrinsicX, j?.Slice(new QRange(((j.Length - 1L) - narr[curr]), (j.Length - 1L)))));
-#line 185 "/Users/Matt/Documents/Masters/Dissertation/Quantum/Testing/Square_and_Multiply_Test/Program.qs"
+#line 178 "/Users/Matt/Documents/Masters/Dissertation/Quantum/Testing/Square_and_Multiply_Test/Program.qs"
                     MicrosoftQuantumIntrinsicX.Apply(z);
-#line 189 "/Users/Matt/Documents/Masters/Dissertation/Quantum/Testing/Square_and_Multiply_Test/Program.qs"
+#line 182 "/Users/Matt/Documents/Masters/Dissertation/Quantum/Testing/Square_and_Multiply_Test/Program.qs"
                     MicrosoftQuantumCanonApplyToEachA.Apply((MicrosoftQuantumIntrinsicX, j?.Slice(new QRange(((j.Length - 1L) - (narr[curr] - 1L)), (j.Length - 1L)))));
-#line 190 "/Users/Matt/Documents/Masters/Dissertation/Quantum/Testing/Square_and_Multiply_Test/Program.qs"
+#line 183 "/Users/Matt/Documents/Masters/Dissertation/Quantum/Testing/Square_and_Multiply_Test/Program.qs"
                     MicrosoftQuantumIntrinsicX.Controlled.Apply((j?.Slice(new QRange(((j.Length - 1L) - (narr[curr] - 1L)), (j.Length - 1L))), ld));
-#line 191 "/Users/Matt/Documents/Masters/Dissertation/Quantum/Testing/Square_and_Multiply_Test/Program.qs"
+#line 184 "/Users/Matt/Documents/Masters/Dissertation/Quantum/Testing/Square_and_Multiply_Test/Program.qs"
                     MicrosoftQuantumCanonApplyToEachA.Apply((MicrosoftQuantumIntrinsicX, j?.Slice(new QRange(((j.Length - 1L) - (narr[curr] - 1L)), (j.Length - 1L)))));
-#line 192 "/Users/Matt/Documents/Masters/Dissertation/Quantum/Testing/Square_and_Multiply_Test/Program.qs"
+#line 185 "/Users/Matt/Documents/Masters/Dissertation/Quantum/Testing/Square_and_Multiply_Test/Program.qs"
                     MicrosoftQuantumIntrinsicX.Apply(ld);
-#line 197 "/Users/Matt/Documents/Masters/Dissertation/Quantum/Testing/Square_and_Multiply_Test/Program.qs"
+#line 190 "/Users/Matt/Documents/Masters/Dissertation/Quantum/Testing/Square_and_Multiply_Test/Program.qs"
                     MicrosoftQuantumIntrinsicX.Controlled.Apply((new QArray<Qubit>(j[((j.Length - 1L) - narr[curr])]), c));
-#line 201 "/Users/Matt/Documents/Masters/Dissertation/Quantum/Testing/Square_and_Multiply_Test/Program.qs"
+#line 194 "/Users/Matt/Documents/Masters/Dissertation/Quantum/Testing/Square_and_Multiply_Test/Program.qs"
                     SquareAndMultiplyIteration.Controlled.Apply((new QArray<Qubit>(az), (a, QArray<Qubit>.Add(a, v)?.Slice(new QRange((curr * lenA), (((curr * lenA) + lenA) - 1L))), m, c, z, ld, QArray<Qubit>.Add(a, v)?.Slice(new QRange((next * lenA), (((next * lenA) + lenA) - 1L))))));
-#line 205 "/Users/Matt/Documents/Masters/Dissertation/Quantum/Testing/Square_and_Multiply_Test/Program.qs"
+#line 198 "/Users/Matt/Documents/Masters/Dissertation/Quantum/Testing/Square_and_Multiply_Test/Program.qs"
+                    MicrosoftQuantumIntrinsicX.Apply(az);
+#line 199 "/Users/Matt/Documents/Masters/Dissertation/Quantum/Testing/Square_and_Multiply_Test/Program.qs"
+                    MicrosoftQuantumIntrinsicX.Controlled.Apply((new QArray<Qubit>(az), QArray<Qubit>.Add(a, v)[(next * lenA)]));
+#line 200 "/Users/Matt/Documents/Masters/Dissertation/Quantum/Testing/Square_and_Multiply_Test/Program.qs"
                     MicrosoftQuantumIntrinsicX.Apply(az);
 #line 206 "/Users/Matt/Documents/Masters/Dissertation/Quantum/Testing/Square_and_Multiply_Test/Program.qs"
-                    MicrosoftQuantumIntrinsicX.Controlled.Apply((new QArray<Qubit>(az), QArray<Qubit>.Add(a, v)[(next * lenA)]));
-#line 207 "/Users/Matt/Documents/Masters/Dissertation/Quantum/Testing/Square_and_Multiply_Test/Program.qs"
-                    MicrosoftQuantumIntrinsicX.Apply(az);
-#line 213 "/Users/Matt/Documents/Masters/Dissertation/Quantum/Testing/Square_and_Multiply_Test/Program.qs"
                     MicrosoftQuantumIntrinsicX.Controlled.Apply((new QArray<Qubit>(j[((j.Length - 1L) - narr[curr])]), c));
-#line 217 "/Users/Matt/Documents/Masters/Dissertation/Quantum/Testing/Square_and_Multiply_Test/Program.qs"
+#line 210 "/Users/Matt/Documents/Masters/Dissertation/Quantum/Testing/Square_and_Multiply_Test/Program.qs"
                     MicrosoftQuantumIntrinsicX.Apply(ld);
-#line 218 "/Users/Matt/Documents/Masters/Dissertation/Quantum/Testing/Square_and_Multiply_Test/Program.qs"
+#line 211 "/Users/Matt/Documents/Masters/Dissertation/Quantum/Testing/Square_and_Multiply_Test/Program.qs"
                     MicrosoftQuantumCanonApplyToEachA.Apply((MicrosoftQuantumIntrinsicX, j?.Slice(new QRange(((j.Length - 1L) - (narr[curr] - 1L)), (j.Length - 1L)))));
-#line 219 "/Users/Matt/Documents/Masters/Dissertation/Quantum/Testing/Square_and_Multiply_Test/Program.qs"
+#line 212 "/Users/Matt/Documents/Masters/Dissertation/Quantum/Testing/Square_and_Multiply_Test/Program.qs"
                     MicrosoftQuantumIntrinsicX.Controlled.Apply((j?.Slice(new QRange(((j.Length - 1L) - (narr[curr] - 1L)), (j.Length - 1L))), ld));
-#line 220 "/Users/Matt/Documents/Masters/Dissertation/Quantum/Testing/Square_and_Multiply_Test/Program.qs"
+#line 213 "/Users/Matt/Documents/Masters/Dissertation/Quantum/Testing/Square_and_Multiply_Test/Program.qs"
                     MicrosoftQuantumCanonApplyToEachA.Apply((MicrosoftQuantumIntrinsicX, j?.Slice(new QRange(((j.Length - 1L) - (narr[curr] - 1L)), (j.Length - 1L)))));
-#line 223 "/Users/Matt/Documents/Masters/Dissertation/Quantum/Testing/Square_and_Multiply_Test/Program.qs"
+#line 216 "/Users/Matt/Documents/Masters/Dissertation/Quantum/Testing/Square_and_Multiply_Test/Program.qs"
                     MicrosoftQuantumIntrinsicX.Apply(z);
-#line 224 "/Users/Matt/Documents/Masters/Dissertation/Quantum/Testing/Square_and_Multiply_Test/Program.qs"
+#line 217 "/Users/Matt/Documents/Masters/Dissertation/Quantum/Testing/Square_and_Multiply_Test/Program.qs"
                     MicrosoftQuantumCanonApplyToEachA.Apply((MicrosoftQuantumIntrinsicX, j?.Slice(new QRange(((j.Length - 1L) - narr[curr]), (j.Length - 1L)))));
-#line 225 "/Users/Matt/Documents/Masters/Dissertation/Quantum/Testing/Square_and_Multiply_Test/Program.qs"
+#line 218 "/Users/Matt/Documents/Masters/Dissertation/Quantum/Testing/Square_and_Multiply_Test/Program.qs"
                     MicrosoftQuantumIntrinsicX.Controlled.Apply((j?.Slice(new QRange(((j.Length - 1L) - narr[curr]), (j.Length - 1L))), z));
-#line 226 "/Users/Matt/Documents/Masters/Dissertation/Quantum/Testing/Square_and_Multiply_Test/Program.qs"
+#line 219 "/Users/Matt/Documents/Masters/Dissertation/Quantum/Testing/Square_and_Multiply_Test/Program.qs"
                     MicrosoftQuantumCanonApplyToEachA.Apply((MicrosoftQuantumIntrinsicX, j?.Slice(new QRange(((j.Length - 1L) - narr[curr]), (j.Length - 1L)))));
                 }
 
-#line 229 "/Users/Matt/Documents/Masters/Dissertation/Quantum/Testing/Square_and_Multiply_Test/Program.qs"
+#line 222 "/Users/Matt/Documents/Masters/Dissertation/Quantum/Testing/Square_and_Multiply_Test/Program.qs"
                 if ((((narr[next] - 1L) == (j.Length - 1L)) && (narr[(narr.Length - 1L)] == 0L)))
                 {
-#line 231 "/Users/Matt/Documents/Masters/Dissertation/Quantum/Testing/Square_and_Multiply_Test/Program.qs"
+#line 224 "/Users/Matt/Documents/Masters/Dissertation/Quantum/Testing/Square_and_Multiply_Test/Program.qs"
                     AddI.Apply((new Microsoft.Quantum.Arithmetic.LittleEndian(QArray<Qubit>.Add(a, v)?.Slice(new QRange((next * lenA), (((next * lenA) + lenA) - 1L)))), new Microsoft.Quantum.Arithmetic.LittleEndian(result)));
-#line 232 "/Users/Matt/Documents/Masters/Dissertation/Quantum/Testing/Square_and_Multiply_Test/Program.qs"
+#line 225 "/Users/Matt/Documents/Masters/Dissertation/Quantum/Testing/Square_and_Multiply_Test/Program.qs"
                     narr.Modify((narr.Length - 1L), 1L);
                 }
             }
 
-#line 241 "/Users/Matt/Documents/Masters/Dissertation/Quantum/Testing/Square_and_Multiply_Test/Program.qs"
+#line 234 "/Users/Matt/Documents/Masters/Dissertation/Quantum/Testing/Square_and_Multiply_Test/Program.qs"
             if ((d == 0L))
             {
-#line 243 "/Users/Matt/Documents/Masters/Dissertation/Quantum/Testing/Square_and_Multiply_Test/Program.qs"
+#line 236 "/Users/Matt/Documents/Masters/Dissertation/Quantum/Testing/Square_and_Multiply_Test/Program.qs"
                 found = false;
-#line 244 "/Users/Matt/Documents/Masters/Dissertation/Quantum/Testing/Square_and_Multiply_Test/Program.qs"
+#line 237 "/Users/Matt/Documents/Masters/Dissertation/Quantum/Testing/Square_and_Multiply_Test/Program.qs"
                 i = 0L;
-#line 245 "/Users/Matt/Documents/Masters/Dissertation/Quantum/Testing/Square_and_Multiply_Test/Program.qs"
+#line 238 "/Users/Matt/Documents/Masters/Dissertation/Quantum/Testing/Square_and_Multiply_Test/Program.qs"
                 while (true)
                 {
-#line 246 "/Users/Matt/Documents/Masters/Dissertation/Quantum/Testing/Square_and_Multiply_Test/Program.qs"
+#line 239 "/Users/Matt/Documents/Masters/Dissertation/Quantum/Testing/Square_and_Multiply_Test/Program.qs"
                     if ((arr[i] == t))
                     {
-#line 247 "/Users/Matt/Documents/Masters/Dissertation/Quantum/Testing/Square_and_Multiply_Test/Program.qs"
+#line 240 "/Users/Matt/Documents/Masters/Dissertation/Quantum/Testing/Square_and_Multiply_Test/Program.qs"
                         next = i;
-#line 248 "/Users/Matt/Documents/Masters/Dissertation/Quantum/Testing/Square_and_Multiply_Test/Program.qs"
+#line 241 "/Users/Matt/Documents/Masters/Dissertation/Quantum/Testing/Square_and_Multiply_Test/Program.qs"
                         found = true;
                     }
 
-#line 250 "/Users/Matt/Documents/Masters/Dissertation/Quantum/Testing/Square_and_Multiply_Test/Program.qs"
+#line 243 "/Users/Matt/Documents/Masters/Dissertation/Quantum/Testing/Square_and_Multiply_Test/Program.qs"
                     i = (i + 1L);
                     if ((found == true))
                     {
@@ -956,60 +954,60 @@ namespace ModularMultiplication.Testing
                     }
                 }
 
-#line 254 "/Users/Matt/Documents/Masters/Dissertation/Quantum/Testing/Square_and_Multiply_Test/Program.qs"
+#line 247 "/Users/Matt/Documents/Masters/Dissertation/Quantum/Testing/Square_and_Multiply_Test/Program.qs"
                 if (((narr[next] - 1L) <= (j.Length - 1L)))
                 {
-#line 257 "/Users/Matt/Documents/Masters/Dissertation/Quantum/Testing/Square_and_Multiply_Test/Program.qs"
+#line 250 "/Users/Matt/Documents/Masters/Dissertation/Quantum/Testing/Square_and_Multiply_Test/Program.qs"
                     MicrosoftQuantumCanonApplyToEachA.Apply((MicrosoftQuantumIntrinsicX, j?.Slice(new QRange(((j.Length - 1L) - narr[curr]), (j.Length - 1L)))));
-#line 258 "/Users/Matt/Documents/Masters/Dissertation/Quantum/Testing/Square_and_Multiply_Test/Program.qs"
+#line 251 "/Users/Matt/Documents/Masters/Dissertation/Quantum/Testing/Square_and_Multiply_Test/Program.qs"
                     MicrosoftQuantumIntrinsicX.Controlled.Apply((j?.Slice(new QRange(((j.Length - 1L) - narr[curr]), (j.Length - 1L))), z));
-#line 259 "/Users/Matt/Documents/Masters/Dissertation/Quantum/Testing/Square_and_Multiply_Test/Program.qs"
+#line 252 "/Users/Matt/Documents/Masters/Dissertation/Quantum/Testing/Square_and_Multiply_Test/Program.qs"
                     MicrosoftQuantumCanonApplyToEachA.Apply((MicrosoftQuantumIntrinsicX, j?.Slice(new QRange(((j.Length - 1L) - narr[curr]), (j.Length - 1L)))));
-#line 260 "/Users/Matt/Documents/Masters/Dissertation/Quantum/Testing/Square_and_Multiply_Test/Program.qs"
+#line 253 "/Users/Matt/Documents/Masters/Dissertation/Quantum/Testing/Square_and_Multiply_Test/Program.qs"
                     MicrosoftQuantumIntrinsicX.Apply(z);
-#line 264 "/Users/Matt/Documents/Masters/Dissertation/Quantum/Testing/Square_and_Multiply_Test/Program.qs"
+#line 257 "/Users/Matt/Documents/Masters/Dissertation/Quantum/Testing/Square_and_Multiply_Test/Program.qs"
                     MicrosoftQuantumCanonApplyToEachA.Apply((MicrosoftQuantumIntrinsicX, j?.Slice(new QRange(((j.Length - 1L) - (narr[curr] - 1L)), (j.Length - 1L)))));
-#line 265 "/Users/Matt/Documents/Masters/Dissertation/Quantum/Testing/Square_and_Multiply_Test/Program.qs"
+#line 258 "/Users/Matt/Documents/Masters/Dissertation/Quantum/Testing/Square_and_Multiply_Test/Program.qs"
                     MicrosoftQuantumIntrinsicX.Controlled.Apply((j?.Slice(new QRange(((j.Length - 1L) - (narr[curr] - 1L)), (j.Length - 1L))), ld));
-#line 266 "/Users/Matt/Documents/Masters/Dissertation/Quantum/Testing/Square_and_Multiply_Test/Program.qs"
+#line 259 "/Users/Matt/Documents/Masters/Dissertation/Quantum/Testing/Square_and_Multiply_Test/Program.qs"
                     MicrosoftQuantumCanonApplyToEachA.Apply((MicrosoftQuantumIntrinsicX, j?.Slice(new QRange(((j.Length - 1L) - (narr[curr] - 1L)), (j.Length - 1L)))));
-#line 267 "/Users/Matt/Documents/Masters/Dissertation/Quantum/Testing/Square_and_Multiply_Test/Program.qs"
+#line 260 "/Users/Matt/Documents/Masters/Dissertation/Quantum/Testing/Square_and_Multiply_Test/Program.qs"
                     MicrosoftQuantumIntrinsicX.Apply(ld);
-#line 272 "/Users/Matt/Documents/Masters/Dissertation/Quantum/Testing/Square_and_Multiply_Test/Program.qs"
+#line 265 "/Users/Matt/Documents/Masters/Dissertation/Quantum/Testing/Square_and_Multiply_Test/Program.qs"
                     MicrosoftQuantumIntrinsicX.Controlled.Apply((new QArray<Qubit>(j[((j.Length - 1L) - narr[curr])]), c));
-#line 275 "/Users/Matt/Documents/Masters/Dissertation/Quantum/Testing/Square_and_Multiply_Test/Program.qs"
+#line 268 "/Users/Matt/Documents/Masters/Dissertation/Quantum/Testing/Square_and_Multiply_Test/Program.qs"
                     SquareAndMultiplyIteration.Adjoint.Controlled.Apply((new QArray<Qubit>(az), (a, QArray<Qubit>.Add(a, v)?.Slice(new QRange((curr * lenA), (((curr * lenA) + lenA) - 1L))), m, c, z, ld, QArray<Qubit>.Add(a, v)?.Slice(new QRange((next * lenA), (((next * lenA) + lenA) - 1L))))));
-#line 279 "/Users/Matt/Documents/Masters/Dissertation/Quantum/Testing/Square_and_Multiply_Test/Program.qs"
+#line 272 "/Users/Matt/Documents/Masters/Dissertation/Quantum/Testing/Square_and_Multiply_Test/Program.qs"
+                    MicrosoftQuantumIntrinsicX.Apply(az);
+#line 273 "/Users/Matt/Documents/Masters/Dissertation/Quantum/Testing/Square_and_Multiply_Test/Program.qs"
+                    MicrosoftQuantumIntrinsicX.Controlled.Apply((new QArray<Qubit>(az), QArray<Qubit>.Add(a, v)[(next * lenA)]));
+#line 274 "/Users/Matt/Documents/Masters/Dissertation/Quantum/Testing/Square_and_Multiply_Test/Program.qs"
                     MicrosoftQuantumIntrinsicX.Apply(az);
 #line 280 "/Users/Matt/Documents/Masters/Dissertation/Quantum/Testing/Square_and_Multiply_Test/Program.qs"
-                    MicrosoftQuantumIntrinsicX.Controlled.Apply((new QArray<Qubit>(az), QArray<Qubit>.Add(a, v)[(next * lenA)]));
-#line 281 "/Users/Matt/Documents/Masters/Dissertation/Quantum/Testing/Square_and_Multiply_Test/Program.qs"
-                    MicrosoftQuantumIntrinsicX.Apply(az);
-#line 287 "/Users/Matt/Documents/Masters/Dissertation/Quantum/Testing/Square_and_Multiply_Test/Program.qs"
                     MicrosoftQuantumIntrinsicX.Controlled.Apply((new QArray<Qubit>(j[((j.Length - 1L) - narr[curr])]), c));
-#line 291 "/Users/Matt/Documents/Masters/Dissertation/Quantum/Testing/Square_and_Multiply_Test/Program.qs"
+#line 284 "/Users/Matt/Documents/Masters/Dissertation/Quantum/Testing/Square_and_Multiply_Test/Program.qs"
                     MicrosoftQuantumIntrinsicX.Apply(ld);
-#line 292 "/Users/Matt/Documents/Masters/Dissertation/Quantum/Testing/Square_and_Multiply_Test/Program.qs"
+#line 285 "/Users/Matt/Documents/Masters/Dissertation/Quantum/Testing/Square_and_Multiply_Test/Program.qs"
                     MicrosoftQuantumCanonApplyToEachA.Apply((MicrosoftQuantumIntrinsicX, j?.Slice(new QRange(((j.Length - 1L) - (narr[curr] - 1L)), (j.Length - 1L)))));
-#line 293 "/Users/Matt/Documents/Masters/Dissertation/Quantum/Testing/Square_and_Multiply_Test/Program.qs"
+#line 286 "/Users/Matt/Documents/Masters/Dissertation/Quantum/Testing/Square_and_Multiply_Test/Program.qs"
                     MicrosoftQuantumIntrinsicX.Controlled.Apply((j?.Slice(new QRange(((j.Length - 1L) - (narr[curr] - 1L)), (j.Length - 1L))), ld));
-#line 294 "/Users/Matt/Documents/Masters/Dissertation/Quantum/Testing/Square_and_Multiply_Test/Program.qs"
+#line 287 "/Users/Matt/Documents/Masters/Dissertation/Quantum/Testing/Square_and_Multiply_Test/Program.qs"
                     MicrosoftQuantumCanonApplyToEachA.Apply((MicrosoftQuantumIntrinsicX, j?.Slice(new QRange(((j.Length - 1L) - (narr[curr] - 1L)), (j.Length - 1L)))));
-#line 297 "/Users/Matt/Documents/Masters/Dissertation/Quantum/Testing/Square_and_Multiply_Test/Program.qs"
+#line 290 "/Users/Matt/Documents/Masters/Dissertation/Quantum/Testing/Square_and_Multiply_Test/Program.qs"
                     MicrosoftQuantumIntrinsicX.Apply(z);
-#line 298 "/Users/Matt/Documents/Masters/Dissertation/Quantum/Testing/Square_and_Multiply_Test/Program.qs"
+#line 291 "/Users/Matt/Documents/Masters/Dissertation/Quantum/Testing/Square_and_Multiply_Test/Program.qs"
                     MicrosoftQuantumCanonApplyToEachA.Apply((MicrosoftQuantumIntrinsicX, j?.Slice(new QRange(((j.Length - 1L) - narr[curr]), (j.Length - 1L)))));
-#line 299 "/Users/Matt/Documents/Masters/Dissertation/Quantum/Testing/Square_and_Multiply_Test/Program.qs"
+#line 292 "/Users/Matt/Documents/Masters/Dissertation/Quantum/Testing/Square_and_Multiply_Test/Program.qs"
                     MicrosoftQuantumIntrinsicX.Controlled.Apply((j?.Slice(new QRange(((j.Length - 1L) - narr[curr]), (j.Length - 1L))), z));
-#line 300 "/Users/Matt/Documents/Masters/Dissertation/Quantum/Testing/Square_and_Multiply_Test/Program.qs"
+#line 293 "/Users/Matt/Documents/Masters/Dissertation/Quantum/Testing/Square_and_Multiply_Test/Program.qs"
                     MicrosoftQuantumCanonApplyToEachA.Apply((MicrosoftQuantumIntrinsicX, j?.Slice(new QRange(((j.Length - 1L) - narr[curr]), (j.Length - 1L)))));
                 }
 
-#line 303 "/Users/Matt/Documents/Masters/Dissertation/Quantum/Testing/Square_and_Multiply_Test/Program.qs"
+#line 296 "/Users/Matt/Documents/Masters/Dissertation/Quantum/Testing/Square_and_Multiply_Test/Program.qs"
                 narr.Modify(next, (narr[next] - (narr[curr] + 1L)));
             }
 
-#line 309 "/Users/Matt/Documents/Masters/Dissertation/Quantum/Testing/Square_and_Multiply_Test/Program.qs"
+#line 302 "/Users/Matt/Documents/Masters/Dissertation/Quantum/Testing/Square_and_Multiply_Test/Program.qs"
             return narr;
         }
 
@@ -1032,492 +1030,10 @@ namespace ModularMultiplication.Testing
         }
     }
 
-    [SourceLocation("/Users/Matt/Documents/Masters/Dissertation/Quantum/Testing/Square_and_Multiply_Test/Program.qs", OperationFunctor.Body, 317, 586)]
-    public partial class SquareAndMultiply : Operation<(IQArray<Qubit>,IQArray<Qubit>,IQArray<Qubit>,IQArray<Qubit>), QVoid>, ICallable
-    {
-        public SquareAndMultiply(IOperationFactory m) : base(m)
-        {
-        }
-
-        public class In : QTuple<(IQArray<Qubit>,IQArray<Qubit>,IQArray<Qubit>,IQArray<Qubit>)>, IApplyData
-        {
-            public In((IQArray<Qubit>,IQArray<Qubit>,IQArray<Qubit>,IQArray<Qubit>) data) : base(data)
-            {
-            }
-
-            System.Collections.Generic.IEnumerable<Qubit> IApplyData.Qubits
-            {
-                get
-                {
-                    return Qubit.Concat(((IApplyData)Data.Item1)?.Qubits, ((IApplyData)Data.Item2)?.Qubits, ((IApplyData)Data.Item3)?.Qubits, ((IApplyData)Data.Item4)?.Qubits);
-                }
-            }
-        }
-
-        String ICallable.Name => "SquareAndMultiply";
-        String ICallable.FullName => "ModularMultiplication.Testing.SquareAndMultiply";
-        protected ICallable Length
-        {
-            get;
-            set;
-        }
-
-        protected Allocate Allocate
-        {
-            get;
-            set;
-        }
-
-        protected Release Release
-        {
-            get;
-            set;
-        }
-
-        protected IAdjointable MicrosoftQuantumCanonApplyToEachA
-        {
-            get;
-            set;
-        }
-
-        protected IUnitary<Qubit> MicrosoftQuantumIntrinsicX
-        {
-            get;
-            set;
-        }
-
-        protected IUnitary<(IQArray<Qubit>,IQArray<Qubit>,IQArray<Qubit>,Qubit,Qubit,Qubit,IQArray<Qubit>)> SquareAndMultiplyIteration
-        {
-            get;
-            set;
-        }
-
-        protected IUnitary<(Microsoft.Quantum.Arithmetic.LittleEndian,Microsoft.Quantum.Arithmetic.LittleEndian)> AddI
-        {
-            get;
-            set;
-        }
-
-        protected ICallable<IQArray<Qubit>, Microsoft.Quantum.Arithmetic.LittleEndian> MicrosoftQuantumArithmeticLittleEndian
-        {
-            get;
-            set;
-        }
-
-        protected IUnitary<(Qubit,Qubit)> MicrosoftQuantumIntrinsicSWAP
-        {
-            get;
-            set;
-        }
-
-        public override Func<(IQArray<Qubit>,IQArray<Qubit>,IQArray<Qubit>,IQArray<Qubit>), QVoid> Body => (__in__) =>
-        {
-            var (a,m,j,result) = __in__;
-#line 318 "/Users/Matt/Documents/Masters/Dissertation/Quantum/Testing/Square_and_Multiply_Test/Program.qs"
-            var len = (j.Length - 1L);
-#line 319 "/Users/Matt/Documents/Masters/Dissertation/Quantum/Testing/Square_and_Multiply_Test/Program.qs"
-            var numAnc = 0L;
-#line 320 "/Users/Matt/Documents/Masters/Dissertation/Quantum/Testing/Square_and_Multiply_Test/Program.qs"
-            var sum = 0L;
-#line 321 "/Users/Matt/Documents/Masters/Dissertation/Quantum/Testing/Square_and_Multiply_Test/Program.qs"
-            var add = 1L;
-#line 322 "/Users/Matt/Documents/Masters/Dissertation/Quantum/Testing/Square_and_Multiply_Test/Program.qs"
-            while (true)
-            {
-#line 323 "/Users/Matt/Documents/Masters/Dissertation/Quantum/Testing/Square_and_Multiply_Test/Program.qs"
-                sum = (sum + add);
-#line 324 "/Users/Matt/Documents/Masters/Dissertation/Quantum/Testing/Square_and_Multiply_Test/Program.qs"
-                add = (add + 1L);
-#line 325 "/Users/Matt/Documents/Masters/Dissertation/Quantum/Testing/Square_and_Multiply_Test/Program.qs"
-                numAnc = (numAnc + 1L);
-                if ((len <= sum))
-                {
-                    break;
-                }
-                else
-                {
-                }
-            }
-
-#line 327 "/Users/Matt/Documents/Masters/Dissertation/Quantum/Testing/Square_and_Multiply_Test/Program.qs"
-            var origNumAnc = numAnc;
-#line 330 "/Users/Matt/Documents/Masters/Dissertation/Quantum/Testing/Square_and_Multiply_Test/Program.qs"
-            var lenA = a.Length;
-#line hidden
-            {
-#line 331 "/Users/Matt/Documents/Masters/Dissertation/Quantum/Testing/Square_and_Multiply_Test/Program.qs"
-                var (v,c,z,az,ld) = (Allocate.Apply((lenA * numAnc)), Allocate.Apply(), Allocate.Apply(), Allocate.Apply(), Allocate.Apply());
-#line hidden
-                bool __arg1__ = true;
-                try
-                {
-#line 333 "/Users/Matt/Documents/Masters/Dissertation/Quantum/Testing/Square_and_Multiply_Test/Program.qs"
-                    var curr = 0L;
-#line 334 "/Users/Matt/Documents/Masters/Dissertation/Quantum/Testing/Square_and_Multiply_Test/Program.qs"
-                    var curReg = 0L;
-#line 337 "/Users/Matt/Documents/Masters/Dissertation/Quantum/Testing/Square_and_Multiply_Test/Program.qs"
-                    MicrosoftQuantumCanonApplyToEachA.Apply((MicrosoftQuantumIntrinsicX, j));
-#line 338 "/Users/Matt/Documents/Masters/Dissertation/Quantum/Testing/Square_and_Multiply_Test/Program.qs"
-                    MicrosoftQuantumIntrinsicX.Controlled.Apply((j, az));
-#line 339 "/Users/Matt/Documents/Masters/Dissertation/Quantum/Testing/Square_and_Multiply_Test/Program.qs"
-                    MicrosoftQuantumCanonApplyToEachA.Apply((MicrosoftQuantumIntrinsicX, j));
-#line 340 "/Users/Matt/Documents/Masters/Dissertation/Quantum/Testing/Square_and_Multiply_Test/Program.qs"
-                    MicrosoftQuantumIntrinsicX.Apply(az);
-#line 342 "/Users/Matt/Documents/Masters/Dissertation/Quantum/Testing/Square_and_Multiply_Test/Program.qs"
-                    while (true)
-                    {
-#line 343 "/Users/Matt/Documents/Masters/Dissertation/Quantum/Testing/Square_and_Multiply_Test/Program.qs"
-                        foreach (var i in new QRange(0L, (numAnc - 1L)))
-#line hidden
-                        {
-#line 345 "/Users/Matt/Documents/Masters/Dissertation/Quantum/Testing/Square_and_Multiply_Test/Program.qs"
-                            if ((((i + curr) + 1L) <= (j.Length - 1L)))
-                            {
-#line 347 "/Users/Matt/Documents/Masters/Dissertation/Quantum/Testing/Square_and_Multiply_Test/Program.qs"
-                                MicrosoftQuantumCanonApplyToEachA.Apply((MicrosoftQuantumIntrinsicX, j?.Slice(new QRange(((j.Length - 1L) - ((i + curr) + 1L)), (j.Length - 1L)))));
-#line 348 "/Users/Matt/Documents/Masters/Dissertation/Quantum/Testing/Square_and_Multiply_Test/Program.qs"
-                                MicrosoftQuantumIntrinsicX.Controlled.Apply((j?.Slice(new QRange(((j.Length - 1L) - ((i + curr) + 1L)), (j.Length - 1L))), z));
-#line 349 "/Users/Matt/Documents/Masters/Dissertation/Quantum/Testing/Square_and_Multiply_Test/Program.qs"
-                                MicrosoftQuantumCanonApplyToEachA.Apply((MicrosoftQuantumIntrinsicX, j?.Slice(new QRange(((j.Length - 1L) - ((i + curr) + 1L)), (j.Length - 1L)))));
-#line 350 "/Users/Matt/Documents/Masters/Dissertation/Quantum/Testing/Square_and_Multiply_Test/Program.qs"
-                                MicrosoftQuantumIntrinsicX.Apply(z);
-#line 353 "/Users/Matt/Documents/Masters/Dissertation/Quantum/Testing/Square_and_Multiply_Test/Program.qs"
-                                MicrosoftQuantumCanonApplyToEachA.Apply((MicrosoftQuantumIntrinsicX, j?.Slice(new QRange(((j.Length - 1L) - (i + curr)), (j.Length - 1L)))));
-#line 354 "/Users/Matt/Documents/Masters/Dissertation/Quantum/Testing/Square_and_Multiply_Test/Program.qs"
-                                MicrosoftQuantumIntrinsicX.Controlled.Apply((j?.Slice(new QRange(((j.Length - 1L) - (i + curr)), (j.Length - 1L))), ld));
-#line 355 "/Users/Matt/Documents/Masters/Dissertation/Quantum/Testing/Square_and_Multiply_Test/Program.qs"
-                                MicrosoftQuantumCanonApplyToEachA.Apply((MicrosoftQuantumIntrinsicX, j?.Slice(new QRange(((j.Length - 1L) - (i + curr)), (j.Length - 1L)))));
-#line 356 "/Users/Matt/Documents/Masters/Dissertation/Quantum/Testing/Square_and_Multiply_Test/Program.qs"
-                                MicrosoftQuantumIntrinsicX.Apply(ld);
-#line 360 "/Users/Matt/Documents/Masters/Dissertation/Quantum/Testing/Square_and_Multiply_Test/Program.qs"
-                                MicrosoftQuantumIntrinsicX.Controlled.Apply((new QArray<Qubit>(j[((j.Length - 1L) - ((i + curr) + 1L))]), c));
-#line 363 "/Users/Matt/Documents/Masters/Dissertation/Quantum/Testing/Square_and_Multiply_Test/Program.qs"
-                                SquareAndMultiplyIteration.Controlled.Apply((new QArray<Qubit>(az), (a, QArray<Qubit>.Add(a, v)?.Slice(new QRange(((i + curReg) * lenA), ((((i + curReg) * lenA) + lenA) - 1L))), m, c, z, ld, v?.Slice(new QRange(((i + curReg) * lenA), ((((i + curReg) * lenA) + lenA) - 1L))))));
-#line 367 "/Users/Matt/Documents/Masters/Dissertation/Quantum/Testing/Square_and_Multiply_Test/Program.qs"
-                                MicrosoftQuantumIntrinsicX.Apply(az);
-#line 368 "/Users/Matt/Documents/Masters/Dissertation/Quantum/Testing/Square_and_Multiply_Test/Program.qs"
-                                MicrosoftQuantumIntrinsicX.Controlled.Apply((new QArray<Qubit>(az), v[((i + curReg) * lenA)]));
-#line 369 "/Users/Matt/Documents/Masters/Dissertation/Quantum/Testing/Square_and_Multiply_Test/Program.qs"
-                                MicrosoftQuantumIntrinsicX.Apply(az);
-#line 374 "/Users/Matt/Documents/Masters/Dissertation/Quantum/Testing/Square_and_Multiply_Test/Program.qs"
-                                MicrosoftQuantumIntrinsicX.Controlled.Apply((new QArray<Qubit>(j[((j.Length - 1L) - ((i + curr) + 1L))]), c));
-#line 378 "/Users/Matt/Documents/Masters/Dissertation/Quantum/Testing/Square_and_Multiply_Test/Program.qs"
-                                MicrosoftQuantumIntrinsicX.Apply(ld);
-#line 379 "/Users/Matt/Documents/Masters/Dissertation/Quantum/Testing/Square_and_Multiply_Test/Program.qs"
-                                MicrosoftQuantumCanonApplyToEachA.Apply((MicrosoftQuantumIntrinsicX, j?.Slice(new QRange(((j.Length - 1L) - (i + curr)), (j.Length - 1L)))));
-#line 380 "/Users/Matt/Documents/Masters/Dissertation/Quantum/Testing/Square_and_Multiply_Test/Program.qs"
-                                MicrosoftQuantumIntrinsicX.Controlled.Apply((j?.Slice(new QRange(((j.Length - 1L) - (i + curr)), (j.Length - 1L))), ld));
-#line 381 "/Users/Matt/Documents/Masters/Dissertation/Quantum/Testing/Square_and_Multiply_Test/Program.qs"
-                                MicrosoftQuantumCanonApplyToEachA.Apply((MicrosoftQuantumIntrinsicX, j?.Slice(new QRange(((j.Length - 1L) - (i + curr)), (j.Length - 1L)))));
-#line 384 "/Users/Matt/Documents/Masters/Dissertation/Quantum/Testing/Square_and_Multiply_Test/Program.qs"
-                                MicrosoftQuantumIntrinsicX.Apply(z);
-#line 385 "/Users/Matt/Documents/Masters/Dissertation/Quantum/Testing/Square_and_Multiply_Test/Program.qs"
-                                MicrosoftQuantumCanonApplyToEachA.Apply((MicrosoftQuantumIntrinsicX, j?.Slice(new QRange(((j.Length - 1L) - ((i + curr) + 1L)), (j.Length - 1L)))));
-#line 386 "/Users/Matt/Documents/Masters/Dissertation/Quantum/Testing/Square_and_Multiply_Test/Program.qs"
-                                MicrosoftQuantumIntrinsicX.Controlled.Apply((j?.Slice(new QRange(((j.Length - 1L) - ((i + curr) + 1L)), (j.Length - 1L))), z));
-#line 387 "/Users/Matt/Documents/Masters/Dissertation/Quantum/Testing/Square_and_Multiply_Test/Program.qs"
-                                MicrosoftQuantumCanonApplyToEachA.Apply((MicrosoftQuantumIntrinsicX, j?.Slice(new QRange(((j.Length - 1L) - ((i + curr) + 1L)), (j.Length - 1L)))));
-                            }
-
-#line 389 "/Users/Matt/Documents/Masters/Dissertation/Quantum/Testing/Square_and_Multiply_Test/Program.qs"
-                            if ((((i + curr) + 1L) == (j.Length - 1L)))
-                            {
-#line 390 "/Users/Matt/Documents/Masters/Dissertation/Quantum/Testing/Square_and_Multiply_Test/Program.qs"
-                                AddI.Apply((new Microsoft.Quantum.Arithmetic.LittleEndian(v?.Slice(new QRange(((i + curReg) * lenA), ((((i + curReg) * lenA) + lenA) - 1L)))), new Microsoft.Quantum.Arithmetic.LittleEndian(result)));
-                            }
-                        }
-
-#line 395 "/Users/Matt/Documents/Masters/Dissertation/Quantum/Testing/Square_and_Multiply_Test/Program.qs"
-                        var q = 0L;
-#line 396 "/Users/Matt/Documents/Masters/Dissertation/Quantum/Testing/Square_and_Multiply_Test/Program.qs"
-                        foreach (var k in new QRange(0L, (numAnc - 2L)))
-#line hidden
-                        {
-#line 398 "/Users/Matt/Documents/Masters/Dissertation/Quantum/Testing/Square_and_Multiply_Test/Program.qs"
-                            q = ((numAnc - 2L) - k);
-#line 399 "/Users/Matt/Documents/Masters/Dissertation/Quantum/Testing/Square_and_Multiply_Test/Program.qs"
-                            if ((((q + curr) + 1L) <= (j.Length - 1L)))
-                            {
-#line 401 "/Users/Matt/Documents/Masters/Dissertation/Quantum/Testing/Square_and_Multiply_Test/Program.qs"
-                                MicrosoftQuantumCanonApplyToEachA.Apply((MicrosoftQuantumIntrinsicX, j?.Slice(new QRange(((j.Length - 1L) - ((q + curr) + 1L)), (j.Length - 1L)))));
-#line 402 "/Users/Matt/Documents/Masters/Dissertation/Quantum/Testing/Square_and_Multiply_Test/Program.qs"
-                                MicrosoftQuantumIntrinsicX.Controlled.Apply((j?.Slice(new QRange(((j.Length - 1L) - ((q + curr) + 1L)), (j.Length - 1L))), z));
-#line 403 "/Users/Matt/Documents/Masters/Dissertation/Quantum/Testing/Square_and_Multiply_Test/Program.qs"
-                                MicrosoftQuantumCanonApplyToEachA.Apply((MicrosoftQuantumIntrinsicX, j?.Slice(new QRange(((j.Length - 1L) - ((q + curr) + 1L)), (j.Length - 1L)))));
-#line 404 "/Users/Matt/Documents/Masters/Dissertation/Quantum/Testing/Square_and_Multiply_Test/Program.qs"
-                                MicrosoftQuantumIntrinsicX.Apply(z);
-#line 407 "/Users/Matt/Documents/Masters/Dissertation/Quantum/Testing/Square_and_Multiply_Test/Program.qs"
-                                MicrosoftQuantumCanonApplyToEachA.Apply((MicrosoftQuantumIntrinsicX, j?.Slice(new QRange(((j.Length - 1L) - (q + curr)), (j.Length - 1L)))));
-#line 408 "/Users/Matt/Documents/Masters/Dissertation/Quantum/Testing/Square_and_Multiply_Test/Program.qs"
-                                MicrosoftQuantumIntrinsicX.Controlled.Apply((j?.Slice(new QRange(((j.Length - 1L) - (q + curr)), (j.Length - 1L))), ld));
-#line 409 "/Users/Matt/Documents/Masters/Dissertation/Quantum/Testing/Square_and_Multiply_Test/Program.qs"
-                                MicrosoftQuantumCanonApplyToEachA.Apply((MicrosoftQuantumIntrinsicX, j?.Slice(new QRange(((j.Length - 1L) - (q + curr)), (j.Length - 1L)))));
-#line 410 "/Users/Matt/Documents/Masters/Dissertation/Quantum/Testing/Square_and_Multiply_Test/Program.qs"
-                                MicrosoftQuantumIntrinsicX.Apply(ld);
-#line 414 "/Users/Matt/Documents/Masters/Dissertation/Quantum/Testing/Square_and_Multiply_Test/Program.qs"
-                                MicrosoftQuantumIntrinsicX.Controlled.Apply((new QArray<Qubit>(j[((j.Length - 1L) - ((q + curr) + 1L))]), c));
-#line 418 "/Users/Matt/Documents/Masters/Dissertation/Quantum/Testing/Square_and_Multiply_Test/Program.qs"
-                                SquareAndMultiplyIteration.Adjoint.Controlled.Apply((new QArray<Qubit>(az), (a, QArray<Qubit>.Add(a, v)?.Slice(new QRange(((q + curReg) * lenA), ((((q + curReg) * lenA) + lenA) - 1L))), m, c, z, ld, v?.Slice(new QRange(((q + curReg) * lenA), ((((q + curReg) * lenA) + lenA) - 1L))))));
-#line 420 "/Users/Matt/Documents/Masters/Dissertation/Quantum/Testing/Square_and_Multiply_Test/Program.qs"
-                                MicrosoftQuantumIntrinsicX.Apply(az);
-#line 421 "/Users/Matt/Documents/Masters/Dissertation/Quantum/Testing/Square_and_Multiply_Test/Program.qs"
-                                MicrosoftQuantumIntrinsicX.Controlled.Apply((new QArray<Qubit>(az), v[((q + curReg) * lenA)]));
-#line 422 "/Users/Matt/Documents/Masters/Dissertation/Quantum/Testing/Square_and_Multiply_Test/Program.qs"
-                                MicrosoftQuantumIntrinsicX.Apply(az);
-#line 425 "/Users/Matt/Documents/Masters/Dissertation/Quantum/Testing/Square_and_Multiply_Test/Program.qs"
-                                MicrosoftQuantumIntrinsicX.Controlled.Apply((new QArray<Qubit>(j[((j.Length - 1L) - ((q + curr) + 1L))]), c));
-#line 427 "/Users/Matt/Documents/Masters/Dissertation/Quantum/Testing/Square_and_Multiply_Test/Program.qs"
-                                MicrosoftQuantumIntrinsicX.Apply(ld);
-#line 428 "/Users/Matt/Documents/Masters/Dissertation/Quantum/Testing/Square_and_Multiply_Test/Program.qs"
-                                MicrosoftQuantumCanonApplyToEachA.Apply((MicrosoftQuantumIntrinsicX, j?.Slice(new QRange(((j.Length - 1L) - (q + curr)), (j.Length - 1L)))));
-#line 429 "/Users/Matt/Documents/Masters/Dissertation/Quantum/Testing/Square_and_Multiply_Test/Program.qs"
-                                MicrosoftQuantumIntrinsicX.Controlled.Apply((j?.Slice(new QRange(((j.Length - 1L) - (q + curr)), (j.Length - 1L))), ld));
-#line 430 "/Users/Matt/Documents/Masters/Dissertation/Quantum/Testing/Square_and_Multiply_Test/Program.qs"
-                                MicrosoftQuantumCanonApplyToEachA.Apply((MicrosoftQuantumIntrinsicX, j?.Slice(new QRange(((j.Length - 1L) - (q + curr)), (j.Length - 1L)))));
-#line 434 "/Users/Matt/Documents/Masters/Dissertation/Quantum/Testing/Square_and_Multiply_Test/Program.qs"
-                                MicrosoftQuantumIntrinsicX.Apply(z);
-#line 435 "/Users/Matt/Documents/Masters/Dissertation/Quantum/Testing/Square_and_Multiply_Test/Program.qs"
-                                MicrosoftQuantumCanonApplyToEachA.Apply((MicrosoftQuantumIntrinsicX, j?.Slice(new QRange(((j.Length - 1L) - ((q + curr) + 1L)), (j.Length - 1L)))));
-#line 436 "/Users/Matt/Documents/Masters/Dissertation/Quantum/Testing/Square_and_Multiply_Test/Program.qs"
-                                MicrosoftQuantumIntrinsicX.Controlled.Apply((j?.Slice(new QRange(((j.Length - 1L) - ((q + curr) + 1L)), (j.Length - 1L))), z));
-#line 437 "/Users/Matt/Documents/Masters/Dissertation/Quantum/Testing/Square_and_Multiply_Test/Program.qs"
-                                MicrosoftQuantumCanonApplyToEachA.Apply((MicrosoftQuantumIntrinsicX, j?.Slice(new QRange(((j.Length - 1L) - ((q + curr) + 1L)), (j.Length - 1L)))));
-                            }
-                        }
-
-#line 443 "/Users/Matt/Documents/Masters/Dissertation/Quantum/Testing/Square_and_Multiply_Test/Program.qs"
-                        if ((curReg != (origNumAnc - 1L)))
-                        {
-#line 444 "/Users/Matt/Documents/Masters/Dissertation/Quantum/Testing/Square_and_Multiply_Test/Program.qs"
-                            foreach (var i in new QRange(0L, (lenA - 1L)))
-#line hidden
-                            {
-#line 445 "/Users/Matt/Documents/Masters/Dissertation/Quantum/Testing/Square_and_Multiply_Test/Program.qs"
-                                MicrosoftQuantumIntrinsicSWAP.Apply((v[(i + (curReg * lenA))], v[(i + ((origNumAnc - 1L) * lenA))]));
-                            }
-                        }
-
-#line 449 "/Users/Matt/Documents/Masters/Dissertation/Quantum/Testing/Square_and_Multiply_Test/Program.qs"
-                        curr = (curr + numAnc);
-#line 450 "/Users/Matt/Documents/Masters/Dissertation/Quantum/Testing/Square_and_Multiply_Test/Program.qs"
-                        curReg = (curReg + 1L);
-#line 451 "/Users/Matt/Documents/Masters/Dissertation/Quantum/Testing/Square_and_Multiply_Test/Program.qs"
-                        numAnc = (numAnc - 1L);
-                        if ((numAnc == 0L))
-                        {
-                            break;
-                        }
-                        else
-                        {
-                        }
-                    }
-
-#line 457 "/Users/Matt/Documents/Masters/Dissertation/Quantum/Testing/Square_and_Multiply_Test/Program.qs"
-                    while (true)
-                    {
-#line 458 "/Users/Matt/Documents/Masters/Dissertation/Quantum/Testing/Square_and_Multiply_Test/Program.qs"
-                        numAnc = (numAnc + 1L);
-#line 459 "/Users/Matt/Documents/Masters/Dissertation/Quantum/Testing/Square_and_Multiply_Test/Program.qs"
-                        curReg = (curReg - 1L);
-#line 460 "/Users/Matt/Documents/Masters/Dissertation/Quantum/Testing/Square_and_Multiply_Test/Program.qs"
-                        curr = (curr - numAnc);
-#line 462 "/Users/Matt/Documents/Masters/Dissertation/Quantum/Testing/Square_and_Multiply_Test/Program.qs"
-                        if ((curReg != (origNumAnc - 1L)))
-                        {
-#line 463 "/Users/Matt/Documents/Masters/Dissertation/Quantum/Testing/Square_and_Multiply_Test/Program.qs"
-                            foreach (var i in new QRange(0L, (lenA - 1L)))
-#line hidden
-                            {
-#line 464 "/Users/Matt/Documents/Masters/Dissertation/Quantum/Testing/Square_and_Multiply_Test/Program.qs"
-                                MicrosoftQuantumIntrinsicSWAP.Apply((v[(i + (curReg * lenA))], v[(i + ((origNumAnc - 1L) * lenA))]));
-                            }
-                        }
-
-#line 466 "/Users/Matt/Documents/Masters/Dissertation/Quantum/Testing/Square_and_Multiply_Test/Program.qs"
-                        foreach (var q in new QRange(0L, (numAnc - 2L)))
-#line hidden
-                        {
-#line 467 "/Users/Matt/Documents/Masters/Dissertation/Quantum/Testing/Square_and_Multiply_Test/Program.qs"
-                            if ((((q + curr) + 1L) <= (j.Length - 1L)))
-                            {
-#line 469 "/Users/Matt/Documents/Masters/Dissertation/Quantum/Testing/Square_and_Multiply_Test/Program.qs"
-                                MicrosoftQuantumCanonApplyToEachA.Apply((MicrosoftQuantumIntrinsicX, j?.Slice(new QRange(((j.Length - 1L) - ((q + curr) + 1L)), (j.Length - 1L)))));
-#line 470 "/Users/Matt/Documents/Masters/Dissertation/Quantum/Testing/Square_and_Multiply_Test/Program.qs"
-                                MicrosoftQuantumIntrinsicX.Controlled.Apply((j?.Slice(new QRange(((j.Length - 1L) - ((q + curr) + 1L)), (j.Length - 1L))), z));
-#line 471 "/Users/Matt/Documents/Masters/Dissertation/Quantum/Testing/Square_and_Multiply_Test/Program.qs"
-                                MicrosoftQuantumCanonApplyToEachA.Apply((MicrosoftQuantumIntrinsicX, j?.Slice(new QRange(((j.Length - 1L) - ((q + curr) + 1L)), (j.Length - 1L)))));
-#line 472 "/Users/Matt/Documents/Masters/Dissertation/Quantum/Testing/Square_and_Multiply_Test/Program.qs"
-                                MicrosoftQuantumIntrinsicX.Apply(z);
-#line 474 "/Users/Matt/Documents/Masters/Dissertation/Quantum/Testing/Square_and_Multiply_Test/Program.qs"
-                                MicrosoftQuantumCanonApplyToEachA.Apply((MicrosoftQuantumIntrinsicX, j?.Slice(new QRange(((j.Length - 1L) - (q + curr)), (j.Length - 1L)))));
-#line 475 "/Users/Matt/Documents/Masters/Dissertation/Quantum/Testing/Square_and_Multiply_Test/Program.qs"
-                                MicrosoftQuantumIntrinsicX.Controlled.Apply((j?.Slice(new QRange(((j.Length - 1L) - (q + curr)), (j.Length - 1L))), ld));
-#line 476 "/Users/Matt/Documents/Masters/Dissertation/Quantum/Testing/Square_and_Multiply_Test/Program.qs"
-                                MicrosoftQuantumCanonApplyToEachA.Apply((MicrosoftQuantumIntrinsicX, j?.Slice(new QRange(((j.Length - 1L) - (q + curr)), (j.Length - 1L)))));
-#line 477 "/Users/Matt/Documents/Masters/Dissertation/Quantum/Testing/Square_and_Multiply_Test/Program.qs"
-                                MicrosoftQuantumIntrinsicX.Apply(ld);
-#line 483 "/Users/Matt/Documents/Masters/Dissertation/Quantum/Testing/Square_and_Multiply_Test/Program.qs"
-                                MicrosoftQuantumIntrinsicX.Controlled.Apply((new QArray<Qubit>(j[((j.Length - 1L) - ((q + curr) + 1L))]), c));
-#line 487 "/Users/Matt/Documents/Masters/Dissertation/Quantum/Testing/Square_and_Multiply_Test/Program.qs"
-                                SquareAndMultiplyIteration.Controlled.Apply((new QArray<Qubit>(az), (a, QArray<Qubit>.Add(a, v)?.Slice(new QRange(((q + curReg) * lenA), ((((q + curReg) * lenA) + lenA) - 1L))), m, c, z, ld, v?.Slice(new QRange(((q + curReg) * lenA), ((((q + curReg) * lenA) + lenA) - 1L))))));
-#line 489 "/Users/Matt/Documents/Masters/Dissertation/Quantum/Testing/Square_and_Multiply_Test/Program.qs"
-                                MicrosoftQuantumIntrinsicX.Apply(az);
-#line 490 "/Users/Matt/Documents/Masters/Dissertation/Quantum/Testing/Square_and_Multiply_Test/Program.qs"
-                                MicrosoftQuantumIntrinsicX.Controlled.Apply((new QArray<Qubit>(az), v[((q + curReg) * lenA)]));
-#line 491 "/Users/Matt/Documents/Masters/Dissertation/Quantum/Testing/Square_and_Multiply_Test/Program.qs"
-                                MicrosoftQuantumIntrinsicX.Apply(az);
-#line 495 "/Users/Matt/Documents/Masters/Dissertation/Quantum/Testing/Square_and_Multiply_Test/Program.qs"
-                                MicrosoftQuantumIntrinsicX.Controlled.Apply((new QArray<Qubit>(j[((j.Length - 1L) - ((q + curr) + 1L))]), c));
-#line 499 "/Users/Matt/Documents/Masters/Dissertation/Quantum/Testing/Square_and_Multiply_Test/Program.qs"
-                                MicrosoftQuantumIntrinsicX.Apply(ld);
-#line 500 "/Users/Matt/Documents/Masters/Dissertation/Quantum/Testing/Square_and_Multiply_Test/Program.qs"
-                                MicrosoftQuantumCanonApplyToEachA.Apply((MicrosoftQuantumIntrinsicX, j?.Slice(new QRange(((j.Length - 1L) - (q + curr)), (j.Length - 1L)))));
-#line 501 "/Users/Matt/Documents/Masters/Dissertation/Quantum/Testing/Square_and_Multiply_Test/Program.qs"
-                                MicrosoftQuantumIntrinsicX.Controlled.Apply((j?.Slice(new QRange(((j.Length - 1L) - (q + curr)), (j.Length - 1L))), ld));
-#line 502 "/Users/Matt/Documents/Masters/Dissertation/Quantum/Testing/Square_and_Multiply_Test/Program.qs"
-                                MicrosoftQuantumCanonApplyToEachA.Apply((MicrosoftQuantumIntrinsicX, j?.Slice(new QRange(((j.Length - 1L) - (q + curr)), (j.Length - 1L)))));
-#line 505 "/Users/Matt/Documents/Masters/Dissertation/Quantum/Testing/Square_and_Multiply_Test/Program.qs"
-                                MicrosoftQuantumIntrinsicX.Apply(z);
-#line 506 "/Users/Matt/Documents/Masters/Dissertation/Quantum/Testing/Square_and_Multiply_Test/Program.qs"
-                                MicrosoftQuantumCanonApplyToEachA.Apply((MicrosoftQuantumIntrinsicX, j?.Slice(new QRange(((j.Length - 1L) - ((q + curr) + 1L)), (j.Length - 1L)))));
-#line 507 "/Users/Matt/Documents/Masters/Dissertation/Quantum/Testing/Square_and_Multiply_Test/Program.qs"
-                                MicrosoftQuantumIntrinsicX.Controlled.Apply((j?.Slice(new QRange(((j.Length - 1L) - ((q + curr) + 1L)), (j.Length - 1L))), z));
-#line 508 "/Users/Matt/Documents/Masters/Dissertation/Quantum/Testing/Square_and_Multiply_Test/Program.qs"
-                                MicrosoftQuantumCanonApplyToEachA.Apply((MicrosoftQuantumIntrinsicX, j?.Slice(new QRange(((j.Length - 1L) - ((q + curr) + 1L)), (j.Length - 1L)))));
-                            }
-                        }
-
-#line 514 "/Users/Matt/Documents/Masters/Dissertation/Quantum/Testing/Square_and_Multiply_Test/Program.qs"
-                        var g = 0L;
-#line 515 "/Users/Matt/Documents/Masters/Dissertation/Quantum/Testing/Square_and_Multiply_Test/Program.qs"
-                        foreach (var k in new QRange(0L, (numAnc - 1L)))
-#line hidden
-                        {
-#line 516 "/Users/Matt/Documents/Masters/Dissertation/Quantum/Testing/Square_and_Multiply_Test/Program.qs"
-                            g = ((numAnc - 1L) - k);
-#line 518 "/Users/Matt/Documents/Masters/Dissertation/Quantum/Testing/Square_and_Multiply_Test/Program.qs"
-                            if ((((g + curr) + 1L) <= (j.Length - 1L)))
-                            {
-#line 520 "/Users/Matt/Documents/Masters/Dissertation/Quantum/Testing/Square_and_Multiply_Test/Program.qs"
-                                MicrosoftQuantumCanonApplyToEachA.Apply((MicrosoftQuantumIntrinsicX, j?.Slice(new QRange(((j.Length - 1L) - ((g + curr) + 1L)), (j.Length - 1L)))));
-#line 521 "/Users/Matt/Documents/Masters/Dissertation/Quantum/Testing/Square_and_Multiply_Test/Program.qs"
-                                MicrosoftQuantumIntrinsicX.Controlled.Apply((j?.Slice(new QRange(((j.Length - 1L) - ((g + curr) + 1L)), (j.Length - 1L))), z));
-#line 522 "/Users/Matt/Documents/Masters/Dissertation/Quantum/Testing/Square_and_Multiply_Test/Program.qs"
-                                MicrosoftQuantumCanonApplyToEachA.Apply((MicrosoftQuantumIntrinsicX, j?.Slice(new QRange(((j.Length - 1L) - ((g + curr) + 1L)), (j.Length - 1L)))));
-#line 523 "/Users/Matt/Documents/Masters/Dissertation/Quantum/Testing/Square_and_Multiply_Test/Program.qs"
-                                MicrosoftQuantumIntrinsicX.Apply(z);
-#line 526 "/Users/Matt/Documents/Masters/Dissertation/Quantum/Testing/Square_and_Multiply_Test/Program.qs"
-                                MicrosoftQuantumCanonApplyToEachA.Apply((MicrosoftQuantumIntrinsicX, j?.Slice(new QRange(((j.Length - 1L) - (g + curr)), (j.Length - 1L)))));
-#line 527 "/Users/Matt/Documents/Masters/Dissertation/Quantum/Testing/Square_and_Multiply_Test/Program.qs"
-                                MicrosoftQuantumIntrinsicX.Controlled.Apply((j?.Slice(new QRange(((j.Length - 1L) - (g + curr)), (j.Length - 1L))), ld));
-#line 528 "/Users/Matt/Documents/Masters/Dissertation/Quantum/Testing/Square_and_Multiply_Test/Program.qs"
-                                MicrosoftQuantumCanonApplyToEachA.Apply((MicrosoftQuantumIntrinsicX, j?.Slice(new QRange(((j.Length - 1L) - (g + curr)), (j.Length - 1L)))));
-#line 529 "/Users/Matt/Documents/Masters/Dissertation/Quantum/Testing/Square_and_Multiply_Test/Program.qs"
-                                MicrosoftQuantumIntrinsicX.Apply(ld);
-#line 535 "/Users/Matt/Documents/Masters/Dissertation/Quantum/Testing/Square_and_Multiply_Test/Program.qs"
-                                MicrosoftQuantumIntrinsicX.Controlled.Apply((new QArray<Qubit>(j[((j.Length - 1L) - ((g + curr) + 1L))]), c));
-#line 539 "/Users/Matt/Documents/Masters/Dissertation/Quantum/Testing/Square_and_Multiply_Test/Program.qs"
-                                SquareAndMultiplyIteration.Adjoint.Controlled.Apply((new QArray<Qubit>(az), (a, QArray<Qubit>.Add(a, v)?.Slice(new QRange(((g + curReg) * lenA), ((((g + curReg) * lenA) + lenA) - 1L))), m, c, z, ld, v?.Slice(new QRange(((g + curReg) * lenA), ((((g + curReg) * lenA) + lenA) - 1L))))));
-#line 542 "/Users/Matt/Documents/Masters/Dissertation/Quantum/Testing/Square_and_Multiply_Test/Program.qs"
-                                MicrosoftQuantumIntrinsicX.Apply(az);
-#line 543 "/Users/Matt/Documents/Masters/Dissertation/Quantum/Testing/Square_and_Multiply_Test/Program.qs"
-                                MicrosoftQuantumIntrinsicX.Controlled.Apply((new QArray<Qubit>(az), v[((g + curReg) * lenA)]));
-#line 544 "/Users/Matt/Documents/Masters/Dissertation/Quantum/Testing/Square_and_Multiply_Test/Program.qs"
-                                MicrosoftQuantumIntrinsicX.Apply(az);
-#line 549 "/Users/Matt/Documents/Masters/Dissertation/Quantum/Testing/Square_and_Multiply_Test/Program.qs"
-                                MicrosoftQuantumIntrinsicX.Controlled.Apply((new QArray<Qubit>(j[((j.Length - 1L) - ((g + curr) + 1L))]), c));
-#line 551 "/Users/Matt/Documents/Masters/Dissertation/Quantum/Testing/Square_and_Multiply_Test/Program.qs"
-                                MicrosoftQuantumIntrinsicX.Apply(ld);
-#line 552 "/Users/Matt/Documents/Masters/Dissertation/Quantum/Testing/Square_and_Multiply_Test/Program.qs"
-                                MicrosoftQuantumCanonApplyToEachA.Apply((MicrosoftQuantumIntrinsicX, j?.Slice(new QRange(((j.Length - 1L) - (g + curr)), (j.Length - 1L)))));
-#line 553 "/Users/Matt/Documents/Masters/Dissertation/Quantum/Testing/Square_and_Multiply_Test/Program.qs"
-                                MicrosoftQuantumIntrinsicX.Controlled.Apply((j?.Slice(new QRange(((j.Length - 1L) - (g + curr)), (j.Length - 1L))), ld));
-#line 554 "/Users/Matt/Documents/Masters/Dissertation/Quantum/Testing/Square_and_Multiply_Test/Program.qs"
-                                MicrosoftQuantumCanonApplyToEachA.Apply((MicrosoftQuantumIntrinsicX, j?.Slice(new QRange(((j.Length - 1L) - (g + curr)), (j.Length - 1L)))));
-#line 558 "/Users/Matt/Documents/Masters/Dissertation/Quantum/Testing/Square_and_Multiply_Test/Program.qs"
-                                MicrosoftQuantumIntrinsicX.Apply(z);
-#line 559 "/Users/Matt/Documents/Masters/Dissertation/Quantum/Testing/Square_and_Multiply_Test/Program.qs"
-                                MicrosoftQuantumCanonApplyToEachA.Apply((MicrosoftQuantumIntrinsicX, j?.Slice(new QRange(((j.Length - 1L) - ((g + curr) + 1L)), (j.Length - 1L)))));
-#line 560 "/Users/Matt/Documents/Masters/Dissertation/Quantum/Testing/Square_and_Multiply_Test/Program.qs"
-                                MicrosoftQuantumIntrinsicX.Controlled.Apply((j?.Slice(new QRange(((j.Length - 1L) - ((g + curr) + 1L)), (j.Length - 1L))), z));
-#line 561 "/Users/Matt/Documents/Masters/Dissertation/Quantum/Testing/Square_and_Multiply_Test/Program.qs"
-                                MicrosoftQuantumCanonApplyToEachA.Apply((MicrosoftQuantumIntrinsicX, j?.Slice(new QRange(((j.Length - 1L) - ((g + curr) + 1L)), (j.Length - 1L)))));
-                            }
-                        }
-
-                        if ((numAnc == origNumAnc))
-                        {
-                            break;
-                        }
-                        else
-                        {
-                        }
-                    }
-
-#line 570 "/Users/Matt/Documents/Masters/Dissertation/Quantum/Testing/Square_and_Multiply_Test/Program.qs"
-                    MicrosoftQuantumIntrinsicX.Apply(az);
-#line 571 "/Users/Matt/Documents/Masters/Dissertation/Quantum/Testing/Square_and_Multiply_Test/Program.qs"
-                    MicrosoftQuantumCanonApplyToEachA.Apply((MicrosoftQuantumIntrinsicX, j));
-#line 572 "/Users/Matt/Documents/Masters/Dissertation/Quantum/Testing/Square_and_Multiply_Test/Program.qs"
-                    MicrosoftQuantumIntrinsicX.Controlled.Apply((j, az));
-#line 573 "/Users/Matt/Documents/Masters/Dissertation/Quantum/Testing/Square_and_Multiply_Test/Program.qs"
-                    MicrosoftQuantumCanonApplyToEachA.Apply((MicrosoftQuantumIntrinsicX, j));
-                }
-#line hidden
-                catch
-                {
-                    __arg1__ = false;
-                    throw;
-                }
-#line hidden
-                finally
-                {
-                    if (__arg1__)
-                    {
-#line hidden
-                        Release.Apply(v);
-#line hidden
-                        Release.Apply(c);
-#line hidden
-                        Release.Apply(z);
-#line hidden
-                        Release.Apply(az);
-#line hidden
-                        Release.Apply(ld);
-                    }
-                }
-            }
-
-#line hidden
-            return QVoid.Instance;
-        }
-
-        ;
-        public override void Init()
-        {
-            this.Length = this.Factory.Get<ICallable>(typeof(Microsoft.Quantum.Core.Length<>));
-            this.Allocate = this.Factory.Get<Allocate>(typeof(Microsoft.Quantum.Intrinsic.Allocate));
-            this.Release = this.Factory.Get<Release>(typeof(Microsoft.Quantum.Intrinsic.Release));
-            this.MicrosoftQuantumCanonApplyToEachA = this.Factory.Get<IAdjointable>(typeof(Microsoft.Quantum.Canon.ApplyToEachA<>));
-            this.MicrosoftQuantumIntrinsicX = this.Factory.Get<IUnitary<Qubit>>(typeof(Microsoft.Quantum.Intrinsic.X));
-            this.SquareAndMultiplyIteration = this.Factory.Get<IUnitary<(IQArray<Qubit>,IQArray<Qubit>,IQArray<Qubit>,Qubit,Qubit,Qubit,IQArray<Qubit>)>>(typeof(SquareAndMultiplyIteration));
-            this.AddI = this.Factory.Get<IUnitary<(Microsoft.Quantum.Arithmetic.LittleEndian,Microsoft.Quantum.Arithmetic.LittleEndian)>>(typeof(AddI));
-            this.MicrosoftQuantumArithmeticLittleEndian = this.Factory.Get<ICallable<IQArray<Qubit>, Microsoft.Quantum.Arithmetic.LittleEndian>>(typeof(Microsoft.Quantum.Arithmetic.LittleEndian));
-            this.MicrosoftQuantumIntrinsicSWAP = this.Factory.Get<IUnitary<(Qubit,Qubit)>>(typeof(Microsoft.Quantum.Intrinsic.SWAP));
-        }
-
-        public override IApplyData __dataIn((IQArray<Qubit>,IQArray<Qubit>,IQArray<Qubit>,IQArray<Qubit>) data) => new In(data);
-        public override IApplyData __dataOut(QVoid data) => data;
-        public static System.Threading.Tasks.Task<QVoid> Run(IOperationFactory __m__, IQArray<Qubit> a, IQArray<Qubit> m, IQArray<Qubit> j, IQArray<Qubit> result)
-        {
-            return __m__.Run<SquareAndMultiply, (IQArray<Qubit>,IQArray<Qubit>,IQArray<Qubit>,IQArray<Qubit>), QVoid>((a, m, j, result));
-        }
-    }
-
-    [SourceLocation("/Users/Matt/Documents/Masters/Dissertation/Quantum/Testing/Square_and_Multiply_Test/Program.qs", OperationFunctor.Body, 586, 607)]
-    [SourceLocation("/Users/Matt/Documents/Masters/Dissertation/Quantum/Testing/Square_and_Multiply_Test/Program.qs", OperationFunctor.Adjoint, 586, 607)]
-    [SourceLocation("/Users/Matt/Documents/Masters/Dissertation/Quantum/Testing/Square_and_Multiply_Test/Program.qs", OperationFunctor.Controlled, 586, 607)]
-    [SourceLocation("/Users/Matt/Documents/Masters/Dissertation/Quantum/Testing/Square_and_Multiply_Test/Program.qs", OperationFunctor.ControlledAdjoint, 586, 607)]
+    [SourceLocation("/Users/Matt/Documents/Masters/Dissertation/Quantum/Testing/Square_and_Multiply_Test/Program.qs", OperationFunctor.Body, 307, 328)]
+    [SourceLocation("/Users/Matt/Documents/Masters/Dissertation/Quantum/Testing/Square_and_Multiply_Test/Program.qs", OperationFunctor.Adjoint, 307, 328)]
+    [SourceLocation("/Users/Matt/Documents/Masters/Dissertation/Quantum/Testing/Square_and_Multiply_Test/Program.qs", OperationFunctor.Controlled, 307, 328)]
+    [SourceLocation("/Users/Matt/Documents/Masters/Dissertation/Quantum/Testing/Square_and_Multiply_Test/Program.qs", OperationFunctor.ControlledAdjoint, 307, 328)]
     public partial class SquareAndMultiplyIteration : Unitary<(IQArray<Qubit>,IQArray<Qubit>,IQArray<Qubit>,Qubit,Qubit,Qubit,IQArray<Qubit>)>, ICallable
     {
         public SquareAndMultiplyIteration(IOperationFactory m) : base(m)
@@ -1592,37 +1108,37 @@ namespace ModularMultiplication.Testing
         public override Func<(IQArray<Qubit>,IQArray<Qubit>,IQArray<Qubit>,Qubit,Qubit,Qubit,IQArray<Qubit>), QVoid> Body => (__in__) =>
         {
             var (a,v,m,c,z,ld,t) = __in__;
-#line 587 "/Users/Matt/Documents/Masters/Dissertation/Quantum/Testing/Square_and_Multiply_Test/Program.qs"
+#line 308 "/Users/Matt/Documents/Masters/Dissertation/Quantum/Testing/Square_and_Multiply_Test/Program.qs"
             MicrosoftQuantumIntrinsicX.Apply(z);
-#line 588 "/Users/Matt/Documents/Masters/Dissertation/Quantum/Testing/Square_and_Multiply_Test/Program.qs"
+#line 309 "/Users/Matt/Documents/Masters/Dissertation/Quantum/Testing/Square_and_Multiply_Test/Program.qs"
             AddI.Controlled.Apply((new QArray<Qubit>(z), (new Microsoft.Quantum.Arithmetic.LittleEndian(v), new Microsoft.Quantum.Arithmetic.LittleEndian(t))));
-#line 589 "/Users/Matt/Documents/Masters/Dissertation/Quantum/Testing/Square_and_Multiply_Test/Program.qs"
+#line 310 "/Users/Matt/Documents/Masters/Dissertation/Quantum/Testing/Square_and_Multiply_Test/Program.qs"
             MicrosoftQuantumIntrinsicX.Apply(z);
-#line 591 "/Users/Matt/Documents/Masters/Dissertation/Quantum/Testing/Square_and_Multiply_Test/Program.qs"
+#line 312 "/Users/Matt/Documents/Masters/Dissertation/Quantum/Testing/Square_and_Multiply_Test/Program.qs"
             MicrosoftQuantumIntrinsicX.Apply(ld);
-#line 592 "/Users/Matt/Documents/Masters/Dissertation/Quantum/Testing/Square_and_Multiply_Test/Program.qs"
+#line 313 "/Users/Matt/Documents/Masters/Dissertation/Quantum/Testing/Square_and_Multiply_Test/Program.qs"
             AddI.Controlled.Apply((new QArray<Qubit>(z, ld), (new Microsoft.Quantum.Arithmetic.LittleEndian(v), new Microsoft.Quantum.Arithmetic.LittleEndian(t))));
-#line 593 "/Users/Matt/Documents/Masters/Dissertation/Quantum/Testing/Square_and_Multiply_Test/Program.qs"
+#line 314 "/Users/Matt/Documents/Masters/Dissertation/Quantum/Testing/Square_and_Multiply_Test/Program.qs"
             MicrosoftQuantumIntrinsicX.Apply(ld);
 #line hidden
             {
-#line 595 "/Users/Matt/Documents/Masters/Dissertation/Quantum/Testing/Square_and_Multiply_Test/Program.qs"
+#line 316 "/Users/Matt/Documents/Masters/Dissertation/Quantum/Testing/Square_and_Multiply_Test/Program.qs"
                 var anc = Allocate.Apply(v.Length);
 #line hidden
                 bool __arg1__ = true;
                 try
                 {
-#line 596 "/Users/Matt/Documents/Masters/Dissertation/Quantum/Testing/Square_and_Multiply_Test/Program.qs"
+#line 317 "/Users/Matt/Documents/Masters/Dissertation/Quantum/Testing/Square_and_Multiply_Test/Program.qs"
                     SquareModM.Controlled.Apply((new QArray<Qubit>(z, ld), (v, m, anc)));
-#line 597 "/Users/Matt/Documents/Masters/Dissertation/Quantum/Testing/Square_and_Multiply_Test/Program.qs"
+#line 318 "/Users/Matt/Documents/Masters/Dissertation/Quantum/Testing/Square_and_Multiply_Test/Program.qs"
                     MultiplyModM.Controlled.Apply((new QArray<Qubit>(z, c, ld), (a, anc, m, t)));
-#line 598 "/Users/Matt/Documents/Masters/Dissertation/Quantum/Testing/Square_and_Multiply_Test/Program.qs"
+#line 319 "/Users/Matt/Documents/Masters/Dissertation/Quantum/Testing/Square_and_Multiply_Test/Program.qs"
                     MicrosoftQuantumIntrinsicX.Apply(c);
-#line 599 "/Users/Matt/Documents/Masters/Dissertation/Quantum/Testing/Square_and_Multiply_Test/Program.qs"
+#line 320 "/Users/Matt/Documents/Masters/Dissertation/Quantum/Testing/Square_and_Multiply_Test/Program.qs"
                     AddI.Controlled.Apply((new QArray<Qubit>(z, c, ld), (new Microsoft.Quantum.Arithmetic.LittleEndian(anc), new Microsoft.Quantum.Arithmetic.LittleEndian(t))));
-#line 600 "/Users/Matt/Documents/Masters/Dissertation/Quantum/Testing/Square_and_Multiply_Test/Program.qs"
+#line 321 "/Users/Matt/Documents/Masters/Dissertation/Quantum/Testing/Square_and_Multiply_Test/Program.qs"
                     MicrosoftQuantumIntrinsicX.Apply(c);
-#line 603 "/Users/Matt/Documents/Masters/Dissertation/Quantum/Testing/Square_and_Multiply_Test/Program.qs"
+#line 324 "/Users/Matt/Documents/Masters/Dissertation/Quantum/Testing/Square_and_Multiply_Test/Program.qs"
                     SquareModM.Adjoint.Controlled.Apply((new QArray<Qubit>(z, ld), (v, m, anc)));
                 }
 #line hidden
@@ -1650,25 +1166,25 @@ namespace ModularMultiplication.Testing
         public override Func<(IQArray<Qubit>,IQArray<Qubit>,IQArray<Qubit>,Qubit,Qubit,Qubit,IQArray<Qubit>), QVoid> AdjointBody => (__in__) =>
         {
             var (a,v,m,c,z,ld,t) = __in__;
-#line 586 "/Users/Matt/Documents/Masters/Dissertation/Quantum/Testing/Square_and_Multiply_Test/Program.qs"
+#line 307 "/Users/Matt/Documents/Masters/Dissertation/Quantum/Testing/Square_and_Multiply_Test/Program.qs"
             {
-#line 586 "/Users/Matt/Documents/Masters/Dissertation/Quantum/Testing/Square_and_Multiply_Test/Program.qs"
+#line 307 "/Users/Matt/Documents/Masters/Dissertation/Quantum/Testing/Square_and_Multiply_Test/Program.qs"
                 var __qsVar0__anc__ = Allocate.Apply(v.Length);
 #line hidden
                 bool __arg1__ = true;
                 try
                 {
-#line 586 "/Users/Matt/Documents/Masters/Dissertation/Quantum/Testing/Square_and_Multiply_Test/Program.qs"
+#line 307 "/Users/Matt/Documents/Masters/Dissertation/Quantum/Testing/Square_and_Multiply_Test/Program.qs"
                     SquareModM.Adjoint.Controlled.Adjoint.Apply((new QArray<Qubit>(z, ld), (v, m, __qsVar0__anc__)));
-#line 586 "/Users/Matt/Documents/Masters/Dissertation/Quantum/Testing/Square_and_Multiply_Test/Program.qs"
+#line 307 "/Users/Matt/Documents/Masters/Dissertation/Quantum/Testing/Square_and_Multiply_Test/Program.qs"
                     MicrosoftQuantumIntrinsicX.Adjoint.Apply(c);
-#line 586 "/Users/Matt/Documents/Masters/Dissertation/Quantum/Testing/Square_and_Multiply_Test/Program.qs"
+#line 307 "/Users/Matt/Documents/Masters/Dissertation/Quantum/Testing/Square_and_Multiply_Test/Program.qs"
                     AddI.Controlled.Adjoint.Apply((new QArray<Qubit>(z, c, ld), (new Microsoft.Quantum.Arithmetic.LittleEndian(__qsVar0__anc__), new Microsoft.Quantum.Arithmetic.LittleEndian(t))));
-#line 586 "/Users/Matt/Documents/Masters/Dissertation/Quantum/Testing/Square_and_Multiply_Test/Program.qs"
+#line 307 "/Users/Matt/Documents/Masters/Dissertation/Quantum/Testing/Square_and_Multiply_Test/Program.qs"
                     MicrosoftQuantumIntrinsicX.Adjoint.Apply(c);
-#line 586 "/Users/Matt/Documents/Masters/Dissertation/Quantum/Testing/Square_and_Multiply_Test/Program.qs"
+#line 307 "/Users/Matt/Documents/Masters/Dissertation/Quantum/Testing/Square_and_Multiply_Test/Program.qs"
                     MultiplyModM.Controlled.Adjoint.Apply((new QArray<Qubit>(z, c, ld), (a, __qsVar0__anc__, m, t)));
-#line 586 "/Users/Matt/Documents/Masters/Dissertation/Quantum/Testing/Square_and_Multiply_Test/Program.qs"
+#line 307 "/Users/Matt/Documents/Masters/Dissertation/Quantum/Testing/Square_and_Multiply_Test/Program.qs"
                     SquareModM.Controlled.Adjoint.Apply((new QArray<Qubit>(z, ld), (v, m, __qsVar0__anc__)));
                 }
 #line hidden
@@ -1688,17 +1204,17 @@ namespace ModularMultiplication.Testing
                 }
             }
 
-#line 586 "/Users/Matt/Documents/Masters/Dissertation/Quantum/Testing/Square_and_Multiply_Test/Program.qs"
+#line 307 "/Users/Matt/Documents/Masters/Dissertation/Quantum/Testing/Square_and_Multiply_Test/Program.qs"
             MicrosoftQuantumIntrinsicX.Adjoint.Apply(ld);
-#line 586 "/Users/Matt/Documents/Masters/Dissertation/Quantum/Testing/Square_and_Multiply_Test/Program.qs"
+#line 307 "/Users/Matt/Documents/Masters/Dissertation/Quantum/Testing/Square_and_Multiply_Test/Program.qs"
             AddI.Controlled.Adjoint.Apply((new QArray<Qubit>(z, ld), (new Microsoft.Quantum.Arithmetic.LittleEndian(v), new Microsoft.Quantum.Arithmetic.LittleEndian(t))));
-#line 586 "/Users/Matt/Documents/Masters/Dissertation/Quantum/Testing/Square_and_Multiply_Test/Program.qs"
+#line 307 "/Users/Matt/Documents/Masters/Dissertation/Quantum/Testing/Square_and_Multiply_Test/Program.qs"
             MicrosoftQuantumIntrinsicX.Adjoint.Apply(ld);
-#line 586 "/Users/Matt/Documents/Masters/Dissertation/Quantum/Testing/Square_and_Multiply_Test/Program.qs"
+#line 307 "/Users/Matt/Documents/Masters/Dissertation/Quantum/Testing/Square_and_Multiply_Test/Program.qs"
             MicrosoftQuantumIntrinsicX.Adjoint.Apply(z);
-#line 586 "/Users/Matt/Documents/Masters/Dissertation/Quantum/Testing/Square_and_Multiply_Test/Program.qs"
+#line 307 "/Users/Matt/Documents/Masters/Dissertation/Quantum/Testing/Square_and_Multiply_Test/Program.qs"
             AddI.Controlled.Adjoint.Apply((new QArray<Qubit>(z), (new Microsoft.Quantum.Arithmetic.LittleEndian(v), new Microsoft.Quantum.Arithmetic.LittleEndian(t))));
-#line 586 "/Users/Matt/Documents/Masters/Dissertation/Quantum/Testing/Square_and_Multiply_Test/Program.qs"
+#line 307 "/Users/Matt/Documents/Masters/Dissertation/Quantum/Testing/Square_and_Multiply_Test/Program.qs"
             MicrosoftQuantumIntrinsicX.Adjoint.Apply(z);
 #line hidden
             return QVoid.Instance;
@@ -1708,37 +1224,37 @@ namespace ModularMultiplication.Testing
         public override Func<(IQArray<Qubit>,(IQArray<Qubit>,IQArray<Qubit>,IQArray<Qubit>,Qubit,Qubit,Qubit,IQArray<Qubit>)), QVoid> ControlledBody => (__in__) =>
         {
             var (__controlQubits__,(a,v,m,c,z,ld,t)) = __in__;
-#line 586 "/Users/Matt/Documents/Masters/Dissertation/Quantum/Testing/Square_and_Multiply_Test/Program.qs"
+#line 307 "/Users/Matt/Documents/Masters/Dissertation/Quantum/Testing/Square_and_Multiply_Test/Program.qs"
             MicrosoftQuantumIntrinsicX.Controlled.Apply((__controlQubits__, z));
-#line 586 "/Users/Matt/Documents/Masters/Dissertation/Quantum/Testing/Square_and_Multiply_Test/Program.qs"
+#line 307 "/Users/Matt/Documents/Masters/Dissertation/Quantum/Testing/Square_and_Multiply_Test/Program.qs"
             AddI.Controlled.Controlled.Apply((__controlQubits__, (new QArray<Qubit>(z), (new Microsoft.Quantum.Arithmetic.LittleEndian(v), new Microsoft.Quantum.Arithmetic.LittleEndian(t)))));
-#line 586 "/Users/Matt/Documents/Masters/Dissertation/Quantum/Testing/Square_and_Multiply_Test/Program.qs"
+#line 307 "/Users/Matt/Documents/Masters/Dissertation/Quantum/Testing/Square_and_Multiply_Test/Program.qs"
             MicrosoftQuantumIntrinsicX.Controlled.Apply((__controlQubits__, z));
-#line 586 "/Users/Matt/Documents/Masters/Dissertation/Quantum/Testing/Square_and_Multiply_Test/Program.qs"
+#line 307 "/Users/Matt/Documents/Masters/Dissertation/Quantum/Testing/Square_and_Multiply_Test/Program.qs"
             MicrosoftQuantumIntrinsicX.Controlled.Apply((__controlQubits__, ld));
-#line 586 "/Users/Matt/Documents/Masters/Dissertation/Quantum/Testing/Square_and_Multiply_Test/Program.qs"
+#line 307 "/Users/Matt/Documents/Masters/Dissertation/Quantum/Testing/Square_and_Multiply_Test/Program.qs"
             AddI.Controlled.Controlled.Apply((__controlQubits__, (new QArray<Qubit>(z, ld), (new Microsoft.Quantum.Arithmetic.LittleEndian(v), new Microsoft.Quantum.Arithmetic.LittleEndian(t)))));
-#line 586 "/Users/Matt/Documents/Masters/Dissertation/Quantum/Testing/Square_and_Multiply_Test/Program.qs"
+#line 307 "/Users/Matt/Documents/Masters/Dissertation/Quantum/Testing/Square_and_Multiply_Test/Program.qs"
             MicrosoftQuantumIntrinsicX.Controlled.Apply((__controlQubits__, ld));
-#line 586 "/Users/Matt/Documents/Masters/Dissertation/Quantum/Testing/Square_and_Multiply_Test/Program.qs"
+#line 307 "/Users/Matt/Documents/Masters/Dissertation/Quantum/Testing/Square_and_Multiply_Test/Program.qs"
             {
-#line 586 "/Users/Matt/Documents/Masters/Dissertation/Quantum/Testing/Square_and_Multiply_Test/Program.qs"
+#line 307 "/Users/Matt/Documents/Masters/Dissertation/Quantum/Testing/Square_and_Multiply_Test/Program.qs"
                 var anc = Allocate.Apply(v.Length);
 #line hidden
                 bool __arg1__ = true;
                 try
                 {
-#line 586 "/Users/Matt/Documents/Masters/Dissertation/Quantum/Testing/Square_and_Multiply_Test/Program.qs"
+#line 307 "/Users/Matt/Documents/Masters/Dissertation/Quantum/Testing/Square_and_Multiply_Test/Program.qs"
                     SquareModM.Controlled.Controlled.Apply((__controlQubits__, (new QArray<Qubit>(z, ld), (v, m, anc))));
-#line 586 "/Users/Matt/Documents/Masters/Dissertation/Quantum/Testing/Square_and_Multiply_Test/Program.qs"
+#line 307 "/Users/Matt/Documents/Masters/Dissertation/Quantum/Testing/Square_and_Multiply_Test/Program.qs"
                     MultiplyModM.Controlled.Controlled.Apply((__controlQubits__, (new QArray<Qubit>(z, c, ld), (a, anc, m, t))));
-#line 586 "/Users/Matt/Documents/Masters/Dissertation/Quantum/Testing/Square_and_Multiply_Test/Program.qs"
+#line 307 "/Users/Matt/Documents/Masters/Dissertation/Quantum/Testing/Square_and_Multiply_Test/Program.qs"
                     MicrosoftQuantumIntrinsicX.Controlled.Apply((__controlQubits__, c));
-#line 586 "/Users/Matt/Documents/Masters/Dissertation/Quantum/Testing/Square_and_Multiply_Test/Program.qs"
+#line 307 "/Users/Matt/Documents/Masters/Dissertation/Quantum/Testing/Square_and_Multiply_Test/Program.qs"
                     AddI.Controlled.Controlled.Apply((__controlQubits__, (new QArray<Qubit>(z, c, ld), (new Microsoft.Quantum.Arithmetic.LittleEndian(anc), new Microsoft.Quantum.Arithmetic.LittleEndian(t)))));
-#line 586 "/Users/Matt/Documents/Masters/Dissertation/Quantum/Testing/Square_and_Multiply_Test/Program.qs"
+#line 307 "/Users/Matt/Documents/Masters/Dissertation/Quantum/Testing/Square_and_Multiply_Test/Program.qs"
                     MicrosoftQuantumIntrinsicX.Controlled.Apply((__controlQubits__, c));
-#line 586 "/Users/Matt/Documents/Masters/Dissertation/Quantum/Testing/Square_and_Multiply_Test/Program.qs"
+#line 307 "/Users/Matt/Documents/Masters/Dissertation/Quantum/Testing/Square_and_Multiply_Test/Program.qs"
                     SquareModM.Adjoint.Controlled.Controlled.Apply((__controlQubits__, (new QArray<Qubit>(z, ld), (v, m, anc))));
                 }
 #line hidden
@@ -1766,25 +1282,25 @@ namespace ModularMultiplication.Testing
         public override Func<(IQArray<Qubit>,(IQArray<Qubit>,IQArray<Qubit>,IQArray<Qubit>,Qubit,Qubit,Qubit,IQArray<Qubit>)), QVoid> ControlledAdjointBody => (__in__) =>
         {
             var (__controlQubits__,(a,v,m,c,z,ld,t)) = __in__;
-#line 586 "/Users/Matt/Documents/Masters/Dissertation/Quantum/Testing/Square_and_Multiply_Test/Program.qs"
+#line 307 "/Users/Matt/Documents/Masters/Dissertation/Quantum/Testing/Square_and_Multiply_Test/Program.qs"
             {
-#line 586 "/Users/Matt/Documents/Masters/Dissertation/Quantum/Testing/Square_and_Multiply_Test/Program.qs"
+#line 307 "/Users/Matt/Documents/Masters/Dissertation/Quantum/Testing/Square_and_Multiply_Test/Program.qs"
                 var __qsVar0__anc__ = Allocate.Apply(v.Length);
 #line hidden
                 bool __arg1__ = true;
                 try
                 {
-#line 586 "/Users/Matt/Documents/Masters/Dissertation/Quantum/Testing/Square_and_Multiply_Test/Program.qs"
+#line 307 "/Users/Matt/Documents/Masters/Dissertation/Quantum/Testing/Square_and_Multiply_Test/Program.qs"
                     SquareModM.Adjoint.Controlled.Adjoint.Controlled.Apply((__controlQubits__, (new QArray<Qubit>(z, ld), (v, m, __qsVar0__anc__))));
-#line 586 "/Users/Matt/Documents/Masters/Dissertation/Quantum/Testing/Square_and_Multiply_Test/Program.qs"
+#line 307 "/Users/Matt/Documents/Masters/Dissertation/Quantum/Testing/Square_and_Multiply_Test/Program.qs"
                     MicrosoftQuantumIntrinsicX.Adjoint.Controlled.Apply((__controlQubits__, c));
-#line 586 "/Users/Matt/Documents/Masters/Dissertation/Quantum/Testing/Square_and_Multiply_Test/Program.qs"
+#line 307 "/Users/Matt/Documents/Masters/Dissertation/Quantum/Testing/Square_and_Multiply_Test/Program.qs"
                     AddI.Controlled.Adjoint.Controlled.Apply((__controlQubits__, (new QArray<Qubit>(z, c, ld), (new Microsoft.Quantum.Arithmetic.LittleEndian(__qsVar0__anc__), new Microsoft.Quantum.Arithmetic.LittleEndian(t)))));
-#line 586 "/Users/Matt/Documents/Masters/Dissertation/Quantum/Testing/Square_and_Multiply_Test/Program.qs"
+#line 307 "/Users/Matt/Documents/Masters/Dissertation/Quantum/Testing/Square_and_Multiply_Test/Program.qs"
                     MicrosoftQuantumIntrinsicX.Adjoint.Controlled.Apply((__controlQubits__, c));
-#line 586 "/Users/Matt/Documents/Masters/Dissertation/Quantum/Testing/Square_and_Multiply_Test/Program.qs"
+#line 307 "/Users/Matt/Documents/Masters/Dissertation/Quantum/Testing/Square_and_Multiply_Test/Program.qs"
                     MultiplyModM.Controlled.Adjoint.Controlled.Apply((__controlQubits__, (new QArray<Qubit>(z, c, ld), (a, __qsVar0__anc__, m, t))));
-#line 586 "/Users/Matt/Documents/Masters/Dissertation/Quantum/Testing/Square_and_Multiply_Test/Program.qs"
+#line 307 "/Users/Matt/Documents/Masters/Dissertation/Quantum/Testing/Square_and_Multiply_Test/Program.qs"
                     SquareModM.Controlled.Adjoint.Controlled.Apply((__controlQubits__, (new QArray<Qubit>(z, ld), (v, m, __qsVar0__anc__))));
                 }
 #line hidden
@@ -1804,17 +1320,17 @@ namespace ModularMultiplication.Testing
                 }
             }
 
-#line 586 "/Users/Matt/Documents/Masters/Dissertation/Quantum/Testing/Square_and_Multiply_Test/Program.qs"
+#line 307 "/Users/Matt/Documents/Masters/Dissertation/Quantum/Testing/Square_and_Multiply_Test/Program.qs"
             MicrosoftQuantumIntrinsicX.Adjoint.Controlled.Apply((__controlQubits__, ld));
-#line 586 "/Users/Matt/Documents/Masters/Dissertation/Quantum/Testing/Square_and_Multiply_Test/Program.qs"
+#line 307 "/Users/Matt/Documents/Masters/Dissertation/Quantum/Testing/Square_and_Multiply_Test/Program.qs"
             AddI.Controlled.Adjoint.Controlled.Apply((__controlQubits__, (new QArray<Qubit>(z, ld), (new Microsoft.Quantum.Arithmetic.LittleEndian(v), new Microsoft.Quantum.Arithmetic.LittleEndian(t)))));
-#line 586 "/Users/Matt/Documents/Masters/Dissertation/Quantum/Testing/Square_and_Multiply_Test/Program.qs"
+#line 307 "/Users/Matt/Documents/Masters/Dissertation/Quantum/Testing/Square_and_Multiply_Test/Program.qs"
             MicrosoftQuantumIntrinsicX.Adjoint.Controlled.Apply((__controlQubits__, ld));
-#line 586 "/Users/Matt/Documents/Masters/Dissertation/Quantum/Testing/Square_and_Multiply_Test/Program.qs"
+#line 307 "/Users/Matt/Documents/Masters/Dissertation/Quantum/Testing/Square_and_Multiply_Test/Program.qs"
             MicrosoftQuantumIntrinsicX.Adjoint.Controlled.Apply((__controlQubits__, z));
-#line 586 "/Users/Matt/Documents/Masters/Dissertation/Quantum/Testing/Square_and_Multiply_Test/Program.qs"
+#line 307 "/Users/Matt/Documents/Masters/Dissertation/Quantum/Testing/Square_and_Multiply_Test/Program.qs"
             AddI.Controlled.Adjoint.Controlled.Apply((__controlQubits__, (new QArray<Qubit>(z), (new Microsoft.Quantum.Arithmetic.LittleEndian(v), new Microsoft.Quantum.Arithmetic.LittleEndian(t)))));
-#line 586 "/Users/Matt/Documents/Masters/Dissertation/Quantum/Testing/Square_and_Multiply_Test/Program.qs"
+#line 307 "/Users/Matt/Documents/Masters/Dissertation/Quantum/Testing/Square_and_Multiply_Test/Program.qs"
             MicrosoftQuantumIntrinsicX.Adjoint.Controlled.Apply((__controlQubits__, z));
 #line hidden
             return QVoid.Instance;
@@ -1841,10 +1357,10 @@ namespace ModularMultiplication.Testing
         }
     }
 
-    [SourceLocation("/Users/Matt/Documents/Masters/Dissertation/Quantum/Testing/Square_and_Multiply_Test/Program.qs", OperationFunctor.Body, 607, 620)]
-    [SourceLocation("/Users/Matt/Documents/Masters/Dissertation/Quantum/Testing/Square_and_Multiply_Test/Program.qs", OperationFunctor.Adjoint, 607, 620)]
-    [SourceLocation("/Users/Matt/Documents/Masters/Dissertation/Quantum/Testing/Square_and_Multiply_Test/Program.qs", OperationFunctor.Controlled, 607, 620)]
-    [SourceLocation("/Users/Matt/Documents/Masters/Dissertation/Quantum/Testing/Square_and_Multiply_Test/Program.qs", OperationFunctor.ControlledAdjoint, 607, 620)]
+    [SourceLocation("/Users/Matt/Documents/Masters/Dissertation/Quantum/Testing/Square_and_Multiply_Test/Program.qs", OperationFunctor.Body, 328, 341)]
+    [SourceLocation("/Users/Matt/Documents/Masters/Dissertation/Quantum/Testing/Square_and_Multiply_Test/Program.qs", OperationFunctor.Adjoint, 328, 341)]
+    [SourceLocation("/Users/Matt/Documents/Masters/Dissertation/Quantum/Testing/Square_and_Multiply_Test/Program.qs", OperationFunctor.Controlled, 328, 341)]
+    [SourceLocation("/Users/Matt/Documents/Masters/Dissertation/Quantum/Testing/Square_and_Multiply_Test/Program.qs", OperationFunctor.ControlledAdjoint, 328, 341)]
     public partial class SquareModM : Unitary<(IQArray<Qubit>,IQArray<Qubit>,IQArray<Qubit>)>, ICallable
     {
         public SquareModM(IOperationFactory m) : base(m)
@@ -1913,31 +1429,31 @@ namespace ModularMultiplication.Testing
         public override Func<(IQArray<Qubit>,IQArray<Qubit>,IQArray<Qubit>), QVoid> Body => (__in__) =>
         {
             var (a,Ms,Ts) = __in__;
-#line 608 "/Users/Matt/Documents/Masters/Dissertation/Quantum/Testing/Square_and_Multiply_Test/Program.qs"
+#line 329 "/Users/Matt/Documents/Masters/Dissertation/Quantum/Testing/Square_and_Multiply_Test/Program.qs"
             var num = a.Length;
 #line hidden
             {
-#line 609 "/Users/Matt/Documents/Masters/Dissertation/Quantum/Testing/Square_and_Multiply_Test/Program.qs"
+#line 330 "/Users/Matt/Documents/Masters/Dissertation/Quantum/Testing/Square_and_Multiply_Test/Program.qs"
                 var (aS,aSPad) = (Allocate.Apply(num), Allocate.Apply(num));
 #line hidden
                 bool __arg1__ = true;
                 try
                 {
-#line 610 "/Users/Matt/Documents/Masters/Dissertation/Quantum/Testing/Square_and_Multiply_Test/Program.qs"
+#line 331 "/Users/Matt/Documents/Masters/Dissertation/Quantum/Testing/Square_and_Multiply_Test/Program.qs"
                     SquareI.Apply((new Microsoft.Quantum.Arithmetic.LittleEndian(a), new Microsoft.Quantum.Arithmetic.LittleEndian(QArray<Qubit>.Add(aS, aSPad))));
 #line hidden
                     {
-#line 611 "/Users/Matt/Documents/Masters/Dissertation/Quantum/Testing/Square_and_Multiply_Test/Program.qs"
+#line 332 "/Users/Matt/Documents/Masters/Dissertation/Quantum/Testing/Square_and_Multiply_Test/Program.qs"
                         var (anc,MsPad) = (Allocate.Apply((num * 2L)), Allocate.Apply(num));
 #line hidden
                         bool __arg2__ = true;
                         try
                         {
-#line 612 "/Users/Matt/Documents/Masters/Dissertation/Quantum/Testing/Square_and_Multiply_Test/Program.qs"
+#line 333 "/Users/Matt/Documents/Masters/Dissertation/Quantum/Testing/Square_and_Multiply_Test/Program.qs"
                             DivideI.Apply((new Microsoft.Quantum.Arithmetic.LittleEndian(QArray<Qubit>.Add(aS, aSPad)), new Microsoft.Quantum.Arithmetic.LittleEndian(QArray<Qubit>.Add(Ms, MsPad)), new Microsoft.Quantum.Arithmetic.LittleEndian(anc)));
-#line 613 "/Users/Matt/Documents/Masters/Dissertation/Quantum/Testing/Square_and_Multiply_Test/Program.qs"
+#line 334 "/Users/Matt/Documents/Masters/Dissertation/Quantum/Testing/Square_and_Multiply_Test/Program.qs"
                             AddI.Apply((new Microsoft.Quantum.Arithmetic.LittleEndian(aS), new Microsoft.Quantum.Arithmetic.LittleEndian(Ts)));
-#line 614 "/Users/Matt/Documents/Masters/Dissertation/Quantum/Testing/Square_and_Multiply_Test/Program.qs"
+#line 335 "/Users/Matt/Documents/Masters/Dissertation/Quantum/Testing/Square_and_Multiply_Test/Program.qs"
                             DivideI.Adjoint.Apply((new Microsoft.Quantum.Arithmetic.LittleEndian(QArray<Qubit>.Add(aS, aSPad)), new Microsoft.Quantum.Arithmetic.LittleEndian(QArray<Qubit>.Add(Ms, MsPad)), new Microsoft.Quantum.Arithmetic.LittleEndian(anc)));
                         }
 #line hidden
@@ -1959,7 +1475,7 @@ namespace ModularMultiplication.Testing
                         }
                     }
 
-#line 616 "/Users/Matt/Documents/Masters/Dissertation/Quantum/Testing/Square_and_Multiply_Test/Program.qs"
+#line 337 "/Users/Matt/Documents/Masters/Dissertation/Quantum/Testing/Square_and_Multiply_Test/Program.qs"
                     SquareI.Adjoint.Apply((new Microsoft.Quantum.Arithmetic.LittleEndian(a), new Microsoft.Quantum.Arithmetic.LittleEndian(QArray<Qubit>.Add(aS, aSPad))));
                 }
 #line hidden
@@ -1989,31 +1505,31 @@ namespace ModularMultiplication.Testing
         public override Func<(IQArray<Qubit>,IQArray<Qubit>,IQArray<Qubit>), QVoid> AdjointBody => (__in__) =>
         {
             var (a,Ms,Ts) = __in__;
-#line 607 "/Users/Matt/Documents/Masters/Dissertation/Quantum/Testing/Square_and_Multiply_Test/Program.qs"
+#line 328 "/Users/Matt/Documents/Masters/Dissertation/Quantum/Testing/Square_and_Multiply_Test/Program.qs"
             var __qsVar0__num__ = a.Length;
-#line 607 "/Users/Matt/Documents/Masters/Dissertation/Quantum/Testing/Square_and_Multiply_Test/Program.qs"
+#line 328 "/Users/Matt/Documents/Masters/Dissertation/Quantum/Testing/Square_and_Multiply_Test/Program.qs"
             {
-#line 607 "/Users/Matt/Documents/Masters/Dissertation/Quantum/Testing/Square_and_Multiply_Test/Program.qs"
+#line 328 "/Users/Matt/Documents/Masters/Dissertation/Quantum/Testing/Square_and_Multiply_Test/Program.qs"
                 var (__qsVar1__aS__,__qsVar2__aSPad__) = (Allocate.Apply(__qsVar0__num__), Allocate.Apply(__qsVar0__num__));
 #line hidden
                 bool __arg1__ = true;
                 try
                 {
-#line 607 "/Users/Matt/Documents/Masters/Dissertation/Quantum/Testing/Square_and_Multiply_Test/Program.qs"
+#line 328 "/Users/Matt/Documents/Masters/Dissertation/Quantum/Testing/Square_and_Multiply_Test/Program.qs"
                     SquareI.Adjoint.Adjoint.Apply((new Microsoft.Quantum.Arithmetic.LittleEndian(a), new Microsoft.Quantum.Arithmetic.LittleEndian(QArray<Qubit>.Add(__qsVar1__aS__, __qsVar2__aSPad__))));
-#line 607 "/Users/Matt/Documents/Masters/Dissertation/Quantum/Testing/Square_and_Multiply_Test/Program.qs"
+#line 328 "/Users/Matt/Documents/Masters/Dissertation/Quantum/Testing/Square_and_Multiply_Test/Program.qs"
                     {
-#line 607 "/Users/Matt/Documents/Masters/Dissertation/Quantum/Testing/Square_and_Multiply_Test/Program.qs"
+#line 328 "/Users/Matt/Documents/Masters/Dissertation/Quantum/Testing/Square_and_Multiply_Test/Program.qs"
                         var (__qsVar3__anc__,__qsVar4__MsPad__) = (Allocate.Apply((__qsVar0__num__ * 2L)), Allocate.Apply(__qsVar0__num__));
 #line hidden
                         bool __arg2__ = true;
                         try
                         {
-#line 607 "/Users/Matt/Documents/Masters/Dissertation/Quantum/Testing/Square_and_Multiply_Test/Program.qs"
+#line 328 "/Users/Matt/Documents/Masters/Dissertation/Quantum/Testing/Square_and_Multiply_Test/Program.qs"
                             DivideI.Adjoint.Adjoint.Apply((new Microsoft.Quantum.Arithmetic.LittleEndian(QArray<Qubit>.Add(__qsVar1__aS__, __qsVar2__aSPad__)), new Microsoft.Quantum.Arithmetic.LittleEndian(QArray<Qubit>.Add(Ms, __qsVar4__MsPad__)), new Microsoft.Quantum.Arithmetic.LittleEndian(__qsVar3__anc__)));
-#line 607 "/Users/Matt/Documents/Masters/Dissertation/Quantum/Testing/Square_and_Multiply_Test/Program.qs"
+#line 328 "/Users/Matt/Documents/Masters/Dissertation/Quantum/Testing/Square_and_Multiply_Test/Program.qs"
                             AddI.Adjoint.Apply((new Microsoft.Quantum.Arithmetic.LittleEndian(__qsVar1__aS__), new Microsoft.Quantum.Arithmetic.LittleEndian(Ts)));
-#line 607 "/Users/Matt/Documents/Masters/Dissertation/Quantum/Testing/Square_and_Multiply_Test/Program.qs"
+#line 328 "/Users/Matt/Documents/Masters/Dissertation/Quantum/Testing/Square_and_Multiply_Test/Program.qs"
                             DivideI.Adjoint.Apply((new Microsoft.Quantum.Arithmetic.LittleEndian(QArray<Qubit>.Add(__qsVar1__aS__, __qsVar2__aSPad__)), new Microsoft.Quantum.Arithmetic.LittleEndian(QArray<Qubit>.Add(Ms, __qsVar4__MsPad__)), new Microsoft.Quantum.Arithmetic.LittleEndian(__qsVar3__anc__)));
                         }
 #line hidden
@@ -2035,7 +1551,7 @@ namespace ModularMultiplication.Testing
                         }
                     }
 
-#line 607 "/Users/Matt/Documents/Masters/Dissertation/Quantum/Testing/Square_and_Multiply_Test/Program.qs"
+#line 328 "/Users/Matt/Documents/Masters/Dissertation/Quantum/Testing/Square_and_Multiply_Test/Program.qs"
                     SquareI.Adjoint.Apply((new Microsoft.Quantum.Arithmetic.LittleEndian(a), new Microsoft.Quantum.Arithmetic.LittleEndian(QArray<Qubit>.Add(__qsVar1__aS__, __qsVar2__aSPad__))));
                 }
 #line hidden
@@ -2065,31 +1581,31 @@ namespace ModularMultiplication.Testing
         public override Func<(IQArray<Qubit>,(IQArray<Qubit>,IQArray<Qubit>,IQArray<Qubit>)), QVoid> ControlledBody => (__in__) =>
         {
             var (__controlQubits__,(a,Ms,Ts)) = __in__;
-#line 607 "/Users/Matt/Documents/Masters/Dissertation/Quantum/Testing/Square_and_Multiply_Test/Program.qs"
+#line 328 "/Users/Matt/Documents/Masters/Dissertation/Quantum/Testing/Square_and_Multiply_Test/Program.qs"
             var num = a.Length;
-#line 607 "/Users/Matt/Documents/Masters/Dissertation/Quantum/Testing/Square_and_Multiply_Test/Program.qs"
+#line 328 "/Users/Matt/Documents/Masters/Dissertation/Quantum/Testing/Square_and_Multiply_Test/Program.qs"
             {
-#line 607 "/Users/Matt/Documents/Masters/Dissertation/Quantum/Testing/Square_and_Multiply_Test/Program.qs"
+#line 328 "/Users/Matt/Documents/Masters/Dissertation/Quantum/Testing/Square_and_Multiply_Test/Program.qs"
                 var (aS,aSPad) = (Allocate.Apply(num), Allocate.Apply(num));
 #line hidden
                 bool __arg1__ = true;
                 try
                 {
-#line 607 "/Users/Matt/Documents/Masters/Dissertation/Quantum/Testing/Square_and_Multiply_Test/Program.qs"
+#line 328 "/Users/Matt/Documents/Masters/Dissertation/Quantum/Testing/Square_and_Multiply_Test/Program.qs"
                     SquareI.Controlled.Apply((__controlQubits__, (new Microsoft.Quantum.Arithmetic.LittleEndian(a), new Microsoft.Quantum.Arithmetic.LittleEndian(QArray<Qubit>.Add(aS, aSPad)))));
-#line 607 "/Users/Matt/Documents/Masters/Dissertation/Quantum/Testing/Square_and_Multiply_Test/Program.qs"
+#line 328 "/Users/Matt/Documents/Masters/Dissertation/Quantum/Testing/Square_and_Multiply_Test/Program.qs"
                     {
-#line 607 "/Users/Matt/Documents/Masters/Dissertation/Quantum/Testing/Square_and_Multiply_Test/Program.qs"
+#line 328 "/Users/Matt/Documents/Masters/Dissertation/Quantum/Testing/Square_and_Multiply_Test/Program.qs"
                         var (anc,MsPad) = (Allocate.Apply((num * 2L)), Allocate.Apply(num));
 #line hidden
                         bool __arg2__ = true;
                         try
                         {
-#line 607 "/Users/Matt/Documents/Masters/Dissertation/Quantum/Testing/Square_and_Multiply_Test/Program.qs"
+#line 328 "/Users/Matt/Documents/Masters/Dissertation/Quantum/Testing/Square_and_Multiply_Test/Program.qs"
                             DivideI.Controlled.Apply((__controlQubits__, (new Microsoft.Quantum.Arithmetic.LittleEndian(QArray<Qubit>.Add(aS, aSPad)), new Microsoft.Quantum.Arithmetic.LittleEndian(QArray<Qubit>.Add(Ms, MsPad)), new Microsoft.Quantum.Arithmetic.LittleEndian(anc))));
-#line 607 "/Users/Matt/Documents/Masters/Dissertation/Quantum/Testing/Square_and_Multiply_Test/Program.qs"
+#line 328 "/Users/Matt/Documents/Masters/Dissertation/Quantum/Testing/Square_and_Multiply_Test/Program.qs"
                             AddI.Controlled.Apply((__controlQubits__, (new Microsoft.Quantum.Arithmetic.LittleEndian(aS), new Microsoft.Quantum.Arithmetic.LittleEndian(Ts))));
-#line 607 "/Users/Matt/Documents/Masters/Dissertation/Quantum/Testing/Square_and_Multiply_Test/Program.qs"
+#line 328 "/Users/Matt/Documents/Masters/Dissertation/Quantum/Testing/Square_and_Multiply_Test/Program.qs"
                             DivideI.Adjoint.Controlled.Apply((__controlQubits__, (new Microsoft.Quantum.Arithmetic.LittleEndian(QArray<Qubit>.Add(aS, aSPad)), new Microsoft.Quantum.Arithmetic.LittleEndian(QArray<Qubit>.Add(Ms, MsPad)), new Microsoft.Quantum.Arithmetic.LittleEndian(anc))));
                         }
 #line hidden
@@ -2111,7 +1627,7 @@ namespace ModularMultiplication.Testing
                         }
                     }
 
-#line 607 "/Users/Matt/Documents/Masters/Dissertation/Quantum/Testing/Square_and_Multiply_Test/Program.qs"
+#line 328 "/Users/Matt/Documents/Masters/Dissertation/Quantum/Testing/Square_and_Multiply_Test/Program.qs"
                     SquareI.Adjoint.Controlled.Apply((__controlQubits__, (new Microsoft.Quantum.Arithmetic.LittleEndian(a), new Microsoft.Quantum.Arithmetic.LittleEndian(QArray<Qubit>.Add(aS, aSPad)))));
                 }
 #line hidden
@@ -2141,31 +1657,31 @@ namespace ModularMultiplication.Testing
         public override Func<(IQArray<Qubit>,(IQArray<Qubit>,IQArray<Qubit>,IQArray<Qubit>)), QVoid> ControlledAdjointBody => (__in__) =>
         {
             var (__controlQubits__,(a,Ms,Ts)) = __in__;
-#line 607 "/Users/Matt/Documents/Masters/Dissertation/Quantum/Testing/Square_and_Multiply_Test/Program.qs"
+#line 328 "/Users/Matt/Documents/Masters/Dissertation/Quantum/Testing/Square_and_Multiply_Test/Program.qs"
             var __qsVar0__num__ = a.Length;
-#line 607 "/Users/Matt/Documents/Masters/Dissertation/Quantum/Testing/Square_and_Multiply_Test/Program.qs"
+#line 328 "/Users/Matt/Documents/Masters/Dissertation/Quantum/Testing/Square_and_Multiply_Test/Program.qs"
             {
-#line 607 "/Users/Matt/Documents/Masters/Dissertation/Quantum/Testing/Square_and_Multiply_Test/Program.qs"
+#line 328 "/Users/Matt/Documents/Masters/Dissertation/Quantum/Testing/Square_and_Multiply_Test/Program.qs"
                 var (__qsVar1__aS__,__qsVar2__aSPad__) = (Allocate.Apply(__qsVar0__num__), Allocate.Apply(__qsVar0__num__));
 #line hidden
                 bool __arg1__ = true;
                 try
                 {
-#line 607 "/Users/Matt/Documents/Masters/Dissertation/Quantum/Testing/Square_and_Multiply_Test/Program.qs"
+#line 328 "/Users/Matt/Documents/Masters/Dissertation/Quantum/Testing/Square_and_Multiply_Test/Program.qs"
                     SquareI.Adjoint.Adjoint.Controlled.Apply((__controlQubits__, (new Microsoft.Quantum.Arithmetic.LittleEndian(a), new Microsoft.Quantum.Arithmetic.LittleEndian(QArray<Qubit>.Add(__qsVar1__aS__, __qsVar2__aSPad__)))));
-#line 607 "/Users/Matt/Documents/Masters/Dissertation/Quantum/Testing/Square_and_Multiply_Test/Program.qs"
+#line 328 "/Users/Matt/Documents/Masters/Dissertation/Quantum/Testing/Square_and_Multiply_Test/Program.qs"
                     {
-#line 607 "/Users/Matt/Documents/Masters/Dissertation/Quantum/Testing/Square_and_Multiply_Test/Program.qs"
+#line 328 "/Users/Matt/Documents/Masters/Dissertation/Quantum/Testing/Square_and_Multiply_Test/Program.qs"
                         var (__qsVar3__anc__,__qsVar4__MsPad__) = (Allocate.Apply((__qsVar0__num__ * 2L)), Allocate.Apply(__qsVar0__num__));
 #line hidden
                         bool __arg2__ = true;
                         try
                         {
-#line 607 "/Users/Matt/Documents/Masters/Dissertation/Quantum/Testing/Square_and_Multiply_Test/Program.qs"
+#line 328 "/Users/Matt/Documents/Masters/Dissertation/Quantum/Testing/Square_and_Multiply_Test/Program.qs"
                             DivideI.Adjoint.Adjoint.Controlled.Apply((__controlQubits__, (new Microsoft.Quantum.Arithmetic.LittleEndian(QArray<Qubit>.Add(__qsVar1__aS__, __qsVar2__aSPad__)), new Microsoft.Quantum.Arithmetic.LittleEndian(QArray<Qubit>.Add(Ms, __qsVar4__MsPad__)), new Microsoft.Quantum.Arithmetic.LittleEndian(__qsVar3__anc__))));
-#line 607 "/Users/Matt/Documents/Masters/Dissertation/Quantum/Testing/Square_and_Multiply_Test/Program.qs"
+#line 328 "/Users/Matt/Documents/Masters/Dissertation/Quantum/Testing/Square_and_Multiply_Test/Program.qs"
                             AddI.Adjoint.Controlled.Apply((__controlQubits__, (new Microsoft.Quantum.Arithmetic.LittleEndian(__qsVar1__aS__), new Microsoft.Quantum.Arithmetic.LittleEndian(Ts))));
-#line 607 "/Users/Matt/Documents/Masters/Dissertation/Quantum/Testing/Square_and_Multiply_Test/Program.qs"
+#line 328 "/Users/Matt/Documents/Masters/Dissertation/Quantum/Testing/Square_and_Multiply_Test/Program.qs"
                             DivideI.Adjoint.Controlled.Apply((__controlQubits__, (new Microsoft.Quantum.Arithmetic.LittleEndian(QArray<Qubit>.Add(__qsVar1__aS__, __qsVar2__aSPad__)), new Microsoft.Quantum.Arithmetic.LittleEndian(QArray<Qubit>.Add(Ms, __qsVar4__MsPad__)), new Microsoft.Quantum.Arithmetic.LittleEndian(__qsVar3__anc__))));
                         }
 #line hidden
@@ -2187,7 +1703,7 @@ namespace ModularMultiplication.Testing
                         }
                     }
 
-#line 607 "/Users/Matt/Documents/Masters/Dissertation/Quantum/Testing/Square_and_Multiply_Test/Program.qs"
+#line 328 "/Users/Matt/Documents/Masters/Dissertation/Quantum/Testing/Square_and_Multiply_Test/Program.qs"
                     SquareI.Adjoint.Controlled.Apply((__controlQubits__, (new Microsoft.Quantum.Arithmetic.LittleEndian(a), new Microsoft.Quantum.Arithmetic.LittleEndian(QArray<Qubit>.Add(__qsVar1__aS__, __qsVar2__aSPad__)))));
                 }
 #line hidden
@@ -2233,10 +1749,10 @@ namespace ModularMultiplication.Testing
         }
     }
 
-    [SourceLocation("/Users/Matt/Documents/Masters/Dissertation/Quantum/Testing/Square_and_Multiply_Test/Program.qs", OperationFunctor.Body, 620, 633)]
-    [SourceLocation("/Users/Matt/Documents/Masters/Dissertation/Quantum/Testing/Square_and_Multiply_Test/Program.qs", OperationFunctor.Adjoint, 620, 633)]
-    [SourceLocation("/Users/Matt/Documents/Masters/Dissertation/Quantum/Testing/Square_and_Multiply_Test/Program.qs", OperationFunctor.Controlled, 620, 633)]
-    [SourceLocation("/Users/Matt/Documents/Masters/Dissertation/Quantum/Testing/Square_and_Multiply_Test/Program.qs", OperationFunctor.ControlledAdjoint, 620, 633)]
+    [SourceLocation("/Users/Matt/Documents/Masters/Dissertation/Quantum/Testing/Square_and_Multiply_Test/Program.qs", OperationFunctor.Body, 341, 354)]
+    [SourceLocation("/Users/Matt/Documents/Masters/Dissertation/Quantum/Testing/Square_and_Multiply_Test/Program.qs", OperationFunctor.Adjoint, 341, 354)]
+    [SourceLocation("/Users/Matt/Documents/Masters/Dissertation/Quantum/Testing/Square_and_Multiply_Test/Program.qs", OperationFunctor.Controlled, 341, 354)]
+    [SourceLocation("/Users/Matt/Documents/Masters/Dissertation/Quantum/Testing/Square_and_Multiply_Test/Program.qs", OperationFunctor.ControlledAdjoint, 341, 354)]
     public partial class MultiplyModM : Unitary<(IQArray<Qubit>,IQArray<Qubit>,IQArray<Qubit>,IQArray<Qubit>)>, ICallable
     {
         public MultiplyModM(IOperationFactory m) : base(m)
@@ -2305,31 +1821,31 @@ namespace ModularMultiplication.Testing
         public override Func<(IQArray<Qubit>,IQArray<Qubit>,IQArray<Qubit>,IQArray<Qubit>), QVoid> Body => (__in__) =>
         {
             var (a,b,Ms,Ts) = __in__;
-#line 621 "/Users/Matt/Documents/Masters/Dissertation/Quantum/Testing/Square_and_Multiply_Test/Program.qs"
+#line 342 "/Users/Matt/Documents/Masters/Dissertation/Quantum/Testing/Square_and_Multiply_Test/Program.qs"
             var num = a.Length;
 #line hidden
             {
-#line 622 "/Users/Matt/Documents/Masters/Dissertation/Quantum/Testing/Square_and_Multiply_Test/Program.qs"
+#line 343 "/Users/Matt/Documents/Masters/Dissertation/Quantum/Testing/Square_and_Multiply_Test/Program.qs"
                 var (aS,aSPad) = (Allocate.Apply(num), Allocate.Apply(num));
 #line hidden
                 bool __arg1__ = true;
                 try
                 {
-#line 623 "/Users/Matt/Documents/Masters/Dissertation/Quantum/Testing/Square_and_Multiply_Test/Program.qs"
+#line 344 "/Users/Matt/Documents/Masters/Dissertation/Quantum/Testing/Square_and_Multiply_Test/Program.qs"
                     MultiplyI.Apply((new Microsoft.Quantum.Arithmetic.LittleEndian(a), new Microsoft.Quantum.Arithmetic.LittleEndian(b), new Microsoft.Quantum.Arithmetic.LittleEndian(QArray<Qubit>.Add(aS, aSPad))));
 #line hidden
                     {
-#line 624 "/Users/Matt/Documents/Masters/Dissertation/Quantum/Testing/Square_and_Multiply_Test/Program.qs"
+#line 345 "/Users/Matt/Documents/Masters/Dissertation/Quantum/Testing/Square_and_Multiply_Test/Program.qs"
                         var (anc,MsPad) = (Allocate.Apply((num * 2L)), Allocate.Apply(num));
 #line hidden
                         bool __arg2__ = true;
                         try
                         {
-#line 625 "/Users/Matt/Documents/Masters/Dissertation/Quantum/Testing/Square_and_Multiply_Test/Program.qs"
+#line 346 "/Users/Matt/Documents/Masters/Dissertation/Quantum/Testing/Square_and_Multiply_Test/Program.qs"
                             DivideI.Apply((new Microsoft.Quantum.Arithmetic.LittleEndian(QArray<Qubit>.Add(aS, aSPad)), new Microsoft.Quantum.Arithmetic.LittleEndian(QArray<Qubit>.Add(Ms, MsPad)), new Microsoft.Quantum.Arithmetic.LittleEndian(anc)));
-#line 626 "/Users/Matt/Documents/Masters/Dissertation/Quantum/Testing/Square_and_Multiply_Test/Program.qs"
+#line 347 "/Users/Matt/Documents/Masters/Dissertation/Quantum/Testing/Square_and_Multiply_Test/Program.qs"
                             AddI.Apply((new Microsoft.Quantum.Arithmetic.LittleEndian(aS), new Microsoft.Quantum.Arithmetic.LittleEndian(Ts)));
-#line 627 "/Users/Matt/Documents/Masters/Dissertation/Quantum/Testing/Square_and_Multiply_Test/Program.qs"
+#line 348 "/Users/Matt/Documents/Masters/Dissertation/Quantum/Testing/Square_and_Multiply_Test/Program.qs"
                             DivideI.Adjoint.Apply((new Microsoft.Quantum.Arithmetic.LittleEndian(QArray<Qubit>.Add(aS, aSPad)), new Microsoft.Quantum.Arithmetic.LittleEndian(QArray<Qubit>.Add(Ms, MsPad)), new Microsoft.Quantum.Arithmetic.LittleEndian(anc)));
                         }
 #line hidden
@@ -2351,7 +1867,7 @@ namespace ModularMultiplication.Testing
                         }
                     }
 
-#line 629 "/Users/Matt/Documents/Masters/Dissertation/Quantum/Testing/Square_and_Multiply_Test/Program.qs"
+#line 350 "/Users/Matt/Documents/Masters/Dissertation/Quantum/Testing/Square_and_Multiply_Test/Program.qs"
                     MultiplyI.Adjoint.Apply((new Microsoft.Quantum.Arithmetic.LittleEndian(a), new Microsoft.Quantum.Arithmetic.LittleEndian(b), new Microsoft.Quantum.Arithmetic.LittleEndian(QArray<Qubit>.Add(aS, aSPad))));
                 }
 #line hidden
@@ -2381,31 +1897,31 @@ namespace ModularMultiplication.Testing
         public override Func<(IQArray<Qubit>,IQArray<Qubit>,IQArray<Qubit>,IQArray<Qubit>), QVoid> AdjointBody => (__in__) =>
         {
             var (a,b,Ms,Ts) = __in__;
-#line 620 "/Users/Matt/Documents/Masters/Dissertation/Quantum/Testing/Square_and_Multiply_Test/Program.qs"
+#line 341 "/Users/Matt/Documents/Masters/Dissertation/Quantum/Testing/Square_and_Multiply_Test/Program.qs"
             var __qsVar0__num__ = a.Length;
-#line 620 "/Users/Matt/Documents/Masters/Dissertation/Quantum/Testing/Square_and_Multiply_Test/Program.qs"
+#line 341 "/Users/Matt/Documents/Masters/Dissertation/Quantum/Testing/Square_and_Multiply_Test/Program.qs"
             {
-#line 620 "/Users/Matt/Documents/Masters/Dissertation/Quantum/Testing/Square_and_Multiply_Test/Program.qs"
+#line 341 "/Users/Matt/Documents/Masters/Dissertation/Quantum/Testing/Square_and_Multiply_Test/Program.qs"
                 var (__qsVar1__aS__,__qsVar2__aSPad__) = (Allocate.Apply(__qsVar0__num__), Allocate.Apply(__qsVar0__num__));
 #line hidden
                 bool __arg1__ = true;
                 try
                 {
-#line 620 "/Users/Matt/Documents/Masters/Dissertation/Quantum/Testing/Square_and_Multiply_Test/Program.qs"
+#line 341 "/Users/Matt/Documents/Masters/Dissertation/Quantum/Testing/Square_and_Multiply_Test/Program.qs"
                     MultiplyI.Adjoint.Adjoint.Apply((new Microsoft.Quantum.Arithmetic.LittleEndian(a), new Microsoft.Quantum.Arithmetic.LittleEndian(b), new Microsoft.Quantum.Arithmetic.LittleEndian(QArray<Qubit>.Add(__qsVar1__aS__, __qsVar2__aSPad__))));
-#line 620 "/Users/Matt/Documents/Masters/Dissertation/Quantum/Testing/Square_and_Multiply_Test/Program.qs"
+#line 341 "/Users/Matt/Documents/Masters/Dissertation/Quantum/Testing/Square_and_Multiply_Test/Program.qs"
                     {
-#line 620 "/Users/Matt/Documents/Masters/Dissertation/Quantum/Testing/Square_and_Multiply_Test/Program.qs"
+#line 341 "/Users/Matt/Documents/Masters/Dissertation/Quantum/Testing/Square_and_Multiply_Test/Program.qs"
                         var (__qsVar3__anc__,__qsVar4__MsPad__) = (Allocate.Apply((__qsVar0__num__ * 2L)), Allocate.Apply(__qsVar0__num__));
 #line hidden
                         bool __arg2__ = true;
                         try
                         {
-#line 620 "/Users/Matt/Documents/Masters/Dissertation/Quantum/Testing/Square_and_Multiply_Test/Program.qs"
+#line 341 "/Users/Matt/Documents/Masters/Dissertation/Quantum/Testing/Square_and_Multiply_Test/Program.qs"
                             DivideI.Adjoint.Adjoint.Apply((new Microsoft.Quantum.Arithmetic.LittleEndian(QArray<Qubit>.Add(__qsVar1__aS__, __qsVar2__aSPad__)), new Microsoft.Quantum.Arithmetic.LittleEndian(QArray<Qubit>.Add(Ms, __qsVar4__MsPad__)), new Microsoft.Quantum.Arithmetic.LittleEndian(__qsVar3__anc__)));
-#line 620 "/Users/Matt/Documents/Masters/Dissertation/Quantum/Testing/Square_and_Multiply_Test/Program.qs"
+#line 341 "/Users/Matt/Documents/Masters/Dissertation/Quantum/Testing/Square_and_Multiply_Test/Program.qs"
                             AddI.Adjoint.Apply((new Microsoft.Quantum.Arithmetic.LittleEndian(__qsVar1__aS__), new Microsoft.Quantum.Arithmetic.LittleEndian(Ts)));
-#line 620 "/Users/Matt/Documents/Masters/Dissertation/Quantum/Testing/Square_and_Multiply_Test/Program.qs"
+#line 341 "/Users/Matt/Documents/Masters/Dissertation/Quantum/Testing/Square_and_Multiply_Test/Program.qs"
                             DivideI.Adjoint.Apply((new Microsoft.Quantum.Arithmetic.LittleEndian(QArray<Qubit>.Add(__qsVar1__aS__, __qsVar2__aSPad__)), new Microsoft.Quantum.Arithmetic.LittleEndian(QArray<Qubit>.Add(Ms, __qsVar4__MsPad__)), new Microsoft.Quantum.Arithmetic.LittleEndian(__qsVar3__anc__)));
                         }
 #line hidden
@@ -2427,7 +1943,7 @@ namespace ModularMultiplication.Testing
                         }
                     }
 
-#line 620 "/Users/Matt/Documents/Masters/Dissertation/Quantum/Testing/Square_and_Multiply_Test/Program.qs"
+#line 341 "/Users/Matt/Documents/Masters/Dissertation/Quantum/Testing/Square_and_Multiply_Test/Program.qs"
                     MultiplyI.Adjoint.Apply((new Microsoft.Quantum.Arithmetic.LittleEndian(a), new Microsoft.Quantum.Arithmetic.LittleEndian(b), new Microsoft.Quantum.Arithmetic.LittleEndian(QArray<Qubit>.Add(__qsVar1__aS__, __qsVar2__aSPad__))));
                 }
 #line hidden
@@ -2457,31 +1973,31 @@ namespace ModularMultiplication.Testing
         public override Func<(IQArray<Qubit>,(IQArray<Qubit>,IQArray<Qubit>,IQArray<Qubit>,IQArray<Qubit>)), QVoid> ControlledBody => (__in__) =>
         {
             var (__controlQubits__,(a,b,Ms,Ts)) = __in__;
-#line 620 "/Users/Matt/Documents/Masters/Dissertation/Quantum/Testing/Square_and_Multiply_Test/Program.qs"
+#line 341 "/Users/Matt/Documents/Masters/Dissertation/Quantum/Testing/Square_and_Multiply_Test/Program.qs"
             var num = a.Length;
-#line 620 "/Users/Matt/Documents/Masters/Dissertation/Quantum/Testing/Square_and_Multiply_Test/Program.qs"
+#line 341 "/Users/Matt/Documents/Masters/Dissertation/Quantum/Testing/Square_and_Multiply_Test/Program.qs"
             {
-#line 620 "/Users/Matt/Documents/Masters/Dissertation/Quantum/Testing/Square_and_Multiply_Test/Program.qs"
+#line 341 "/Users/Matt/Documents/Masters/Dissertation/Quantum/Testing/Square_and_Multiply_Test/Program.qs"
                 var (aS,aSPad) = (Allocate.Apply(num), Allocate.Apply(num));
 #line hidden
                 bool __arg1__ = true;
                 try
                 {
-#line 620 "/Users/Matt/Documents/Masters/Dissertation/Quantum/Testing/Square_and_Multiply_Test/Program.qs"
+#line 341 "/Users/Matt/Documents/Masters/Dissertation/Quantum/Testing/Square_and_Multiply_Test/Program.qs"
                     MultiplyI.Controlled.Apply((__controlQubits__, (new Microsoft.Quantum.Arithmetic.LittleEndian(a), new Microsoft.Quantum.Arithmetic.LittleEndian(b), new Microsoft.Quantum.Arithmetic.LittleEndian(QArray<Qubit>.Add(aS, aSPad)))));
-#line 620 "/Users/Matt/Documents/Masters/Dissertation/Quantum/Testing/Square_and_Multiply_Test/Program.qs"
+#line 341 "/Users/Matt/Documents/Masters/Dissertation/Quantum/Testing/Square_and_Multiply_Test/Program.qs"
                     {
-#line 620 "/Users/Matt/Documents/Masters/Dissertation/Quantum/Testing/Square_and_Multiply_Test/Program.qs"
+#line 341 "/Users/Matt/Documents/Masters/Dissertation/Quantum/Testing/Square_and_Multiply_Test/Program.qs"
                         var (anc,MsPad) = (Allocate.Apply((num * 2L)), Allocate.Apply(num));
 #line hidden
                         bool __arg2__ = true;
                         try
                         {
-#line 620 "/Users/Matt/Documents/Masters/Dissertation/Quantum/Testing/Square_and_Multiply_Test/Program.qs"
+#line 341 "/Users/Matt/Documents/Masters/Dissertation/Quantum/Testing/Square_and_Multiply_Test/Program.qs"
                             DivideI.Controlled.Apply((__controlQubits__, (new Microsoft.Quantum.Arithmetic.LittleEndian(QArray<Qubit>.Add(aS, aSPad)), new Microsoft.Quantum.Arithmetic.LittleEndian(QArray<Qubit>.Add(Ms, MsPad)), new Microsoft.Quantum.Arithmetic.LittleEndian(anc))));
-#line 620 "/Users/Matt/Documents/Masters/Dissertation/Quantum/Testing/Square_and_Multiply_Test/Program.qs"
+#line 341 "/Users/Matt/Documents/Masters/Dissertation/Quantum/Testing/Square_and_Multiply_Test/Program.qs"
                             AddI.Controlled.Apply((__controlQubits__, (new Microsoft.Quantum.Arithmetic.LittleEndian(aS), new Microsoft.Quantum.Arithmetic.LittleEndian(Ts))));
-#line 620 "/Users/Matt/Documents/Masters/Dissertation/Quantum/Testing/Square_and_Multiply_Test/Program.qs"
+#line 341 "/Users/Matt/Documents/Masters/Dissertation/Quantum/Testing/Square_and_Multiply_Test/Program.qs"
                             DivideI.Adjoint.Controlled.Apply((__controlQubits__, (new Microsoft.Quantum.Arithmetic.LittleEndian(QArray<Qubit>.Add(aS, aSPad)), new Microsoft.Quantum.Arithmetic.LittleEndian(QArray<Qubit>.Add(Ms, MsPad)), new Microsoft.Quantum.Arithmetic.LittleEndian(anc))));
                         }
 #line hidden
@@ -2503,7 +2019,7 @@ namespace ModularMultiplication.Testing
                         }
                     }
 
-#line 620 "/Users/Matt/Documents/Masters/Dissertation/Quantum/Testing/Square_and_Multiply_Test/Program.qs"
+#line 341 "/Users/Matt/Documents/Masters/Dissertation/Quantum/Testing/Square_and_Multiply_Test/Program.qs"
                     MultiplyI.Adjoint.Controlled.Apply((__controlQubits__, (new Microsoft.Quantum.Arithmetic.LittleEndian(a), new Microsoft.Quantum.Arithmetic.LittleEndian(b), new Microsoft.Quantum.Arithmetic.LittleEndian(QArray<Qubit>.Add(aS, aSPad)))));
                 }
 #line hidden
@@ -2533,31 +2049,31 @@ namespace ModularMultiplication.Testing
         public override Func<(IQArray<Qubit>,(IQArray<Qubit>,IQArray<Qubit>,IQArray<Qubit>,IQArray<Qubit>)), QVoid> ControlledAdjointBody => (__in__) =>
         {
             var (__controlQubits__,(a,b,Ms,Ts)) = __in__;
-#line 620 "/Users/Matt/Documents/Masters/Dissertation/Quantum/Testing/Square_and_Multiply_Test/Program.qs"
+#line 341 "/Users/Matt/Documents/Masters/Dissertation/Quantum/Testing/Square_and_Multiply_Test/Program.qs"
             var __qsVar0__num__ = a.Length;
-#line 620 "/Users/Matt/Documents/Masters/Dissertation/Quantum/Testing/Square_and_Multiply_Test/Program.qs"
+#line 341 "/Users/Matt/Documents/Masters/Dissertation/Quantum/Testing/Square_and_Multiply_Test/Program.qs"
             {
-#line 620 "/Users/Matt/Documents/Masters/Dissertation/Quantum/Testing/Square_and_Multiply_Test/Program.qs"
+#line 341 "/Users/Matt/Documents/Masters/Dissertation/Quantum/Testing/Square_and_Multiply_Test/Program.qs"
                 var (__qsVar1__aS__,__qsVar2__aSPad__) = (Allocate.Apply(__qsVar0__num__), Allocate.Apply(__qsVar0__num__));
 #line hidden
                 bool __arg1__ = true;
                 try
                 {
-#line 620 "/Users/Matt/Documents/Masters/Dissertation/Quantum/Testing/Square_and_Multiply_Test/Program.qs"
+#line 341 "/Users/Matt/Documents/Masters/Dissertation/Quantum/Testing/Square_and_Multiply_Test/Program.qs"
                     MultiplyI.Adjoint.Adjoint.Controlled.Apply((__controlQubits__, (new Microsoft.Quantum.Arithmetic.LittleEndian(a), new Microsoft.Quantum.Arithmetic.LittleEndian(b), new Microsoft.Quantum.Arithmetic.LittleEndian(QArray<Qubit>.Add(__qsVar1__aS__, __qsVar2__aSPad__)))));
-#line 620 "/Users/Matt/Documents/Masters/Dissertation/Quantum/Testing/Square_and_Multiply_Test/Program.qs"
+#line 341 "/Users/Matt/Documents/Masters/Dissertation/Quantum/Testing/Square_and_Multiply_Test/Program.qs"
                     {
-#line 620 "/Users/Matt/Documents/Masters/Dissertation/Quantum/Testing/Square_and_Multiply_Test/Program.qs"
+#line 341 "/Users/Matt/Documents/Masters/Dissertation/Quantum/Testing/Square_and_Multiply_Test/Program.qs"
                         var (__qsVar3__anc__,__qsVar4__MsPad__) = (Allocate.Apply((__qsVar0__num__ * 2L)), Allocate.Apply(__qsVar0__num__));
 #line hidden
                         bool __arg2__ = true;
                         try
                         {
-#line 620 "/Users/Matt/Documents/Masters/Dissertation/Quantum/Testing/Square_and_Multiply_Test/Program.qs"
+#line 341 "/Users/Matt/Documents/Masters/Dissertation/Quantum/Testing/Square_and_Multiply_Test/Program.qs"
                             DivideI.Adjoint.Adjoint.Controlled.Apply((__controlQubits__, (new Microsoft.Quantum.Arithmetic.LittleEndian(QArray<Qubit>.Add(__qsVar1__aS__, __qsVar2__aSPad__)), new Microsoft.Quantum.Arithmetic.LittleEndian(QArray<Qubit>.Add(Ms, __qsVar4__MsPad__)), new Microsoft.Quantum.Arithmetic.LittleEndian(__qsVar3__anc__))));
-#line 620 "/Users/Matt/Documents/Masters/Dissertation/Quantum/Testing/Square_and_Multiply_Test/Program.qs"
+#line 341 "/Users/Matt/Documents/Masters/Dissertation/Quantum/Testing/Square_and_Multiply_Test/Program.qs"
                             AddI.Adjoint.Controlled.Apply((__controlQubits__, (new Microsoft.Quantum.Arithmetic.LittleEndian(__qsVar1__aS__), new Microsoft.Quantum.Arithmetic.LittleEndian(Ts))));
-#line 620 "/Users/Matt/Documents/Masters/Dissertation/Quantum/Testing/Square_and_Multiply_Test/Program.qs"
+#line 341 "/Users/Matt/Documents/Masters/Dissertation/Quantum/Testing/Square_and_Multiply_Test/Program.qs"
                             DivideI.Adjoint.Controlled.Apply((__controlQubits__, (new Microsoft.Quantum.Arithmetic.LittleEndian(QArray<Qubit>.Add(__qsVar1__aS__, __qsVar2__aSPad__)), new Microsoft.Quantum.Arithmetic.LittleEndian(QArray<Qubit>.Add(Ms, __qsVar4__MsPad__)), new Microsoft.Quantum.Arithmetic.LittleEndian(__qsVar3__anc__))));
                         }
 #line hidden
@@ -2579,7 +2095,7 @@ namespace ModularMultiplication.Testing
                         }
                     }
 
-#line 620 "/Users/Matt/Documents/Masters/Dissertation/Quantum/Testing/Square_and_Multiply_Test/Program.qs"
+#line 341 "/Users/Matt/Documents/Masters/Dissertation/Quantum/Testing/Square_and_Multiply_Test/Program.qs"
                     MultiplyI.Adjoint.Controlled.Apply((__controlQubits__, (new Microsoft.Quantum.Arithmetic.LittleEndian(a), new Microsoft.Quantum.Arithmetic.LittleEndian(b), new Microsoft.Quantum.Arithmetic.LittleEndian(QArray<Qubit>.Add(__qsVar1__aS__, __qsVar2__aSPad__)))));
                 }
 #line hidden
@@ -2625,10 +2141,10 @@ namespace ModularMultiplication.Testing
         }
     }
 
-    [SourceLocation("/Users/Matt/Documents/Masters/Dissertation/Quantum/Testing/Square_and_Multiply_Test/Program.qs", OperationFunctor.Body, 633, 648)]
-    [SourceLocation("/Users/Matt/Documents/Masters/Dissertation/Quantum/Testing/Square_and_Multiply_Test/Program.qs", OperationFunctor.Adjoint, 633, 648)]
-    [SourceLocation("/Users/Matt/Documents/Masters/Dissertation/Quantum/Testing/Square_and_Multiply_Test/Program.qs", OperationFunctor.Controlled, 633, 648)]
-    [SourceLocation("/Users/Matt/Documents/Masters/Dissertation/Quantum/Testing/Square_and_Multiply_Test/Program.qs", OperationFunctor.ControlledAdjoint, 633, 648)]
+    [SourceLocation("/Users/Matt/Documents/Masters/Dissertation/Quantum/Testing/Square_and_Multiply_Test/Program.qs", OperationFunctor.Body, 354, 369)]
+    [SourceLocation("/Users/Matt/Documents/Masters/Dissertation/Quantum/Testing/Square_and_Multiply_Test/Program.qs", OperationFunctor.Adjoint, 354, 369)]
+    [SourceLocation("/Users/Matt/Documents/Masters/Dissertation/Quantum/Testing/Square_and_Multiply_Test/Program.qs", OperationFunctor.Controlled, 354, 369)]
+    [SourceLocation("/Users/Matt/Documents/Masters/Dissertation/Quantum/Testing/Square_and_Multiply_Test/Program.qs", OperationFunctor.ControlledAdjoint, 354, 369)]
     public partial class AddI : Unitary<(Microsoft.Quantum.Arithmetic.LittleEndian,Microsoft.Quantum.Arithmetic.LittleEndian)>, ICallable
     {
         public AddI(IOperationFactory m) : base(m)
@@ -2703,23 +2219,23 @@ namespace ModularMultiplication.Testing
         public override Func<(Microsoft.Quantum.Arithmetic.LittleEndian,Microsoft.Quantum.Arithmetic.LittleEndian), QVoid> Body => (__in__) =>
         {
             var (xs,ys) = __in__;
-#line 634 "/Users/Matt/Documents/Masters/Dissertation/Quantum/Testing/Square_and_Multiply_Test/Program.qs"
+#line 355 "/Users/Matt/Documents/Masters/Dissertation/Quantum/Testing/Square_and_Multiply_Test/Program.qs"
             if ((xs.Data.Length == ys.Data.Length))
             {
-#line 635 "/Users/Matt/Documents/Masters/Dissertation/Quantum/Testing/Square_and_Multiply_Test/Program.qs"
+#line 356 "/Users/Matt/Documents/Masters/Dissertation/Quantum/Testing/Square_and_Multiply_Test/Program.qs"
                 MicrosoftQuantumArithmeticRippleCarryAdderNoCarryTTK.Apply((xs, ys));
             }
             else if ((ys.Data.Length > xs.Data.Length))
             {
 #line hidden
                 {
-#line 638 "/Users/Matt/Documents/Masters/Dissertation/Quantum/Testing/Square_and_Multiply_Test/Program.qs"
+#line 359 "/Users/Matt/Documents/Masters/Dissertation/Quantum/Testing/Square_and_Multiply_Test/Program.qs"
                     var qs = Allocate.Apply(((ys.Data.Length - xs.Data.Length) - 1L));
 #line hidden
                     bool __arg1__ = true;
                     try
                     {
-#line 639 "/Users/Matt/Documents/Masters/Dissertation/Quantum/Testing/Square_and_Multiply_Test/Program.qs"
+#line 360 "/Users/Matt/Documents/Masters/Dissertation/Quantum/Testing/Square_and_Multiply_Test/Program.qs"
                         MicrosoftQuantumArithmeticRippleCarryAdderTTK.Apply((new Microsoft.Quantum.Arithmetic.LittleEndian(QArray<Qubit>.Add(xs.Data, qs)), new Microsoft.Quantum.Arithmetic.LittleEndian(MicrosoftQuantumArraysMost.Apply<IQArray<Qubit>>(ys.Data)), MicrosoftQuantumArraysTail.Apply<Qubit>(ys.Data)));
                     }
 #line hidden
@@ -2741,7 +2257,7 @@ namespace ModularMultiplication.Testing
             }
             else
             {
-#line 644 "/Users/Matt/Documents/Masters/Dissertation/Quantum/Testing/Square_and_Multiply_Test/Program.qs"
+#line 365 "/Users/Matt/Documents/Masters/Dissertation/Quantum/Testing/Square_and_Multiply_Test/Program.qs"
                 throw new ExecutionFailException("xs must not contain more qubits than ys!");
             }
 
@@ -2753,23 +2269,23 @@ namespace ModularMultiplication.Testing
         public override Func<(Microsoft.Quantum.Arithmetic.LittleEndian,Microsoft.Quantum.Arithmetic.LittleEndian), QVoid> AdjointBody => (__in__) =>
         {
             var (xs,ys) = __in__;
-#line 633 "/Users/Matt/Documents/Masters/Dissertation/Quantum/Testing/Square_and_Multiply_Test/Program.qs"
+#line 354 "/Users/Matt/Documents/Masters/Dissertation/Quantum/Testing/Square_and_Multiply_Test/Program.qs"
             if ((xs.Data.Length == ys.Data.Length))
             {
-#line 633 "/Users/Matt/Documents/Masters/Dissertation/Quantum/Testing/Square_and_Multiply_Test/Program.qs"
+#line 354 "/Users/Matt/Documents/Masters/Dissertation/Quantum/Testing/Square_and_Multiply_Test/Program.qs"
                 MicrosoftQuantumArithmeticRippleCarryAdderNoCarryTTK.Adjoint.Apply((xs, ys));
             }
             else if ((ys.Data.Length > xs.Data.Length))
             {
-#line 633 "/Users/Matt/Documents/Masters/Dissertation/Quantum/Testing/Square_and_Multiply_Test/Program.qs"
+#line 354 "/Users/Matt/Documents/Masters/Dissertation/Quantum/Testing/Square_and_Multiply_Test/Program.qs"
                 {
-#line 633 "/Users/Matt/Documents/Masters/Dissertation/Quantum/Testing/Square_and_Multiply_Test/Program.qs"
+#line 354 "/Users/Matt/Documents/Masters/Dissertation/Quantum/Testing/Square_and_Multiply_Test/Program.qs"
                     var __qsVar0__qs__ = Allocate.Apply(((ys.Data.Length - xs.Data.Length) - 1L));
 #line hidden
                     bool __arg1__ = true;
                     try
                     {
-#line 633 "/Users/Matt/Documents/Masters/Dissertation/Quantum/Testing/Square_and_Multiply_Test/Program.qs"
+#line 354 "/Users/Matt/Documents/Masters/Dissertation/Quantum/Testing/Square_and_Multiply_Test/Program.qs"
                         MicrosoftQuantumArithmeticRippleCarryAdderTTK.Adjoint.Apply((new Microsoft.Quantum.Arithmetic.LittleEndian(QArray<Qubit>.Add(xs.Data, __qsVar0__qs__)), new Microsoft.Quantum.Arithmetic.LittleEndian(MicrosoftQuantumArraysMost.Apply<IQArray<Qubit>>(ys.Data)), MicrosoftQuantumArraysTail.Apply<Qubit>(ys.Data)));
                     }
 #line hidden
@@ -2791,7 +2307,7 @@ namespace ModularMultiplication.Testing
             }
             else
             {
-#line 633 "/Users/Matt/Documents/Masters/Dissertation/Quantum/Testing/Square_and_Multiply_Test/Program.qs"
+#line 354 "/Users/Matt/Documents/Masters/Dissertation/Quantum/Testing/Square_and_Multiply_Test/Program.qs"
                 throw new ExecutionFailException("xs must not contain more qubits than ys!");
             }
 
@@ -2803,23 +2319,23 @@ namespace ModularMultiplication.Testing
         public override Func<(IQArray<Qubit>,(Microsoft.Quantum.Arithmetic.LittleEndian,Microsoft.Quantum.Arithmetic.LittleEndian)), QVoid> ControlledBody => (__in__) =>
         {
             var (__controlQubits__,(xs,ys)) = __in__;
-#line 633 "/Users/Matt/Documents/Masters/Dissertation/Quantum/Testing/Square_and_Multiply_Test/Program.qs"
+#line 354 "/Users/Matt/Documents/Masters/Dissertation/Quantum/Testing/Square_and_Multiply_Test/Program.qs"
             if ((xs.Data.Length == ys.Data.Length))
             {
-#line 633 "/Users/Matt/Documents/Masters/Dissertation/Quantum/Testing/Square_and_Multiply_Test/Program.qs"
+#line 354 "/Users/Matt/Documents/Masters/Dissertation/Quantum/Testing/Square_and_Multiply_Test/Program.qs"
                 MicrosoftQuantumArithmeticRippleCarryAdderNoCarryTTK.Controlled.Apply((__controlQubits__, (xs, ys)));
             }
             else if ((ys.Data.Length > xs.Data.Length))
             {
-#line 633 "/Users/Matt/Documents/Masters/Dissertation/Quantum/Testing/Square_and_Multiply_Test/Program.qs"
+#line 354 "/Users/Matt/Documents/Masters/Dissertation/Quantum/Testing/Square_and_Multiply_Test/Program.qs"
                 {
-#line 633 "/Users/Matt/Documents/Masters/Dissertation/Quantum/Testing/Square_and_Multiply_Test/Program.qs"
+#line 354 "/Users/Matt/Documents/Masters/Dissertation/Quantum/Testing/Square_and_Multiply_Test/Program.qs"
                     var qs = Allocate.Apply(((ys.Data.Length - xs.Data.Length) - 1L));
 #line hidden
                     bool __arg1__ = true;
                     try
                     {
-#line 633 "/Users/Matt/Documents/Masters/Dissertation/Quantum/Testing/Square_and_Multiply_Test/Program.qs"
+#line 354 "/Users/Matt/Documents/Masters/Dissertation/Quantum/Testing/Square_and_Multiply_Test/Program.qs"
                         MicrosoftQuantumArithmeticRippleCarryAdderTTK.Controlled.Apply((__controlQubits__, (new Microsoft.Quantum.Arithmetic.LittleEndian(QArray<Qubit>.Add(xs.Data, qs)), new Microsoft.Quantum.Arithmetic.LittleEndian(MicrosoftQuantumArraysMost.Apply<IQArray<Qubit>>(ys.Data)), MicrosoftQuantumArraysTail.Apply<Qubit>(ys.Data))));
                     }
 #line hidden
@@ -2841,7 +2357,7 @@ namespace ModularMultiplication.Testing
             }
             else
             {
-#line 633 "/Users/Matt/Documents/Masters/Dissertation/Quantum/Testing/Square_and_Multiply_Test/Program.qs"
+#line 354 "/Users/Matt/Documents/Masters/Dissertation/Quantum/Testing/Square_and_Multiply_Test/Program.qs"
                 throw new ExecutionFailException("xs must not contain more qubits than ys!");
             }
 
@@ -2853,23 +2369,23 @@ namespace ModularMultiplication.Testing
         public override Func<(IQArray<Qubit>,(Microsoft.Quantum.Arithmetic.LittleEndian,Microsoft.Quantum.Arithmetic.LittleEndian)), QVoid> ControlledAdjointBody => (__in__) =>
         {
             var (__controlQubits__,(xs,ys)) = __in__;
-#line 633 "/Users/Matt/Documents/Masters/Dissertation/Quantum/Testing/Square_and_Multiply_Test/Program.qs"
+#line 354 "/Users/Matt/Documents/Masters/Dissertation/Quantum/Testing/Square_and_Multiply_Test/Program.qs"
             if ((xs.Data.Length == ys.Data.Length))
             {
-#line 633 "/Users/Matt/Documents/Masters/Dissertation/Quantum/Testing/Square_and_Multiply_Test/Program.qs"
+#line 354 "/Users/Matt/Documents/Masters/Dissertation/Quantum/Testing/Square_and_Multiply_Test/Program.qs"
                 MicrosoftQuantumArithmeticRippleCarryAdderNoCarryTTK.Adjoint.Controlled.Apply((__controlQubits__, (xs, ys)));
             }
             else if ((ys.Data.Length > xs.Data.Length))
             {
-#line 633 "/Users/Matt/Documents/Masters/Dissertation/Quantum/Testing/Square_and_Multiply_Test/Program.qs"
+#line 354 "/Users/Matt/Documents/Masters/Dissertation/Quantum/Testing/Square_and_Multiply_Test/Program.qs"
                 {
-#line 633 "/Users/Matt/Documents/Masters/Dissertation/Quantum/Testing/Square_and_Multiply_Test/Program.qs"
+#line 354 "/Users/Matt/Documents/Masters/Dissertation/Quantum/Testing/Square_and_Multiply_Test/Program.qs"
                     var __qsVar0__qs__ = Allocate.Apply(((ys.Data.Length - xs.Data.Length) - 1L));
 #line hidden
                     bool __arg1__ = true;
                     try
                     {
-#line 633 "/Users/Matt/Documents/Masters/Dissertation/Quantum/Testing/Square_and_Multiply_Test/Program.qs"
+#line 354 "/Users/Matt/Documents/Masters/Dissertation/Quantum/Testing/Square_and_Multiply_Test/Program.qs"
                         MicrosoftQuantumArithmeticRippleCarryAdderTTK.Adjoint.Controlled.Apply((__controlQubits__, (new Microsoft.Quantum.Arithmetic.LittleEndian(QArray<Qubit>.Add(xs.Data, __qsVar0__qs__)), new Microsoft.Quantum.Arithmetic.LittleEndian(MicrosoftQuantumArraysMost.Apply<IQArray<Qubit>>(ys.Data)), MicrosoftQuantumArraysTail.Apply<Qubit>(ys.Data))));
                     }
 #line hidden
@@ -2891,7 +2407,7 @@ namespace ModularMultiplication.Testing
             }
             else
             {
-#line 633 "/Users/Matt/Documents/Masters/Dissertation/Quantum/Testing/Square_and_Multiply_Test/Program.qs"
+#line 354 "/Users/Matt/Documents/Masters/Dissertation/Quantum/Testing/Square_and_Multiply_Test/Program.qs"
                 throw new ExecutionFailException("xs must not contain more qubits than ys!");
             }
 
@@ -2920,10 +2436,10 @@ namespace ModularMultiplication.Testing
         }
     }
 
-    [SourceLocation("/Users/Matt/Documents/Masters/Dissertation/Quantum/Testing/Square_and_Multiply_Test/Program.qs", OperationFunctor.Body, 648, 654)]
-    [SourceLocation("/Users/Matt/Documents/Masters/Dissertation/Quantum/Testing/Square_and_Multiply_Test/Program.qs", OperationFunctor.Adjoint, 648, 654)]
-    [SourceLocation("/Users/Matt/Documents/Masters/Dissertation/Quantum/Testing/Square_and_Multiply_Test/Program.qs", OperationFunctor.Controlled, 648, 654)]
-    [SourceLocation("/Users/Matt/Documents/Masters/Dissertation/Quantum/Testing/Square_and_Multiply_Test/Program.qs", OperationFunctor.ControlledAdjoint, 648, 654)]
+    [SourceLocation("/Users/Matt/Documents/Masters/Dissertation/Quantum/Testing/Square_and_Multiply_Test/Program.qs", OperationFunctor.Body, 369, 375)]
+    [SourceLocation("/Users/Matt/Documents/Masters/Dissertation/Quantum/Testing/Square_and_Multiply_Test/Program.qs", OperationFunctor.Adjoint, 369, 375)]
+    [SourceLocation("/Users/Matt/Documents/Masters/Dissertation/Quantum/Testing/Square_and_Multiply_Test/Program.qs", OperationFunctor.Controlled, 369, 375)]
+    [SourceLocation("/Users/Matt/Documents/Masters/Dissertation/Quantum/Testing/Square_and_Multiply_Test/Program.qs", OperationFunctor.ControlledAdjoint, 369, 375)]
     public partial class CompareGTI : Unitary<(Microsoft.Quantum.Arithmetic.LittleEndian,Microsoft.Quantum.Arithmetic.LittleEndian,Qubit)>, ICallable
     {
         public CompareGTI(IOperationFactory m) : base(m)
@@ -2956,7 +2472,7 @@ namespace ModularMultiplication.Testing
         public override Func<(Microsoft.Quantum.Arithmetic.LittleEndian,Microsoft.Quantum.Arithmetic.LittleEndian,Qubit), QVoid> Body => (__in__) =>
         {
             var (xs,ys,result) = __in__;
-#line 650 "/Users/Matt/Documents/Masters/Dissertation/Quantum/Testing/Square_and_Multiply_Test/Program.qs"
+#line 371 "/Users/Matt/Documents/Masters/Dissertation/Quantum/Testing/Square_and_Multiply_Test/Program.qs"
             MicrosoftQuantumArithmeticGreaterThan.Apply((xs, ys, result));
 #line hidden
             return QVoid.Instance;
@@ -2966,7 +2482,7 @@ namespace ModularMultiplication.Testing
         public override Func<(Microsoft.Quantum.Arithmetic.LittleEndian,Microsoft.Quantum.Arithmetic.LittleEndian,Qubit), QVoid> AdjointBody => (__in__) =>
         {
             var (xs,ys,result) = __in__;
-#line 648 "/Users/Matt/Documents/Masters/Dissertation/Quantum/Testing/Square_and_Multiply_Test/Program.qs"
+#line 369 "/Users/Matt/Documents/Masters/Dissertation/Quantum/Testing/Square_and_Multiply_Test/Program.qs"
             MicrosoftQuantumArithmeticGreaterThan.Adjoint.Apply((xs, ys, result));
 #line hidden
             return QVoid.Instance;
@@ -2976,7 +2492,7 @@ namespace ModularMultiplication.Testing
         public override Func<(IQArray<Qubit>,(Microsoft.Quantum.Arithmetic.LittleEndian,Microsoft.Quantum.Arithmetic.LittleEndian,Qubit)), QVoid> ControlledBody => (__in__) =>
         {
             var (__controlQubits__,(xs,ys,result)) = __in__;
-#line 648 "/Users/Matt/Documents/Masters/Dissertation/Quantum/Testing/Square_and_Multiply_Test/Program.qs"
+#line 369 "/Users/Matt/Documents/Masters/Dissertation/Quantum/Testing/Square_and_Multiply_Test/Program.qs"
             MicrosoftQuantumArithmeticGreaterThan.Controlled.Apply((__controlQubits__, (xs, ys, result)));
 #line hidden
             return QVoid.Instance;
@@ -2986,7 +2502,7 @@ namespace ModularMultiplication.Testing
         public override Func<(IQArray<Qubit>,(Microsoft.Quantum.Arithmetic.LittleEndian,Microsoft.Quantum.Arithmetic.LittleEndian,Qubit)), QVoid> ControlledAdjointBody => (__in__) =>
         {
             var (__controlQubits__,(xs,ys,result)) = __in__;
-#line 648 "/Users/Matt/Documents/Masters/Dissertation/Quantum/Testing/Square_and_Multiply_Test/Program.qs"
+#line 369 "/Users/Matt/Documents/Masters/Dissertation/Quantum/Testing/Square_and_Multiply_Test/Program.qs"
             MicrosoftQuantumArithmeticGreaterThan.Adjoint.Controlled.Apply((__controlQubits__, (xs, ys, result)));
 #line hidden
             return QVoid.Instance;
@@ -3006,10 +2522,10 @@ namespace ModularMultiplication.Testing
         }
     }
 
-    [SourceLocation("/Users/Matt/Documents/Masters/Dissertation/Quantum/Testing/Square_and_Multiply_Test/Program.qs", OperationFunctor.Body, 656, 669)]
-    [SourceLocation("/Users/Matt/Documents/Masters/Dissertation/Quantum/Testing/Square_and_Multiply_Test/Program.qs", OperationFunctor.Adjoint, 686, 687)]
-    [SourceLocation("/Users/Matt/Documents/Masters/Dissertation/Quantum/Testing/Square_and_Multiply_Test/Program.qs", OperationFunctor.Controlled, 669, 686)]
-    [SourceLocation("/Users/Matt/Documents/Masters/Dissertation/Quantum/Testing/Square_and_Multiply_Test/Program.qs", OperationFunctor.ControlledAdjoint, 687, 691)]
+    [SourceLocation("/Users/Matt/Documents/Masters/Dissertation/Quantum/Testing/Square_and_Multiply_Test/Program.qs", OperationFunctor.Body, 377, 390)]
+    [SourceLocation("/Users/Matt/Documents/Masters/Dissertation/Quantum/Testing/Square_and_Multiply_Test/Program.qs", OperationFunctor.Adjoint, 407, 408)]
+    [SourceLocation("/Users/Matt/Documents/Masters/Dissertation/Quantum/Testing/Square_and_Multiply_Test/Program.qs", OperationFunctor.Controlled, 390, 407)]
+    [SourceLocation("/Users/Matt/Documents/Masters/Dissertation/Quantum/Testing/Square_and_Multiply_Test/Program.qs", OperationFunctor.ControlledAdjoint, 408, 412)]
     public partial class MultiplyI : Unitary<(Microsoft.Quantum.Arithmetic.LittleEndian,Microsoft.Quantum.Arithmetic.LittleEndian,Microsoft.Quantum.Arithmetic.LittleEndian)>, ICallable
     {
         public MultiplyI(IOperationFactory m) : base(m)
@@ -3090,19 +2606,19 @@ namespace ModularMultiplication.Testing
         public override Func<(Microsoft.Quantum.Arithmetic.LittleEndian,Microsoft.Quantum.Arithmetic.LittleEndian,Microsoft.Quantum.Arithmetic.LittleEndian), QVoid> Body => (__in__) =>
         {
             var (xs,ys,result) = __in__;
-#line 657 "/Users/Matt/Documents/Masters/Dissertation/Quantum/Testing/Square_and_Multiply_Test/Program.qs"
+#line 378 "/Users/Matt/Documents/Masters/Dissertation/Quantum/Testing/Square_and_Multiply_Test/Program.qs"
             var n = xs.Data.Length;
-#line 659 "/Users/Matt/Documents/Masters/Dissertation/Quantum/Testing/Square_and_Multiply_Test/Program.qs"
+#line 380 "/Users/Matt/Documents/Masters/Dissertation/Quantum/Testing/Square_and_Multiply_Test/Program.qs"
             MicrosoftQuantumDiagnosticsEqualityFactI.Apply((n, ys.Data.Length, "Integer multiplication requires\n                           equally-sized registers xs and ys."));
-#line 661 "/Users/Matt/Documents/Masters/Dissertation/Quantum/Testing/Square_and_Multiply_Test/Program.qs"
+#line 382 "/Users/Matt/Documents/Masters/Dissertation/Quantum/Testing/Square_and_Multiply_Test/Program.qs"
             MicrosoftQuantumDiagnosticsEqualityFactI.Apply(((2L * n), result.Data.Length, "Integer multiplication\n                            requires a 2n-bit result registers."));
-#line 663 "/Users/Matt/Documents/Masters/Dissertation/Quantum/Testing/Square_and_Multiply_Test/Program.qs"
+#line 384 "/Users/Matt/Documents/Masters/Dissertation/Quantum/Testing/Square_and_Multiply_Test/Program.qs"
             MicrosoftQuantumDiagnosticsAssertAllZero.Apply(result.Data);
-#line 665 "/Users/Matt/Documents/Masters/Dissertation/Quantum/Testing/Square_and_Multiply_Test/Program.qs"
+#line 386 "/Users/Matt/Documents/Masters/Dissertation/Quantum/Testing/Square_and_Multiply_Test/Program.qs"
             foreach (var i in new QRange(0L, (n - 1L)))
 #line hidden
             {
-#line 666 "/Users/Matt/Documents/Masters/Dissertation/Quantum/Testing/Square_and_Multiply_Test/Program.qs"
+#line 387 "/Users/Matt/Documents/Masters/Dissertation/Quantum/Testing/Square_and_Multiply_Test/Program.qs"
                 AddI.Controlled.Apply((new QArray<Qubit>(xs.Data[i]), (ys, new Microsoft.Quantum.Arithmetic.LittleEndian(result.Data?.Slice(new QRange(i, (i + n)))))));
             }
 
@@ -3114,21 +2630,21 @@ namespace ModularMultiplication.Testing
         public override Func<(Microsoft.Quantum.Arithmetic.LittleEndian,Microsoft.Quantum.Arithmetic.LittleEndian,Microsoft.Quantum.Arithmetic.LittleEndian), QVoid> AdjointBody => (__in__) =>
         {
             var (xs,ys,result) = __in__;
-#line 686 "/Users/Matt/Documents/Masters/Dissertation/Quantum/Testing/Square_and_Multiply_Test/Program.qs"
+#line 407 "/Users/Matt/Documents/Masters/Dissertation/Quantum/Testing/Square_and_Multiply_Test/Program.qs"
             var __qsVar0__n__ = xs.Data.Length;
-#line 686 "/Users/Matt/Documents/Masters/Dissertation/Quantum/Testing/Square_and_Multiply_Test/Program.qs"
+#line 407 "/Users/Matt/Documents/Masters/Dissertation/Quantum/Testing/Square_and_Multiply_Test/Program.qs"
             MicrosoftQuantumDiagnosticsEqualityFactI.Apply((__qsVar0__n__, ys.Data.Length, "Integer multiplication requires\n                           equally-sized registers xs and ys."));
-#line 686 "/Users/Matt/Documents/Masters/Dissertation/Quantum/Testing/Square_and_Multiply_Test/Program.qs"
+#line 407 "/Users/Matt/Documents/Masters/Dissertation/Quantum/Testing/Square_and_Multiply_Test/Program.qs"
             MicrosoftQuantumDiagnosticsEqualityFactI.Apply(((2L * __qsVar0__n__), result.Data.Length, "Integer multiplication\n                            requires a 2n-bit result registers."));
-#line 686 "/Users/Matt/Documents/Masters/Dissertation/Quantum/Testing/Square_and_Multiply_Test/Program.qs"
+#line 407 "/Users/Matt/Documents/Masters/Dissertation/Quantum/Testing/Square_and_Multiply_Test/Program.qs"
             foreach (var __qsVar1__i__ in RangeReverse.Apply(new QRange(0L, (__qsVar0__n__ - 1L))))
 #line hidden
             {
-#line 686 "/Users/Matt/Documents/Masters/Dissertation/Quantum/Testing/Square_and_Multiply_Test/Program.qs"
+#line 407 "/Users/Matt/Documents/Masters/Dissertation/Quantum/Testing/Square_and_Multiply_Test/Program.qs"
                 AddI.Controlled.Adjoint.Apply((new QArray<Qubit>(xs.Data[__qsVar1__i__]), (ys, new Microsoft.Quantum.Arithmetic.LittleEndian(result.Data?.Slice(new QRange(__qsVar1__i__, (__qsVar1__i__ + __qsVar0__n__)))))));
             }
 
-#line 686 "/Users/Matt/Documents/Masters/Dissertation/Quantum/Testing/Square_and_Multiply_Test/Program.qs"
+#line 407 "/Users/Matt/Documents/Masters/Dissertation/Quantum/Testing/Square_and_Multiply_Test/Program.qs"
             MicrosoftQuantumDiagnosticsAssertAllZero.Adjoint.Apply(result.Data);
 #line hidden
             return QVoid.Instance;
@@ -3138,31 +2654,31 @@ namespace ModularMultiplication.Testing
         public override Func<(IQArray<Qubit>,(Microsoft.Quantum.Arithmetic.LittleEndian,Microsoft.Quantum.Arithmetic.LittleEndian,Microsoft.Quantum.Arithmetic.LittleEndian)), QVoid> ControlledBody => (__in__) =>
         {
             var (controls,(xs,ys,result)) = __in__;
-#line 670 "/Users/Matt/Documents/Masters/Dissertation/Quantum/Testing/Square_and_Multiply_Test/Program.qs"
+#line 391 "/Users/Matt/Documents/Masters/Dissertation/Quantum/Testing/Square_and_Multiply_Test/Program.qs"
             var n = xs.Data.Length;
-#line 672 "/Users/Matt/Documents/Masters/Dissertation/Quantum/Testing/Square_and_Multiply_Test/Program.qs"
+#line 393 "/Users/Matt/Documents/Masters/Dissertation/Quantum/Testing/Square_and_Multiply_Test/Program.qs"
             MicrosoftQuantumDiagnosticsEqualityFactI.Apply((n, ys.Data.Length, "Integer multiplication requires\n                           equally-sized registers xs and ys."));
-#line 674 "/Users/Matt/Documents/Masters/Dissertation/Quantum/Testing/Square_and_Multiply_Test/Program.qs"
+#line 395 "/Users/Matt/Documents/Masters/Dissertation/Quantum/Testing/Square_and_Multiply_Test/Program.qs"
             MicrosoftQuantumDiagnosticsEqualityFactI.Apply(((2L * n), result.Data.Length, "Integer multiplication\n                            requires a 2n-bit result registers."));
-#line 676 "/Users/Matt/Documents/Masters/Dissertation/Quantum/Testing/Square_and_Multiply_Test/Program.qs"
+#line 397 "/Users/Matt/Documents/Masters/Dissertation/Quantum/Testing/Square_and_Multiply_Test/Program.qs"
             MicrosoftQuantumDiagnosticsAssertAllZero.Apply(result.Data);
 #line hidden
             {
-#line 678 "/Users/Matt/Documents/Masters/Dissertation/Quantum/Testing/Square_and_Multiply_Test/Program.qs"
+#line 399 "/Users/Matt/Documents/Masters/Dissertation/Quantum/Testing/Square_and_Multiply_Test/Program.qs"
                 var anc = Allocate.Apply();
 #line hidden
                 bool __arg1__ = true;
                 try
                 {
-#line 679 "/Users/Matt/Documents/Masters/Dissertation/Quantum/Testing/Square_and_Multiply_Test/Program.qs"
+#line 400 "/Users/Matt/Documents/Masters/Dissertation/Quantum/Testing/Square_and_Multiply_Test/Program.qs"
                     foreach (var i in new QRange(0L, (n - 1L)))
 #line hidden
                     {
-#line 680 "/Users/Matt/Documents/Masters/Dissertation/Quantum/Testing/Square_and_Multiply_Test/Program.qs"
+#line 401 "/Users/Matt/Documents/Masters/Dissertation/Quantum/Testing/Square_and_Multiply_Test/Program.qs"
                         MicrosoftQuantumIntrinsicCNOT.Controlled.Apply((controls, (xs.Data[i], anc)));
-#line 681 "/Users/Matt/Documents/Masters/Dissertation/Quantum/Testing/Square_and_Multiply_Test/Program.qs"
+#line 402 "/Users/Matt/Documents/Masters/Dissertation/Quantum/Testing/Square_and_Multiply_Test/Program.qs"
                         AddI.Controlled.Apply((new QArray<Qubit>(anc), (ys, new Microsoft.Quantum.Arithmetic.LittleEndian(result.Data?.Slice(new QRange(i, (i + n)))))));
-#line 682 "/Users/Matt/Documents/Masters/Dissertation/Quantum/Testing/Square_and_Multiply_Test/Program.qs"
+#line 403 "/Users/Matt/Documents/Masters/Dissertation/Quantum/Testing/Square_and_Multiply_Test/Program.qs"
                         MicrosoftQuantumIntrinsicCNOT.Controlled.Apply((controls, (xs.Data[i], anc)));
                     }
                 }
@@ -3191,29 +2707,29 @@ namespace ModularMultiplication.Testing
         public override Func<(IQArray<Qubit>,(Microsoft.Quantum.Arithmetic.LittleEndian,Microsoft.Quantum.Arithmetic.LittleEndian,Microsoft.Quantum.Arithmetic.LittleEndian)), QVoid> ControlledAdjointBody => (__in__) =>
         {
             var (controls,(xs,ys,result)) = __in__;
-#line 687 "/Users/Matt/Documents/Masters/Dissertation/Quantum/Testing/Square_and_Multiply_Test/Program.qs"
+#line 408 "/Users/Matt/Documents/Masters/Dissertation/Quantum/Testing/Square_and_Multiply_Test/Program.qs"
             var __qsVar0__n__ = xs.Data.Length;
-#line 687 "/Users/Matt/Documents/Masters/Dissertation/Quantum/Testing/Square_and_Multiply_Test/Program.qs"
+#line 408 "/Users/Matt/Documents/Masters/Dissertation/Quantum/Testing/Square_and_Multiply_Test/Program.qs"
             MicrosoftQuantumDiagnosticsEqualityFactI.Apply((__qsVar0__n__, ys.Data.Length, "Integer multiplication requires\n                           equally-sized registers xs and ys."));
-#line 687 "/Users/Matt/Documents/Masters/Dissertation/Quantum/Testing/Square_and_Multiply_Test/Program.qs"
+#line 408 "/Users/Matt/Documents/Masters/Dissertation/Quantum/Testing/Square_and_Multiply_Test/Program.qs"
             MicrosoftQuantumDiagnosticsEqualityFactI.Apply(((2L * __qsVar0__n__), result.Data.Length, "Integer multiplication\n                            requires a 2n-bit result registers."));
-#line 687 "/Users/Matt/Documents/Masters/Dissertation/Quantum/Testing/Square_and_Multiply_Test/Program.qs"
+#line 408 "/Users/Matt/Documents/Masters/Dissertation/Quantum/Testing/Square_and_Multiply_Test/Program.qs"
             {
-#line 687 "/Users/Matt/Documents/Masters/Dissertation/Quantum/Testing/Square_and_Multiply_Test/Program.qs"
+#line 408 "/Users/Matt/Documents/Masters/Dissertation/Quantum/Testing/Square_and_Multiply_Test/Program.qs"
                 var __qsVar1__anc__ = Allocate.Apply();
 #line hidden
                 bool __arg1__ = true;
                 try
                 {
-#line 687 "/Users/Matt/Documents/Masters/Dissertation/Quantum/Testing/Square_and_Multiply_Test/Program.qs"
+#line 408 "/Users/Matt/Documents/Masters/Dissertation/Quantum/Testing/Square_and_Multiply_Test/Program.qs"
                     foreach (var __qsVar2__i__ in RangeReverse.Apply(new QRange(0L, (__qsVar0__n__ - 1L))))
 #line hidden
                     {
-#line 687 "/Users/Matt/Documents/Masters/Dissertation/Quantum/Testing/Square_and_Multiply_Test/Program.qs"
+#line 408 "/Users/Matt/Documents/Masters/Dissertation/Quantum/Testing/Square_and_Multiply_Test/Program.qs"
                         MicrosoftQuantumIntrinsicCNOT.Controlled.Adjoint.Apply((controls, (xs.Data[__qsVar2__i__], __qsVar1__anc__)));
-#line 687 "/Users/Matt/Documents/Masters/Dissertation/Quantum/Testing/Square_and_Multiply_Test/Program.qs"
+#line 408 "/Users/Matt/Documents/Masters/Dissertation/Quantum/Testing/Square_and_Multiply_Test/Program.qs"
                         AddI.Controlled.Adjoint.Apply((new QArray<Qubit>(__qsVar1__anc__), (ys, new Microsoft.Quantum.Arithmetic.LittleEndian(result.Data?.Slice(new QRange(__qsVar2__i__, (__qsVar2__i__ + __qsVar0__n__)))))));
-#line 687 "/Users/Matt/Documents/Masters/Dissertation/Quantum/Testing/Square_and_Multiply_Test/Program.qs"
+#line 408 "/Users/Matt/Documents/Masters/Dissertation/Quantum/Testing/Square_and_Multiply_Test/Program.qs"
                         MicrosoftQuantumIntrinsicCNOT.Controlled.Adjoint.Apply((controls, (xs.Data[__qsVar2__i__], __qsVar1__anc__)));
                     }
                 }
@@ -3234,7 +2750,7 @@ namespace ModularMultiplication.Testing
                 }
             }
 
-#line 687 "/Users/Matt/Documents/Masters/Dissertation/Quantum/Testing/Square_and_Multiply_Test/Program.qs"
+#line 408 "/Users/Matt/Documents/Masters/Dissertation/Quantum/Testing/Square_and_Multiply_Test/Program.qs"
             MicrosoftQuantumDiagnosticsAssertAllZero.Adjoint.Apply(result.Data);
 #line hidden
             return QVoid.Instance;
@@ -3262,10 +2778,10 @@ namespace ModularMultiplication.Testing
         }
     }
 
-    [SourceLocation("/Users/Matt/Documents/Masters/Dissertation/Quantum/Testing/Square_and_Multiply_Test/Program.qs", OperationFunctor.Body, 692, 695)]
-    [SourceLocation("/Users/Matt/Documents/Masters/Dissertation/Quantum/Testing/Square_and_Multiply_Test/Program.qs", OperationFunctor.Adjoint, 711, 712)]
-    [SourceLocation("/Users/Matt/Documents/Masters/Dissertation/Quantum/Testing/Square_and_Multiply_Test/Program.qs", OperationFunctor.Controlled, 695, 711)]
-    [SourceLocation("/Users/Matt/Documents/Masters/Dissertation/Quantum/Testing/Square_and_Multiply_Test/Program.qs", OperationFunctor.ControlledAdjoint, 712, 716)]
+    [SourceLocation("/Users/Matt/Documents/Masters/Dissertation/Quantum/Testing/Square_and_Multiply_Test/Program.qs", OperationFunctor.Body, 413, 416)]
+    [SourceLocation("/Users/Matt/Documents/Masters/Dissertation/Quantum/Testing/Square_and_Multiply_Test/Program.qs", OperationFunctor.Adjoint, 432, 433)]
+    [SourceLocation("/Users/Matt/Documents/Masters/Dissertation/Quantum/Testing/Square_and_Multiply_Test/Program.qs", OperationFunctor.Controlled, 416, 432)]
+    [SourceLocation("/Users/Matt/Documents/Masters/Dissertation/Quantum/Testing/Square_and_Multiply_Test/Program.qs", OperationFunctor.ControlledAdjoint, 433, 437)]
     public partial class SquareI : Unitary<(Microsoft.Quantum.Arithmetic.LittleEndian,Microsoft.Quantum.Arithmetic.LittleEndian)>, ICallable
     {
         public SquareI(IOperationFactory m) : base(m)
@@ -3352,7 +2868,7 @@ namespace ModularMultiplication.Testing
         public override Func<(Microsoft.Quantum.Arithmetic.LittleEndian,Microsoft.Quantum.Arithmetic.LittleEndian), QVoid> Body => (__in__) =>
         {
             var (xs,result) = __in__;
-#line 693 "/Users/Matt/Documents/Masters/Dissertation/Quantum/Testing/Square_and_Multiply_Test/Program.qs"
+#line 414 "/Users/Matt/Documents/Masters/Dissertation/Quantum/Testing/Square_and_Multiply_Test/Program.qs"
             self.Controlled.Apply((QArray<Qubit>.Create(0L), (xs, result)));
 #line hidden
             return QVoid.Instance;
@@ -3362,7 +2878,7 @@ namespace ModularMultiplication.Testing
         public override Func<(Microsoft.Quantum.Arithmetic.LittleEndian,Microsoft.Quantum.Arithmetic.LittleEndian), QVoid> AdjointBody => (__in__) =>
         {
             var (xs,result) = __in__;
-#line 711 "/Users/Matt/Documents/Masters/Dissertation/Quantum/Testing/Square_and_Multiply_Test/Program.qs"
+#line 432 "/Users/Matt/Documents/Masters/Dissertation/Quantum/Testing/Square_and_Multiply_Test/Program.qs"
             self.Controlled.Adjoint.Apply((QArray<Qubit>.Create(0L), (xs, result)));
 #line hidden
             return QVoid.Instance;
@@ -3372,29 +2888,29 @@ namespace ModularMultiplication.Testing
         public override Func<(IQArray<Qubit>,(Microsoft.Quantum.Arithmetic.LittleEndian,Microsoft.Quantum.Arithmetic.LittleEndian)), QVoid> ControlledBody => (__in__) =>
         {
             var (controls,(xs,result)) = __in__;
-#line 696 "/Users/Matt/Documents/Masters/Dissertation/Quantum/Testing/Square_and_Multiply_Test/Program.qs"
+#line 417 "/Users/Matt/Documents/Masters/Dissertation/Quantum/Testing/Square_and_Multiply_Test/Program.qs"
             var n = xs.Data.Length;
-#line 698 "/Users/Matt/Documents/Masters/Dissertation/Quantum/Testing/Square_and_Multiply_Test/Program.qs"
+#line 419 "/Users/Matt/Documents/Masters/Dissertation/Quantum/Testing/Square_and_Multiply_Test/Program.qs"
             MicrosoftQuantumDiagnosticsEqualityFactI.Apply(((2L * n), result.Data.Length, "Integer multiplication\n                            requires a 2n-bit result registers."));
-#line 700 "/Users/Matt/Documents/Masters/Dissertation/Quantum/Testing/Square_and_Multiply_Test/Program.qs"
+#line 421 "/Users/Matt/Documents/Masters/Dissertation/Quantum/Testing/Square_and_Multiply_Test/Program.qs"
             MicrosoftQuantumDiagnosticsAssertAllZero.Apply(result.Data);
 #line hidden
             {
-#line 702 "/Users/Matt/Documents/Masters/Dissertation/Quantum/Testing/Square_and_Multiply_Test/Program.qs"
+#line 423 "/Users/Matt/Documents/Masters/Dissertation/Quantum/Testing/Square_and_Multiply_Test/Program.qs"
                 var anc = Allocate.Apply();
 #line hidden
                 bool __arg1__ = true;
                 try
                 {
-#line 703 "/Users/Matt/Documents/Masters/Dissertation/Quantum/Testing/Square_and_Multiply_Test/Program.qs"
+#line 424 "/Users/Matt/Documents/Masters/Dissertation/Quantum/Testing/Square_and_Multiply_Test/Program.qs"
                     foreach (var i in new QRange(0L, (n - 1L)))
 #line hidden
                     {
-#line 704 "/Users/Matt/Documents/Masters/Dissertation/Quantum/Testing/Square_and_Multiply_Test/Program.qs"
+#line 425 "/Users/Matt/Documents/Masters/Dissertation/Quantum/Testing/Square_and_Multiply_Test/Program.qs"
                         MicrosoftQuantumIntrinsicCNOT.Controlled.Apply((controls, (xs.Data[i], anc)));
-#line 705 "/Users/Matt/Documents/Masters/Dissertation/Quantum/Testing/Square_and_Multiply_Test/Program.qs"
+#line 426 "/Users/Matt/Documents/Masters/Dissertation/Quantum/Testing/Square_and_Multiply_Test/Program.qs"
                         AddI.Controlled.Apply((new QArray<Qubit>(anc), (xs, new Microsoft.Quantum.Arithmetic.LittleEndian(result.Data?.Slice(new QRange(i, (i + n)))))));
-#line 707 "/Users/Matt/Documents/Masters/Dissertation/Quantum/Testing/Square_and_Multiply_Test/Program.qs"
+#line 428 "/Users/Matt/Documents/Masters/Dissertation/Quantum/Testing/Square_and_Multiply_Test/Program.qs"
                         MicrosoftQuantumIntrinsicCNOT.Controlled.Apply((controls, (xs.Data[i], anc)));
                     }
                 }
@@ -3423,27 +2939,27 @@ namespace ModularMultiplication.Testing
         public override Func<(IQArray<Qubit>,(Microsoft.Quantum.Arithmetic.LittleEndian,Microsoft.Quantum.Arithmetic.LittleEndian)), QVoid> ControlledAdjointBody => (__in__) =>
         {
             var (controls,(xs,result)) = __in__;
-#line 712 "/Users/Matt/Documents/Masters/Dissertation/Quantum/Testing/Square_and_Multiply_Test/Program.qs"
+#line 433 "/Users/Matt/Documents/Masters/Dissertation/Quantum/Testing/Square_and_Multiply_Test/Program.qs"
             var __qsVar0__n__ = xs.Data.Length;
-#line 712 "/Users/Matt/Documents/Masters/Dissertation/Quantum/Testing/Square_and_Multiply_Test/Program.qs"
+#line 433 "/Users/Matt/Documents/Masters/Dissertation/Quantum/Testing/Square_and_Multiply_Test/Program.qs"
             MicrosoftQuantumDiagnosticsEqualityFactI.Apply(((2L * __qsVar0__n__), result.Data.Length, "Integer multiplication\n                            requires a 2n-bit result registers."));
-#line 712 "/Users/Matt/Documents/Masters/Dissertation/Quantum/Testing/Square_and_Multiply_Test/Program.qs"
+#line 433 "/Users/Matt/Documents/Masters/Dissertation/Quantum/Testing/Square_and_Multiply_Test/Program.qs"
             {
-#line 712 "/Users/Matt/Documents/Masters/Dissertation/Quantum/Testing/Square_and_Multiply_Test/Program.qs"
+#line 433 "/Users/Matt/Documents/Masters/Dissertation/Quantum/Testing/Square_and_Multiply_Test/Program.qs"
                 var __qsVar1__anc__ = Allocate.Apply();
 #line hidden
                 bool __arg1__ = true;
                 try
                 {
-#line 712 "/Users/Matt/Documents/Masters/Dissertation/Quantum/Testing/Square_and_Multiply_Test/Program.qs"
+#line 433 "/Users/Matt/Documents/Masters/Dissertation/Quantum/Testing/Square_and_Multiply_Test/Program.qs"
                     foreach (var __qsVar2__i__ in RangeReverse.Apply(new QRange(0L, (__qsVar0__n__ - 1L))))
 #line hidden
                     {
-#line 712 "/Users/Matt/Documents/Masters/Dissertation/Quantum/Testing/Square_and_Multiply_Test/Program.qs"
+#line 433 "/Users/Matt/Documents/Masters/Dissertation/Quantum/Testing/Square_and_Multiply_Test/Program.qs"
                         MicrosoftQuantumIntrinsicCNOT.Controlled.Adjoint.Apply((controls, (xs.Data[__qsVar2__i__], __qsVar1__anc__)));
-#line 712 "/Users/Matt/Documents/Masters/Dissertation/Quantum/Testing/Square_and_Multiply_Test/Program.qs"
+#line 433 "/Users/Matt/Documents/Masters/Dissertation/Quantum/Testing/Square_and_Multiply_Test/Program.qs"
                         AddI.Controlled.Adjoint.Apply((new QArray<Qubit>(__qsVar1__anc__), (xs, new Microsoft.Quantum.Arithmetic.LittleEndian(result.Data?.Slice(new QRange(__qsVar2__i__, (__qsVar2__i__ + __qsVar0__n__)))))));
-#line 712 "/Users/Matt/Documents/Masters/Dissertation/Quantum/Testing/Square_and_Multiply_Test/Program.qs"
+#line 433 "/Users/Matt/Documents/Masters/Dissertation/Quantum/Testing/Square_and_Multiply_Test/Program.qs"
                         MicrosoftQuantumIntrinsicCNOT.Controlled.Adjoint.Apply((controls, (xs.Data[__qsVar2__i__], __qsVar1__anc__)));
                     }
                 }
@@ -3464,7 +2980,7 @@ namespace ModularMultiplication.Testing
                 }
             }
 
-#line 712 "/Users/Matt/Documents/Masters/Dissertation/Quantum/Testing/Square_and_Multiply_Test/Program.qs"
+#line 433 "/Users/Matt/Documents/Masters/Dissertation/Quantum/Testing/Square_and_Multiply_Test/Program.qs"
             MicrosoftQuantumDiagnosticsAssertAllZero.Adjoint.Apply(result.Data);
 #line hidden
             return QVoid.Instance;
@@ -3493,10 +3009,10 @@ namespace ModularMultiplication.Testing
         }
     }
 
-    [SourceLocation("/Users/Matt/Documents/Masters/Dissertation/Quantum/Testing/Square_and_Multiply_Test/Program.qs", OperationFunctor.Body, 718, 721)]
-    [SourceLocation("/Users/Matt/Documents/Masters/Dissertation/Quantum/Testing/Square_and_Multiply_Test/Program.qs", OperationFunctor.Adjoint, 741, 742)]
-    [SourceLocation("/Users/Matt/Documents/Masters/Dissertation/Quantum/Testing/Square_and_Multiply_Test/Program.qs", OperationFunctor.Controlled, 721, 741)]
-    [SourceLocation("/Users/Matt/Documents/Masters/Dissertation/Quantum/Testing/Square_and_Multiply_Test/Program.qs", OperationFunctor.ControlledAdjoint, 742, -1)]
+    [SourceLocation("/Users/Matt/Documents/Masters/Dissertation/Quantum/Testing/Square_and_Multiply_Test/Program.qs", OperationFunctor.Body, 439, 442)]
+    [SourceLocation("/Users/Matt/Documents/Masters/Dissertation/Quantum/Testing/Square_and_Multiply_Test/Program.qs", OperationFunctor.Adjoint, 462, 463)]
+    [SourceLocation("/Users/Matt/Documents/Masters/Dissertation/Quantum/Testing/Square_and_Multiply_Test/Program.qs", OperationFunctor.Controlled, 442, 462)]
+    [SourceLocation("/Users/Matt/Documents/Masters/Dissertation/Quantum/Testing/Square_and_Multiply_Test/Program.qs", OperationFunctor.ControlledAdjoint, 463, -1)]
     public partial class DivideI : Unitary<(Microsoft.Quantum.Arithmetic.LittleEndian,Microsoft.Quantum.Arithmetic.LittleEndian,Microsoft.Quantum.Arithmetic.LittleEndian)>, ICallable
     {
         public DivideI(IOperationFactory m) : base(m)
@@ -3577,7 +3093,7 @@ namespace ModularMultiplication.Testing
         public override Func<(Microsoft.Quantum.Arithmetic.LittleEndian,Microsoft.Quantum.Arithmetic.LittleEndian,Microsoft.Quantum.Arithmetic.LittleEndian), QVoid> Body => (__in__) =>
         {
             var (xs,ys,result) = __in__;
-#line 719 "/Users/Matt/Documents/Masters/Dissertation/Quantum/Testing/Square_and_Multiply_Test/Program.qs"
+#line 440 "/Users/Matt/Documents/Masters/Dissertation/Quantum/Testing/Square_and_Multiply_Test/Program.qs"
             self.Controlled.Apply((QArray<Qubit>.Create(0L), (xs, ys, result)));
 #line hidden
             return QVoid.Instance;
@@ -3587,7 +3103,7 @@ namespace ModularMultiplication.Testing
         public override Func<(Microsoft.Quantum.Arithmetic.LittleEndian,Microsoft.Quantum.Arithmetic.LittleEndian,Microsoft.Quantum.Arithmetic.LittleEndian), QVoid> AdjointBody => (__in__) =>
         {
             var (xs,ys,result) = __in__;
-#line 741 "/Users/Matt/Documents/Masters/Dissertation/Quantum/Testing/Square_and_Multiply_Test/Program.qs"
+#line 462 "/Users/Matt/Documents/Masters/Dissertation/Quantum/Testing/Square_and_Multiply_Test/Program.qs"
             self.Controlled.Adjoint.Apply((QArray<Qubit>.Create(0L), (xs, ys, result)));
 #line hidden
             return QVoid.Instance;
@@ -3597,27 +3113,27 @@ namespace ModularMultiplication.Testing
         public override Func<(IQArray<Qubit>,(Microsoft.Quantum.Arithmetic.LittleEndian,Microsoft.Quantum.Arithmetic.LittleEndian,Microsoft.Quantum.Arithmetic.LittleEndian)), QVoid> ControlledBody => (__in__) =>
         {
             var (controls,(xs,ys,result)) = __in__;
-#line 722 "/Users/Matt/Documents/Masters/Dissertation/Quantum/Testing/Square_and_Multiply_Test/Program.qs"
+#line 443 "/Users/Matt/Documents/Masters/Dissertation/Quantum/Testing/Square_and_Multiply_Test/Program.qs"
             var n = result.Data.Length;
-#line 724 "/Users/Matt/Documents/Masters/Dissertation/Quantum/Testing/Square_and_Multiply_Test/Program.qs"
+#line 445 "/Users/Matt/Documents/Masters/Dissertation/Quantum/Testing/Square_and_Multiply_Test/Program.qs"
             MicrosoftQuantumDiagnosticsEqualityFactI.Apply((n, ys.Data.Length, "Integer division requires\n                           equally-sized registers ys and result."));
-#line 726 "/Users/Matt/Documents/Masters/Dissertation/Quantum/Testing/Square_and_Multiply_Test/Program.qs"
+#line 447 "/Users/Matt/Documents/Masters/Dissertation/Quantum/Testing/Square_and_Multiply_Test/Program.qs"
             MicrosoftQuantumDiagnosticsEqualityFactI.Apply((n, xs.Data.Length, "Integer division\n                            requires an n-bit dividend registers."));
-#line 728 "/Users/Matt/Documents/Masters/Dissertation/Quantum/Testing/Square_and_Multiply_Test/Program.qs"
+#line 449 "/Users/Matt/Documents/Masters/Dissertation/Quantum/Testing/Square_and_Multiply_Test/Program.qs"
             MicrosoftQuantumDiagnosticsAssertAllZero.Apply(result.Data);
-#line 730 "/Users/Matt/Documents/Masters/Dissertation/Quantum/Testing/Square_and_Multiply_Test/Program.qs"
+#line 451 "/Users/Matt/Documents/Masters/Dissertation/Quantum/Testing/Square_and_Multiply_Test/Program.qs"
             var xpadded = new Microsoft.Quantum.Arithmetic.LittleEndian(QArray<Qubit>.Add(xs.Data, result.Data));
-#line 732 "/Users/Matt/Documents/Masters/Dissertation/Quantum/Testing/Square_and_Multiply_Test/Program.qs"
+#line 453 "/Users/Matt/Documents/Masters/Dissertation/Quantum/Testing/Square_and_Multiply_Test/Program.qs"
             foreach (var i in new QRange((n - 1L), -(1L), 0L))
 #line hidden
             {
-#line 733 "/Users/Matt/Documents/Masters/Dissertation/Quantum/Testing/Square_and_Multiply_Test/Program.qs"
+#line 454 "/Users/Matt/Documents/Masters/Dissertation/Quantum/Testing/Square_and_Multiply_Test/Program.qs"
                 var xtrunc = new Microsoft.Quantum.Arithmetic.LittleEndian(xpadded.Data?.Slice(new QRange(i, ((i + n) - 1L))));
-#line 735 "/Users/Matt/Documents/Masters/Dissertation/Quantum/Testing/Square_and_Multiply_Test/Program.qs"
+#line 456 "/Users/Matt/Documents/Masters/Dissertation/Quantum/Testing/Square_and_Multiply_Test/Program.qs"
                 CompareGTI.Controlled.Apply((controls, (ys, xtrunc, result.Data[i])));
-#line 737 "/Users/Matt/Documents/Masters/Dissertation/Quantum/Testing/Square_and_Multiply_Test/Program.qs"
+#line 458 "/Users/Matt/Documents/Masters/Dissertation/Quantum/Testing/Square_and_Multiply_Test/Program.qs"
                 MicrosoftQuantumIntrinsicX.Controlled.Apply((controls, result.Data[i]));
-#line 738 "/Users/Matt/Documents/Masters/Dissertation/Quantum/Testing/Square_and_Multiply_Test/Program.qs"
+#line 459 "/Users/Matt/Documents/Masters/Dissertation/Quantum/Testing/Square_and_Multiply_Test/Program.qs"
                 AddI.Adjoint.Controlled.Apply((new QArray<Qubit>(result.Data[i]), (ys, xtrunc)));
             }
 
@@ -3629,29 +3145,29 @@ namespace ModularMultiplication.Testing
         public override Func<(IQArray<Qubit>,(Microsoft.Quantum.Arithmetic.LittleEndian,Microsoft.Quantum.Arithmetic.LittleEndian,Microsoft.Quantum.Arithmetic.LittleEndian)), QVoid> ControlledAdjointBody => (__in__) =>
         {
             var (controls,(xs,ys,result)) = __in__;
-#line 742 "/Users/Matt/Documents/Masters/Dissertation/Quantum/Testing/Square_and_Multiply_Test/Program.qs"
+#line 463 "/Users/Matt/Documents/Masters/Dissertation/Quantum/Testing/Square_and_Multiply_Test/Program.qs"
             var __qsVar0__n__ = result.Data.Length;
-#line 742 "/Users/Matt/Documents/Masters/Dissertation/Quantum/Testing/Square_and_Multiply_Test/Program.qs"
+#line 463 "/Users/Matt/Documents/Masters/Dissertation/Quantum/Testing/Square_and_Multiply_Test/Program.qs"
             MicrosoftQuantumDiagnosticsEqualityFactI.Apply((__qsVar0__n__, ys.Data.Length, "Integer division requires\n                           equally-sized registers ys and result."));
-#line 742 "/Users/Matt/Documents/Masters/Dissertation/Quantum/Testing/Square_and_Multiply_Test/Program.qs"
+#line 463 "/Users/Matt/Documents/Masters/Dissertation/Quantum/Testing/Square_and_Multiply_Test/Program.qs"
             MicrosoftQuantumDiagnosticsEqualityFactI.Apply((__qsVar0__n__, xs.Data.Length, "Integer division\n                            requires an n-bit dividend registers."));
-#line 742 "/Users/Matt/Documents/Masters/Dissertation/Quantum/Testing/Square_and_Multiply_Test/Program.qs"
+#line 463 "/Users/Matt/Documents/Masters/Dissertation/Quantum/Testing/Square_and_Multiply_Test/Program.qs"
             var __qsVar1__xpadded__ = new Microsoft.Quantum.Arithmetic.LittleEndian(QArray<Qubit>.Add(xs.Data, result.Data));
-#line 742 "/Users/Matt/Documents/Masters/Dissertation/Quantum/Testing/Square_and_Multiply_Test/Program.qs"
+#line 463 "/Users/Matt/Documents/Masters/Dissertation/Quantum/Testing/Square_and_Multiply_Test/Program.qs"
             foreach (var __qsVar2__i__ in RangeReverse.Apply(new QRange((__qsVar0__n__ - 1L), -(1L), 0L)))
 #line hidden
             {
-#line 742 "/Users/Matt/Documents/Masters/Dissertation/Quantum/Testing/Square_and_Multiply_Test/Program.qs"
+#line 463 "/Users/Matt/Documents/Masters/Dissertation/Quantum/Testing/Square_and_Multiply_Test/Program.qs"
                 var __qsVar3__xtrunc__ = new Microsoft.Quantum.Arithmetic.LittleEndian(__qsVar1__xpadded__.Data?.Slice(new QRange(__qsVar2__i__, ((__qsVar2__i__ + __qsVar0__n__) - 1L))));
-#line 742 "/Users/Matt/Documents/Masters/Dissertation/Quantum/Testing/Square_and_Multiply_Test/Program.qs"
+#line 463 "/Users/Matt/Documents/Masters/Dissertation/Quantum/Testing/Square_and_Multiply_Test/Program.qs"
                 AddI.Adjoint.Controlled.Adjoint.Apply((new QArray<Qubit>(result.Data[__qsVar2__i__]), (ys, __qsVar3__xtrunc__)));
-#line 742 "/Users/Matt/Documents/Masters/Dissertation/Quantum/Testing/Square_and_Multiply_Test/Program.qs"
+#line 463 "/Users/Matt/Documents/Masters/Dissertation/Quantum/Testing/Square_and_Multiply_Test/Program.qs"
                 MicrosoftQuantumIntrinsicX.Controlled.Adjoint.Apply((controls, result.Data[__qsVar2__i__]));
-#line 742 "/Users/Matt/Documents/Masters/Dissertation/Quantum/Testing/Square_and_Multiply_Test/Program.qs"
+#line 463 "/Users/Matt/Documents/Masters/Dissertation/Quantum/Testing/Square_and_Multiply_Test/Program.qs"
                 CompareGTI.Controlled.Adjoint.Apply((controls, (ys, __qsVar3__xtrunc__, result.Data[__qsVar2__i__])));
             }
 
-#line 742 "/Users/Matt/Documents/Masters/Dissertation/Quantum/Testing/Square_and_Multiply_Test/Program.qs"
+#line 463 "/Users/Matt/Documents/Masters/Dissertation/Quantum/Testing/Square_and_Multiply_Test/Program.qs"
             MicrosoftQuantumDiagnosticsAssertAllZero.Adjoint.Apply(result.Data);
 #line hidden
             return QVoid.Instance;

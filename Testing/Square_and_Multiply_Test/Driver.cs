@@ -13,21 +13,17 @@ namespace ModularMultiplication.Testing
         {
            
             // // // The Toffoli Simulator
-            // for (int i = 0;i<101;i++){
-            // BigInteger a = new BigInteger(3);
-            // BigInteger j = new BigInteger(4 + i);
-            // BigInteger m = new BigInteger(5);
-            // TestwithToffoli(a,j,m);
-            // }
+            for (int i = 0;i<101;i++){
+            BigInteger a = new BigInteger(1234);
+            BigInteger j = new BigInteger(42435);
+            BigInteger m = new BigInteger(53245+i);
+            TestwithToffoli(a,j,m);
+            }
   
 
             //THE RESOURCE ESTIMATOR
-            ResourcesEstimator estimator = new ResourcesEstimator();
-            Testing_in_Superposition.Run(estimator,5).Wait();
-            Console.WriteLine(estimator.ToTSV());
-
             // ResourcesEstimator estimator = new ResourcesEstimator();
-            // analysis.Run(estimator,8).Wait();
+            // Testing_in_Superposition.Run(estimator,5).Wait();
             // Console.WriteLine(estimator.ToTSV());
 
 

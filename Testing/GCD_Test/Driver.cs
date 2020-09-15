@@ -11,7 +11,7 @@ namespace Quantum.Bell
     class Driver
     {
         static void Main(string[] args)
-        {
+        { 
             
             //THE RESOURCE ESTIMATOR
             ResourcesEstimator estimator = new ResourcesEstimator();
