@@ -39,7 +39,7 @@ operation Testing_with_Toffoli(aI:BigInt,aS:Int,bI:BigInt,bS:Int,numBits:Int):In
 }
 
 operation Testing_in_Superposition(): Unit{
-let numQubits = 3;
+let numQubits = 6;
 using ((a,b,t) = (Qubit[numQubits],Qubit[numQubits],Qubit[2*numQubits - 1])){
         //Putting both a and m into superposition
         // ApplyToEach(H,a);

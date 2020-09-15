@@ -26,7 +26,7 @@ namespace SignedMultiply.Testing {
 
             //THE RESOURCE ESTIMATOR
             ResourcesEstimator estimator = new ResourcesEstimator();
-            Testing_in_Superposition.Run(estimator,13,50).Wait();
+            Testing_in_Superposition.Run(estimator,13,5).Wait();
             Console.WriteLine(estimator.ToTSV());
         
         }

@@ -19,11 +19,15 @@ namespace SignedMultiply.Testing
 
             // The Toffoli Simulator
             
-            BigInteger a = new BigInteger(-1234123);
-            BigInteger b = new BigInteger(1634213);
-            for (int i=0;i<100;i++){
-            TestwithToffoli(a+i,b);
-            }
+            // BigInteger a = new BigInteger(-1234123);
+            // BigInteger b = new BigInteger(1634213);
+            // for (int i=0;i<100;i++){
+            // TestwithToffoli(a+i,b);
+            // }
+
+            ResourcesEstimator estimator = new ResourcesEstimator();
+            Testing_in_Superposition.Run(estimator).Wait();
+            Console.WriteLine(estimator.ToTSV());
         }
             
         

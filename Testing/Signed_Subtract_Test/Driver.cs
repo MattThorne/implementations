@@ -18,12 +18,17 @@ namespace SignedSubtract.Testing
             // }
 
             // The Toffoli Simulator
+            // BigInteger a = new BigInteger(-15);
+            // BigInteger b = new BigInteger(3);
+            // for (int i=0;i<101;i++){
+            // TestwithToffoli(a+i,b);
+            // }
+
+            ResourcesEstimator estimator = new ResourcesEstimator();
+            Testing_in_Superposition.Run(estimator).Wait();
+            Console.WriteLine(estimator.ToTSV());
+
             
-            BigInteger a = new BigInteger(-15);
-            BigInteger b = new BigInteger(3);
-            for (int i=0;i<101;i++){
-            TestwithToffoli(a+i,b);
-            }
         }
             
         

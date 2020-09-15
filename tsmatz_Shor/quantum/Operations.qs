@@ -11,7 +11,7 @@ operation QuantumPeriodFinding (num : Int, a : Int) : Unit {
   let n1 = BitSizeI(num) * 2;
   let n2 = BitSizeI(num);
   mutable periodCandidate = 1;
-  repeat {
+  //repeat {
     using ((x, y) = (Qubit[n1], Qubit[n2])) {
       Microsoft.Quantum.Canon.ApplyToEachCA(H, x);
 
@@ -61,10 +61,10 @@ operation QuantumPeriodFinding (num : Int, a : Int) : Unit {
       Message($"Approximated Fraction : {approximatedNumerator} / {approximatedDenominator}");
       Message($"Period Candidate : {periodCandidate}");
     }
-  }
-  until ((periodCandidate != 0) and (ExpModI(a, periodCandidate, num) == 1))
-  fixup {
-  }
+  //}
+  //until ((periodCandidate != 0) and (ExpModI(a, periodCandidate, num) == 1))
+  //fixup {
+  //}
 
   // output for debugging
   Message("Found period " + Microsoft.Quantum.Convert.IntAsString(periodCandidate));

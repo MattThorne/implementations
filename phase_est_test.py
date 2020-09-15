@@ -195,20 +195,29 @@ def calc(t,a,d):
     
                 
             
-num = 22
+num = 8
 
-numAnc = math.ceil(math.log(17,2))
-print(numAnc)
+numAnc = math.ceil(math.log(num,2))
+#print(numAnc)
 
 a = np.zeros(int(numAnc + 1))
 a[0] = 1
 s = 1
 
 
-pebble(s,numAnc,a)
-print("Half Way!")
-unpebble(s,numAnc,a)
+#pebble(s,numAnc,a)
+#print("Half Way!")
+#unpebble(s,numAnc,a)
 #unpebble(s,n,a)
+for i in range(1000000):
+    x = 420000.0+i
+    xp = x**(2.0/3.0)
+    y1 = (7*xp) + ((11*xp + 22)*(math.log((1.44*(xp+1)),2)+1))+11
+    y2 = 2*x + 3
+    if (y1-y2)<0.01:
+        print(420000.0+i)
+
+
 
 
 

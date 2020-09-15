@@ -9,7 +9,7 @@
     open Microsoft.Quantum.Canon;
     open Microsoft.Quantum.Arrays;
 
-
+ 
 operation Testing_with_Toffoli(mI:BigInt,numBits:Int, Ran: Int):Int{
     let mArr = BigIntAsBoolArray(mI);
     using ((a,m) = (Qubit[numBits],Qubit[numBits])){

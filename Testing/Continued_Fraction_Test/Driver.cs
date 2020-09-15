@@ -6,7 +6,7 @@ using Microsoft.Quantum.Simulation.Simulators.QCTraceSimulators;
 
 namespace Quantum.Bell
 {
-    class Driver
+    class Driver 
     {
         static void Main(string[] args)
         {

@@ -20,14 +20,14 @@ namespace Microsoft.Quantum.Samples.IntegerFactorization
 
             
             int N, a;
-            N = 11;
+            N = 67;
             a = 5;
 
             ResourcesEstimator estimator = new ResourcesEstimator();
             QuantumPeriodFinding.Run(estimator, N, a).Wait();
             Console.WriteLine(estimator.ToTSV());
             
-            /*
+            /* 
             // For Period Finding Only
             using (var qsim = new QuantumSimulator())
             {

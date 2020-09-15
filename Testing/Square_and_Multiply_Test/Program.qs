@@ -10,17 +10,6 @@
     open Microsoft.Quantum.Arrays;
 
 
-
-operation analysis(i:Int):Unit{
-
-using ((a,b,c,d) = (Qubit[i],Qubit[i],Qubit[i],Qubit[i])){
-
-    MultiplyModM(a,b,c,d);
-}
-}
-
-
-
 operation Testing_with_Toffoli(aI:BigInt,jI:BigInt,mI:BigInt,numBits:Int):Int{
     let aArr = BigIntAsBoolArray(aI);
     let jArr = BigIntAsBoolArray(jI);
@@ -38,7 +27,7 @@ operation Testing_with_Toffoli(aI:BigInt,jI:BigInt,mI:BigInt,numBits:Int):Int{
         }
 
         //Carrying out modular squaring
-        SquareAndMultiply(a,m,j,t);
+        SquareAndMultiplyNew(a,m,j,t);
         
 
         //Collecting the result
@@ -50,21 +39,275 @@ operation Testing_with_Toffoli(aI:BigInt,jI:BigInt,mI:BigInt,numBits:Int):Int{
 }
 
 operation Testing_in_Superposition(bitSize: Int): Unit{
-    using ((a,m,j,t) = (Qubit[bitSize],Qubit[bitSize],Qubit[(2*bitSize) + 1],Qubit[bitSize])){
-        
-
-        //Carrying out modular squaring
-        SquareAndMultiply(a,m,j,t);
+    using ((a,m,j,t) = (Qubit[bitSize],Qubit[bitSize],Qubit[2*bitSize + 1],Qubit[bitSize])){
         
         
+        SquareAndMultiplyNew(a,m,j,t);
         
         ResetAll(a+j+m+t);
     }
 
+}
+
+operation SquareAndMultiplyNew(a:Qubit[],m:Qubit[],j:Qubit[],result:Qubit[]): Unit{
+    let lenJ = Length(j);
+    let lenA = Length(a);
+    let numAnc = Ceiling(Lg(IntAsDouble(lenJ -1))) + 1;
+    //Message($"{numAnc}");
+
+    mutable arr = new Int[numAnc + 2]; // last item in array used to contol if result has been found
+    set arr w/= 0 <- 1;  
+
+
+    using ((v,c,z,az,ld) = (Qubit[lenA*numAnc],Qubit(),Qubit(),Qubit(),Qubit())){
+
+                //Checking for j = 0
+                ApplyToEachA(X,j);
+                Controlled X(j,az);
+                ApplyToEachA(X,j);
+                X(az);
+
+
+
+                set arr w/= (0..(Length(arr)-1)) <- Pebble(1,numAnc,arr,a,m,j,result,v,c,z,az,ld);
+                set arr w/= (0..(Length(arr)-1)) <- Unpebble(1,numAnc,arr,a,m,j,result,v,c,z,az,ld);
+
+
+
+                
+                
+                
+                //Resetting control all zero qubit
+                X(az);
+                ApplyToEachA(X,j);
+                Controlled X(j,az);
+                ApplyToEachA(X,j);
+    
+    }
+    
+   
 
 
 }
 
+
+
+operation Pebble(s: Int, n:Int, arr:Int[],a:Qubit[],m:Qubit[],j:Qubit[],result:Qubit[],v:Qubit[],c:Qubit,z:Qubit,az:Qubit,ld:Qubit): Int[]{
+    mutable narr = new Int[0];
+    for (i in 0..(Length(arr) -1)){
+        set narr += [arr[i]]; 
+    }
+    if (n!=0){
+        let t = s + PowI(2,(n-1));
+        set narr w/= (0..(Length(narr)-1)) <- Pebble(s,(n-1),narr,a,m,j,result,v,c,z,az,ld);
+        //put a free pebble on node t
+        set narr w/= (0..(Length(narr)-1)) <- SquareAndMultiplyStep(t,narr,1,a,m,j,result,v,c,z,az,ld);
+        // Message($"{narr}");
+        // DumpRegister((),v);
+        set narr w/= (0..(Length(narr)-1)) <- Unpebble(s,(n-1),narr,a,m,j,result,v,c,z,az,ld);
+        set narr w/= (0..(Length(narr)-1)) <- Pebble(t,(n-1),narr,a,m,j,result,v,c,z,az,ld);
+        
+    }
+    return narr;
+}
+
+operation Unpebble(s: Int, n:Int, arr:Int[],a:Qubit[],m:Qubit[],j:Qubit[],result:Qubit[],v:Qubit[],c:Qubit,z:Qubit,az:Qubit,ld:Qubit):Int[]{
+    mutable narr = new Int[0];
+    for (i in 0..(Length(arr) -1)){
+        set narr += [arr[i]]; 
+    }
+    if (n!=0){
+        let t = s + PowI(2,(n-1));
+        set narr w/= (0..(Length(narr)-1)) <-Unpebble(t,(n-1),narr,a,m,j,result,v,c,z,az,ld);
+        set narr w/= (0..(Length(narr)-1)) <-Pebble(s,(n-1),narr,a,m,j,result,v,c,z,az,ld);
+        //take a  pebble from node t
+        set narr w/= (0..(Length(narr)-1)) <- SquareAndMultiplyStep(t,narr,0,a,m,j,result,v,c,z,az,ld);
+        // Message($"{narr}");
+        // DumpRegister((),v);
+        set narr w/= (0..(Length(narr)-1)) <-Unpebble(s,(n-1),narr,a,m,j,result,v,c,z,az,ld);
+    }
+    return narr;
+}
+
+operation SquareAndMultiplyStep(t:Int,arr:Int[] ,d:Int,a:Qubit[],m:Qubit[],j:Qubit[],result:Qubit[],v:Qubit[],c:Qubit,z:Qubit,az:Qubit,ld:Qubit):Int[]{
+    
+
+
+    mutable narr = new Int[0];
+    for (k in 0..(Length(arr) -1)){
+        set narr += [arr[k]]; 
+    }
+
+
+    mutable next = 0;
+    mutable curr = 0;
+    let lenA = Length(a);
+    
+
+    
+    //Find Current Register
+    mutable found = false;
+    mutable i = 0;
+    repeat{
+        if (arr[i] == (t-1)){
+            set curr = i;
+            set found = true;
+        }
+        set i = i + 1;
+    }until (found == true);
+    
+
+    if (d==1){
+
+        //Finds first empty item in a
+        set found = false;
+        set i = 0; 
+        repeat{
+        if (arr[i] == 0){
+            set next = i;
+            set found = true;
+        }
+        set i = i + 1;
+        }until (found == true);
+
+    //set arr[next] = arr[next] + (arr[curr] + 1);
+    set narr w/= next <- narr[next] + (narr[curr] + 1);
+
+    //Conduct Pebble calculation
+
+    if ((narr[next]-1)<=(Length(j)-1)){
+
+
+                    //Checking for remainder of j being all zero
+                    ApplyToEachA(X,j[(Length(j) - 1 - narr[curr])...]);
+                    Controlled X(j[(Length(j) - 1 - narr[curr])...],z);
+                    ApplyToEachA(X,j[(Length(j) - 1 - narr[curr])...]);
+                    X(z);
+
+
+                    //checking for last digit and zero
+                    ApplyToEachA(X,j[(Length(j) - 1 - (narr[curr] -1))...]);
+                    Controlled X(j[(Length(j) - 1 - (narr[curr] -1))...],ld);
+                    ApplyToEachA(X,j[(Length(j) - 1 - (narr[curr] -1))...]);
+                    X(ld);
+
+
+
+                    //setting control qubit for is j[i] = 1
+                    Controlled X([j[(Length(j) - 1 - narr[curr])]],c);
+
+                    
+                    //Conducting square and multiply iteration
+                    Controlled SquareAndMultiplyIteration([az],(a,(a+v)[(curr*lenA)..(((curr*lenA)+lenA)-1)],m,c,z,ld,(a+v)[(next*lenA)..(((next*lenA)+lenA)-1)]));
+
+                    
+                    //If all j is all zero setting target to 1 as a^0=1
+                    X(az);
+                    Controlled X([az],(a+v)[(next*lenA)]);
+                    X(az);
+
+                    
+
+
+                    //Resetting control qubit for is j[i]=1
+                    Controlled X([j[(Length(j) - 1 - narr[curr])]],c);
+                    
+                    
+                    //Resseting for last digit and zero
+                    X(ld);
+                    ApplyToEachA(X,j[(Length(j) - 1 - (narr[curr] -1))...]);
+                    Controlled X(j[(Length(j) - 1 - (narr[curr] -1))...],ld);
+                    ApplyToEachA(X,j[(Length(j) - 1 - (narr[curr] -1))...]);
+                    
+                    //Resetting remainder of j zero qubit
+                    X(z);
+                    ApplyToEachA(X,j[(Length(j) - 1 - narr[curr])...]);
+                    Controlled X(j[(Length(j) - 1 - narr[curr])...],z);
+                    ApplyToEachA(X,j[(Length(j) - 1 - narr[curr])...]);
+                    }
+
+                    if ((narr[next] - 1) == (Length(j)-1) and (narr[Length(narr)-1] == 0)){
+
+                        AddI(LittleEndian((a+v)[(next*lenA)..(((next*lenA)+lenA)-1)]),LittleEndian(result));
+                        set narr w/= (Length(narr)-1) <- 1;
+                    }
+   
+
+
+
+    }
+
+
+    if (d==0){
+        
+        set found = false;
+        set i = 0;
+        repeat{
+        if (arr[i] == t){
+            set next = i;
+            set found = true;
+        }
+        set i = i + 1;
+    }until (found == true);
+    
+
+    if ((narr[next]-1)<=(Length(j)-1)){
+
+                    //Checking for remainder of j being all zero
+                    ApplyToEachA(X,j[(Length(j) - 1 - narr[curr])...]);
+                    Controlled X(j[(Length(j) - 1 - narr[curr])...],z);
+                    ApplyToEachA(X,j[(Length(j) - 1 - narr[curr])...]);
+                    X(z);
+
+
+                    //checking for last digit and zero
+                    ApplyToEachA(X,j[(Length(j) - 1 - (narr[curr] -1))...]);
+                    Controlled X(j[(Length(j) - 1 - (narr[curr] -1))...],ld);
+                    ApplyToEachA(X,j[(Length(j) - 1 - (narr[curr] -1))...]);
+                    X(ld);
+
+
+
+                    //setting control qubit for is j[i] = 1
+                    Controlled X([j[(Length(j) - 1 - narr[curr])]],c);
+
+                    //Conducting square and multiply iteration
+                    Controlled Adjoint SquareAndMultiplyIteration([az],(a,(a+v)[(curr*lenA)..(((curr*lenA)+lenA)-1)],m,c,z,ld,(a+v)[(next*lenA)..(((next*lenA)+lenA)-1)]));
+
+
+                    //If all j is all zero setting target to 1 as a^0=1
+                    X(az);
+                    Controlled X([az],(a+v)[(next*lenA)]);
+                    X(az);
+    
+                    
+
+
+                    //Resetting control qubit for is j[i]=1
+                    Controlled X([j[(Length(j) - 1 - narr[curr])]],c);
+                    
+                    
+                    //Resseting for last digit and zero
+                    X(ld);
+                    ApplyToEachA(X,j[(Length(j) - 1 - (narr[curr] -1))...]);
+                    Controlled X(j[(Length(j) - 1 - (narr[curr] -1))...],ld);
+                    ApplyToEachA(X,j[(Length(j) - 1 - (narr[curr] -1))...]);
+                    
+                    //Resetting remainder of j zero qubit
+                    X(z);
+                    ApplyToEachA(X,j[(Length(j) - 1 - narr[curr])...]);
+                    Controlled X(j[(Length(j) - 1 - narr[curr])...],z);
+                    ApplyToEachA(X,j[(Length(j) - 1 - narr[curr])...]);
+                    }
+
+                    set narr w/= next <- narr[next] - (narr[curr] + 1);
+
+
+
+
+    }
+    return narr;
+}
 
 
 ///////SQUARE AND MULTIPLY/////////////

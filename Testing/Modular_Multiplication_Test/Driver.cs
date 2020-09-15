@@ -12,10 +12,10 @@ namespace ModularMultiplication.Testing
         static void Main(string[] args)
         {
             // The full state Simulator
-            using (var qsim = new QuantumSimulator())
-            {
-                var res = Testing_in_Superposition.Run(qsim).Result;
-            }
+            // using (var qsim = new QuantumSimulator())
+            // {
+            //     var res = Testing_in_Superposition.Run(qsim).Result;
+            // }
 
             // The Toffoli Simulator
             
@@ -25,6 +25,10 @@ namespace ModularMultiplication.Testing
             // for (int i=0;i<100;i++){
             // TestwithToffoli(a+i,b,m);
             // }
+
+            ResourcesEstimator estimator = new ResourcesEstimator();
+            Testing_in_Superposition.Run(estimator).Wait();
+            Console.WriteLine(estimator.ToTSV());
             
         }
 
