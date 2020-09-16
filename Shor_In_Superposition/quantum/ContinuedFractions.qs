@@ -21,7 +21,9 @@ namespace ShorInSuperposition
 
 
 
-operation CFMain(p:Qubit[],m:Qubit[],u:Qubit[]):Unit{
+
+
+operation CFMain(p:Qubit[],m:Qubit[],u:Qubit[],adj:Bool):Unit{
     let len = Length(u);
     //Calculating the number of steps that must be stored at once using Bennett's
     mutable numAnc = Ceiling(Lg(1.44*IntAsDouble(len + 1))) + 1;
@@ -43,14 +45,14 @@ operation CFMain(p:Qubit[],m:Qubit[],u:Qubit[]):Unit{
         set numAnc = numAnc - 1; 
 
         //Calling the pebble and unpebble functions to carry out the operation
-        set arr w/= (0..(Length(arr)-1)) <- CFPebble(1,numAnc,arr,p,m,u,r1,r2,s1,s2,quo,qTs2,C1,anc1,anc2);
-        set arr w/= (0..(Length(arr)-1)) <- CFUnpebble(1,numAnc,arr,p,m,u,r1,r2,s1,s2,quo,qTs2,C1,anc1,anc2);
+        set arr w/= (0..(Length(arr)-1)) <- CFPebble(1,numAnc,arr,p,m,u,r1,r2,s1,s2,quo,qTs2,C1,anc1,anc2,adj);
+        set arr w/= (0..(Length(arr)-1)) <- CFUnpebble(1,numAnc,arr,p,m,u,r1,r2,s1,s2,quo,qTs2,C1,anc1,anc2,adj);
 
     }
 }
 
 
-operation CFPebble(s: Int, n:Int, arr:Int[],p:Qubit[],m:Qubit[],u:Qubit[],r1:Qubit[],r2:Qubit[],s1:Qubit[],s2:Qubit[],quo:Qubit[],qTs2:Qubit[],C1:Qubit[],anc1:Qubit[],anc2:Qubit[]): Int[]{
+operation CFPebble(s: Int, n:Int, arr:Int[],p:Qubit[],m:Qubit[],u:Qubit[],r1:Qubit[],r2:Qubit[],s1:Qubit[],s2:Qubit[],quo:Qubit[],qTs2:Qubit[],C1:Qubit[],anc1:Qubit[],anc2:Qubit[],adj:Bool): Int[]{
     //Since mutable arrays cannot be passed in Q# the classical arrayed had to be copied every time it was passed to a new function
     mutable narr = new Int[0];
     for (i in 0..(Length(arr) -1)){
@@ -58,35 +60,35 @@ operation CFPebble(s: Int, n:Int, arr:Int[],p:Qubit[],m:Qubit[],u:Qubit[],r1:Qub
     }
     if (n!=0){
         let t = s + PowI(2,(n-1));
-        set narr w/= (0..(Length(narr)-1)) <- CFPebble(s,(n-1),narr,p,m,u,r1,r2,s1,s2,quo,qTs2,C1,anc1,anc2);
+        set narr w/= (0..(Length(narr)-1)) <- CFPebble(s,(n-1),narr,p,m,u,r1,r2,s1,s2,quo,qTs2,C1,anc1,anc2,adj);
         //put a free pebble on node t
-        set narr w/= (0..(Length(narr)-1)) <- CFStep(t,narr,1,p,m,u,r1,r2,s1,s2,quo,qTs2,C1,anc1,anc2);
-        set narr w/= (0..(Length(narr)-1)) <- CFUnpebble(s,(n-1),narr,p,m,u,r1,r2,s1,s2,quo,qTs2,C1,anc1,anc2);
-        set narr w/= (0..(Length(narr)-1)) <- CFPebble(t,(n-1),narr,p,m,u,r1,r2,s1,s2,quo,qTs2,C1,anc1,anc2);
+        set narr w/= (0..(Length(narr)-1)) <- CFStep(t,narr,1,p,m,u,r1,r2,s1,s2,quo,qTs2,C1,anc1,anc2,adj);
+        set narr w/= (0..(Length(narr)-1)) <- CFUnpebble(s,(n-1),narr,p,m,u,r1,r2,s1,s2,quo,qTs2,C1,anc1,anc2,adj);
+        set narr w/= (0..(Length(narr)-1)) <- CFPebble(t,(n-1),narr,p,m,u,r1,r2,s1,s2,quo,qTs2,C1,anc1,anc2,adj);
         
     }
     return narr;
 }
 
-operation CFUnpebble(s: Int, n:Int, arr:Int[],p:Qubit[],m:Qubit[],u:Qubit[],r1:Qubit[],r2:Qubit[],s1:Qubit[],s2:Qubit[],quo:Qubit[],qTs2:Qubit[],C1:Qubit[],anc1:Qubit[],anc2:Qubit[]):Int[]{
+operation CFUnpebble(s: Int, n:Int, arr:Int[],p:Qubit[],m:Qubit[],u:Qubit[],r1:Qubit[],r2:Qubit[],s1:Qubit[],s2:Qubit[],quo:Qubit[],qTs2:Qubit[],C1:Qubit[],anc1:Qubit[],anc2:Qubit[],adj:Bool):Int[]{
     mutable narr = new Int[0];
     for (i in 0..(Length(arr) -1)){
         set narr += [arr[i]]; 
     }
     if (n!=0){
         let t = s + PowI(2,(n-1));
-        set narr w/= (0..(Length(narr)-1)) <-CFUnpebble(t,(n-1),narr,p,m,u,r1,r2,s1,s2,quo,qTs2,C1,anc1,anc2);
-        set narr w/= (0..(Length(narr)-1)) <-CFPebble(s,(n-1),narr,p,m,u,r1,r2,s1,s2,quo,qTs2,C1,anc1,anc2);
+        set narr w/= (0..(Length(narr)-1)) <-CFUnpebble(t,(n-1),narr,p,m,u,r1,r2,s1,s2,quo,qTs2,C1,anc1,anc2,adj);
+        set narr w/= (0..(Length(narr)-1)) <-CFPebble(s,(n-1),narr,p,m,u,r1,r2,s1,s2,quo,qTs2,C1,anc1,anc2,adj);
         //take a  pebble from node t
-        set narr w/= (0..(Length(narr)-1)) <- CFStep(t,narr,0,p,m,u,r1,r2,s1,s2,quo,qTs2,C1,anc1,anc2);
-        set narr w/= (0..(Length(narr)-1)) <-CFUnpebble(s,(n-1),narr,p,m,u,r1,r2,s1,s2,quo,qTs2,C1,anc1,anc2);
+        set narr w/= (0..(Length(narr)-1)) <- CFStep(t,narr,0,p,m,u,r1,r2,s1,s2,quo,qTs2,C1,anc1,anc2,adj);
+        set narr w/= (0..(Length(narr)-1)) <-CFUnpebble(s,(n-1),narr,p,m,u,r1,r2,s1,s2,quo,qTs2,C1,anc1,anc2,adj);
     }
     return narr;
 }
 
 
 //Operator to carry out a single step of the Continued fractions calculation
-operation CFStep(t:Int,arr:Int[] ,d:Int,p:Qubit[],m:Qubit[],u:Qubit[],r1:Qubit[],r2:Qubit[],s1:Qubit[],s2:Qubit[],quo:Qubit[],qTs2:Qubit[],C1:Qubit[],anc1:Qubit[],anc2:Qubit[]):Int[]{
+operation CFStep(t:Int,arr:Int[] ,d:Int,p:Qubit[],m:Qubit[],u:Qubit[],r1:Qubit[],r2:Qubit[],s1:Qubit[],s2:Qubit[],quo:Qubit[],qTs2:Qubit[],C1:Qubit[],anc1:Qubit[],anc2:Qubit[],adj:Bool):Int[]{
     mutable narr = new Int[0];
     for (k in 0..(Length(arr) -1)){
         set narr += [arr[k]]; 
@@ -147,7 +149,7 @@ operation CFStep(t:Int,arr:Int[] ,d:Int,p:Qubit[],m:Qubit[],u:Qubit[],r1:Qubit[]
     Controlled CFIteration([C1[next]],(r1[(next*len)..((next*len) + len-1)],r2[(next*len)..((next*len) + len-1)],s1[(next*lens)..((next*lens) + lens -1)],s2[(next*lens)..((next*lens) + lens -1)],quo[(next*len)..((next*len)+len-1)],qTs2[(next*(2*len+1))..((next*(2*len+1))+(2*len+1)-1)],anc1[next],anc2[next]));
    
     if ((Ceiling(1.44*IntAsDouble(len)) <= narr[next]) and (narr[Length(narr)-1] == 0)){
-        CFExtractRes(p,m,r2[(next*len)..((next*len)+len-1)],s1[(next*lens)..((next*lens)+lens-1)],s2[(next*lens)..((next*lens)+lens-1)]);
+        CFExtractRes(p,m,r2[(next*len)..((next*len)+len-1)],s1[(next*lens)..((next*lens)+lens-1)],s2[(next*lens)..((next*lens)+lens-1)],adj);
         set narr w/= (Length(narr)-1) <- 1;
     }
     
@@ -196,7 +198,7 @@ operation CFStep(t:Int,arr:Int[] ,d:Int,p:Qubit[],m:Qubit[],u:Qubit[],r1:Qubit[]
 
 
 //This operator extracts the final result of the continued fractions operations
-operation CFExtractRes(res:Qubit[],m:Qubit[],r2:Qubit[],s1:Qubit[],s2:Qubit[]):Unit is Ctl{
+operation CFExtractRes(res:Qubit[],m:Qubit[],r2:Qubit[],s1:Qubit[],s2:Qubit[],adj:Bool):Unit is Ctl{
     body(...){
     using ((c1,c2,c3,mPad) = (Qubit(),Qubit(),Qubit(),Qubit())){
         ApplyToEachA(X,r2);
@@ -208,10 +210,14 @@ operation CFExtractRes(res:Qubit[],m:Qubit[],r2:Qubit[],s1:Qubit[],s2:Qubit[]):U
         Controlled X([c1,c2],c3);
         X(c3);
 
+        if (adj ==false){
         Controlled AddI([c1,c2],(LittleEndian(s2[0..(Length(s2)-2)]),LittleEndian(res + [mPad])));
-
         Controlled AddI([c3],(LittleEndian(s1[0..(Length(s1)-2)]),LittleEndian(res + [mPad])));
-        
+        }
+        if (adj== true){
+            Adjoint Controlled AddI([c1,c2],(LittleEndian(s2[0..(Length(s2)-2)]),LittleEndian(res + [mPad])));
+            Adjoint Controlled AddI([c3],(LittleEndian(s1[0..(Length(s1)-2)]),LittleEndian(res + [mPad])));
+        }
         X(c3);
         Controlled X([c1,c2],c3);
         X(c2);

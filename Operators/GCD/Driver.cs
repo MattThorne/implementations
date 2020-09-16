@@ -37,7 +37,7 @@ namespace Quantum.Bell
              int [] requiredBits = {Size(a),Size(b)};
              int numBits = requiredBits.Max();
     
-             var Quantum = TestGCD.Run(sim,a,b,numBits).Result;
+             var Quantum = TestGCD.Run(sim,a,b,0,numBits,false).Result;
              Console.WriteLine("{0}",numBits);
              Console.WriteLine("GCD({0},{1})",a,b);
              Console.WriteLine("Quantum Result: {0}",Quantum);

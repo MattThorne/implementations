@@ -18,9 +18,9 @@ namespace ModularMultiplication.Testing
             //Vary a, j and m                                                     //
             ////////////////////////////////////////////////////////////////////////
             for (int i = 0;i<101;i++){
-            BigInteger a = new BigInteger(1234);
-            BigInteger j = new BigInteger(42435);
-            BigInteger m = new BigInteger(53245+i);
+            BigInteger a = new BigInteger(12);
+            BigInteger j = new BigInteger(4);
+            BigInteger m = new BigInteger(53+i);
             TestwithToffoli(a,j,m);
             }
   
@@ -53,7 +53,7 @@ public static void TestwithToffoli(BigInteger a,BigInteger j, BigInteger m){
     int numBits = requiredBits.Max();
     if (numBits == 0){numBits += 1;}
     Console.WriteLine(numBits);
-    var res = Testing_with_Toffoli.Run(sim,a,j,m,numBits).Result;
+    var res = Testing_with_Toffoli.Run(sim,a,j,m,numBits,(exponentiation(a,j,m)),true).Result;
     Console.WriteLine("Quantum Result: {0}^{1} mod({2})= {3}",a,j,m,res);
     Console.WriteLine("Classical Result: {0}^{1} mod({2})= {3}",a,j,m,(exponentiation(a,j,m)));
 

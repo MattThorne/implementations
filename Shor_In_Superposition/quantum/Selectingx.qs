@@ -7,8 +7,6 @@
 
 
 namespace ShorInSuperposition {
-
-
     open Microsoft.Quantum.Intrinsic;
     open Microsoft.Quantum.Arithmetic;
     open Microsoft.Quantum.Convert;
@@ -17,54 +15,14 @@ namespace ShorInSuperposition {
     open Microsoft.Quantum.Canon;
     open Microsoft.Quantum.Arrays;
 
- 
-operation Testing_with_Toffoli(mI:BigInt,numBits:Int, Ran: Int):Int{
-    let mArr = BigIntAsBoolArray(mI);
-    using ((a,m) = (Qubit[numBits],Qubit[numBits])){
-        //Setting the a and m into quantum registers
-        for (i in 0..(Length(mArr) -1)){
-            if (mArr[i] == true){X(m[i]);}
-        }
 
-        //Carrying out modular squaring
-        GenerateA(m,a,Ran);
-        mutable result = 0;
-        //Collecting the result
-        set result = MeasureInteger(LittleEndian(a));
-
-        ResetAll(a+m);
-        return result;
-    }
-
-}
-
-operation Testing_in_Superposition(Ran: Int, numQubits: Int): Unit{
-using ((a,m) = (Qubit[numQubits],Qubit[numQubits])){
-        //Putting m into superposition
-        ApplyToEach(H,m);
-        
-        
-        
-        
-        //DumpMachine("TestingInSuperpositionResults.txt");
-
-        GenerateA(m,a,Ran);
-
-        //Print out Result
-        //DumpMachine("TestingInSuperpositionResults.txt");
-        ResetAll(a+m);
-    } 
-}
-
-
-
-    //Generates a = 1 + (R mod (M-1))
-    //takes |M>|0> -> |M>|a>
+    //Generates x = 1 + (R mod (M-1))
+    //takes |M>|0> -> |M>|x>
     //Ms must be superpostition greater than 1
-    operation GenerateA(Ms:Qubit[],As: Qubit[],Ran: Int) : Unit{
+    operation GenerateX(Ms:Qubit[],As: Qubit[],Ran: Int) : Unit is Adj{
       let num = Length(Ms);
       using ((tmp1,tmp2,tmpM) = (Qubit[num],Qubit[num],Qubit[num])){
-            //Generate Random int between 1 <= Ran <= (upper bound of m - 1)
+          //Generate Random int between 1 <= Ran <= (upper bound of m - 1)
           //let Ran = RandomInt((2^4) - 2) + 1;
           Message($"Random Integer is: {Ran}");
 

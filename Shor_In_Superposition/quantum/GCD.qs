@@ -20,7 +20,7 @@ namespace ShorInSuperposition {
 
 
 
-operation GCDMain(p:Qubit[],m:Qubit[],u:Qubit[]):Unit{
+operation GCDMain(p:Qubit[],m:Qubit[],u:Qubit[],adj:Bool):Unit{
     let len = Length(u);
     mutable numAnc = Ceiling(Lg(1.44*IntAsDouble(len + 1))) + 1;
     //Message($"{numAnc}");
@@ -30,51 +30,51 @@ operation GCDMain(p:Qubit[],m:Qubit[],u:Qubit[]):Unit{
     set numAnc = numAnc + 1;  
     using ((r1,r2,s1,s2,t1,t2,quo,qTs2,qTt2,C1,anc1,anc2,anc3,anc4) = (Qubit[(len+1)*numAnc],Qubit[(len+1)*numAnc],Qubit[(len + 2)*numAnc],Qubit[(len + 2)*numAnc],Qubit[(len + 2)*numAnc],Qubit[(len + 2)*numAnc],Qubit[(len+1)*numAnc],Qubit[(2*(len+1) + 1)*numAnc],Qubit[(2*(len+1) + 1)*numAnc],Qubit[numAnc],Qubit[numAnc],Qubit[numAnc],Qubit[numAnc],Qubit[numAnc])){
         set numAnc = numAnc - 1; 
-        set arr w/= (0..(Length(arr)-1)) <- GCDPebble(1,numAnc,arr,p,m,u,r1,r2,s1,s2,t1,t2,quo,qTs2,qTt2,C1,anc1,anc2,anc3,anc4);
-        set arr w/= (0..(Length(arr)-1)) <- GCDUnpebble(1,numAnc,arr,p,m,u,r1,r2,s1,s2,t1,t2,quo,qTs2,qTt2,C1,anc1,anc2,anc3,anc4);
+        set arr w/= (0..(Length(arr)-1)) <- GCDPebble(1,numAnc,arr,p,m,u,r1,r2,s1,s2,t1,t2,quo,qTs2,qTt2,C1,anc1,anc2,anc3,anc4,adj);
+        set arr w/= (0..(Length(arr)-1)) <- GCDUnpebble(1,numAnc,arr,p,m,u,r1,r2,s1,s2,t1,t2,quo,qTs2,qTt2,C1,anc1,anc2,anc3,anc4,adj);
 
     }
 }
 
 
-operation GCDPebble(s: Int, n:Int, arr:Int[],p:Qubit[],m:Qubit[],u:Qubit[],r1:Qubit[],r2:Qubit[],s1:Qubit[],s2:Qubit[],t1:Qubit[],t2:Qubit[],quo:Qubit[],qTs2:Qubit[],qTt2:Qubit[],C1:Qubit[],anc1:Qubit[],anc2:Qubit[],anc3:Qubit[],anc4:Qubit[]): Int[]{
+operation GCDPebble(s: Int, n:Int, arr:Int[],p:Qubit[],m:Qubit[],u:Qubit[],r1:Qubit[],r2:Qubit[],s1:Qubit[],s2:Qubit[],t1:Qubit[],t2:Qubit[],quo:Qubit[],qTs2:Qubit[],qTt2:Qubit[],C1:Qubit[],anc1:Qubit[],anc2:Qubit[],anc3:Qubit[],anc4:Qubit[],adj:Bool): Int[]{
     mutable narr = new Int[0];
     for (i in 0..(Length(arr) -1)){
         set narr += [arr[i]]; 
     }
     if (n!=0){
         let t = s + PowI(2,(n-1));
-        set narr w/= (0..(Length(narr)-1)) <- GCDPebble(s,(n-1),narr,p,m,u,r1,r2,s1,s2,t1,t2,quo,qTs2,qTt2,C1,anc1,anc2,anc3,anc4);
+        set narr w/= (0..(Length(narr)-1)) <- GCDPebble(s,(n-1),narr,p,m,u,r1,r2,s1,s2,t1,t2,quo,qTs2,qTt2,C1,anc1,anc2,anc3,anc4,adj);
         //put a free pebble on node t
-        set narr w/= (0..(Length(narr)-1)) <- GCDStep(t,narr,1,p,m,u,r1,r2,s1,s2,t1,t2,quo,qTs2,qTt2,C1,anc1,anc2,anc3,anc4);
+        set narr w/= (0..(Length(narr)-1)) <- GCDStep(t,narr,1,p,m,u,r1,r2,s1,s2,t1,t2,quo,qTs2,qTt2,C1,anc1,anc2,anc3,anc4,adj);
         // Message($"{narr}");
         // DumpRegister((),v);
-        set narr w/= (0..(Length(narr)-1)) <- GCDUnpebble(s,(n-1),narr,p,m,u,r1,r2,s1,s2,t1,t2,quo,qTs2,qTt2,C1,anc1,anc2,anc3,anc4);
-        set narr w/= (0..(Length(narr)-1)) <- GCDPebble(t,(n-1),narr,p,m,u,r1,r2,s1,s2,t1,t2,quo,qTs2,qTt2,C1,anc1,anc2,anc3,anc4);
+        set narr w/= (0..(Length(narr)-1)) <- GCDUnpebble(s,(n-1),narr,p,m,u,r1,r2,s1,s2,t1,t2,quo,qTs2,qTt2,C1,anc1,anc2,anc3,anc4,adj);
+        set narr w/= (0..(Length(narr)-1)) <- GCDPebble(t,(n-1),narr,p,m,u,r1,r2,s1,s2,t1,t2,quo,qTs2,qTt2,C1,anc1,anc2,anc3,anc4,adj);
         
     }
     return narr;
 }
 
-operation GCDUnpebble(s: Int, n:Int, arr:Int[],p:Qubit[],m:Qubit[],u:Qubit[],r1:Qubit[],r2:Qubit[],s1:Qubit[],s2:Qubit[],t1:Qubit[],t2:Qubit[],quo:Qubit[],qTs2:Qubit[],qTt2:Qubit[],C1:Qubit[],anc1:Qubit[],anc2:Qubit[],anc3:Qubit[],anc4:Qubit[]):Int[]{
+operation GCDUnpebble(s: Int, n:Int, arr:Int[],p:Qubit[],m:Qubit[],u:Qubit[],r1:Qubit[],r2:Qubit[],s1:Qubit[],s2:Qubit[],t1:Qubit[],t2:Qubit[],quo:Qubit[],qTs2:Qubit[],qTt2:Qubit[],C1:Qubit[],anc1:Qubit[],anc2:Qubit[],anc3:Qubit[],anc4:Qubit[],adj:Bool):Int[]{
     mutable narr = new Int[0];
     for (i in 0..(Length(arr) -1)){
         set narr += [arr[i]]; 
     }
     if (n!=0){
         let t = s + PowI(2,(n-1));
-        set narr w/= (0..(Length(narr)-1)) <-GCDUnpebble(t,(n-1),narr,p,m,u,r1,r2,s1,s2,t1,t2,quo,qTs2,qTt2,C1,anc1,anc2,anc3,anc4);
-        set narr w/= (0..(Length(narr)-1)) <-GCDPebble(s,(n-1),narr,p,m,u,r1,r2,s1,s2,t1,t2,quo,qTs2,qTt2,C1,anc1,anc2,anc3,anc4);
+        set narr w/= (0..(Length(narr)-1)) <-GCDUnpebble(t,(n-1),narr,p,m,u,r1,r2,s1,s2,t1,t2,quo,qTs2,qTt2,C1,anc1,anc2,anc3,anc4,adj);
+        set narr w/= (0..(Length(narr)-1)) <-GCDPebble(s,(n-1),narr,p,m,u,r1,r2,s1,s2,t1,t2,quo,qTs2,qTt2,C1,anc1,anc2,anc3,anc4,adj);
         //take a  pebble from node t
-        set narr w/= (0..(Length(narr)-1)) <- GCDStep(t,narr,0,p,m,u,r1,r2,s1,s2,t1,t2,quo,qTs2,qTt2,C1,anc1,anc2,anc3,anc4);
+        set narr w/= (0..(Length(narr)-1)) <- GCDStep(t,narr,0,p,m,u,r1,r2,s1,s2,t1,t2,quo,qTs2,qTt2,C1,anc1,anc2,anc3,anc4,adj);
         // Message($"{narr}");
         // DumpRegister((),v);
-        set narr w/= (0..(Length(narr)-1)) <-GCDUnpebble(s,(n-1),narr,p,m,u,r1,r2,s1,s2,t1,t2,quo,qTs2,qTt2,C1,anc1,anc2,anc3,anc4);
+        set narr w/= (0..(Length(narr)-1)) <-GCDUnpebble(s,(n-1),narr,p,m,u,r1,r2,s1,s2,t1,t2,quo,qTs2,qTt2,C1,anc1,anc2,anc3,anc4,adj);
     }
     return narr;
 }
 
-operation GCDStep(t:Int,arr:Int[] ,d:Int,p:Qubit[],m:Qubit[],u:Qubit[],r1:Qubit[],r2:Qubit[],s1:Qubit[],s2:Qubit[],t1:Qubit[],t2:Qubit[],quo:Qubit[],qTs2:Qubit[],qTt2:Qubit[],C1:Qubit[],anc1:Qubit[],anc2:Qubit[],anc3:Qubit[],anc4:Qubit[]):Int[]{
+operation GCDStep(t:Int,arr:Int[] ,d:Int,p:Qubit[],m:Qubit[],u:Qubit[],r1:Qubit[],r2:Qubit[],s1:Qubit[],s2:Qubit[],t1:Qubit[],t2:Qubit[],quo:Qubit[],qTs2:Qubit[],qTt2:Qubit[],C1:Qubit[],anc1:Qubit[],anc2:Qubit[],anc3:Qubit[],anc4:Qubit[],adj:Bool):Int[]{
     mutable narr = new Int[0];
     for (k in 0..(Length(arr) -1)){
         set narr += [arr[k]]; 
@@ -137,7 +137,7 @@ operation GCDStep(t:Int,arr:Int[] ,d:Int,p:Qubit[],m:Qubit[],u:Qubit[],r1:Qubit[
 
     Controlled GCDIteration([C1[next]],(r1[(next*len)..((next*len) + len-1)],r2[(next*len)..((next*len) + len-1)],s1[(next*lens)..((next*lens) + lens -1)],s2[(next*lens)..((next*lens) + lens -1)],t1[(next*lens)..((next*lens) + lens -1)],t2[(next*lens)..((next*lens) + lens -1)],quo[(next*len)..((next*len)+len-1)],qTs2[(next*(2*len+1))..((next*(2*len+1))+(2*len+1)-1)],qTt2[(next*(2*len+1))..((next*(2*len+1))+(2*len+1)-1)],anc1[next],anc2[next],anc3[next],anc4[next]));
     if ((Ceiling(1.44*IntAsDouble(len)) <= narr[next]) and (narr[Length(narr)-1] == 0)){
-        GCDExtractRes(p,u,m,s1[(next*lens)..((next*lens)+lens-1)],t1[(next*lens)..((next*lens)+lens-1)]);
+        GCDExtractRes(p,u,m,s1[(next*lens)..((next*lens)+lens-1)],t1[(next*lens)..((next*lens)+lens-1)],adj);
         set narr w/= (Length(narr)-1) <- 1;
     }
     
@@ -187,7 +187,7 @@ operation GCDStep(t:Int,arr:Int[] ,d:Int,p:Qubit[],m:Qubit[],u:Qubit[],r1:Qubit[
 }
 
 
-operation GCDExtractRes(res:Qubit[],g:Qubit[],m:Qubit[],s1:Qubit[],t1:Qubit[]):Unit is Ctl{
+operation GCDExtractRes(res:Qubit[],g:Qubit[],m:Qubit[],s1:Qubit[],t1:Qubit[],adj:Bool):Unit is Ctl{
 
     ///s*g + t*m
     let lenS = Length(s1);
@@ -200,7 +200,9 @@ operation GCDExtractRes(res:Qubit[],g:Qubit[],m:Qubit[],s1:Qubit[],t1:Qubit[]):U
         X(tTm[Length(tTm)-1]);//Setting tTm to minus a--b = a+b as required
         SignedSubtract(sTg[0..(Length(sTg)-2)] + [Pad[0]] + [sTg[Length(sTg)-1]],tTm,a1,a2);
         
-        AddI(LittleEndian(sTg[0..(Length(res)-1)]),LittleEndian(res));
+        if(adj == false){AddI(LittleEndian(sTg[0..(Length(res)-1)]),LittleEndian(res));}
+        if(adj == true){Adjoint AddI(LittleEndian(sTg[0..(Length(res)-1)]),LittleEndian(res));}
+        
         
         Adjoint SignedSubtract(sTg[0..(Length(sTg)-2)] + [Pad[0]] + [sTg[Length(sTg)-1]],tTm,a1,a2);
         X(tTm[Length(tTm)-1]);
@@ -244,10 +246,9 @@ operation GCDIteration (r1:Qubit[],r2:Qubit[],s1:Qubit[],s2:Qubit[],t1:Qubit[],t
             SignedSubtract(t2[0..(Length(t2)-2)] + s2Pad + [t2[(Length(t2)-1)]],qTt2,anc3,anc4);
            
    }
-
-
-
 }
+
+
 ///Sets C to 1 if r2==0///
 operation GCDCheck (r2:Qubit[],C:Qubit):Unit is Adj + Ctl{
     body (...){
@@ -267,16 +268,4 @@ operation GCDCheck (r2:Qubit[],C:Qubit):Unit is Adj + Ctl{
     }
 }
 
-  operation MinimalMultiplyI (xs: Qubit[], ys: Qubit[], result: Qubit[]) : Unit {
-            let lenXs = Length(xs);
-            let lenYs = Length(ys);
-
-            
-            EqualityFactI(lenXs + lenYs, Length(result), "Minimal multiplication requires result register to be equal to sum of multiplcan registers");
-            AssertAllZero(result);
-
-            for (i in 0..(lenXs-1)) {
-                (Controlled AddI) ([xs[i]], (LittleEndian(ys), LittleEndian(result[i..i+lenYs])));
-            }
-    }
 }

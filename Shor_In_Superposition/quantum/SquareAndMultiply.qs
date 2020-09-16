@@ -19,7 +19,7 @@ namespace ShorInSuperposition {
 
 
 
-operation SquareAndMultiply(a:Qubit[],m:Qubit[],j:Qubit[],result:Qubit[]): Unit{
+operation SquareAndMultiply(a:Qubit[],m:Qubit[],j:Qubit[],result:Qubit[],adj:Bool): Unit{
     let lenJ = Length(j);
     let lenA = Length(a);
     let numAnc = Ceiling(Lg(IntAsDouble(lenJ -1))) + 1;
@@ -37,8 +37,8 @@ operation SquareAndMultiply(a:Qubit[],m:Qubit[],j:Qubit[],result:Qubit[]): Unit{
                 ApplyToEachA(X,j);
                 X(az);
 
-                set arr w/= (0..(Length(arr)-1)) <- SMPebble(1,numAnc,arr,a,m,j,result,v,c,z,az,ld);
-                set arr w/= (0..(Length(arr)-1)) <- SMUnpebble(1,numAnc,arr,a,m,j,result,v,c,z,az,ld);
+                set arr w/= (0..(Length(arr)-1)) <- SMPebble(1,numAnc,arr,a,m,j,result,v,c,z,az,ld,adj);
+                set arr w/= (0..(Length(arr)-1)) <- SMUnpebble(1,numAnc,arr,a,m,j,result,v,c,z,az,ld,adj);
 
                 //Resetting control all zero qubit
                 X(az);
@@ -55,44 +55,44 @@ operation SquareAndMultiply(a:Qubit[],m:Qubit[],j:Qubit[],result:Qubit[]): Unit{
 
 
 
-operation SMPebble(s: Int, n:Int, arr:Int[],a:Qubit[],m:Qubit[],j:Qubit[],result:Qubit[],v:Qubit[],c:Qubit,z:Qubit,az:Qubit,ld:Qubit): Int[]{
+operation SMPebble(s: Int, n:Int, arr:Int[],a:Qubit[],m:Qubit[],j:Qubit[],result:Qubit[],v:Qubit[],c:Qubit,z:Qubit,az:Qubit,ld:Qubit,adj:Bool): Int[]{
     mutable narr = new Int[0];
     for (i in 0..(Length(arr) -1)){
         set narr += [arr[i]]; 
     }
     if (n!=0){
         let t = s + PowI(2,(n-1));
-        set narr w/= (0..(Length(narr)-1)) <- SMPebble(s,(n-1),narr,a,m,j,result,v,c,z,az,ld);
+        set narr w/= (0..(Length(narr)-1)) <- SMPebble(s,(n-1),narr,a,m,j,result,v,c,z,az,ld,adj);
         //put a free pebble on node t
-        set narr w/= (0..(Length(narr)-1)) <- SquareAndMultiplyStep(t,narr,1,a,m,j,result,v,c,z,az,ld);
+        set narr w/= (0..(Length(narr)-1)) <- SquareAndMultiplyStep(t,narr,1,a,m,j,result,v,c,z,az,ld,adj);
         // Message($"{narr}");
         // DumpRegister((),v);
-        set narr w/= (0..(Length(narr)-1)) <- SMUnpebble(s,(n-1),narr,a,m,j,result,v,c,z,az,ld);
-        set narr w/= (0..(Length(narr)-1)) <- SMPebble(t,(n-1),narr,a,m,j,result,v,c,z,az,ld);
+        set narr w/= (0..(Length(narr)-1)) <- SMUnpebble(s,(n-1),narr,a,m,j,result,v,c,z,az,ld,adj);
+        set narr w/= (0..(Length(narr)-1)) <- SMPebble(t,(n-1),narr,a,m,j,result,v,c,z,az,ld,adj);
         
     }
     return narr;
 }
 
-operation SMUnpebble(s: Int, n:Int, arr:Int[],a:Qubit[],m:Qubit[],j:Qubit[],result:Qubit[],v:Qubit[],c:Qubit,z:Qubit,az:Qubit,ld:Qubit):Int[]{
+operation SMUnpebble(s: Int, n:Int, arr:Int[],a:Qubit[],m:Qubit[],j:Qubit[],result:Qubit[],v:Qubit[],c:Qubit,z:Qubit,az:Qubit,ld:Qubit,adj:Bool):Int[]{
     mutable narr = new Int[0];
     for (i in 0..(Length(arr) -1)){
         set narr += [arr[i]]; 
     }
     if (n!=0){
         let t = s + PowI(2,(n-1));
-        set narr w/= (0..(Length(narr)-1)) <-SMUnpebble(t,(n-1),narr,a,m,j,result,v,c,z,az,ld);
-        set narr w/= (0..(Length(narr)-1)) <-SMPebble(s,(n-1),narr,a,m,j,result,v,c,z,az,ld);
+        set narr w/= (0..(Length(narr)-1)) <- SMUnpebble(t,(n-1),narr,a,m,j,result,v,c,z,az,ld,adj);
+        set narr w/= (0..(Length(narr)-1)) <- SMPebble(s,(n-1),narr,a,m,j,result,v,c,z,az,ld,adj);
         //take a  pebble from node t
-        set narr w/= (0..(Length(narr)-1)) <- SquareAndMultiplyStep(t,narr,0,a,m,j,result,v,c,z,az,ld);
+        set narr w/= (0..(Length(narr)-1)) <- SquareAndMultiplyStep(t,narr,0,a,m,j,result,v,c,z,az,ld,adj);
         // Message($"{narr}");
         // DumpRegister((),v);
-        set narr w/= (0..(Length(narr)-1)) <-SMUnpebble(s,(n-1),narr,a,m,j,result,v,c,z,az,ld);
+        set narr w/= (0..(Length(narr)-1)) <- SMUnpebble(s,(n-1),narr,a,m,j,result,v,c,z,az,ld,adj);
     }
     return narr;
 }
 
-operation SquareAndMultiplyStep(t:Int,arr:Int[] ,d:Int,a:Qubit[],m:Qubit[],j:Qubit[],result:Qubit[],v:Qubit[],c:Qubit,z:Qubit,az:Qubit,ld:Qubit):Int[]{
+operation SquareAndMultiplyStep(t:Int,arr:Int[] ,d:Int,a:Qubit[],m:Qubit[],j:Qubit[],result:Qubit[],v:Qubit[],c:Qubit,z:Qubit,az:Qubit,ld:Qubit,adj:Bool):Int[]{
     
 
 
@@ -190,8 +190,8 @@ operation SquareAndMultiplyStep(t:Int,arr:Int[] ,d:Int,a:Qubit[],m:Qubit[],j:Qub
                     }
 
                     if ((narr[next] - 1) == (Length(j)-1) and (narr[Length(narr)-1] == 0)){
-
-                        AddI(LittleEndian((a+v)[(next*lenA)..(((next*lenA)+lenA)-1)]),LittleEndian(result));
+                        if (adj == false){AddI(LittleEndian((a+v)[(next*lenA)..(((next*lenA)+lenA)-1)]),LittleEndian(result));}
+                        if (adj == true){Adjoint AddI(LittleEndian((a+v)[(next*lenA)..(((next*lenA)+lenA)-1)]),LittleEndian(result));}
                         set narr w/= (Length(narr)-1) <- 1;
                     }
    
@@ -273,6 +273,7 @@ operation SquareAndMultiplyStep(t:Int,arr:Int[] ,d:Int,a:Qubit[],m:Qubit[],j:Qub
 }
 
 
+
 operation SquareAndMultiplyIteration(a:Qubit[],v:Qubit[],m:Qubit[],c:Qubit,z:Qubit,ld:Qubit,t:Qubit[]) : Unit is Adj + Ctl{
         X(z);
         Controlled AddI([z],(LittleEndian(v),LittleEndian(t)));
@@ -293,5 +294,6 @@ operation SquareAndMultiplyIteration(a:Qubit[],v:Qubit[],m:Qubit[],c:Qubit,z:Qub
         Controlled Adjoint SquareModM([z,ld],(v,m,anc));
         } 
 }
+
 
 }

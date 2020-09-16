@@ -34,7 +34,7 @@ namespace ContinuedFractions
             int n = 300 + i;
             int limit = 40;
             int bitSize = 10;
-            var (Quantum,Classical) = Testing_with_Toffoli.Run(sim,n,limit,bitSize).Result;
+            var (Quantum,Classical) = Testing_with_Toffoli.Run(sim,n,limit,17,bitSize,true).Result;
             Console.WriteLine("{0}",bitSize);
             Console.WriteLine("CF Convergent of {0}/{1} with limit {2}",n,(Math.Pow(2,bitSize)),limit);
             Console.WriteLine("Quantum Result: {0}",Quantum);

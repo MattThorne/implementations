@@ -16,10 +16,11 @@ namespace ModularMultiplication.Testing {
     open Microsoft.Quantum.Arrays;
 
 
-operation Testing_with_Toffoli(aI:BigInt,jI:BigInt,mI:BigInt,numBits:Int):Int{
+operation Testing_with_Toffoli(aI:BigInt,jI:BigInt,mI:BigInt,numBits:Int,tI:BigInt,adj:Bool):Int{
     let aArr = BigIntAsBoolArray(aI);
     let jArr = BigIntAsBoolArray(jI);
     let mArr = BigIntAsBoolArray(mI);
+    let tArr = BigIntAsBoolArray(tI);
     using ((a,m,j,t) = (Qubit[numBits],Qubit[numBits],Qubit[numBits],Qubit[numBits])){
         //Setting the a and m into quantum registers
         for (i in 0..(Length(aArr) -1)){
@@ -31,9 +32,12 @@ operation Testing_with_Toffoli(aI:BigInt,jI:BigInt,mI:BigInt,numBits:Int):Int{
         for (i in 0..(Length(mArr) -1)){
             if (mArr[i] == true){X(m[i]);}
         }
+        for (i in 0..(Length(tArr) -1)){
+            if (tArr[i] == true){X(t[i]);}
+        }
 
         //Carrying out modular squaring
-        SquareAndMultiply(a,m,j,t);
+        SquareAndMultiply(a,m,j,t,adj);
         
 
         //Collecting the result
@@ -48,14 +52,14 @@ operation Testing_in_Superposition(bitSize: Int): Unit{
     using ((a,m,j,t) = (Qubit[bitSize],Qubit[bitSize],Qubit[2*bitSize + 1],Qubit[bitSize])){
         
         
-        SquareAndMultiply(a,m,j,t);
+        SquareAndMultiply(a,m,j,t,false);
         
         ResetAll(a+j+m+t);
     }
 
 }
 
-operation SquareAndMultiply(a:Qubit[],m:Qubit[],j:Qubit[],result:Qubit[]): Unit{
+operation SquareAndMultiply(a:Qubit[],m:Qubit[],j:Qubit[],result:Qubit[],adj:Bool): Unit{
     let lenJ = Length(j);
     let lenA = Length(a);
     let numAnc = Ceiling(Lg(IntAsDouble(lenJ -1))) + 1;
@@ -73,8 +77,8 @@ operation SquareAndMultiply(a:Qubit[],m:Qubit[],j:Qubit[],result:Qubit[]): Unit{
                 ApplyToEachA(X,j);
                 X(az);
 
-                set arr w/= (0..(Length(arr)-1)) <- Pebble(1,numAnc,arr,a,m,j,result,v,c,z,az,ld);
-                set arr w/= (0..(Length(arr)-1)) <- Unpebble(1,numAnc,arr,a,m,j,result,v,c,z,az,ld);
+                set arr w/= (0..(Length(arr)-1)) <- Pebble(1,numAnc,arr,a,m,j,result,v,c,z,az,ld,adj);
+                set arr w/= (0..(Length(arr)-1)) <- Unpebble(1,numAnc,arr,a,m,j,result,v,c,z,az,ld,adj);
 
                 //Resetting control all zero qubit
                 X(az);
@@ -91,44 +95,44 @@ operation SquareAndMultiply(a:Qubit[],m:Qubit[],j:Qubit[],result:Qubit[]): Unit{
 
 
 
-operation Pebble(s: Int, n:Int, arr:Int[],a:Qubit[],m:Qubit[],j:Qubit[],result:Qubit[],v:Qubit[],c:Qubit,z:Qubit,az:Qubit,ld:Qubit): Int[]{
+operation Pebble(s: Int, n:Int, arr:Int[],a:Qubit[],m:Qubit[],j:Qubit[],result:Qubit[],v:Qubit[],c:Qubit,z:Qubit,az:Qubit,ld:Qubit,adj:Bool): Int[]{
     mutable narr = new Int[0];
     for (i in 0..(Length(arr) -1)){
         set narr += [arr[i]]; 
     }
     if (n!=0){
         let t = s + PowI(2,(n-1));
-        set narr w/= (0..(Length(narr)-1)) <- Pebble(s,(n-1),narr,a,m,j,result,v,c,z,az,ld);
+        set narr w/= (0..(Length(narr)-1)) <- Pebble(s,(n-1),narr,a,m,j,result,v,c,z,az,ld,adj);
         //put a free pebble on node t
-        set narr w/= (0..(Length(narr)-1)) <- SquareAndMultiplyStep(t,narr,1,a,m,j,result,v,c,z,az,ld);
+        set narr w/= (0..(Length(narr)-1)) <- SquareAndMultiplyStep(t,narr,1,a,m,j,result,v,c,z,az,ld,adj);
         // Message($"{narr}");
         // DumpRegister((),v);
-        set narr w/= (0..(Length(narr)-1)) <- Unpebble(s,(n-1),narr,a,m,j,result,v,c,z,az,ld);
-        set narr w/= (0..(Length(narr)-1)) <- Pebble(t,(n-1),narr,a,m,j,result,v,c,z,az,ld);
+        set narr w/= (0..(Length(narr)-1)) <- Unpebble(s,(n-1),narr,a,m,j,result,v,c,z,az,ld,adj);
+        set narr w/= (0..(Length(narr)-1)) <- Pebble(t,(n-1),narr,a,m,j,result,v,c,z,az,ld,adj);
         
     }
     return narr;
 }
 
-operation Unpebble(s: Int, n:Int, arr:Int[],a:Qubit[],m:Qubit[],j:Qubit[],result:Qubit[],v:Qubit[],c:Qubit,z:Qubit,az:Qubit,ld:Qubit):Int[]{
+operation Unpebble(s: Int, n:Int, arr:Int[],a:Qubit[],m:Qubit[],j:Qubit[],result:Qubit[],v:Qubit[],c:Qubit,z:Qubit,az:Qubit,ld:Qubit,adj:Bool):Int[]{
     mutable narr = new Int[0];
     for (i in 0..(Length(arr) -1)){
         set narr += [arr[i]]; 
     }
     if (n!=0){
         let t = s + PowI(2,(n-1));
-        set narr w/= (0..(Length(narr)-1)) <-Unpebble(t,(n-1),narr,a,m,j,result,v,c,z,az,ld);
-        set narr w/= (0..(Length(narr)-1)) <-Pebble(s,(n-1),narr,a,m,j,result,v,c,z,az,ld);
+        set narr w/= (0..(Length(narr)-1)) <-Unpebble(t,(n-1),narr,a,m,j,result,v,c,z,az,ld,adj);
+        set narr w/= (0..(Length(narr)-1)) <-Pebble(s,(n-1),narr,a,m,j,result,v,c,z,az,ld,adj);
         //take a  pebble from node t
-        set narr w/= (0..(Length(narr)-1)) <- SquareAndMultiplyStep(t,narr,0,a,m,j,result,v,c,z,az,ld);
+        set narr w/= (0..(Length(narr)-1)) <- SquareAndMultiplyStep(t,narr,0,a,m,j,result,v,c,z,az,ld,adj);
         // Message($"{narr}");
         // DumpRegister((),v);
-        set narr w/= (0..(Length(narr)-1)) <-Unpebble(s,(n-1),narr,a,m,j,result,v,c,z,az,ld);
+        set narr w/= (0..(Length(narr)-1)) <-Unpebble(s,(n-1),narr,a,m,j,result,v,c,z,az,ld,adj);
     }
     return narr;
 }
 
-operation SquareAndMultiplyStep(t:Int,arr:Int[] ,d:Int,a:Qubit[],m:Qubit[],j:Qubit[],result:Qubit[],v:Qubit[],c:Qubit,z:Qubit,az:Qubit,ld:Qubit):Int[]{
+operation SquareAndMultiplyStep(t:Int,arr:Int[] ,d:Int,a:Qubit[],m:Qubit[],j:Qubit[],result:Qubit[],v:Qubit[],c:Qubit,z:Qubit,az:Qubit,ld:Qubit,adj:Bool):Int[]{
     
 
 
@@ -226,8 +230,8 @@ operation SquareAndMultiplyStep(t:Int,arr:Int[] ,d:Int,a:Qubit[],m:Qubit[],j:Qub
                     }
 
                     if ((narr[next] - 1) == (Length(j)-1) and (narr[Length(narr)-1] == 0)){
-
-                        AddI(LittleEndian((a+v)[(next*lenA)..(((next*lenA)+lenA)-1)]),LittleEndian(result));
+                        if (adj == false){AddI(LittleEndian((a+v)[(next*lenA)..(((next*lenA)+lenA)-1)]),LittleEndian(result));}
+                        if (adj == true){Adjoint AddI(LittleEndian((a+v)[(next*lenA)..(((next*lenA)+lenA)-1)]),LittleEndian(result));}
                         set narr w/= (Length(narr)-1) <- 1;
                     }
    
