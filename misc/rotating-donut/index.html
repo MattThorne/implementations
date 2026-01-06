@@ -1,0 +1,41 @@
+<!DOCTYPE html>
+  <head>
+    <title>index</title>
+    <link rel="icon" type="image/x-icon" href="./assets/favicon.ico" />
+    <meta charset="utf-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1" />
+    <link href="https://cdnjs.cloudflare.com/ajax/libs/mdb-ui-kit/3.1.0/mdb.min.css" rel="stylesheet"/>
+    <link rel="stylesheet" href="index.css" >
+  </head>
+
+  <body>
+      <div class="settings">
+        <div class="roationControl">
+          <p style="display: inline;">Manual Control</p>
+          <div class="switchContainer" style="display: inline-block;">
+            <div class="form-check form-switch" >
+              <input class="form-check-input" type="checkbox" id="flexSwitchCheckDefault" onClick="toggleRotationControl();"/> 
+            </div>
+          </div>
+          Auto Rotation
+        </div>
+
+        <div class="pointStyleControl">
+          <p style="display: inline;">ASCII</p>
+          <div class="switchContainer" style="display: inline-block;">
+            <div class="form-check form-switch" >
+              <input class="form-check-input" type="checkbox" id="flexSwitchCheckDefault" onClick="togglePointStyle();"/> 
+            </div>
+          </div>
+          Dots
+        </div>
+        
+      </div>
+      <canvas class="canvas"></canvas>
+       <script src="main.js"></script>
+       <script
+  type="text/javascript"
+  src="https://cdnjs.cloudflare.com/ajax/libs/mdb-ui-kit/3.1.0/mdb.min.js"
+></script>
+  </body>
+</html>
